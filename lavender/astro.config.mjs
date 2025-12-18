@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
 	site: "https://irebased.github.io/Unsolved-BOIII-Ciphers",
+	base: "/Unsolved-BOIII-Ciphers",
 	integrations: [
 		starlight({
 			title: 'BO3 Unsolved Ciphers',
