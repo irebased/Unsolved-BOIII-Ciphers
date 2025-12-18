@@ -9,7 +9,7 @@ export default defineConfig({
 		starlight({
 			title: 'BO3 Unsolved Ciphers',
 			logo: {
-				src: './src/assets/cryptographic_enigma.png',
+				src: './src/assets/cryptographic_enigma.PNG',
 				replacesTitle: true,
 			},
 			editLink: {
