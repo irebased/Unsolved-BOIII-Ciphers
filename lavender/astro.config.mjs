@@ -13,7 +13,7 @@ export default defineConfig({
 				replacesTitle: true,
 			},
 			editLink: {
-				baseUrl: 'https://github.com/irebased/Unsolved-BOIII-Ciphers/edit/main/docs/',
+				baseUrl: 'https://github.com/irebased/Unsolved-BOIII-Ciphers/edit/main/lavender/',
 			},
 			social: [{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/dsjVrtYygJ' }],
 			sidebar: [
