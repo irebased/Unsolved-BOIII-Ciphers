@@ -1,0 +1,72 @@
+---
+interface Props {
+  title?: string;
+  variant?: 'info' | 'success' | 'warning' | 'error' | 'general';
+}
+
+const {
+  title,
+  variant = 'info',
+} = Astro.props as Props;
+
+const variants = {
+  info: {
+    bg: '#EFF6FF',
+    border: '#3B82F6',
+    text: '#1E3A8A',
+  },
+  success: {
+    bg: '#ECFDF5',
+    border: '#10B981',
+    text: '#065F46',
+  },
+  warning: {
+    bg: '#FFFBEB',
+    border: '#F59E0B',
+    text: '#92400E',
+  },
+  error: {
+    bg: '#FEF2F2',
+    border: '#EF4444',
+    text: '#7F1D1D',
+  },
+  general: {
+    bg: '#112211',
+    border: '#151',
+    text: '#fff',
+  },
+};
+
+const v = variants[variant];
+---
+
+<div
+  class="info-box"
+  role="note"
+  style={`--bg:${v.bg}; --border:${v.border}; --text:${v.text};`}
+>
+  {title && <div class="title">{title}</div>}
+  <div class="content">
+    <slot />
+  </div>
+</div>
+
+<style>
+  .info-box {
+    background: var(--bg);
+    border-left: 4px solid var(--border);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--text);
+    margin: 1rem 0;
+  }
+
+  .title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .content :global(p:last-child) {
+    margin-bottom: 0;
+  }
+</style>

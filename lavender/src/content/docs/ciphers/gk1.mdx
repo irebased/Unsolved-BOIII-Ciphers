@@ -1,0 +1,66 @@
+---
+title: Gorod Krovi Solve
+description: Overview of the solved Gorod Krovi cipher
+---
+import Info from '../../../components/Info.astro';
+import CodeBlockWithLength from '../../../components/CodeWithLength.astro';
+import Username from '../../../components/Username.astro';
+import cipher from '../../../assets/gk_1.webp';
+import { Image } from 'astro:assets';
+
+<Image src={cipher} alt={`Gorod Krovi cipher texture`} />
+
+> Credit: <Username name="JessesOcean" type="discord"/>, <Username name="WXAudio" type="discord"/>, <Username name="codewarrior0" type="reddit"/>
+
+## Ciphertext
+
+<CodeBlockWithLength code={
+`Rc qipv jhx vld plson fhceuh itp jui gh qhzu dg sq xie dhw. U gbfl lf fluz pcag wrgkv zw, dinyg zw, qge gnvm L fhx.`
+}/>
+
+## Plaintext
+
+<CodeBlockWithLength code={
+`We have won the great battle and now we must be on our way. I fear he will come after us, after me, for what I did.`
+}/>
+
+## Solution
+
+This cipher was solved by <Username name="JessesOcean" type="discord"/> using
+a tool created by <Username name="WXAudio" type="discord"/>. The initial solve
+matched an alternative alphabet. The correct alphabet was found by <Username name="codewarrior0" type="reddit"/>.
+
+This is an Autokey cipher with a custom alphabet, also known as a Quagmire III configuration. The
+solve can be reproduced by using [Rumkin](https://rumkin.com/tools/cipher/vigenere/) with alphabet key
+`ZOMBIESAREEVERYWHERE` and cipher key `TRYTHIS`. Set to `Decrypt` and check the box to use the "autokey" variant.
+
+## Important notes
+<Info title="This cipher was theoretically impossible!" variant="info">
+    This cipher went unsolved from July 12, 2016 until December 14, 2025, spanning 3,442 days.
+    Mathematically speaking, this cipher's search space should have made it impossible to solve.
+    Included below are some important details about how it was pulled off.
+
+    One major contributing factor was the fact that punctuation, spacing, and
+    capitalization have all been preserved in the ciphertext, allowing for crib
+    attacks.
+</Info>
+
+Credit to <Username name="junedgasp" type="discord"/> for discovering a high likelihood that
+the tool used to create the cipher was [Rumkin](https://rumkin.com/tools/cipher/vigenere/),
+likely resulting in a keyed alphabet.
+
+Credit to <Username name="Lightninghuff" type="discord"/> for rediscovering a launch bug in Gorod Krovi.
+This bug rendered in all ciphers in one spot, organized in 3 columns. <Username name="Lightninghuff" type="discord"/> noticed all of
+the ciphers containing Kronorium excerpts in the plaintext were in the left column. <Username name="JessesOcean" type="discord"/>
+further investigated and found all of the ciphers on the right side were about the great war, and this cipher was also
+in the right column.
+
+A discussion between <Username name="JessesOcean" type="discord"/> and <Username name="rebase" type="discord"/> pointed out
+the repeated use of "great battle" in the plaintexts, and <Username name="rebase" type="discord"/> pointed out that the fifth
+and sixth words would fit "great battle" based on word lengths.
+
+<Username name="JessesOcean" type="discord"/> used [this tool](https://chesewip.github.io/SolveGKAutokeyCipher/), created by
+<Username name="WXAudio" type="discord"/>, to perform a crib attack and eventually found the plaintext.
+
+This ciphertext was the main focus in the Skite's Aether Discord server for nearly an entire year with many
+members contributing their efforts to its solution. It was a massive effort for everyone involved -- Quagmire is king.

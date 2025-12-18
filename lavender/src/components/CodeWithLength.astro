@@ -1,0 +1,33 @@
+---
+import type { CodeLanguage } from 'astro';
+import { Code } from 'astro:components';
+
+interface Props {
+  code: string;
+  lang?: CodeLanguage;
+}
+
+const { code, lang = 'text' } = Astro.props;
+const textLength = code.replace(/\s/g, '').length;
+---
+
+<div class="code-container">
+  <Code code={code} lang={lang} />
+
+  <div class="length-display">
+    Length: {textLength} characters
+  </div>
+</div>
+
+<style>
+  .code-container {
+    margin-bottom: 1rem;
+  }
+  .length-display {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+    font-family: monospace;
+  }
+</style>
