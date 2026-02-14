@@ -4,6 +4,7 @@ description: Overview of Revelations 10 cipher
 ---
 import CodeBlockWithLength from '../../../components/CodeWithLength.astro';
 import cipher from '../../../assets/revelations_10.png';
+import Username from '../../../components/Username.astro';
 import { Image } from 'astro:assets';
 
 <Image src={cipher} alt={`Revelations 10 cipher texture`} />
@@ -16,8 +17,21 @@ import { Image } from 'astro:assets';
 }
 />
 
+The initial steps of this cipher have been discovered by <Username name="JessesOcean" type="discord"/>. The steps are:
+
+1. Decrypt with RC4 using key `Zombies` (capital Z). This results in an octal sequence.
+2. Decode the octal. This provides a hexadecimal string.
+
+The current ciphertext is now:
+
+<CodeBlockWithLength code={
+`105bf51b26f551d86e6773ccde67dfd8b49e0991285687463b193e9675eb349b03bf27261eb0fa5ae204395af7c757757a605237144bcacb4989cbf0fe796ed32912bfb5c292b155b3aa2ba6cdfc387ac8b12fb89f62c8f07c4211e40e7e5ebbfae1f1bcdbb01dd09307bb52cdd06b00d23681dbd5210a1020aeff1f7a5b65aed560ccccae4d515451893f24e2a1e2d44ed3c72db7ede1098d5f9b9f0a30e78c38ef624874b9a30bec1efa1c488a0e67afd508d3bac95570e8405218230be6c330c29150cef937ac2d5228f9b44fd5c966ca7bfcb5f20f5860e91ba9645ba1d4256c4070e2ac087b30`
+}
+/>
+
 | Field | Value |
 | :-- | :-- |
 | Location | Shangri La, on top of part of the starting room center ruins. |
 | Encoding | Hexadecimal |
+| Known techniques | RC4, base conversion |
 | Bytes | 1867 |
