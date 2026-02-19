@@ -7,7 +7,7 @@ const WAW_CIPHERS = [
 		label: 'General',
 		items: [
 			{
-				label: 'Character Bios',
+				label: 'Character Bios Solve',
 				slug: 'ciphers/waw/general/bios',
 			}
 		]
@@ -16,11 +16,11 @@ const WAW_CIPHERS = [
 		label: 'Verruckt',
 		items: [
 			{
-				label: 'Verruckt 1',
+				label: 'Verruckt 1 Solve',
 				slug: 'ciphers/waw/verruckt/verruckt1',
 			},
 			{
-				label: 'Verruckt 2',
+				label: 'Verruckt 2 Solve',
 				slug: 'ciphers/waw/verruckt/verruckt2',
 			},
 		]
@@ -29,15 +29,15 @@ const WAW_CIPHERS = [
 		label: 'Der Riese',
 		items: [
 			{
-				label: 'Der Riese 1',
+				label: 'Der Riese 1 Solve',
 				slug: 'ciphers/waw/derriese/derriese1',
 			},
 			{
-				label: 'Der Riese 2',
+				label: 'Der Riese 2 Solve',
 				slug: 'ciphers/waw/derriese/derriese2',
 			},
 			{
-				label: 'Der Riese 3',
+				label: 'Der Riese 3 Solve',
 				slug: 'ciphers/waw/derriese/derriese3',
 			},
 		]
@@ -93,6 +93,111 @@ const BO3_CIPHERS = [
 	}
 ];
 
+const COMIC_CIPHERS = [
+	{
+		label: 'Issue 1',
+		items: [
+			{
+				label: 'Comic Cipher 1.1 Solve',
+				slug: 'ciphers/comics/issue1/cipher1',
+			},
+			{
+				label: 'Comic Cipher 1.2 Solve',
+				slug: 'ciphers/comics/issue1/cipher2',
+			},
+			{
+				label: 'Comic Cipher 1.3 Solve',
+				slug: 'ciphers/comics/issue1/cipher3',
+			},
+		]
+	},
+	{
+		label: 'Issue 2',
+		items: [
+			{
+				label: 'Comic Cipher 2.1 Solve',
+				slug: 'ciphers/comics/issue2/cipher1',
+			},
+			{
+				label: 'Comic Cipher 2.2 Solve',
+				slug: 'ciphers/comics/issue2/cipher2',
+			},
+			{
+				label: 'Comic Cipher 2.3 Solve',
+				slug: 'ciphers/comics/issue2/cipher3',
+			},
+		]
+	},
+	{
+		label: 'Issue 3',
+		items: [
+			{
+				label: 'Comic Cipher 3.1 Solve',
+				slug: 'ciphers/comics/issue3/cipher1',
+			},
+			{
+				label: 'Comic Cipher 3.2 Solve',
+				slug: 'ciphers/comics/issue3/cipher2',
+			},
+			{
+				label: 'Comic Cipher 3.3 Solve',
+				slug: 'ciphers/comics/issue3/cipher3',
+			},
+		]
+	},
+	{
+		label: 'Issue 4',
+		items: [
+			{
+				label: 'Comic Cipher 4.1 Solve',
+				slug: 'ciphers/comics/issue4/cipher1',
+			},
+			{
+				label: 'Comic Cipher 4.2 Solve',
+				slug: 'ciphers/comics/issue4/cipher2',
+			},
+			{
+				label: 'Comic Cipher 4.3 Solve',
+				slug: 'ciphers/comics/issue4/cipher3',
+			},
+		]
+	},
+	{
+		label: 'Issue 5',
+		items: [
+			{
+				label: 'Comic Cipher 5.1 Solve',
+				slug: 'ciphers/comics/issue5/cipher1',
+			},
+			{
+				label: 'Comic Cipher 5.2 Solve',
+				slug: 'ciphers/comics/issue5/cipher2',
+			},
+			{
+				label: 'Comic Cipher 5.3 Solve',
+				slug: 'ciphers/comics/issue5/cipher3',
+			},
+		]
+	},
+	{
+		label: 'Issue 6',
+		items: [
+			{
+				label: 'Comic Cipher 6.1 Solve',
+				slug: 'ciphers/comics/issue6/cipher1',
+			},
+			{
+				label: 'Comic Cipher 6.2 Solve',
+				slug: 'ciphers/comics/issue6/cipher2',
+			},
+			{
+				label: 'Comic Cipher 6.3 Solve',
+				slug: 'ciphers/comics/issue6/cipher3',
+			},
+		]
+	}
+]
+
 export default defineConfig({
 	site: "https://irebased.github.io/Unsolved-BOIII-Ciphers",
 	base: "/Unsolved-BOIII-Ciphers",
@@ -119,6 +224,10 @@ export default defineConfig({
 						{
 							label: 'Black Ops III',
 							items: BO3_CIPHERS
+						},
+						{
+							label: 'Comics',
+							items: COMIC_CIPHERS
 						}
 					],
 				},

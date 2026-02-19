@@ -18,6 +18,13 @@ export const SOLVERS = {
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev9",
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev10",
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev12",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue2/cipher2",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue3/cipher1",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue3/cipher2",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue4/cipher2",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue4/cipher3",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue5/cipher3",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue6/cipher1",
         ],
         "credits": [
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev11",
@@ -39,6 +46,7 @@ export const SOLVERS = {
         "platform": "reddit",
         "solves": [
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev13",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue1/cipher1"
         ],
         "credits": [
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev4",
@@ -67,6 +75,9 @@ export const SOLVERS = {
         "solves": [
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev4",
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev14",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue2/cipher1",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue6/cipher2",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue6/cipher3",
         ],
     },
     "Lizizadolphin": {
@@ -74,6 +85,12 @@ export const SOLVERS = {
         "solves": [
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev4",
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev14",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue2/cipher1",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue2/cipher3",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue4/cipher1",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue5/cipher1",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue5/cipher2",
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue6/cipher3",
         ],
     },
     "preferredwhale6": {
@@ -112,7 +129,19 @@ export const SOLVERS = {
         "solves": [
             "/Unsolved-BOIII-Ciphers/ciphers/waw/general/bios",
         ]
-    }
+    },
+    "reecewood17": {
+        "platform": "twitter",
+        "solves": [
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue1/cipher3",
+        ]
+    },
+    "Richkiller": {
+        "platform": "discord",
+        "solves": [
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue3/cipher3",
+        ]
+    },
 }
 
 const CIPHER_PREFIXES = {
@@ -122,7 +151,13 @@ const CIPHER_PREFIXES = {
 };
 
 export function getCipherLabel(path) {
-    const slug = path.split('/').pop();
+    const parts = path.split('/');
+    const slug = parts.pop();
+
+    // Handle comics/issueN/cipherM pattern
+    const comicMatch = path.match(/comics\/issue(\d+)\/cipher(\d+)$/);
+    if (comicMatch) return `Comic Issue #${comicMatch[1]}, Cipher #${comicMatch[2]}`;
+
     const match = slug.match(/^([a-z]+)(\d+)$/);
     if (!match) return slug;
     const prefix = CIPHER_PREFIXES[match[1]];
