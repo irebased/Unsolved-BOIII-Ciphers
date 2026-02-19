@@ -11,6 +11,19 @@ const WAW_CIPHERS = [
 				slug: 'ciphers/waw/general/bios',
 			}
 		]
+	},
+	{
+		label: 'Verruckt',
+		items: [
+			{
+				label: 'Verruckt 1',
+				slug: 'ciphers/waw/verruckt/verruckt1',
+			},
+			{
+				label: 'Verruckt 2',
+				slug: 'ciphers/waw/verruckt/verruckt2',
+			},
+		]
 	}
 ]
 
@@ -93,6 +106,7 @@ export default defineConfig({
 					],
 				},
 				{ label: 'Acknowledgements', slug: 'acknowledgements'},
+				{ label: 'Leaderboard', slug: 'leaderboard' },
 			],
 		}),
 	],
