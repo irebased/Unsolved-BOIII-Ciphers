@@ -106,6 +106,12 @@ export const SOLVERS = {
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/gk12",
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev3",
         ],
+    },
+    "RageOverlord": {
+        "platform": "twitter",
+        "solves": [
+            "/Unsolved-BOIII-Ciphers/ciphers/waw/general/bios",
+        ]
     }
 }
 
