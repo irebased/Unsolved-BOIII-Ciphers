@@ -24,6 +24,23 @@ const WAW_CIPHERS = [
 				slug: 'ciphers/waw/verruckt/verruckt2',
 			},
 		]
+	},
+	{
+		label: 'Der Riese',
+		items: [
+			{
+				label: 'Der Riese 1',
+				slug: 'ciphers/waw/derriese/derriese1',
+			},
+			{
+				label: 'Der Riese 2',
+				slug: 'ciphers/waw/derriese/derriese2',
+			},
+			{
+				label: 'Der Riese 3',
+				slug: 'ciphers/waw/derriese/derriese3',
+			},
+		]
 	}
 ]
 
