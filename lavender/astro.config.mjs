@@ -93,6 +93,51 @@ const BO3_CIPHERS = [
 	}
 ];
 
+const BO2_CIPHERS = [
+	{
+		label: 'Tranzit',
+		items: [
+			{
+				label: 'Tranzit 1 Solve',
+				slug: 'ciphers/bo2/tranzit/tranzit1',
+			}
+		]
+	},
+	{
+		label: 'Mob of the Dead',
+		items: [
+			{
+				label: 'Mob of the Dead 1 Solve',
+				slug: 'ciphers/bo2/motd/mob1',
+			},
+			{
+				label: 'Mob of the Dead 2 Solve',
+				slug: 'ciphers/bo2/motd/mob2',
+			},
+			{
+				label: 'Mob of the Dead 3 Solve',
+				slug: 'ciphers/bo2/motd/mob3',
+			},
+			{
+				label: 'Mob of the Dead 4 Solve',
+				slug: 'ciphers/bo2/motd/mob4',
+			},
+			{
+				label: 'Mob of the Dead 5 Solve',
+				slug: 'ciphers/bo2/motd/mob5',
+			},
+			{
+				label: 'Mob of the Dead 6 Solve',
+				slug: 'ciphers/bo2/motd/mob6',
+			},
+			{
+				label: 'Mob of the Dead 7 Solve',
+				slug: 'ciphers/bo2/motd/mob7',
+			},
+		]
+	}
+]
+
 const COMIC_CIPHERS = [
 	{
 		label: 'Issue 1',
@@ -220,6 +265,10 @@ export default defineConfig({
 						{
 							label: 'World at War',
 							items: WAW_CIPHERS
+						},
+						{
+							label: 'Black Ops II',
+							items: BO2_CIPHERS
 						},
 						{
 							label: 'Black Ops III',

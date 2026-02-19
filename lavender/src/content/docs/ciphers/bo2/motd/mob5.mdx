@@ -1,0 +1,33 @@
+---
+title: Mob of the Dead 5 Solve
+description: Overview of the solved cipher 5 from Mob of the Dead
+---
+import Info from '../../../../../components/Info.astro';
+import CodeBlockWithLength from '../../../../../components/CodeWithLength.astro';
+import Username from '../../../../../components/Username.astro';
+import cipher from '../../../../../assets/bo2/motd_5.webp';
+import { Image } from 'astro:assets';
+
+<Image src={cipher} alt={`Mob of the Dead Cipher 5`} />
+> Credit: <Username name="Richkiller" /> for solving this cipher.
+
+## Solution
+
+This cipher is an ADFGX cipher.
+
+- Transposition key: `ZOMBIE`
+- Substitution mapping: `ABCDEFGHIKLMN -> DRINGESTFAKCH`
+
+Step 1: remove one of the "FDGFFG" lines
+
+Step 2: Apply transposition key
+
+Step 3: Map each pair to the first unused letter in English alphabet (Excluding J)
+
+Step 4: Apply substitution mapping
+
+## Plaintext
+
+> Dringend der Riese ist in Frankreich
+
+> *Translation: Urgent the giant is in France*

@@ -46,7 +46,11 @@ export const SOLVERS = {
         "platform": "reddit",
         "solves": [
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev13",
-            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue1/cipher1"
+            "/Unsolved-BOIII-Ciphers/ciphers/comics/issue1/cipher1",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob1",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob2",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob3",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob4",
         ],
         "credits": [
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev4",
@@ -68,6 +72,10 @@ export const SOLVERS = {
         "platform": "reddit",
         "solves": [
             "/Unsolved-BOIII-Ciphers/ciphers/bo3/rev4",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob1",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob2",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob3",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob4",
         ],
     },
     "oxin8": {
@@ -140,7 +148,23 @@ export const SOLVERS = {
         "platform": "discord",
         "solves": [
             "/Unsolved-BOIII-Ciphers/ciphers/comics/issue3/cipher3",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob5",
         ]
+    },
+    "NGTZombies": {
+        "platform": "youtube",
+        "solves": [
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/tranzit/tranzit1",
+        ]
+    },
+    "Shootinfish": {
+        "platform": "unknown",
+        "solves": [
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob1",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob2",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob3",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob4",
+        ],
     },
 }
 
@@ -148,6 +172,8 @@ const CIPHER_PREFIXES = {
     rev: 'Revelations',
     gk: 'Gorod Krovi',
     tg: 'The Giant',
+    tranzit: 'Tranzit',
+    mob: 'Mob of the Dead'
 };
 
 export function getCipherLabel(path) {
