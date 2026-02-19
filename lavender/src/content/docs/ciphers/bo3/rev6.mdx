@@ -1,0 +1,60 @@
+---
+title: Revelations 6 Solve
+description: Overview of Revelations 6 cipher
+---
+import Info from '../../../../components/Info.astro';
+import CodeBlockWithLength from '../../../../components/CodeWithLength.astro';
+import RevelationsSnippet from '../../../../components/RevelationsSnippet.astro';
+import Username from '../../../../components/Username.astro';
+import cipher from '../../../../assets/revelations_6.png';
+import { Image } from 'astro:assets';
+
+<Info title="This cipher was took 3,451 days to solve!" variant="info">
+    This cipher went unsolved from September 6, 2016 until February 17, 2026, spanning 3,451 days.
+
+    Congratulations to <Username name="randomiser" type="discord"/> for solving this cipher!
+    This is the longest time taken to solve a cipher in the history of the series (beating GK 12 by just 9 days), and it is a
+    testament to the difficulty of this cipher.
+</Info>
+
+
+<Image src={cipher} alt={`Revelations 6 cipher texture`} />
+
+
+## Ciphertext
+
+<CodeBlockWithLength code={
+`100 097 102 050 048 050 050 057 099 100 102 051 101 101 097 054 050 050 050 097 101 100 099 052 098 097
+050 101 056 054 056 052 057 101 057 055 097 049 056 100 098 049 100 051 057 100 049 050 052 098 101 057
+102 056 049 057 099 101 102 051 052 054 052 048 052 054 052 102 098 054 101 097 099 050 097 050 056 052
+054 100 098 048 053 052 098 053 098 098 050 098 097 097 049 097 101 051 052 052 052 050 097 050 054 100
+048 052 097 050 054 052 049 053 097 057 098 051 057 098 048 100 050 048 048 097 051 048 098 100 099 054
+057 057 056 099 101 098 052 051 099 048 051 051 053 097 054 050 097 097 100 051 056 053 050 099 054 057
+101 054 101 057 102 101 098 097 099 100 050 051 056 100 052 054 100 099 053 102 055 100 052 101 097 049
+048 102 100 099 051 057 049 056 054 100 056 049 057 052 054 099 102 054 052 050 051 100 102 049 056 056
+102 102 101 057 102 102 057 102 102 049 050 053 050 101 051 101 101 097 054 048 049 097 051 053 098 101
+048 054 101 102 099 099 054 097 057 054 049 054 056 100 099 101 053 054 056 100 013 010`
+}/>
+
+
+## Solution
+
+- *Credit to <Username name="randomiser" type="discord"/> for solving this cipher!*
+
+### Important notes
+
+<RevelationsSnippet />
+
+### Steps
+
+Step 1: Decode from decimal. This provides a hexadecimal string.
+
+Step 2: Reverse the hexadecimal string and convert from hex to base64.
+
+Step 3: Serpent (CFB) decrypt with key "Zombies" and hexadecimal IV `30303030303030303030303030303030`.
+
+Step 4: Substitution cipher with alphabet `hdixvqlmenojkpbrstcufwgyza`.
+
+## Plaintext
+
+> oh zombies what will we do when your gone life without you will be dull but it is time to go somewhere new and sing a new song

@@ -1,0 +1,42 @@
+---
+title: Revelations 3 Solve
+description: Overview of the solved Revelations 2 cipher
+---
+import CodeBlockWithLength from '../../../../components/CodeWithLength.astro';
+import Username from '../../../../components/Username.astro';
+import cipher from '../../../../assets/revelations_3.webp';
+import { Image } from 'astro:assets';
+
+<Image src={cipher} alt={`Revelations 3 cipher texture`} />
+
+> Credit: u/pretz
+
+## Ciphertext
+
+<CodeBlockWithLength code={
+`@CB?>?>C@F?A?>CCCG??@C>?@C@C>???G=?C?=C@CGBC@CB?G@A?=CB?C?G<?>CB@C=CB?<FG<?>C>C>CA?B?AGA?F?C?@CA?G=?B?>C@B?`
+}/>
+
+## Solution
+
+The original solution found by <Username name="u/pretz" type="reddit"/> is as follows:
+
+1. Reverse the cipher,
+2. Perform ASCII to decimal conversion
+3. Interpret the decimal as octal, and perform an octal to ASCII conversion.
+4. Perform a straddling checkerboard with key `fkmcpdyehbigqrosazlutjnwvx` and spare positions 3 and 7.
+
+<Username name="junedgasp" type="discord"/> was able to find a simpler solve,
+which simplifies the approach to 3 steps rather than 4:
+
+1. Base10 conversion based on order of appearance.: `@ = 1, C = 2, B = 3`, etc.
+
+2. Straddling checkerboard brute force, on both normal and reversed encoding:
+
+`SALSYFWIRVWFESWLLLZFDHSOIBLZFRSOWAFSIKFIORYFTUIIUITFJLWVALUSI`
+
+3. Substitution on the valid decrypt with the IOC closest to English.
+
+`OCTOBERNSAREFORTTTHEYWOUNDTHESOURCEONMENUSBEGINNINGEXTRACTION`
+
+

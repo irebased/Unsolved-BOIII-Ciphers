@@ -1,0 +1,34 @@
+---
+title: TheGiant
+description: Overview of TheGiant cipher
+---
+
+import CodeBlockWithLength from '../../../../components/CodeWithLength.astro';
+import cipher from '../../../../assets/tg_1.png';
+import { Image } from 'astro:assets';
+import '../../../../global.css'
+
+<Image src={cipher} alt={`TheGiant cipher texture`} />
+
+## Ciphertext
+<CodeBlockWithLength code={
+`kCmlgFi6GUJNgkNI1Q41fbfyLoCFTCvIqkZiI0KIAXAzP1U1uy1BE4UfPBfpKmmLObjYnQNRBaPtKiVWzc5A4v0w3xle8FOhAGJZ7g4in0wndJxMOvO3dc1M82at2T6935roTqyWDgtGD/hwwRF3oHqFM5Vcw1JtINbsgWRm4o4/quEDkZ7x1B275bX3/Fo1`
+}/>
+
+| Field | Value |
+| :-- | :-- |
+| Location | In a zombie barrier underneath the clocktower, taped to the back wall upside down |
+| Encoding | Base64 |
+| Bytes | 144 |
+
+## Overview
+
+This is the only remaining unsolved cipher that might have a key
+presented, in `TheGiant` on the top left. It is a base64 string
+that does not decode to anything meaningful.
+
+Based on the solutions to the revelations ciphers that are base64, the leading
+hypothesis for this cipher is that it is encrypted using a modern algorithm such
+as AES, DES, or similar. The mcrypt method on key "TheGiant" or similar has been
+mostly exhausted, so there is something missing preventing this cipher from being
+solved.

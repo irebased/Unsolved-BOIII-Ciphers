@@ -9,7 +9,7 @@ import Info from '../../components/Info.astro';
 import Username from '../../components/Username.astro';
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-<Info title="Bounties" variant="general">
+<Info title="Bounties" variant="info">
 	These ciphers have accumulated several bounties, accumulating several hundred dollars in rewards.
 	To see the latest bounty amounts, check out the cipher-bounties forum in the <a href="https://discord.gg/dsjVrtYygJ" target="_blank"><Username name="Skite's Aether" type="discord"/></a> discord server.
 </Info>
@@ -22,38 +22,69 @@ acknowledgements and learning about the hunt!
 - [About the hunt](/Unsolved-BOIII-Ciphers/background)
 - [Acknowledgements](/Unsolved-BOIII-Ciphers/acknowledgements)
 
-In terms of the cipher difficulty, there are two ciphers that are perhaps the easiest remaining,
-at least on the surface.
-
-- [Revelations 11](/Unsolved-BOIII-Ciphers/ciphers/rev11) - it is already partially solved.
-- [TheGiant](/Unsolved-BOIII-Ciphers/ciphers/tg1) - it is the only cipher left that has a candidate key easily visible.
-
-The rest, despite having interesting artifacts, have had no progress made. So perhaps start with one of the two above.
+There are now only 4 remaining unsolved ciphers from Black Ops III Zombies.
+- [The Giant](/Unsolved-BOIII-Ciphers/ciphers/bo3/tg1): possibly modern encryption.
+- [Revelations 1](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev1): possibly modern encryption but also may just be a hash/key.
+- [Revelations 7](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev7): likely modern encryption.
+- [Revelations 11](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev11): the last remaining purely classical encryption cipher that is unsolved.
 
 ## The Giant
 
-The last remaining unsolved cipher on the giant can be found [here](/Unsolved-BOIII-Ciphers/ciphers/tg1)
+The last remaining unsolved cipher on the giant can be found [here](/Unsolved-BOIII-Ciphers/ciphers/bo3/tg1).
 
 ## Gorod Krovi
 
 The last remaining cipher on Gorod Krovi was solved by <Username name="JessesOcean" type="discord"/>
 using tooling built by <Username name="WXAudio" type="discord"/> and alphabet from
 <Username name="codewarrior0" type="reddit"/>. This is the first of the "hard" ciphers that was solved
-by members of the Skites Aether discord server. Solve can be found [here](/Unsolved-BOIII-Ciphers/ciphers/gk1/).
+by members of the Skites Aether discord server. Solve can be found [here](/Unsolved-BOIII-Ciphers/ciphers/bo3/gk12/).
 
 ## Revelations ciphers
 The ciphers are ordered by the name of their texture file in alphabetical order.
-- [Revelations 1](/Unsolved-BOIII-Ciphers/ciphers/rev1)
-- [Revelations 2](/Unsolved-BOIII-Ciphers/ciphers/rev2)
-- [(SOLVED) Revelations 3](/Unsolved-BOIII-Ciphers/ciphers/rev3)
-- [(SOLVED) Revelations 4](/Unsolved-BOIII-Ciphers/ciphers/rev4)
-- [Revelations 5](/Unsolved-BOIII-Ciphers/ciphers/rev5)
-- [Revelations 6](/Unsolved-BOIII-Ciphers/ciphers/rev6)
-- [Revelations 7](/Unsolved-BOIII-Ciphers/ciphers/rev7)
-- [Revelations 8](/Unsolved-BOIII-Ciphers/ciphers/rev8)
-- [Revelations 9](/Unsolved-BOIII-Ciphers/ciphers/rev9)
-- [Revelations 10](/Unsolved-BOIII-Ciphers/ciphers/rev10)
-- [Revelations 11](/Unsolved-BOIII-Ciphers/ciphers/rev11)
-- [Revelations 12](/Unsolved-BOIII-Ciphers/ciphers/rev12)
-- [(SOLVED) Revelations 13](/Unsolved-BOIII-Ciphers/ciphers/rev13)
-- [(SOLVED) Revelations 14](/Unsolved-BOIII-Ciphers/ciphers/rev14)
+
+In eary February of 2026, <Username name="JessesOcean" type="discord"/> cracked the first layer of Revelations 10,
+revealing the use of modern encryption despite the director's claims he would not use modern encryption.
+<Username name="randomiser" type="discord"/> was then able to find an old, deprecated PHP library called "mcrypt"
+that used CFB8 instead of nCFB. This happened to be the ONLY way to get the Revelations ciphers to solve, as pretty
+much all modern tools use nCFB. Due to this finding, <Username name="randomiser" type="discord"/> dropped a bombshell
+on February 17th, 2026, sharing he had solved 7 of the ciphers including Revelations 2, 5, 6, 8, 9, 10, and 12. All of
+the ciphers used key "Zombies" and some containd multiple layers of modern encryption, while others mixed in relatively
+simple classical layers.
+- [Revelations 1](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev1)
+- [(SOLVED) Revelations 2](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev2)
+- [(SOLVED) Revelations 3](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev3)
+- [(SOLVED) Revelations 4](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev4)
+- [(SOLVED) Revelations 5](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev5)
+- [(SOLVED) Revelations 6](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev6)
+- [Revelations 7](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev7)
+- [(SOLVED) Revelations 8](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev8)
+- [(SOLVED) Revelations 9](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev9)
+- [(SOLVED) Revelations 10](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev10)
+- [Revelations 11](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev11)
+- [(SOLVED) Revelations 12](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev12)
+- [(SOLVED) Revelations 13](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev13)
+- [(SOLVED) Revelations 14](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev14)
+
+## How credits work
+
+On this website, you will see usernames of people from Reddit, Discord, YouTube, and other communities (ex: <Username name="randomiser" type="discord"/>).
+Next to these usernames, you may see a green or blue badge. The green badge indicates the number of times
+this contributor was the *first recorded person* to solve a cipher. The blue badge indicates the number of
+ciphers where the contributor is credited with helping with the solve in some way.
+
+There may be multiple contributors credited with "solving" a cipher for the first time. Due to the nature of
+the work, multiple contributors may be responsible for significant efforts that resulted in the final solution.
+We want to recognize this effort. Credits are for smaller contributions that may have shifted or clarified a solution
+in a minor way.
+
+Clicking on the green badge will show the list of ciphers that the contributor is credited with solving. Clicking on the
+blue badge will show the list of ciphers that the contributor is credited for some effort towards the solution.
+
+<Info title="Credit lmitations" variant="warning">
+	Because this site is an attempt to document the history of cipher solves from 10+ years ago
+	(as of the time of this writing), there may be some inaccuracies in the credits. First, the
+	counts are based on what has been documented in this website. If a number looks lower than expected,
+	it may be because other ciphers the contributor solved or was given credit for have not yet
+	been documented here. Second, the credits are based on the best information available.
+	If you see a mistake in the credits, please feel free to reach out to the maintainers of this site to get it fixed!
+</Info>

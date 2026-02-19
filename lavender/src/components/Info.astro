@@ -8,42 +8,11 @@ const {
   title,
   variant = 'info',
 } = Astro.props as Props;
-
-const variants = {
-  info: {
-    bg: '#EFF6FF',
-    border: '#3B82F6',
-    text: '#1E3A8A',
-  },
-  success: {
-    bg: '#ECFDF5',
-    border: '#10B981',
-    text: '#065F46',
-  },
-  warning: {
-    bg: '#FFFBEB',
-    border: '#F59E0B',
-    text: '#92400E',
-  },
-  error: {
-    bg: '#FEF2F2',
-    border: '#EF4444',
-    text: '#7F1D1D',
-  },
-  general: {
-    bg: '#112211',
-    border: '#151',
-    text: '#fff',
-  },
-};
-
-const v = variants[variant];
 ---
 
 <div
-  class="info-box"
+  class:list={['info-box', `info-box--${variant}`]}
   role="note"
-  style={`--bg:${v.bg}; --border:${v.border}; --text:${v.text};`}
 >
   {title && <div class="title">{title}</div>}
   <div class="content">
@@ -53,12 +22,59 @@ const v = variants[variant];
 
 <style>
   .info-box {
-    background: var(--bg);
-    border-left: 4px solid var(--border);
+    border-left: 4px solid var(--info-border);
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
-    color: var(--text);
     margin: 1rem 0;
+    background: var(--info-bg);
+    color: var(--info-text);
+  }
+
+  .info-box--info {
+    --info-border: #3B82F6;
+    --info-bg: #EFF6FF;
+    --info-text: #1E3A8A;
+  }
+  .info-box--success {
+    --info-border: #10B981;
+    --info-bg: #ECFDF5;
+    --info-text: #065F46;
+  }
+  .info-box--warning {
+    --info-border: #F59E0B;
+    --info-bg: #FFFBEB;
+    --info-text: #92400E;
+  }
+  .info-box--error {
+    --info-border: #EF4444;
+    --info-bg: #FEF2F2;
+    --info-text: #7F1D1D;
+  }
+  .info-box--general {
+    --info-border: #115511;
+    --info-bg: #112211;
+    --info-text: #fff;
+  }
+
+  :global([data-theme='dark']) .info-box--info {
+    --info-bg: rgba(59, 130, 246, 0.1);
+    --info-text: #93BBFD;
+  }
+  :global([data-theme='dark']) .info-box--success {
+    --info-bg: rgba(16, 185, 129, 0.1);
+    --info-text: #6EE7B7;
+  }
+  :global([data-theme='dark']) .info-box--warning {
+    --info-bg: rgba(245, 158, 11, 0.1);
+    --info-text: #FCD34D;
+  }
+  :global([data-theme='dark']) .info-box--error {
+    --info-bg: rgba(239, 68, 68, 0.1);
+    --info-text: #FCA5A5;
+  }
+  :global([data-theme='dark']) .info-box--general {
+    --info-bg: #112211;
+    --info-text: #fff;
   }
 
   .title {

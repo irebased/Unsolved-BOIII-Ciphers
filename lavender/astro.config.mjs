@@ -27,25 +27,25 @@ export default defineConfig({
 								{
 									label: 'Unsolved',
 									items: [
-										{ label: 'Revelations 1', slug: 'ciphers/rev1' },
-										{ label: 'Revelations 2', slug: 'ciphers/rev2' },
-										{ label: 'Revelations 5', slug: 'ciphers/rev5' },
-										{ label: 'Revelations 6', slug: 'ciphers/rev6' },
-										{ label: 'Revelations 7', slug: 'ciphers/rev7' },
-										{ label: 'Revelations 8', slug: 'ciphers/rev8' },
-										{ label: 'Revelations 9', slug: 'ciphers/rev9' },
-										{ label: 'Revelations 10', slug: 'ciphers/rev10' },
-										{ label: 'Revelations 11', slug: 'ciphers/rev11' },
-										{ label: 'Revelations 12', slug: 'ciphers/rev12' },
+										{ label: 'Revelations 1', slug: 'ciphers/bo3/rev1' },
+										{ label: 'Revelations 7', slug: 'ciphers/bo3/rev7' },
+										{ label: 'Revelations 11', slug: 'ciphers/bo3/rev11' },
 									]
 								},
 								{
 									label: 'Solved',
 									items: [
-										{ label: 'Revelations 3 Solve', slug: 'ciphers/rev3' },
-										{ label: 'Revelations 4 Solve', slug: 'ciphers/rev4' },
-										{ label: 'Revelations 13 Solve', slug: 'ciphers/rev13' },
-										{ label: 'Revelations 14 Solve', slug: 'ciphers/rev14' },
+										{ label: 'Revelations 2 Solve', slug: 'ciphers/bo3/rev2' },
+										{ label: 'Revelations 3 Solve', slug: 'ciphers/bo3/rev3' },
+										{ label: 'Revelations 4 Solve', slug: 'ciphers/bo3/rev4' },
+										{ label: 'Revelations 5 Solve', slug: 'ciphers/bo3/rev5' },
+										{ label: 'Revelations 6 Solve', slug: 'ciphers/bo3/rev6' },
+										{ label: 'Revelations 8 Solve', slug: 'ciphers/bo3/rev8' },
+										{ label: 'Revelations 9 Solve', slug: 'ciphers/bo3/rev9' },
+										{ label: 'Revelations 10 Solve', slug: 'ciphers/bo3/rev10' },
+										{ label: 'Revelations 12 Solve', slug: 'ciphers/bo3/rev12' },
+										{ label: 'Revelations 13 Solve', slug: 'ciphers/bo3/rev13' },
+										{ label: 'Revelations 14 Solve', slug: 'ciphers/bo3/rev14' },
 									]
 								}
 							]
@@ -53,7 +53,7 @@ export default defineConfig({
 						{
 							label: 'Gorod Krovi',
 							items: [
-								{ label: 'GK Solve', slug: 'ciphers/gk1' },
+								{ label: 'GK12 Solve', slug: 'ciphers/bo3/gk12' },
 							]
 						},
 						{
@@ -62,7 +62,7 @@ export default defineConfig({
 								{
 									label: 'Unsolved',
 									items: [
-																		{ label: 'TheGiant cipher', slug: 'ciphers/tg1' },
+										{ label: 'The Giant cipher', slug: 'ciphers/bo3/tg1' },
 									]
 								}
 							]

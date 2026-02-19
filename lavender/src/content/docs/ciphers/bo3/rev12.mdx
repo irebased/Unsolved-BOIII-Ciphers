@@ -1,0 +1,51 @@
+---
+title: Revelations 12
+description: Overview of Revelations 12 cipher
+---
+import Info from '../../../../components/Info.astro';
+import CodeBlockWithLength from '../../../../components/CodeWithLength.astro';
+import cipher from '../../../../assets/revelations_12.png';
+import RevelationsSnippet from '../../../../components/RevelationsSnippet.astro';
+import Username from '../../../../components/Username.astro';
+import { Image } from 'astro:assets';
+
+<Info title="This cipher was took 3,451 days to solve!" variant="info">
+    This cipher went unsolved from September 6, 2016 until February 17, 2026, spanning 3,451 days.
+
+    Congratulations to <Username name="randomiser" type="discord"/> for solving this cipher!
+    This is the longest time taken to solve a cipher in the history of the series (beating GK 12 by just 9 days), and it is a
+    testament to the difficulty of this cipher.
+</Info>
+
+
+<Image src={cipher} alt={`Revelations 12 cipher texture`} />
+
+
+## Ciphertext
+
+<CodeBlockWithLength code={
+`4521d3f287d5d75616be3fa56852a08234104a78448c2e5a2e5ee6ed7cad795671e6129fec7151d875a0ab9ce7c1b7eb2319d23e264479b5826645b0f6b6d648eb859aa9df6a5cce921b64a2ad0a1f12fbe4d7cd008bd02893156462b1ebed006862f7665a152cc39970ee0aaade5465d2920665e979b9dc6ef6041b8f06802693275418cfb8034ff29bf0f77a3f4f7d84fe63786ede39533d1747c9ff5c0eb3ad5731d09deb68a36e9469b04b86ea484bf3cb39b1ad19e0d05114f593c59ea161a1ada1a97fdd65866c6389fddf8cf7285df6`
+}
+/>
+
+## Solution
+
+- *Credit to <Username name="randomiser" type="discord"/> for solving this cipher!*
+
+### Important notes
+
+<RevelationsSnippet />
+
+### Steps
+
+Step 1: Convert hexadecimal to base64.
+
+Step 2: XTEA (CFB) decrypt with key "Zombies" and hexadecimal IV `30303030303030303030303030303030`.
+
+Step 3: Reverse
+
+Step 4: ROT-6
+
+## Plaintext
+
+> Now that the many worlds are one, it has all reset. There are no Apothicon, Keepers, or 115 knocking around to cause trouble.  Now I can focus on the children, making sure they grow up in a better place. –M

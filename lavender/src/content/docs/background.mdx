@@ -32,18 +32,30 @@ or hypothesized use of modern encryption (although this is frequently disregarde
 record several times stating he does not rely on any modern encryption algorithms for his puzzles).
 
 **478 days after <Username name="SkiteInnit" type="youtube"/> released his video, his community solved one
-of the ciphers. You can read about it [here](/Unsolved-BOIII-Ciphers/ciphers/gk1).**
+of the ciphers. You can read about it [here](/Unsolved-BOIII-Ciphers/ciphers/bo3/gk12).**
+
+Two months later, <Username name="JessesOcean" type="discord"/> cracked the first layer of Revelations 10,
+revealing the use of modern encryption despite the director's claims he would not use modern encryption.
+<Username name="randomiser" type="discord"/> was then able to find an old, deprecated PHP library called
+"mcrypt" that used CFB8 instead of nCFB. This happened to be the ONLY way to get the Revelations ciphers to
+solve, as pretty much all modern tools use nCFB. Due to this finding, <Username name="randomiser" type="discord"/>
+dropped a bombshell on February 17th, 2026, sharing he had solved 7 of the ciphers including
+Revelations 2, 5, 6, 8, 9, 10, and 12. All of the ciphers used key "Zombies" and some containd multiple
+layers of modern encryption, while others mixed in relatively simple classical layers.
 
 ## Where we are
 
-We are now moving on to the remaining 11 unsolved ciphers, and continuing the effort to solve the
-"impossible" easter egg. There is a belief that the revelations ciphers are Jason's intended "impossible"
-easter egg, but there also remains faith that the "impossible" easter egg is something separate.
+We are now attempting to make progress on the remaining 4 unsolved ciphers, and continuing the effort to solve the
+"impossible" easter egg. It is unclear if these Revelations ciphers were intended to be the "Impossible easter egg"
+or not, and we likely will need to solve the rest of them to know for sure.
 
-The remaining ciphers are a completely different challenge from the one that was solved in 2025. The ciphers
-with the best odds of being solved are perhaps [Revelations 11](/Unsolved-BOIII-Ciphers/ciphers/rev11), as several steps have already
-been discovered but the remaining steps are still a mystery, or [TheGiant](/Unsolved-BOIII-Ciphers/ciphers/tg1), since this one comes with
-a key of some sort.
+The remaining ciphers are a bag of mixed tricks. [Revelations 1](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev1) is short enough
+that it appears to possibly be a key or hash rather than a cipher. [Revelations 7](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev7) appears to
+be the only "modern encryption" cipher that has also had spacing manipulated. Revelations 1 and 7 were the only ciphers that did not get
+cracked with the discovery of the "mcrypt" library method, raising slight concerns that they might be broken. [Revelations 11](/Unsolved-BOIII-Ciphers/ciphers/bo3/rev11)
+is the final purely-classical cipher and there is a hypothesis on the initial steps but nothing concrete. [The Giant](/Unsolved-BOIII-Ciphers/ciphers/bo3/tg1) is the only
+remaining cipher that comes with a key of some sort, and appears to be modern encryption. However, the mcrypt method does not reveal any new
+layers to this cipher either.
 
 This website exists partially as historical record keeping, and partially as a way to quickly access information
 about the remaining ciphers. To participate in the hunt, you can either continue on your own or join our efforts

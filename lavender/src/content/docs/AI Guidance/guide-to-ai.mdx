@@ -1,0 +1,81 @@
+---
+title: A Guide to LLMs
+description: LLMs can mislead you and disrupt progress. Let's use them right.
+---
+
+## What is "AI"
+
+AI, or "artificial intelligence," is a blanket term used to refer to silicon-based
+systems that have human-like behavior. A specific approach, called a "large language model,"
+was popularized after broad introduction to the public in 2023 via ChatGPT. Many people tend
+to conflate the terms "AI" with LLMs, as they are the most accessible form of artificial intelligence
+that the public can use. All discussion here will distinguish the two, with LLMs being one form of
+AI. There are also LLM-powered products that wrap LLMs and provide additional resources around the LLM
+to make it far more effective. For simplicity, I will just refer to these as "AI tools."
+
+## LLMs: what do they do?
+
+I won't use this medium to explain, in depth, how LLMs work. But IBM has some [good coverage](https://www.ibm.com/think/topics/large-language-models)
+on the topic that you can read if you'd like. What you really need to understand is that LLMs
+can be boiled down to being really good word prediction systems. They are trained on massive amounts
+of data (typically stolen from the internet without permission) to calculate how words and sentences
+should be structured, as well as likely responses to queries you send. Notice I said *calculate* rather
+than *understand*. This is key, LLMs do not *understand* anything. They do not *think*. They are not sentient,
+nor intelligent. They are prediction algorithms.
+
+## Can an LLM solve ciphers?
+
+In short, no. LLMs on their own are not capable of solving ciphers, especially the ones we have in our
+hunt. You may open ChatGPT and plug in a simple caesar shift, Vigenere, ADFGX, and get a correct solution.
+What's the deal? ChatGPT is not just an LLM. It is a product built on top of an LLM. The product has an execution
+environment and likely something called an *[MCP server](https://www.dremio.com/blog/what-is-the-model-context-protocol-mcp-and-why-it-matters-for-ai-applications/?utm_campaign=Search%20%2d%20Nonbrand%20%2d%20Miscellaneous%20%2d%20Global&utm_medium=cpc&utm_source=google&utm_term=what%20is%20an%20mcp%20server&campaignid=21244509747&adgroupid=192504014068&matchtype=e&gad_source=1&gad_campaignid=21244509747&gbraid=0AAAAACVnO0rPtTTftbI4506aCJrctwnuq&gclid=CjwKCAiA3rPKBhBZEiwAhPNFQH2q4busQMvdOQDaqE_qu0kTId0FqsSo6htWC-eZln_ZzCRo1J5VwhoCfkoQAvD_BwE)*
+which, when combined with an LLM, can do a lot of deterministic tasks. The problem with an LLM on its own is that it
+is a statistical model--it cannot actually do a lick of technical work. It can only give you a bundle of words back that
+are statistically the correct answer based on what it thinks you will accept as correct. This is why early versions of ChatGPT
+struggled to count the number of R's in the word "strawberry."
+
+## What are the limits of AI tools tools like ChatGPT, Gemini, Cursor, or similar?
+
+These tools are undoubtedly powerful, but they are fundamentally misunderstood. Jensen Huang, CEO of NVIDIA, explained AI is
+"work," rather than just a "tool."
+
+> But AI is not a tool. AI is work. That is the profound difference. AI is, in fact, workers that can actually use tools.
+
+*It's important to note Jensen is referring to LLM-powered products ("AI tools," as I mentioned above) when he says "AI" here.*
+
+This is a good starting point. An AI tool can be described as a search tool, as it is standard for them to have web access and provide
+a summary of search results to you. Google, DuckDuckGo, Bing, all major search engines, leverage AI tooling to provide a summary of search
+results before listing URLs now. Chat applications like ChatGPT, Gemini, Claude, Grok, etc. all have internet access as well. This is probably
+the most common use of AI tools today. So where is the "work" being done?
+
+AI tools typically contain an LLM that has been trained heavily on writing code. Code is a useful tool, because when written it can execute commands
+in a deterministic way, and offers idempotency--something an LLM cannot necessarily do as a non-deterministic system. So the LLM is trained to write code
+and has a "system prompt" which may instruct it to write and run code as part of its process for handling user requests. It can write and run code by using
+tools it has access to via an MCP server. This is also how it can perform web searches or, depending on where the tool is running, search through files on your
+computer and read them for more information. This is how LLMs can perform work on your behalf. They can go and collect information from the web, or build a tool
+on your behalf, so that you can use your time elsewhere.
+
+I am being careful with my words by using the phrase "on your behalf." The important concept here: garbage in, garbage out. The biggest limitation to an AI tool is
+*your* knowledge, input, and ability to explore. While an AI tool can do some work for you, and has the capability to prompt itself (a process many companies call "chain of
+thought" but is not really thought at all) it is up to *you* to dictate its path. This is why Jensen's clarification that AI tools are "work" is true. You define the spec,
+you decide what you want to do, and you have the AI tool simply execute/implement what you've already defined. The more ambiguous your spec, the less successful the result will
+likely be.
+
+## How can I best use AI tools?
+
+There are several ways to use AI tools successfully and produce results *faster* than you otherwise would. It must be stressed that for any topic you desire the AI tool to dive into,
+anything beyond the basics should first be understood by the operator (you) prior to asking the AI tool to delve further. An example of this would be to find the optimal solution for
+cracking a double columnar transposition cipher. It may be correct in proposing a hill climb with simulated annealing, but may not. It is important for you to know:
+
+1. What the correct answer is
+2. How the correct answer works
+
+If the AI tool claimed that the best way to crack a double columnar transposition cipher is via divide-and-conquer depth-first search, and you did not know any better, you'd let it implement
+the wrong solution and probably get nowhere. You might even report the incorrect results and drive people away from believing the cipher is double columnar transposition based on these results.
+Further, what if you didn't know what divide-and-conquer or depth-first search algorithms are? What if the AI tool did not properly implement this approach and instead implemented something else
+entirely? Or only partially implemented the solution, leaving some portion in a "TODO" state? Without understanding the solution, you are driving blind.
+
+So follow these principles for success:
+
+1. Delegate work, not understanding. AI tools can do the work you already know how to do. If you don't know how to do it, you don't know if the result is right.
+2. Validate everything. AI tools are notorious for providing convincing
