@@ -166,6 +166,27 @@ export const SOLVERS = {
             "/Unsolved-BOIII-Ciphers/ciphers/bo2/motd/mob4",
         ],
     },
+    "tak-in-the-box": {
+        "platform": "reddit",
+        "solves": [
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/origins/origins1",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/origins/origins2",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/origins/origins3",
+        ]
+    },
+    "youjustgotstuffed": {
+        "platform": "reddit",
+        "solves": [
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/origins/origins3",
+        ]
+    },
+    "MrRoflWaffles": {
+        "platform": "YouTube",
+        "solves": [
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/origins/origins4",
+            "/Unsolved-BOIII-Ciphers/ciphers/bo2/origins/origins5",
+        ]
+    }
 }
 
 const CIPHER_PREFIXES = {
@@ -173,7 +194,8 @@ const CIPHER_PREFIXES = {
     gk: 'Gorod Krovi',
     tg: 'The Giant',
     tranzit: 'Tranzit',
-    mob: 'Mob of the Dead'
+    mob: 'Mob of the Dead',
+    origins: 'Origins'
 };
 
 export function getCipherLabel(path) {

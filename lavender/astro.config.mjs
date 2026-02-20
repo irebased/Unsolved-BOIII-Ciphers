@@ -135,6 +135,35 @@ const BO2_CIPHERS = [
 				slug: 'ciphers/bo2/motd/mob7',
 			},
 		]
+	},
+	{
+		label: 'Origins',
+		items: [
+			{
+				label: 'Origins 1 Solve',
+				slug: 'ciphers/bo2/origins/origins1'
+			},
+			{
+				label: 'Origins 2 Solve',
+				slug: 'ciphers/bo2/origins/origins2'
+			},
+			{
+				label: 'Origins 3 Solve',
+				slug: 'ciphers/bo2/origins/origins3'
+			},
+			{
+				label: 'Origins 4 Solve',
+				slug: 'ciphers/bo2/origins/origins4'
+			},
+			{
+				label: 'Origins 5 Solve',
+				slug: 'ciphers/bo2/origins/origins5'
+			},
+			{
+				label: 'Origins 6 Solve',
+				slug: 'ciphers/bo2/origins/origins6'
+			},
+		]
 	}
 ]
 
