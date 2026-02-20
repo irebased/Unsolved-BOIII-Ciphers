@@ -1,22 +1,7 @@
 ---
-title: Comic Cipher 4.2 Solve
-description: Overview of the solved comic cipher 2 from issue 4
+title: Comic Issue 4 Cipher 2 Solve
+description: Overview of the solved Comic Issue 4 Cipher 2 cipher
 ---
-import Info from '../../../../../components/Info.astro';
-import CodeBlockWithLength from '../../../../../components/CodeWithLength.astro';
-import Username from '../../../../../components/Username.astro';
-import cipher from '../../../../../assets/comics/comic4_2.webp';
-import { Image } from 'astro:assets';
+import CipherPage from '@/components/CipherPage.astro';
 
-<Image src={cipher} alt={`Comic Cipher 4.2`} />
-> Credit: <Username name="randomiser" /> for solving this cipher.
-
-## Solution
-
-This cipher is an Enigma cipher. Settings:
-
-Keys: Enigma M3, Umkehrwalze B, Walzenlage I II III, Ringstellung AAA, Grundstellung UPF for "WPEEN ZDYPG OTH" then UPT for the rest of the cipher.
-
-## Plaintext
-
-> On the final day the soul-less ones will be erased
+<CipherPage id="comic4_2" />

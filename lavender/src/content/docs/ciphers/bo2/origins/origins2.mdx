@@ -1,20 +1,7 @@
 ---
 title: Origins 2 Solve
-description: Overview of the solved cipher 2 from Origins
+description: Overview of the solved Origins 2 cipher
 ---
-import Info from '../../../../../components/Info.astro';
-import CodeBlockWithLength from '../../../../../components/CodeWithLength.astro';
-import Username from '../../../../../components/Username.astro';
-import cipher from '../../../../../assets/bo2/origins_2.webp';
-import { Image } from 'astro:assets';
+import CipherPage from '@/components/CipherPage.astro';
 
-<Image src={cipher} alt={`Origins Cipher 2`} />
-> Credit: <Username name="tak-in-the-box" /> for solving this cipher.
-
-## Solution
-
-This ciphers is a Vigenere cipher with key `wewerethereatthebeginningandattheend`.
-
-## Plaintext
-
-> From his very first day studying at Heidelberg, Edward displayed an intellect and maturity well beyond his years. However, the impact of his parents' death has affected him deeply. Though I have tried to provide him with some sort of father figure, I fear his choices may be increasingly influenced by his new found friends within Group 935.
+<CipherPage id="origins2" />

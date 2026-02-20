@@ -1,0 +1,168 @@
+[
+  {
+    "id": "mob1",
+    "map": "motd",
+    "number": 1,
+    "title": "Mob of the Dead 1",
+    "image": "bo2/motd_1.webp",
+    "solved": true,
+    "solvers": [
+      "waterkh",
+      "certainpersonio",
+      "Shootinfish"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "While I realize that the current lack of cooperation from Chicago's finest leaves us at something of a disadvantage, I find your latest report extremely troubling. The alliance that exists between our outfit and the north side gangs must be sustained - Lest we face a repeat of February 19th 1929.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "hill",
+          "key": "MOBOFTHEDEADABCD"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mob2",
+    "map": "motd",
+    "number": 2,
+    "title": "Mob of the Dead 2",
+    "image": "bo2/motd_2.webp",
+    "solved": true,
+    "solvers": [
+      "waterkh",
+      "certainpersonio",
+      "Shootinfish"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "The answer is simple. No divorce. No matter what ideas Angela may have about making a new life, she needs to understand it's not going to happen. I didn't pluck her pretty little tush from chorus line obscurity just so she can turn around and screw me as soon as times get tough. No divorce. She can leave this marriage, the day she leaves this Earth.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "hill",
+          "key": "MOBOFTHEDEADABCD"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mob3",
+    "map": "motd",
+    "number": 3,
+    "title": "Mob of the Dead 3",
+    "image": "bo2/motd_3.webp",
+    "solved": true,
+    "solvers": [
+      "waterkh",
+      "certainpersonio",
+      "Shootinfish"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "I know it's been a long time, but I wanted to write you just so you know I'm doing well. It's been a long time coming, but I finally managed to make a success of myself in the city. Works been good to me these last few years, so much so that I decided to take a bit of time off. I'll write you again when I get back to work... Maybe I'll even send you some pictures.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "hill",
+          "key": "MOBOFTHEDEADABCD"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mob4",
+    "map": "motd",
+    "number": 4,
+    "title": "Mob of the Dead 4",
+    "image": "bo2/motd_4.webp",
+    "solved": true,
+    "solvers": [
+      "waterkh",
+      "certainpersonio",
+      "Shootinfish"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Enclosed are some more recent illustrations from my proposed comic strip Icarus from Mars. While I understand that you were less than enthusiastic about my previous submissions, I would urge you to look again with fresh eyes. Laid up in the hospital means I've had more time than even to devote to my craft, and my artwork is improving by leaps and bounds. Eagerly waiting your response, Albert Arlington.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "hill",
+          "key": "MOBOFTHEDEADABCD"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mob5",
+    "map": "motd",
+    "number": 5,
+    "title": "Mob of the Dead 5",
+    "image": "bo2/motd_5.webp",
+    "solved": true,
+    "solvers": [
+      "Richkiller"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Dringend der Riese ist in Frankreich",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "adfgx",
+          "key": "ZOMBIE"
+        }
+      ],
+      "notes": "Translation: Urgent the giant is in France"
+    }
+  },
+  {
+    "id": "mob6",
+    "map": "motd",
+    "number": 6,
+    "title": "Mob of the Dead 6",
+    "image": "bo2/motd_6.webp",
+    "solved": true,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "Find and combine scrap pieces around the map to form comic book page with criticizing notes on Icarus from Mars artwork"
+        }
+      ],
+      "notes": "Map puzzle rather than traditional cipher."
+    }
+  },
+  {
+    "id": "mob7",
+    "map": "motd",
+    "number": 7,
+    "title": "Mob of the Dead 7",
+    "image": "bo2/motd_7.webp",
+    "solved": true,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Let go and the beginning will become the end",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "substitution"
+        }
+      ],
+      "notes": "Found in music video. Key mapping provided in motd_7_key.png."
+    }
+  }
+]

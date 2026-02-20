@@ -1,0 +1,62 @@
+[
+  {
+    "id": "derriese1",
+    "map": "derriese",
+    "number": 1,
+    "title": "Der Riese 1",
+    "image": "waw/derriese_1.png",
+    "solved": true,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Faithful servant\nObserve and report\nThe seed has been planted\nMaxis must not know",
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "Illuminati code cipher mapping"
+        }
+      ]
+    }
+  },
+  {
+    "id": "derriese2",
+    "map": "derriese",
+    "number": 2,
+    "title": "Der Riese 2",
+    "image": "waw/derriese_2.webp",
+    "solved": true,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Edward\nIt's time kill Maxis",
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "Illuminati code cipher mapping"
+        }
+      ]
+    }
+  },
+  {
+    "id": "derriese3",
+    "map": "derriese",
+    "number": 3,
+    "title": "Der Riese 3",
+    "image": "waw/derriese_3.webp",
+    "solved": true,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Treyarch",
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "Illuminati code cipher mapping"
+        }
+      ]
+    }
+  }
+]

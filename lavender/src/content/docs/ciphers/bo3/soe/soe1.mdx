@@ -1,20 +1,7 @@
 ---
 title: Shadows of Evil 1 Solve
-description: Overview of the solved cipher 1 from Shadows of Evil
+description: Overview of the solved Shadows of Evil 1 cipher
 ---
-import Info from '../../../../../components/Info.astro';
-import CodeBlockWithLength from '../../../../../components/CodeWithLength.astro';
-import Username from '../../../../../components/Username.astro';
-import cipher from '../../../../../assets/bo3/soe/soe_1.webp';
-import { Image } from 'astro:assets';
+import CipherPage from '@/components/CipherPage.astro';
 
-<Image src={cipher} alt={`Shadows of Evil Cipher 1`} />
-> Credit: <Username name="OriqinalXiln" /> for solving this cipher.
-
-## Solution
-
-This ciphers is a Porta cipher with key `ONLYTHECURSEDSURVIVE`.
-
-## Plaintext
-
-> The elders will continue to seed space and time I must lead them to the place they cannot see
+<CipherPage id="soe1" />

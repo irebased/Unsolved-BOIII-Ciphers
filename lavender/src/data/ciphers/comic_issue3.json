@@ -1,0 +1,73 @@
+[
+  {
+    "id": "comic3_1",
+    "map": "comic_issue3",
+    "number": 1,
+    "title": "Comic Issue 3 Cipher 1",
+    "image": "comics/comic3_1.webp",
+    "solved": true,
+    "solvers": [
+      "randomiser"
+    ],
+    "credits": [],
+    "plaintext": "Wisdom means little to the unwise",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "rail_fence",
+          "rails": 5,
+          "offset": 3
+        }
+      ]
+    },
+    "ciphertext": null
+  },
+  {
+    "id": "comic3_2",
+    "map": "comic_issue3",
+    "number": 2,
+    "title": "Comic Issue 3 Cipher 2",
+    "image": "comics/comic3_2.webp",
+    "solved": true,
+    "solvers": [
+      "randomiser"
+    ],
+    "credits": [],
+    "plaintext": "There are many histories, many futures. Only one can prevail",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "ubchi",
+          "key": "Episode 3"
+        }
+      ]
+    },
+    "ciphertext": null
+  },
+  {
+    "id": "comic3_3",
+    "map": "comic_issue3",
+    "number": 3,
+    "title": "Comic Issue 3 Cipher 3",
+    "image": "comics/comic3_3.webp",
+    "solved": true,
+    "solvers": [
+      "Richkiller"
+    ],
+    "credits": [],
+    "plaintext": "Many souls have been lost forever. Many more are at risk",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "vigenere",
+          "key": "Episode three",
+          "alphabet": "Episode three"
+        }
+      ]
+    },
+    "ciphertext": null
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "id": "comic1_1",
+    "map": "comic_issue1",
+    "number": 1,
+    "title": "Comic Issue 1 Cipher 1",
+    "image": "comics/comic1_1.webp",
+    "solved": true,
+    "solvers": [
+      "waterkh"
+    ],
+    "credits": [],
+    "plaintext": "Primis will fail",
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "Leet speak conversion followed by substitution"
+        }
+      ]
+    },
+    "ciphertext": null
+  },
+  {
+    "id": "comic1_2",
+    "map": "comic_issue1",
+    "number": 2,
+    "title": "Comic Issue 1 Cipher 2",
+    "image": "comics/comic1_2.webp",
+    "solved": true,
+    "solvers": [],
+    "credits": [],
+    "plaintext": "Its knowledge is a curse",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "affine",
+          "a": 21,
+          "b": 11
+        }
+      ]
+    },
+    "ciphertext": null
+  },
+  {
+    "id": "comic1_3",
+    "map": "comic_issue1",
+    "number": 3,
+    "title": "Comic Issue 1 Cipher 3",
+    "image": "comics/comic1_3.jpg",
+    "solved": true,
+    "solvers": [
+      "reecewood17"
+    ],
+    "credits": [],
+    "plaintext": "The Keepers shall rise once more",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "vigenere",
+          "key": "ISSUETHECOMICISSUETHECOMICA"
+        }
+      ]
+    },
+    "ciphertext": null
+  }
+]

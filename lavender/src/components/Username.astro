@@ -1,5 +1,5 @@
 ---
-import cipherData from '../data/ciphers.json';
+import { getUser, getAllCiphers } from '@/data/db';
 import { cipherToPath, getCipherLabel } from './solvers.js';
 
 interface Props {
@@ -10,11 +10,11 @@ interface Props {
 const { name, type: fallbackType = 'generic' } = Astro.props as Props;
 
 const lookupKey = name.replace(/^u\//, '');
-const platform = cipherData.users[lookupKey]?.platform ?? fallbackType;
+const platform = getUser(lookupKey)?.platform ?? fallbackType;
 
 const solves: string[] = [];
 const credits: string[] = [];
-for (const cipher of cipherData.ciphers) {
+for (const cipher of getAllCiphers()) {
   const path = cipherToPath(cipher);
   if (cipher.solvers.includes(lookupKey)) solves.push(path);
   if (cipher.credits.includes(lookupKey)) credits.push(path);

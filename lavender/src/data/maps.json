@@ -1,0 +1,74 @@
+{
+  "verruckt": {
+    "game": "waw",
+    "label": "Verruckt"
+  },
+  "derriese": {
+    "game": "waw",
+    "label": "Der Riese"
+  },
+  "waw_general": {
+    "game": "waw",
+    "label": "General"
+  },
+  "tranzit": {
+    "game": "bo2",
+    "label": "Tranzit"
+  },
+  "motd": {
+    "game": "bo2",
+    "label": "Mob of the Dead"
+  },
+  "origins": {
+    "game": "bo2",
+    "label": "Origins"
+  },
+  "soe": {
+    "game": "bo3",
+    "label": "Shadows of Evil"
+  },
+  "the_giant": {
+    "game": "bo3",
+    "label": "The Giant"
+  },
+  "der_eisendrache": {
+    "game": "bo3",
+    "label": "Der Eisendrache"
+  },
+  "zetsubou": {
+    "game": "bo3",
+    "label": "Zetsubou No Shima"
+  },
+  "gorod_krovi": {
+    "game": "bo3",
+    "label": "Gorod Krovi"
+  },
+  "revelations": {
+    "game": "bo3",
+    "label": "Revelations"
+  },
+  "comic_issue1": {
+    "game": "comics",
+    "label": "Issue 1"
+  },
+  "comic_issue2": {
+    "game": "comics",
+    "label": "Issue 2"
+  },
+  "comic_issue3": {
+    "game": "comics",
+    "label": "Issue 3"
+  },
+  "comic_issue4": {
+    "game": "comics",
+    "label": "Issue 4"
+  },
+  "comic_issue5": {
+    "game": "comics",
+    "label": "Issue 5"
+  },
+  "comic_issue6": {
+    "game": "comics",
+    "label": "Issue 6"
+  }
+}

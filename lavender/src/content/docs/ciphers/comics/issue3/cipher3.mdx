@@ -1,20 +1,7 @@
 ---
-title: Comic Cipher 3.3 Solve
-description: Overview of the solved comic cipher 3 from issue 3
+title: Comic Issue 3 Cipher 3 Solve
+description: Overview of the solved Comic Issue 3 Cipher 3 cipher
 ---
-import Info from '../../../../../components/Info.astro';
-import CodeBlockWithLength from '../../../../../components/CodeWithLength.astro';
-import Username from '../../../../../components/Username.astro';
-import cipher from '../../../../../assets/comics/comic3_3.webp';
-import { Image } from 'astro:assets';
+import CipherPage from '@/components/CipherPage.astro';
 
-<Image src={cipher} alt={`Comic Cipher 3.3`} />
-> Credit: <Username name="Richkiller" /> for solving this cipher.
-
-## Solution
-
-This cipher is a Vigenere cipher with a custom alphabet. Botht the cipher key and alphabet key are `Episode three`.
-
-## Plaintext
-
-> Many souls have been lost forever. Many more are at risk
+<CipherPage id="comic3_3" />

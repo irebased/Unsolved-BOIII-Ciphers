@@ -1,0 +1,73 @@
+[
+  {
+    "id": "comic6_1",
+    "map": "comic_issue6",
+    "number": 1,
+    "title": "Comic Issue 6 Cipher 1",
+    "image": "comics/comic6_1.webp",
+    "solved": true,
+    "solvers": [
+      "randomiser"
+    ],
+    "credits": [],
+    "plaintext": "The great deceiver will make himself known",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "trithemius",
+          "initial_shift": 0
+        }
+      ]
+    },
+    "ciphertext": null
+  },
+  {
+    "id": "comic6_2",
+    "map": "comic_issue6",
+    "number": 2,
+    "title": "Comic Issue 6 Cipher 2",
+    "image": "comics/comic6_2.webp",
+    "solved": true,
+    "solvers": [
+      "oxin8"
+    ],
+    "credits": [],
+    "plaintext": "His lies will doom you all",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "bifid",
+          "key": "ISSUESIX",
+          "period": 21
+        }
+      ]
+    },
+    "ciphertext": null
+  },
+  {
+    "id": "comic6_3",
+    "map": "comic_issue6",
+    "number": 3,
+    "title": "Comic Issue 6 Cipher 3",
+    "image": "comics/comic6_3.webp",
+    "solved": true,
+    "solvers": [
+      "oxin8",
+      "Lizizadolphin"
+    ],
+    "credits": [],
+    "plaintext": "The cycle begins",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "autokey",
+          "key": "ISSUESIX"
+        }
+      ]
+    },
+    "ciphertext": null
+  }
+]

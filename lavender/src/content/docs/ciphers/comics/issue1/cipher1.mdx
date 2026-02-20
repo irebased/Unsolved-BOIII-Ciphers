@@ -1,20 +1,7 @@
 ---
-title: Comic Cipher 1.1 Solve
-description: Overview of the solved comic cipher 1 from issue 1
+title: Comic Issue 1 Cipher 1 Solve
+description: Overview of the solved Comic Issue 1 Cipher 1 cipher
 ---
-import Info from '../../../../../components/Info.astro';
-import CodeBlockWithLength from '../../../../../components/CodeWithLength.astro';
-import Username from '../../../../../components/Username.astro';
-import cipher from '../../../../../assets/comics/comic1_1.webp';
-import { Image } from 'astro:assets';
+import CipherPage from '@/components/CipherPage.astro';
 
-<Image src={cipher} alt={`Comic Cipher 1.1`} />
-> Credit: <Username name="waterkh" /> for solving this cipher.
-
-## Solution
-
-This cipher is Leet followed by substitution.
-
-## Plaintext
-
-> Primis will fail
+<CipherPage id="comic1_1" />

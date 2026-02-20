@@ -1,0 +1,125 @@
+[
+  {
+    "id": "soe1",
+    "map": "soe",
+    "number": 1,
+    "title": "Shadows of Evil 1",
+    "image": "bo3/soe/soe_1.webp",
+    "solved": true,
+    "solvers": [
+      "OriqinalXiln"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "The elders will continue to seed space and time I must lead them to the place they cannot see",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "porta",
+          "key": "ONLYTHECURSEDSURVIVE"
+        }
+      ]
+    }
+  },
+  {
+    "id": "soe2",
+    "map": "soe",
+    "number": 2,
+    "title": "Shadows of Evil 2",
+    "image": "bo3/soe/soe_2.webp",
+    "solved": true,
+    "solvers": [
+      "certainpersonio"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Although they have discovered the way Primis will fail",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "trifid"
+        }
+      ]
+    }
+  },
+  {
+    "id": "soe3",
+    "map": "soe",
+    "number": 3,
+    "title": "Shadows of Evil 3",
+    "image": "bo3/soe/soe_3.webp",
+    "solved": true,
+    "solvers": [
+      "MrRoflWaffles"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "M is interested in these worthless beings all his work will be undone",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "four_square"
+        }
+      ]
+    }
+  },
+  {
+    "id": "soe4",
+    "map": "soe",
+    "number": 4,
+    "title": "Shadows of Evil 4",
+    "image": "bo3/soe/soe_4.webp",
+    "solved": true,
+    "solvers": [
+      "LiamFTWinter"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "The formless one, will be their downfall",
+    "solution": {
+      "steps": [
+        {
+          "type": "formula",
+          "method": "Tupper's self-referential formula"
+        }
+      ]
+    }
+  },
+  {
+    "id": "soe5",
+    "map": "soe",
+    "number": 5,
+    "title": "Shadows of Evil 5",
+    "image": "bo3/soe/soe_5.webp",
+    "solved": false,
+    "solvers": ["MrRoflWaffles"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "I am willing to do what must be done the plan must not fail",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "straddling_checkerboard",
+          "configuration": "spare positions 3 and 7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "soe6",
+    "map": "soe",
+    "number": 6,
+    "title": "Shadows of Evil 6",
+    "image": "bo3/soe/soe_6.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  }
+]

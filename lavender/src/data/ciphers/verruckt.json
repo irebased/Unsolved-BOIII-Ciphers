@@ -1,0 +1,42 @@
+[
+  {
+    "id": "verruckt1",
+    "map": "verruckt",
+    "number": 1,
+    "title": "Verruckt 1",
+    "image": "waw/verruckt_1.png",
+    "solved": true,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Living Dead",
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "Illuminati code cipher mapping"
+        }
+      ]
+    }
+  },
+  {
+    "id": "verruckt2",
+    "map": "verruckt",
+    "number": 2,
+    "title": "Verruckt 2",
+    "image": "waw/verruckt_2.webp",
+    "solved": true,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Ohm 935",
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "Illuminati code cipher mapping"
+        }
+      ]
+    }
+  }
+]

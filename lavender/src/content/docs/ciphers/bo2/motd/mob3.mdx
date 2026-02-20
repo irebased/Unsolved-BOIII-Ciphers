@@ -1,20 +1,7 @@
 ---
 title: Mob of the Dead 3 Solve
-description: Overview of the solved cipher 3 from Mob of the Dead
+description: Overview of the solved Mob of the Dead 3 cipher
 ---
-import Info from '../../../../../components/Info.astro';
-import CodeBlockWithLength from '../../../../../components/CodeWithLength.astro';
-import Username from '../../../../../components/Username.astro';
-import cipher from '../../../../../assets/bo2/motd_3.webp';
-import { Image } from 'astro:assets';
+import CipherPage from '@/components/CipherPage.astro';
 
-<Image src={cipher} alt={`Mob of the Dead Cipher 3`} />
-> Credit: <Username name="waterkh" />, <Username name="certainpersonio" />, and <Username name="Shootinfish" /> for solving this cipher.
-
-## Solution
-
-This cipher is a hill cipher with key `MOBOFTHEDEADABCD`.
-
-## Plaintext
-
-> I know it's been a long time, but I wanted to write you just so you know I'm doing well. It's been a long time coming, but I finally managed to make a success of myself in the city. Works been good to me these last few years, so much so that I decided to take a bit of time off. I'll write you again when I get back to work... Maybe I'll even send you some pictures.
+<CipherPage id="mob3" />

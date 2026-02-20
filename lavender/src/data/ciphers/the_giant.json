@@ -1,0 +1,80 @@
+[
+  {
+    "id": "tg1",
+    "map": "the_giant",
+    "number": 1,
+    "title": "The Giant 1",
+    "image": "bo3/thegiant/tg_1.png",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": "kCmlgFi6GUJNgkNI1Q41fbfyLoCFTCvIqkZiI0KIAXAzP1U1uy1BE4UfPBfpKmmLObjYnQNRBaPtKiVWzc5A4v0w3xle8FOhAGJZ7g4in0wndJxMOvO3dc1M82at2T6935roTqyWDgtGD/hwwRF3oHqFM5Vcw1JtINbsgWRm4o4/quEDkZ7x1B275bX3/Fo1",
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "tg2",
+    "map": "the_giant",
+    "number": 2,
+    "title": "The Giant 2",
+    "image": "bo3/thegiant/tg_2.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "tg3",
+    "map": "the_giant",
+    "number": 3,
+    "title": "The Giant 3",
+    "image": "bo3/thegiant/tg_3.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "tg4",
+    "map": "the_giant",
+    "number": 4,
+    "title": "The Giant 4",
+    "image": "bo3/thegiant/tg_4.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "tg5",
+    "map": "the_giant",
+    "number": 5,
+    "title": "The Giant 5",
+    "image": "bo3/thegiant/tg_5.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "tg6",
+    "map": "the_giant",
+    "number": 6,
+    "title": "The Giant 6",
+    "image": "bo3/thegiant/tg_6.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  }
+]

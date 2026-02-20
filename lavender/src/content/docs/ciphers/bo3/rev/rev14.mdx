@@ -1,0 +1,30 @@
+---
+title: Revelations 14 Solve
+description: Overview of the solved Revelations 14 cipher
+---
+import Username from '@/components/Username.astro';
+import cipher from '@/assets/revelations_14.webp';
+import { Image } from 'astro:assets';
+
+<Image src={cipher} alt={`Revelations 14 cipher texture`} />
+
+*Credit to <Username name="u/Lizizadolphin" type="reddit"/>, <Username name="u/oxin8" type="reddit"/> for the solve*
+
+## Ciphertext
+```
+st. reomet s ge toime. Tgodng cki fuank Thse.verunial finhe m tfroed urgn pbeeas 5 h llthell , ahiasoped alln ctioraponte c thandis Maxof ce ifiacre s th tonksTha-M
+```
+
+## Plaintext
+
+> Thanks to the sacrifice of Maxis and the contraption called Sophia all the 115 has been purged from the final universe. Thank fucking god. Time to get some rest. -M
+
+## Solve
+
+This is a transposition cipher. It was solved by:
+
+1. Removing "-M"
+2. Organizing in a 6x27 grid
+3. Rotating the columns by 3
+4. Read from bottom to top.
+5. (Implied) -M goes at the end

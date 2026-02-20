@@ -1,21 +1,7 @@
 ---
-title: Comic Cipher 4.3 Solve
-description: Overview of the solved comic cipher 3 from issue 4
+title: Comic Issue 4 Cipher 3 Solve
+description: Overview of the solved Comic Issue 4 Cipher 3 cipher
 ---
-import Info from '../../../../../components/Info.astro';
-import CodeBlockWithLength from '../../../../../components/CodeWithLength.astro';
-import Username from '../../../../../components/Username.astro';
-import cipher from '../../../../../assets/comics/comic4_3.webp';
-import { Image } from 'astro:assets';
+import CipherPage from '@/components/CipherPage.astro';
 
-<Image src={cipher} alt={`Comic Cipher 4.3`} />
-> Credit: <Username name="randomiser" /> for solving this cipher.
-
-## Solution
-
-This cipher is a Nihilist cipher with key `ISSUEFOUR`.
-
-
-## Plaintext
-
-> Only their sacrifice will restore order
+<CipherPage id="comic4_3" />

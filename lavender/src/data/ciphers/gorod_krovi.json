@@ -1,0 +1,201 @@
+[
+  {
+    "id": "gk1",
+    "map": "gorod_krovi",
+    "number": 1,
+    "title": "Gorod Krovi 1",
+    "image": "bo3/gk/gk_1.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "gk2",
+    "map": "gorod_krovi",
+    "number": 2,
+    "title": "Gorod Krovi 2",
+    "image": "bo3/gk/gk_2.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "gk3",
+    "map": "gorod_krovi",
+    "number": 3,
+    "title": "Gorod Krovi 3",
+    "image": "bo3/gk/gk_3.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "gk4",
+    "map": "gorod_krovi",
+    "number": 4,
+    "title": "Gorod Krovi 4",
+    "image": "bo3/gk/gk_4.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "gk5",
+    "map": "gorod_krovi",
+    "number": 5,
+    "title": "Gorod Krovi 5",
+    "image": "bo3/gk/gk_5.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "gk6",
+    "map": "gorod_krovi",
+    "number": 6,
+    "title": "Gorod Krovi 6",
+    "image": "bo3/gk/gk_6.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "gk7",
+    "map": "gorod_krovi",
+    "number": 7,
+    "title": "Gorod Krovi 7",
+    "image": "bo3/gk/gk_7.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "gk8",
+    "map": "gorod_krovi",
+    "number": 8,
+    "title": "Gorod Krovi 8",
+    "image": "bo3/gk/gk_8.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "gk9",
+    "map": "gorod_krovi",
+    "number": 9,
+    "title": "Gorod Krovi 9",
+    "image": "bo3/gk/gk_9.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "gk10",
+    "map": "gorod_krovi",
+    "number": 10,
+    "title": "Gorod Krovi 10",
+    "image": "bo3/gk/gk_10.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "gk11",
+    "map": "gorod_krovi",
+    "number": 11,
+    "title": "Gorod Krovi 11",
+    "image": "bo3/gk/gk_11.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "gk12",
+    "map": "gorod_krovi",
+    "number": 12,
+    "title": "Gorod Krovi 12",
+    "image": "bo3/gk/gk_12.webp",
+    "solved": true,
+    "solvers": [
+      "JessesOcean",
+      "WXAudio"
+    ],
+    "credits": [
+      "codewarrior0",
+      "junedgasp",
+      "rebase"
+    ],
+    "ciphertext": "Rc qipv jhx vld plson fhceuh itp jui gh qhzu dg sq xie dhw. U gbfl lf fluz pcag wrgkv zw, dinyg zw, qge gnvm L fhx.",
+    "plaintext": "We have won the great battle and now we must be on our way. I fear he will come after us, after me, for what I did.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "autokey",
+          "key": "TRYTHIS",
+          "alphabet": "ZOMBIESAREEVERYWHERE"
+        }
+      ],
+      "notes": "Quagmire III configuration. Custom keyed alphabet. Unsolved for 3,442 days."
+    }
+  },
+  {
+    "id": "gk13",
+    "map": "gorod_krovi",
+    "number": 13,
+    "title": "Gorod Krovi 13",
+    "image": "bo3/gk/gk_13.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "gk14",
+    "map": "gorod_krovi",
+    "number": 14,
+    "title": "Gorod Krovi 14",
+    "image": "bo3/gk/gk_14.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  }
+]

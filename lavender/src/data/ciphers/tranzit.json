@@ -1,0 +1,25 @@
+[
+  {
+    "id": "tranzit1",
+    "map": "tranzit",
+    "number": 1,
+    "title": "Tranzit 1",
+    "image": null,
+    "solved": true,
+    "solvers": [
+      "NGTZombies"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Help me so I can help you\nThe future is ours to destroy\nPower is knowledge\nGo to the light\nStay close to me\nEnergy can only be transformed\nWe shall prevail",
+    "solution": {
+      "steps": [
+        {
+          "type": "decode",
+          "method": "morse"
+        }
+      ],
+      "notes": "Seven morse code messages found in-game."
+    }
+  }
+]

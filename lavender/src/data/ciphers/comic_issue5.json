@@ -1,0 +1,71 @@
+[
+  {
+    "id": "comic5_1",
+    "map": "comic_issue5",
+    "number": 1,
+    "title": "Comic Issue 5 Cipher 1",
+    "image": "comics/comic5_1.jpg",
+    "solved": true,
+    "solvers": [
+      "Lizizadolphin"
+    ],
+    "credits": [],
+    "plaintext": "The voices of darkness and light will call out across time and space.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "route"
+        }
+      ]
+    },
+    "ciphertext": null
+  },
+  {
+    "id": "comic5_2",
+    "map": "comic_issue5",
+    "number": 2,
+    "title": "Comic Issue 5 Cipher 2",
+    "image": "comics/comic5_2.jpg",
+    "solved": true,
+    "solvers": [
+      "Lizizadolphin"
+    ],
+    "credits": [],
+    "plaintext": "The man fool seeks redemption he will not find it",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "porta",
+          "key": "Issue five"
+        }
+      ]
+    },
+    "ciphertext": null
+  },
+  {
+    "id": "comic5_3",
+    "map": "comic_issue5",
+    "number": 3,
+    "title": "Comic Issue 5 Cipher 3",
+    "image": "comics/comic5_3.webp",
+    "solved": true,
+    "solvers": [
+      "randomiser"
+    ],
+    "credits": [],
+    "plaintext": "The agents of chaos must be controlled",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "bifid",
+          "key": "ISSUEFIVE",
+          "period": 32
+        }
+      ]
+    },
+    "ciphertext": null
+  }
+]

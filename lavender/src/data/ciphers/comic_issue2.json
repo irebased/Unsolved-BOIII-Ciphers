@@ -1,0 +1,73 @@
+[
+  {
+    "id": "comic2_1",
+    "map": "comic_issue2",
+    "number": 1,
+    "title": "Comic Issue 2 Cipher 1",
+    "image": "comics/comic2_1.webp",
+    "solved": true,
+    "solvers": [
+      "oxin8",
+      "Lizizadolphin"
+    ],
+    "credits": [],
+    "plaintext": "Shadows are gathering a great evil will be unleashed",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "autokey",
+          "key": "ISSUE TWO"
+        }
+      ]
+    },
+    "ciphertext": null
+  },
+  {
+    "id": "comic2_2",
+    "map": "comic_issue2",
+    "number": 2,
+    "title": "Comic Issue 2 Cipher 2",
+    "image": "comics/comic2_2.webp",
+    "solved": true,
+    "solvers": [
+      "randomiser"
+    ],
+    "credits": [],
+    "plaintext": "Events long foretold will soon come to pass",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "bifid",
+          "key": "ISSUETWO",
+          "period": 36
+        }
+      ]
+    },
+    "ciphertext": null
+  },
+  {
+    "id": "comic2_3",
+    "map": "comic_issue2",
+    "number": 3,
+    "title": "Comic Issue 2 Cipher 3",
+    "image": "comics/comic2_3.webp",
+    "solved": true,
+    "solvers": [
+      "Lizizadolphin"
+    ],
+    "credits": [],
+    "plaintext": "Beware those who would use the truth only to deceive",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "vigenere",
+          "key": "ISSUETWO"
+        }
+      ]
+    },
+    "ciphertext": null
+  }
+]

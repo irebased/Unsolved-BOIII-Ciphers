@@ -1,20 +1,7 @@
 ---
 title: Origins 4 Solve
-description: Overview of the solved cipher 4 from Origins
+description: Overview of the solved Origins 4 cipher
 ---
-import Info from '../../../../../components/Info.astro';
-import CodeBlockWithLength from '../../../../../components/CodeWithLength.astro';
-import Username from '../../../../../components/Username.astro';
-import cipher from '../../../../../assets/bo2/origins_4.webp';
-import { Image } from 'astro:assets';
+import CipherPage from '@/components/CipherPage.astro';
 
-<Image src={cipher} alt={`Origins Cipher 4`} />
-> Credit: <Username name="MrRoflWaffles" /> for solving this cipher.
-
-## Solution
-
-This ciphers is a Vigenere cipher with key `wewerethereatthebeginningandattheend`.
-
-## Plaintext
-
-> I know some would think me mad but I am nevertheless forced to conclude that Samantha herself may be the key to everything. For reasons that I struggle to comprehend, it appears that she somehow holds dominion over this realm.
+<CipherPage id="origins4" />

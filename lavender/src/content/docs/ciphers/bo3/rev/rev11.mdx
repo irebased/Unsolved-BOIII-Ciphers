@@ -1,0 +1,78 @@
+---
+title: Revelations 11
+description: Overview of Revelations 11 cipher
+---
+import Username from '@/components/Username.astro';
+import CodeBlockWithLength from '@/components/CodeWithLength.astro';
+import cipher from '@/assets/revelations_11.png';
+import { Image } from 'astro:assets';
+
+<Image src={cipher} alt={`Revelations 11 cipher texture`} />
+
+
+## Ciphertext
+
+<CodeBlockWithLength code={
+`bx re yh zy bf lm kt ut yg se tb sx ky co jh km aq we tx wx cy ji ut vt kn vc gx aw ij av qn lg ef fj uq bd kn sv cx fn je wr rk kn cg aw xq vn zf li fh vz wt ta ia ij zf eh uf tj qm yg hl yq cx ij vw ig de qz tg nj rs er vk tm sa yv tw hr hs lt vy kr qc tv gh hb jn yb qh er ut gk et cs wv jl rh xo wr ex hr xt zi kc xs qs fd wd cm ku ah fh fj lf ui ly sh vf au xm hx qw dl gi cx vb dh wt xm kv un ej kt kt ye cg jd ef eh zv xt he uz tg cl jw nr tw ur vo jt jo ru iq iy rz ey ho gd nq yn bq ul ai fh bu ji ho nw qg yg vj if yv zu id jc gh ke xr qf cq ra it gw dl fc gq yi iu qu ny vr gy sj rh iu hi wr mv ym zi lk re vk xu ry uq gs ve qd yn bq ch ky er qh jr ho ya el ky zj ei hz cb if dk`
+}
+/>
+
+| Field | Value |
+| :-- | :-- |
+| Location | Der Eisendrache mystery box, by Primis statues |
+| Encoding | ASCII
+| Bytes | N/A |
+
+## Known steps
+
+This cipher is partially solved. Step 1 is described here, explained by <Username name="randomizer" type="generic"/>:
+
+> I took another look at this cipher, and believe I've made a slight bit of progress. In short, I'm fairly confident I know the first step, but I still don't know what to do after that.
+>
+> Playfair was always the only cipher that explained the lack of doubles and only 25 letters to me, but the bigram distribution is much more that of random text. This lead me to believe the text was encrypted with some polyalphabetic cipher before being encrypted with playfair. In addition, P is a really unusual choice of character to replace, which made me suspect there was an additional substitution after the playfair, that would turn P into a more reasonable character like J or Q. The last part would have to be monoalphabetic or it would not preserve the lack of doubles and missing letter.
+> In the past, I wrote this off as unsolvable. There would be no way of knowing if you even had the right decryption after each step, since you'd still have random text.
+>
+> Today I realised something that seems obvious to me now in hindsight. Normal scoring methods won't work, but even if the input was seemingly random text (which the frequencies suggest), we would expect to see a double every 1 in 25 bigrams. Since Playfair has the property of inserting an "X" between letters in identical pairs, we can use that to our advantage. When decrypted with the right alphabet, every 1 in 25 bigrams should end with an X sandwiched between 2 identical letters. That's opposed to the odds of an aXa pattern occuring by random chance which are 1 in 625. So we could pretty much guarantee we have it if we see an unusual spike in that pattern.
+>
+> I bruteforced several transformations of the cipher text against alphabet keywords from a large wordlist and was surprised by the best result:
+>
+> If you rot-6 the ciphertext (so that J is the missing character), reverse it, and use the alphabet keyword "ZOMBIES", it results in a pt with 10 aXa patterns.
+> To stress how unlikely that is, I generated millions of random playfair alphabets against the text, and none of them reached 7, let alone 10 axa patterns. That does not happen by chance.
+> The fact that it's a simple transformation (rot) and such an obvious keyword convinces me that this is the next step.
+> One remark: Since J has presumably been replaced with I, it has a high likelihood of being the most common letter since it essentially steals the score from J. In the "ZOMBIES" alphabet I is tied with T as the most common letter, but it is not significantly higher. This could be due to random variance, but...
+>
+> Reversing the "ZOMBIES" alphabet (which can be done by checking all the options on rumkin, which we know they have used before) results in a similar but different string. This is because playfair's main step of taking-opposite-corners is symmetrical, it only affects the direction moved when letters are in the same column/row.
+> The reversed alphabet results in 8 axa patterns (slightly fewer, but still more than I ever got to happen by chance). However, the draw here is that I is significantly more common than any other character, at 37 occurences with the next most frequent being T all the way behind at 26. The odds of that are enough to make me think this reversed alphabet may be the correct one.
+> There are several problems from here:
+> - I don't know what cipher was used next. If there are still multiple steps after this, it may still be unsolvable.
+> - Information loss has occurred. There's no way to know which I's are supposed to be J's. Depending on the cipher used, this might be a problem. Something like autokey or a fractionating cipher could cause one wrong character to affect every other character down the line.
+> - We also need to remove the padding X's from the axa patterns since they were added during the playfair step. However, there might have been some of these patterns present before playfair encryption just by chance that we need to keep, and we have no way of knowing which ones. (I would not expect there to be more then 1 of these if any, but you never know)
+
+This results in either the following four candidates:
+
+
+### Forward Alphabet
+
+```
+alphabet: ZOMBIESACDFGHJKLNPQRTUVWXY
+cubeuvridxiledluvebmdixcdtedmxgxgarcvtwmgbdgbpsntdzedrsogshtbxbsikaiesgtagbgbsaehcumkuhmreyfhxbfktudmcyarbipgobestsechhabmacvpmiexgzgxgahgwcbmdvldeacbigyiteotgiptkgtahueqpixitqnrixiuycmqvdfzfzitgmnskptpxrpgqxaskurhkxkpzvonmoegsbueeimizxzshvwrubbhbquadrtqkitxhtbtiklenpwqtudspzdtxcpolaxomcntxhfdogfeomkiptgowzfpsndtihaleqrlxwsapncaqxgckzsefhetizixincaxenftprnmiekingqcknwmqfadfhttifmqxqofawugbeiiuehghnvcanwqcvqfatnpzacavqpqtwtfxfsicmyedqbupwisepzfzfloudpoctdpx
+```
+
+#### X Padding Removed
+
+```
+cubeuvridxiledluvebmdixcdtedmxggarcvtwmgbdgbpsntdzedrsogshtbbsikaiesgtagbgbsaehcumkuhmreyfhxbfktudmcyarbipgobestsechhabmacvpmiexgzggahgwcbmdvldeacbigyiteotgiptkgtahueqpixitqnriiuycmqvdfzfzitgmnskptpxrpgqxaskurhkkpzvonmoegsbueeimizzshvwrubbhbquadrtqkitxhtbtiklenpwqtudspzdtxcpolaxomcntxhfdogfeomkiptgowzfpsndtihaleqrlxwsapncaqxgckzsefhetiziincaxenftprnmiekingqcknwmqfadfhttifmqqofawugbeiiuehghnvcanwqcvqfatnpzacavqpqtwtffsicmyedqbupwisepzfzfloudpoctdp
+```
+
+### Reversed Alphabet
+
+```
+alphabet: YXWVUTRQPNLKHGFDCASEIBMOZ
+cubewxridxlyasluvezitlcrtiasmxgxgabrvtahgbdgbpsnitfndrpgvphtkcbsikaiacgtagbgbsdahcumkuwhreyfhxbfktudmcyabkipvgbestcachwqzidesoioexgzgxgalkwczidvytadrkigdlteotgirpfktahueqpixiptqnixiuychmvdufufligmnskpprcbovqxdckurhxckpzvonibegsbeneiiozxzshvwrubbhbquadrptkitxhtbtikleqramtuscpzticroglaxomcqpxhfdgvunbikirpvgwzfpsntiihaleqrluycdrqedqxgckzcahletomixinedxezuprnqioekingqrxnwhmfadfhtilfmqxqofaywgbeiiuehklnvednwqcvqfapqpzdeavtrtpwtfxfsicmyasqbupwicapzufhgoudpocitpx
+```
+
+#### X Padding Removed
+
+```
+cubewxridxlyasluvezitlcrtiasmxggabrvtahgbdgbpsnitfndrpgvphtkcbsikaiacgtagbgbsdahcumkuwhreyfhxbfktudmcyabkipvgbestcachwqzidesoioexgzggalkwczidvytadrkigdlteotgirpfktahueqpixiptqniiuychmvdufufligmnskpprcbovqxdckurhxckpzvonibegsbeneiiozzshvwrubbhbquadrptkitxhtbtikleqramtuscpzticroglaxomcqpxhfdgvunbikirpvgwzfpsntiihaleqrluycdrqedqxgckzcahletomiinedxezuprnqioekingqrxnwhmfadfhtilfmqqofaywgbeiiuehklnvednwqcvqfapqpzdeavtrtpwtffsicmyasqbupwicapzufhgoudpocitp
+```

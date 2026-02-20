@@ -7,12 +7,12 @@ export function cipherToPath(cipher) {
     if (comicMatch) return `${BASE}/comics/issue${comicMatch[1]}/cipher${number}`;
 
     switch (map) {
-        case 'revelations':     return `${BASE}/bo3/rev${number}`;
-        case 'gorod_krovi':     return `${BASE}/bo3/gk${number}`;
-        case 'the_giant':       return `${BASE}/bo3/tg${number}`;
+        case 'revelations':     return `${BASE}/bo3/rev/rev${number}`;
+        case 'gorod_krovi':     return `${BASE}/bo3/gk/gk${number}`;
+        case 'the_giant':       return `${BASE}/bo3/tg/tg${number}`;
         case 'soe':             return `${BASE}/bo3/soe/soe${number}`;
-        case 'der_eisendrache': return `${BASE}/bo3/de${number}`;
-        case 'zetsubou':        return `${BASE}/bo3/zns${number}`;
+        case 'der_eisendrache': return `${BASE}/bo3/de/de${number}`;
+        case 'zetsubou':        return `${BASE}/bo3/zns/zns${number}`;
         case 'tranzit':         return `${BASE}/bo2/tranzit/tranzit${number}`;
         case 'motd':            return `${BASE}/bo2/motd/mob${number}`;
         case 'origins':         return `${BASE}/bo2/origins/origins${number}`;

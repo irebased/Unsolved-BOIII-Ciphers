@@ -1,0 +1,80 @@
+[
+  {
+    "id": "comic4_1",
+    "map": "comic_issue4",
+    "number": 1,
+    "title": "Comic Issue 4 Cipher 1",
+    "image": "comics/comic4_1.webp",
+    "solved": true,
+    "solvers": [
+      "Lizizadolphin"
+    ],
+    "credits": [],
+    "plaintext": "The innocent must be protected",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "porta",
+          "key": "Issue four"
+        }
+      ]
+    },
+    "ciphertext": null
+  },
+  {
+    "id": "comic4_2",
+    "map": "comic_issue4",
+    "number": 2,
+    "title": "Comic Issue 4 Cipher 2",
+    "image": "comics/comic4_2.webp",
+    "solved": true,
+    "solvers": [
+      "randomiser"
+    ],
+    "credits": [],
+    "plaintext": "On the final day the soul-less ones will be erased",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "enigma",
+          "model": "M3",
+          "rotors": [
+            "I",
+            "II",
+            "III"
+          ],
+          "reflector": "B",
+          "ring_settings": "AAA",
+          "initial_positions": "UPF"
+        }
+      ],
+      "notes": "Second possible start position: UPT"
+    },
+    "ciphertext": null
+  },
+  {
+    "id": "comic4_3",
+    "map": "comic_issue4",
+    "number": 3,
+    "title": "Comic Issue 4 Cipher 3",
+    "image": "comics/comic4_3.webp",
+    "solved": true,
+    "solvers": [
+      "randomiser"
+    ],
+    "credits": [],
+    "plaintext": "Only their sacrifice will restore order",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "nihilist",
+          "key": "ISSUEFOUR"
+        }
+      ]
+    },
+    "ciphertext": null
+  }
+]

@@ -1,20 +1,7 @@
 ---
 title: Mob of the Dead 4 Solve
-description: Overview of the solved cipher 4 from Mob of the Dead
+description: Overview of the solved Mob of the Dead 4 cipher
 ---
-import Info from '../../../../../components/Info.astro';
-import CodeBlockWithLength from '../../../../../components/CodeWithLength.astro';
-import Username from '../../../../../components/Username.astro';
-import cipher from '../../../../../assets/bo2/motd_4.webp';
-import { Image } from 'astro:assets';
+import CipherPage from '@/components/CipherPage.astro';
 
-<Image src={cipher} alt={`Mob of the Dead Cipher 4`} />
-> Credit: <Username name="waterkh" />, <Username name="certainpersonio" />, and <Username name="Shootinfish" /> for solving this cipher.
-
-## Solution
-
-This cipher is a hill cipher with key `MOBOFTHEDEADABCD`.
-
-## Plaintext
-
-> Enclosed are some more recent illustrations from my proposed comic strip Icarus from Mars. While I understand that you were less than enthusiastic about my previous submissions, I would urge you to look again with fresh eyes. Laid up in the hospital means I've had more time than even to devote to my craft, and my artwork is improving by leaps and bounds. Eagerly waiting your response, Albert Arlington.
+<CipherPage id="mob4" />

@@ -1,0 +1,144 @@
+[
+  {
+    "id": "origins1",
+    "map": "origins",
+    "number": 1,
+    "title": "Origins 1",
+    "image": "bo2/origins_1.webp",
+    "solved": true,
+    "solvers": [
+      "tak-in-the-box"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Though Edward's work was integral to our initial analysis of Divinium the rift between us grows deeper each day. I fear his loyalties lay only with Group 935 and their insatiable desire for yet more devastating weaponry. I myself can no longer continue on this path in all conscience. Though my actions will inevitably be viewed as treason, I am more concerned with just how Edward will react when I tell him of my contact with the allies...",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "vigenere",
+          "key": "wewerethereatthebeginningandattheend"
+        }
+      ]
+    }
+  },
+  {
+    "id": "origins2",
+    "map": "origins",
+    "number": 2,
+    "title": "Origins 2",
+    "image": "bo2/origins_2.webp",
+    "solved": true,
+    "solvers": [
+      "tak-in-the-box"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "From his very first day studying at Heidelberg, Edward displayed an intellect and maturity well beyond his years. However, the impact of his parents' death has affected him deeply. Though I have tried to provide him with some sort of father figure, I fear his choices may be increasingly influenced by his new found friends within Group 935.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "vigenere",
+          "key": "wewerethereatthebeginningandattheend"
+        }
+      ]
+    }
+  },
+  {
+    "id": "origins3",
+    "map": "origins",
+    "number": 3,
+    "title": "Origins 3",
+    "image": "bo2/origins_3.webp",
+    "solved": true,
+    "solvers": [
+      "tak-in-the-box",
+      "youjustgotstuffed"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "The breadth of the Ancients' knowledge is humbling. I find myself questioning not only my understanding of the scientific world, but also the true nature of the universe itself. For the first time in my adult life, I find myself open to the possibility of a higher power...",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "vigenere",
+          "key": "wewerethereatthebeginningandattheend"
+        }
+      ]
+    }
+  },
+  {
+    "id": "origins4",
+    "map": "origins",
+    "number": 4,
+    "title": "Origins 4",
+    "image": "bo2/origins_4.webp",
+    "solved": true,
+    "solvers": [
+      "MrRoflWaffles"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "I know some would think me mad but I am nevertheless forced to conclude that Samantha herself may be the key to everything. For reasons that I struggle to comprehend, it appears that she somehow holds dominion over this realm.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "vigenere",
+          "key": "wewerethereatthebeginningandattheend"
+        }
+      ]
+    }
+  },
+  {
+    "id": "origins5",
+    "map": "origins",
+    "number": 5,
+    "title": "Origins 5",
+    "image": null,
+    "solved": true,
+    "solvers": [
+      "MrRoflWaffles"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Warn Messiness\nSomething blue in the Earth\nNot clay\nWe grew weak\nThought it was flu\nMen became beasts\nBlood turned to ash\nLiberate tute de infernis",
+    "solution": {
+      "steps": [
+        {
+          "type": "decode",
+          "method": "morse"
+        },
+        {
+          "type": "classical",
+          "method": "vigenere",
+          "key": "INFERNO",
+          "notes": "Each line decrypted separately"
+        }
+      ]
+    }
+  },
+  {
+    "id": "origins6",
+    "map": "origins",
+    "number": 6,
+    "title": "Origins 6",
+    "image": "bo2/origins_6.webp",
+    "solved": true,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "Find and piece together scrap papers around the map. Image of PRIMIS standing on the mound with the four staffs."
+        }
+      ],
+      "notes": "Map puzzle rather than traditional cipher."
+    }
+  }
+]

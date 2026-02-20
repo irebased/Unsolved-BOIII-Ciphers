@@ -1,0 +1,25 @@
+[
+  {
+    "id": "waw_bios",
+    "map": "waw_general",
+    "number": 1,
+    "title": "World at War Bios",
+    "image": "waw/bios.jpg",
+    "solved": true,
+    "solvers": [
+      "RageOverlord"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "THE DR WANTS THE ULTIMATE POWER BASTARD",
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "Extract first letter from each sentence in character bios in order: Tank Dempsey, Nikolai Belinski, Takeo Masaki, Doctor Richtofen"
+        }
+      ],
+      "notes": "Acrostic puzzle. Requires hint from Jason Blundell."
+    }
+  }
+]

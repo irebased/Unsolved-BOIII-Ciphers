@@ -1,20 +1,7 @@
 ---
-title: Comic Cipher 2.2 Solve
-description: Overview of the solved comic cipher 2 from issue 2
+title: Comic Issue 2 Cipher 2 Solve
+description: Overview of the solved Comic Issue 2 Cipher 2 cipher
 ---
-import Info from '../../../../../components/Info.astro';
-import CodeBlockWithLength from '../../../../../components/CodeWithLength.astro';
-import Username from '../../../../../components/Username.astro';
-import cipher from '../../../../../assets/comics/comic2_2.webp';
-import { Image } from 'astro:assets';
+import CipherPage from '@/components/CipherPage.astro';
 
-<Image src={cipher} alt={`Comic Cipher 2.2`} />
-> Credit: <Username name="randomiser" /> for solving this cipher.
-
-## Solution
-
-This cipher is a bifid cipher with key `ISSUETWO` and period `36`.
-
-## Plaintext
-
-> Events long foretold will soon come to pass
+<CipherPage id="comic2_2" />

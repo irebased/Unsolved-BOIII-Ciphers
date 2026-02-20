@@ -3,19 +3,19 @@ title: Leaderboard
 description: Rankings of solvers and contributors
 ---
 
-import Username from '../../components/Username.astro'
+import Username from '@/components/Username.astro'
 import { Tabs, TabItem } from '@astrojs/starlight/components'
-import cipherData from '../../data/ciphers.json'
+import { getAllCiphers, getUser } from '@/data/db'
 
 export const entries = (() => {
   const map = {};
-  for (const cipher of cipherData.ciphers) {
+  for (const cipher of getAllCiphers()) {
     for (const u of cipher.solvers) {
-      if (!map[u]) map[u] = { name: u, platform: cipherData.users[u]?.platform ?? 'generic', solvesCount: 0, creditsCount: 0 };
+      if (!map[u]) map[u] = { name: u, platform: getUser(u)?.platform ?? 'generic', solvesCount: 0, creditsCount: 0 };
       map[u].solvesCount++;
     }
     for (const u of cipher.credits) {
-      if (!map[u]) map[u] = { name: u, platform: cipherData.users[u]?.platform ?? 'generic', solvesCount: 0, creditsCount: 0 };
+      if (!map[u]) map[u] = { name: u, platform: getUser(u)?.platform ?? 'generic', solvesCount: 0, creditsCount: 0 };
       map[u].creditsCount++;
     }
   }

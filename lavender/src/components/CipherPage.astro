@@ -1,0 +1,96 @@
+---
+import { Image } from 'astro:assets';
+import { getCipher } from '@/data/db';
+import CodeBlockWithLength from './CodeWithLength.astro';
+import Username from './Username.astro';
+
+interface Props {
+  id: string;
+}
+
+const { id } = Astro.props;
+
+const cipher = getCipher(id);
+if (!cipher) throw new Error(`Cipher not found: ${id}`);
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/**/*.{png,webp,jpg,jpeg}',
+  { eager: true }
+);
+
+const imageSrc = cipher.image
+  ? images[`/src/assets/${cipher.image}`]?.default ?? null
+  : null;
+
+function formatMethod(method: string): string {
+  const upper = ['adfgx', 'adfgvx'];
+  if (upper.includes(method)) return method.toUpperCase();
+  return method.split('_').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+}
+
+function stepToHtml(step: any): string {
+  if (step.type === 'puzzle') return step.description;
+  if (step.type === 'decode') return `This cipher uses ${step.method} decoding.`;
+  if (step.type === 'formula') return `This cipher uses ${step.method}.`;
+  if (step.type === 'classical') {
+    const name = formatMethod(step.method);
+    if (step.configuration) {
+      return `This cipher is a ${name} cipher with ${step.configuration}.`
+    }
+    return step.key
+      ? `This cipher is a ${name} cipher with key <code>${step.key}</code>.`
+      : `This cipher is a ${name} cipher.`;
+  }
+  return '';
+}
+
+const steps = cipher.solution?.steps ?? [];
+const isMultiStep = steps.length > 1;
+const notes = cipher.solution?.notes ?? null;
+const plaintextLines = cipher.plaintext?.split('\n') ?? [];
+const solvers: string[] = cipher.solvers;
+---
+
+{imageSrc && <Image src={imageSrc} alt={cipher.title} />}
+
+<blockquote>
+  {solvers.length > 0 ? (
+    <p>
+      Credit: {solvers.map((name: string, i: number) => (
+        <>
+          {i > 0 && solvers.length === 2 && ' and '}
+          {i > 0 && solvers.length > 2 && i < solvers.length - 1 && ', '}
+          {i > 0 && solvers.length > 2 && i === solvers.length - 1 && ', and '}
+          <Username name={name} />
+        </>
+      ))} for solving this cipher.
+    </p>
+  ) : (
+    <p>There is no known first solver for this cipher.</p>
+  )}
+</blockquote>
+
+<h2 id="solution">Solution</h2>
+
+{isMultiStep ? (
+  <ol>
+    {steps.map((step: any) => <li set:html={stepToHtml(step)} />)}
+  </ol>
+) : steps.length === 1 ? (
+  <p set:html={stepToHtml(steps[0])} />
+) : null}
+
+{notes && <p>{notes}</p>}
+
+<h2 id="plaintext">Plaintext</h2>
+
+<blockquote>
+  {plaintextLines.map((line: string) => <p>{line}</p>)}
+</blockquote>
+
+{cipher.ciphertext && (
+  <>
+    <h2 id="ciphertext">Ciphertext</h2>
+    <CodeBlockWithLength code={cipher.ciphertext} />
+  </>
+)}

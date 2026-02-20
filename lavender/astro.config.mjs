@@ -60,6 +60,83 @@ const BO3_CIPHERS = [
 				label: 'Shadows of Evil 3 Solve',
 				slug: 'ciphers/bo3/soe/soe3'
 			},
+			{
+				label: 'Shadows of Evil 4 Solve',
+				slug: 'ciphers/bo3/soe/soe4'
+			},
+			{
+				label: 'Shadows of Evil 5 Solve',
+				slug: 'ciphers/bo3/soe/soe5'
+			},
+			{
+				label: 'Shadows of Evil 6 Solve',
+				slug: 'ciphers/bo3/soe/soe6'
+			}
+		]
+	},
+	{
+		label: 'The Giant',
+		items: [
+			{ label: 'The Giant 1', slug: 'ciphers/bo3/tg/tg1' },
+			{ label: 'The Giant 2', slug: 'ciphers/bo3/tg/tg2' },
+			{ label: 'The Giant 3', slug: 'ciphers/bo3/tg/tg3' },
+			{ label: 'The Giant 4', slug: 'ciphers/bo3/tg/tg4' },
+			{ label: 'The Giant 5', slug: 'ciphers/bo3/tg/tg5' },
+			{ label: 'The Giant 6', slug: 'ciphers/bo3/tg/tg6' },
+		]
+	},
+	{
+		label: 'Der Eisendrache',
+		items: [
+			{ label: 'Der Eisendrache 1', slug: 'ciphers/bo3/de/de1' },
+			{ label: 'Der Eisendrache 2', slug: 'ciphers/bo3/de/de2' },
+			{ label: 'Der Eisendrache 3', slug: 'ciphers/bo3/de/de3' },
+			{ label: 'Der Eisendrache 4', slug: 'ciphers/bo3/de/de4' },
+			{ label: 'Der Eisendrache 5', slug: 'ciphers/bo3/de/de5' },
+			{ label: 'Der Eisendrache 6', slug: 'ciphers/bo3/de/de6' },
+			{ label: 'Der Eisendrache 7', slug: 'ciphers/bo3/de/de7' },
+			{ label: 'Der Eisendrache 8', slug: 'ciphers/bo3/de/de8' },
+			{ label: 'Der Eisendrache 9', slug: 'ciphers/bo3/de/de9' },
+			{ label: 'Der Eisendrache 10', slug: 'ciphers/bo3/de/de10' },
+			{ label: 'Der Eisendrache 11', slug: 'ciphers/bo3/de/de11' },
+			{ label: 'Der Eisendrache 12', slug: 'ciphers/bo3/de/de12' },
+		]
+	},
+	{
+		label: 'Zetsubou No Shima',
+		items: [
+			{ label: 'Zetsubou No Shima 1', slug: 'ciphers/bo3/zns/zns1' },
+			{ label: 'Zetsubou No Shima 2', slug: 'ciphers/bo3/zns/zns2' },
+			{ label: 'Zetsubou No Shima 3', slug: 'ciphers/bo3/zns/zns3' },
+			{ label: 'Zetsubou No Shima 4', slug: 'ciphers/bo3/zns/zns4' },
+			{ label: 'Zetsubou No Shima 5', slug: 'ciphers/bo3/zns/zns5' },
+			{ label: 'Zetsubou No Shima 6', slug: 'ciphers/bo3/zns/zns6' },
+			{ label: 'Zetsubou No Shima 7', slug: 'ciphers/bo3/zns/zns7' },
+			{ label: 'Zetsubou No Shima 8', slug: 'ciphers/bo3/zns/zns8' },
+			{ label: 'Zetsubou No Shima 9', slug: 'ciphers/bo3/zns/zns9' },
+			{ label: 'Zetsubou No Shima 10', slug: 'ciphers/bo3/zns/zns10' },
+			{ label: 'Zetsubou No Shima 11', slug: 'ciphers/bo3/zns/zns11' },
+			{ label: 'Zetsubou No Shima 12', slug: 'ciphers/bo3/zns/zns12' },
+			{ label: 'Zetsubou No Shima 13', slug: 'ciphers/bo3/zns/zns13' },
+		]
+	},
+	{
+		label: 'Gorod Krovi',
+		items: [
+			{ label: 'Gorod Krovi 1', slug: 'ciphers/bo3/gk/gk1' },
+			{ label: 'Gorod Krovi 2', slug: 'ciphers/bo3/gk/gk2' },
+			{ label: 'Gorod Krovi 3', slug: 'ciphers/bo3/gk/gk3' },
+			{ label: 'Gorod Krovi 4', slug: 'ciphers/bo3/gk/gk4' },
+			{ label: 'Gorod Krovi 5', slug: 'ciphers/bo3/gk/gk5' },
+			{ label: 'Gorod Krovi 6', slug: 'ciphers/bo3/gk/gk6' },
+			{ label: 'Gorod Krovi 7', slug: 'ciphers/bo3/gk/gk7' },
+			{ label: 'Gorod Krovi 8', slug: 'ciphers/bo3/gk/gk8' },
+			{ label: 'Gorod Krovi 9', slug: 'ciphers/bo3/gk/gk9' },
+			{ label: 'Gorod Krovi 10', slug: 'ciphers/bo3/gk/gk10' },
+			{ label: 'Gorod Krovi 11', slug: 'ciphers/bo3/gk/gk11' },
+			{ label: 'Gorod Krovi 12 Solve', slug: 'ciphers/bo3/gk/gk12' },
+			{ label: 'Gorod Krovi 13', slug: 'ciphers/bo3/gk/gk13' },
+			{ label: 'Gorod Krovi 14', slug: 'ciphers/bo3/gk/gk14' },
 		]
 	},
 	{
@@ -68,46 +145,29 @@ const BO3_CIPHERS = [
 			{
 				label: 'Unsolved',
 				items: [
-					{ label: 'Revelations 1', slug: 'ciphers/bo3/rev1' },
-					{ label: 'Revelations 7', slug: 'ciphers/bo3/rev7' },
-					{ label: 'Revelations 11', slug: 'ciphers/bo3/rev11' },
+					{ label: 'Revelations 1', slug: 'ciphers/bo3/rev/rev1' },
+					{ label: 'Revelations 7', slug: 'ciphers/bo3/rev/rev7' },
+					{ label: 'Revelations 11', slug: 'ciphers/bo3/rev/rev11' },
 				]
 			},
 			{
 				label: 'Solved',
 				items: [
-					{ label: 'Revelations 2 Solve', slug: 'ciphers/bo3/rev2' },
-					{ label: 'Revelations 3 Solve', slug: 'ciphers/bo3/rev3' },
-					{ label: 'Revelations 4 Solve', slug: 'ciphers/bo3/rev4' },
-					{ label: 'Revelations 5 Solve', slug: 'ciphers/bo3/rev5' },
-					{ label: 'Revelations 6 Solve', slug: 'ciphers/bo3/rev6' },
-					{ label: 'Revelations 8 Solve', slug: 'ciphers/bo3/rev8' },
-					{ label: 'Revelations 9 Solve', slug: 'ciphers/bo3/rev9' },
-					{ label: 'Revelations 10 Solve', slug: 'ciphers/bo3/rev10' },
-					{ label: 'Revelations 12 Solve', slug: 'ciphers/bo3/rev12' },
-					{ label: 'Revelations 13 Solve', slug: 'ciphers/bo3/rev13' },
-					{ label: 'Revelations 14 Solve', slug: 'ciphers/bo3/rev14' },
+					{ label: 'Revelations 2 Solve', slug: 'ciphers/bo3/rev/rev2' },
+					{ label: 'Revelations 3 Solve', slug: 'ciphers/bo3/rev/rev3' },
+					{ label: 'Revelations 4 Solve', slug: 'ciphers/bo3/rev/rev4' },
+					{ label: 'Revelations 5 Solve', slug: 'ciphers/bo3/rev/rev5' },
+					{ label: 'Revelations 6 Solve', slug: 'ciphers/bo3/rev/rev6' },
+					{ label: 'Revelations 8 Solve', slug: 'ciphers/bo3/rev/rev8' },
+					{ label: 'Revelations 9 Solve', slug: 'ciphers/bo3/rev/rev9' },
+					{ label: 'Revelations 10 Solve', slug: 'ciphers/bo3/rev/rev10' },
+					{ label: 'Revelations 12 Solve', slug: 'ciphers/bo3/rev/rev12' },
+					{ label: 'Revelations 13 Solve', slug: 'ciphers/bo3/rev/rev13' },
+					{ label: 'Revelations 14 Solve', slug: 'ciphers/bo3/rev/rev14' },
 				]
 			}
 		]
 	},
-	{
-		label: 'Gorod Krovi',
-		items: [
-			{ label: 'GK12 Solve', slug: 'ciphers/bo3/gk12' },
-		]
-	},
-	{
-		label: 'The Giant',
-		items: [
-			{
-				label: 'Unsolved',
-				items: [
-					{ label: 'The Giant cipher', slug: 'ciphers/bo3/tg1' },
-				]
-			}
-		]
-	}
 ];
 
 const BO2_CIPHERS = [
