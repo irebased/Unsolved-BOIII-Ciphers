@@ -1,5 +1,6 @@
 ---
-import { SOLVERS, getCipherLabel } from './solvers.js';
+import cipherData from '../data/ciphers.json';
+import { cipherToPath, getCipherLabel } from './solvers.js';
 
 interface Props {
   name: string;
@@ -9,11 +10,15 @@ interface Props {
 const { name, type: fallbackType = 'generic' } = Astro.props as Props;
 
 const lookupKey = name.replace(/^u\//, '');
-const solver = SOLVERS[lookupKey];
-const platform = solver?.platform ?? fallbackType;
+const platform = cipherData.users[lookupKey]?.platform ?? fallbackType;
 
-const solves = solver?.solves ?? [];
-const credits = solver?.credits ?? [];
+const solves: string[] = [];
+const credits: string[] = [];
+for (const cipher of cipherData.ciphers) {
+  const path = cipherToPath(cipher);
+  if (cipher.solvers.includes(lookupKey)) solves.push(path);
+  if (cipher.credits.includes(lookupKey)) credits.push(path);
+}
 
 const styles: Record<string, { color: string }> = {
   reddit: { color: '#FF4500' },

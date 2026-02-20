@@ -46,6 +46,23 @@ const WAW_CIPHERS = [
 
 const BO3_CIPHERS = [
 	{
+		label: 'Shadows of Evil',
+		items: [
+			{
+				label: 'Shadows of Evil 1 Solve',
+				slug: 'ciphers/bo3/soe/soe1'
+			},
+			{
+				label: 'Shadows of Evil 2 Solve',
+				slug: 'ciphers/bo3/soe/soe2'
+			},
+			{
+				label: 'Shadows of Evil 3 Solve',
+				slug: 'ciphers/bo3/soe/soe3'
+			},
+		]
+	},
+	{
 		label: 'Revelations',
 		items: [
 			{
