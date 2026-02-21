@@ -3,5 +3,20 @@ title: Gorod Krovi 6
 description: Overview of Gorod Krovi 6 cipher
 ---
 import CipherPage from '@/components/CipherPage.astro';
+import Info from '@/components/Info.astro';
+import { Image } from 'astro:assets';
+import richtofen from '@/assets/bo3/gk/gk_6_ref_1.webp';
+import takeo from '@/assets/bo3/gk/gk_6_ref_2.webp';
+import nikolai from '@/assets/bo3/gk/gk_6_ref_3.webp';
+import dempsey from '@/assets/bo3/gk/gk_6_ref_4.webp';
 
 <CipherPage id="gk6" />
+
+<Info>
+    The key for this book cipher was the character bios posted on Twitter by Treyarch:
+
+    <Image src={richtofen} alt="Richtofen character bio" />
+    <Image src={takeo} alt="Takeo character bio" />
+    <Image src={nikolai} alt="Nikolai character bio" />
+    <Image src={dempsey} alt="Dempsey character bio" />
+</Info>

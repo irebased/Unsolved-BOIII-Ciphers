@@ -5,12 +5,19 @@
     "number": 1,
     "title": "The Giant 1",
     "image": "bo3/thegiant/tg_1.png",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["TheCoolDoc"],
     "credits": [],
-    "ciphertext": "kCmlgFi6GUJNgkNI1Q41fbfyLoCFTCvIqkZiI0KIAXAzP1U1uy1BE4UfPBfpKmmLObjYnQNRBaPtKiVWzc5A4v0w3xle8FOhAGJZ7g4in0wndJxMOvO3dc1M82at2T6935roTqyWDgtGD/hwwRF3oHqFM5Vcw1JtINbsgWRm4o4/quEDkZ7x1B275bX3/Fo1",
-    "plaintext": null,
-    "solution": null
+    "ciphertext": null,
+    "plaintext": "The mountain must be searched for the frozen one.",
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "This is a barcode that produces a message when scanned."
+        }
+      ]
+    }
   },
   {
     "id": "tg2",
@@ -18,12 +25,19 @@
     "number": 2,
     "title": "The Giant 2",
     "image": "bo3/thegiant/tg_2.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Shaiza_Balls"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "In the cell below the waves is where honor suffers.",
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "This cipher maps the numbers to elements on the periodic table via their atomic numbers."
+        }
+      ]
+    }
   },
   {
     "id": "tg3",
@@ -31,12 +45,20 @@
     "number": 3,
     "title": "The Giant 3",
     "image": "bo3/thegiant/tg_3.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Munki"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "When finished we will return to the house and the infinite",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "simplified_lorenz",
+          "configuration": "K-wheel = 9 and S-wheel = 4"
+        }
+      ]
+    }
   },
   {
     "id": "tg4",
@@ -47,7 +69,7 @@
     "solved": false,
     "solvers": [],
     "credits": [],
-    "ciphertext": null,
+    "ciphertext": "kCmlgFi6GUJNgkNI1Q41fbfyLoCFTCvIqkZiI0KIAXAzP1U1uy1BE4UfPBfpKmmLObjYnQNRBaPtKiVWzc5A4v0w3xle8FOhAGJZ7g4in0wndJxMOvO3dc1M82at2T6935roTqyWDgtGD/hwwRF3oHqFM5Vcw1JtINbsgWRm4o4/quEDkZ7x1B275bX3/Fo1",
     "plaintext": null,
     "solution": null
   },
@@ -58,11 +80,19 @@
     "title": "The Giant 5",
     "image": "bo3/thegiant/tg_5.webp",
     "solved": false,
-    "solvers": [],
+    "solvers": ["randomiser"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "A city of fire surrounds the warrior the last of his kind",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "enigma_m3",
+          "configuration": "Reflector UKW B, Key settings WAD, Ring settings AAD, Rotors 123, and plug board settings PO ML IU KJ NH YT GB VF RE DC."
+        }
+      ]
+    }
   },
   {
     "id": "tg6",
@@ -75,6 +105,13 @@
     "credits": [],
     "ciphertext": null,
     "plaintext": null,
-    "solution": null
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "This is not a cipher, but a series of scarap"
+        }
+      ]
+    }
   }
 ]

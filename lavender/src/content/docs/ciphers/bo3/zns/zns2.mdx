@@ -3,5 +3,17 @@ title: Zetsubou No Shima 2
 description: Overview of Zetsubou No Shima 2 cipher
 ---
 import CipherPage from '@/components/CipherPage.astro';
+import Info from '@/components/Info.astro';
+import Username from '@/components/Username.astro';
 
 <CipherPage id="zns2" />
+
+<Info>
+    <Username name="certainpersonio" /> noted that they had to modify the ciphertext
+    for it to decode:
+
+    > Next you'll notice that I made two changes to the original cipher text. The first is that the third group of cipher text starts "SXZ" and I start mine "SXQn". This was either an error on Treyarch's part or a way to make solving more difficult. By turning the first 4 letters into 3, you tear apart the actual group of 4 in the encoding so it translates to gibberish. However, if you build the cipher from the back forwards you can determine the first 3 letters are supposed to be 4.
+    > The second change you'll note is that the very end of the cipher text in the picture ends "ZQ==" and mine ends "ZS4=". In the original cipher text it doesn't terminate in a period. I thought that because all the other sentences they have a period, it was probably an error as well. At the very least, I think it's more aesthetically pleasing this way.
+
+    [Source](https://www.reddit.com/r/CODZombies/comments/4ff0jp/zns_base64_cipher_solvedspoiler/)
+</Info>

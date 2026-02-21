@@ -1,7 +1,29 @@
 ---
-title: The Giant 6
-description: Overview of The Giant 6 cipher
+title: The Giant 6 Solve
+description: Overview of the solved puzzle 6 from The Giant
 ---
-import CipherPage from '@/components/CipherPage.astro';
+import Info from '@/components/Info.astro';
+import CodeBlockWithLength from '@/components/CodeWithLength.astro';
+import Username from '@/components/Username.astro';
+import cipher from '@/assets/bo3/thegiant/tg_6.webp';
+import { Image } from 'astro:assets';
 
-<CipherPage id="tg6" />
+<Image src={cipher} alt={`The Giant puzzle 6`} />
+> There is no known first solver for this puzzle.
+
+## Solution
+
+This was not a cipher, but rather a puzzle to find scrap pieces hidden around
+the map. When combined, the pieces come together to form a blueprint authored by Dr. Monty.
+This blueprint includes coordinates to the locations we visit during the DLC season. It can
+be interpreted as Monty's grand plan to defeat the Apothicons and create one sacred universe.
+It appears Richtofen coordinated with Monty and took notes, which can be found in
+[Shadows of Evil 6](/Unsolved-BOIII-Ciphers/ciphers/bo3/soe/soe6).
+
+<Info title="The 'Impossible Easter Egg' tie-in">
+    A [viral video](https://youtu.be/H_SOzWnS7is) posted by <Username name="SkiteInnit"/> in 2024
+    suggests this blueprint is part of an "Impossible easter egg" that former Treyarch Creative Director
+    Jason Blundell hinted at in an interview prior to the release of the game. The video sites a former
+    developer stating the KN-44 (outlined in the center of the blueprint) had its name changed twice during
+    development, with the final name "KN-44" being a "zombies-related" change, indicating a deeper meaning.
+</Info>

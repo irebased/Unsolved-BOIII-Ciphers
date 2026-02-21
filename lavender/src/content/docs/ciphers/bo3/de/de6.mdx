@@ -3,5 +3,14 @@ title: Der Eisendrache 6
 description: Overview of Der Eisendrache 6 cipher
 ---
 import CipherPage from '@/components/CipherPage.astro';
+import { Image } from 'astro:assets';
+import reference from '@/assets/bo3/de/de_6_ref.webp';
+import Info from '@/components/Info.astro';
 
 <CipherPage id="de6" />
+
+<Info>
+    This cipher solution used the following reference key for the solution:
+
+    <Image src={reference} alt={`Der Eisendrache 6 reference/key`} />
+</Info>

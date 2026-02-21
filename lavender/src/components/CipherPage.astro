@@ -28,19 +28,64 @@ function formatMethod(method: string): string {
   return method.split('_').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 }
 
-function stepToHtml(step: any): string {
+function stepToHtml(step: any, brief: boolean): string {
   if (step.type === 'puzzle') return step.description;
-  if (step.type === 'decode') return `This cipher uses ${step.method} decoding.`;
-  if (step.type === 'formula') return `This cipher uses ${step.method}.`;
+
+  if (step.type === 'decode') {
+    const method = formatMethod(step.method);
+    return brief
+      ? `Decode from ${method}.`
+      : `This cipher uses ${method} decoding.`;
+  }
+
+  if (step.type === 'formula') {
+    return brief
+      ? `Apply ${step.method}.`
+      : `This cipher uses ${step.method}.`;
+  }
+
   if (step.type === 'classical') {
     const name = formatMethod(step.method);
     if (step.configuration) {
-      return `This cipher is a ${name} cipher with ${step.configuration}.`
+      return brief
+        ? `${name} cipher with ${step.configuration}.`
+        : `This cipher is a ${name} cipher with ${step.configuration}.`;
     }
-    return step.key
-      ? `This cipher is a ${name} cipher with key <code>${step.key}</code>.`
-      : `This cipher is a ${name} cipher.`;
+    if (step.key) {
+      return brief
+        ? `${name} cipher with key <code>${step.key}</code>.`
+        : `This cipher is a ${name} cipher with key <code>${step.key}</code>.`;
+    }
+    return brief ? `${name} cipher.` : `This cipher is a ${name} cipher.`;
   }
+
+  if (step.type === 'decrypt') {
+    const name = formatMethod(step.method);
+    const parts = [name];
+    if (step.mode) parts.push(`(${step.mode} mode)`);
+    if (step.key) parts.push(`with key <code>${step.key}</code>`);
+    return brief
+      ? `Decrypt with ${parts.join(' ')}.`
+      : `This cipher is decrypted with ${parts.join(' ')}.`;
+  }
+
+  if (step.type === 'transform') {
+    const name = formatMethod(step.method);
+    if (step.notes) return brief ? `${name}: ${step.notes}.` : `${name}: ${step.notes}.`;
+    if (step.shift !== undefined) {
+      return brief
+        ? `Apply ${name} by ${step.shift}.`
+        : `This cipher uses ${name} by ${step.shift}.`;
+    }
+    return brief ? `Apply ${name}.` : `This cipher uses a ${name} transform.`;
+  }
+
+  if (step.type === 'encode') {
+    const name = formatMethod(step.method);
+    if (step.notes) return `${name}: ${step.notes}.`;
+    return brief ? `Encode as ${name}.` : `This cipher uses ${name} encoding.`;
+  }
+
   return '';
 }
 
@@ -74,10 +119,10 @@ const solvers: string[] = cipher.solvers;
 
 {isMultiStep ? (
   <ol>
-    {steps.map((step: any) => <li set:html={stepToHtml(step)} />)}
+    {steps.map((step: any) => <li set:html={stepToHtml(step, true)} />)}
   </ol>
 ) : steps.length === 1 ? (
-  <p set:html={stepToHtml(steps[0])} />
+  <p set:html={stepToHtml(steps[0], false)} />
 ) : null}
 
 {notes && <p>{notes}</p>}
