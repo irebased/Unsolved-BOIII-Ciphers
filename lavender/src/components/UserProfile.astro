@@ -1,0 +1,578 @@
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { getAllCiphers, getMap, getGame, getUser, type Cipher } from '@/data/db';
+import { cipherToPath, getCipherLabel } from './solvers.js';
+
+interface Props {
+  username: string;
+}
+
+const { username } = Astro.props;
+
+const allCiphers = getAllCiphers();
+const userSolves = allCiphers.filter(c => c.solvers.includes(username));
+const userCredits = allCiphers.filter(c => c.credits.includes(username));
+
+interface CipherLink {
+  href: string;
+  label: string;
+  type?: string;
+}
+
+interface MapGroup {
+  mapLabel: string;
+  ciphers: CipherLink[];
+}
+
+interface GameGroup {
+  gameLabel: string;
+  maps: Map<string, MapGroup>;
+  total: number;
+}
+
+function groupByGame(ciphers: Cipher[]): Map<string, GameGroup> {
+  const games = new Map<string, GameGroup>();
+  for (const c of ciphers) {
+    const mapInfo = getMap(c.map);
+    const gameId = mapInfo?.game ?? 'unknown';
+    const gameInfo = getGame(gameId);
+    const gameLabel = gameInfo?.label ?? gameId;
+    const mapLabel = mapInfo?.label ?? c.map;
+
+    if (!games.has(gameId)) {
+      games.set(gameId, { gameLabel, maps: new Map(), total: 0 });
+    }
+    const game = games.get(gameId)!;
+    game.total++;
+    if (!game.maps.has(c.map)) {
+      game.maps.set(c.map, { mapLabel, ciphers: [] });
+    }
+    game.maps.get(c.map)!.ciphers.push({
+      href: cipherToPath(c),
+      label: getCipherLabel(cipherToPath(c)),
+      type: c.type,
+    });
+  }
+  return games;
+}
+
+const solvesByGame = groupByGame(userSolves);
+const creditsByGame = groupByGame(userCredits);
+
+// ── Method breakdown (solves only) ──
+const UPPER_METHODS = new Set(['adfgx', 'adfgvx', 'aes', 'des', 'rc4']);
+
+function formatMethod(method: string): string {
+  if (UPPER_METHODS.has(method)) return method.toUpperCase();
+  return method.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+}
+
+interface MethodEntry {
+  label: string;
+  count: number;
+  category: 'classical' | 'modern' | 'other';
+  ciphers: CipherLink[];
+}
+
+function buildMethodBreakdown(ciphers: Cipher[]): MethodEntry[] {
+  const map = new Map<string, MethodEntry>();
+  const methodTypes = new Set(['classical', 'decrypt']);
+
+  for (const c of ciphers) {
+    if (!c.solution) continue;
+    const link: CipherLink = {
+      href: cipherToPath(c),
+      label: getCipherLabel(cipherToPath(c)),
+    };
+    const seen = new Set<string>();
+    for (const step of c.solution.steps) {
+      let key: string;
+      let label: string;
+      let category: 'classical' | 'modern' | 'other';
+
+      if (methodTypes.has(step.type) && step.method) {
+        key = `${step.type}:${step.method}`;
+        label = formatMethod(step.method);
+        category = step.type === 'classical' ? 'classical' : 'modern';
+      } else {
+        key = step.type;
+        label = step.type.charAt(0).toUpperCase() + step.type.slice(1);
+        category = 'other';
+      }
+
+      if (seen.has(key)) continue;
+      seen.add(key);
+
+      if (!map.has(key)) {
+        map.set(key, { label, count: 0, category, ciphers: [] });
+      }
+      const entry = map.get(key)!;
+      entry.count++;
+      entry.ciphers.push(link);
+    }
+  }
+
+  return [...map.values()].sort((a, b) => b.count - a.count);
+}
+
+const solvesMethods = buildMethodBreakdown(userSolves);
+const maxMethod = Math.max(1, ...(solvesMethods.map(m => m.count)));
+
+const methodColors: Record<string, string> = {
+  classical: '#e0a030',
+  modern: '#3498db',
+  other: '#888',
+};
+
+const user = getUser(username);
+const platform = user?.platform ?? 'generic';
+
+const platformColors: Record<string, string> = {
+  reddit: '#FF4500',
+  discord: '#5865F2',
+  generic: '#ffc34a',
+  youtube: '#ff3344',
+};
+const platformColor = platformColors[platform] ?? platformColors.generic;
+
+const gameColors: Record<string, string> = {
+  waw: '#8b5e3c',
+  bo2: '#c2841c',
+  bo3: '#e06030',
+  comics: '#9b59b6',
+  bo4: '#3498db',
+  bo5: '#2ecc71',
+  unknown: '#888',
+};
+
+const maxSolves = Math.max(1, ...([...solvesByGame.values()].map(g => g.total)));
+const maxCredits = Math.max(1, ...([...creditsByGame.values()].map(g => g.total)));
+---
+
+<div class="user-profile not-content">
+  <div class="profile-header">
+    <span class="profile-icon" style={`color: ${platformColor}`}>
+      {platform === 'reddit' && (
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M6.167 8a.83.83 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661m1.843 3.647c.315 0 1.403-.038 1.976-.611a.23.23 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83s.83-.381.83-.83a.831.831 0 0 0-1.66 0z"/>
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.2.2 0 0 0-.153.028.2.2 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224q-.03.17-.029.353c0 1.795 2.091 3.256 4.669 3.256s4.668-1.451 4.668-3.256c0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165"/>
+        </svg>
+      )}
+      {platform === 'discord' && (
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+        </svg>
+      )}
+      {platform === 'generic' && (
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+        </svg>
+      )}
+      {platform === 'youtube' && (
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+        </svg>
+      )}
+    </span>
+    <span class="profile-name">{username}</span>
+  </div>
+
+  <div class="profile-summary">
+    <div class="stat stat-solves">
+      <span class="stat-count">{userSolves.length}</span>
+      <span class="stat-label">Solves</span>
+    </div>
+    <div class="stat stat-credits">
+      <span class="stat-count">{userCredits.length}</span>
+      <span class="stat-label">Credits</span>
+    </div>
+  </div>
+
+  <Tabs>
+    <TabItem label={`Solves (${userSolves.length})`}>
+      {userSolves.length === 0 ? (
+        <p class="empty-state">No solves yet.</p>
+      ) : (
+        <div class="chart-section">
+          {[...solvesByGame.entries()].map(([gameId, game]) => (
+            <div class="game-card">
+              <button type="button" class="game-row" aria-expanded="false">
+                <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span class="game-label">{game.gameLabel}</span>
+                <span class="bar-track">
+                  <span class="bar-fill" style={`width: ${(game.total / maxSolves) * 100}%; background: ${gameColors[gameId] ?? gameColors.unknown}`} />
+                </span>
+                <span class="game-count">{game.total}</span>
+              </button>
+              <div class="game-panel" hidden>
+                {[...game.maps.entries()].map(([_mapId, map]) => (
+                  <div class="map-section">
+                    <div class="map-header">
+                      <span class="map-label">{map.mapLabel}</span>
+                      <span class="bar-track bar-track-sm">
+                        <span class="bar-fill" style={`width: ${(map.ciphers.length / game.total) * 100}%; background: ${gameColors[gameId] ?? gameColors.unknown}; opacity: 0.65`} />
+                      </span>
+                      <span class="map-count">{map.ciphers.length}</span>
+                    </div>
+                    <ul class="cipher-list">
+                      {map.ciphers.map(c => (
+                        <li>
+                          <a href={c.href}>{c.label}</a>
+                          {c.type && c.type !== 'standard' && (
+                            <span class="cipher-type-badge">{c.type}</span>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </TabItem>
+    <TabItem label={`Credits (${userCredits.length})`}>
+      {userCredits.length === 0 ? (
+        <p class="empty-state">No credits yet.</p>
+      ) : (
+        <div class="chart-section">
+          {[...creditsByGame.entries()].map(([gameId, game]) => (
+            <div class="game-card">
+              <button type="button" class="game-row" aria-expanded="false">
+                <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span class="game-label">{game.gameLabel}</span>
+                <span class="bar-track">
+                  <span class="bar-fill" style={`width: ${(game.total / maxCredits) * 100}%; background: ${gameColors[gameId] ?? gameColors.unknown}`} />
+                </span>
+                <span class="game-count">{game.total}</span>
+              </button>
+              <div class="game-panel" hidden>
+                {[...game.maps.entries()].map(([_mapId, map]) => (
+                  <div class="map-section">
+                    <div class="map-header">
+                      <span class="map-label">{map.mapLabel}</span>
+                      <span class="bar-track bar-track-sm">
+                        <span class="bar-fill" style={`width: ${(map.ciphers.length / game.total) * 100}%; background: ${gameColors[gameId] ?? gameColors.unknown}; opacity: 0.65`} />
+                      </span>
+                      <span class="map-count">{map.ciphers.length}</span>
+                    </div>
+                    <ul class="cipher-list">
+                      {map.ciphers.map(c => (
+                        <li>
+                          <a href={c.href}>{c.label}</a>
+                          {c.type && c.type !== 'standard' && (
+                            <span class="cipher-type-badge">{c.type}</span>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </TabItem>
+    <TabItem label="Methods">
+      {solvesMethods.length === 0 ? (
+        <p class="empty-state">No solved ciphers with known methods.</p>
+      ) : (
+        <div class="chart-section">
+          {solvesMethods.map(entry => (
+            <div class="game-card">
+              <button type="button" class="game-row" aria-expanded="false">
+                <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <span class="game-label">{entry.label}</span>
+                <span class={`method-tag method-tag-${entry.category}`}>{entry.category}</span>
+                <span class="bar-track">
+                  <span class="bar-fill" style={`width: ${(entry.count / maxMethod) * 100}%; background: ${methodColors[entry.category]}`} />
+                </span>
+                <span class="game-count">{entry.count}</span>
+              </button>
+              <div class="game-panel" hidden>
+                <ul class="cipher-list">
+                  {entry.ciphers.map(c => (
+                    <li><a href={c.href}>{c.label}</a></li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </TabItem>
+  </Tabs>
+</div>
+
+<style>
+  /* ── Header ── */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .profile-icon {
+    display: inline-flex;
+    flex-shrink: 0;
+  }
+
+  .profile-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--sl-color-white, #fff);
+  }
+
+  /* ── Stats ── */
+  .profile-summary {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 7rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--sl-color-hairline, rgba(128, 128, 128, 0.2));
+    background: var(--sl-color-bg-nav, rgba(128, 128, 128, 0.06));
+  }
+
+  .stat-solves { border-left: 3px solid #16a34a; }
+  .stat-credits { border-left: 3px solid #2563eb; }
+
+  .stat-count {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--sl-color-white, #fff);
+    line-height: 1.2;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+    color: var(--sl-color-gray-3, #aaa);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── Chart layout ── */
+  .chart-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* ── Game cards ── */
+  .game-card {
+    border: 1px solid var(--sl-color-hairline, rgba(128, 128, 128, 0.15));
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: var(--sl-color-black, rgba(0, 0, 0, 0.15));
+  }
+
+  .game-card:has(.game-row[aria-expanded="true"]) {
+    border-color: var(--sl-color-gray-5, rgba(128, 128, 128, 0.3));
+  }
+
+  /* ── Game row (the clickable bar) ── */
+  .game-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    color: inherit;
+  }
+
+  .game-row:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  /* ── SVG chevron ── */
+  .chevron-icon {
+    width: 0.9rem;
+    height: 0.9rem;
+    flex-shrink: 0;
+    color: var(--sl-color-gray-3, #888);
+    transition: transform 0.15s ease;
+  }
+
+  .game-row[aria-expanded="true"] .chevron-icon {
+    transform: rotate(90deg);
+  }
+
+  .game-label {
+    min-width: 9rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--sl-color-white, #fff);
+    flex-shrink: 0;
+  }
+
+  /* ── Bar tracks ── */
+  .bar-track {
+    flex: 1;
+    height: 1.1rem;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 0.2rem;
+    overflow: hidden;
+  }
+
+  .bar-track-sm {
+    height: 0.6rem;
+  }
+
+  .bar-fill {
+    display: block;
+    height: 100%;
+    border-radius: 0.2rem;
+    min-width: 3px;
+  }
+
+  /* ── Counts ── */
+  .game-count {
+    min-width: 2rem;
+    text-align: right;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--sl-color-white, #fff);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .map-count {
+    min-width: 1.5rem;
+    text-align: right;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--sl-color-gray-2, #bbb);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ── Expanded panel ── */
+  .game-panel {
+    padding: 0 0.75rem 0.6rem 2.2rem;
+    border-top: 1px solid var(--sl-color-hairline, rgba(128, 128, 128, 0.1));
+  }
+
+  .map-section {
+    padding: 0.4rem 0;
+  }
+
+  .map-section + .map-section {
+    border-top: 1px dashed var(--sl-color-hairline, rgba(128, 128, 128, 0.1));
+  }
+
+  .map-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.2rem 0;
+  }
+
+  .map-label {
+    min-width: 8rem;
+    font-size: 0.8rem;
+    color: var(--sl-color-gray-2, #bbb);
+    flex-shrink: 0;
+  }
+
+  /* ── Cipher links ── */
+  .cipher-list {
+    list-style: none;
+    padding: 0.15rem 0 0 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 0.6rem;
+  }
+
+  .cipher-list li {
+    font-size: 0.78rem;
+    padding: 0;
+  }
+
+  .cipher-list li a {
+    color: var(--sl-color-text-accent, #7c9aff);
+    text-decoration: none;
+  }
+
+  .cipher-list li a:hover {
+    text-decoration: underline;
+  }
+
+  .cipher-type-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0.05em 0.35em;
+    margin-left: 0.2rem;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--sl-color-gray-2, #bbb);
+    text-transform: capitalize;
+    vertical-align: middle;
+  }
+
+  /* ── Method tags ── */
+  .method-tag {
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 0.1em 0.4em;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    flex-shrink: 0;
+  }
+
+  .method-tag-classical {
+    background: rgba(224, 160, 48, 0.15);
+    color: #e0a030;
+  }
+
+  .method-tag-modern {
+    background: rgba(52, 152, 219, 0.15);
+    color: #3498db;
+  }
+
+  .method-tag-other {
+    background: rgba(136, 136, 136, 0.15);
+    color: #aaa;
+  }
+
+  .empty-state {
+    color: var(--sl-color-gray-3, #aaa);
+    font-style: italic;
+  }
+
+  @media (max-width: 480px) {
+    .game-label { min-width: 6rem; font-size: 0.8rem; }
+    .map-label { min-width: 5rem; font-size: 0.75rem; }
+  }
+</style>
+
+<script>
+  function initProfileToggles() {
+    document.querySelectorAll('.user-profile .game-row').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        const panel = btn.nextElementSibling as HTMLElement | null;
+        if (panel) panel.hidden = expanded;
+      });
+    });
+  }
+
+  initProfileToggles();
+  document.addEventListener('astro:after-swap', initProfileToggles);
+</script>

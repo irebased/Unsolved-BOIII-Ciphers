@@ -1,16 +1,30 @@
 [
   {
+    "id": "ae0",
+    "map": "ae",
+    "number": 1,
+    "title": "Ancient Evil Alchemy Intro",
+    "type": "alchemy",
+    "image": "bo4/ae/ae_alch_0.webp",
+    "solved": true,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Poseidon",
+    "solution": null
+  },
+  {
     "id": "ae1",
     "map": "ae",
     "number": 1,
     "title": "Ancient Evil 1",
     "type": "alchemy",
-    "image": "bo4/ae/ae_alch_0.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/ae/ae_alch_1.webp",
+    "solved": true,
+    "solvers": ["Kalinine"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Dogma is darkness. Reason is your lantern.",
     "solution": null
   },
   {
@@ -19,12 +33,12 @@
     "number": 2,
     "title": "Ancient Evil 2",
     "type": "alchemy",
-    "image": "bo4/ae/ae_alch_1.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/ae/ae_alch_2.webp",
+    "solved": true,
+    "solvers": ["Kalinine"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "The door awaits. You already hold the key.",
     "solution": null
   },
   {
@@ -33,12 +47,12 @@
     "number": 3,
     "title": "Ancient Evil 3",
     "type": "alchemy",
-    "image": "bo4/ae/ae_alch_2.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/ae/ae_alch_3.webp",
+    "solved": true,
+    "solvers": ["coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Silence the voice within and truth will come to you.",
     "solution": null
   },
   {
@@ -47,12 +61,12 @@
     "number": 4,
     "title": "Ancient Evil 4",
     "type": "alchemy",
-    "image": "bo4/ae/ae_alch_3.png",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/ae/ae_alch_4.png",
+    "solved": true,
+    "solvers": ["TheViceSquad"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "To reach the end return to the beginning.",
     "solution": null
   },
   {
@@ -62,11 +76,11 @@
     "title": "Ancient Evil 5",
     "type": "alchemy",
     "image": "bo4/ae/ae_alch_4_unfound.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "That which destroyed the past will also save the future",
     "solution": null
   }
 ]

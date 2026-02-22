@@ -5,6 +5,7 @@ import starlight from '@astrojs/starlight';
 const WAW_CIPHERS = [
 	{
 		label: 'General',
+		collapsed: true,
 		items: [
 			{
 				label: 'Character Bios Solve',
@@ -14,6 +15,7 @@ const WAW_CIPHERS = [
 	},
 	{
 		label: 'Verruckt',
+		collapsed: true,
 		items: [
 			{
 				label: 'Verruckt 1 Solve',
@@ -27,6 +29,7 @@ const WAW_CIPHERS = [
 	},
 	{
 		label: 'Der Riese',
+		collapsed: true,
 		items: [
 			{
 				label: 'Der Riese 1 Solve',
@@ -47,6 +50,7 @@ const WAW_CIPHERS = [
 const BO1_CIPHERS = [
 	{
 		label: 'Kino der toten',
+		collapsed: true,
 		items: [
 			{
 				label: 'Kino 1 Solve',
@@ -56,6 +60,7 @@ const BO1_CIPHERS = [
 	},
 	{
 		label: 'Ascension',
+		collapsed: true,
 		items: [
 			{
 				label: 'Ascension 1 Solve',
@@ -65,6 +70,7 @@ const BO1_CIPHERS = [
 	},
 	{
 		label: 'Call of the Dead',
+		collapsed: true,
 		items: [
 			{
 				label: 'Call of the Dead 1',
@@ -74,6 +80,7 @@ const BO1_CIPHERS = [
 	},
 	{
 		label: 'Shangri La',
+		collapsed: true,
 		items: [
 			{
 				label: 'Shangri La 1 Solve',
@@ -86,6 +93,7 @@ const BO1_CIPHERS = [
 const BO2_CIPHERS = [
 	{
 		label: 'Tranzit',
+		collapsed: true,
 		items: [
 			{
 				label: 'Tranzit 1 Solve',
@@ -95,6 +103,7 @@ const BO2_CIPHERS = [
 	},
 	{
 		label: 'Mob of the Dead',
+		collapsed: true,
 		items: [
 			{
 				label: 'Mob of the Dead 1 Solve',
@@ -128,6 +137,7 @@ const BO2_CIPHERS = [
 	},
 	{
 		label: 'Origins',
+		collapsed: true,
 		items: [
 			{
 				label: 'Origins 1 Solve',
@@ -160,6 +170,7 @@ const BO2_CIPHERS = [
 const BO3_CIPHERS = [
 	{
 		label: 'Shadows of Evil',
+		collapsed: true,
 		items: [
 			{
 				label: 'Shadows of Evil 1 Solve',
@@ -189,9 +200,11 @@ const BO3_CIPHERS = [
 	},
 	{
 		label: 'The Giant',
+		collapsed: true,
 		items: [
 			{
 				label: 'Solved',
+				collapsed: true,
 				items: [
 					{ label: 'The Giant 1 Solve', slug: 'ciphers/bo3/tg/tg1' },
 					{ label: 'The Giant 2 Solve', slug: 'ciphers/bo3/tg/tg2' },
@@ -202,6 +215,7 @@ const BO3_CIPHERS = [
 			},
 			{
 				label: 'Unsolved',
+				collapsed: true,
 				items: [
 					{ label: 'The Giant 4', slug: 'ciphers/bo3/tg/tg4' },
 				]
@@ -210,6 +224,7 @@ const BO3_CIPHERS = [
 	},
 	{
 		label: 'Der Eisendrache',
+		collapsed: true,
 		items: [
 			{ label: 'Der Eisendrache 1 Solve', slug: 'ciphers/bo3/de/de1' },
 			{ label: 'Der Eisendrache 2 Solve', slug: 'ciphers/bo3/de/de2' },
@@ -227,6 +242,7 @@ const BO3_CIPHERS = [
 	},
 	{
 		label: 'Zetsubou No Shima',
+		collapsed: true,
 		items: [
 			{ label: 'Zetsubou No Shima 1 Solve', slug: 'ciphers/bo3/zns/zns1' },
 			{ label: 'Zetsubou No Shima 2 Solve', slug: 'ciphers/bo3/zns/zns2' },
@@ -245,6 +261,7 @@ const BO3_CIPHERS = [
 	},
 	{
 		label: 'Gorod Krovi',
+		collapsed: true,
 		items: [
 			{ label: 'Gorod Krovi 1 Solve', slug: 'ciphers/bo3/gk/gk1' },
 			{ label: 'Gorod Krovi 2 Solve', slug: 'ciphers/bo3/gk/gk2' },
@@ -264,9 +281,11 @@ const BO3_CIPHERS = [
 	},
 	{
 		label: 'Revelations',
+		collapsed: true,
 		items: [
 			{
 				label: 'Unsolved',
+				collapsed: true,
 				items: [
 					{ label: 'Revelations 1', slug: 'ciphers/bo3/rev/rev1' },
 					{ label: 'Revelations 7', slug: 'ciphers/bo3/rev/rev7' },
@@ -275,6 +294,7 @@ const BO3_CIPHERS = [
 			},
 			{
 				label: 'Solved',
+				collapsed: true,
 				items: [
 					{ label: 'Revelations 2 Solve', slug: 'ciphers/bo3/rev/rev2' },
 					{ label: 'Revelations 3 Solve', slug: 'ciphers/bo3/rev/rev3' },
@@ -296,16 +316,19 @@ const BO3_CIPHERS = [
 const BO4_CIPHERS = [
 	{
 		label: 'Ancient Evil',
+		collapsed: true,
 		items: [
-			{ label: 'Ancient Evil 1', slug: 'ciphers/bo4/ae/ae1' },
-			{ label: 'Ancient Evil 2', slug: 'ciphers/bo4/ae/ae2' },
-			{ label: 'Ancient Evil 3', slug: 'ciphers/bo4/ae/ae3' },
-			{ label: 'Ancient Evil 4', slug: 'ciphers/bo4/ae/ae4' },
-			{ label: 'Ancient Evil 5', slug: 'ciphers/bo4/ae/ae5' },
+			{ label: 'Ancient Evil Intro Solve', slug: 'ciphers/bo4/ae/ae0' },
+			{ label: 'Ancient Evil 1 Solve', slug: 'ciphers/bo4/ae/ae1' },
+			{ label: 'Ancient Evil 2 Solve', slug: 'ciphers/bo4/ae/ae2' },
+			{ label: 'Ancient Evil 3 Solve', slug: 'ciphers/bo4/ae/ae3' },
+			{ label: 'Ancient Evil 4 Solve', slug: 'ciphers/bo4/ae/ae4' },
+			{ label: 'Ancient Evil 5 Solve', slug: 'ciphers/bo4/ae/ae5' },
 		]
 	},
 	{
 		label: 'Blood of the Dead',
+		collapsed: true,
 		items: [
 			{ label: 'Blood of the Dead 1', slug: 'ciphers/bo4/botd/botd1' },
 			{ label: 'Blood of the Dead 2', slug: 'ciphers/bo4/botd/botd2' },
@@ -326,6 +349,7 @@ const BO4_CIPHERS = [
 	},
 	{
 		label: 'Classified',
+		collapsed: true,
 		items: [
 			{ label: 'Classified 1', slug: 'ciphers/bo4/class/class1' },
 			{ label: 'Classified 2', slug: 'ciphers/bo4/class/class2' },
@@ -336,6 +360,7 @@ const BO4_CIPHERS = [
 	},
 	{
 		label: 'Dead of the Night',
+		collapsed: true,
 		items: [
 			{ label: 'Dead of the Night 1', slug: 'ciphers/bo4/dotn/dotn1' },
 			{ label: 'Dead of the Night 2', slug: 'ciphers/bo4/dotn/dotn2' },
@@ -349,72 +374,89 @@ const BO4_CIPHERS = [
 	},
 	{
 		label: 'IX',
+		collapsed: true,
 		items: [
-			{ label: 'IX 1', slug: 'ciphers/bo4/ix/ix1' },
-			{ label: 'IX 2', slug: 'ciphers/bo4/ix/ix2' },
-			{ label: 'IX 3', slug: 'ciphers/bo4/ix/ix3' },
-			{ label: 'IX 4', slug: 'ciphers/bo4/ix/ix4' },
-			{ label: 'IX 5', slug: 'ciphers/bo4/ix/ix5' },
-			{ label: 'IX 6', slug: 'ciphers/bo4/ix/ix6' },
-			{ label: 'IX 7', slug: 'ciphers/bo4/ix/ix7' },
-			{ label: 'IX 8', slug: 'ciphers/bo4/ix/ix8' },
-			{ label: 'IX 9', slug: 'ciphers/bo4/ix/ix9' },
-			{ label: 'IX 10', slug: 'ciphers/bo4/ix/ix10' },
-			{ label: 'IX 11', slug: 'ciphers/bo4/ix/ix11' },
-			{ label: 'IX 12', slug: 'ciphers/bo4/ix/ix12' },
-			{ label: 'IX 13', slug: 'ciphers/bo4/ix/ix13' },
-			{ label: 'IX 14', slug: 'ciphers/bo4/ix/ix14' },
-			{ label: 'IX 15', slug: 'ciphers/bo4/ix/ix15' },
-			{ label: 'IX 16', slug: 'ciphers/bo4/ix/ix16' },
-			{ label: 'IX 17', slug: 'ciphers/bo4/ix/ix17' },
-			{ label: 'IX 18', slug: 'ciphers/bo4/ix/ix18' },
-			{ label: 'IX 19', slug: 'ciphers/bo4/ix/ix19' },
-			{ label: 'IX 20', slug: 'ciphers/bo4/ix/ix20' },
-			{ label: 'IX 21', slug: 'ciphers/bo4/ix/ix21' },
-			{ label: 'IX 22', slug: 'ciphers/bo4/ix/ix22' },
-			{ label: 'IX 23', slug: 'ciphers/bo4/ix/ix23' },
-			{ label: 'IX 24', slug: 'ciphers/bo4/ix/ix24' },
-			{ label: 'IX 25', slug: 'ciphers/bo4/ix/ix25' },
-			{ label: 'IX 26', slug: 'ciphers/bo4/ix/ix26' },
-			{ label: 'IX 27', slug: 'ciphers/bo4/ix/ix27' },
-			{ label: 'IX 28', slug: 'ciphers/bo4/ix/ix28' },
-			{ label: 'IX 29', slug: 'ciphers/bo4/ix/ix29' },
+			{
+				label: "Unsolved",
+				collapsed: true,
+				items: [
+					{ label: 'IX 3', slug: 'ciphers/bo4/ix/ix3' },
+					{ label: 'IX 7', slug: 'ciphers/bo4/ix/ix7' },
+					{ label: 'IX 9', slug: 'ciphers/bo4/ix/ix9' }
+				]
+			},
+			{
+				label: "Solved",
+				collapsed: true,
+				items: [
+					{ label: 'IX 1 Solve', slug: 'ciphers/bo4/ix/ix1' },
+					{ label: 'IX 2 Solve', slug: 'ciphers/bo4/ix/ix2' },
+					{ label: 'IX 4 Solve', slug: 'ciphers/bo4/ix/ix4' },
+					{ label: 'IX 5 Solve', slug: 'ciphers/bo4/ix/ix5' },
+					{ label: 'IX 6 Solve', slug: 'ciphers/bo4/ix/ix6' },
+					{ label: 'IX 8 Solve', slug: 'ciphers/bo4/ix/ix8' },
+					{ label: 'IX 10 Solve', slug: 'ciphers/bo4/ix/ix10' },
+					{ label: 'IX 11 Solve', slug: 'ciphers/bo4/ix/ix11' },
+					{ label: 'IX 12 Solve', slug: 'ciphers/bo4/ix/ix12' },
+					{ label: 'IX 13 Solve', slug: 'ciphers/bo4/ix/ix13' },
+					{ label: 'IX 14 Solve', slug: 'ciphers/bo4/ix/ix14' },
+					{ label: 'IX 15 Solve', slug: 'ciphers/bo4/ix/ix15' },
+					{ label: 'IX 16 Solve', slug: 'ciphers/bo4/ix/ix16' },
+					{ label: 'IX 17 Solve', slug: 'ciphers/bo4/ix/ix17' },
+					{ label: 'IX 18 Solve', slug: 'ciphers/bo4/ix/ix18' },
+					{ label: 'IX 19 Solve', slug: 'ciphers/bo4/ix/ix19' },
+					{ label: 'IX 20 Solve', slug: 'ciphers/bo4/ix/ix20' },
+					{ label: 'IX 21 Solve', slug: 'ciphers/bo4/ix/ix21' },
+					{ label: 'IX 22 Solve', slug: 'ciphers/bo4/ix/ix22' },
+					{ label: 'IX 23 Solve', slug: 'ciphers/bo4/ix/ix23' },
+					{ label: 'IX 24 Solve', slug: 'ciphers/bo4/ix/ix24' },
+					{ label: 'IX 25 Solve', slug: 'ciphers/bo4/ix/ix25' },
+					{ label: 'IX 26 Solve', slug: 'ciphers/bo4/ix/ix26' },
+					{ label: 'IX 27 Solve', slug: 'ciphers/bo4/ix/ix27' },
+					{ label: 'IX 28 Solve', slug: 'ciphers/bo4/ix/ix28' },
+					{ label: 'IX 29 Solve', slug: 'ciphers/bo4/ix/ix29' },
+				]
+			}
 		]
 	},
 	{
 		label: 'Voyage of Despair',
+		collapsed: true,
 		items: [
-			{ label: 'Voyage of Despair 1', slug: 'ciphers/bo4/vod/vod1' },
-			{ label: 'Voyage of Despair 2', slug: 'ciphers/bo4/vod/vod2' },
-			{ label: 'Voyage of Despair 3', slug: 'ciphers/bo4/vod/vod3' },
-			{ label: 'Voyage of Despair 4', slug: 'ciphers/bo4/vod/vod4' },
-			{ label: 'Voyage of Despair 5', slug: 'ciphers/bo4/vod/vod5' },
-			{ label: 'Voyage of Despair 6', slug: 'ciphers/bo4/vod/vod6' },
-			{ label: 'Voyage of Despair 7', slug: 'ciphers/bo4/vod/vod7' },
-			{ label: 'Voyage of Despair 8', slug: 'ciphers/bo4/vod/vod8' },
-			{ label: 'Voyage of Despair 9', slug: 'ciphers/bo4/vod/vod9' },
-			{ label: 'Voyage of Despair 10', slug: 'ciphers/bo4/vod/vod10' },
-			{ label: 'Voyage of Despair 11', slug: 'ciphers/bo4/vod/vod11' },
-			{ label: 'Voyage of Despair 12', slug: 'ciphers/bo4/vod/vod12' },
-			{ label: 'Voyage of Despair 13', slug: 'ciphers/bo4/vod/vod13' },
-			{ label: 'Voyage of Despair 14', slug: 'ciphers/bo4/vod/vod14' },
-			{ label: 'Voyage of Despair 15', slug: 'ciphers/bo4/vod/vod15' },
-			{ label: 'Voyage of Despair 16', slug: 'ciphers/bo4/vod/vod16' },
-			{ label: 'Voyage of Despair 17', slug: 'ciphers/bo4/vod/vod17' },
-			{ label: 'Voyage of Despair 18', slug: 'ciphers/bo4/vod/vod18' },
-			{ label: 'Voyage of Despair 19', slug: 'ciphers/bo4/vod/vod19' },
-			{ label: 'Voyage of Despair 20', slug: 'ciphers/bo4/vod/vod20' },
-			{ label: 'Voyage of Despair 21', slug: 'ciphers/bo4/vod/vod21' },
+			{ label: 'Voyage 1 Solve', slug: 'ciphers/bo4/vod/vod1' },
+			{ label: 'Voyage 2 Solve', slug: 'ciphers/bo4/vod/vod2' },
+			{ label: 'Voyage 3 Solve', slug: 'ciphers/bo4/vod/vod3' },
+			{ label: 'Voyage 4 Solve', slug: 'ciphers/bo4/vod/vod4' },
+			{ label: 'Voyage 5 Solve', slug: 'ciphers/bo4/vod/vod5' },
+			{ label: 'Voyage 6 Solve', slug: 'ciphers/bo4/vod/vod6' },
+			{ label: 'Voyage 7 Solve', slug: 'ciphers/bo4/vod/vod7' },
+			{ label: 'Voyage 8 Solve', slug: 'ciphers/bo4/vod/vod8' },
+			{ label: 'Voyage 9 Solve', slug: 'ciphers/bo4/vod/vod9' },
+			{ label: 'Voyage 10 Solve', slug: 'ciphers/bo4/vod/vod10' },
+			{ label: 'Voyage 11 Solve', slug: 'ciphers/bo4/vod/vod11' },
+			{ label: 'Voyage 12 Solve', slug: 'ciphers/bo4/vod/vod12' },
+			{ label: 'Voyage 13 Solve', slug: 'ciphers/bo4/vod/vod13' },
+			{ label: 'Voyage 14 Solve', slug: 'ciphers/bo4/vod/vod14' },
+			{ label: 'Voyage 15 Solve', slug: 'ciphers/bo4/vod/vod15' },
+			{ label: 'Voyage 16 Solve', slug: 'ciphers/bo4/vod/vod16' },
+			{ label: 'Voyage 17 Solve', slug: 'ciphers/bo4/vod/vod17' },
+			{ label: 'Voyage 18 Solve', slug: 'ciphers/bo4/vod/vod18' },
+			{ label: 'Voyage 19 Solve', slug: 'ciphers/bo4/vod/vod19' },
+			{ label: 'Voyage 20 Solve', slug: 'ciphers/bo4/vod/vod20' },
+			{ label: 'Voyage 21 Solve', slug: 'ciphers/bo4/vod/vod21' },
+			{ label: 'Voyage 22 Solve', slug: 'ciphers/bo4/vod/vod22' },
+			{ label: 'Voyage 23 Solve', slug: 'ciphers/bo4/vod/vod23' },
 		]
 	},
 	{
 		label: 'General',
+		collapsed: true,
 		items: [
-			{ label: 'BO4 Teaser 1', slug: 'ciphers/bo4/general/bo4gen1' },
-			{ label: 'BO4 Teaser 2', slug: 'ciphers/bo4/general/bo4gen2' },
-			{ label: 'BO4 Teaser 3', slug: 'ciphers/bo4/general/bo4gen3' },
-			{ label: 'BO4 Teaser 4', slug: 'ciphers/bo4/general/bo4gen4' },
-			{ label: 'BO4 Teaser 5', slug: 'ciphers/bo4/general/bo4gen5' },
+			{ label: 'BO4 Teaser 1 Solve', slug: 'ciphers/bo4/general/bo4gen1' },
+			{ label: 'BO4 Teaser 2 Solve', slug: 'ciphers/bo4/general/bo4gen2' },
+			{ label: 'BO4 Teaser 3 Solve', slug: 'ciphers/bo4/general/bo4gen3' },
+			{ label: 'BO4 Teaser 4 Solve', slug: 'ciphers/bo4/general/bo4gen4' },
+			{ label: 'BO4 Teaser 5 Solve', slug: 'ciphers/bo4/general/bo4gen5' },
 		]
 	},
 ];
@@ -422,12 +464,14 @@ const BO4_CIPHERS = [
 const BO5_CIPHERS = [
 	{
 		label: 'Dark Aether Intel',
+		collapsed: true,
 		items: [
 			{ label: 'Dark Aether Intel 1', slug: 'ciphers/bo5/dai/dai1' },
 		]
 	},
 	{
 		label: 'Die Maschine',
+		collapsed: true,
 		items: [
 			{ label: 'Die Maschine 1', slug: 'ciphers/bo5/dm/dm1' },
 			{ label: 'Die Maschine 2', slug: 'ciphers/bo5/dm/dm2' },
@@ -437,6 +481,7 @@ const BO5_CIPHERS = [
 	},
 	{
 		label: 'Firebase Z',
+		collapsed: true,
 		items: [
 			{ label: 'Firebase Z 1', slug: 'ciphers/bo5/fbz/fbz1' },
 			{ label: 'Firebase Z 2', slug: 'ciphers/bo5/fbz/fbz2' },
@@ -445,6 +490,7 @@ const BO5_CIPHERS = [
 	},
 	{
 		label: 'Mauer der Toten',
+		collapsed: true,
 		items: [
 			{ label: 'Mauer der Toten 1', slug: 'ciphers/bo5/mtd/mtd1' },
 			{ label: 'Mauer der Toten 2', slug: 'ciphers/bo5/mtd/mtd2' },
@@ -452,6 +498,7 @@ const BO5_CIPHERS = [
 	},
 	{
 		label: 'Outbreak',
+		collapsed: true,
 		items: [
 			{ label: 'Outbreak 1', slug: 'ciphers/bo5/otb/otb1' },
 			{ label: 'Outbreak 2', slug: 'ciphers/bo5/otb/otb2' },
@@ -463,6 +510,7 @@ const BO5_CIPHERS = [
 const COMIC_CIPHERS = [
 	{
 		label: 'Issue 1',
+		collapsed: true,
 		items: [
 			{
 				label: 'Comic Cipher 1.1 Solve',
@@ -480,6 +528,7 @@ const COMIC_CIPHERS = [
 	},
 	{
 		label: 'Issue 2',
+		collapsed: true,
 		items: [
 			{
 				label: 'Comic Cipher 2.1 Solve',
@@ -497,6 +546,7 @@ const COMIC_CIPHERS = [
 	},
 	{
 		label: 'Issue 3',
+		collapsed: true,
 		items: [
 			{
 				label: 'Comic Cipher 3.1 Solve',
@@ -514,6 +564,7 @@ const COMIC_CIPHERS = [
 	},
 	{
 		label: 'Issue 4',
+		collapsed: true,
 		items: [
 			{
 				label: 'Comic Cipher 4.1 Solve',
@@ -531,6 +582,7 @@ const COMIC_CIPHERS = [
 	},
 	{
 		label: 'Issue 5',
+		collapsed: true,
 		items: [
 			{
 				label: 'Comic Cipher 5.1 Solve',
@@ -548,6 +600,7 @@ const COMIC_CIPHERS = [
 	},
 	{
 		label: 'Issue 6',
+		collapsed: true,
 		items: [
 			{
 				label: 'Comic Cipher 6.1 Solve',
@@ -586,30 +639,37 @@ export default defineConfig({
 					items: [
 						{
 							label: 'World at War',
+							collapsed: true,
 							items: WAW_CIPHERS
 						},
 						{
 							label: 'Black Ops',
+							collapsed: true,
 							items: BO1_CIPHERS
 						},
 						{
 							label: 'Black Ops II',
+							collapsed: true,
 							items: BO2_CIPHERS
 						},
 						{
 							label: 'Black Ops III',
+							collapsed: true,
 							items: BO3_CIPHERS
 						},
 						{
 							label: 'Black Ops 4',
+							collapsed: true,
 							items: BO4_CIPHERS
 						},
 						{
 							label: 'Black Ops Cold War',
+							collapsed: true,
 							items: BO5_CIPHERS
 						},
 						{
 							label: 'Comics',
+							collapsed: true,
 							items: COMIC_CIPHERS
 						}
 					],

@@ -5,12 +5,20 @@
     "number": 1,
     "title": "Die Maschine 1",
     "image": "bo5/dm/dm_1.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Richkiller", "coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Attention K\n\nInitial survey of Ural Site verifies it is by far the largest incursion zone yet recorded. We must assume Requiem will detect it via satellite and deploy fireteams regardless of sovereign borders. Recommend continuing operations while monitoring Requiem communications. With your support I will ensure any new gains remain in Soviet hands.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "beaufort",
+          "key": "OUTBREAK"
+        }
+      ]
+    }
   },
   {
     "id": "dm2",
@@ -18,12 +26,20 @@
     "number": 2,
     "title": "Die Maschine 2",
     "image": "bo5/dm/dm_2.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Richkiller"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Attention K\n\nP confirms viability of deployment. Opportunity identified in previous communique. Selected site is approved for trial run of Operatsiya Inversiya. The nature of warfare is about to transform. Any mission, anytime, anyplace.\n\nG",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "hill_3x3",
+          "key": "7 16 1 18 1 2 18 0 3"
+        }
+      ]
+    }
   },
   {
     "id": "dm3",
@@ -31,12 +47,28 @@
     "number": 3,
     "title": "Die Maschine 3",
     "image": "bo5/dm/dm_3.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": [
+      "DyingNova",
+      "Tgaza",
+      "OriginWormy",
+      "MrFRZ",
+      "Scotto",
+      "GeekyPastimes",
+      "Raikoon"
+    ],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Inform the Chancellor that preparations have been made to open the third front. Endstation is ready to receive the package as soon as it can be assembled and transported. We are honored to help facilitate Reichstag's plan. - V",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "enigma_m3",
+          "configuration": "Reflector UKW B, Rotors 6 2 7, Position P J F, Ring G R A, Plugboard UB RT FO VN QE JP AG LY"
+        }
+      ]
+    }
   },
   {
     "id": "dm4",
@@ -44,11 +76,19 @@
     "number": 4,
     "title": "Die Maschine 4",
     "image": "bo5/dm/dm_4.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["OriginWormy", "Numskul123"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Abreise ohne weiter Zwischenfälle. Alle Werte stabil. Ankunft in Germania. Wie besprochen, was jetzt auch passiert, der Sieg ist uns gewiss. - V\n\n[Departure without further incident. All values stable. Arrival in Germania. As discussed, whatever happens now, victory is certain for us. - V]",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "ADFGX",
+          "configuration": "transposition key 'Heimat' and alphabet TWUGZLVXDKHYENACSIQMPFRBO"
+        }
+      ]
+    }
   }
 ]

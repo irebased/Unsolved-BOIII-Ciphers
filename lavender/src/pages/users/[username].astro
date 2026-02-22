@@ -1,0 +1,26 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import UserProfile from '@/components/UserProfile.astro';
+import { getAllCiphers, getAllUsers } from '@/data/db';
+
+export function getStaticPaths() {
+  const users = new Set<string>();
+  for (const cipher of getAllCiphers()) {
+    cipher.solvers.forEach(u => users.add(u));
+    cipher.credits.forEach(u => users.add(u));
+  }
+  for (const name of Object.keys(getAllUsers())) {
+    users.add(name);
+  }
+  return [...users].map(username => ({
+    params: { username },
+    props: { username },
+  }));
+}
+
+const { username } = Astro.props;
+---
+
+<StarlightPage frontmatter={{ title: username, description: `Profile for ${username}`, head: [{ tag: 'style', content: '.content-panel h1#_top { display: none; }' }] }}>
+  <UserProfile username={username} />
+</StarlightPage>

@@ -5,12 +5,19 @@
     "number": 1,
     "title": "IX 1",
     "image": "bo4/ix/ix_1.png",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["certainpersonio"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Your resolve is weakening you will soon succumb",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "substitution"
+        }
+      ]
+    }
   },
   {
     "id": "ix2",
@@ -18,12 +25,20 @@
     "number": 2,
     "title": "IX 2",
     "image": "bo4/ix/ix_2.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["deservesmorelikes"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "If you are not the betrayer. You will be the betrayed",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "caesar_shift",
+          "configuration": "a shift of 24"
+        }
+      ]
+    }
   },
   {
     "id": "ix3",
@@ -34,7 +49,7 @@
     "solved": false,
     "solvers": [],
     "credits": [],
-    "ciphertext": null,
+    "ciphertext": "WPKITUAVZZFKLZTDMKXAQULNROVEYUMKCANTKULFL",
     "plaintext": null,
     "solution": null
   },
@@ -44,12 +59,20 @@
     "number": 4,
     "title": "IX 4",
     "image": "bo4/ix/ix_4.jpg",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Lizizabirdnerd"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Even a fool such as you may prove useful turn around before it is too late",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "beaufort",
+          "key": "Nine"
+        }
+      ]
+    }
   },
   {
     "id": "ix5",
@@ -57,12 +80,20 @@
     "number": 5,
     "title": "IX 5",
     "image": "bo4/ix/ix_5.webp",
-    "solved": false,
-    "solvers": [],
-    "credits": [],
+    "solved": true,
+    "solvers": ["coldstone_the_gamer"],
+    "credits": ["Richkiller"],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "All that you believe in will crumble to dust",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "affine",
+          "configuration": "A = 11 and B = 24"
+        }
+      ]
+    }
   },
   {
     "id": "ix6",
@@ -70,12 +101,20 @@
     "number": 6,
     "title": "IX 6",
     "image": "bo4/ix/ix_6.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Gazump"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "You do not even know your own mind. It is a foreign land",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "caesar",
+          "configuration": "a shift of 13"
+        }
+      ]
+    }
   },
   {
     "id": "ix7",
@@ -86,7 +125,7 @@
     "solved": false,
     "solvers": [],
     "credits": [],
-    "ciphertext": null,
+    "ciphertext": "UWDRZSHWZSUSAUUWNAOUSWVDHTDOHLPZAPUXDI",
     "plaintext": null,
     "solution": null
   },
@@ -96,12 +135,20 @@
     "number": 8,
     "title": "IX 8",
     "image": "bo4/ix/ix_8.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Richkiller", "coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "A wave of change is coming, you will be swept up in its wake",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "hill",
+          "key": "2 15 18 22"
+        }
+      ]
+    }
   },
   {
     "id": "ix9",
@@ -109,10 +156,10 @@
     "number": 9,
     "title": "IX 9",
     "image": "bo4/ix/ix_9.webp",
-    "solved": false,
+    "solved": true,
     "solvers": [],
     "credits": [],
-    "ciphertext": null,
+    "ciphertext": "DFGOHQGEPSYADLFATNGKYVKEWLAMLI",
     "plaintext": null,
     "solution": null
   },
@@ -122,12 +169,20 @@
     "number": 10,
     "title": "IX 10",
     "image": "bo4/ix/ix_10.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Richkiller"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "The path you travel will never fill your empty heart",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "porta",
+          "key": "Nine"
+        }
+      ]
+    }
   },
   {
     "id": "ix11",
@@ -135,12 +190,20 @@
     "number": 11,
     "title": "IX 11",
     "image": "bo4/ix/ix_11.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Richkiller"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "The solace you seek will not come without sacrifice",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "columnar_transposition",
+          "key": "Nine"
+        }
+      ]
+    }
   },
   {
     "id": "ix12",
@@ -148,12 +211,19 @@
     "number": 12,
     "title": "IX 12",
     "image": "bo4/ix/ix_12.webp",
-    "solved": false,
+    "solved": true,
     "solvers": [],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "The sins of the father are the sins of the daughter",
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "These are egyption hieroglyphs."
+        }
+      ]
+    }
   },
   {
     "id": "ix13",
@@ -161,24 +231,32 @@
     "number": 13,
     "title": "IX 13",
     "image": "bo4/ix/ix_13.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["webrow", "certainpersonio", "za0820", "SavageXanchez", "icyrizard"],
     "credits": [],
     "ciphertext": null,
     "plaintext": null,
-    "solution": null
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "This puzzle writes text in the stars from the Hipparcos stars catalogue."
+        }
+      ]
+    }
   },
   {
     "id": "ix14",
     "map": "ix",
     "number": 14,
     "title": "IX 14",
+    "type": "alchemy",
     "image": "bo4/ix/ix_14.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["naycraig"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Deeply Breathe",
     "solution": null
   },
   {
@@ -187,11 +265,12 @@
     "number": 15,
     "title": "IX 15",
     "image": "bo4/ix/ix_15.webp",
-    "solved": false,
-    "solvers": [],
+    "type": "alchemy",
+    "solved": true,
+    "solvers": ["coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "The lords are nine, holding the truth.\nTo hear the truth, we must listen.\nTo see the truth, we must open our eyes.\nTo speak the truth, we must cross the threshold and forever be transformed.",
     "solution": null
   },
   {
@@ -200,11 +279,12 @@
     "number": 16,
     "title": "IX 16",
     "image": "bo4/ix/ix_16.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "type": "alchemy",
+    "solvers": ["coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "The dark heart\nThe lords nine\nThe last gates\nThe third eye\nThe rose cross",
     "solution": null
   },
   {
@@ -212,12 +292,13 @@
     "map": "ix",
     "number": 17,
     "title": "IX 17",
+    "type": "alchemy",
     "image": "bo4/ix/ix_17.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Prove your fortitude unlock the gates",
     "solution": null
   },
   {
@@ -225,12 +306,13 @@
     "map": "ix",
     "number": 18,
     "title": "IX 18",
+    "type": "alchemy",
     "image": "bo4/ix/ix_18.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Reward for the doomed",
     "solution": null
   },
   {
@@ -238,12 +320,13 @@
     "map": "ix",
     "number": 19,
     "title": "IX 19",
+    "type": "alchemy",
     "image": "bo4/ix/ix_19.webp",
     "solved": false,
-    "solvers": [],
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Above the scorching deserts beyond the sea the lord of the sun sees all\nHis eye has stood watch over farmer and pharoah rising and setting the same\nAll seeing sight shall be ours as well in shadow no evil shall hide\nFor we are the lord of the sun, our light, reveals truth. In chaos, it shall be done",
     "solution": null
   },
   {
@@ -252,11 +335,12 @@
     "number": 20,
     "title": "IX 20",
     "image": "bo4/ix/ix_20.webp",
-    "solved": false,
-    "solvers": [],
+    "type": "alchemy",
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Gold and silver are worthless on the journey to enlightenment",
     "solution": null
   },
   {
@@ -264,12 +348,13 @@
     "map": "ix",
     "number": 21,
     "title": "IX 21",
+    "type": "alchemy",
     "image": "bo4/ix/ix_21.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "In the ancient forests of island green the mother of life bears fruit\nHer children, the trees and people alike, she whispers her love as they grow\nBarren lands shall grow at our touch, that which is green shall spread\nFor we are the mothers of life, our roots run deep. In chaos, it shall be done",
     "solution": null
   },
   {
@@ -278,11 +363,12 @@
     "number": 22,
     "title": "IX 22",
     "image": "bo4/ix/ix_22.webp",
-    "solved": false,
-    "solvers": [],
+    "type": "alchemy",
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Worship of earth and nature alone does not lead to our gateway",
     "solution": null
   },
   {
@@ -291,11 +377,12 @@
     "number": 23,
     "title": "IX 23",
     "image": "bo4/ix/ix_23.webp",
-    "solved": false,
-    "solvers": [],
+    "type": "alchemy",
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "On the meridian shores of sand and stone the king of the gods holds court\nWith lightning, his will, and thunder, his voice, he directs all creation to follow\nOur words shall ring loud and clear; sky, sea and storms. One golden voice in every ear\nFor we are the kings of the gods, our reign is nigh. In chaos, it shall be done",
     "solution": null
   },
   {
@@ -304,11 +391,12 @@
     "number": 24,
     "title": "IX 24",
     "image": "bo4/ix/ix_24.webp",
-    "solved": false,
-    "solvers": [],
+    "type": "alchemy",
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "The many gods you worship will not have all the answers you seek",
     "solution": null
   },
   {
@@ -317,11 +405,12 @@
     "number": 25,
     "title": "IX 25",
     "image": "bo4/ix/ix_25.webp",
-    "solved": false,
-    "solvers": [],
+    "type": "alchemy",
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Through the northern seas and mountains cold, the wandering father guides men\nIn battle, in verse, in life, in death, his wisdom is often disguised\nOur deed shall echo in glorious songs, lessons of blood saved and spilt\nThrough the northern seas and mountains cold the wandering father guides men",
     "solution": null
   },
   {
@@ -330,11 +419,12 @@
     "number": 26,
     "title": "IX 26",
     "image": "bo4/ix/ix_26.webp",
-    "solved": false,
-    "solvers": [],
+    "type": "alchemy",
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "The sacrifice of another is not enough to gain our knowledge",
     "solution": null
   },
   {
@@ -343,11 +433,12 @@
     "number": 27,
     "title": "IX 27",
     "image": "bo4/ix/ix_27.webp",
-    "solved": false,
-    "solvers": [],
+    "type": "alchemy",
+    "solved": true,
+    "solvers": ["Afrochubman", "coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Singing creation from the matter poured\nThe world floating in fires four\nSacred knowledge we now guard\nThe corrupter's mind must be barred\n\nOnly the worthy will cross the threshold and be transformed",
     "solution": null
   },
   {
@@ -356,11 +447,12 @@
     "number": 28,
     "title": "IX 28",
     "image": "bo4/ix/ix_28.webp",
-    "solved": false,
-    "solvers": [],
+    "type": "alchemy",
+    "solved": true,
+    "solvers": ["Richkiller"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Estellephant",
     "solution": null
   },
   {
@@ -369,11 +461,12 @@
     "number": 29,
     "title": "IX 29",
     "image": "bo4/ix/ix_29.webp",
-    "solved": false,
-    "solvers": [],
+    "type": "alchemy",
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Poseidon",
     "solution": null
   }
 ]

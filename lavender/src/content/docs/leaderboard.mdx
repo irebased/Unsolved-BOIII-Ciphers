@@ -5,7 +5,7 @@ description: Rankings of solvers and contributors
 
 import Username from '@/components/Username.astro'
 import { Tabs, TabItem } from '@astrojs/starlight/components'
-import { getAllCiphers, getUser } from '@/data/db'
+import { getAllCiphers, getUser, getMap, getGame } from '@/data/db'
 
 export const entries = (() => {
   const map = {};
@@ -26,8 +26,48 @@ export const bySolves = entries.filter(e => e.solvesCount > 0).sort((a, b) => b.
 export const byCredits = entries.filter(e => e.creditsCount > 0).sort((a, b) => b.creditsCount - a.creditsCount).slice(0, 10);
 export const byTotal = entries.filter(e => e.totalCount > 0).sort((a, b) => b.totalCount - a.totalCount).slice(0, 10);
 
+export const gameLeaderboards = (() => {
+  const gameOrder = ['waw', 'bo2', 'bo3', 'comics', 'bo4', 'bo5'];
+  const perGame = {};
+  for (const cipher of getAllCiphers()) {
+    const mapInfo = getMap(cipher.map);
+    const gameId = mapInfo?.game ?? 'unknown';
+    if (!perGame[gameId]) perGame[gameId] = {};
+    for (const u of cipher.solvers) {
+      if (!perGame[gameId][u]) perGame[gameId][u] = { name: u, platform: getUser(u)?.platform ?? 'generic', solvesCount: 0, creditsCount: 0 };
+      perGame[gameId][u].solvesCount++;
+    }
+    for (const u of cipher.credits) {
+      if (!perGame[gameId][u]) perGame[gameId][u] = { name: u, platform: getUser(u)?.platform ?? 'generic', solvesCount: 0, creditsCount: 0 };
+      perGame[gameId][u].creditsCount++;
+    }
+  }
+  return gameOrder
+    .filter(id => perGame[id] && Object.keys(perGame[id]).length > 0)
+    .map(id => {
+      const all = Object.values(perGame[id]).map(e => ({ ...e, totalCount: e.solvesCount + e.creditsCount }));
+      return {
+        id,
+        label: getGame(id)?.label ?? id,
+        bySolves: all.filter(e => e.solvesCount > 0).sort((a, b) => b.solvesCount - a.solvesCount).slice(0, 10),
+        byCredits: all.filter(e => e.creditsCount > 0).sort((a, b) => b.creditsCount - a.creditsCount).slice(0, 10),
+        byTotal: all.filter(e => e.totalCount > 0).sort((a, b) => b.totalCount - a.totalCount).slice(0, 10),
+      };
+    });
+})();
+
 export const medal = (i) => i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `${i + 1}`;
 
+<div class="leaderboard-filter not-content">
+  <select id="leaderboard-select">
+    <option value="overall">Overall</option>
+    {gameLeaderboards.map(game => (
+      <option value={game.id}>{game.label}</option>
+    ))}
+  </select>
+</div>
+
+<div class="leaderboard-panel" data-panel="overall">
 <Tabs>
   <TabItem label="Top Solvers">
     <table class="leaderboard-table">
@@ -78,8 +118,90 @@ export const medal = (i) => i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '�
     </table>
   </TabItem>
 </Tabs>
+</div>
+
+{gameLeaderboards.map(game => (
+  <div class="leaderboard-panel" data-panel={game.id} style="display:none;">
+    <Tabs>
+      <TabItem label="Top Solvers">
+        <table class="leaderboard-table">
+          <thead>
+            <tr><th>Rank</th><th>User</th><th>Solves</th></tr>
+          </thead>
+          <tbody>
+            {game.bySolves.map((e, i) => (
+              <tr>
+                <td>{medal(i)}</td>
+                <td><Username name={e.name} /></td>
+                <td>{e.solvesCount}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </TabItem>
+      <TabItem label="Top Contributors">
+        <table class="leaderboard-table">
+          <thead>
+            <tr><th>Rank</th><th>User</th><th>Credits</th></tr>
+          </thead>
+          <tbody>
+            {game.byCredits.map((e, i) => (
+              <tr>
+                <td>{medal(i)}</td>
+                <td><Username name={e.name} /></td>
+                <td>{e.creditsCount}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </TabItem>
+      <TabItem label="Combined">
+        <table class="leaderboard-table">
+          <thead>
+            <tr><th>Rank</th><th>User</th><th>Total</th></tr>
+          </thead>
+          <tbody>
+            {game.byTotal.map((e, i) => (
+              <tr>
+                <td>{medal(i)}</td>
+                <td><Username name={e.name} /></td>
+                <td>{e.totalCount}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </TabItem>
+    </Tabs>
+  </div>
+))}
 
 <style>{`
+  .leaderboard-filter {
+    margin-bottom: 1.5rem;
+  }
+  .leaderboard-filter select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: var(--sl-color-bg-nav, #1e1e2e);
+    color: var(--sl-color-text, #ccc);
+    border: 1px solid var(--sl-color-hairline, #444);
+    border-radius: 0.5rem;
+    padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23aaa' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    min-width: 12rem;
+  }
+  .leaderboard-filter select:hover {
+    border-color: var(--sl-color-gray-3, #888);
+  }
+  .leaderboard-filter select:focus {
+    outline: 2px solid var(--sl-color-text-accent, #7c9aff);
+    outline-offset: 2px;
+  }
   .leaderboard-table {
     display: table;
     width: 100%;
@@ -121,3 +243,19 @@ export const medal = (i) => i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '�
     font-weight: 600;
   }
 `}</style>
+
+<script>{`
+  function initLeaderboardFilter() {
+    const select = document.getElementById('leaderboard-select');
+    if (!select) return;
+    const panels = document.querySelectorAll('.leaderboard-panel');
+    select.addEventListener('change', () => {
+      const val = select.value;
+      panels.forEach(p => {
+        p.style.display = p.dataset.panel === val ? '' : 'none';
+      });
+    });
+  }
+  initLeaderboardFilter();
+  document.addEventListener('astro:after-swap', initLeaderboardFilter);
+`}</script>

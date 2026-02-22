@@ -5,12 +5,24 @@
     "number": 1,
     "title": "Classified 1",
     "image": "bo4/class/class_1.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": [
+      "Richkiller",
+      "certainpersonio",
+      "coldstone_the_gamer"
+    ],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "CLASSIFIED\n\n11th July 1961\n\nMEMORANDUM FOR SECRETARY OF DEFENSE\n\nSUBJECT: DIVISION 9 ACQUISITION AND THE ELEMENTAL SHARD\n\nI’ve had my men examine all materials acquired from Division 9 in 1946 and have been unable to find the elemental shard. According to our records it was on the original manifest for the formal acquisition of materials and verified as delivered. So I’m more than a little perplexed as to where it’s ended up. I see two possibilities:\n\n1) It was lost/destroyed in transit which seems highly unlikely given both it’s size and density\n\n2) It was intentionally taken by a specified individual and is being kept from us. As to who might have taken it, I have my suspicions. For several years Groom Lake was our primary storage for all Division 9 materials.\n\nPerhaps Pernell may have answers as to the fate of the elemental shard.\n\n--Colonel Sawyer",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "playfair",
+          "key": "CLASIFEDBGHJKNOPQRTUVWXYZ"
+        }
+      ]
+    }
   },
   {
     "id": "class2",
@@ -18,12 +30,20 @@
     "number": 2,
     "title": "Classified 2",
     "image": "bo4/class/class_2.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["wcownz12233"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "CLASSIFIED\n\n2nd November 1963\n\nMEMORANDUM FOR FILE\n\nSUBJECT: HANFORD PROJECT INVOLVEMENT\n\nToday the Hanford project has formally been integrated with the Broken Arrow Initiative\n\nWe’ve requested they immediately begin investigating weaponized solutions to “combat” the Samantha threat. Groom Lake is delivering a shipment of element 115 to the site in Washington so they may begin testing.\n\nThe Hanford project has requested access to all research regarding the MPD reconstruction project, However I declined this request.\n\nAt this time this project should remain at Groom lake – in recent months they have proven more than Capable. It may be our greatest asset in the fight against this threat.\n\n--McNamara",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "affine",
+          "configuration": "a = 5 and b = 25"
+        }
+      ]
+    }
   },
   {
     "id": "class3",
@@ -31,12 +51,20 @@
     "number": 3,
     "title": "Classified 3",
     "image": "bo4/class/class_3.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Richkiller", "coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "CLASSIFIED\n\n23rd March 1946\n\nMEMORANDUM FOR FILE\n\nSUBJECT: DOCTOR RICHTOFEN'S REQUESTS - OPERATION STAPLER\n\n1. The following is the transcription for record of Richtofen's Requests. For OPERATION STAPLER to go into effect, these stipulations had to be met.\n\n2. This list specifically details Richtofen's personal demands - it does not specify scientists recommended for acquisition\n\nOne Portrait of Richtofen to be hung in the Pentagon\nOne American Baseball signed by Your Babe Ruth\nTwenty of Your American Dollars: Ten Pennies, Four Nickels, Two Dimes, Two Quarters, Four 1's, One 5, One 10\nOne of these \"American Hot Dogs\" I've been Hearing So Much About\nOne American Teddy Bear, speaking of...\nTeddy Roosevelt's Moustache from Cold Storage (I know you have it)\nOne Polarization Device to be constructed [coordinates to be specified]\nTitanium Cog of My Precise Specifications\nJ. Robert Oppenheimer's Chalkboard (not cleaned)\nBuild a nice flower garden outside your Pentagon Facility - it desperately needs the color\nPresident Truman's Hat\n\n--Major Sawyer",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "Ubchi",
+          "key": "Classified"
+        }
+      ]
+    }
   },
   {
     "id": "class4",
@@ -44,12 +72,20 @@
     "number": 4,
     "title": "Classified 4",
     "image": "bo4/class/class_4.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["randomiser"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "(cough)\n\nField Report...\n\n(heavy cough)\n\nI don't know why I'm doing this.\nIs anyone even receiving me?\n\n(cough)\n\nIf you are, then all hope is lost. I'm the last one. The others...\nthey're... gone. We failed.\n\n(cough)\n\nI don't know if there are multiple outcomes, or if this has always been the only one. No matter what we do, what we fix, we still end up here... this time travel shit, multiverses, shit fries your brain.\n\n(cough)\n\nI hope Richtofen established contact with the others.\nWoke them up. It's the only way now. It's up to them.\n\n(cough)\n\nDamn it's cold... very cold...\n\n(beat)\n\nNot much time left now.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "Vigenere",
+          "key": "Classified"
+        }
+      ]
+    }
   },
   {
     "id": "class5",
@@ -57,11 +93,19 @@
     "number": 5,
     "title": "Classified 5",
     "image": "bo4/class/class_5.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Richkiller", "coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "August 8th, 1947\n\nI've been logging materials acquired from Group 935 for some days now (Major Sawyer has asked me to evaluate files pertaining to undead experimentation) and this afternoon I happened upon an old friend.\n\nHidden deep away in storage was Dr. Maxis' Original Matter Transference Prototype. Apparently, it was one of the items the Americans acquired when splitting Group 935's resources with the Russians. Unsurprisingly, it's in a terrible state of disrepair. Missing pieces, badly damaged, completely non-operational. To be fair, Maxis himself stopped using it after the failure of those initial tests in 1939.\n\nWhile useless in its current state, it will provide great reference when we begin teleporter development at this facility. One thing I had never noticed before - scratched into the bottom of the machine was a message: \"For M, who started me on this Journey.\"\n\nIt struck me as odd… I can't recall anyone at Group 935 who went by that initial. I haven't the faintest idea who Maxis could have been referring to.\n\n--Schuster",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "double_columnar_transposition",
+          "configuration": "Keys 04157263 (Pentagon) and 0298657134 (Classified)"
+        }
+      ]
+    }
   }
 ]

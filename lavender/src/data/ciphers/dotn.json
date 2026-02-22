@@ -4,13 +4,13 @@
     "map": "dotn",
     "number": 1,
     "title": "Dead of the Night 1",
-    "type": "alchemy",
     "image": "bo4/dotn/dotn_alch_1.webp",
-    "solved": false,
-    "solvers": [],
+    "type": "alchemy",
+    "solved": true,
+    "solvers": ["Kalinine"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "A shadow of what they seek",
     "solution": null
   },
   {
@@ -20,11 +20,11 @@
     "title": "Dead of the Night 2",
     "type": "alchemy",
     "image": "bo4/dotn/dotn_alch_2.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Kalinine"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Serve or sever",
     "solution": null
   },
   {
@@ -34,11 +34,11 @@
     "title": "Dead of the Night 3",
     "type": "alchemy",
     "image": "bo4/dotn/dotn_alch_3.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["TashaPlays"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "The daughter will bear the burden",
     "solution": null
   },
   {
@@ -48,11 +48,11 @@
     "title": "Dead of the Night 4",
     "type": "alchemy",
     "image": "bo4/dotn/dotn_alch_4.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["TashaPlays"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "The future is yours to write",
     "solution": null
   },
   {
@@ -62,11 +62,11 @@
     "title": "Dead of the Night 5",
     "type": "alchemy",
     "image": "bo4/dotn/dotn_alch_5.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["krokmoo"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Truth is never bottled",
     "solution": null
   },
   {
@@ -76,11 +76,11 @@
     "title": "Dead of the Night 6",
     "type": "alchemy",
     "image": "bo4/dotn/dotn_alch_6.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["TheViceSquad"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Beware the returned",
     "solution": null
   },
   {
@@ -90,11 +90,11 @@
     "title": "Dead of the Night 7",
     "type": "alchemy",
     "image": "bo4/dotn/dotn_alch_7.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["TheViceSquad"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Power is rooted in knowledge",
     "solution": null
   },
   {
@@ -104,11 +104,11 @@
     "title": "Dead of the Night 8",
     "type": "alchemy",
     "image": "bo4/dotn/dotn_alch_8.webp",
-    "solved": false,
-    "solvers": [],
+     "solved": true,
+    "solvers": ["TheViceSquad"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Die on your feet",
     "solution": null
   }
 ]

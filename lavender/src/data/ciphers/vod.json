@@ -4,117 +4,180 @@
     "map": "vod",
     "number": 1,
     "title": "Voyage of Despair 1",
-    "image": "bo4/vod/vod_2.png",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Gemgamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "You have questions of your family's history you may not like where the answers lead",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "flag_semaphore"
+        }
+      ]
+    }
   },
   {
     "id": "vod2",
     "map": "vod",
     "number": 2,
     "title": "Voyage of Despair 2",
-    "image": "bo4/vod/vod_3.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_2.png",
+    "solved": true,
+    "solvers": ["Richkiller", "coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Avarice is why you lost them. Indulgence is why you lost yourself.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "Triliteral"
+        }
+      ]
+    }
   },
   {
     "id": "vod3",
     "map": "vod",
     "number": 3,
     "title": "Voyage of Despair 3",
-    "image": "bo4/vod/vod_4.jpg",
-    "solved": false,
+    "image": "bo4/vod/vod_3.webp",
+    "solved": true,
     "solvers": [],
     "credits": [],
     "ciphertext": null,
     "plaintext": null,
-    "solution": null
+    "solution": {
+      "steps": [
+        {
+          "type": "decode",
+          "method": "QR_code"
+        }
+      ]
+    }
   },
   {
     "id": "vod4",
     "map": "vod",
     "number": 4,
     "title": "Voyage of Despair 4",
-    "image": "bo4/vod/vod_5.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_4.jpg",
+    "solved": true,
+    "solvers": ["TheViceSquad"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "From Chaos grew the Sacred Tree and you its fledgling branches.\nTo usurp its power and draw from the root is to invite your own destruction.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "Elder Futhark"
+        }
+      ]
+    }
   },
   {
     "id": "vod5",
     "map": "vod",
     "number": 5,
     "title": "Voyage of Despair 5",
-    "image": "bo4/vod/vod_6.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_5.webp",
+    "solved": true,
+    "solvers": ["travtracks"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Saving your old friend will not atone for the suffering you've caused others",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "Atbash"
+        }
+      ]
+    }
   },
   {
     "id": "vod6",
     "map": "vod",
     "number": 6,
     "title": "Voyage of Despair 6",
-    "image": "bo4/vod/vod_7.webp",
-    "solved": false,
-    "solvers": [],
-    "credits": [],
+    "image": "bo4/vod/vod_6.webp",
+    "solved": true,
+    "solvers": ["Richkiller"],
+    "credits": ["JackalBoy88"],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Once you were a gangster. Now you are a soldier. What do you truly stand for?",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "Scytale",
+          "configuration": "10 band turns"
+        }
+      ]
+    }
   },
   {
     "id": "vod7",
     "map": "vod",
     "number": 7,
     "title": "Voyage of Despair 7",
-    "image": "bo4/vod/vod_9.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_7.webp",
+    "solved": true,
+    "solvers": ["GlitchingQueen"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Running from your former life does not erase the sins of your past.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "braille",
+          "configuration": "three 2x3 grids"
+        }
+      ]
+    }
   },
   {
     "id": "vod8",
     "map": "vod",
     "number": 8,
     "title": "Voyage of Despair 8",
-    "image": "bo4/vod/vod_10.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["CODTracker"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Why do you wish to save the one who abandoned you",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "morse"
+        }
+      ]
+    }
   },
   {
     "id": "vod9",
     "map": "vod",
     "number": 9,
     "title": "Voyage of Despair 9",
-    "image": "bo4/vod/vod_11_unfound.webp",
-    "solved": false,
-    "solvers": [],
-    "credits": [],
+    "image": "bo4/vod/vod_9.webp",
+    "solved": true,
+    "solvers": ["Richkiller", "Nethromaniac", "coldstone_the_gamer"],
+    "credits": ["CODTracker"],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "The one you are looking for cannot be saved if you cannot save yourself first.",
+    "solution": {
+      "steps": [
+        {
+          "type": "puzzle",
+          "description": "This text translates from Welsh."
+        }
+      ]
+    }
   },
   {
     "id": "vod10",
@@ -122,27 +185,39 @@
     "number": 10,
     "title": "Voyage of Despair 10",
     "type": "alchemy",
-    "image": "bo4/vod/vod_alch_1.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_10.webp",
+    "solved": true,
+    "solvers": ["coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "You punish yourself for crimes that can never be undone.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "fractionated_morse"
+        }
+      ]
+    }
   },
   {
     "id": "vod11",
     "map": "vod",
     "number": 11,
     "title": "Voyage of Despair 11",
-    "type": "alchemy",
-    "image": "bo4/vod/vod_alch_2.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["SkiteInnit", "Nanikos"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "You travelled the world to sate your thirst for violence. You returned to Mexico still parched.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "international_maritime_signal_flags"
+        }
+      ]
+    }
   },
   {
     "id": "vod12",
@@ -150,12 +225,12 @@
     "number": 12,
     "title": "Voyage of Despair 12",
     "type": "alchemy",
-    "image": "bo4/vod/vod_alch_3.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_alch_1.webp",
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "The horde will not be contained",
     "solution": null
   },
   {
@@ -164,12 +239,12 @@
     "number": 13,
     "title": "Voyage of Despair 13",
     "type": "alchemy",
-    "image": "bo4/vod/vod_alch_4.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_alch_2.webp",
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Prove your worthiness",
     "solution": null
   },
   {
@@ -178,12 +253,12 @@
     "number": 14,
     "title": "Voyage of Despair 14",
     "type": "alchemy",
-    "image": "bo4/vod/vod_alch_5.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_alch_3.webp",
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "That which you need is within reach",
     "solution": null
   },
   {
@@ -192,12 +267,12 @@
     "number": 15,
     "title": "Voyage of Despair 15",
     "type": "alchemy",
-    "image": "bo4/vod/vod_alch_6.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_alch_4.webp",
+    "solved": true,
+    "solvers": ["lowlight227"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "You must be empowered the horde will not yield",
     "solution": null
   },
   {
@@ -206,12 +281,12 @@
     "number": 16,
     "title": "Voyage of Despair 16",
     "type": "alchemy",
-    "image": "bo4/vod/vod_alch_7.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_alch_5.webp",
+    "solved": true,
+    "solvers": ["Kalinine"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Eyes watch",
     "solution": null
   },
   {
@@ -220,12 +295,12 @@
     "number": 17,
     "title": "Voyage of Despair 17",
     "type": "alchemy",
-    "image": "bo4/vod/vod_alch_8.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_alch_6.webp",
+    "solved": true,
+    "solvers": ["Kalinine"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Chance lies within",
     "solution": null
   },
   {
@@ -234,12 +309,12 @@
     "number": 18,
     "title": "Voyage of Despair 18",
     "type": "alchemy",
-    "image": "bo4/vod/vod_alch_9.png",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_alch_7.webp",
+    "solved": true,
+    "solvers": ["Kalinine"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Your journey is not bound by natural law",
     "solution": null
   },
   {
@@ -248,12 +323,12 @@
     "number": 19,
     "title": "Voyage of Despair 19",
     "type": "alchemy",
-    "image": "bo4/vod/vod_alch_10.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_alch_8.webp",
+    "solved": true,
+    "solvers": ["travtracks"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "Fight",
     "solution": null
   },
   {
@@ -262,12 +337,12 @@
     "number": 20,
     "title": "Voyage of Despair 20",
     "type": "alchemy",
-    "image": "bo4/vod/vod_alch_11.webp",
-    "solved": false,
-    "solvers": [],
-    "credits": [],
+    "image": "bo4/vod/vod_alch_9.png",
+    "solved": true,
+    "solvers": ["coldstone_the_gamer"],
+    "credits": ["Jek47"],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "The Seventh Gate\n\nAnd through the final gateway we transform.\nThe world's dualities unite as one.\nCelebrate this transition, do not mourn.\nThe separation between us undone.\n\nThrough the darkness we come evolved and pure,\nbut this conversion will not be for all.\nThe path must be forged, for we are the cure.\nWith damnation we survive the great fall.\n\nSix gateways we passed with vigor and might\nto become the reflection we now form.\nThe self and the all, once more will bind tight.\nIn this new image we are all reborn.\n\nThe rejuvenation of blood begins.\nThe coalescence with light will be found.\nThe forgiveness of the soul and our sins.\nThe enlightenment to which we are bound.",
     "solution": null
   },
   {
@@ -276,12 +351,48 @@
     "number": 21,
     "title": "Voyage of Despair 21",
     "type": "alchemy",
-    "image": "bo4/vod/vod_alch_12.webp",
-    "solved": false,
-    "solvers": [],
+    "image": "bo4/vod/vod_alch_10.webp",
+    "solved": true,
+    "solvers": ["Richkiller", "coldstone_the_gamer"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
+    "plaintext": "The eye is within them",
     "solution": null
+  },
+  {
+    "id": "vod22",
+    "map": "vod",
+    "number": 21,
+    "title": "Voyage of Despair 22",
+    "type": "alchemy",
+    "image": "bo4/vod/vod_alch_11.webp",
+    "solved": true,
+    "solvers": ["Richkiller"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "The Sentinel\n\nMind and body are one",
+    "solution": null
+  },
+  {
+    "id": "vod23",
+    "map": "vod",
+    "number": 21,
+    "title": "Voyage of Despair 23",
+    "type": "alchemy",
+    "image": "bo4/vod/vod_11_unfound.webp",
+    "solved": true,
+    "solvers": ["coldstone_the_gamer"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "The Sentinel\n\nMind and body are one",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "Morbit",
+          "key": "869153742 (voyage of d)"
+        }
+      ]
+    }
   }
 ]

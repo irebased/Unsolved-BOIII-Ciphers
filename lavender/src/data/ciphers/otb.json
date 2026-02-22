@@ -5,12 +5,20 @@
     "number": 1,
     "title": "Outbreak 1",
     "image": "bo5/otb/otb_1.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["ScottoAC"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Colonel\nThis threat is real. The entity hides in the darkest depths of the Dark Aether. It is waiting for its moment to enter our world and to consume it as it has its own. That is why it seeks to manipulate us because only we can let it in. Unless we can stop it will be our end. I will reach out later. Requiem will have noticed my absence by now.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "four_square",
+          "configuration": "keys Strauss and Carver"
+        }
+      ]
+    }
   },
   {
     "id": "otb2",
@@ -18,12 +26,20 @@
     "number": 2,
     "title": "Outbreak 2",
     "image": "bo5/otb/otb_2.webp",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["ScottoAC"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "Elizabeth\nThere is a new directive coming and I wanted you to hear it from me first. Perhaps it will help spare you the initial shock when you are informed in person. There is a new project in development that will require a great deal of our aetherium reserves. Unfortunately this means that some of your research will be put on hold indefinitely. You are not the only one affected by this I have been informed that half of all future aetherium harvests recovered from my extraction rockets will also be diverted to this project. Now I want you to leave you with a question be very careful who you mention this to. What do you know about Project Janus?",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "porta",
+          "key": "CRYSTALCLEAR"
+        }
+      ]
+    }
   },
   {
     "id": "otb3",
@@ -31,11 +47,22 @@
     "number": 3,
     "title": "Outbreak 3",
     "image": "bo5/otb/otb_3.png",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": ["Richkiller"],
     "credits": [],
     "ciphertext": null,
-    "plaintext": null,
-    "solution": null
+    "plaintext": "G\nI don't know whats happening to her, but we both know something is happening to her. We each care about her so I wanted you to know that I'm doing everything I can to help.\nW",
+    "solution": {
+      "steps": [
+        {
+          "type": "transform",
+          "method": "reverse"
+        }, {
+          "type": "classical",
+          "method": "vigenere",
+          "key": "BCJFIEJC (12958492)"
+        }
+      ]
+    }
   }
 ]
