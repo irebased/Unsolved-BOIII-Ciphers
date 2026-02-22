@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fbz1",
+    "map": "fbz",
+    "number": 1,
+    "title": "Firebase Z 1",
+    "image": "bo5/fbz/fbz_1.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "fbz2",
+    "map": "fbz",
+    "number": 2,
+    "title": "Firebase Z 2",
+    "image": "bo5/fbz/fbz_2.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "fbz3",
+    "map": "fbz",
+    "number": 3,
+    "title": "Firebase Z 3",
+    "image": "bo5/fbz/fbz_3.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  }
+]

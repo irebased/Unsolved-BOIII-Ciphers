@@ -1,0 +1,28 @@
+[
+  {
+    "id": "mtd1",
+    "map": "mtd",
+    "number": 1,
+    "title": "Mauer der Toten 1",
+    "image": "bo5/mdt/mdt_1.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "mtd2",
+    "map": "mtd",
+    "number": 2,
+    "title": "Mauer der Toten 2",
+    "image": "bo5/mdt/mdt_2.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  }
+]

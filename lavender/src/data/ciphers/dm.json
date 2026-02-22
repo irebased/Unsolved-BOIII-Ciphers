@@ -1,0 +1,54 @@
+[
+  {
+    "id": "dm1",
+    "map": "dm",
+    "number": 1,
+    "title": "Die Maschine 1",
+    "image": "bo5/dm/dm_1.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "dm2",
+    "map": "dm",
+    "number": 2,
+    "title": "Die Maschine 2",
+    "image": "bo5/dm/dm_2.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "dm3",
+    "map": "dm",
+    "number": 3,
+    "title": "Die Maschine 3",
+    "image": "bo5/dm/dm_3.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "dm4",
+    "map": "dm",
+    "number": 4,
+    "title": "Die Maschine 4",
+    "image": "bo5/dm/dm_4.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  }
+]

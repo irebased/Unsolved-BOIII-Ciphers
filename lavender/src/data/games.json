@@ -10,5 +10,11 @@
   },
   "comics": {
     "label": "Comics"
+  },
+  "bo4": {
+    "label": "Black Ops 4"
+  },
+  "bo5": {
+    "label": "Black Ops Cold War"
   }
 }

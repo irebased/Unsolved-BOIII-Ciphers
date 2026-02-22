@@ -1,0 +1,67 @@
+[
+  {
+    "id": "class1",
+    "map": "class",
+    "number": 1,
+    "title": "Classified 1",
+    "image": "bo4/class/class_1.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "class2",
+    "map": "class",
+    "number": 2,
+    "title": "Classified 2",
+    "image": "bo4/class/class_2.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "class3",
+    "map": "class",
+    "number": 3,
+    "title": "Classified 3",
+    "image": "bo4/class/class_3.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "class4",
+    "map": "class",
+    "number": 4,
+    "title": "Classified 4",
+    "image": "bo4/class/class_4.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "class5",
+    "map": "class",
+    "number": 5,
+    "title": "Classified 5",
+    "image": "bo4/class/class_5.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  }
+]

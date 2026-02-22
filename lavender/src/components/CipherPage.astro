@@ -22,6 +22,10 @@ const imageSrc = cipher.image
   ? images[`/src/assets/${cipher.image}`]?.default ?? null
   : null;
 
+const alchemySrc = cipher.type === 'alchemy'
+  ? images['/src/assets/bo4/alch_symbols.webp']?.default ?? null
+  : null;
+
 function formatMethod(method: string): string {
   const upper = ['adfgx', 'adfgvx'];
   if (upper.includes(method)) return method.toUpperCase();
@@ -97,6 +101,13 @@ const solvers: string[] = cipher.solvers;
 ---
 
 {imageSrc && <Image src={imageSrc} alt={cipher.title} />}
+
+{alchemySrc && (
+  <div class="alchemy-guide">
+    <p>This cipher is an alchemy cipher that uses this guide:</p>
+    <Image src={alchemySrc} alt="Alchemy symbols reference" />
+  </div>
+)}
 
 <blockquote>
   {solvers.length > 0 ? (

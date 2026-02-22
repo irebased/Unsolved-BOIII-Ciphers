@@ -19,6 +19,18 @@ export function cipherToPath(cipher) {
         case 'verruckt':        return `${BASE}/waw/verruckt/verruckt${number}`;
         case 'derriese':        return `${BASE}/waw/derriese/derriese${number}`;
         case 'waw_general':     return `${BASE}/waw/general/${id === 'waw_bios' ? 'bios' : id}`;
+        case 'ae':              return `${BASE}/bo4/ae/ae${number}`;
+        case 'botd':            return `${BASE}/bo4/botd/botd${number}`;
+        case 'class':           return `${BASE}/bo4/class/class${number}`;
+        case 'dotn':            return `${BASE}/bo4/dotn/dotn${number}`;
+        case 'ix':              return `${BASE}/bo4/ix/ix${number}`;
+        case 'vod':             return `${BASE}/bo4/vod/vod${number}`;
+        case 'bo4_general':     return `${BASE}/bo4/general/bo4gen${number}`;
+        case 'dai':             return `${BASE}/bo5/dai/dai${number}`;
+        case 'dm':              return `${BASE}/bo5/dm/dm${number}`;
+        case 'fbz':             return `${BASE}/bo5/fbz/fbz${number}`;
+        case 'mtd':             return `${BASE}/bo5/mtd/mtd${number}`;
+        case 'otb':             return `${BASE}/bo5/otb/otb${number}`;
         default:                return `${BASE}/${id}`;
     }
 }
@@ -34,6 +46,18 @@ const CIPHER_PREFIXES = {
     soe: 'Shadows of Evil',
     de: 'Der Eisendrache',
     zns: 'Zetsubou',
+    ae: 'Ancient Evil',
+    botd: 'Blood of the Dead',
+    class: 'Classified',
+    dotn: 'Dead of the Night',
+    ix: 'IX',
+    vod: 'Voyage of Despair',
+    bo4gen: 'BO4 Teaser',
+    dai: 'Dark Aether Intel',
+    dm: 'Die Maschine',
+    fbz: 'Firebase Z',
+    mtd: 'Mauer der Toten',
+    otb: 'Outbreak',
 };
 
 export function getCipherLabel(path) {

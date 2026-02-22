@@ -1,0 +1,67 @@
+[
+  {
+    "id": "bo4gen1",
+    "map": "bo4_general",
+    "number": 1,
+    "title": "BO4 Teaser 1",
+    "image": "bo4/general/teaser_1.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "bo4gen2",
+    "map": "bo4_general",
+    "number": 2,
+    "title": "BO4 Teaser 2",
+    "image": "bo4/general/teaser_2.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "bo4gen3",
+    "map": "bo4_general",
+    "number": 3,
+    "title": "BO4 Teaser 3",
+    "image": "bo4/general/teaser_3.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "bo4gen4",
+    "map": "bo4_general",
+    "number": 4,
+    "title": "BO4 Teaser 4",
+    "image": "bo4/general/teaser_4.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "bo4gen5",
+    "map": "bo4_general",
+    "number": 5,
+    "title": "BO4 Teaser 5",
+    "image": "bo4/general/teaser_5.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  }
+]

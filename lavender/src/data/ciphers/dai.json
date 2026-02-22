@@ -1,0 +1,15 @@
+[
+  {
+    "id": "dai1",
+    "map": "dai",
+    "number": 1,
+    "title": "Dark Aether Intel 1",
+    "image": "bo5/dai/dai_1.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  }
+]

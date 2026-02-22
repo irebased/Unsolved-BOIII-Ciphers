@@ -1,0 +1,331 @@
+[
+  {
+    "id": "botd1",
+    "map": "botd",
+    "number": 1,
+    "title": "Blood of the Dead 1",
+    "image": "bo4/botd/botd_1.webp",
+    "solved": true,
+    "solvers": [
+      "Richkiller",
+      "oxin8",
+      "randomiser",
+      "coldstone_the_gamer"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "# Thru #\nThree of Torrio's guys payed a visit to Sal's grand opening at the Cabana room. One of 'em happened to be a buddy of mine from the barber shop job, and I knew he was sweet on the devil's dandruff. Lure him out back for a taste,cut his throat and clip the other two, as they come runnin' out. Clean as could be, but not clean enough, evidently. First of the low rent hitters gunnin' for Sal. Caught this one riggin' Sal's cherry red chariot, Caught this one posin' as a waiter, slippin' a cyanide mickey into the cognac. This guy was creative for an idiot, tried pushin' a chifferobe out of a #th floor window when Sal walked out on the street. I catch the guy, stuff him inside the chifferobe and put three through the mahogany, instant coffin. This one was a dame goin' for a stiletto in her updo. I been with enough casino harpies to know they ain't all fur and fake diamonds, but Sal, he was disappointed. I didn't like seein' that.\n# Thru #\nWe had our laughs with amateur hour, but soon enough Torrio stepped it up. Four man hit squad packin' tommies, whacked two real good guys. One of which was Jerry, who got all squeaky and snorty when he was drunk and I didn't like seein' him go down. so I went with the molotovs, called off the fire brigade too, just to watch those four burn well done.\n# Thru #ish\nJust ball parkin' it here, this was an honest to nuts shoot out. O.K. Corral type stuff. I burned through the tommy, the smithy, the big barker, all my favorite pieces squirtin' every pellet they had. Both sides had to lay low after that and Sal gave me some much needed time off for good behavior and amateur hour. The brothers of two stiffs from the shootout found me in a motel outside Shorewood DuPage river. Was right there so I sent 'em for a mid night swim.\n# Thru #\nI'm relaxin' in a shithole bar mindin' my own business, when three low lifes decide they didn't like what I had on the radio. I thought about lettin' it go for a second, honest.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "playfair",
+          "key": "GEDZXYFLWPAINVTMSQORCBUHK"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd2",
+    "map": "botd",
+    "number": 2,
+    "title": "Blood of the Dead 2",
+    "image": "bo4/botd/botd_2.jpg",
+    "solved": true,
+    "solvers": [
+      "Richkiller",
+      "Lizizadolphin",
+      "waterkh"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "# Thru #\nAt least Sal calls me off vacation to trash some warehouse. I figure I like fire, why not burn it down? Still shit faced, I do, and it's the wrong one and a bunch of migrant workers go up in smoke. Sal was pissed, but he bought the land cheap after, so he got over it and I got more time off.\nBar fight. Bar fight. Car wash. Another bar fight. No, wait. No, yeah, bar fight.\n# Thru #\nI came to standin' upright in some general store in Manteno or some damn place. I smell like an Irish bachelor party. I got my smithy outta the holster and everybody's lyin' facedown, so I figure I'm robbin' the place. The local flatfoots show up and start sprayin' through the glass and wouldn't ya know it, one clips me in the shoulder. I just start laughin'. Never been shot before. Then cops were so shocked to hear me cackle that I woulda had enough time to make a sandwich, eat it, and then take 'em out.\nWoke up the next day with the devil clawing his way outta my skull. Sat in a police cruiser wrapped around a tree. There was a lot of blood on the hood, so I guess that made #, who knows.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "playfair",
+          "key": "OVDAXSRWIPKNUTCLMZBGFQHYE"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd3",
+    "map": "botd",
+    "number": 3,
+    "title": "Blood of the Dead 3",
+    "image": "bo4/botd/botd_3.webp",
+    "solved": true,
+    "solvers": [
+      "Richkiller",
+      "oxin8",
+      "Lizizadolphin",
+      "coldstone_the_gamer"
+    ],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "I got back and Sal was done nickel-and-dimin'. We were after the heavy hitters, too.\nKouteli the Knife comin' outta church with his grandma.\nDirty Fazzi eatin' ice cream in South Side park, smelled him from a mile away.\nJoey the MLP smokin' a cigarette on the back deck of the Michigan Queen. Rumor has it he had the locations of thousands of bodies memorized in that big melon of his, and put most of 'em there himself. Guy like that makes me look like Saint Peter.\nTony Dynamite, there was a real whack job. Found him sat in an up-town apartment surrounded with enough boomboom to start a second World War. I just lit the match.\nRicci the Rope, old fashioned kinda guy. Liked stringin' up my buddies in very public place. I'll give ya one guess how I took him out. Wrong! I backed over him with a refrigerated truck -- twice!\nSent us McDink the Irish Bare-Knuckle Champ. This guy you hoped he'd shoot ya before he got out the knuckle dusters. I emptied about a barrel and a half in to his chest just to make sure.\nSolomon -- seriously his name was just Solomon -- used to like to beat information outta people, and when he was done he'd chop 'em in half with an industrial press, just like King Solomon in the Good Book. Except, this mad fucker went through with it -- through a lot of it. Shit still keeps me up at night and I'm dead, far as I know.\nAnd the Scotsman and the Brit, don't ask me how these two got wrapped up in the outfit with a bunch of Italians, but they sure as hell made their presence known. Truth is, they found me and tore me up pretty good. Lost about a hundred pints of blood before I rolled a grenade under their getaway car. The scariest thing about bein' in Hell right now is thinkin' they might show up.\n# Thru #\nI think there were about # or # of 'em but there was so much blood and guts flyin' around, I can't remember all the fuckin' names. Plus, I'm gettin' bored and I gotta finish this thing, or else my immortal soul can't get outta purgatory. Yada-yada-yada.\n# Thru #\nThe big, ahhh, Valentine's Day, what a way to finally go out, one for the history books. That ratfink, lyin', schemin', little fucker Weasel.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "playfair",
+          "key": "OUZXHMTKDCPLFIAESWRNQGYVB"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd4",
+    "map": "botd",
+    "number": 4,
+    "title": "Blood of the Dead 4",
+    "image": "bo4/botd/botd_4.webp",
+    "solved": true,
+    "solvers": ["Lizizadolphin"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "So yeah, that's the big list. Do I feel better? Kinda. Lots a laughs and memories there, which I guess is all I got in this hellfire juke joint. But, I dunno about redeemin' my eternal soul, or whatever Sal is yakking about.\nBut, as for being a ghost, I definitely got unfinished business. I'd kill that judge Chauncey for his high and mighty attitude. I'd kill my arresting officers for bustin' my chin and rippin' my best suit. I'd kill that wise ass Doc Tormose for classifying me psychologically fit to stand trial. I'd kill my second grade teacher Miss Carmichael for sayin' I'd never amount to nothin'. I'd definitely put a few bullets in Mr. Benedict, fuckin' sadist piece of shit, owner of the White Wood Correctional Facility for Boys. People who hurt dogs, people who talk at the movies, people who talk about the weather, pretty much everybody who hates country music.\nI got more, but I'm bored so fuck it. Great idea, Sal, you got all the great ideas.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "playfair",
+          "key": "BXMNIPYOSDRKWTFQALZUHCVEG"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd5",
+    "map": "botd",
+    "number": 5,
+    "title": "Blood of the Dead 5",
+    "image": "bo4/botd/botd_5.webp",
+    "solved": true,
+    "solvers": ["coldstone_the_gamer"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "In the name of the Father, and of the Son, and of the Holy Spirit.\nMy last confession was a lifetime ago. Sorry about that Lord, and I ain't just saying that 'cuz I'm stuck in this place. I've done lots of bad things and squandered your gifts, O Lord.\nI'll start with my mother and father. They did the Ellis Island thing, came over with nothing but the clothes on their backs. Grandma, Bella, Silvercup, and me growin' in mama's belly. All things considered, I grew up pretty good -- stick, ball, open hydrant baths, lotsa pals, and at least a meal a day paid for by pops, shoe repairs... but me being a mook, that wasn't enough. I'd run around all day and night liftin' this and that from corner stores, smokin', drinkin, carryin' on. I wanted to be king, not the kid of a couple poor, dumb wops taking' beatin' after beatin' from the city that didn't want 'em. So I ran, Lord. I ran to the Windy City and I didn't look back, forsakin' my mother and father. That's a sin bad enough for an Italian, but for a Roman Catholic too? I guess I had all this comin'.\nSalvatore DeLuca",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "ADFGX",
+          "configuration": "key BLOODOFTHEDEAD and alphabet IOAKDXPBGLUFHCVQTYNMWZERS"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd6",
+    "map": "botd",
+    "number": 6,
+    "title": "Blood of the Dead 6",
+    "image": "bo4/botd/botd_6.webp",
+    "solved": true,
+    "solvers": ["Richkiller"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Forgive me father for I have sinned. This is my second mortal confession, my first big score was a shipment of Irish whiskey jacked from a few goons at the north slip. Nobody got killed thanks to you, but I shot one through the knee. Yeah, the guy was a crook, but he didn't deserve to limp around for the rest of his life, that didn't matter to me then. I saw what I wanted and did what I had to do to take it. Told myself it was fair, even natural, the strong surviving and all that malarkey. Now I know that wasn't the way. O lord, I wish I woulda seen that then, but it only got worse from there. Salvatore DeLuca.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "ADFGX",
+          "configuration": "key BLOODOFTHEDEAD and alphabet BZNLEYPQXDMCFIRHOVKAWGTUS"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd7",
+    "map": "botd",
+    "number": 7,
+    "title": "Blood of the Dead 7",
+    "image": "bo4/botd/botd_7.webp",
+    "solved": true,
+    "solvers": ["Richkiller"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Forgive me father for I have sinned. I coveted another man's girl, his business and eventually took his life. I destroyed him, O lord, and celebrated doing it. Guy's name was Giuseppe Rioni, real big shot, bootlegger in the north side, not a bigger shot than me. I put him on his knees and put two in his skull and if that wasn't enough, I let that mook Jimmy Alessi take the heat for it, they killed him too, and the one after that, and the one after that. I started a war, O lord, and I got rich off it. The killing didn't stop there, either just got real good at getting others to do it for me. Salvatore DeLuca.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "ADFGX",
+          "configuration": "key BLOODOFTHEDEAD and alphabet TKYVHWGCZOLIENPQUAFBDXSRM"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd8",
+    "map": "botd",
+    "number": 8,
+    "title": "Blood of the Dead 8",
+    "image": "bo4/botd/botd_8.webp",
+    "solved": true,
+    "solvers": ["Richkiller"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Forgive me father for I have sinned. I saw the evil inside of Billy, and I stoked the fire til it was red hot. When I let him off the leash, the streets ran red with Torrio blood. Men, women, children. Whoever it took and whoever had the bad luck to be around when we took 'em. In my head, I was a great man, the king I always wanted to be. Doin' what kings do to rule the world at the top. That's where I got stupid, O lord, that's where I killed that poor girl over not a damn thing. That brought me here to your justice and that's where I belong. Salvatore DeLuca.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "ADFGX",
+          "configuration": "key BLOODOFTHEDEAD and alphabet MFXKCQEVDJHRYNGPBSOTIYLWUA"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd9",
+    "map": "botd",
+    "number": 9,
+    "title": "Blood of the Dead 9",
+    "image": "bo4/botd/botd_9.webp",
+    "solved": true,
+    "solvers": ["Richkiller"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Forgive me father for I have sinned. I took the life of an innocent man, a profoundly stupid man, but yeah an innocent one, Weasel Albert Arlington. I ain't sure what he was thinkin' when he sent us on that goose chase, but that didn't mean he had to die. We didn't have to kill him, I know now that you must've sent him to test me, O lord and I failed my last chance at redemption. I don't know if my confession will make a difference or if anyone will ever hear it, but it feels right to get it out there with the utmost humility. I pray you hear the contrition of myself and my associates and have mercy on our immortal souls. Amen. Salvatore DeLuca.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "ADFGX",
+          "configuration": "key BLOODOFTHEDEAD and alphabet IQMXFSTKZWEALVUOCPGNYDHBR"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd10",
+    "map": "botd",
+    "number": 10,
+    "title": "Blood of the Dead 10",
+    "image": "bo4/botd/botd_10.webp",
+    "solved": true,
+    "solvers": ["coldstone_the_gamer"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Dear Angelina,\nWell baby, you were right. You always said I could go to hell for all the shit I put you through, and sure enough here I am burning for what's probably forever. I know I said alotta things when they came and took me away, putting it all on you -- but I was always headed here, and as much as I miss ya baby I'm glad you ain't here with me.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "ADFVGX",
+          "configuration": "key BLOODOFTHEDEAD and alphabet 0Y1J234Q5IN6UV7GXMHKLOE8RBAZCTDFPSW9"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd11",
+    "map": "botd",
+    "number": 11,
+    "title": "Blood of the Dead 11",
+    "image": "bo4/botd/botd_11.webp",
+    "solved": true,
+    "solvers": ["waterkh", "certainpersonio"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Remember that night you were all dolled up, dressed to the nines in that giant, mink coat of yours? Tip toing outta that gala premier into the ## below of Chicago January, legs naked as the day you were born. I never had trouble talkin' to dames, but with you I almost choked. Wasn't til you doubled over into a snow drift that I mustered the stones to run over. Thought I had it in the pocket when I fed you that line about the perfect icebreaker, but you fired back with an eat shit-and-die look that almost knocked the wind outta me. Then you smiled that smile and finished the job. You told me I looked pale, offered to buy me a coffee and we were off to the races. Wish I woulda slowed down, taken more time, been a better man.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "ADFVGX",
+          "configuration": "key BLOODOFTHEDEAD and alphabet LUMRAFE01J23SG4YBOKXQP5HN6TIVD789ZCW"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd12",
+    "map": "botd",
+    "number": 12,
+    "title": "Blood of the Dead 12",
+    "image": "bo4/botd/botd_12.webp",
+    "solved": true,
+    "solvers": ["waterkh"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "I let you down, Angelina. I let that town crawl inside my head and make me think I was some kinda big shot hustler. You wanted to be an actress and instead I made you an accomplice, dragging you through the worst shit of Chicago with me. And when I didn't let you go, you found your own way out, just like the way you got up outta that snow. I dunno if you'll ever get this letter, or if it's even real, but if you do, I wanna let you know I agree to the divorce.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "ADFVGX",
+          "configuration": "key BLOODOFTHEDEAD and alphabet DCIAF1G3MXB679HWS2TYP8LJQZ0ERO45UKVN"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd13",
+    "map": "botd",
+    "number": 13,
+    "title": "Blood of the Dead 13",
+    "image": "bo4/botd/botd_13.webp",
+    "solved": true,
+    "solvers": ["waterkh"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "You deserve better, Angelina, some honest guy, with an honest face, and an honest living, maybe have a couple good lookin' kids that take after their mother. Strong enough not to take any shit from this fucked up world we live in, but smart enough not to take the easy way through. You don't have to tell 'em it's from me, but just tell 'em the easy way ain't fuckin' easy and maybe leave out the \"fuckin'\" part -- at least til they're older",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "ADFVGX",
+          "configuration": "key BLOODOFTHEDEAD and alphabet ESVMXKAC6FHGDTP23J908O7WQRILZB4U5NY1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd14",
+    "map": "botd",
+    "number": 14,
+    "title": "Blood of the Dead 14",
+    "image": "bo4/botd/botd_14.webp",
+    "solved": true,
+    "solvers": ["waterkh"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "As for your new squeeze, whoever he is, I got a message for him too: take good care of our angel and make sure you listen to her real good -- she won't steer you wrong, but if you even think about hurtin' her or layin' hands on her in an unkind way, you better believe I'll bust outta this place and climb out of hell just to rip the skull off your neck. So Angelina, this is goodbye for real. I'm not sure if Sal is right and this letter makes a damn bit of difference, but I really hope someway, somehow, I finally did something right. Love you forever, baby. Finn",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "ADFVGX",
+          "configuration": "key BLOODOFTHEDEAD and alphabet D4UFXRK1BSIPLAWVQ79E85J0ZO3GH6M2NYTC"
+        }
+      ]
+    }
+  },
+  {
+    "id": "botd15",
+    "map": "botd",
+    "number": 15,
+    "title": "Blood of the Dead 15",
+    "image": "bo4/botd/botd_15.webp",
+    "solved": true,
+    "solvers": ["Lizizadolphin"],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": "Alright, guess I got nothin’ better to do in this shithole than to sit on my ass and scribble for Sal’s holy-rolling homework assignment. So strap yourselves in, cats and kittens, for a few of Billy’s greatest hits.\nThey say you always remember your first, but I was so drunk, I didn’t realize he was dead ‘til later. Caught this guy Rudy cheatin’ in a round of dice and cracked his melon with a whiskey bottle. Had a laugh, drank more, and woke up the next day to the cops at my mother’s front door. Welcome to juvi Billy Boy, happy #th birthday.\nI’m a free man, came home, found my mother strung out on somethin’ her new squeeze was givin’ her, in addition to a few bruises. So I followed him to the bar that night and brought the knife my old man gave me. Piece of shit broke off in his ribcage. No cops that time though. Mom saw the blood and kicked me out, so I wound up on the street, sleepin’ at a bus stop. Some old timer tried to get fresh, so pop! -- there went his head on a bench corner.\nFirst job with the old crew, I was a whistle boy posted up on the corner, while the fellas raided the general store. Shop owner shows up and pulls out his iron, so I pounce on him and wrestle for it. Gun goes off along with the man’s head, and that’s how I got my very first special. Miss that gun... nothin’ special... knocked over a store and shot a cashier goin’ for his shotgun. It was a piece of shit, so I let him keep it.\n# Thru #\nWhat a night. I got roped into a posse to go scare some sense into a few Commie union boys, but they turned out to be packin’ heat. They whacked my whole crew by the time I got to cover. But I took it slow and steady. Shots, bodies so neat and pretty, people took to callin' me Handsome. How 'bout that.\n# Thru #\nGot paid big bucks for a solo hit, four wise guys at a barber shop. Fish in a fuckin’ barrel.\nSome schmuck named Larry Sweets threatenin’ to squawk, garrotted in the park. That shut him up.\nAnother dice game, even drunker. Could’ve sworn the guy was cheatin’, but never found the other pair of dice. Oops. And officers Malloy and O'Reardon, couple a flatfoots too dumb to be on the take. They found the scotch -- they had to go.\nSlumlord wouldn’t sell his slum to Johnny Torrio, turned him into a flaming scarecrow in front of his building. Wouldn’t ya know it the whole neighborhood fell in line.\nBar fight and a pool cue. Guess the guy had a soft head -- corner pocket!\n# Thru #\nAhh, the day I met Sal. He was just an underboss back then, but we just clicked, I could tell. Had a meet at the docks. Somebody got spooked, and out with the bullets. Sal and me, we hunker down back-to-back, poppin’ anyone with an attitude, and when the blood and guts settled, we had the money and the booze. That was the beginning of the Deluca crime family and a beautiful friendship.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "playfair",
+          "key": "HRMPLQWCTVYUZXINAOKFSGEDB"
+        }
+      ]
+    }
+  }
+]

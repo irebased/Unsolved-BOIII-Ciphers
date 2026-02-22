@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ae1",
+    "map": "ae",
+    "number": 1,
+    "title": "Ancient Evil 1",
+    "type": "alchemy",
+    "image": "bo4/ae/ae_alch_0.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "ae2",
+    "map": "ae",
+    "number": 2,
+    "title": "Ancient Evil 2",
+    "type": "alchemy",
+    "image": "bo4/ae/ae_alch_1.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "ae3",
+    "map": "ae",
+    "number": 3,
+    "title": "Ancient Evil 3",
+    "type": "alchemy",
+    "image": "bo4/ae/ae_alch_2.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "ae4",
+    "map": "ae",
+    "number": 4,
+    "title": "Ancient Evil 4",
+    "type": "alchemy",
+    "image": "bo4/ae/ae_alch_3.png",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "ae5",
+    "map": "ae",
+    "number": 5,
+    "title": "Ancient Evil 5",
+    "type": "alchemy",
+    "image": "bo4/ae/ae_alch_4_unfound.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  }
+]

@@ -36,6 +36,7 @@ export interface Cipher {
   map: string;
   number: number;
   title: string;
+  type?: string;
   image: string | null;
   solved: boolean;
   solvers: string[];

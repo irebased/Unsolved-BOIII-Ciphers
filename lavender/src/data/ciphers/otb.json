@@ -1,0 +1,41 @@
+[
+  {
+    "id": "otb1",
+    "map": "otb",
+    "number": 1,
+    "title": "Outbreak 1",
+    "image": "bo5/otb/otb_1.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "otb2",
+    "map": "otb",
+    "number": 2,
+    "title": "Outbreak 2",
+    "image": "bo5/otb/otb_2.webp",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  },
+  {
+    "id": "otb3",
+    "map": "otb",
+    "number": 3,
+    "title": "Outbreak 3",
+    "image": "bo5/otb/otb_3.png",
+    "solved": false,
+    "solvers": [],
+    "credits": [],
+    "ciphertext": null,
+    "plaintext": null,
+    "solution": null
+  }
+]
