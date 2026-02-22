@@ -70,5 +70,53 @@
   "comic_issue6": {
     "game": "comics",
     "label": "Issue 6"
+  },
+  "ae": {
+    "game": "bo4",
+    "label": "Ancient Evil"
+  },
+  "botd": {
+    "game": "bo4",
+    "label": "Blood of the Dead"
+  },
+  "class": {
+    "game": "bo4",
+    "label": "Classified"
+  },
+  "dotn": {
+    "game": "bo4",
+    "label": "Dead of the Night"
+  },
+  "ix": {
+    "game": "bo4",
+    "label": "IX"
+  },
+  "vod": {
+    "game": "bo4",
+    "label": "Voyage of Despair"
+  },
+  "bo4_general": {
+    "game": "bo4",
+    "label": "General"
+  },
+  "dai": {
+    "game": "bo5",
+    "label": "Dark Aether Intel"
+  },
+  "dm": {
+    "game": "bo5",
+    "label": "Die Maschine"
+  },
+  "fbz": {
+    "game": "bo5",
+    "label": "Firebase Z"
+  },
+  "mtd": {
+    "game": "bo5",
+    "label": "Mauer der Toten"
+  },
+  "otb": {
+    "game": "bo5",
+    "label": "Outbreak"
   }
 }
