@@ -1,0 +1,22 @@
+[
+    {
+        "id": "cotd1",
+        "map": "cotd",
+        "number": 1,
+        "title": "Call of the Dead 1",
+        "image": "bo1/cotd_1.png",
+        "solved": false,
+        "solvers": [],
+        "credits": [],
+        "ciphertext": null,
+        "plaintext": null,
+        "solution": {
+        "steps": [
+            {
+            "type": "puzzle",
+            "description": "This scrap paper can be found on Call of the Dead."
+            }
+        ]
+        }
+  }
+]

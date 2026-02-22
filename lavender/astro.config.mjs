@@ -44,6 +44,119 @@ const WAW_CIPHERS = [
 	}
 ]
 
+const BO1_CIPHERS = [
+	{
+		label: 'Kino der toten',
+		items: [
+			{
+				label: 'Kino 1 Solve',
+				slug: 'ciphers/bo1/kino/kino1'
+			}
+		]
+	},
+	{
+		label: 'Ascension',
+		items: [
+			{
+				label: 'Ascension 1 Solve',
+				slug: 'ciphers/bo1/asc/asc1'
+			}
+		]
+	},
+	{
+		label: 'Call of the Dead',
+		items: [
+			{
+				label: 'Call of the Dead 1',
+				slug: 'ciphers/bo1/cotd/cotd1'
+			}
+		]
+	},
+	{
+		label: 'Shangri La',
+		items: [
+			{
+				label: 'Shangri La 1 Solve',
+				slug: 'ciphers/bo1/shang/shang1'
+			}
+		]
+	}
+]
+
+const BO2_CIPHERS = [
+	{
+		label: 'Tranzit',
+		items: [
+			{
+				label: 'Tranzit 1 Solve',
+				slug: 'ciphers/bo2/tranzit/tranzit1',
+			}
+		]
+	},
+	{
+		label: 'Mob of the Dead',
+		items: [
+			{
+				label: 'Mob of the Dead 1 Solve',
+				slug: 'ciphers/bo2/motd/mob1',
+			},
+			{
+				label: 'Mob of the Dead 2 Solve',
+				slug: 'ciphers/bo2/motd/mob2',
+			},
+			{
+				label: 'Mob of the Dead 3 Solve',
+				slug: 'ciphers/bo2/motd/mob3',
+			},
+			{
+				label: 'Mob of the Dead 4 Solve',
+				slug: 'ciphers/bo2/motd/mob4',
+			},
+			{
+				label: 'Mob of the Dead 5 Solve',
+				slug: 'ciphers/bo2/motd/mob5',
+			},
+			{
+				label: 'Mob of the Dead 6 Solve',
+				slug: 'ciphers/bo2/motd/mob6',
+			},
+			{
+				label: 'Mob of the Dead 7 Solve',
+				slug: 'ciphers/bo2/motd/mob7',
+			},
+		]
+	},
+	{
+		label: 'Origins',
+		items: [
+			{
+				label: 'Origins 1 Solve',
+				slug: 'ciphers/bo2/origins/origins1'
+			},
+			{
+				label: 'Origins 2 Solve',
+				slug: 'ciphers/bo2/origins/origins2'
+			},
+			{
+				label: 'Origins 3 Solve',
+				slug: 'ciphers/bo2/origins/origins3'
+			},
+			{
+				label: 'Origins 4 Solve',
+				slug: 'ciphers/bo2/origins/origins4'
+			},
+			{
+				label: 'Origins 5 Solve',
+				slug: 'ciphers/bo2/origins/origins5'
+			},
+			{
+				label: 'Origins 6 Solve',
+				slug: 'ciphers/bo2/origins/origins6'
+			},
+		]
+	}
+]
+
 const BO3_CIPHERS = [
 	{
 		label: 'Shadows of Evil',
@@ -180,80 +293,6 @@ const BO3_CIPHERS = [
 	},
 ];
 
-const BO2_CIPHERS = [
-	{
-		label: 'Tranzit',
-		items: [
-			{
-				label: 'Tranzit 1 Solve',
-				slug: 'ciphers/bo2/tranzit/tranzit1',
-			}
-		]
-	},
-	{
-		label: 'Mob of the Dead',
-		items: [
-			{
-				label: 'Mob of the Dead 1 Solve',
-				slug: 'ciphers/bo2/motd/mob1',
-			},
-			{
-				label: 'Mob of the Dead 2 Solve',
-				slug: 'ciphers/bo2/motd/mob2',
-			},
-			{
-				label: 'Mob of the Dead 3 Solve',
-				slug: 'ciphers/bo2/motd/mob3',
-			},
-			{
-				label: 'Mob of the Dead 4 Solve',
-				slug: 'ciphers/bo2/motd/mob4',
-			},
-			{
-				label: 'Mob of the Dead 5 Solve',
-				slug: 'ciphers/bo2/motd/mob5',
-			},
-			{
-				label: 'Mob of the Dead 6 Solve',
-				slug: 'ciphers/bo2/motd/mob6',
-			},
-			{
-				label: 'Mob of the Dead 7 Solve',
-				slug: 'ciphers/bo2/motd/mob7',
-			},
-		]
-	},
-	{
-		label: 'Origins',
-		items: [
-			{
-				label: 'Origins 1 Solve',
-				slug: 'ciphers/bo2/origins/origins1'
-			},
-			{
-				label: 'Origins 2 Solve',
-				slug: 'ciphers/bo2/origins/origins2'
-			},
-			{
-				label: 'Origins 3 Solve',
-				slug: 'ciphers/bo2/origins/origins3'
-			},
-			{
-				label: 'Origins 4 Solve',
-				slug: 'ciphers/bo2/origins/origins4'
-			},
-			{
-				label: 'Origins 5 Solve',
-				slug: 'ciphers/bo2/origins/origins5'
-			},
-			{
-				label: 'Origins 6 Solve',
-				slug: 'ciphers/bo2/origins/origins6'
-			},
-		]
-	}
-]
-
 const COMIC_CIPHERS = [
 	{
 		label: 'Issue 1',
@@ -381,6 +420,10 @@ export default defineConfig({
 						{
 							label: 'World at War',
 							items: WAW_CIPHERS
+						},
+						{
+							label: 'Black Ops',
+							items: BO1_CIPHERS
 						},
 						{
 							label: 'Black Ops II',

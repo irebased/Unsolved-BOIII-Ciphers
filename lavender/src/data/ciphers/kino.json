@@ -1,0 +1,22 @@
+[
+    {
+        "id": "kino1",
+        "map": "kino_der_toten",
+        "number": 1,
+        "title": "Kino 1",
+        "image": "bo1/kino_1.webp",
+        "solved": true,
+        "solvers": [],
+        "credits": [],
+        "ciphertext": null,
+        "plaintext": "Aether",
+        "solution": {
+        "steps": [
+            {
+            "type": "puzzle",
+            "description": "Illuminati code cipher mapping"
+            }
+        ]
+        }
+  }
+]

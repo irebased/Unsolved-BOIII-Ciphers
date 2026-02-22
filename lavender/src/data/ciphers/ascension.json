@@ -1,0 +1,22 @@
+[
+    {
+        "id": "asc1",
+        "map": "ascension",
+        "number": 1,
+        "title": "Kino 1",
+        "image": "bo1/asc_1.webp",
+        "solved": true,
+        "solvers": [],
+        "credits": [],
+        "ciphertext": null,
+        "plaintext": "Moon",
+        "solution": {
+        "steps": [
+            {
+            "type": "puzzle",
+            "description": "Illuminati code cipher mapping"
+            }
+        ]
+        }
+  }
+]

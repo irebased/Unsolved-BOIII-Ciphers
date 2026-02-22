@@ -1,0 +1,22 @@
+[
+    {
+        "id": "shang1",
+        "map": "shang",
+        "number": 1,
+        "title": "Shangri La 1",
+        "image": "bo1/shang_1.webp",
+        "solved": true,
+        "solvers": ["haldr912", "MixMasterNut"],
+        "credits": [],
+        "ciphertext": null,
+        "plaintext": "Beware the wrath of the dragon's fire",
+        "solution": {
+        "steps": [
+            {
+            "type": "puzzle",
+            "description": "Illuminati code cipher mapping"
+            }
+        ]
+    }
+  }
+]
