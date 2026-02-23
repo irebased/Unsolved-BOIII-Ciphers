@@ -6,7 +6,9 @@
     "title": "IX 1",
     "image": "bo4/ix/ix_1.png",
     "solved": true,
-    "solvers": ["certainpersonio"],
+    "solvers": [
+      "certainpersonio"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Your resolve is weakening you will soon succumb",
@@ -26,7 +28,9 @@
     "title": "IX 2",
     "image": "bo4/ix/ix_2.webp",
     "solved": true,
-    "solvers": ["deservesmorelikes"],
+    "solvers": [
+      "deservesmorelikes"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "If you are not the betrayer. You will be the betrayed",
@@ -60,7 +64,9 @@
     "title": "IX 4",
     "image": "bo4/ix/ix_4.jpg",
     "solved": true,
-    "solvers": ["Lizizabirdnerd"],
+    "solvers": [
+      "Lizizabirdnerd"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Even a fool such as you may prove useful turn around before it is too late",
@@ -81,8 +87,16 @@
     "title": "IX 5",
     "image": "bo4/ix/ix_5.webp",
     "solved": true,
-    "solvers": ["coldstone_the_gamer"],
-    "credits": ["Richkiller"],
+    "solvers": [
+      "coldstone_the_gamer"
+    ],
+    "credits": [
+      {
+        "users": [
+          "Richkiller"
+        ]
+      }
+    ],
     "ciphertext": null,
     "plaintext": "All that you believe in will crumble to dust",
     "solution": {
@@ -102,7 +116,9 @@
     "title": "IX 6",
     "image": "bo4/ix/ix_6.webp",
     "solved": true,
-    "solvers": ["Gazump"],
+    "solvers": [
+      "Gazump"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "You do not even know your own mind. It is a foreign land",
@@ -136,7 +152,10 @@
     "title": "IX 8",
     "image": "bo4/ix/ix_8.webp",
     "solved": true,
-    "solvers": ["Richkiller", "coldstone_the_gamer"],
+    "solvers": [
+      "Richkiller",
+      "coldstone_the_gamer"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "A wave of change is coming, you will be swept up in its wake",
@@ -170,7 +189,9 @@
     "title": "IX 10",
     "image": "bo4/ix/ix_10.webp",
     "solved": true,
-    "solvers": ["Richkiller"],
+    "solvers": [
+      "Richkiller"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "The path you travel will never fill your empty heart",
@@ -191,7 +212,9 @@
     "title": "IX 11",
     "image": "bo4/ix/ix_11.webp",
     "solved": true,
-    "solvers": ["Richkiller"],
+    "solvers": [
+      "Richkiller"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "The solace you seek will not come without sacrifice",
@@ -232,7 +255,13 @@
     "title": "IX 13",
     "image": "bo4/ix/ix_13.webp",
     "solved": true,
-    "solvers": ["webrow", "certainpersonio", "za0820", "SavageXanchez", "icyrizard"],
+    "solvers": [
+      "webrow",
+      "certainpersonio",
+      "za0820",
+      "SavageXanchez",
+      "icyrizard"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": null,
@@ -253,7 +282,9 @@
     "type": "alchemy",
     "image": "bo4/ix/ix_14.webp",
     "solved": true,
-    "solvers": ["naycraig"],
+    "solvers": [
+      "naycraig"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Deeply Breathe",
@@ -267,7 +298,9 @@
     "image": "bo4/ix/ix_15.webp",
     "type": "alchemy",
     "solved": true,
-    "solvers": ["coldstone_the_gamer"],
+    "solvers": [
+      "coldstone_the_gamer"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "The lords are nine, holding the truth.\nTo hear the truth, we must listen.\nTo see the truth, we must open our eyes.\nTo speak the truth, we must cross the threshold and forever be transformed.",
@@ -281,7 +314,9 @@
     "image": "bo4/ix/ix_16.webp",
     "solved": true,
     "type": "alchemy",
-    "solvers": ["coldstone_the_gamer"],
+    "solvers": [
+      "coldstone_the_gamer"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "The dark heart\nThe lords nine\nThe last gates\nThe third eye\nThe rose cross",
@@ -295,7 +330,9 @@
     "type": "alchemy",
     "image": "bo4/ix/ix_17.webp",
     "solved": true,
-    "solvers": ["coldstone_the_gamer"],
+    "solvers": [
+      "coldstone_the_gamer"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Prove your fortitude unlock the gates",
@@ -309,7 +346,9 @@
     "type": "alchemy",
     "image": "bo4/ix/ix_18.webp",
     "solved": true,
-    "solvers": ["coldstone_the_gamer"],
+    "solvers": [
+      "coldstone_the_gamer"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Reward for the doomed",
@@ -323,7 +362,9 @@
     "type": "alchemy",
     "image": "bo4/ix/ix_19.webp",
     "solved": false,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Above the scorching deserts beyond the sea the lord of the sun sees all\nHis eye has stood watch over farmer and pharoah rising and setting the same\nAll seeing sight shall be ours as well in shadow no evil shall hide\nFor we are the lord of the sun, our light, reveals truth. In chaos, it shall be done",
@@ -337,7 +378,9 @@
     "image": "bo4/ix/ix_20.webp",
     "type": "alchemy",
     "solved": true,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Gold and silver are worthless on the journey to enlightenment",
@@ -351,7 +394,9 @@
     "type": "alchemy",
     "image": "bo4/ix/ix_21.webp",
     "solved": true,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "In the ancient forests of island green the mother of life bears fruit\nHer children, the trees and people alike, she whispers her love as they grow\nBarren lands shall grow at our touch, that which is green shall spread\nFor we are the mothers of life, our roots run deep. In chaos, it shall be done",
@@ -365,7 +410,9 @@
     "image": "bo4/ix/ix_22.webp",
     "type": "alchemy",
     "solved": true,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Worship of earth and nature alone does not lead to our gateway",
@@ -379,7 +426,9 @@
     "image": "bo4/ix/ix_23.webp",
     "type": "alchemy",
     "solved": true,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "On the meridian shores of sand and stone the king of the gods holds court\nWith lightning, his will, and thunder, his voice, he directs all creation to follow\nOur words shall ring loud and clear; sky, sea and storms. One golden voice in every ear\nFor we are the kings of the gods, our reign is nigh. In chaos, it shall be done",
@@ -393,7 +442,9 @@
     "image": "bo4/ix/ix_24.webp",
     "type": "alchemy",
     "solved": true,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "The many gods you worship will not have all the answers you seek",
@@ -407,7 +458,9 @@
     "image": "bo4/ix/ix_25.webp",
     "type": "alchemy",
     "solved": true,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Through the northern seas and mountains cold, the wandering father guides men\nIn battle, in verse, in life, in death, his wisdom is often disguised\nOur deed shall echo in glorious songs, lessons of blood saved and spilt\nThrough the northern seas and mountains cold the wandering father guides men",
@@ -421,7 +474,9 @@
     "image": "bo4/ix/ix_26.webp",
     "type": "alchemy",
     "solved": true,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "The sacrifice of another is not enough to gain our knowledge",
@@ -435,7 +490,10 @@
     "image": "bo4/ix/ix_27.webp",
     "type": "alchemy",
     "solved": true,
-    "solvers": ["Afrochubman", "coldstone_the_gamer"],
+    "solvers": [
+      "Afrochubman",
+      "coldstone_the_gamer"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Singing creation from the matter poured\nThe world floating in fires four\nSacred knowledge we now guard\nThe corrupter's mind must be barred\n\nOnly the worthy will cross the threshold and be transformed",
@@ -449,7 +507,9 @@
     "image": "bo4/ix/ix_28.webp",
     "type": "alchemy",
     "solved": true,
-    "solvers": ["Richkiller"],
+    "solvers": [
+      "Richkiller"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Estellephant",
@@ -463,7 +523,9 @@
     "image": "bo4/ix/ix_29.webp",
     "type": "alchemy",
     "solved": true,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Poseidon",

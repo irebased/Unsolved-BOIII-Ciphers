@@ -6,7 +6,9 @@
     "title": "Zetsubou No Shima 1",
     "image": "bo3/zns/zns_1.webp",
     "solved": true,
-    "solvers": ["Dopplegänger"],
+    "solvers": [
+      "Dopplegänger"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Of the 4 test subjects highlighted in Report 44, one of the brothers has died before we could reach him in the battle. The other is still at large in the city.",
@@ -26,7 +28,9 @@
     "title": "Zetsubou No Shima 2",
     "image": "bo3/zns/zns_2.png",
     "solved": true,
-    "solvers": ["certainpersonio"],
+    "solvers": [
+      "certainpersonio"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Entry 58\nWe have been having power fluctuations for the past couple of days. Consequently, we have had to rely more and more on the backup generators. It's strange, ever since we have been having issues with the power, people are reporting hearing voices coming from the walls. They say they can hear quiet sobbing from a boy and a girl, as well as, a man shouting for children to close the windows. I have not heard the voices, but I admit something feels different about this place.",
@@ -46,7 +50,9 @@
     "title": "Zetsubou No Shima 3",
     "image": "bo3/zns/zns_3.webp",
     "solved": true,
-    "solvers": ["Zonchi"],
+    "solvers": [
+      "Zonchi"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "My name is my name. My name? Oh, yes, it is Gersh. How long have I been floating? Minutes? Years? Where is now? I guess I can forgive Yuri. I quite like my new form. Hmmm, where am I now. A city on fire by a river. I know this place. Finally, I am home.",
@@ -67,7 +73,9 @@
     "title": "Zetsubou No Shima 4",
     "image": "bo3/zns/zns_4.webp",
     "solved": true,
-    "solvers": ["certainpersonio"],
+    "solvers": [
+      "certainpersonio"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Comrade. I hope these schematics reach you in time so our scientists can make use of them, for I know the western front is on the brink of collapse. These schematics I have stolen from Group 935 will enable us to construct our own wonder weapons which will help us turn the tide of the war and give us victory over the German pigs. I fear, however, I will not live to see this. -- V",
@@ -88,7 +96,9 @@
     "title": "Zetsubou No Shima 5",
     "image": "bo3/zns/zns_5.webp",
     "solved": true,
-    "solvers": ["Lizizadolphin"],
+    "solvers": [
+      "Lizizadolphin"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Edward, as you know it is imperative you and the group find the exact versions of yourselves that I have highlighted in each universe. Only by killing that version of yourself in that particular universe at that particular moment in time will we be successful once each of you other selves are killed across all the universes. Remember, we are only immune because we opened the portal in France but I am afraid this might not be permanent. I fear there is something M isn't telling me and that there is not much time left for us.",
@@ -108,7 +118,9 @@
     "title": "Zetsubou No Shima 6",
     "image": "bo3/zns/zns_6.png",
     "solved": true,
-    "solvers": ["Kalinine"],
+    "solvers": [
+      "Kalinine"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "SOPHIA- Cyclic redundancy check = FAIL",
@@ -150,7 +162,9 @@
     "title": "Zetsubou No Shima 8",
     "image": "bo3/zns/zns_8.webp",
     "solved": true,
-    "solvers": ["certainpersonio"],
+    "solvers": [
+      "certainpersonio"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Richtofen must understand that using these teleporters to jump between dimensions is both dangerous and imprecise. At any point, the fabric of space-time could collapse if the proper amounts of 115 are not maintained. I am also concerned about the unknown effects of trans-dimensional jumps. I have noticed even with my brief travels that new memories and emotions have flooded my mind, suddenly appearing from nowhere. I am also sure something is happening on a molecular level as well.",
@@ -171,7 +185,9 @@
     "title": "Zetsubou No Shima 9",
     "image": "bo3/zns/zns_9.webp",
     "solved": true,
-    "solvers": ["waterkh"],
+    "solvers": [
+      "waterkh"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Entry 56\nJust finished a very long shift. We were awaiting the test subjects arrival from the castle but they never showed. Those Group 935 pigs didnt even bother to radio the asylum to let us know they were not coming. I am getting sick of those arrogant scientists. They have given the asylum the nickname Verrückt Asylum. I loathe it. We are as every bit as important to the completion of project as they are.",
@@ -192,7 +208,9 @@
     "title": "Zetsubou No Shima 10",
     "image": "bo3/zns/zns_10.webp",
     "solved": true,
-    "solvers": ["waterkh"],
+    "solvers": [
+      "waterkh"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Urgent Telegram. We have just received word that the private plane carrying the expedition crew encountered freak atmospheric event which caused it to crash, killing all on board including the famous explorers Brock and Gary. This comes weeks after their announcement about the location of Shangri-La.",
@@ -212,7 +230,9 @@
     "title": "Zetsubou No Shima 11",
     "image": "bo3/zns/zns_11.webp",
     "solved": true,
-    "solvers": ["DCRevolutionGaming"],
+    "solvers": [
+      "DCRevolutionGaming"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Division 9 Project D update to Group 935\nThe specimens have been manufactured to be asexual, we felt it was best to remove the primal urges of the sexes as this will make them far easier to control. That being said they are still extremely dangerous. You must have the mechanical control collars and proper frequencies set and applied when the specimens reach the juvenile stage. After seeing what they are capable of, your stalemate on the eastern front with the Russians will soon come to an end.",
@@ -233,7 +253,9 @@
     "title": "Zetsubou No Shima 12",
     "image": "bo3/zns/zns_12.webp",
     "solved": true,
-    "solvers": ["waterkh"],
+    "solvers": [
+      "waterkh"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "While the loss of the Rising Sun facility was unfortunate, the Emperor was so impressed with our final results that he has approved the construction of the new Division 9 facility on the island we selected. He assured me personally that he will spare no expense in advancing our research. You and I both know that what we accomplish at this new facility will win the war for Japan.",
@@ -254,8 +276,16 @@
     "title": "Zetsubou No Shima 13",
     "image": "bo3/zns/zns_13.webp",
     "solved": true,
-    "solvers": ["TimJJacques"],
-    "credits": ["FilipJDM"],
+    "solvers": [
+      "TimJJacques"
+    ],
+    "credits": [
+      {
+        "users": [
+          "FilipJDM"
+        ]
+      }
+    ],
     "ciphertext": null,
     "plaintext": "... Maxis, have you found the space-time coordinates for the other individuals I asked you for... It's imperative that we find them as well... You must trust me on this... For my plan to work, we need their blood.",
     "solution": {

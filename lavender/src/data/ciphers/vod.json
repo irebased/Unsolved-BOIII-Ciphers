@@ -5,7 +5,9 @@
     "number": 1,
     "title": "Voyage of Despair 1",
     "solved": true,
-    "solvers": ["Gemgamer"],
+    "solvers": [
+      "Gemgamer"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "You have questions of your family's history you may not like where the answers lead",
@@ -25,7 +27,10 @@
     "title": "Voyage of Despair 2",
     "image": "bo4/vod/vod_2.png",
     "solved": true,
-    "solvers": ["Richkiller", "coldstone_the_gamer"],
+    "solvers": [
+      "Richkiller",
+      "coldstone_the_gamer"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Avarice is why you lost them. Indulgence is why you lost yourself.",
@@ -65,7 +70,9 @@
     "title": "Voyage of Despair 4",
     "image": "bo4/vod/vod_4.jpg",
     "solved": true,
-    "solvers": ["TheViceSquad"],
+    "solvers": [
+      "TheViceSquad"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "From Chaos grew the Sacred Tree and you its fledgling branches.\nTo usurp its power and draw from the root is to invite your own destruction.",
@@ -85,7 +92,9 @@
     "title": "Voyage of Despair 5",
     "image": "bo4/vod/vod_5.webp",
     "solved": true,
-    "solvers": ["travtracks"],
+    "solvers": [
+      "travtracks"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Saving your old friend will not atone for the suffering you've caused others",
@@ -105,8 +114,16 @@
     "title": "Voyage of Despair 6",
     "image": "bo4/vod/vod_6.webp",
     "solved": true,
-    "solvers": ["Richkiller"],
-    "credits": ["JackalBoy88"],
+    "solvers": [
+      "Richkiller"
+    ],
+    "credits": [
+      {
+        "users": [
+          "JackalBoy88"
+        ]
+      }
+    ],
     "ciphertext": null,
     "plaintext": "Once you were a gangster. Now you are a soldier. What do you truly stand for?",
     "solution": {
@@ -126,7 +143,9 @@
     "title": "Voyage of Despair 7",
     "image": "bo4/vod/vod_7.webp",
     "solved": true,
-    "solvers": ["GlitchingQueen"],
+    "solvers": [
+      "GlitchingQueen"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Running from your former life does not erase the sins of your past.",
@@ -146,7 +165,9 @@
     "number": 8,
     "title": "Voyage of Despair 8",
     "solved": true,
-    "solvers": ["CODTracker"],
+    "solvers": [
+      "CODTracker"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Why do you wish to save the one who abandoned you",
@@ -166,8 +187,18 @@
     "title": "Voyage of Despair 9",
     "image": "bo4/vod/vod_9.webp",
     "solved": true,
-    "solvers": ["Richkiller", "Nethromaniac", "coldstone_the_gamer"],
-    "credits": ["CODTracker"],
+    "solvers": [
+      "Richkiller",
+      "Nethromaniac",
+      "coldstone_the_gamer"
+    ],
+    "credits": [
+      {
+        "users": [
+          "CODTracker"
+        ]
+      }
+    ],
     "ciphertext": null,
     "plaintext": "The one you are looking for cannot be saved if you cannot save yourself first.",
     "solution": {
@@ -187,7 +218,9 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_10.webp",
     "solved": true,
-    "solvers": ["coldstone_the_gamer"],
+    "solvers": [
+      "coldstone_the_gamer"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "You punish yourself for crimes that can never be undone.",
@@ -206,7 +239,10 @@
     "number": 11,
     "title": "Voyage of Despair 11",
     "solved": true,
-    "solvers": ["SkiteInnit", "Nanikos"],
+    "solvers": [
+      "SkiteInnit",
+      "Nanikos"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "You travelled the world to sate your thirst for violence. You returned to Mexico still parched.",
@@ -227,7 +263,9 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_alch_1.webp",
     "solved": true,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "The horde will not be contained",
@@ -241,7 +279,9 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_alch_2.webp",
     "solved": true,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Prove your worthiness",
@@ -255,7 +295,9 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_alch_3.webp",
     "solved": true,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "That which you need is within reach",
@@ -269,7 +311,9 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_alch_4.webp",
     "solved": true,
-    "solvers": ["lowlight227"],
+    "solvers": [
+      "lowlight227"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "You must be empowered the horde will not yield",
@@ -283,7 +327,9 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_alch_5.webp",
     "solved": true,
-    "solvers": ["Kalinine"],
+    "solvers": [
+      "Kalinine"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Eyes watch",
@@ -297,7 +343,9 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_alch_6.webp",
     "solved": true,
-    "solvers": ["Kalinine"],
+    "solvers": [
+      "Kalinine"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Chance lies within",
@@ -311,7 +359,9 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_alch_7.webp",
     "solved": true,
-    "solvers": ["Kalinine"],
+    "solvers": [
+      "Kalinine"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Your journey is not bound by natural law",
@@ -325,7 +375,9 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_alch_8.webp",
     "solved": true,
-    "solvers": ["travtracks"],
+    "solvers": [
+      "travtracks"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Fight",
@@ -339,8 +391,16 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_alch_9.png",
     "solved": true,
-    "solvers": ["coldstone_the_gamer"],
-    "credits": ["Jek47"],
+    "solvers": [
+      "coldstone_the_gamer"
+    ],
+    "credits": [
+      {
+        "users": [
+          "Jek47"
+        ]
+      }
+    ],
     "ciphertext": null,
     "plaintext": "The Seventh Gate\n\nAnd through the final gateway we transform.\nThe world's dualities unite as one.\nCelebrate this transition, do not mourn.\nThe separation between us undone.\n\nThrough the darkness we come evolved and pure,\nbut this conversion will not be for all.\nThe path must be forged, for we are the cure.\nWith damnation we survive the great fall.\n\nSix gateways we passed with vigor and might\nto become the reflection we now form.\nThe self and the all, once more will bind tight.\nIn this new image we are all reborn.\n\nThe rejuvenation of blood begins.\nThe coalescence with light will be found.\nThe forgiveness of the soul and our sins.\nThe enlightenment to which we are bound.",
     "solution": null
@@ -353,7 +413,10 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_alch_10.webp",
     "solved": true,
-    "solvers": ["Richkiller", "coldstone_the_gamer"],
+    "solvers": [
+      "Richkiller",
+      "coldstone_the_gamer"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "The eye is within them",
@@ -367,7 +430,9 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_alch_11.webp",
     "solved": true,
-    "solvers": ["Richkiller"],
+    "solvers": [
+      "Richkiller"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "The Sentinel\n\nMind and body are one",
@@ -381,7 +446,9 @@
     "type": "alchemy",
     "image": "bo4/vod/vod_11_unfound.webp",
     "solved": true,
-    "solvers": ["coldstone_the_gamer"],
+    "solvers": [
+      "coldstone_the_gamer"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "The Sentinel\n\nMind and body are one",

@@ -7,7 +7,7 @@ export function getStaticPaths() {
   const users = new Set<string>();
   for (const cipher of getAllCiphers()) {
     cipher.solvers.forEach(u => users.add(u));
-    cipher.credits.forEach(u => users.add(u));
+    cipher.credits.forEach(entry => entry.users.forEach(u => users.add(u)));
   }
   for (const name of Object.keys(getAllUsers())) {
     users.add(name);

@@ -6,7 +6,9 @@
     "title": "Firebase Z 1",
     "image": "bo5/fbz/fbz_1.webp",
     "solved": true,
-    "solvers": ["Richkiler"],
+    "solvers": [
+      "Richkiler"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "Omega ops continue in Ural mountains. Special operations units in the area encountered hostiles, unlike those recorded in other incursion zones. Entire squad lost interacting with a shifting energy barrier inside zone. For now, avoid the phase.",
@@ -27,8 +29,16 @@
     "title": "Firebase Z 2",
     "image": "bo5/fbz/fbz_2.webp",
     "solved": true,
-    "solvers": ["ScottoAC"],
-    "credits": ["Richkiller"],
+    "solvers": [
+      "ScottoAC"
+    ],
+    "credits": [
+      {
+        "users": [
+          "Richkiller"
+        ]
+      }
+    ],
     "plaintext": "K\n\nIt seems our little side investment is beginning to pay dividends. Our infiltration has occurred right under their noses. I am told the Maxis communique is just a taste of what we can expect going forward. Requiem has no clue a member of their senior staff is compromised.\n\nG",
     "ciphertext": null,
     "solution": {
@@ -49,16 +59,24 @@
     "title": "Firebase Z 3",
     "image": "bo5/fbz/fbz_3.webp",
     "solved": true,
-    "solvers": ["Richkiller"],
-    "credits": ["coldstone_the_gamer"],
+    "solvers": [
+      "Richkiller"
+    ],
+    "credits": [
+      {
+        "users": [
+          "coldstone_the_gamer"
+        ]
+      }
+    ],
     "ciphertext": null,
     "plaintext": "G\n\nI'm having reservations, second thoughts, something in my gut. Something doesn't feel right. I've worked with the CIA for a long time, you longer. When I requested transfer to Requiem, I thought I knew what I was getting myself into. I knew this dog and pony show the smoke and mirrors, but something feels different. Sorry, this is coming via an encrypted message, but I'm just not sure who I can trust these days. I keep noticing discrepancies, minor deviations from our stated mission. Sure, there's nuances to any black op, we both know that all too well. But I cant shake the feeling that there's a hidden agenda at play. And what about our director? What's his goal? Come to think of it. Do you know his name? Ever remember seeing it on a dossier or overheard in conversation? I couldn't tell you. I got close to him once or who I think was him, not sure. And you know what I heard? I heard him speaking Russian! So I ask you... What the hell is going on here?!\n\nC",
     "steps": [
-        {
-          "type": "classical",
-          "method": "nihilist",
-          "configuration": "key VERDICT and alphabet PLFIEYMWVCXZDHNTSAGRBOUQK"
-        }
+      {
+        "type": "classical",
+        "method": "nihilist",
+        "configuration": "key VERDICT and alphabet PLFIEYMWVCXZDHNTSAGRBOUQK"
+      }
     ]
   }
 ]

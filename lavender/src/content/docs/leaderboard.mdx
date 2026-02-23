@@ -14,7 +14,7 @@ export const entries = (() => {
       if (!map[u]) map[u] = { name: u, platform: getUser(u)?.platform ?? 'generic', solvesCount: 0, creditsCount: 0 };
       map[u].solvesCount++;
     }
-    for (const u of cipher.credits) {
+    for (const entry of cipher.credits) for (const u of entry.users) {
       if (!map[u]) map[u] = { name: u, platform: getUser(u)?.platform ?? 'generic', solvesCount: 0, creditsCount: 0 };
       map[u].creditsCount++;
     }
@@ -37,7 +37,7 @@ export const gameLeaderboards = (() => {
       if (!perGame[gameId][u]) perGame[gameId][u] = { name: u, platform: getUser(u)?.platform ?? 'generic', solvesCount: 0, creditsCount: 0 };
       perGame[gameId][u].solvesCount++;
     }
-    for (const u of cipher.credits) {
+    for (const entry of cipher.credits) for (const u of entry.users) {
       if (!perGame[gameId][u]) perGame[gameId][u] = { name: u, platform: getUser(u)?.platform ?? 'generic', solvesCount: 0, creditsCount: 0 };
       perGame[gameId][u].creditsCount++;
     }

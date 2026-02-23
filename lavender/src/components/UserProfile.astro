@@ -11,7 +11,7 @@ const { username } = Astro.props;
 
 const allCiphers = getAllCiphers();
 const userSolves = allCiphers.filter(c => c.solvers.includes(username));
-const userCredits = allCiphers.filter(c => c.credits.includes(username));
+const userCredits = allCiphers.filter(c => c.credits.some(entry => entry.users.includes(username)));
 
 interface CipherLink {
   href: string;

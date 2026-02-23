@@ -19,6 +19,10 @@ export interface CipherMap {
   game: string;
   label: string;
 }
+export interface CreditEntry {
+  users: string[];
+  note?: string;
+}
 export interface SolutionStep {
   type: string;
   method?: string;
@@ -40,7 +44,7 @@ export interface Cipher {
   image: string | null;
   solved: boolean;
   solvers: string[];
-  credits: string[];
+  credits: CreditEntry[];
   ciphertext: string | null;
   plaintext: string | null;
   solution: Solution | null;
@@ -57,6 +61,10 @@ export function getCiphersByMap(mapId: string): Cipher[] {
 
 export function getAllCiphers(): Cipher[] {
   return ciphers;
+}
+
+export function getCreditUsers(credits: CreditEntry[]): string[] {
+  return credits.flatMap((entry) => entry.users);
 }
 
 export function getUser(name: string): User | undefined {

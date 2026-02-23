@@ -17,7 +17,7 @@ const credits: string[] = [];
 for (const cipher of getAllCiphers()) {
   const path = cipherToPath(cipher);
   if (cipher.solvers.includes(lookupKey)) solves.push(path);
-  if (cipher.credits.includes(lookupKey)) credits.push(path);
+  if (cipher.credits.some(entry => entry.users.includes(lookupKey))) credits.push(path);
 }
 
 const styles: Record<string, { color: string }> = {

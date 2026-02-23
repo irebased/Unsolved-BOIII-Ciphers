@@ -6,7 +6,9 @@
     "title": "Mauer der Toten 1",
     "image": "bo5/mdt/mdt_1.webp",
     "solved": true,
-    "solvers": ["Richkiller"],
+    "solvers": [
+      "Richkiller"
+    ],
     "credits": [],
     "ciphertext": null,
     "plaintext": "From: Requiem\nTo: Klaus\nSubject: Complete your mission.\nYou have your orders, the security of Project Janus is your top priority.\nContain this situation, find and destroy the intercepted communique, then tie up all loose ends. We cannot allow this get out.",
@@ -27,8 +29,16 @@
     "title": "Mauer der Toten 2",
     "image": "bo5/mdt/mdt_2.webp",
     "solved": true,
-    "solvers": ["OriginalWormy"],
-    "credits": ["Richkiller"],
+    "solvers": [
+      "OriginalWormy"
+    ],
+    "credits": [
+      {
+        "users": [
+          "Richkiller"
+        ]
+      }
+    ],
     "ciphertext": null,
     "plaintext": "Colonel\nWe're going about this the wrong way. We shouldnt be trying to kill the Forsaken. We should be trying to capture it. Think about it. This could be the most powerful creature from their reality. It is an Elder God. It has power beyond anything we can comprehend. Who knows what could be gained from harvesting it. Zykov says he can help. All he wants from us is to break him free. We should act fast before Requiem takes him upon his offer.\nP",
     "solution": {
