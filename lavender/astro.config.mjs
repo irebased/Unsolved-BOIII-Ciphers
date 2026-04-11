@@ -634,6 +634,7 @@ export default defineConfig({
 			social: [{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/dsjVrtYygJ' }],
 			sidebar: [
 				{ label: 'About the hunt', slug: 'background'},
+				{ label: 'Unsolved Ciphers', slug: 'unsolved' },
 				{
 					label: 'Ciphers',
 					items: [

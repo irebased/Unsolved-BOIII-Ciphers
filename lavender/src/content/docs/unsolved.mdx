@@ -1,0 +1,93 @@
+---
+title: Unsolved Ciphers
+description: Table of contents for all currently unsolved ciphers across every game
+---
+
+import { getAllCiphers, getMap, getGame } from '@/data/db'
+import { cipherToPath, getCipherLabel } from '@/components/solvers.js'
+
+export const unsolvedByGame = (() => {
+  const gameOrder = ['waw', 'bo1', 'bo2', 'bo3', 'bo4', 'bo5', 'comics'];
+  const perGame = {};
+  for (const cipher of getAllCiphers()) {
+    if (cipher.solved) continue;
+    const mapInfo = getMap(cipher.map);
+    const gameId = mapInfo?.game ?? 'unknown';
+    if (!perGame[gameId]) perGame[gameId] = { label: getGame(gameId)?.label ?? gameId, maps: {} };
+    const mapLabel = mapInfo?.label ?? cipher.map;
+    if (!perGame[gameId].maps[cipher.map]) perGame[gameId].maps[cipher.map] = { label: mapLabel, ciphers: [] };
+    const path = cipherToPath(cipher);
+    perGame[gameId].maps[cipher.map].ciphers.push({
+      title: cipher.title || getCipherLabel(path),
+      href: path,
+      number: cipher.number ?? 0,
+    });
+  }
+  const ordered = [];
+  const seen = new Set(gameOrder);
+  for (const id of gameOrder) if (perGame[id]) ordered.push([id, perGame[id]]);
+  for (const [id, g] of Object.entries(perGame)) if (!seen.has(id)) ordered.push([id, g]);
+  return ordered.map(([id, g]) => ({
+    id,
+    label: g.label,
+    maps: Object.values(g.maps)
+      .map(m => ({ ...m, ciphers: m.ciphers.sort((a, b) => a.number - b.number) }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  }));
+})();
+
+export const totalUnsolved = unsolvedByGame.reduce(
+  (n, g) => n + g.maps.reduce((m, map) => m + map.ciphers.length, 0),
+  0,
+);
+
+This page lists every cipher that has **not** yet been solved, grouped by game
+and map. Each entry links to its dedicated page where you can find the
+ciphertext, known analysis, and any partial progress.
+
+There are currently **{totalUnsolved}** unsolved ciphers tracked on this site.
+
+If you think you have a lead on any of them, come share it in the
+[Discord](https://discord.gg/dsjVrtYygJ).
+
+{unsolvedByGame.map(game => (
+  <section class="unsolved-game">
+    <h2 id={game.id}>{game.label}</h2>
+    {game.maps.map(map => (
+      <div class="unsolved-map">
+        <h3>{map.label}</h3>
+        <ul>
+          {map.ciphers.map(c => (
+            <li><a href={c.href}>{c.title}</a></li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+))}
+
+{totalUnsolved === 0 && (
+  <blockquote>
+    <p>Every tracked cipher has been solved. 🎉</p>
+  </blockquote>
+)}
+
+<style>{`
+  .unsolved-game {
+    margin-top: 2rem;
+  }
+  .unsolved-map {
+    margin: 0.75rem 0 1.25rem;
+  }
+  .unsolved-map h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--sl-color-gray-3, #aaa);
+  }
+  .unsolved-map ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+`}</style>

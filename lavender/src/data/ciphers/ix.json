@@ -361,7 +361,7 @@
     "title": "IX 19",
     "type": "alchemy",
     "image": "bo4/ix/ix_19.webp",
-    "solved": false,
+    "solved": true,
     "solvers": [
       "lowlight227"
     ],

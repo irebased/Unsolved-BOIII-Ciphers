@@ -7,6 +7,10 @@ export function cipherToPath(cipher) {
     if (comicMatch) return `${BASE}/comics/issue${comicMatch[1]}/cipher${number}`;
 
     switch (map) {
+        case 'kino':            return `${BASE}/bo1/kino/kino${number}`;
+        case 'ascension':       return `${BASE}/bo1/asc/asc${number}`;
+        case 'cotd':            return `${BASE}/bo1/cotd/cotd${number}`;
+        case 'shang':           return `${BASE}/bo1/shang/shang${number}`;
         case 'revelations':     return `${BASE}/bo3/rev/rev${number}`;
         case 'gorod_krovi':     return `${BASE}/bo3/gk/gk${number}`;
         case 'the_giant':       return `${BASE}/bo3/tg/tg${number}`;
@@ -37,6 +41,10 @@ export function cipherToPath(cipher) {
 
 // Label lookup from path slug
 const CIPHER_PREFIXES = {
+    kino: 'Kino der Toten',
+    asc: 'Ascension',
+    cotd: 'Call of the Dead',
+    shang: 'Shangri-La',
     rev: 'Revelations',
     gk: 'Gorod Krovi',
     tg: 'The Giant',

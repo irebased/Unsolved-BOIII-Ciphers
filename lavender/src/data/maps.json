@@ -11,6 +11,22 @@
     "game": "waw",
     "label": "General"
   },
+  "kino": {
+    "game": "bo1",
+    "label": "Kino der Toten"
+  },
+  "ascension": {
+    "game": "bo1",
+    "label": "Ascension"
+  },
+  "cotd": {
+    "game": "bo1",
+    "label": "Call of the Dead"
+  },
+  "shang": {
+    "game": "bo1",
+    "label": "Shangri-La"
+  },
   "tranzit": {
     "game": "bo2",
     "label": "Tranzit"
