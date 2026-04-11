@@ -287,15 +287,14 @@ const BO3_CIPHERS = [
 				label: 'Unsolved',
 				collapsed: true,
 				items: [
-					{ label: 'Revelations 1', slug: 'ciphers/bo3/rev/rev1' },
 					{ label: 'Revelations 7', slug: 'ciphers/bo3/rev/rev7' },
-					{ label: 'Revelations 11', slug: 'ciphers/bo3/rev/rev11' },
 				]
 			},
 			{
 				label: 'Solved',
 				collapsed: true,
 				items: [
+					{ label: 'Revelations 1 Solve', slug: 'ciphers/bo3/rev/rev1' },
 					{ label: 'Revelations 2 Solve', slug: 'ciphers/bo3/rev/rev2' },
 					{ label: 'Revelations 3 Solve', slug: 'ciphers/bo3/rev/rev3' },
 					{ label: 'Revelations 4 Solve', slug: 'ciphers/bo3/rev/rev4' },
@@ -304,6 +303,7 @@ const BO3_CIPHERS = [
 					{ label: 'Revelations 8 Solve', slug: 'ciphers/bo3/rev/rev8' },
 					{ label: 'Revelations 9 Solve', slug: 'ciphers/bo3/rev/rev9' },
 					{ label: 'Revelations 10 Solve', slug: 'ciphers/bo3/rev/rev10' },
+					{ label: 'Revelations 11 Solve', slug: 'ciphers/bo3/rev/rev11' },
 					{ label: 'Revelations 12 Solve', slug: 'ciphers/bo3/rev/rev12' },
 					{ label: 'Revelations 13 Solve', slug: 'ciphers/bo3/rev/rev13' },
 					{ label: 'Revelations 14 Solve', slug: 'ciphers/bo3/rev/rev14' },

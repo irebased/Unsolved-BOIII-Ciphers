@@ -5,12 +5,39 @@
     "number": 1,
     "title": "Revelations 1",
     "image": "revelations_1.png",
-    "solved": false,
-    "solvers": [],
+    "solved": true,
+    "solvers": [ "randomiser" ],
     "credits": [],
     "ciphertext": "OkEeZHnifuMdYB1IbHyAfb0g2FJzrVmfkKcSbKrpQGvhQ0/bvu76RdnGy/WtT7T3",
-    "plaintext": null,
-    "solution": null
+    "plaintext": "The many worlds are now one.",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "beaufort",
+          "key": "ZOMBIES",
+          "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        },
+        {
+          "type": "decrypt",
+          "method": "RC2",
+          "mode": "ECB",
+          "iv": "30303030303030303030303030303030",
+          "key": "Zombies"
+        },
+        {
+          "type": "transform",
+          "method": "reverse"
+        },
+        {
+          "type": "decrypt",
+          "method": "rijndael-256",
+          "mode": "ECB",
+          "key": "Zombies",
+          "iv": "30303030303030303030303030303030"
+        }
+      ]
+    }
   },
   {
     "id": "rev2",
@@ -396,35 +423,51 @@
     "number": 11,
     "title": "Revelations 11",
     "image": "revelations_11.png",
-    "solved": false,
-    "solvers": [],
-    "credits": [
-      {
-        "users": [
-          "randomiser"
-        ]
-      }
-    ],
+    "solved": true,
+    "solvers": ["randomiser"],
+    "credits": [],
     "ciphertext": "bx re yh zy bf lm kt ut yg se tb sx ky co jh km aq we tx wx cy ji ut vt kn vc gx aw ij av qn lg ef fj uq bd kn sv cx fn je wr rk kn cg aw xq vn zf li fh vz wt ta ia ij zf eh uf tj qm yg hl yq cx ij vw ig de qz tg nj rs er vk tm sa yv tw hr hs lt vy kr qc tv gh hb jn yb qh er ut gk et cs wv jl rh xo wr ex hr xt zi kc xs qs fd wd cm ku ah fh fj lf ui ly sh vf au xm hx qw dl gi cx vb dh wt xm kv un ej kt kt ye cg jd ef eh zv xt he uz tg cl jw nr tw ur vo jt jo ru iq iy rz ey ho gd nq yn bq ul ai fh bu ji ho nw qg yg vj if yv zu id jc gh ke xr qf cq ra it gw dl fc gq yi iu qu ny vr gy sj rh iu hi wr mv ym zi lk re vk xu ry uq gs ve qd yn bq ch ky er qh jr ho ya el ky zj ei hz cb if dk",
-    "plaintext": null,
+    "plaintext": "I was there in my visions. It seems so real. I am Pablo. As we were preparing for battle the four called Primis raised their staves in unison releasing a great energy that surrounded our whole army. We found a sudden surge of strenght and confidence for the battle ahead. Images flashed before my eyes. Future or past I could not tell. I saw many strange worlds pass before me with shadowy creatures devouring all that lay before them. In the final image I saw all of humanity consumed. To this day I feel that something lingers in my being placed there by the staves.",
     "solution": {
       "steps": [
+        {
+          "type": "transform",
+          "method": "reverse"
+        },
         {
           "type": "transform",
           "method": "rot",
           "shift": 6
         },
         {
-          "type": "transform",
-          "method": "reverse"
-        },
-        {
           "type": "classical",
           "method": "playfair",
           "key": "ZOMBIES"
+        },
+        {
+          "type": "transform",
+          "method": "remove_character",
+          "notes": "Remove all but one 'probable padding' X between doubles",
+          "output": "cubeuvridxiledluvebmdixcdtedmxggarcvtwmgbdgbpsntdzedrsogshtbXbsikaiesgtagbgbsaehcumkuhmreyfhxbfktudmcyarbipgobestsechhabmacvpmiexgzggahgwcbmdvldeacbigyiteotgiptkgtahueqpixitqnriiuycmqvdfzfzitgmnskptpxrpgqxaskurhkkpzvonmoegsbueeimizzshvwrubbhbquadrtqkitxhtbtiklenpwqtudspzdtxcpolaxomcntxhfdogfeomkiptgowzfpsndtihaleqrlxwsapncaqxgckzsefhetiziincaxenftprnmiekingqcknwmqfadfhttifmqqofawugbeiiuehghnvcanwqcvqfatnpzacavqpqtwtffsicmyedqbupwisepzfzfloudpoctdp"
+        },
+        {
+          "type": "transform",
+          "method": "replace character",
+          "notes": "Replace some I with J",
+          "output": "cubeuvridxJledluvebmdJxcdtedmxggarcvtwmgbdgbpsntdzedrsogshtbxbsJkaJesgtagbgbsaehcumkuhmreyfhxbfktudmcyarbipgobestsechhabmacvpmiexgzggahgwcbmdvldeacbigyiteotgiptkgtahueqpJxitqnriJuycmqvdfzfzJtgmnskptpxrpgqxaskurhkkpzvonmoegsbueeJmizzshvwrubbhbquadrtqkJtxhtbtiklenpwqtudspzdtxcpolaxomcntxhfdogfeomkJptgowzfpsndtihaleqrlxwsapncaqxgckzsefhetJziJncaxenftprnmJekingqcknwmqfadfhttJfmqqofawugbeJJuehghnvcanwqcvqfatnpzacavqpqtwtffsJcmyedqbupwJsepzfzfloudpoctdp"
+        },
+        {
+          "type": "transform",
+          "method": "insert_characters",
+          "notes": "Insert periods in that were removed during playfair encryption",
+          "output": "cubeuvridxjledluvebmdjxcdtedmxggarcvtwmgbdgbps.ntdzedrsogshtbxbsjkajesgtagbgbsaehcu.mkuhmreyfhxbfktudmcyarbipgobestsechhabmacvpmiexgzggahgwcbmdvldeacbigyiteotgiptkgt.ahueqpjxitqnr.ijuycmqvdfzfzjtgmnskp.tpxrpgqxaskurhkkpzvo.nmoegsbuee.jmizzsh.vwrubbhbquadrtqkjtxhtb.tikle.npwqtudspzdtxcpolaxomcntxhfdogfeomkjptgowzfpsndtihaleqrlxwsapncaqxgckzsefhetjzijn.caxenftprnmjekingqcknwmqfadfhttjfmqqofawugbejjuehghnvcanwqcvqfatnpzacavqpqtwtffsjcmyedqbupwjsepzfzfloudpoctdp"
+        },
+        {
+          "type": "classical",
+          "method": "Trifid",
+          "output": "iwasthereinmyvisions.itseemssoreal.iampablo.aswewerepreparingforbattlethefourcalledprimusraisedtheirstavesinunisonreleasingagreatenergythatsurroundedourwholearmy.wefoundasuddensurgeofstrengthandconfidenceforthebattleahead.imagesflashedbeforemyeyes.futureorpasticouldnottell.isawmanystrangeworldspassbeforemewithshadowycreaturesdevouringallthatlaybeforethem.inthefinalimageisawallhumanityconsumed.tothisdayifeelthatsomethinglingersinmybeingplacedtherebythestaves."
         }
-      ],
-      "notes": "Partially solved. Further steps unknown. Likely involves polyalphabetic cipher or additional substitution."
+      ]
     }
   },
   {

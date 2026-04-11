@@ -162,11 +162,23 @@ const creditEntries = cipher.credits.filter(entry => entry.users.length > 0);
     <h2 id="solution">Solution</h2>
 
     {isMultiStep ? (
-      <ol>
-        {steps.map((step: any) => <li set:html={stepToHtml(step, true)} />)}
+      <ol class="solution-steps">
+        {steps.map((step: any) => (
+          <li>
+            <span set:html={stepToHtml(step, true)} />
+            {step.output && (
+              <CodeBlockWithLength code={step.output} />
+            )}
+          </li>
+        ))}
       </ol>
     ) : steps.length === 1 ? (
-      <p set:html={stepToHtml(steps[0], false)} />
+      <>
+        <p set:html={stepToHtml(steps[0], false)} />
+        {steps[0].output && (
+          <CodeBlockWithLength code={steps[0].output} />
+        )}
+      </>
     ) : null}
 
     {notes && <p>{notes}</p>}
@@ -211,5 +223,13 @@ const creditEntries = cipher.credits.filter(entry => entry.users.length > 0);
   .solver-callout p {
     margin: 0;
     line-height: 1.6;
+  }
+
+  .solution-steps > li {
+    margin-bottom: 1rem;
+  }
+
+  .solution-steps > li > :global(.code-container) {
+    margin-top: 0.5rem;
   }
 </style>
