@@ -50,12 +50,20 @@
     "number": 3,
     "title": "IX 3",
     "image": "bo4/ix/ix_3.webp",
-    "solved": false,
-    "solvers": [],
-    "credits": [],
+    "solved": true,
+    "solvers": ["Kyle WeeGee"],
+    "credits": ["GPT-6 Astra"],
     "ciphertext": "WPKITUAVZZFKLZTDMKXAQULNROVEYUMKCANTKULFL",
-    "plaintext": null,
-    "solution": null
+    "plaintext": "YOUHAVENOIDEAOFIUSTHOWFARYOUHAVEYETTOFALL",
+    "solution": {
+      "steps": [
+        {
+          "type": "classical",
+          "method": "bifid",
+          "key": "AFKTSNDZOXVIEHBMLPUQYWCGR",
+          "notes": "Period of 8. Basically solved by GPT-6 Astra."
+      ]
+    }
   },
   {
     "id": "ix4",
