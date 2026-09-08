@@ -66,12 +66,18 @@
     "number": 4,
     "title": "The Giant 4",
     "image": "bo3/thegiant/tg_4.webp",
-    "solved": false,
-    "solvers": [],
-    "credits": [],
-    "ciphertext": "kCmlgFi6GUJNgkNI1Q41fbfyLoCFTCvIqkZiI0KIAXAzP1U1uy1BE4UfPBfpKmmLObjYnQNRBaPtKiVWzc5A4v0w3xle8FOhAGJZ7g4in0wndJxMOvO3dc1M82at2T6935roTqyWDgtGD/hwwRF3oHqFM5Vcw1JtINbsgWRm4o4/quEDkZ7x1B275bX3/Fo1",
-    "plaintext": null,
-    "solution": null
+    "solved": true,
+    "solvers": ["xggy"],
+    "credits": ["GPT-6 Astra"],
+    "ciphertext": "kCmlgFi6GUJNgkNI1Q41fbfyLoCFTCvlqkZil0KlAXAzP1U1uy1BE4UfPBfpKmmLObjYnQNRBaPtKiVWzc5A4v0w3xle8FOhAGJZ7g4in0wndJxMOvO3dc1M82at2T6935roTqyWDgtGD/hwwRF3oHqFM5Vcw1JtINbsgWRm4o4/quEDkZ7x1B275bX3/Fo1",
+    "plaintext": "Even though I put a bullet in his brain, I believe the summoning key was successful in extracting him…I mean…me… I hope you get him Maxis.",
+    "solution": {
+      "steps": [
+        "type": "modern",
+        "method": "XXTEA",
+        "key": "TheGiant"
+      ]
+    }
   },
   {
     "id": "tg5",
