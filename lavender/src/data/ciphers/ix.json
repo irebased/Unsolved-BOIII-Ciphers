@@ -51,8 +51,8 @@
     "title": "IX 3",
     "image": "bo4/ix/ix_3.webp",
     "solved": true,
-    "solvers": ["Kyle WeeGee"],
-    "credits": ["GPT-6 Astra"],
+    "solvers": ["KyleWeeGee"],
+    "credits": ["GPT6Astra"],
     "ciphertext": "WPKITUAVZZFKLZTDMKXAQULNROVEYUMKCANTKULFL",
     "plaintext": "YOUHAVENOIDEAOFIUSTHOWFARYOUHAVEYETTOFALL",
     "solution": {
