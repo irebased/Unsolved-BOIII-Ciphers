@@ -73,7 +73,7 @@
     "plaintext": "Even though I put a bullet in his brain, I believe the summoning key was successful in extracting him…I mean…me… I hope you get him Maxis.",
     "solution": {
       "steps": [
-        "type": "modern",
+        "type": "decrypt",
         "method": "XXTEA",
         "key": "TheGiant"
       ]
