@@ -73,10 +73,12 @@
     "plaintext": "Even though I put a bullet in his brain, I believe the summoning key was successful in extracting him…I mean…me… I hope you get him Maxis.",
     "solution": {
       "steps": [
-        "type": "decrypt",
-        "method": "XXTEA",
-        "key": "TheGiant",
-        "notes": "The key is right-padded with null bytes. It primarily went unsolved for 10+ years due to transcription errors."
+        {
+          "type": "decrypt",
+          "method": "XXTEA",
+          "key": "TheGiant",
+          "notes": "The key is right-padded with null bytes. It primarily went unsolved for 10+ years due to transcription errors."
+        }
       ]
     }
   },
