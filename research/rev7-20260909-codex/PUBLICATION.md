@@ -24,6 +24,15 @@ This hypothesis is inspired by numeral boundaries in related solves, but no sour
 
 ## Other work
 
-Additional decimal-chunk and periodic-column probes are being independently reviewed. A Trifid-after-base27 experiment was planned in [ASTRA005](https://github.com/irebased/Unsolved-BOIII-Ciphers/issues/20#issuecomment-5608447431). Their unreviewed scratch files are not part of this initial publication.
+The reviewed decimal-chunk and periodic-column probes are now available with complete ledgers in `audit/`. Their methods, corrected exploratory issues, controls, conditional limits, and exact hashes are documented in `audit/AUDIT_REPORT.md`.
+
+```sh
+python3 research/rev7-20260909-codex/audit/decimal_audit.py
+python3 research/rev7-20260909-codex/audit/periodic_audit.py --repetitions 200
+```
+
+The decimal grid has 480 labels and 352 distinct streams, with no complete allowed-text parse. The periodic grid covers base26/27, four orientations, zero prefixes 0–2, both digit directions, and periods 1–40. It has no unusual maximum under its stated 200-replicate conditional shuffle model; this is a heuristic observation, not an exclusion of periodic encryption. The large exploratory null-row file is unnecessary: the corrected script preserves related parameter cases in each simulated search and emits all target rows plus only the maxima needed to reproduce its comparison. An optional comparison to the original local scratch result is omitted when that file is absent.
+
+A Trifid-after-base27 experiment was planned in [ASTRA005](https://github.com/irebased/Unsolved-BOIII-Ciphers/issues/20#issuecomment-5608447431). Its source-controlled results will be added after review.
 
 Result-file hashes include runtime strings, so the JSON file hash can differ on another Python/platform version even when every mathematical ledger value agrees.
