@@ -1,0 +1,239 @@
+{
+  "cells": [
+    {
+      "cipher": "aes128",
+      "displayed_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+      "endpoint": "ascii_utf8_punctuation",
+      "identity": "ASTRA",
+      "independent_pycryptodome_manual_mapping_reencrypt_and_terminal_fsa_validated": true,
+      "orientation": "forward",
+      "stats": {
+        "aborted_at_node_limit": false,
+        "capped_weight_interpretation": null,
+        "certificate_complete": true,
+        "certificate_weight": 20922789888000,
+        "complete": 0,
+        "elapsed_seconds": 23.0922,
+        "expected_factorial_weight": 20922789888000,
+        "maximum_depth": 32,
+        "node_limit": 1000000000,
+        "nodes": 337295196,
+        "rejected_completion_weight": 20922789888000,
+        "rejected_plaintext": 543707801,
+        "rejected_unterminated_endpoint": 0,
+        "search_status": "complete",
+        "terminal_completion_weight": 0,
+        "unaccounted_mapping_weight": 0
+      },
+      "survivor_count": 0,
+      "survivors": []
+    },
+    {
+      "cipher": "aes128",
+      "displayed_sha256": "018dc3c27a657a877c1024f8c944d651b16b30fc66a549742c265b2f3edc9a3e",
+      "endpoint": "ascii_utf8_punctuation",
+      "identity": "ASTRA",
+      "independent_pycryptodome_manual_mapping_reencrypt_and_terminal_fsa_validated": true,
+      "orientation": "nibble_swap",
+      "stats": {
+        "aborted_at_node_limit": false,
+        "capped_weight_interpretation": null,
+        "certificate_complete": true,
+        "certificate_weight": 20922789888000,
+        "complete": 0,
+        "elapsed_seconds": 23.3975,
+        "expected_factorial_weight": 20922789888000,
+        "maximum_depth": 32,
+        "node_limit": 1000000000,
+        "nodes": 338902415,
+        "rejected_completion_weight": 20922789888000,
+        "rejected_plaintext": 546416684,
+        "rejected_unterminated_endpoint": 0,
+        "search_status": "complete",
+        "terminal_completion_weight": 0,
+        "unaccounted_mapping_weight": 0
+      },
+      "survivor_count": 0,
+      "survivors": []
+    },
+    {
+      "cipher": "blowfish",
+      "displayed_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+      "endpoint": "ascii_utf8_punctuation",
+      "identity": "ASTRA",
+      "independent_pycryptodome_manual_mapping_reencrypt_and_terminal_fsa_validated": true,
+      "orientation": "forward",
+      "stats": {
+        "aborted_at_node_limit": false,
+        "capped_weight_interpretation": null,
+        "certificate_complete": true,
+        "certificate_weight": 20922789888000,
+        "complete": 0,
+        "elapsed_seconds": 28.2925,
+        "expected_factorial_weight": 20922789888000,
+        "maximum_depth": 31,
+        "node_limit": 1000000000,
+        "nodes": 343320117,
+        "rejected_completion_weight": 20922789888000,
+        "rejected_plaintext": 553566891,
+        "rejected_unterminated_endpoint": 0,
+        "search_status": "complete",
+        "terminal_completion_weight": 0,
+        "unaccounted_mapping_weight": 0
+      },
+      "survivor_count": 0,
+      "survivors": []
+    },
+    {
+      "cipher": "blowfish",
+      "displayed_sha256": "018dc3c27a657a877c1024f8c944d651b16b30fc66a549742c265b2f3edc9a3e",
+      "endpoint": "ascii_utf8_punctuation",
+      "identity": "ASTRA",
+      "independent_pycryptodome_manual_mapping_reencrypt_and_terminal_fsa_validated": true,
+      "orientation": "nibble_swap",
+      "stats": {
+        "aborted_at_node_limit": false,
+        "capped_weight_interpretation": null,
+        "certificate_complete": true,
+        "certificate_weight": 20922789888000,
+        "complete": 0,
+        "elapsed_seconds": 27.7446,
+        "expected_factorial_weight": 20922789888000,
+        "maximum_depth": 37,
+        "node_limit": 1000000000,
+        "nodes": 331914860,
+        "rejected_completion_weight": 20922789888000,
+        "rejected_plaintext": 535142971,
+        "rejected_unterminated_endpoint": 0,
+        "search_status": "complete",
+        "terminal_completion_weight": 0,
+        "unaccounted_mapping_weight": 0
+      },
+      "survivor_count": 0,
+      "survivors": []
+    },
+    {
+      "cipher": "des",
+      "displayed_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+      "endpoint": "ascii_utf8_punctuation",
+      "identity": "ASTRA",
+      "independent_pycryptodome_manual_mapping_reencrypt_and_terminal_fsa_validated": true,
+      "orientation": "forward",
+      "stats": {
+        "aborted_at_node_limit": false,
+        "capped_weight_interpretation": null,
+        "certificate_complete": true,
+        "certificate_weight": 20922789888000,
+        "complete": 0,
+        "elapsed_seconds": 36.2494,
+        "expected_factorial_weight": 20922789888000,
+        "maximum_depth": 36,
+        "node_limit": 1000000000,
+        "nodes": 333163501,
+        "rejected_completion_weight": 20922789888000,
+        "rejected_plaintext": 536972966,
+        "rejected_unterminated_endpoint": 0,
+        "search_status": "complete",
+        "terminal_completion_weight": 0,
+        "unaccounted_mapping_weight": 0
+      },
+      "survivor_count": 0,
+      "survivors": []
+    },
+    {
+      "cipher": "des",
+      "displayed_sha256": "018dc3c27a657a877c1024f8c944d651b16b30fc66a549742c265b2f3edc9a3e",
+      "endpoint": "ascii_utf8_punctuation",
+      "identity": "ASTRA",
+      "independent_pycryptodome_manual_mapping_reencrypt_and_terminal_fsa_validated": true,
+      "orientation": "nibble_swap",
+      "stats": {
+        "aborted_at_node_limit": false,
+        "capped_weight_interpretation": null,
+        "certificate_complete": true,
+        "certificate_weight": 20922789888000,
+        "complete": 0,
+        "elapsed_seconds": 36.063,
+        "expected_factorial_weight": 20922789888000,
+        "maximum_depth": 33,
+        "node_limit": 1000000000,
+        "nodes": 333642755,
+        "rejected_completion_weight": 20922789888000,
+        "rejected_plaintext": 537917104,
+        "rejected_unterminated_endpoint": 0,
+        "search_status": "complete",
+        "terminal_completion_weight": 0,
+        "unaccounted_mapping_weight": 0
+      },
+      "survivor_count": 0,
+      "survivors": []
+    }
+  ],
+  "configuration": {
+    "artifact_hashes": {
+      "controls.json": "75eef218110788722e5127accad1d35cdb461eaee5207b125265377848e53a7d",
+      "controls.py": "ec1d6eb0da0ce15683d90aada96c5b0c8fedd31f68df4edb9e65e8979f7ab93e",
+      "native_text": "b932d9abaa999d0c85b26c336c43a0940daea7260ebbb1da2b4b0a628e2e8540",
+      "native_text.cpp": "1d01495a5562a134b1371017e3cf5f0c8726093b9c5a9871030a9652da746591",
+      "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b",
+      "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+      "run_target.py": "0307081cd3b230b3c23678bb1337cc5f3ca46b5acee20cc81a348e16348e70b6",
+      "target_gate.json": "6c7b50f17c3740eb5e5f512e826f12a361207019f9fbeb3427738e6b111fc5d6",
+      "target_results.json": "640a1fb9f2878db0c43d2b4e2dbba7d9b8b3f4a77dd87499244c2bdda9c00fe1",
+      "validator_run_encoded.py": "b2359b18171523ee4bc37cab4d6bab6a5633dba72e28f76d6fae98898ac22b3c"
+    },
+    "cells": [
+      {
+        "cipher": "aes128",
+        "orientation": "forward"
+      },
+      {
+        "cipher": "aes128",
+        "orientation": "nibble_swap"
+      },
+      {
+        "cipher": "blowfish",
+        "orientation": "forward"
+      },
+      {
+        "cipher": "blowfish",
+        "orientation": "nibble_swap"
+      },
+      {
+        "cipher": "des",
+        "orientation": "forward"
+      },
+      {
+        "cipher": "des",
+        "orientation": "nibble_swap"
+      }
+    ],
+    "ciphers": [
+      "aes128",
+      "blowfish",
+      "des"
+    ],
+    "ciphertext_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+    "driver_sha256": "2d4c5b8a5d29be78599847933695457d97d590ea213086cbcb03df0ad8586294",
+    "endpoint": "ascii_utf8_punctuation",
+    "gate_sha256": "f2821c37c5e9f351dbaf3e7541b2c21fe403231512cfb060422670bca2eb80e3",
+    "identity": "ASTRA",
+    "node_limit": 1000000000,
+    "orientations": [
+      "forward",
+      "nibble_swap"
+    ],
+    "parent_ledger_sha256": "640a1fb9f2878db0c43d2b4e2dbba7d9b8b3f4a77dd87499244c2bdda9c00fe1",
+    "parent_node_limit": 100000000,
+    "restart_semantics": "Each cell is a fresh root traversal to 1B; prior 100M work is repeated and not additive."
+  },
+  "identity": "ASTRA",
+  "status": "complete",
+  "summary": {
+    "capped_cells": 0,
+    "complete_cells": 6,
+    "survivors": 0,
+    "total_elapsed_seconds": 174.8392
+  },
+  "target_evaluated": true
+}

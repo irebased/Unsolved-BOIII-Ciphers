@@ -1,0 +1,51 @@
+{
+  "artifact_hashes": {
+    "controls.json": "75eef218110788722e5127accad1d35cdb461eaee5207b125265377848e53a7d",
+    "controls.py": "ec1d6eb0da0ce15683d90aada96c5b0c8fedd31f68df4edb9e65e8979f7ab93e",
+    "native_text": "b932d9abaa999d0c85b26c336c43a0940daea7260ebbb1da2b4b0a628e2e8540",
+    "native_text.cpp": "1d01495a5562a134b1371017e3cf5f0c8726093b9c5a9871030a9652da746591",
+    "old_target_ledger": "8c5567bd7cd3d66e926fddd1a5df39b684c29d7387e63418e26104d0fcaab939",
+    "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b",
+    "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "validator_run_encoded.py": "b2359b18171523ee4bc37cab4d6bab6a5633dba72e28f76d6fae98898ac22b3c"
+  },
+  "driver_sha256": "0307081cd3b230b3c23678bb1337cc5f3ca46b5acee20cc81a348e16348e70b6",
+  "identity": "ASTRA",
+  "note": "Frozen preregistration gate; creation and self-test hash Rev7 MDX file bytes only and do not extract, parse, orient, or evaluate the ciphertext.",
+  "scope": {
+    "ciphers": [
+      "aes128",
+      "blowfish",
+      "des"
+    ],
+    "endpoint": "ascii_utf8_punctuation",
+    "endpoint_bytes": {
+      "ascii": "TAB LF CR and 32..126",
+      "terminal_state": 0,
+      "utf8_sequences": [
+        "e28093",
+        "e28094",
+        "e28098",
+        "e28099"
+      ]
+    },
+    "extension": {
+      "cells": 12,
+      "node_limit": 100000000,
+      "restart_semantics": "Fresh root traversal to 100M; prior 10M prefix repeats and is not additive."
+    },
+    "identity": "ASTRA",
+    "orientations": [
+      "forward",
+      "reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "prefix_validation": {
+      "cells": 12,
+      "ledger_sha256": "8c5567bd7cd3d66e926fddd1a5df39b684c29d7387e63418e26104d0fcaab939",
+      "node_limit": 10000000
+    }
+  },
+  "target_evaluated": false
+}
