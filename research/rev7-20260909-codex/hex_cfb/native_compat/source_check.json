@@ -1,0 +1,28 @@
+{
+  "actual_standard_and_compat_sources_word_reverse_relationship": true,
+  "identity": "ASTRA",
+  "raw7_zombies_matches_native_word_reverse_adapter": true,
+  "relationship_checked_rows": 3,
+  "rows": [
+    {
+      "block_hex": "0001020304050607",
+      "ciphertext_hex": "b24067da92018993",
+      "ciphertext_sha256": "0b6abaced77ac7aa44b0090693687d1b214279a23dbe84d7a4dd7b25456f0f0d",
+      "key_hex": "5a6f6d62696573"
+    },
+    {
+      "block_hex": "3030303030303030",
+      "ciphertext_hex": "ba4e4c46586fbdc0",
+      "ciphertext_sha256": "eebbc22085406449774e142c6f686ba8e77a555fd11276171851ff98a765eda8",
+      "key_hex": "5a6f6d62696573"
+    },
+    {
+      "block_hex": "83b57b2c3434697f",
+      "ciphertext_hex": "7b049752cda58f6f",
+      "ciphertext_sha256": "b2b7d631b9762b5ee0459a280b347acd8c8fb9bb2934d89a930522d93a4cbc35",
+      "key_hex": "5a6f6d62696573"
+    }
+  ],
+  "source": "unmodified pinned blowfish-compat.c compiled with minimal ABI headers",
+  "target_evaluated": false
+}

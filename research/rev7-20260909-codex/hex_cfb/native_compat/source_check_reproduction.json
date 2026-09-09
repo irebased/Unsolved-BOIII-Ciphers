@@ -1,0 +1,86 @@
+{
+  "actual_standard_and_compat_sources_word_reverse_relationship": true,
+  "build": {
+    "abi": {
+      "byteorder": "little",
+      "compat_context_bytes": 4168,
+      "platform": "macOS-26.4-arm64-arm-64bit",
+      "pointer_bytes": 8,
+      "standard_context_bytes": 4168,
+      "word32_bytes": 4
+    },
+    "binary_sha256": {
+      "compat": "62ba2b2d1d104aa16c8a855b8bd29af3f6ed987c0008b3a8ba20c22f12e0a319",
+      "standard": "2aa1f36a8b30646c6e4bcee83e468628ec0d36f4272801fe649ec3acc04fb83e"
+    },
+    "commands": [
+      [
+        "clang",
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-Isource_build",
+        "-Isource",
+        "source/blowfish.c",
+        "-o",
+        "source_build/libblowfish.so"
+      ],
+      [
+        "clang",
+        "-shared",
+        "-fPIC",
+        "-O2",
+        "-Isource_build",
+        "-Isource",
+        "source/blowfish-compat.c",
+        "-o",
+        "source_build/libblowfish_compat.so"
+      ]
+    ],
+    "compiler_version": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "minimal_header_sha256": {
+      "libdefs.h": "cdffb7ef7bc27b6eea90b73174077c377d8260ffd111fb8de3c2bbc938e28a31",
+      "mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180"
+    }
+  },
+  "identity": "ASTRA",
+  "raw7_zombies_matches_native_word_reverse_adapter": true,
+  "relationship_checked_rows": 3,
+  "rev7_decryption_or_search_run": false,
+  "rev7_file_read": false,
+  "rev7_prefix_fixture_used": true,
+  "rows": [
+    {
+      "block_hex": "0001020304050607",
+      "ciphertext_hex": "b24067da92018993",
+      "ciphertext_sha256": "0b6abaced77ac7aa44b0090693687d1b214279a23dbe84d7a4dd7b25456f0f0d",
+      "fixture_provenance": "synthetic fixed block",
+      "key_hex": "5a6f6d62696573"
+    },
+    {
+      "block_hex": "3030303030303030",
+      "ciphertext_hex": "ba4e4c46586fbdc0",
+      "ciphertext_sha256": "eebbc22085406449774e142c6f686ba8e77a555fd11276171851ff98a765eda8",
+      "fixture_provenance": "synthetic fixed block",
+      "key_hex": "5a6f6d62696573"
+    },
+    {
+      "block_hex": "83b57b2c3434697f",
+      "ciphertext_hex": "7b049752cda58f6f",
+      "ciphertext_sha256": "b2b7d631b9762b5ee0459a280b347acd8c8fb9bb2934d89a930522d93a4cbc35",
+      "fixture_provenance": "known Rev7 first 8 bytes from task context",
+      "key_hex": "5a6f6d62696573"
+    }
+  ],
+  "source": {
+    "commit": "3bd338e2f808e985f5b229a7642d48c26615993f",
+    "compiled_sources_unmodified": true,
+    "file_sha256": {
+      "blowfish-compat.c": "3584374a6bae4df8899e82d36255bbac0472904aed2095e3c08c57a5dd5b4cad",
+      "blowfish.c": "c384305eb4f5d7134e60f6deaed92bba94757826da4b8d35de8326422c286736",
+      "blowfish.h": "bb4a14ecbd5dc92105b290d9261ed562a980c6e42b0d9b4b56e62b4b6c39665b"
+    },
+    "repository": "https://github.com/Distrotech/libmcrypt"
+  },
+  "target_evaluated": false
+}

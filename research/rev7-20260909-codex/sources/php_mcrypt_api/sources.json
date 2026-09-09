@@ -1,0 +1,17 @@
+{
+  "identity": "ASTRA",
+  "sources": [
+    {
+      "tag": "php-5.4.45",
+      "url": "https://raw.githubusercontent.com/php/php-src/php-5.4.45/ext/mcrypt/mcrypt.c",
+      "bytes": 41329,
+      "sha256": "56b2234165f25fe3abb1fc9322b19fed9d11ba7eb83eb05399ecef59e399aa9f"
+    },
+    {
+      "tag": "php-5.6.25",
+      "url": "https://raw.githubusercontent.com/php/php-src/php-5.6.25/ext/mcrypt/mcrypt.c",
+      "bytes": 42038,
+      "sha256": "340fa4d3282823c7072c820704e0e544f0d863b12641a3b748d99cd9d3d7956d"
+    }
+  ]
+}

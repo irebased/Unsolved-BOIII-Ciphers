@@ -1,0 +1,59 @@
+{
+  "artifact_hashes": {
+    "controls.json": "8105dafde232eb1d245e22a0224b34b5f863dfacfa5a223758a08a46db52a835",
+    "controls.py": "a10cb0636113aefcd1501bf7497a31899616ed288ef1848040a663723c761980",
+    "native_compat": "f19874f064bbe3b37dec359554932d2a30b2f4f7abd889228152f4e194d56201",
+    "native_compat.cpp": "c8527d2bf43494944475a20e0ffc8a99358243c8f188d394335af4ec9b0f8cb7",
+    "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b",
+    "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "source/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+    "source/blowfish-compat.c": "3584374a6bae4df8899e82d36255bbac0472904aed2095e3c08c57a5dd5b4cad",
+    "source/blowfish.c": "c384305eb4f5d7134e60f6deaed92bba94757826da4b8d35de8326422c286736",
+    "source/blowfish.h": "bb4a14ecbd5dc92105b290d9261ed562a980c6e42b0d9b4b56e62b4b6c39665b",
+    "source_build/libblowfish.so": "2aa1f36a8b30646c6e4bcee83e468628ec0d36f4272801fe649ec3acc04fb83e",
+    "source_build/libblowfish_compat.so": "62ba2b2d1d104aa16c8a855b8bd29af3f6ed987c0008b3a8ba20c22f12e0a319",
+    "source_build/libdefs.h": "cdffb7ef7bc27b6eea90b73174077c377d8260ffd111fb8de3c2bbc938e28a31",
+    "source_build/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "source_check.py": "3945fbebcc7ae8c8bd8df0b450590e149e7cbd86443bd9d92ddbae90ab91e69d",
+    "source_check_environment.json": "5688cef80310430e3568e5b9908899057f5dda81f2a5a42e0ce40c9115fce919",
+    "source_check_reproduction.json": "123724d5575fa7c2be2868d8218f774f775a395eae693e2049caa703eee47295",
+    "wasm_bfcompat_vectors.json": "d7c59ce2be4c790e26fa86365d883a9e6169785496ad326ff78d5b4f93b334bc"
+  },
+  "authorization": "Target execution requires a separate explicit GO after this gate is reviewed.",
+  "driver_sha256": "6b737a29f89d83405983c50e27cccdc08a7f071f93e9b5ee135849453cb1150d",
+  "identity": "ASTRA",
+  "scope": {
+    "cells": 4,
+    "cipher": "blowfish_compat",
+    "completion_certificate": "16! mapping weight; capped cells retain explicitly uncovered weight.",
+    "endpoint": {
+      "ascii_bytes": "TAB LF CR and 32..126",
+      "terminal_state": 0,
+      "utf8_sequences": [
+        "e28093",
+        "e28094",
+        "e28098",
+        "e28099"
+      ]
+    },
+    "hypothesis": "libmcrypt Blowfish-compat block primitive with raw seven-byte Zombies key, CFB8, ASCII-zero IV",
+    "identity": "ASTRA",
+    "iv_hex": "3030303030303030",
+    "key_hex": "5a6f6d62696573",
+    "key_length": 7,
+    "mode": "CFB8",
+    "node_limit_per_cell": 1000000000,
+    "orientations": [
+      "forward",
+      "reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "search_semantics": "Each cell starts a fresh DFS root; node caps are non-additive.",
+    "segment_size_bits": 8,
+    "synthetic_prefix_replay": false
+  },
+  "source_reproduction_sha256": "123724d5575fa7c2be2868d8218f774f775a395eae693e2049caa703eee47295",
+  "survivor_validation": "Every retained survivor must match actual pinned libmcrypt BF-compat C ECB inside separate manual CFB8, the separately implemented Python BF-compat manual CFB8, exact inverse nibble mapping reconstruction, re-encryption, and terminal-state-zero FSA validation.",
+  "target_evaluated": false
+}

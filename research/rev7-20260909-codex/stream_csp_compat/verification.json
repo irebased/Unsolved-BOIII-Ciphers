@@ -1,0 +1,571 @@
+{
+  "all_24_full_bijection_certificates_verified": true,
+  "all_24_keystream_hashes_verified": true,
+  "all_24_witnesses_directly_verified": true,
+  "all_24_zero_survivor_records_verified": true,
+  "checked_cells": 24,
+  "checks": [
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "0E",
+      "full_bijection_certificate": true,
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        45,
+        59,
+        27,
+        242,
+        121
+      ],
+      "keystream_sha256": "1ee81d2ab737d2c264ffc74c4a9cae05a208267a8ac93bbdc35fab2bdabbd37c",
+      "mode": "ofb8",
+      "orientation": "forward",
+      "positions": [
+        144,
+        212,
+        215,
+        281,
+        487
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        78,
+        165,
+        23,
+        236
+      ],
+      "keystream_sha256": "1ee81d2ab737d2c264ffc74c4a9cae05a208267a8ac93bbdc35fab2bdabbd37c",
+      "mode": "ofb8",
+      "orientation": "reverse",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        78,
+        165,
+        23,
+        236
+      ],
+      "keystream_sha256": "1ee81d2ab737d2c264ffc74c4a9cae05a208267a8ac93bbdc35fab2bdabbd37c",
+      "mode": "ofb8",
+      "orientation": "byte_reverse",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "24",
+      "full_bijection_certificate": true,
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        60,
+        74,
+        117,
+        160
+      ],
+      "keystream_sha256": "1ee81d2ab737d2c264ffc74c4a9cae05a208267a8ac93bbdc35fab2bdabbd37c",
+      "mode": "ofb8",
+      "orientation": "nibble_swap",
+      "positions": [
+        15,
+        125,
+        351,
+        473
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        141,
+        123,
+        188,
+        62
+      ],
+      "keystream_sha256": "5aec32d0b8124a8e18c9fc562ef213618d1d3603c589ea77e83db179c500f176",
+      "mode": "ofb8",
+      "orientation": "forward",
+      "positions": [
+        18,
+        192,
+        198,
+        309
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        154,
+        117,
+        177,
+        109,
+        77
+      ],
+      "keystream_sha256": "5aec32d0b8124a8e18c9fc562ef213618d1d3603c589ea77e83db179c500f176",
+      "mode": "ofb8",
+      "orientation": "reverse",
+      "positions": [
+        203,
+        236,
+        347,
+        353,
+        527
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        154,
+        117,
+        177,
+        109,
+        77
+      ],
+      "keystream_sha256": "5aec32d0b8124a8e18c9fc562ef213618d1d3603c589ea77e83db179c500f176",
+      "mode": "ofb8",
+      "orientation": "byte_reverse",
+      "positions": [
+        203,
+        236,
+        347,
+        353,
+        527
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        141,
+        123,
+        188,
+        62
+      ],
+      "keystream_sha256": "5aec32d0b8124a8e18c9fc562ef213618d1d3603c589ea77e83db179c500f176",
+      "mode": "ofb8",
+      "orientation": "nibble_swap",
+      "positions": [
+        18,
+        192,
+        198,
+        309
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "06",
+      "full_bijection_certificate": true,
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        156,
+        174,
+        9,
+        31
+      ],
+      "keystream_sha256": "ae28f3a8a65649608906138ced3a438a161d1b42dedd79fcdcfd2439b84ddc34",
+      "mode": "ofb8",
+      "orientation": "forward",
+      "positions": [
+        153,
+        283,
+        471,
+        478
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        232,
+        107,
+        179,
+        119
+      ],
+      "keystream_sha256": "ae28f3a8a65649608906138ced3a438a161d1b42dedd79fcdcfd2439b84ddc34",
+      "mode": "ofb8",
+      "orientation": "reverse",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        232,
+        107,
+        179,
+        119
+      ],
+      "keystream_sha256": "ae28f3a8a65649608906138ced3a438a161d1b42dedd79fcdcfd2439b84ddc34",
+      "mode": "ofb8",
+      "orientation": "byte_reverse",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "1B",
+      "full_bijection_certificate": true,
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        91,
+        188,
+        50
+      ],
+      "keystream_sha256": "ae28f3a8a65649608906138ced3a438a161d1b42dedd79fcdcfd2439b84ddc34",
+      "mode": "ofb8",
+      "orientation": "nibble_swap",
+      "positions": [
+        230,
+        303,
+        463
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        160,
+        47,
+        101,
+        235
+      ],
+      "keystream_sha256": "0e5cd0e960ef7712c4d5367be9fa422e55a244e5ba8fcc45ef3977b8ce48ffeb",
+      "mode": "fullblock_ofb",
+      "orientation": "forward",
+      "positions": [
+        18,
+        192,
+        198,
+        309
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "06",
+      "full_bijection_certificate": true,
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        41,
+        180,
+        45,
+        145
+      ],
+      "keystream_sha256": "0e5cd0e960ef7712c4d5367be9fa422e55a244e5ba8fcc45ef3977b8ce48ffeb",
+      "mode": "fullblock_ofb",
+      "orientation": "reverse",
+      "positions": [
+        35,
+        265,
+        295,
+        505
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "0D",
+      "full_bijection_certificate": true,
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        20,
+        127,
+        22,
+        74,
+        142
+      ],
+      "keystream_sha256": "0e5cd0e960ef7712c4d5367be9fa422e55a244e5ba8fcc45ef3977b8ce48ffeb",
+      "mode": "fullblock_ofb",
+      "orientation": "byte_reverse",
+      "positions": [
+        45,
+        92,
+        146,
+        300,
+        486
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        160,
+        47,
+        101,
+        235
+      ],
+      "keystream_sha256": "0e5cd0e960ef7712c4d5367be9fa422e55a244e5ba8fcc45ef3977b8ce48ffeb",
+      "mode": "fullblock_ofb",
+      "orientation": "nibble_swap",
+      "positions": [
+        18,
+        192,
+        198,
+        309
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "06",
+      "full_bijection_certificate": true,
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        164,
+        0,
+        70,
+        184
+      ],
+      "keystream_sha256": "68f3b231596d9e9acaa9b634f4b6cfac21cdfd3e026b560f566d193b3b00e863",
+      "mode": "fullblock_ofb",
+      "orientation": "forward",
+      "positions": [
+        153,
+        283,
+        471,
+        478
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        231,
+        138,
+        3,
+        127
+      ],
+      "keystream_sha256": "68f3b231596d9e9acaa9b634f4b6cfac21cdfd3e026b560f566d193b3b00e863",
+      "mode": "fullblock_ofb",
+      "orientation": "reverse",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        231,
+        138,
+        3,
+        127
+      ],
+      "keystream_sha256": "68f3b231596d9e9acaa9b634f4b6cfac21cdfd3e026b560f566d193b3b00e863",
+      "mode": "fullblock_ofb",
+      "orientation": "byte_reverse",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "06",
+      "full_bijection_certificate": true,
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        154,
+        22,
+        247
+      ],
+      "keystream_sha256": "68f3b231596d9e9acaa9b634f4b6cfac21cdfd3e026b560f566d193b3b00e863",
+      "mode": "fullblock_ofb",
+      "orientation": "nibble_swap",
+      "positions": [
+        40,
+        250,
+        280
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        53,
+        190,
+        120,
+        30,
+        238
+      ],
+      "keystream_sha256": "7f697cce6439e3dec4364e23ea73208b79f6c29e99f9c72309ce4c53d7b5da20",
+      "mode": "fullblock_ofb",
+      "orientation": "forward",
+      "positions": [
+        18,
+        192,
+        198,
+        309,
+        342
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        23,
+        89,
+        53,
+        151,
+        105
+      ],
+      "keystream_sha256": "7f697cce6439e3dec4364e23ea73208b79f6c29e99f9c72309ce4c53d7b5da20",
+      "mode": "fullblock_ofb",
+      "orientation": "reverse",
+      "positions": [
+        203,
+        236,
+        347,
+        353,
+        527
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        23,
+        89,
+        53,
+        151,
+        105
+      ],
+      "keystream_sha256": "7f697cce6439e3dec4364e23ea73208b79f6c29e99f9c72309ce4c53d7b5da20",
+      "mode": "fullblock_ofb",
+      "orientation": "byte_reverse",
+      "positions": [
+        203,
+        236,
+        347,
+        353,
+        527
+      ],
+      "surviving_candidates": 0
+    },
+    {
+      "ciphertext_byte_candidates_checked": 256,
+      "display_pair": "00",
+      "full_bijection_certificate": true,
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        53,
+        190,
+        120,
+        30,
+        238
+      ],
+      "keystream_sha256": "7f697cce6439e3dec4364e23ea73208b79f6c29e99f9c72309ce4c53d7b5da20",
+      "mode": "fullblock_ofb",
+      "orientation": "nibble_swap",
+      "positions": [
+        18,
+        192,
+        198,
+        309,
+        342
+      ],
+      "surviving_candidates": 0
+    }
+  ],
+  "identity": "ASTRA",
+  "provenance": {
+    "bfcompat_control_sha256": "8105dafde232eb1d245e22a0224b34b5f863dfacfa5a223758a08a46db52a835",
+    "bfcompat_control_vector_count": 200,
+    "source_check_reproduction_sha256": "123724d5575fa7c2be2868d8218f774f775a395eae693e2049caa703eee47295",
+    "word_reverse_connection": "Pinned source reproduction proves raw7 actual-C compat = word_reverse(standard-BF(word_reverse(block))); separate 200-vector control establishes the transform on its supplied 16-byte-key vectors."
+  },
+  "runtime": {
+    "pycryptodome": "3.23.0",
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "source_hashes": {
+    "blowfish-compat.c": "3584374a6bae4df8899e82d36255bbac0472904aed2095e3c08c57a5dd5b4cad",
+    "blowfish.c": "c384305eb4f5d7134e60f6deaed92bba94757826da4b8d35de8326422c286736",
+    "native_compat_controls.json": "8105dafde232eb1d245e22a0224b34b5f863dfacfa5a223758a08a46db52a835",
+    "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "source_check_reproduction.json": "123724d5575fa7c2be2868d8218f774f775a395eae693e2049caa703eee47295",
+    "target_results.json": "598dfa8ec497321f62f1b4f445de4f642f755ef0fb51c9d2164c708145aad7f2",
+    "verify_witnesses.py": "341e8b3e30a9e72f773075a30de243c861058c627176e52c6388ae28fd57b5f0"
+  },
+  "target_evaluated": true,
+  "verification": "independent PyCryptodome standard-Blowfish conjugation; no CSP/core/compat-stream/target-driver imports"
+}

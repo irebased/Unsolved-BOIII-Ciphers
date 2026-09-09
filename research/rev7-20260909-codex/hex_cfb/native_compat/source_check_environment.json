@@ -1,0 +1,47 @@
+{
+  "abi": {
+    "byteorder": "little",
+    "compat_context_bytes": 4168,
+    "platform": "macOS-26.4-arm64-arm-64bit",
+    "pointer_bytes": 8,
+    "standard_context_bytes": 4168,
+    "word32_bytes": 4
+  },
+  "binary_sha256": {
+    "compat": "62ba2b2d1d104aa16c8a855b8bd29af3f6ed987c0008b3a8ba20c22f12e0a319",
+    "standard": "2aa1f36a8b30646c6e4bcee83e468628ec0d36f4272801fe649ec3acc04fb83e"
+  },
+  "compile_commands": [
+    [
+      "clang",
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-Isource_build",
+      "-Isource",
+      "source/blowfish.c",
+      "-o",
+      "source_build/libblowfish.so"
+    ],
+    [
+      "clang",
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-Isource_build",
+      "-Isource",
+      "source/blowfish-compat.c",
+      "-o",
+      "source_build/libblowfish_compat.so"
+    ]
+  ],
+  "compiler_version": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "frozen_result_sha256": "4b415587e87d629f2486c8992b2b3f4e7ee0eb0cc01d9931d8d9a4cddedaf829",
+  "harness_sha256": "3945fbebcc7ae8c8bd8df0b450590e149e7cbd86443bd9d92ddbae90ab91e69d",
+  "identity": "ASTRA",
+  "minimal_header_sha256": {
+    "libdefs.h": "cdffb7ef7bc27b6eea90b73174077c377d8260ffd111fb8de3c2bbc938e28a31",
+    "mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180"
+  },
+  "target_evaluated": false
+}

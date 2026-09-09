@@ -1,0 +1,160 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "caps_are_incomplete_prefixes_only": true,
+    "native_stats_weights_maps_plaintexts_equal_python": true,
+    "seeded_survivors_equal_naive_24_permutations": true,
+    "wasm_vectors_gate_before_fixed_controls": true
+  },
+  "environment": {
+    "build_command": [
+      "clang++",
+      "-std=c++17",
+      "-O3",
+      "-Wno-deprecated-declarations",
+      "native_compat.cpp",
+      "-o",
+      "native_compat",
+      "-I/opt/homebrew/Cellar/openssl@3/3.6.3/include",
+      "-L/opt/homebrew/Cellar/openssl@3/3.6.3/lib",
+      "-lcrypto",
+      "-Wl,-rpath,/opt/homebrew/Cellar/openssl@3/3.6.3/lib"
+    ],
+    "openssl_version": "3.6.3",
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "fixed_native_cfb8": {
+    "ciphertext_sha256": "cd2ee53801932b9e57404e7d3a9948f7b3ede3422df1e185e28d50d305116c9f",
+    "encrypt_decrypt_roundtrip": true,
+    "interpretation": "internal fixed-key implementation control, not a direct WASM Zombies comparison",
+    "native_matches_separate_python_manual": true,
+    "plaintext_sha256": "267671cbdb7aca3ce2c26bd3f941fb51d5c7a9dd1c4f4c0e83dd32112f8c5984"
+  },
+  "full16_capped_exact_prefix": [
+    {
+      "certificate_complete": false,
+      "certificate_weight": 13130700627240,
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.019049,
+      "node_limit": 250000,
+      "python_plus_native_wall_seconds": 9.346355208999999,
+      "solution_count": 0,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 28,
+        "nodes": 250000,
+        "rejected_completion_weight": 13130700627240,
+        "rejected_plaintext": 402192,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 14395946382720,
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0934754,
+      "node_limit": 1000000,
+      "python_plus_native_wall_seconds": 39.572225540999995,
+      "solution_count": 0,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 28,
+        "nodes": 1000000,
+        "rejected_completion_weight": 14395946382720,
+        "rejected_plaintext": 1609044,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    }
+  ],
+  "identity": "ASTRA",
+  "model": {
+    "block_transform": "word_reverse(BF(key, word_reverse(block)))",
+    "endpoint": "TAB LF CR ASCII32..126 plus E28093/E28094/E28098/E28099; terminal state zero",
+    "fixed_key_hex": "5a6f6d62696573",
+    "fixed_key_length": 7,
+    "iv_hex": "3030303030303030",
+    "mode": "CFB8"
+  },
+  "scope": "synthetic BF-compat controls only; no Rev7 input read",
+  "seeded_four_unknown": {
+    "certificate_complete": true,
+    "certificate_weight": 24,
+    "expected_completion_weight": 24,
+    "naive_permutations": 24,
+    "naive_survivors_equal_native_and_python": true,
+    "native_seconds": 5.4292e-05,
+    "node_limit": 100000,
+    "plant_recovered": true,
+    "solution_count": 1,
+    "solutions": [
+      {
+        "mapping": [
+          6,
+          12,
+          15,
+          8,
+          9,
+          13,
+          7,
+          0,
+          14,
+          11,
+          5,
+          10,
+          2,
+          1,
+          4,
+          3
+        ],
+        "plaintext_hex": "4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b"
+      }
+    ],
+    "stats": {
+      "aborted_at_node_limit": false,
+      "complete": 1,
+      "maximum_depth": 152,
+      "nodes": 157,
+      "rejected_completion_weight": 23,
+      "rejected_plaintext": 10,
+      "rejected_unterminated_endpoint": 0,
+      "terminal_completion_weight": 1
+    },
+    "unknown_symbols": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "source_hashes": {
+    "controls.py": "a10cb0636113aefcd1501bf7497a31899616ed288ef1848040a663723c761980",
+    "native_compat.cpp": "c8527d2bf43494944475a20e0ffc8a99358243c8f188d394335af4ec9b0f8cb7",
+    "native_compat_binary": "f19874f064bbe3b37dec359554932d2a30b2f4f7abd889228152f4e194d56201",
+    "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b"
+  },
+  "target_evaluated": false,
+  "wasm_vector_validation": {
+    "does_not_establish": "a direct seven-byte Zombies WASM fixture or the historical frontend key convention",
+    "establishes": "BF-compat word-reversal transform for the 200 supplied 16-byte-key WASM vectors",
+    "key_lengths": [
+      16
+    ],
+    "match_counts": {
+      "full_reverse": 0,
+      "half_swap": 0,
+      "half_swap_then_word_reverse": 0,
+      "identity": 0,
+      "word_reverse": 200
+    },
+    "native_block_matches": 200,
+    "source_subset_sha256": "d7c59ce2be4c790e26fa86365d883a9e6169785496ad326ff78d5b4f93b334bc",
+    "upstream_full_vector_sha256": "664a2cc24ecf97edadc37d5d5193cf4ed5fd86a1f969eef4e45172c35633ba23",
+    "vector_count": 200
+  }
+}
