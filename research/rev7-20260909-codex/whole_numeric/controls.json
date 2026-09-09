@@ -1,0 +1,1305 @@
+{
+  "allowed_bytes": [
+    9,
+    10,
+    13,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126
+  ],
+  "checks": {
+    "all_dp_naive_counts_equal": true,
+    "all_padding_cases_pass": true,
+    "all_small_sets_equal_when_fully_retained": true,
+    "base8_two_zero_reverse_endpoint_impossible": true,
+    "decimal_initial_tab_loses_two_zeros": true,
+    "five_feasible_reverse_direction_plants_pass": true,
+    "four_full_chain_plants_pass": true,
+    "octal_initial_tab_loses_one_zero": true,
+    "samples_limited_to_three": true
+  },
+  "dp_vs_naive": [
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable1_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "0"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable2_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "0"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "09",
+          "token_widths": [
+            1
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "9"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable2_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "9"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "0a",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "10"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "0a",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "10"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "0d",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "13"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "0d",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "13"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable1_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "032"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable2_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "032"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable1_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "065"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable2_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "065"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "20",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "32"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "20",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "32"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "41",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "65"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "41",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "65"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "2041",
+          "token_widths": [
+            2,
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "3265"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "2041",
+          "token_widths": [
+            2,
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "3265"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "090a0d",
+          "token_widths": [
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "91013"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable2_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "91013"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "200a0d41",
+          "token_widths": [
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "32101365"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 10,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "200a0d41",
+          "token_widths": [
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "32101365"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable1_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "0"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable2_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "0"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable1_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "9"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable2_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "9"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "09",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "11"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "09",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "11"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "0a",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "12"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "0a",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "12"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "0d",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "15"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "0d",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "15"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable1_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "040"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 0,
+      "identity": "ASTRA",
+      "naive_count": 0,
+      "parser": "canonical_variable2_3",
+      "paths": [],
+      "retained_sample_count": 0,
+      "stream": "040"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "41",
+          "token_widths": [
+            3
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "101"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "41",
+          "token_widths": [
+            3
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "101"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "20",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "40"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "20",
+          "token_widths": [
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "40"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "41",
+          "token_widths": [
+            3
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "101"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "41",
+          "token_widths": [
+            3
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "101"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "2041",
+          "token_widths": [
+            2,
+            3
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "40101"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "2041",
+          "token_widths": [
+            2,
+            3
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "40101"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "090a0d",
+          "token_widths": [
+            2,
+            2,
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "111215"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "090a0d",
+          "token_widths": [
+            2,
+            2,
+            2
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "111215"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable1_3",
+      "paths": [
+        {
+          "plaintext_hex": "200a0d41",
+          "token_widths": [
+            2,
+            2,
+            2,
+            3
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "401215101"
+    },
+    {
+      "all_small_paths_equal": true,
+      "base": 8,
+      "counts_equal": true,
+      "dp_count": 1,
+      "identity": "ASTRA",
+      "naive_count": 1,
+      "parser": "canonical_variable2_3",
+      "paths": [
+        {
+          "plaintext_hex": "200a0d41",
+          "token_widths": [
+            2,
+            2,
+            2,
+            3
+          ]
+        }
+      ],
+      "retained_sample_count": 1,
+      "stream": "401215101"
+    }
+  ],
+  "full_chain_plants": [
+    {
+      "base": 8,
+      "encoded_digits": "011106111130105104040127111104124110040103117116124122117114015012",
+      "encoded_sha256": "bc2359d47a1b0979b0352f893c827a53e03def3d7a59b2d337a46823019743da",
+      "hex": "1246249608A441015C92442A120404327938A852279301A0A",
+      "identity": "ASTRA",
+      "inverse": {
+        "digit_reverse_undone": false,
+        "examined_stream_exact": true,
+        "minimal_digits_sha256": "424a438674460dcad5b1d673c00e58f0e4b0370dd08baf4d9e33a1e34f27b540",
+        "recovered_oriented_hex_exact": true,
+        "recovered_oriented_hex_sha256": "21916ccbe02233aeb89d30446fda1a823ce1ad39dd9ee7ca9e9af073e52b97b1",
+        "restored_zero_count": 1
+      },
+      "leading_zeros_lost_by_integer_conversion": 1,
+      "parse_count": 1,
+      "parser": "fixed3",
+      "plaintext_hex": "09464958454420574944544820434f4e54524f4c0d0a",
+      "plaintext_sha256": "8675923f0b4811083d6f4bb8f268511263293308874bd85371982a975b13af67",
+      "plant_in_retained_samples": true,
+      "restored_zeros": 1
+    },
+    {
+      "base": 8,
+      "encoded_digits": "1212610112211110110211410540127111104124110401031171161241221171144010117615",
+      "encoded_sha256": "b8e4fc46e10f8a3ddd73aeae1e93ccf3dc6f4bdbd1323529c22b93c7c65813f9",
+      "hex": "28AC412912482422611602B924885424404327938A852279320209F8D",
+      "identity": "ASTRA",
+      "inverse": {
+        "digit_reverse_undone": false,
+        "examined_stream_exact": true,
+        "minimal_digits_sha256": "b8e4fc46e10f8a3ddd73aeae1e93ccf3dc6f4bdbd1323529c22b93c7c65813f9",
+        "recovered_oriented_hex_exact": true,
+        "recovered_oriented_hex_sha256": "2ae15d404f9faeaefab8bba6441eeeb9cd00f8f7ab4b53bfa3c625b4016dbaac",
+        "restored_zero_count": 0
+      },
+      "leading_zeros_lost_by_integer_conversion": 0,
+      "parse_count": 2,
+      "parser": "canonical_variable2_3",
+      "plaintext_hex": "0a5641524941424c4520574944544820434f4e54524f4c20417e0d",
+      "plaintext_sha256": "b3dc5b79fdfb3cd313a530d29a32488218a6c79ecd67325bdcb5b5583ad2fba2",
+      "plant_in_retained_samples": true,
+      "restored_zeros": 0
+    },
+    {
+      "base": 10,
+      "encoded_digits": "009070073088069068032087073068084072032067079078084082079076013010",
+      "encoded_sha256": "7473fbeedfd3b911a12221edd65b77b4c41126f3b9e76d275cb65fb806e7bc7f",
+      "hex": "160C5201CAA3F2C599C99A3A5A6F9636F7B53A628BDCB96E2553D2",
+      "identity": "ASTRA",
+      "inverse": {
+        "digit_reverse_undone": false,
+        "examined_stream_exact": true,
+        "minimal_digits_sha256": "8b6188befc96cf70aa899c2f972cd8e072e80cf7da289e8c22555cb0d61cd16f",
+        "recovered_oriented_hex_exact": true,
+        "recovered_oriented_hex_sha256": "6838911364ffe2ca5ae10ee9b5874dbac4b4447b4ef43177931816a92ce614e4",
+        "restored_zero_count": 2
+      },
+      "leading_zeros_lost_by_integer_conversion": 2,
+      "parse_count": 1,
+      "parser": "fixed3",
+      "plaintext_hex": "09464958454420574944544820434f4e54524f4c0d0a",
+      "plaintext_sha256": "8675923f0b4811083d6f4bb8f268511263293308874bd85371982a975b13af67",
+      "plant_in_retained_samples": true,
+      "restored_zeros": 2
+    },
+    {
+      "base": 10,
+      "encoded_digits": "1086658273656676693287736884723267797884827976326512613",
+      "encoded_sha256": "1a716a809803b7a4a37772f29ab919d5c3882daa60241aaaefbef1c0a303788f",
+      "hex": "B5861C343DEE30A9EF41DCCF1768AF5061C776678FFE5",
+      "identity": "ASTRA",
+      "inverse": {
+        "digit_reverse_undone": false,
+        "examined_stream_exact": true,
+        "minimal_digits_sha256": "1a716a809803b7a4a37772f29ab919d5c3882daa60241aaaefbef1c0a303788f",
+        "recovered_oriented_hex_exact": true,
+        "recovered_oriented_hex_sha256": "df425cf6ef1cb6c78ac99352eee9f02aa83594c42dd392aaca5ee9ed04c57c84",
+        "restored_zero_count": 0
+      },
+      "leading_zeros_lost_by_integer_conversion": 0,
+      "parse_count": 1,
+      "parser": "canonical_variable2_3",
+      "plaintext_hex": "0a5641524941424c4520574944544820434f4e54524f4c20417e0d",
+      "plaintext_sha256": "b3dc5b79fdfb3cd313a530d29a32488218a6c79ecd67325bdcb5b5583ad2fba2",
+      "plant_in_retained_samples": true,
+      "restored_zeros": 0
+    }
+  ],
+  "identity": "ASTRA",
+  "padding_and_canonicalization": [
+    {
+      "actual_count": 1,
+      "base": 10,
+      "expected_count": 1,
+      "identity": "ASTRA",
+      "note": "TAB padded decimal",
+      "parser": "fixed3",
+      "passed": true,
+      "stream": "009"
+    },
+    {
+      "actual_count": 0,
+      "base": 10,
+      "expected_count": 0,
+      "identity": "ASTRA",
+      "note": "leading-zero token forbidden",
+      "parser": "canonical_variable2_3",
+      "passed": true,
+      "stream": "009"
+    },
+    {
+      "actual_count": 1,
+      "base": 10,
+      "expected_count": 1,
+      "identity": "ASTRA",
+      "note": "one-digit TAB control extension",
+      "parser": "canonical_variable1_3",
+      "passed": true,
+      "stream": "9"
+    },
+    {
+      "actual_count": 0,
+      "base": 10,
+      "expected_count": 0,
+      "identity": "ASTRA",
+      "note": "one-digit TAB excluded",
+      "parser": "canonical_variable2_3",
+      "passed": true,
+      "stream": "9"
+    },
+    {
+      "actual_count": 1,
+      "base": 10,
+      "expected_count": 1,
+      "identity": "ASTRA",
+      "note": "padded decimal space",
+      "parser": "fixed3",
+      "passed": true,
+      "stream": "032"
+    },
+    {
+      "actual_count": 0,
+      "base": 10,
+      "expected_count": 0,
+      "identity": "ASTRA",
+      "note": "padded decimal noncanonical",
+      "parser": "canonical_variable2_3",
+      "passed": true,
+      "stream": "032"
+    },
+    {
+      "actual_count": 1,
+      "base": 10,
+      "expected_count": 1,
+      "identity": "ASTRA",
+      "note": "canonical decimal space",
+      "parser": "canonical_variable2_3",
+      "passed": true,
+      "stream": "32"
+    },
+    {
+      "actual_count": 1,
+      "base": 10,
+      "expected_count": 1,
+      "identity": "ASTRA",
+      "note": "padded decimal A",
+      "parser": "fixed3",
+      "passed": true,
+      "stream": "065"
+    },
+    {
+      "actual_count": 1,
+      "base": 10,
+      "expected_count": 1,
+      "identity": "ASTRA",
+      "note": "canonical decimal A",
+      "parser": "canonical_variable2_3",
+      "passed": true,
+      "stream": "65"
+    },
+    {
+      "actual_count": 1,
+      "base": 8,
+      "expected_count": 1,
+      "identity": "ASTRA",
+      "note": "padded octal TAB",
+      "parser": "fixed3",
+      "passed": true,
+      "stream": "011"
+    },
+    {
+      "actual_count": 0,
+      "base": 8,
+      "expected_count": 0,
+      "identity": "ASTRA",
+      "note": "padded octal noncanonical",
+      "parser": "canonical_variable2_3",
+      "passed": true,
+      "stream": "011"
+    },
+    {
+      "actual_count": 1,
+      "base": 8,
+      "expected_count": 1,
+      "identity": "ASTRA",
+      "note": "canonical octal TAB",
+      "parser": "canonical_variable2_3",
+      "passed": true,
+      "stream": "11"
+    },
+    {
+      "actual_count": 1,
+      "base": 8,
+      "expected_count": 1,
+      "identity": "ASTRA",
+      "note": "padded octal space",
+      "parser": "fixed3",
+      "passed": true,
+      "stream": "040"
+    },
+    {
+      "actual_count": 0,
+      "base": 8,
+      "expected_count": 0,
+      "identity": "ASTRA",
+      "note": "padded octal noncanonical",
+      "parser": "canonical_variable2_3",
+      "passed": true,
+      "stream": "040"
+    },
+    {
+      "actual_count": 1,
+      "base": 8,
+      "expected_count": 1,
+      "identity": "ASTRA",
+      "note": "canonical octal space",
+      "parser": "canonical_variable2_3",
+      "passed": true,
+      "stream": "40"
+    }
+  ],
+  "reverse_direction_controls": {
+    "base8_two_zero_impossibility": {
+      "canonical_variable2_3_count": 0,
+      "fixed3_count": 0,
+      "passed": true,
+      "reason": "fixed3 first token 00d is 0..7 and disallowed; canonical variable tokens cannot start zero",
+      "restored_zeros": 2
+    },
+    "identity": "ASTRA",
+    "positive_rows": [
+      {
+        "base": 10,
+        "digit_reverse": true,
+        "examined_digits": "117",
+        "hex": "2C7",
+        "identity": "ASTRA",
+        "inverse": {
+          "digit_reverse_undone": true,
+          "examined_stream_exact": true,
+          "minimal_digits_sha256": "2499d690642faa4da2a67b078236d1c031217f3c31cf2da2142c8e84e3d617f1",
+          "recovered_oriented_hex_exact": true,
+          "recovered_oriented_hex_sha256": "d8154f92a526c742d924f8bf04c9d4dc81d0072ba10c1062afd9b3803c7a5539",
+          "restored_zero_count": 0
+        },
+        "minimal_digits": "711",
+        "parse_count": 1,
+        "parser": "fixed3",
+        "plaintext_hex": "75",
+        "restored_zeros": 0
+      },
+      {
+        "base": 10,
+        "digit_reverse": true,
+        "examined_digits": "013",
+        "hex": "1F",
+        "identity": "ASTRA",
+        "inverse": {
+          "digit_reverse_undone": true,
+          "examined_stream_exact": true,
+          "minimal_digits_sha256": "eb1e33e8a81b697b75855af6bfcdbcbf7cbbde9f94962ceaec1ed8af21f5a50f",
+          "recovered_oriented_hex_exact": true,
+          "recovered_oriented_hex_sha256": "4978fd031fb47e797a7e34647a2a229bcfa69bbfe6343448f9363ed64e4a61a9",
+          "restored_zero_count": 1
+        },
+        "minimal_digits": "31",
+        "parse_count": 1,
+        "parser": "fixed3",
+        "plaintext_hex": "0d",
+        "restored_zeros": 1
+      },
+      {
+        "base": 10,
+        "digit_reverse": true,
+        "examined_digits": "009",
+        "hex": "9",
+        "identity": "ASTRA",
+        "inverse": {
+          "digit_reverse_undone": true,
+          "examined_stream_exact": true,
+          "minimal_digits_sha256": "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7",
+          "recovered_oriented_hex_exact": true,
+          "recovered_oriented_hex_sha256": "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7",
+          "restored_zero_count": 2
+        },
+        "minimal_digits": "9",
+        "parse_count": 1,
+        "parser": "fixed3",
+        "plaintext_hex": "09",
+        "restored_zeros": 2
+      },
+      {
+        "base": 8,
+        "digit_reverse": true,
+        "examined_digits": "101",
+        "hex": "41",
+        "identity": "ASTRA",
+        "inverse": {
+          "digit_reverse_undone": true,
+          "examined_stream_exact": true,
+          "minimal_digits_sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44",
+          "recovered_oriented_hex_exact": true,
+          "recovered_oriented_hex_sha256": "3d914f9348c9cc0ff8a79716700b9fcd4d2f3e711608004eb8f138bcba7f14d9",
+          "restored_zero_count": 0
+        },
+        "minimal_digits": "101",
+        "parse_count": 1,
+        "parser": "fixed3",
+        "plaintext_hex": "41",
+        "restored_zeros": 0
+      },
+      {
+        "base": 8,
+        "digit_reverse": true,
+        "examined_digits": "011",
+        "hex": "9",
+        "identity": "ASTRA",
+        "inverse": {
+          "digit_reverse_undone": true,
+          "examined_stream_exact": true,
+          "minimal_digits_sha256": "4fc82b26aecb47d2868c4efbe3581732a3e7cbcc6c2efb32062c08170a05eeb8",
+          "recovered_oriented_hex_exact": true,
+          "recovered_oriented_hex_sha256": "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7",
+          "restored_zero_count": 1
+        },
+        "minimal_digits": "11",
+        "parse_count": 1,
+        "parser": "fixed3",
+        "plaintext_hex": "09",
+        "restored_zeros": 1
+      }
+    ]
+  },
+  "runtime": {
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "scope": {
+    "bases": [
+      8,
+      10
+    ],
+    "control_only_parser": "canonical_variable1_3",
+    "digit_reverse": [
+      false,
+      true
+    ],
+    "labeled_digit_streams": 48,
+    "operation_order": "canonical whole-integer base digits; optionally reverse the canonical digits; prepend 0..2 restored zeros to that selected direction; parse",
+    "orientations": [
+      "forward",
+      "reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "restored_zeros": [
+      0,
+      1,
+      2
+    ],
+    "target_parser_cells": 96,
+    "target_parsers": [
+      "fixed3",
+      "canonical_variable2_3"
+    ]
+  },
+  "source_hashes": {
+    "controls_py_sha256": "937dfea250ca67e6788263db4431d4b324c08d807eade51c034755bbe745408e",
+    "rev7_mdx_file_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91"
+  },
+  "target_evaluated": false
+}

@@ -1,0 +1,607 @@
+{
+  "directory": "/private/tmp/rev7-fable-20260909/t4n",
+  "files": {
+    "base_convert.html": {
+      "archive_date_strings": [],
+      "expected_sha256": "bc00bbde98b3211491f5fdc60fe2c18b8b5fc050b62269bcc78596fd57ea9513",
+      "forms": [
+        {
+          "attrs": {
+            "action": "http://www.tools4noobs.com/",
+            "class": "form-inline slim-form",
+            "method": "post",
+            "onsubmit": "return do_submit()"
+          },
+          "inputs": [
+            {
+              "attrs": {
+                "name": "action",
+                "type": "hidden",
+                "value": "ajax_base_convert"
+              },
+              "tag": "input"
+            },
+            {
+              "attrs": {
+                "id": "number",
+                "name": "number",
+                "type": "text",
+                "value": "521"
+              },
+              "tag": "input"
+            },
+            {
+              "attrs": {
+                "class": "btn btn-primary",
+                "type": "submit",
+                "value": "Convert number"
+              },
+              "tag": "input"
+            }
+          ],
+          "selects": [
+            {
+              "attrs": {
+                "class": "btn-medium",
+                "id": "from_base",
+                "name": "from_base"
+              },
+              "options": [
+                {
+                  "value": "2"
+                },
+                {
+                  "value": "3"
+                },
+                {
+                  "value": "4"
+                },
+                {
+                  "value": "5"
+                },
+                {
+                  "value": "6"
+                },
+                {
+                  "value": "7"
+                },
+                {
+                  "value": "8"
+                },
+                {
+                  "value": "9"
+                },
+                {
+                  "selected": "selected",
+                  "value": "10"
+                },
+                {
+                  "value": "11"
+                },
+                {
+                  "value": "12"
+                },
+                {
+                  "value": "13"
+                },
+                {
+                  "value": "14"
+                },
+                {
+                  "value": "15"
+                },
+                {
+                  "value": "16"
+                },
+                {
+                  "value": "17"
+                },
+                {
+                  "value": "18"
+                },
+                {
+                  "value": "19"
+                },
+                {
+                  "value": "20"
+                },
+                {
+                  "value": "21"
+                },
+                {
+                  "value": "22"
+                },
+                {
+                  "value": "23"
+                },
+                {
+                  "value": "24"
+                },
+                {
+                  "value": "25"
+                },
+                {
+                  "value": "26"
+                },
+                {
+                  "value": "27"
+                },
+                {
+                  "value": "28"
+                },
+                {
+                  "value": "29"
+                },
+                {
+                  "value": "30"
+                }
+              ]
+            },
+            {
+              "attrs": {
+                "class": "btn-medium",
+                "id": "to_base",
+                "name": "to_base"
+              },
+              "options": [
+                {
+                  "value": "2"
+                },
+                {
+                  "value": "3"
+                },
+                {
+                  "value": "4"
+                },
+                {
+                  "value": "5"
+                },
+                {
+                  "value": "6"
+                },
+                {
+                  "value": "7"
+                },
+                {
+                  "value": "8"
+                },
+                {
+                  "value": "9"
+                },
+                {
+                  "value": "10"
+                },
+                {
+                  "value": "11"
+                },
+                {
+                  "value": "12"
+                },
+                {
+                  "value": "13"
+                },
+                {
+                  "value": "14"
+                },
+                {
+                  "value": "15"
+                },
+                {
+                  "value": "16"
+                },
+                {
+                  "value": "17"
+                },
+                {
+                  "value": "18"
+                },
+                {
+                  "value": "19"
+                },
+                {
+                  "value": "20"
+                },
+                {
+                  "value": "21"
+                },
+                {
+                  "value": "22"
+                },
+                {
+                  "value": "23"
+                },
+                {
+                  "value": "24"
+                },
+                {
+                  "value": "25"
+                },
+                {
+                  "value": "26"
+                },
+                {
+                  "value": "27"
+                },
+                {
+                  "value": "28"
+                },
+                {
+                  "value": "29"
+                },
+                {
+                  "value": "30"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "hash_match": true,
+      "precision_context": [],
+      "sha256": "bc00bbde98b3211491f5fdc60fe2c18b8b5fc050b62269bcc78596fd57ea9513",
+      "size": 8868,
+      "timestamp_context": []
+    },
+    "encrypt_2014-01.html": {
+      "archive_date_strings": [],
+      "expected_sha256": "82d984d7c57eacda0c44caeebd6c1fae063f6eecca1d5e5cfdeea27a1f715fb7",
+      "forms": [
+        {
+          "attrs": {
+            "action": "http://www.tools4noobs.com/",
+            "class": "form-inline",
+            "method": "post",
+            "onsubmit": "return do_submit()"
+          },
+          "inputs": [
+            {
+              "attrs": {
+                "name": "action",
+                "type": "hidden",
+                "value": "ajax_encrypt"
+              },
+              "tag": "input"
+            },
+            {
+              "attrs": {
+                "id": "key",
+                "name": "key",
+                "size": "50",
+                "type": "text"
+              },
+              "tag": "input"
+            },
+            {
+              "attrs": {
+                "class": "span9",
+                "cols": "20",
+                "id": "text",
+                "name": "text",
+                "rows": "10"
+              },
+              "tag": "textarea"
+            },
+            {
+              "attrs": {
+                "checked": "checked",
+                "id": "encode",
+                "name": "encode",
+                "type": "checkbox",
+                "value": "1"
+              },
+              "tag": "input"
+            },
+            {
+              "attrs": {
+                "class": "btn btn-primary",
+                "type": "submit",
+                "value": "Encrypt this!"
+              },
+              "tag": "input"
+            }
+          ],
+          "selects": [
+            {
+              "attrs": {
+                "id": "algo",
+                "name": "algo"
+              },
+              "options": [
+                {
+                  "value": "arcfour"
+                },
+                {
+                  "value": "blowfish"
+                },
+                {
+                  "value": "blowfish-compat"
+                },
+                {
+                  "value": "cast-128"
+                },
+                {
+                  "value": "cast-256"
+                },
+                {
+                  "value": "des"
+                },
+                {
+                  "value": "enigma"
+                },
+                {
+                  "value": "gost"
+                },
+                {
+                  "value": "loki97"
+                },
+                {
+                  "value": "rc2"
+                },
+                {
+                  "value": "rijndael-128"
+                },
+                {
+                  "value": "rijndael-192"
+                },
+                {
+                  "value": "rijndael-256"
+                },
+                {
+                  "value": "saferplus"
+                },
+                {
+                  "value": "serpent"
+                },
+                {
+                  "value": "tripledes"
+                },
+                {
+                  "value": "twofish"
+                },
+                {
+                  "value": "wake"
+                },
+                {
+                  "value": "xtea"
+                }
+              ]
+            },
+            {
+              "attrs": {
+                "class": "btn-mini",
+                "id": "mode",
+                "name": "mode"
+              },
+              "options": [
+                {
+                  "value": "cbc"
+                },
+                {
+                  "value": "cfb"
+                },
+                {
+                  "value": "ctr"
+                },
+                {
+                  "value": "ecb"
+                },
+                {
+                  "value": "ncfb"
+                },
+                {
+                  "value": "nofb"
+                },
+                {
+                  "value": "ofb"
+                },
+                {
+                  "value": "stream"
+                }
+              ]
+            },
+            {
+              "attrs": {
+                "id": "encode_method",
+                "name": "encode_method"
+              },
+              "options": [
+                {
+                  "value": "1"
+                },
+                {
+                  "value": "2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "hash_match": true,
+      "precision_context": [],
+      "sha256": "82d984d7c57eacda0c44caeebd6c1fae063f6eecca1d5e5cfdeea27a1f715fb7",
+      "size": 9455,
+      "timestamp_context": []
+    },
+    "encrypt_2016.html": {
+      "archive_date_strings": [],
+      "expected_sha256": "5a86122f5680a1974624beca07aeb3cc9bc20978b506912ab3cbdfb93b9fa3cd",
+      "forms": [
+        {
+          "attrs": {
+            "action": "//www.tools4noobs.com/",
+            "class": "form-inline",
+            "method": "post",
+            "onsubmit": "return do_submit()"
+          },
+          "inputs": [
+            {
+              "attrs": {
+                "name": "action",
+                "type": "hidden",
+                "value": "ajax_encrypt"
+              },
+              "tag": "input"
+            },
+            {
+              "attrs": {
+                "id": "key",
+                "name": "key",
+                "size": "50",
+                "type": "text"
+              },
+              "tag": "input"
+            },
+            {
+              "attrs": {
+                "class": "span9",
+                "cols": "20",
+                "id": "text",
+                "name": "text",
+                "rows": "10"
+              },
+              "tag": "textarea"
+            },
+            {
+              "attrs": {
+                "checked": "checked",
+                "id": "encode",
+                "name": "encode",
+                "type": "checkbox",
+                "value": "1"
+              },
+              "tag": "input"
+            },
+            {
+              "attrs": {
+                "class": "btn btn-primary",
+                "type": "submit",
+                "value": "Encrypt this!"
+              },
+              "tag": "input"
+            }
+          ],
+          "selects": [
+            {
+              "attrs": {
+                "id": "algo",
+                "name": "algo"
+              },
+              "options": [
+                {
+                  "value": "arcfour"
+                },
+                {
+                  "value": "blowfish"
+                },
+                {
+                  "value": "blowfish-compat"
+                },
+                {
+                  "value": "cast-128"
+                },
+                {
+                  "value": "cast-256"
+                },
+                {
+                  "value": "des"
+                },
+                {
+                  "value": "enigma"
+                },
+                {
+                  "value": "gost"
+                },
+                {
+                  "value": "loki97"
+                },
+                {
+                  "value": "rc2"
+                },
+                {
+                  "value": "rijndael-128"
+                },
+                {
+                  "value": "rijndael-192"
+                },
+                {
+                  "value": "rijndael-256"
+                },
+                {
+                  "value": "saferplus"
+                },
+                {
+                  "value": "serpent"
+                },
+                {
+                  "value": "tripledes"
+                },
+                {
+                  "value": "twofish"
+                },
+                {
+                  "value": "wake"
+                },
+                {
+                  "value": "xtea"
+                }
+              ]
+            },
+            {
+              "attrs": {
+                "class": "btn-mini",
+                "id": "mode",
+                "name": "mode"
+              },
+              "options": [
+                {
+                  "value": "cbc"
+                },
+                {
+                  "value": "cfb"
+                },
+                {
+                  "value": "ctr"
+                },
+                {
+                  "value": "ecb"
+                },
+                {
+                  "value": "ncfb"
+                },
+                {
+                  "value": "nofb"
+                },
+                {
+                  "value": "ofb"
+                },
+                {
+                  "value": "stream"
+                }
+              ]
+            },
+            {
+              "attrs": {
+                "id": "encode_method",
+                "name": "encode_method"
+              },
+              "options": [
+                {
+                  "value": "1"
+                },
+                {
+                  "value": "2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "hash_match": true,
+      "precision_context": [],
+      "sha256": "5a86122f5680a1974624beca07aeb3cc9bc20978b506912ab3cbdfb93b9fa3cd",
+      "size": 8158,
+      "timestamp_context": []
+    }
+  },
+  "identity": "ASTRA"
+}
