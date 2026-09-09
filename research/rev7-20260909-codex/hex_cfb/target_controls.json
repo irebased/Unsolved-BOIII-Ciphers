@@ -1,0 +1,244 @@
+{
+  "allowed_plaintext_bytes": [
+    9,
+    10,
+    13,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126
+  ],
+  "cfb8_controls": {
+    "aes128": {
+      "ciphertext_sha256": "5fa4597b28118b84c5a61520b306d947cbb4f94f1a682fe4261d43e4ae1938dc",
+      "full_byte_roundtrip": true,
+      "manual_matches_library_segment_size_8": true
+    },
+    "blowfish": {
+      "ciphertext_sha256": "a93b29d33a3c899bd488c0b5f92d2c75a79bc81e2dd87f3d01e4a81157173da9",
+      "full_byte_roundtrip": true,
+      "manual_matches_library_segment_size_8": true
+    },
+    "des": {
+      "ciphertext_sha256": "3534af01db911d41ad4f0186dce32d4fd764f6b10fdf05bbd44d35c8e05bf053",
+      "full_byte_roundtrip": true,
+      "manual_matches_library_segment_size_8": true
+    }
+  },
+  "cipher_scope": {
+    "aes128": {
+      "block_size": 16,
+      "iv_hex": "30303030303030303030303030303030",
+      "key_hex": "5a6f6d62696573000000000000000000"
+    },
+    "blowfish": {
+      "block_size": 8,
+      "iv_hex": "3030303030303030",
+      "key_hex": "5a6f6d62696573"
+    },
+    "des": {
+      "block_size": 8,
+      "iv_hex": "3030303030303030",
+      "key_hex": "5a6f6d6269657300"
+    }
+  },
+  "historical_utf8_endpoint_control": {
+    "accepted_codepoints": [
+      "U+2013",
+      "U+2014",
+      "U+2018",
+      "U+2019"
+    ],
+    "fully_terminated": true,
+    "plant_survives_exactly_once": true,
+    "stats": {
+      "aborted_at_node_limit": false,
+      "complete": 1,
+      "maximum_depth": 140,
+      "nodes": 148,
+      "rejected_completion_weight": 119,
+      "rejected_plaintext": 15,
+      "rejected_unterminated_endpoint": 0,
+      "terminal_completion_weight": 1
+    },
+    "total_survivors": 1,
+    "unknown_mapping_entries": 5
+  },
+  "identity": "ASTRA",
+  "known_plant": {
+    "displayed_sha256": "074d31def4b733c1554af19c50ec1e737e5283bea9ca7316944cea0629190679",
+    "mapping": [
+      9,
+      3,
+      13,
+      10,
+      11,
+      6,
+      5,
+      4,
+      0,
+      7,
+      14,
+      8,
+      12,
+      15,
+      1,
+      2
+    ],
+    "stats": {
+      "aborted_at_node_limit": false,
+      "complete": 1,
+      "maximum_depth": 140,
+      "nodes": 141,
+      "rejected_completion_weight": 20922789887999,
+      "rejected_plaintext": 506,
+      "rejected_unterminated_endpoint": 0,
+      "terminal_completion_weight": 1
+    },
+    "unique_solution": true
+  },
+  "pycryptodome": "3.23.0",
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "small_alphabet_exhaustive": {
+    "actual_values": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "backtracking_mapping_count": 1,
+    "mapping_and_plaintext_sets_equal": true,
+    "naive_mapping_count": 1,
+    "stats": {
+      "aborted_at_node_limit": false,
+      "complete": 1,
+      "maximum_depth": 6,
+      "nodes": 103,
+      "rejected_completion_weight": 119,
+      "rejected_plaintext": 119,
+      "rejected_unterminated_endpoint": 0,
+      "terminal_completion_weight": 1
+    },
+    "survivors": [
+      {
+        "mapping": [
+          1,
+          4,
+          3,
+          2,
+          0
+        ],
+        "plaintext_hex": "283f6d3f3c5d"
+      }
+    ]
+  },
+  "synthetic_feasibility": {
+    "node_limit": 250000,
+    "nodes_per_second": 272078.05747951084,
+    "seconds": 0.9188539579999999,
+    "stats": {
+      "aborted_at_node_limit": true,
+      "complete": 0,
+      "maximum_depth": 23,
+      "nodes": 250000,
+      "rejected_completion_weight": 12868311828960,
+      "rejected_plaintext": 401355,
+      "rejected_unterminated_endpoint": 0,
+      "terminal_completion_weight": 0
+    },
+    "warning": "synthetic node-capped timing only; not a Rev 7 runtime or result"
+  },
+  "target_evaluated": false
+}

@@ -1,0 +1,288 @@
+{
+  "all_cells_finished": true,
+  "capped_cells": 12,
+  "cells": [
+    {
+      "certificate_weight": 13060855581216,
+      "cipher": "aes128",
+      "complete": false,
+      "elapsed_seconds": 32.6652335,
+      "iv_hex": "30303030303030303030303030303030",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "orientation": "forward",
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 30,
+        "nodes": 10000000,
+        "rejected_completion_weight": 13060855581216,
+        "rejected_plaintext": 16107772,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      },
+      "survivors": [],
+      "unaccounted_mapping_weight": 7861934306784
+    },
+    {
+      "certificate_weight": 15157484737200,
+      "cipher": "aes128",
+      "complete": false,
+      "elapsed_seconds": 35.601517041,
+      "iv_hex": "30303030303030303030303030303030",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "orientation": "reverse",
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 32,
+        "nodes": 10000000,
+        "rejected_completion_weight": 15157484737200,
+        "rejected_plaintext": 16127168,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      },
+      "survivors": [],
+      "unaccounted_mapping_weight": 5765305150800
+    },
+    {
+      "certificate_weight": 15152677681050,
+      "cipher": "aes128",
+      "complete": false,
+      "elapsed_seconds": 35.484559958000006,
+      "iv_hex": "30303030303030303030303030303030",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "orientation": "byte_reverse",
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 30,
+        "nodes": 10000000,
+        "rejected_completion_weight": 15152677681050,
+        "rejected_plaintext": 16125796,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      },
+      "survivors": [],
+      "unaccounted_mapping_weight": 5770112206950
+    },
+    {
+      "certificate_weight": 13068320706568,
+      "cipher": "aes128",
+      "complete": false,
+      "elapsed_seconds": 40.824528958,
+      "iv_hex": "30303030303030303030303030303030",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "orientation": "nibble_swap",
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 28,
+        "nodes": 10000000,
+        "rejected_completion_weight": 13068320706568,
+        "rejected_plaintext": 16115200,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      },
+      "survivors": [],
+      "unaccounted_mapping_weight": 7854469181432
+    },
+    {
+      "certificate_weight": 13070995416360,
+      "cipher": "blowfish",
+      "complete": false,
+      "elapsed_seconds": 42.169874166,
+      "iv_hex": "3030303030303030",
+      "key_hex": "5a6f6d62696573",
+      "orientation": "forward",
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 28,
+        "nodes": 10000000,
+        "rejected_completion_weight": 13070995416360,
+        "rejected_plaintext": 16118306,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      },
+      "survivors": [],
+      "unaccounted_mapping_weight": 7851794471640
+    },
+    {
+      "certificate_weight": 15168447947520,
+      "cipher": "blowfish",
+      "complete": false,
+      "elapsed_seconds": 29.205456167000023,
+      "iv_hex": "3030303030303030",
+      "key_hex": "5a6f6d62696573",
+      "orientation": "reverse",
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 31,
+        "nodes": 10000000,
+        "rejected_completion_weight": 15168447947520,
+        "rejected_plaintext": 16124284,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      },
+      "survivors": [],
+      "unaccounted_mapping_weight": 5754341940480
+    },
+    {
+      "certificate_weight": 15165095150880,
+      "cipher": "blowfish",
+      "complete": false,
+      "elapsed_seconds": 28.174246917000005,
+      "iv_hex": "3030303030303030",
+      "key_hex": "5a6f6d62696573",
+      "orientation": "byte_reverse",
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 31,
+        "nodes": 10000000,
+        "rejected_completion_weight": 15165095150880,
+        "rejected_plaintext": 16146430,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      },
+      "survivors": [],
+      "unaccounted_mapping_weight": 5757694737120
+    },
+    {
+      "certificate_weight": 13072506687000,
+      "cipher": "blowfish",
+      "complete": false,
+      "elapsed_seconds": 27.839451959,
+      "iv_hex": "3030303030303030",
+      "key_hex": "5a6f6d62696573",
+      "orientation": "nibble_swap",
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 29,
+        "nodes": 10000000,
+        "rejected_completion_weight": 13072506687000,
+        "rejected_plaintext": 16125676,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      },
+      "survivors": [],
+      "unaccounted_mapping_weight": 7850283201000
+    },
+    {
+      "certificate_weight": 13158520370640,
+      "cipher": "des",
+      "complete": false,
+      "elapsed_seconds": 28.012719333999996,
+      "iv_hex": "3030303030303030",
+      "key_hex": "5a6f6d6269657300",
+      "orientation": "forward",
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 28,
+        "nodes": 10000000,
+        "rejected_completion_weight": 13158520370640,
+        "rejected_plaintext": 16118493,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      },
+      "survivors": [],
+      "unaccounted_mapping_weight": 7764269517360
+    },
+    {
+      "certificate_weight": 15319736600160,
+      "cipher": "des",
+      "complete": false,
+      "elapsed_seconds": 27.87971695799996,
+      "iv_hex": "3030303030303030",
+      "key_hex": "5a6f6d6269657300",
+      "orientation": "reverse",
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 30,
+        "nodes": 10000000,
+        "rejected_completion_weight": 15319736600160,
+        "rejected_plaintext": 16122884,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      },
+      "survivors": [],
+      "unaccounted_mapping_weight": 5603053287840
+    },
+    {
+      "certificate_weight": 15326487146880,
+      "cipher": "des",
+      "complete": false,
+      "elapsed_seconds": 28.18439104199996,
+      "iv_hex": "3030303030303030",
+      "key_hex": "5a6f6d6269657300",
+      "orientation": "byte_reverse",
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 30,
+        "nodes": 10000000,
+        "rejected_completion_weight": 15326487146880,
+        "rejected_plaintext": 16124335,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      },
+      "survivors": [],
+      "unaccounted_mapping_weight": 5596302741120
+    },
+    {
+      "certificate_weight": 13221242011440,
+      "cipher": "des",
+      "complete": false,
+      "elapsed_seconds": 27.993969083000025,
+      "iv_hex": "3030303030303030",
+      "key_hex": "5a6f6d6269657300",
+      "orientation": "nibble_swap",
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 28,
+        "nodes": 10000000,
+        "rejected_completion_weight": 13221242011440,
+        "rejected_plaintext": 16126549,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      },
+      "survivors": [],
+      "unaccounted_mapping_weight": 7701547876560
+    }
+  ],
+  "complete_cells": 0,
+  "controls_sha256": "960f8f96dcabe793a37f9ad2710a4ef4eb6028e9debb8d11d5b0ea152f4a6e52",
+  "experiment": "ASTRA018",
+  "hex_length": 1092,
+  "identity": "ASTRA",
+  "plan_url": "https://github.com/irebased/Unsolved-BOIII-Ciphers/issues/20#issuecomment-5609059049",
+  "rev7_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "scope": {
+    "ciphers": [
+      "aes128",
+      "blowfish",
+      "des"
+    ],
+    "endpoint": "TAB/LF/CR/ASCII32..126 plus UTF8 E28093/E28094/E28098/E28099; complete termination",
+    "full_mapping_space_per_cell": 20922789888000,
+    "node_definition": "DFS entries, including terminal entries",
+    "node_limit_per_cell": 10000000,
+    "orientations": [
+      "forward",
+      "reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "workers": 1
+  },
+  "source_sha256": {
+    "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b",
+    "run_target.py": "8441194f0c8701b4e5c81b9954d0a09168e65e4e9ec625c2ed0467a7c16d4bd4"
+  },
+  "survivor_records": 0
+}
