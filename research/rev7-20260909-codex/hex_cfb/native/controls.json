@@ -1,0 +1,180 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "full16_caps_checked": [
+      250000,
+      1000000
+    ],
+    "native_stats_weights_solutions_equal_python": true
+  },
+  "backend": {
+    "commoncrypto_probe": {
+      "aes128": "accepted",
+      "blowfish_raw7": "rejected_-4310",
+      "des": "accepted"
+    },
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "cpp_standard": "C++17",
+    "link_args": [
+      "-lcrypto",
+      "-Wl,-rpath,/opt/homebrew/Cellar/openssl@3/3.6.3/lib"
+    ],
+    "openssl_prefix": "/opt/homebrew/Cellar/openssl@3/3.6.3",
+    "openssl_version": "3.6.3",
+    "optimization": "-O3",
+    "selected": "OpenSSL public low-level AES/DES/Blowfish primitives; BF_set_key receives exactly 7 bytes"
+  },
+  "cfb8_controls": {
+    "aes128": {
+      "ciphertext_sha256": "eaaa002fbfa9e736a0dd320862cba404317c4a8f80fd8298285e33e6c94ed41f",
+      "full_byte_roundtrip": true,
+      "native_matches_python_manual_and_library": true
+    },
+    "blowfish": {
+      "ciphertext_sha256": "e8c4e4cea985501a5d3ee645b5e1df9af119b0490ba123a804aa8e7344218966",
+      "full_byte_roundtrip": true,
+      "native_matches_python_manual_and_library": true
+    },
+    "des": {
+      "ciphertext_sha256": "6309ff5fb6a6df2baff34fe5db53e692ab079a15028cc776053df1c444ad4354",
+      "full_byte_roundtrip": true,
+      "native_matches_python_manual_and_library": true
+    }
+  },
+  "endpoint": {
+    "allowed_hex": "090a0d202b2f303132333435363738393d4142434445464748494a4b4c4d4e4f505152535455565758595a6162636465666768696a6b6c6d6e6f707172737475767778797a",
+    "byte_count": 69,
+    "name": "base64_69"
+  },
+  "full16_base64_exact_prefix_equivalence": [
+    {
+      "certificate_complete": false,
+      "certificate_weight": 15329897527402,
+      "cipher": "aes128",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0224025,
+      "node_limit": 250000,
+      "python_plus_native_wall_seconds": 1.283834416,
+      "solution_count": 0,
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 20,
+        "nodes": 250000,
+        "rejected_completion_weight": 15329897527402,
+        "rejected_plaintext": 679095,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 15491818817980,
+      "cipher": "aes128",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0880658,
+      "node_limit": 1000000,
+      "python_plus_native_wall_seconds": 5.109515167,
+      "solution_count": 0,
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 20,
+        "nodes": 1000000,
+        "rejected_completion_weight": 15491818817980,
+        "rejected_plaintext": 2710938,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    }
+  ],
+  "identity": "ASTRA",
+  "scope": "synthetic-only native/Python exact equivalence; no Rev7 target input is opened",
+  "seeded_four_unknown_exact_equivalence": [
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "aes128",
+      "expected_completion_weight": 24,
+      "expected_mapping_recovered": true,
+      "native_seconds": 1.9459e-05,
+      "node_limit": 100000,
+      "solution_count": 1,
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 80,
+        "nodes": 85,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 6,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "blowfish",
+      "expected_completion_weight": 24,
+      "expected_mapping_recovered": true,
+      "native_seconds": 4.6709e-05,
+      "node_limit": 100000,
+      "solution_count": 1,
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 80,
+        "nodes": 89,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 12,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "des",
+      "expected_completion_weight": 24,
+      "expected_mapping_recovered": true,
+      "native_seconds": 2.2958e-05,
+      "node_limit": 100000,
+      "solution_count": 1,
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 80,
+        "nodes": 91,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 12,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "source_hashes": {
+    "controls.py": "62ff2dd3a1a3752832ee8bd81e3ba289a0bb7b8b7fb7cb9340289b1963c8106d",
+    "native_dfs.cpp": "1d86af5a59e35807400297b8148dad2af41629cd5c23739eb161308e440de11f",
+    "native_dfs_binary": "44ab21da1f2ce49ece7a516cf02c3ec88f3ad0f7babfe886a8bc7dba03dcd8c4",
+    "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b"
+  },
+  "target_evaluated": false
+}
