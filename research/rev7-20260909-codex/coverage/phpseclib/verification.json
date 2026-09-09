@@ -1,0 +1,48 @@
+{
+  "identity": "ASTRA",
+  "cutoff": "2016-09-06",
+  "sources": {
+    "phpseclib_2.0.0": {
+      "tag_ref": "https://github.com/phpseclib/phpseclib/tree/2.0.0",
+      "tag_object": "e9882650bcce57765803480031902db2e2ff3f3a",
+      "commit": "a74aa9efbe61430fcb60157c8e025a48ec8ff604",
+      "tagger_utc": "2015-08-04T04:50:59Z",
+      "commit_date": "2015-08-03T23:48:03-05:00"
+    },
+    "phpseclib_1.0.18": {
+      "tag_ref": "https://github.com/phpseclib/phpseclib/tree/1.0.18",
+      "commit": "ec1fcfe648e5696efa2dd26ffa54436e3478ae5c",
+      "commit_date": "2019-09-16T23:11:10-05:00",
+      "pre_cutoff": false,
+      "note": "The planned 1.0.18 reference cannot be called a pre-2016 release from its immutable repository metadata."
+    }
+  },
+  "defaults_2_0_0": {
+    "Base": {"salt": "phpseclib/salt", "hash": "sha1", "iterations": 1000, "pbkdf2_key_length_bytes": "$password_key_size", "mode": "CBC", "iv": "all-zero bytes when omitted"},
+    "Rijndael": {"password_key_size_bytes": 16, "salt": "phpseclib"},
+    "AES": {"inherits": "Rijndael", "password_key_size_bytes": 16, "salt": "phpseclib"},
+    "Twofish": {"inherits": "Base", "password_key_size_bytes": 32, "salt": "phpseclib/salt"},
+    "Blowfish": {"password_key_size_bytes": 56, "salt": "phpseclib/salt"},
+    "DES": {"password_key_size_bytes": 8, "salt": "phpseclib/salt"},
+    "TripleDES": {"password_key_size_bytes": 24, "salt": "phpseclib"},
+    "RC4": {"password_key_size_bytes": 128, "salt": "phpseclib/salt"}
+  },
+  "source_lines": {
+    "Base": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/Base.php#L388-L397",
+    "setPassword": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/Base.php#L552-L575",
+    "mode_iv": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/Base.php#L467-L485",
+    "iv_doc": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/Base.php#L496-L500",
+    "Rijndael_AES": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/Rijndael.php#L66-L102",
+    "RC4": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/RC4.php#L56-L86",
+    "DES_TripleDES": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/DES.php#L54-L98",
+    "TripleDES_salt": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/TripleDES.php#L49-L85",
+    "Blowfish": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/Blowfish.php#L50-L69",
+    "Twofish": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/Twofish.php#L50-L60"
+  },
+  "commands": [
+    "git ls-remote --tags https://github.com/phpseclib/phpseclib.git",
+    "git clone --depth 1 --branch 2.0.0 https://github.com/phpseclib/phpseclib.git /tmp/phpseclib-2.0.0",
+    "git -C /tmp/phpseclib-2.0.0 cat-file -p e9882650bcce57765803480031902db2e2ff3f3a",
+    "nl -ba /tmp/phpseclib-2.0.0/phpseclib/Crypt/{Base,Rijndael,RC4,DES,TripleDES,Blowfish,Twofish}.php"
+  ]
+}

@@ -1,0 +1,683 @@
+{
+  "full_chain_plant": {
+    "all_52_exact": true,
+    "block_settings_exact": true,
+    "orientation_rows": [
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "249c25793c9b74d0f7292825c16e54ce5950af4347a34486770510e607547b74",
+        "cipher": "AES",
+        "mode": "CFB",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "76593808cc2f745663d45e3c7352b693ca1d5475db2644a434f7529676ea0f83",
+        "cipher": "AES",
+        "mode": "CFB",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "cbb9cfbd1bb0a423a2efe34e557c9628ebd481e565eb29ba267d588c8ec1435e",
+        "cipher": "AES",
+        "mode": "CFB",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "24f5f80f8c6d9cf2803d5f4807512a0cf3a6857a4c51d520fd24530b215f1dc3",
+        "cipher": "AES",
+        "mode": "CFB",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "a1f2dc9cc34b79862c25bd8daa159f038c830d37ff2eb433c202d867e46d6a56",
+        "cipher": "AES",
+        "mode": "OFB",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "df423df12711b14871c0835ab919369c38f71e690224832f986bd8b307c2281d",
+        "cipher": "AES",
+        "mode": "OFB",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "ec92d8404fb8d522762ff033e97879045f15693f6b31f3156c89959c3cb085ef",
+        "cipher": "AES",
+        "mode": "OFB",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "4955176b79ae57163c4ccc6f54692522d798ee616317885008ff44c9b0d428eb",
+        "cipher": "AES",
+        "mode": "OFB",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "2852e1291a63a468f5120b2d45e97557da4723e8d06ee47c46beef53e5cbf50f",
+        "cipher": "AES",
+        "mode": "CTR",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "f2b3f5a4ae30ae9986fcd75416cc9a2b20e36b4b783ad1e2ebaa04b532621add",
+        "cipher": "AES",
+        "mode": "CTR",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "71d9d0ef664c2a4377712e6122cb36aa6a876b0c878eb86a2a892e3f733e3b95",
+        "cipher": "AES",
+        "mode": "CTR",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "6697c679349cecc7708eaa7530471bdb7276eb4fdd179bb8a281f418fa9ea9c4",
+        "cipher": "AES",
+        "mode": "CTR",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "41c5e4b72e54ae06f09eaea779681c638964660490dc8803ec60aaa2da4b0ae2",
+        "cipher": "DES",
+        "mode": "CFB",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "bbf8937bb95ccf356224882ee93ead75c15042d95039a8a4f2eb9f595661ae32",
+        "cipher": "DES",
+        "mode": "CFB",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "c842b3e875faee78300957648f13d8698f7084511de14cf27cdf4b31bf057778",
+        "cipher": "DES",
+        "mode": "CFB",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "41117fd9af2a7e213a0748e996b8c4abdcf9a9f251385b831b2ee03d6e47e760",
+        "cipher": "DES",
+        "mode": "CFB",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "668e70409e1478d22c0daa9248a90761fc8d54e8820fe97643ff1bfe4cc18a9a",
+        "cipher": "DES",
+        "mode": "OFB",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "267685eeabfa5ababfb19afc576b8a91e90cd5d02b4da3a0b90a8d88ef8a52eb",
+        "cipher": "DES",
+        "mode": "OFB",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "0256860bd935f410c27cec4c8ed53294f99bb66e8667ae42fe25ca011a1db6bc",
+        "cipher": "DES",
+        "mode": "OFB",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "84e470308ce0fac3e2d56415937a5be52d1501a74cdf3a30945b51c968ee6447",
+        "cipher": "DES",
+        "mode": "OFB",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "403b545467ebeee67b831f4e22aaee5d69076c8de28157d51c2be72347193ca2",
+        "cipher": "DES",
+        "mode": "CTR",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "bade60833ed4390f69a9d867e76fac3279255d8148b635a6926254546ef35d9e",
+        "cipher": "DES",
+        "mode": "CTR",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "f6ba89760e1d7ac611c0fe835e62a8fccadec3bde1400957abf04890d3e80d6f",
+        "cipher": "DES",
+        "mode": "CTR",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "09fc5074bc05084c7a56c85fcfe8283c87288a670e63d507b8139a6d15bb7ac2",
+        "cipher": "DES",
+        "mode": "CTR",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "3fbf14f68626f2fbb1ec57bec91a480ecc0ddfe07fd9e0ac04df3008da9cbeb0",
+        "cipher": "TripleDES",
+        "mode": "CFB",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "ebb93074033c330c0cd042cf4a988ce8e04da2662a3622b8d8a4509e49bacd41",
+        "cipher": "TripleDES",
+        "mode": "CFB",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "9c54c949c15e763d2fcea50b36f13c7a7909455e8cbd88fdff867695d5975205",
+        "cipher": "TripleDES",
+        "mode": "CFB",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "192997dbd9eea0f8c89a213bdb6fd1fa8ffde0df02f84d96b91fac6006dc05fa",
+        "cipher": "TripleDES",
+        "mode": "CFB",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "67fc2ec7e46b4ed3aa6af17d5caf964c770ac0fb2ec9bddd4bac463043c65626",
+        "cipher": "TripleDES",
+        "mode": "OFB",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "a862ae4ad028662ec84b41aff61cb0c5debf60906de18015be0038cc0c4fb4c8",
+        "cipher": "TripleDES",
+        "mode": "OFB",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "e2e3fbfc43f7842c5d9f5a999b456ae8810094f8cf80f6e9f525a50bc2b046d6",
+        "cipher": "TripleDES",
+        "mode": "OFB",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "f0684b2bed249ad7fc3ad4cd2d662fa0bab856837786f18ef09845bc84f4305f",
+        "cipher": "TripleDES",
+        "mode": "OFB",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "7fd49f6fb0d973f60f95a7657e799f36f614e342f729eda0642efce125f25909",
+        "cipher": "TripleDES",
+        "mode": "CTR",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "80be38f9a91004725cd04a150ab0f881c629fcd83cb2f15bb1914d42354310ae",
+        "cipher": "TripleDES",
+        "mode": "CTR",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "301d2ed19cfe61512a76e20fcd9ff64721733dbe1bf7ec15f8101cdddafe0890",
+        "cipher": "TripleDES",
+        "mode": "CTR",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "728c3014313cae8731b46ba2e53ba0af7287b9cdb7b2e0538cb5181b2b7d1d31",
+        "cipher": "TripleDES",
+        "mode": "CTR",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "6e3ab5cc68f432e32ea3ba1f6040c1bf2d613502d0201b4d9c7e9ea5d817c1ee",
+        "cipher": "Blowfish",
+        "mode": "CFB",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "e3cd53f0d4a5c0dcf46c3a4d889a00ef1553c9a48fbe817ddca652c64cd41ae6",
+        "cipher": "Blowfish",
+        "mode": "CFB",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "592afebb447ee31da92130dc156818992c148eab2e828cf8ea183365c89e8ec4",
+        "cipher": "Blowfish",
+        "mode": "CFB",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "7deba4d7aee29e0890ae08f1de753e9118f70820492e716d0825efc3de697079",
+        "cipher": "Blowfish",
+        "mode": "CFB",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "ec4c7e35153f2322ee6154d6b823057da421f58f7116bbad340621f52ece9d8b",
+        "cipher": "Blowfish",
+        "mode": "OFB",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "6399f1266297850c76904ce87145f2742038331ad657043a5898d22715d35a39",
+        "cipher": "Blowfish",
+        "mode": "OFB",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "ceb8f965296c7d5db4208788870fba278ce046b9788fc37fd5f252c9e3de4d2b",
+        "cipher": "Blowfish",
+        "mode": "OFB",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "e584702e20713206810bca52d7423e6470110b7d34ca64851f4666617eb1b5aa",
+        "cipher": "Blowfish",
+        "mode": "OFB",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "3d3198049b74cd04bee10daffd5ef9975252159dac556fe784a32fccf2407f8b",
+        "cipher": "Blowfish",
+        "mode": "CTR",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "be0b72bfde7f0bd395f27e67600c3015d778baab9167db1f9c0b9890a0311fa3",
+        "cipher": "Blowfish",
+        "mode": "CTR",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "1c1af47a13449b526d331f6d3af0b1f099aaafd646a01d3ede13b529c3615103",
+        "cipher": "Blowfish",
+        "mode": "CTR",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "626fa72cb185e3766d844afd8e9be8944aea614508ef5c7e1026ec8e367b0880",
+        "cipher": "Blowfish",
+        "mode": "CTR",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "7c7144b422b3eba1a0b3f17e7d0d484812351f8875c10a9751033ef6cfe76fe5",
+        "cipher": "RC4",
+        "mode": "stream",
+        "orientation": "forward",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "d27820f47c0ea2ed86e2fcdc20fcc3d039c7d0aa759ad03e6c0bb3faff008504",
+        "cipher": "RC4",
+        "mode": "stream",
+        "orientation": "reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "777be6bc1ad7638b413be24172ee187832882f5f68d0414e706defdfae1085e9",
+        "cipher": "RC4",
+        "mode": "stream",
+        "orientation": "byte_reverse",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      },
+      {
+        "canonical_hex_exact": true,
+        "canonical_sha256": "1b5f402a8679e17d8a7666d0fb57eb4b91d0007b1e79cb4a265e23f3ae880084",
+        "cipher": "RC4",
+        "mode": "stream",
+        "orientation": "nibble_swap",
+        "recovered_exact": true,
+        "reencoded_exact": true
+      }
+    ],
+    "plaintext_sha256": "414c5e31d50a70611cd9060a45109d8f2db620cbf9fe0d021106eb1a6378428b",
+    "rc4_cipher_sha256": "001689f03c1845f3f897c658e7aa29e5dcff96b4b66fdadcf42589e3e535cb27",
+    "rc4_exact": true,
+    "source": "local Rev11 solved plaintext"
+  },
+  "identity": "ASTRA",
+  "manual_library_crosschecks": [
+    {
+      "cipher": "AES",
+      "manual_library_decrypt_match": true,
+      "manual_library_encrypt_match": true,
+      "mode": "CFB",
+      "partial_length": 35,
+      "plant_cipher_sha256": "ca3a3614ec34b1e7cf59b1b80cb6a6a6a45f4aaabdf645776c85132f71913217",
+      "plant_exact": true,
+      "plant_reencode_exact": true
+    },
+    {
+      "cipher": "AES",
+      "manual_library_decrypt_match": true,
+      "manual_library_encrypt_match": true,
+      "mode": "OFB",
+      "partial_length": 35,
+      "plant_cipher_sha256": "294ebfad9ec37398f8f35055accc7d702a628d9a5a9e5c7ee3203dd7bd947abd",
+      "plant_exact": true,
+      "plant_reencode_exact": true
+    },
+    {
+      "cipher": "AES",
+      "manual_library_decrypt_match": true,
+      "manual_library_encrypt_match": true,
+      "mode": "CTR",
+      "partial_length": 35,
+      "plant_cipher_sha256": "300b9bb6d1300b52774e65ef9ab99760df3255dadf4e061d224d986c27d4fa3d",
+      "plant_exact": true,
+      "plant_reencode_exact": true
+    },
+    {
+      "cipher": "DES",
+      "manual_library_decrypt_match": true,
+      "manual_library_encrypt_match": true,
+      "mode": "CFB",
+      "partial_length": 19,
+      "plant_cipher_sha256": "1920732803dd73c04f0c46887c649c874ba60bf4b12c4547e21285aa6641162f",
+      "plant_exact": true,
+      "plant_reencode_exact": true
+    },
+    {
+      "cipher": "DES",
+      "manual_library_decrypt_match": true,
+      "manual_library_encrypt_match": true,
+      "mode": "OFB",
+      "partial_length": 19,
+      "plant_cipher_sha256": "195e03e1a58c1d23d10218eb7d1d8694287d29ac2666d58121c38b8b14e4b125",
+      "plant_exact": true,
+      "plant_reencode_exact": true
+    },
+    {
+      "cipher": "DES",
+      "manual_library_decrypt_match": true,
+      "manual_library_encrypt_match": true,
+      "mode": "CTR",
+      "partial_length": 19,
+      "plant_cipher_sha256": "848072b6c88f59dd813cc1f5f97a2142e4f3fb6f2ee028a30af335286d1ff173",
+      "plant_exact": true,
+      "plant_reencode_exact": true
+    },
+    {
+      "cipher": "TripleDES",
+      "manual_library_decrypt_match": true,
+      "manual_library_encrypt_match": true,
+      "mode": "CFB",
+      "partial_length": 19,
+      "plant_cipher_sha256": "7ddc196876be37388c59d07dc02155f1da9f9d6459b03c87fabbe8a38915aab3",
+      "plant_exact": true,
+      "plant_reencode_exact": true
+    },
+    {
+      "cipher": "TripleDES",
+      "manual_library_decrypt_match": true,
+      "manual_library_encrypt_match": true,
+      "mode": "OFB",
+      "partial_length": 19,
+      "plant_cipher_sha256": "e161fbea5b2a39b8db8424abfc33f37318112fb8ccc41b56d0050ef53b22b1eb",
+      "plant_exact": true,
+      "plant_reencode_exact": true
+    },
+    {
+      "cipher": "TripleDES",
+      "manual_library_decrypt_match": true,
+      "manual_library_encrypt_match": true,
+      "mode": "CTR",
+      "partial_length": 19,
+      "plant_cipher_sha256": "692c1fc4f5666468f99e256caf49dce6299ae338d68704e5888e49d5bf14ecc2",
+      "plant_exact": true,
+      "plant_reencode_exact": true
+    },
+    {
+      "cipher": "Blowfish",
+      "manual_library_decrypt_match": true,
+      "manual_library_encrypt_match": true,
+      "mode": "CFB",
+      "partial_length": 19,
+      "plant_cipher_sha256": "7370e1d117e67937f47e11bf3ee869e1759d932285ce9985e2d4200c8f725269",
+      "plant_exact": true,
+      "plant_reencode_exact": true
+    },
+    {
+      "cipher": "Blowfish",
+      "manual_library_decrypt_match": true,
+      "manual_library_encrypt_match": true,
+      "mode": "OFB",
+      "partial_length": 19,
+      "plant_cipher_sha256": "21913aec0e8361c9ee92138d806a3f1c18099bed702adefd8b73b1fdd1c9a8bc",
+      "plant_exact": true,
+      "plant_reencode_exact": true
+    },
+    {
+      "cipher": "Blowfish",
+      "manual_library_decrypt_match": true,
+      "manual_library_encrypt_match": true,
+      "mode": "CTR",
+      "partial_length": 19,
+      "plant_cipher_sha256": "16e2482a04d252677c696df81f8eacb0b949f3ce97daeb57d9aa57850b3a6ab8",
+      "plant_exact": true,
+      "plant_reencode_exact": true
+    }
+  ],
+  "nist_sp800_38a": {
+    "CFB": {
+      "actual_hex": "3b3fd92eb72dad20333449f8e83cfb4ac8a64537a0b3a93fcde3cdad9f1ce58b",
+      "blocks_checked": 2,
+      "expected_hex": "3b3fd92eb72dad20333449f8e83cfb4ac8a64537a0b3a93fcde3cdad9f1ce58b",
+      "match": true
+    },
+    "CTR": {
+      "actual_hex": "874d6191b620e3261bef6864990db6ce9806f66b7970fdff8617187bb9fffdff",
+      "blocks_checked": 2,
+      "expected_hex": "874d6191b620e3261bef6864990db6ce9806f66b7970fdff8617187bb9fffdff",
+      "match": true
+    },
+    "OFB": {
+      "actual_hex": "3b3fd92eb72dad20333449f8e83cfb4a7789508d16918f03f53c52dac54ed825",
+      "blocks_checked": 2,
+      "expected_hex": "3b3fd92eb72dad20333449f8e83cfb4a7789508d16918f03f53c52dac54ed825",
+      "match": true
+    }
+  },
+  "pbkdf2": {
+    "derived": {
+      "AES": {
+        "hashlib_crypto_match": true,
+        "key_hex": "020fab206d47b0cdcfb5207a9398f847"
+      },
+      "Blowfish": {
+        "hashlib_crypto_match": true,
+        "key_hex": "a5a0c2899fea5be0c5595517f56b6484eabffbb1a833962d68f7bc71ee950e43d1634fc65be2e47a193fb73c2bc9a9e42cf9d0af766a68ac"
+      },
+      "DES": {
+        "hashlib_crypto_match": true,
+        "key_hex": "a5a0c2899fea5be0"
+      },
+      "RC4": {
+        "hashlib_crypto_match": true,
+        "key_hex": "a5a0c2899fea5be0c5595517f56b6484eabffbb1a833962d68f7bc71ee950e43d1634fc65be2e47a193fb73c2bc9a9e42cf9d0af766a68acdcf8d383e8534c419c8b30aaf9e81f02733c3d3e593366cbb36be4d80ea230605e511a09b3774a8a76cffb47305a32f4d996d37d4205a7a5ddd3c912278bc03bbfc13e6a7715438e"
+      },
+      "TripleDES": {
+        "hashlib_crypto_match": true,
+        "key_hex": "020fab206d47b0cdcfb5207a9398f8473fe3996f0236e218"
+      }
+    },
+    "hash": "sha1",
+    "iterations": 1000,
+    "password_hex": "5a6f6d62696573",
+    "rfc6070_matches": [
+      true,
+      true,
+      true
+    ]
+  },
+  "plan_url": "https://github.com/irebased/Unsolved-BOIII-Ciphers/issues/20#issuecomment-5608806319",
+  "rfc6229_rc4": {
+    "actual_hex": "b2396305f03dc027ccc3524a0a1118a8",
+    "expected_hex": "b2396305f03dc027ccc3524a0a1118a8",
+    "key_hex": "0102030405",
+    "length": 16,
+    "match": true,
+    "offset": 0
+  },
+  "runtime_seconds": 0.129415,
+  "source_commit": "a74aa9efbe61430fcb60157c8e025a48ec8ff604",
+  "source_urls": {
+    "nist_sp800_38a": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a.pdf",
+    "phpseclib_counter": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/Base.php#L1879-L1905",
+    "phpseclib_modes_decrypt": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/Base.php#L1117-L1205",
+    "phpseclib_modes_encrypt": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/Base.php#L826-L921",
+    "phpseclib_pbkdf2": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/Base.php#L552-L575",
+    "phpseclib_rc4": "https://github.com/phpseclib/phpseclib/blob/a74aa9efbe61430fcb60157c8e025a48ec8ff604/phpseclib/Crypt/RC4.php#L251-L335",
+    "pycryptodome_modes": "https://pycryptodome.readthedocs.io/en/latest/src/cipher/classic.html",
+    "rfc6070": "https://www.rfc-editor.org/rfc/rfc6070",
+    "rfc6229": "https://www.rfc-editor.org/rfc/rfc6229"
+  },
+  "status": "controls-only; Rev7 not run",
+  "tools": {
+    "implementation": "CPython",
+    "pycryptodome": "3.23.0",
+    "python": "3.9.6"
+  }
+}

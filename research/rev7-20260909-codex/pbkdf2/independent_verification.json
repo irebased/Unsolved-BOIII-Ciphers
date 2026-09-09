@@ -1,0 +1,20 @@
+{
+  "best_ascii_fraction": {
+    "all_ascii": false,
+    "fraction": 0.43040293040293043,
+    "recipe": [
+      "forward",
+      "TripleDES",
+      "CFB"
+    ],
+    "strict_utf8": false
+  },
+  "complete_allowed_ascii": 0,
+  "complete_strict_utf8": 0,
+  "controls_sha256": "3859bf3fba7e806452f43f0706783f1583101b87be39c39518ce8b3ecec883fa",
+  "identity": "ASTRA",
+  "results_sha256": "45707e777d67c71e77fa519f282c6077e5e148825116e076f6d74a69c4c7afe8",
+  "rows_checked": 52,
+  "run_py_sha256": "1ddc872eda0e5a922bd233b30f57e48b533b2a67b70d899ed0facfe2f8ed0411",
+  "status": "verified"
+}
