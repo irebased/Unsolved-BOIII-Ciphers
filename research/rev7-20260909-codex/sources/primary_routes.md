@@ -109,3 +109,11 @@ The two exact archived Online-Domain-Tools JS URLs supplied by FABLE were not re
 The web tool rejected the nested archive URLs and a browser request stalled without yielding content. No claim about the actual SHA-1 IV handling can be established by this retrieval. Computing the SHA-1 digest of the password verifies a numerical correspondence only. No pinned libmcrypt OFB8 source or OFB8 known-answer vector was retrieved in this subtask.
 
 FABLE separately supplied locally retrieved Tools4Noobs HTML. The reusable `t4n_html_inventory.py` and frozen `t4n_html_inventory.json` record matching hashes and observed form options from three supplied files. Both encryption pages have 19 algorithm options and 8 modes; the converter offers bases 2–30. The files do not contain an embedded archive-capture timestamp. The inventory is a local HTML inspection, not a reconstruction of the backend or independent retrieval provenance.
+
+## Capture correction
+
+The local source set now contains three encryption HTML captures plus one base-converter HTML artifact. The Tools4Noobs encryption HTML previously labeled `encrypt_2016.html` is now canonicalized as `encrypt_capture_20150910.html`. Its Memento response header records `memento-datetime: Thu, 10 Sep 2015 01:46:01 GMT`, and the redirect states capture `20150910014601`; this is direct capture evidence from `t4n/hdr_exact.txt`, not an inference from a requested URL. The file SHA-256 is `5a86122f5680a1974624beca07aeb3cc9bc20978b506912ab3cbdfb93b9fa3cd`. A separate local `encrypt_20171028.html` artifact has SHA-256 `f850ddd38f398554cb0b1640ebb0a3bb346301cc71ecd04898d08cc480a13c52`. This correction concerns capture dating only and does not establish backend behavior.
+
+## Historical OFB source note
+
+The historical OFB source was later retrieved by root at pinned libmcrypt mirror commit [`3bd338e2f808e985f5b229a7642d48c26615993f`](https://github.com/Distrotech/libmcrypt/tree/3bd338e2f808e985f5b229a7642d48c26615993f), including `ofb.c` and `nofb.c`. This source pointer documents separate files; it does not by itself establish a complete runtime or Rev7 attribution.

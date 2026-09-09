@@ -1,4 +1,43 @@
 {
+  "capture_evidence": {
+    "cdx_encrypt_2014_2017.txt": {
+      "archive_orig_date": [],
+      "memento_datetime": [],
+      "sha256": "f161f4a24494e3dbbc997cc500fe4c2eb69f0cb25494f0e25b747bdb529b27cb",
+      "status_lines": [
+        "20140110155113 200 YFXM2VU6RMDH6FCYDR322YRJVWYDO62W",
+        "20141111145823 200 ZD5IDTPQYUIXB6NYBM3WOM6GGA3VZTQ5",
+        "20141126183847 200 NIPCGA3TBPAOTJ5GCIUGV7WCZF3TXU2X",
+        "20150121193921 200 4OPXN4R5U52X75OXDJDLS37X4BLLOSGS",
+        "20150203094922 200 TCB5V52UVTIUYOVQOPNYSEVS4QGD54F3",
+        "20150521042120 200 2OR4ERBATUBKUAI4JHWQ23QBUSTUDFP5",
+        "20150712034410 200 WYGUCBZZCWTI5BWJUQ35HVYMPH4XQJOT",
+        "20150720212244 200 ISYRFSD4T4VZ2B3BHF5MDHW5IGLPR4FN",
+        "20150722030803 200 2OR4ERBATUBKUAI4JHWQ23QBUSTUDFP5",
+        "20150910160923 301 3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+        "20160305184420 301 ODCSEICXO44YQ4ALBN5J35IZEKDVF4PW",
+        "20160305185848 301 3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+        "20171028173254 200 NUCBD46C3MET7D5XZX6HRH4VNYMK77GJ"
+      ]
+    },
+    "hdr_exact.txt": {
+      "archive_orig_date": [
+        "Thu, 10 Sep 2015 01:46:01 GMT"
+      ],
+      "memento_datetime": [
+        "Thu, 10 Sep 2015 01:46:01 GMT"
+      ],
+      "sha256": "6b0711815cbb570c0d0809db1718a78799d25aaf65dd7b8a1380a7a1350a1db0",
+      "status_lines": [
+        "HTTP/1.1 302 FOUND",
+        "Date: Wed, 09 Sep 2026 22:21:21 GMT",
+        "location: http://web.archive.org/web/20150910014601id_/http://www.tools4noobs.com/online_tools/encrypt/",
+        "HTTP/1.1 200 OK",
+        "Date: Wed, 09 Sep 2026 22:21:22 GMT",
+        "link: <http://www.tools4noobs.com/online_tools/encrypt/>; rel=\"original\", <http://web.archive.org/web/timemap/link/http://www.tools4noobs.com/online_tools/encrypt/>; rel=\"timemap\"; type=\"application/link-format\", <http://web.archive.org/web/http://www.tools4noobs.com/online_tools/encrypt/>; rel=\"timegate\""
+      ]
+    }
+  },
   "directory": "/private/tmp/rev7-fable-20260909/t4n",
   "files": {
     "base_convert.html": {
@@ -422,7 +461,187 @@
       "size": 9455,
       "timestamp_context": []
     },
-    "encrypt_2016.html": {
+    "encrypt_20171028.html": {
+      "archive_date_strings": [],
+      "expected_sha256": "f850ddd38f398554cb0b1640ebb0a3bb346301cc71ecd04898d08cc480a13c52",
+      "forms": [
+        {
+          "attrs": {
+            "action": "//www.tools4noobs.com/",
+            "class": "form-inline",
+            "method": "post",
+            "onsubmit": "return do_submit()"
+          },
+          "inputs": [
+            {
+              "attrs": {
+                "name": "action",
+                "type": "hidden",
+                "value": "ajax_encrypt"
+              },
+              "tag": "input"
+            },
+            {
+              "attrs": {
+                "id": "key",
+                "name": "key",
+                "size": "50",
+                "type": "text"
+              },
+              "tag": "input"
+            },
+            {
+              "attrs": {
+                "class": "span9",
+                "cols": "20",
+                "id": "text",
+                "name": "text",
+                "rows": "10"
+              },
+              "tag": "textarea"
+            },
+            {
+              "attrs": {
+                "checked": "checked",
+                "id": "encode",
+                "name": "encode",
+                "type": "checkbox",
+                "value": "1"
+              },
+              "tag": "input"
+            },
+            {
+              "attrs": {
+                "class": "btn btn-primary",
+                "type": "submit",
+                "value": "Encrypt this!"
+              },
+              "tag": "input"
+            }
+          ],
+          "selects": [
+            {
+              "attrs": {
+                "id": "algo",
+                "name": "algo"
+              },
+              "options": [
+                {
+                  "value": "arcfour"
+                },
+                {
+                  "value": "blowfish"
+                },
+                {
+                  "value": "blowfish-compat"
+                },
+                {
+                  "value": "cast-128"
+                },
+                {
+                  "value": "cast-256"
+                },
+                {
+                  "value": "des"
+                },
+                {
+                  "value": "enigma"
+                },
+                {
+                  "value": "gost"
+                },
+                {
+                  "value": "loki97"
+                },
+                {
+                  "value": "rc2"
+                },
+                {
+                  "value": "rijndael-128"
+                },
+                {
+                  "value": "rijndael-192"
+                },
+                {
+                  "value": "rijndael-256"
+                },
+                {
+                  "value": "saferplus"
+                },
+                {
+                  "value": "serpent"
+                },
+                {
+                  "value": "tripledes"
+                },
+                {
+                  "value": "twofish"
+                },
+                {
+                  "value": "wake"
+                },
+                {
+                  "value": "xtea"
+                }
+              ]
+            },
+            {
+              "attrs": {
+                "class": "btn-mini",
+                "id": "mode",
+                "name": "mode"
+              },
+              "options": [
+                {
+                  "value": "cbc"
+                },
+                {
+                  "value": "cfb"
+                },
+                {
+                  "value": "ctr"
+                },
+                {
+                  "value": "ecb"
+                },
+                {
+                  "value": "ncfb"
+                },
+                {
+                  "value": "nofb"
+                },
+                {
+                  "value": "ofb"
+                },
+                {
+                  "value": "stream"
+                }
+              ]
+            },
+            {
+              "attrs": {
+                "id": "encode_method",
+                "name": "encode_method"
+              },
+              "options": [
+                {
+                  "value": "1"
+                },
+                {
+                  "value": "2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "hash_match": true,
+      "precision_context": [],
+      "sha256": "f850ddd38f398554cb0b1640ebb0a3bb346301cc71ecd04898d08cc480a13c52",
+      "size": 8389,
+      "timestamp_context": []
+    },
+    "encrypt_capture_20150910.html": {
       "archive_date_strings": [],
       "expected_sha256": "5a86122f5680a1974624beca07aeb3cc9bc20978b506912ab3cbdfb93b9fa3cd",
       "forms": [
