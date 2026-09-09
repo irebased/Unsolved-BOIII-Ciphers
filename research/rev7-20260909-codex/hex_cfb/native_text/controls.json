@@ -1,0 +1,326 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "caps_are_incomplete_prefixes_only": true,
+    "native_stats_weights_maps_plaintexts_equal_python": true
+  },
+  "backend": {
+    "blowfish_key_hex": "5a6f6d62696573",
+    "blowfish_key_length": 7,
+    "build_command": [
+      "clang++",
+      "-std=c++17",
+      "-O3",
+      "-Wno-deprecated-declarations",
+      "native_text.cpp",
+      "-o",
+      "native_text",
+      "-I/opt/homebrew/Cellar/openssl@3/3.6.3/include",
+      "-L/opt/homebrew/Cellar/openssl@3/3.6.3/lib",
+      "-lcrypto",
+      "-Wl,-rpath,/opt/homebrew/Cellar/openssl@3/3.6.3/lib"
+    ],
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "openssl_version": "3.6.3"
+  },
+  "cfb8_controls": {
+    "aes128": {
+      "ciphertext_sha256": "12cacc8939c77640dc5caa4835071b0e0189a0db4985e88e603023aec2eee7b9",
+      "full_byte_roundtrip": true,
+      "native_matches_python_manual_and_library": true
+    },
+    "blowfish": {
+      "ciphertext_sha256": "a6e791880a932537cd4897a169da52851610e039a60ef782b7ddc7b973b4994c",
+      "full_byte_roundtrip": true,
+      "native_matches_python_manual_and_library": true
+    },
+    "des": {
+      "ciphertext_sha256": "c4cbf9368589de54c6fc8f551d24ca6b124137a5d74f70793ccfba2eb67e6a81",
+      "full_byte_roundtrip": true,
+      "native_matches_python_manual_and_library": true
+    }
+  },
+  "endpoint": {
+    "ascii_bytes": "TAB LF CR and 32..126",
+    "terminal_state": 0,
+    "utf8_sequences": [
+      "e28093",
+      "e28094",
+      "e28098",
+      "e28099"
+    ]
+  },
+  "full16_capped_exact_prefix_equivalence": [
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12866125160476,
+      "cipher": "aes128",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0136093,
+      "node_limit": 250000,
+      "python_plus_native_wall_seconds": 0.7224114589999999,
+      "solution_count": 0,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 24,
+        "nodes": 250000,
+        "rejected_completion_weight": 12866125160476,
+        "rejected_plaintext": 404380,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12872048081016,
+      "cipher": "aes128",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0544179,
+      "node_limit": 1000000,
+      "python_plus_native_wall_seconds": 2.840881833,
+      "solution_count": 0,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 24,
+        "nodes": 1000000,
+        "rejected_completion_weight": 12872048081016,
+        "rejected_plaintext": 1616650,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    }
+  ],
+  "identity": "ASTRA",
+  "same_symbol_control": {
+    "certificate_complete": true,
+    "certificate_weight": 1,
+    "cipher": "aes128",
+    "display": "0000",
+    "expected_completion_weight": 1,
+    "native_seconds": 4.917e-06,
+    "node_limit": 1000,
+    "solution_count": 0,
+    "solutions": [],
+    "stats": {
+      "aborted_at_node_limit": false,
+      "complete": 0,
+      "maximum_depth": 1,
+      "nodes": 2,
+      "rejected_completion_weight": 1,
+      "rejected_plaintext": 1,
+      "rejected_unterminated_endpoint": 0,
+      "terminal_completion_weight": 0
+    },
+    "unassigned_same_high_low_symbol": 0
+  },
+  "scope": "synthetic controls only; no Rev7 input read",
+  "seeded_four_unknown_exact_equivalence": [
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "aes128",
+      "expected_completion_weight": 24,
+      "expected_mapping_recovered": true,
+      "native_seconds": 1.975e-05,
+      "node_limit": 100000,
+      "plant_plaintext_hex": "4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b",
+      "solution_count": 1,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_hex": "4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 152,
+        "nodes": 167,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 9,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "blowfish",
+      "expected_completion_weight": 24,
+      "expected_mapping_recovered": true,
+      "native_seconds": 6.2125e-05,
+      "node_limit": 100000,
+      "plant_plaintext_hex": "4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b",
+      "solution_count": 1,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_hex": "4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 152,
+        "nodes": 160,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 10,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "des",
+      "expected_completion_weight": 24,
+      "expected_mapping_recovered": true,
+      "native_seconds": 3.1042e-05,
+      "node_limit": 100000,
+      "plant_plaintext_hex": "4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b",
+      "solution_count": 1,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_hex": "4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 152,
+        "nodes": 158,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 8,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "source_hashes": {
+    "controls.py": "ec1d6eb0da0ce15683d90aada96c5b0c8fedd31f68df4edb9e65e8979f7ab93e",
+    "native_text.cpp": "1d01495a5562a134b1371017e3cf5f0c8726093b9c5a9871030a9652da746591",
+    "native_text_binary": "b932d9abaa999d0c85b26c336c43a0940daea7260ebbb1da2b4b0a628e2e8540",
+    "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b"
+  },
+  "target_evaluated": false,
+  "unterminated_endpoint_controls": [
+    {
+      "certificate_complete": true,
+      "certificate_weight": 1,
+      "cipher": "aes128",
+      "expected_completion_weight": 1,
+      "fixture": "truncated_e2",
+      "native_seconds": 5.75e-06,
+      "node_limit": 1000,
+      "plaintext_hex": "4f4be2",
+      "solution_count": 0,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 0,
+        "maximum_depth": 3,
+        "nodes": 4,
+        "rejected_completion_weight": 1,
+        "rejected_plaintext": 0,
+        "rejected_unterminated_endpoint": 1,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": true,
+      "certificate_weight": 1,
+      "cipher": "aes128",
+      "expected_completion_weight": 1,
+      "fixture": "truncated_e280",
+      "native_seconds": 6.166e-06,
+      "node_limit": 1000,
+      "plaintext_hex": "4f4be280",
+      "solution_count": 0,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 0,
+        "maximum_depth": 4,
+        "nodes": 5,
+        "rejected_completion_weight": 1,
+        "rejected_plaintext": 0,
+        "rejected_unterminated_endpoint": 1,
+        "terminal_completion_weight": 0
+      }
+    }
+  ]
+}
