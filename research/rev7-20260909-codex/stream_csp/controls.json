@@ -1,0 +1,488 @@
+{
+  "full16_mixed_utf8_plants": [
+    {
+      "all_16_display_symbols": true,
+      "certificate": 20922789888000,
+      "cipher": "aes128",
+      "complete": true,
+      "elapsed_seconds": 0.048713625,
+      "fsa_survivors": 1,
+      "iv": "sha1_prefix",
+      "mode": "ofb8",
+      "nodes": 17,
+      "plant_recovered": true,
+      "relaxed_survivors": 1,
+      "repeated_pair_constraint": true,
+      "same_symbol_pair_constraint": true
+    },
+    {
+      "all_16_display_symbols": true,
+      "certificate": 20922789888000,
+      "cipher": "aes128",
+      "complete": true,
+      "elapsed_seconds": 0.046674875000000005,
+      "fsa_survivors": 1,
+      "iv": "sha1_prefix",
+      "mode": "fullblock_ofb",
+      "nodes": 17,
+      "plant_recovered": true,
+      "relaxed_survivors": 1,
+      "repeated_pair_constraint": true,
+      "same_symbol_pair_constraint": true
+    },
+    {
+      "all_16_display_symbols": true,
+      "certificate": 20922789888000,
+      "cipher": "blowfish",
+      "complete": true,
+      "elapsed_seconds": 0.04400754200000001,
+      "fsa_survivors": 1,
+      "iv": "sha1_prefix",
+      "mode": "ofb8",
+      "nodes": 17,
+      "plant_recovered": true,
+      "relaxed_survivors": 1,
+      "repeated_pair_constraint": true,
+      "same_symbol_pair_constraint": true
+    },
+    {
+      "all_16_display_symbols": true,
+      "certificate": 20922789888000,
+      "cipher": "blowfish",
+      "complete": true,
+      "elapsed_seconds": 0.04387650000000001,
+      "fsa_survivors": 1,
+      "iv": "sha1_prefix",
+      "mode": "fullblock_ofb",
+      "nodes": 17,
+      "plant_recovered": true,
+      "relaxed_survivors": 1,
+      "repeated_pair_constraint": true,
+      "same_symbol_pair_constraint": true
+    },
+    {
+      "all_16_display_symbols": true,
+      "certificate": 20922789888000,
+      "cipher": "des",
+      "complete": true,
+      "elapsed_seconds": 0.04424433399999997,
+      "fsa_survivors": 1,
+      "iv": "sha1_prefix",
+      "mode": "ofb8",
+      "nodes": 17,
+      "plant_recovered": true,
+      "relaxed_survivors": 1,
+      "repeated_pair_constraint": true,
+      "same_symbol_pair_constraint": true
+    },
+    {
+      "all_16_display_symbols": true,
+      "certificate": 20922789888000,
+      "cipher": "des",
+      "complete": true,
+      "elapsed_seconds": 0.05285583299999996,
+      "fsa_survivors": 1,
+      "iv": "sha1_prefix",
+      "mode": "fullblock_ofb",
+      "nodes": 17,
+      "plant_recovered": true,
+      "relaxed_survivors": 1,
+      "repeated_pair_constraint": true,
+      "same_symbol_pair_constraint": true
+    }
+  ],
+  "fullblock_pycryptodome_controls": [
+    {
+      "cipher": "aes128",
+      "ciphertext_sha256": "de687ca7ae19158d674278e22567e2c080ccf720940b701a22153dd7882c90c9",
+      "iv": "ascii_zero",
+      "pycryptodome_mode_ofb_match": true,
+      "roundtrip": true
+    },
+    {
+      "cipher": "aes128",
+      "ciphertext_sha256": "6427d20a30a77edb59bc425484e781a44c7cecf39a8a35032f7b4772a095ad13",
+      "iv": "nul",
+      "pycryptodome_mode_ofb_match": true,
+      "roundtrip": true
+    },
+    {
+      "cipher": "aes128",
+      "ciphertext_sha256": "c648f7c7974c93ad30d445be5792fcb17fc248c1a95139fe1f96883334f17966",
+      "iv": "sha1_prefix",
+      "pycryptodome_mode_ofb_match": true,
+      "roundtrip": true
+    },
+    {
+      "cipher": "blowfish",
+      "ciphertext_sha256": "f547e20be33b1c92b15071d63a0e39238a6a5bd33eebb73ddee87b17c510ebf2",
+      "iv": "ascii_zero",
+      "pycryptodome_mode_ofb_match": true,
+      "roundtrip": true
+    },
+    {
+      "cipher": "blowfish",
+      "ciphertext_sha256": "752ca67df2dd90ad3fe636ac62ed0c9427b16c6bb321405cb327c498c0db7f8e",
+      "iv": "nul",
+      "pycryptodome_mode_ofb_match": true,
+      "roundtrip": true
+    },
+    {
+      "cipher": "blowfish",
+      "ciphertext_sha256": "ed37611efda862ea654bd3e9c31d9b7887729e248b47b3b71b6c1676b3bd1199",
+      "iv": "sha1_prefix",
+      "pycryptodome_mode_ofb_match": true,
+      "roundtrip": true
+    },
+    {
+      "cipher": "des",
+      "ciphertext_sha256": "95fd47fc6893863c1a60637b111f9f7e64252055915cf4da7cc2d9f0000dcea9",
+      "iv": "ascii_zero",
+      "pycryptodome_mode_ofb_match": true,
+      "roundtrip": true
+    },
+    {
+      "cipher": "des",
+      "ciphertext_sha256": "c5b4628f25c8786a3f599fcf934aaa24805001d55cb1cf11aac5ce8e094e1922",
+      "iv": "nul",
+      "pycryptodome_mode_ofb_match": true,
+      "roundtrip": true
+    },
+    {
+      "cipher": "des",
+      "ciphertext_sha256": "4c20f15c3efd247a2e4065b2687904a4dbfc90659d5e32238b3e4e0ba2001ea4",
+      "iv": "sha1_prefix",
+      "pycryptodome_mode_ofb_match": true,
+      "roundtrip": true
+    }
+  ],
+  "identity": "ASTRA",
+  "ofb8_actual_c_source_fixtures": [
+    {
+      "cipher": "aes128",
+      "ciphertext_sha256": "8bdd13d29344c5691c043f7c4ae526d743f926a13657094fb9de7d0030a2a798",
+      "fixture": "all_256_bytes",
+      "iv_kind": "ascii_zero",
+      "matches_actual_c_fixture": true
+    },
+    {
+      "cipher": "aes128",
+      "ciphertext_sha256": "2e3447236b663cd5af3f0ebbe6db3a5e5cd8c3c9acdfc9b0299407af3fad0af2",
+      "fixture": "literal_ascii",
+      "iv_kind": "ascii_zero",
+      "matches_actual_c_fixture": true
+    },
+    {
+      "cipher": "aes128",
+      "ciphertext_sha256": "52fbb1fd7ac69e4fd0f3dd0d0a99e9a4eba87484a4d83d2e4a2c7be77aaeddda",
+      "fixture": "all_256_bytes",
+      "iv_kind": "nul",
+      "matches_actual_c_fixture": true
+    },
+    {
+      "cipher": "aes128",
+      "ciphertext_sha256": "2713e61551958db509ebc1e0aecc353eaca491a4696cef64e82f67c837010f24",
+      "fixture": "literal_ascii",
+      "iv_kind": "nul",
+      "matches_actual_c_fixture": true
+    },
+    {
+      "cipher": "blowfish",
+      "ciphertext_sha256": "e1c2ea2e4574c78b3c7fb260339b17c51962e27a21d264626e90535342607fce",
+      "fixture": "all_256_bytes",
+      "iv_kind": "ascii_zero",
+      "matches_actual_c_fixture": true
+    },
+    {
+      "cipher": "blowfish",
+      "ciphertext_sha256": "ed6670af6f6087742a010c64c96895c3273edc0d2eacc051461a399678800526",
+      "fixture": "literal_ascii",
+      "iv_kind": "ascii_zero",
+      "matches_actual_c_fixture": true
+    },
+    {
+      "cipher": "blowfish",
+      "ciphertext_sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880",
+      "fixture": "all_256_bytes",
+      "iv_kind": "nul",
+      "matches_actual_c_fixture": true
+    },
+    {
+      "cipher": "blowfish",
+      "ciphertext_sha256": "356c2a2c94e9ca1ecee621d23be6401657e892581ac6e5b7631c1ea676ed1352",
+      "fixture": "literal_ascii",
+      "iv_kind": "nul",
+      "matches_actual_c_fixture": true
+    },
+    {
+      "cipher": "des",
+      "ciphertext_sha256": "60badfa20a64ddebacbb58d13f993dcd2f9e8dc50c9e99b4c8c05c765df3104c",
+      "fixture": "all_256_bytes",
+      "iv_kind": "ascii_zero",
+      "matches_actual_c_fixture": true
+    },
+    {
+      "cipher": "des",
+      "ciphertext_sha256": "28e52d2824b9806b2c68e064c26106d2aa864f3d68548629071d0ad2e909b57f",
+      "fixture": "literal_ascii",
+      "iv_kind": "ascii_zero",
+      "matches_actual_c_fixture": true
+    },
+    {
+      "cipher": "des",
+      "ciphertext_sha256": "6a96f1b071caee1ff689b02f6bd763786d0f1453bb598e0583402c87e1ad9c80",
+      "fixture": "all_256_bytes",
+      "iv_kind": "nul",
+      "matches_actual_c_fixture": true
+    },
+    {
+      "cipher": "des",
+      "ciphertext_sha256": "5d41d1d3152e126f6f8001fd22aa9f588ea4eb0526d7e16705529e433ab4dcf6",
+      "fixture": "literal_ascii",
+      "iv_kind": "nul",
+      "matches_actual_c_fixture": true
+    }
+  ],
+  "proof": {
+    "certificate": "At each MRV assignment every unused value is visited. A support-empty child charges (16-assigned)! completions; surviving children recurse. These disjoint branches plus terminal mappings partition the parent subtree.",
+    "relation_relaxation": "Relations intersect necessary per-position byte membership only. Complete relaxed survivors are separately replayed in original order through the stateful endpoint FSA.",
+    "support_pruning": "A value is removed only when a pair relation has no supported partner in the neighbor domain, or allDifferent has already consumed it; an empty domain therefore has no bijective completion."
+  },
+  "root_pruning_and_cap_controls": {
+    "cap_one": {
+      "capped": true,
+      "certificate_complete": false,
+      "certificate_weight": 19615115520000,
+      "expected_weight": 20922789888000,
+      "node_limit": 1,
+      "nodes": 1,
+      "terminal_weight": 0
+    },
+    "empty_repeated_pair": {
+      "certificate_complete": true,
+      "direct_diagonal_assignments_checked": 16,
+      "direct_valid": 0,
+      "nodes": 0,
+      "rejected_weight": 20922789888000,
+      "relation_empty": true
+    },
+    "singleton_all_different_clash": {
+      "both_force_value": 5,
+      "both_relations_nonempty": true,
+      "certificate_complete": true,
+      "direct_distinct_assignments_checked": 240,
+      "direct_valid": 0,
+      "nodes": 0,
+      "rejected_weight": 20922789888000
+    }
+  },
+  "runtime": {
+    "pycryptodome": "3.23.0",
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "scope": {
+    "ciphers": [
+      "aes128",
+      "blowfish",
+      "des"
+    ],
+    "final_endpoint": "ASCII plus E2 80 93/94/98/99, terminal state zero",
+    "iv_kinds": [
+      "ascii_zero",
+      "nul",
+      "sha1_prefix"
+    ],
+    "modes": [
+      "ofb8",
+      "fullblock_ofb"
+    ],
+    "node_limit": 1000000,
+    "relaxed_bytes": [
+      9,
+      10,
+      13,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      128,
+      147,
+      148,
+      152,
+      153,
+      226
+    ]
+  },
+  "seeded_four_unknown_naive_controls": [
+    {
+      "certificate": 24,
+      "cipher": "aes128",
+      "complete": true,
+      "exact_survivor_sets_match": true,
+      "fsa_survivors": 1,
+      "mode": "ofb8",
+      "naive_mapping_count": 24,
+      "nodes": 5,
+      "relaxed_survivors": 1
+    },
+    {
+      "certificate": 24,
+      "cipher": "aes128",
+      "complete": true,
+      "exact_survivor_sets_match": true,
+      "fsa_survivors": 1,
+      "mode": "fullblock_ofb",
+      "naive_mapping_count": 24,
+      "nodes": 5,
+      "relaxed_survivors": 1
+    },
+    {
+      "certificate": 24,
+      "cipher": "blowfish",
+      "complete": true,
+      "exact_survivor_sets_match": true,
+      "fsa_survivors": 1,
+      "mode": "ofb8",
+      "naive_mapping_count": 24,
+      "nodes": 5,
+      "relaxed_survivors": 1
+    },
+    {
+      "certificate": 24,
+      "cipher": "blowfish",
+      "complete": true,
+      "exact_survivor_sets_match": true,
+      "fsa_survivors": 3,
+      "mode": "fullblock_ofb",
+      "naive_mapping_count": 24,
+      "nodes": 10,
+      "relaxed_survivors": 3
+    },
+    {
+      "certificate": 24,
+      "cipher": "des",
+      "complete": true,
+      "exact_survivor_sets_match": true,
+      "fsa_survivors": 1,
+      "mode": "ofb8",
+      "naive_mapping_count": 24,
+      "nodes": 5,
+      "relaxed_survivors": 1
+    },
+    {
+      "certificate": 24,
+      "cipher": "des",
+      "complete": true,
+      "exact_survivor_sets_match": true,
+      "fsa_survivors": 1,
+      "mode": "fullblock_ofb",
+      "naive_mapping_count": 24,
+      "nodes": 5,
+      "relaxed_survivors": 1
+    }
+  ],
+  "source_hashes": {
+    "controls.py": "fdd921ecff19a287fe0c1689839fed521b2fe0007e6fda3ae5d84f3d5a978c97",
+    "core.py": "d92be85a1738d8efb9fe8c9a7b41102f78a659db679334d113384ad3cc9eadb7",
+    "ofb8_results.json": "20d226a76ede6b63a9f6e07675e2733c5bc74b0e5c86f3d960ebf56caeed10f9"
+  },
+  "target_evaluated": false,
+  "truncated_utf8_control": {
+    "certificate": 24,
+    "exact_naive_sets_match": true,
+    "fsa_rejects_unterminated_plant": true,
+    "plaintext_hex": "414243e280",
+    "relaxed_accepts_plant": true
+  }
+}

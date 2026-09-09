@@ -1,0 +1,1613 @@
+{
+  "all_72_complete_certificates_checked": true,
+  "bijective_byte_count_contradictions_verified": 4,
+  "compile_command": [
+    "cc",
+    "-shared",
+    "-fPIC",
+    "-O2",
+    "-I",
+    "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/sources/ofb8",
+    "-o",
+    "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/sources/ofb8/build/libofb8.so",
+    "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/sources/ofb8/ofb.c"
+  ],
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "historical_source_hashes": {
+    "libdefs.h": "2ee660093968833b62d3c52271683874d401dc988c9d8e9f07ad2fc04f3e7975",
+    "mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "ofb.c": "aec1699eecb37e4791e704d074e88fbe210f62dd75e6c1face8a5fc302ee926d",
+    "run.py": "66e719b03625b163e4018a3c7531069a2b51dcb69131842721ce6d6a5fef5bf9"
+  },
+  "identity": "ASTRA",
+  "independent_streams_verified": 18,
+  "ledger_sha256": "f1d9024065f82e75479c4e03f1c871f9c2e0c661e63c6a42cb6da6594addde87",
+  "rows": [
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        92,
+        188,
+        48
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "forward",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        34,
+        93,
+        178,
+        199
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        34,
+        93,
+        178,
+        199
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "byte_reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        92,
+        188,
+        48
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "nibble_swap",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        247,
+        126,
+        111,
+        26
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "forward",
+      "pair": "0D",
+      "positions": [
+        59,
+        245,
+        399,
+        453
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        12,
+        26,
+        246,
+        200
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "reverse",
+      "pair": "12",
+      "positions": [
+        294,
+        324,
+        336,
+        377
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        110,
+        126,
+        181,
+        40,
+        205
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "byte_reverse",
+      "pair": "0E",
+      "positions": [
+        58,
+        264,
+        330,
+        333,
+        401
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        33,
+        65,
+        250,
+        214
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "nibble_swap",
+      "pair": "12",
+      "positions": [
+        168,
+        209,
+        221,
+        251
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        219,
+        58,
+        12,
+        146
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "forward",
+      "pair": "0E",
+      "positions": [
+        144,
+        212,
+        215,
+        281
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        83,
+        59,
+        2,
+        134,
+        204
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353,
+        527
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        83,
+        59,
+        2,
+        134,
+        204
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "byte_reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353,
+        527
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        73,
+        61,
+        215,
+        157
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "nibble_swap",
+      "pair": "04",
+      "positions": [
+        86,
+        174,
+        412,
+        499
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        199,
+        87,
+        64,
+        201
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "forward",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        54,
+        45,
+        239,
+        245
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        54,
+        45,
+        239,
+        245
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "byte_reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        199,
+        87,
+        64,
+        201
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "nibble_swap",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        214,
+        55,
+        68,
+        44,
+        223
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "forward",
+      "pair": "0D",
+      "positions": [
+        59,
+        245,
+        399,
+        453,
+        500
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        1,
+        173,
+        169,
+        57
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        1,
+        173,
+        169,
+        57
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "byte_reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        116,
+        145,
+        49,
+        18
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "nibble_swap",
+      "pair": "04",
+      "positions": [
+        86,
+        174,
+        412,
+        499
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        213,
+        225,
+        148,
+        7
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "forward",
+      "pair": "0D",
+      "positions": [
+        59,
+        245,
+        399,
+        453
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        173,
+        125,
+        63,
+        236
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        173,
+        125,
+        63,
+        236
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "byte_reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "aes128",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        135,
+        173,
+        193,
+        235,
+        68
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "nibble_swap",
+      "pair": "26",
+      "positions": [
+        73,
+        136,
+        352,
+        472,
+        496
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        37,
+        220,
+        170,
+        13,
+        77
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "forward",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309,
+        342
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        217,
+        171,
+        202,
+        66
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "reverse",
+      "pair": "06",
+      "positions": [
+        35,
+        265,
+        295,
+        505
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        226,
+        188,
+        86,
+        16
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "byte_reverse",
+      "pair": "0D",
+      "positions": [
+        45,
+        92,
+        146,
+        300
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        37,
+        220,
+        170,
+        13,
+        77
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "nibble_swap",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309,
+        342
+      ],
+      "survivors": []
+    },
+    {
+      "allowed_plaintext_bytes": 104,
+      "cipher": "blowfish",
+      "distinct_display_bytes": 226,
+      "explanation": "With zero keystream, a bijective byte map preserves 226 distinct bytes; 104 allowed bytes cannot contain them.",
+      "iv_kind": "nul",
+      "keystream_byte": 0,
+      "kind": "constant_stream_distinct_byte_count",
+      "mode": "ofb8",
+      "orientation": "forward",
+      "zero_register_ecb_hex": "00167e439ba83245"
+    },
+    {
+      "allowed_plaintext_bytes": 104,
+      "cipher": "blowfish",
+      "distinct_display_bytes": 226,
+      "explanation": "With zero keystream, a bijective byte map preserves 226 distinct bytes; 104 allowed bytes cannot contain them.",
+      "iv_kind": "nul",
+      "keystream_byte": 0,
+      "kind": "constant_stream_distinct_byte_count",
+      "mode": "ofb8",
+      "orientation": "reverse",
+      "zero_register_ecb_hex": "00167e439ba83245"
+    },
+    {
+      "allowed_plaintext_bytes": 104,
+      "cipher": "blowfish",
+      "distinct_display_bytes": 226,
+      "explanation": "With zero keystream, a bijective byte map preserves 226 distinct bytes; 104 allowed bytes cannot contain them.",
+      "iv_kind": "nul",
+      "keystream_byte": 0,
+      "kind": "constant_stream_distinct_byte_count",
+      "mode": "ofb8",
+      "orientation": "byte_reverse",
+      "zero_register_ecb_hex": "00167e439ba83245"
+    },
+    {
+      "allowed_plaintext_bytes": 104,
+      "cipher": "blowfish",
+      "distinct_display_bytes": 226,
+      "explanation": "With zero keystream, a bijective byte map preserves 226 distinct bytes; 104 allowed bytes cannot contain them.",
+      "iv_kind": "nul",
+      "keystream_byte": 0,
+      "kind": "constant_stream_distinct_byte_count",
+      "mode": "ofb8",
+      "orientation": "nibble_swap",
+      "zero_register_ecb_hex": "00167e439ba83245"
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        81,
+        141,
+        189,
+        164,
+        210
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "forward",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309,
+        342
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        70,
+        222,
+        156,
+        102
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        70,
+        222,
+        156,
+        102
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "byte_reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        81,
+        141,
+        189,
+        164,
+        210
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "nibble_swap",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309,
+        342
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        144,
+        69,
+        72,
+        159,
+        44
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "forward",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309,
+        342
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        94,
+        166,
+        55,
+        73,
+        149
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353,
+        527
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        94,
+        166,
+        55,
+        73,
+        149
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "byte_reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353,
+        527
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        144,
+        69,
+        72,
+        159,
+        44
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "nibble_swap",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309,
+        342
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        65,
+        154,
+        172,
+        152,
+        202
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "forward",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309,
+        342
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        120,
+        31,
+        78,
+        48,
+        251
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353,
+        527
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        120,
+        31,
+        78,
+        48,
+        251
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "byte_reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353,
+        527
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        65,
+        154,
+        172,
+        152,
+        202
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "nibble_swap",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309,
+        342
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        90,
+        133,
+        145,
+        144,
+        4
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "forward",
+      "pair": "13",
+      "positions": [
+        155,
+        242,
+        288,
+        410,
+        420
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        30,
+        92,
+        227,
+        108
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        30,
+        92,
+        227,
+        108
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "byte_reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "blowfish",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        216,
+        49,
+        32,
+        95
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "nibble_swap",
+      "pair": "06",
+      "positions": [
+        40,
+        250,
+        280,
+        510
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        21,
+        91,
+        129,
+        216
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "forward",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        180,
+        46,
+        154,
+        54
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        180,
+        46,
+        154,
+        54
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "byte_reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        21,
+        91,
+        129,
+        216
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "nibble_swap",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        149,
+        55,
+        52,
+        193
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "forward",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        15,
+        61,
+        182,
+        176
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "reverse",
+      "pair": "12",
+      "positions": [
+        294,
+        324,
+        336,
+        377
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        14,
+        253,
+        130
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "byte_reverse",
+      "pair": "03",
+      "positions": [
+        118,
+        322,
+        331
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        149,
+        55,
+        52,
+        193
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "nibble_swap",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        2,
+        190,
+        245,
+        210,
+        127
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "forward",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309,
+        342
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        5,
+        225,
+        203,
+        97
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        5,
+        225,
+        203,
+        97
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "byte_reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        2,
+        190,
+        245,
+        210,
+        127
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "ofb8",
+      "orientation": "nibble_swap",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309,
+        342
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        234,
+        251,
+        111,
+        206,
+        82
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "forward",
+      "pair": "0D",
+      "positions": [
+        59,
+        245,
+        399,
+        453,
+        500
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        234,
+        96,
+        72,
+        200
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        234,
+        96,
+        72,
+        200
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "byte_reverse",
+      "pair": "00",
+      "positions": [
+        203,
+        236,
+        347,
+        353
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "ascii_zero",
+      "keystream_bytes": [
+        132,
+        164,
+        51,
+        67
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "nibble_swap",
+      "pair": "04",
+      "positions": [
+        86,
+        174,
+        412,
+        499
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        15,
+        253,
+        18,
+        161
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "forward",
+      "pair": "0D",
+      "positions": [
+        59,
+        245,
+        399,
+        453
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        204,
+        231,
+        73,
+        119
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "reverse",
+      "pair": "06",
+      "positions": [
+        35,
+        265,
+        295,
+        505
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        42,
+        238,
+        196,
+        251,
+        94
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "byte_reverse",
+      "pair": "0E",
+      "positions": [
+        58,
+        264,
+        330,
+        333,
+        401
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "nul",
+      "keystream_bytes": [
+        194,
+        68,
+        32
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "nibble_swap",
+      "pair": "13",
+      "positions": [
+        60,
+        299,
+        459
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        5,
+        13,
+        202,
+        153
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "forward",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        255,
+        36,
+        233,
+        180,
+        120
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "reverse",
+      "pair": "26",
+      "positions": [
+        13,
+        49,
+        73,
+        193,
+        409
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        250,
+        69,
+        67,
+        220
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "byte_reverse",
+      "pair": "06",
+      "positions": [
+        67,
+        74,
+        262,
+        392
+      ],
+      "survivors": []
+    },
+    {
+      "candidate_bytes_checked": 256,
+      "cipher": "des",
+      "iv_kind": "sha1_prefix",
+      "keystream_bytes": [
+        5,
+        13,
+        202,
+        153
+      ],
+      "kind": "unrestricted_fixed_byte_contradiction",
+      "mode": "fullblock_ofb",
+      "orientation": "nibble_swap",
+      "pair": "00",
+      "positions": [
+        18,
+        192,
+        198,
+        309
+      ],
+      "survivors": []
+    }
+  ],
+  "scope": "Independent verification of frozen results; no new key or mapping search.",
+  "target_evaluated": true,
+  "unrestricted_byte_witnesses_verified": 68,
+  "verifier_sha256": "94cb5eb99c771588eb0266e0d3370ccbb58dcfdc2e2b744f2fbe1086895fcd0a"
+}
