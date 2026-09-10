@@ -1,0 +1,16 @@
+{
+  "identity": "ASTRA",
+  "c_source": {
+    "repository": "Distrotech/libmcrypt",
+    "commit": "3bd338e2f808e985f5b229a7642d48c26615993f",
+    "rijndael-256.c_url": "https://github.com/Distrotech/libmcrypt/blob/3bd338e2f808e985f5b229a7642d48c26615993f/modules/algorithms/rijndael-256.c",
+    "rijndael.h_url": "https://github.com/Distrotech/libmcrypt/blob/3bd338e2f808e985f5b229a7642d48c26615993f/modules/algorithms/rijndael.h",
+    "license_url": "https://github.com/Distrotech/libmcrypt/blob/3bd338e2f808e985f5b229a7642d48c26615993f/COPYING.LIB"
+  },
+  "javascript_source": {
+    "description": "Untouched JavaScrypt aes.js reference implementation; its complete copyright and permission notice is retained in source/aes.js.",
+    "local_source": "/private/tmp/rev7-fable-20260909/javascrypt/src/aes.js",
+    "project_url": "http://www.fourmilab.ch/javascrypt/"
+  },
+  "shim_provenance": "Minimal libmcrypt API type/macro shims copied byte-for-byte from the already audited ASTRA native_text5 source_build package. They contain no cipher implementation."
+}

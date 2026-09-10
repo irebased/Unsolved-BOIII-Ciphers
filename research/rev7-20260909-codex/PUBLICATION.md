@@ -533,3 +533,30 @@ This snapshot has no width-13 target gate or evaluation. FABLE preregistration, 
 ## Frozen width-13 byte-AMSCO target gate
 
 Following FABLE preregistration message 147, the [width-13 gate](../byte_amsco/astra/prefix13/native/target/target_gate.json) freezes all 32 contexts, driver/build/control/proof/source artifacts and canonical input identities. Its SHA-256 is `4edfe5ffbced9ca4167f106a9b0c577257cd7292e047f1ffd4d634e808c9880c`. Root's gate-only selftest passed without extracting or evaluating target ciphertext. This publication precedes a separate root GO and target execution.
+
+
+## Completed width-13 byte-AMSCO prefix search
+
+The [completed width-13 result](../byte_amsco/astra/prefix13/native/target/RESULTS.md) closes all 32 preregistered contexts. All 39,536,640 six-column prefixes reject the A105 necessary condition, with zero retained or unexamined prefixes. Each context separately partitions and rejects all 13! column orders through its 7! completion weight. The finite exclusion covers only the registered byte-unit AMSCO geometry, four fixed eight-byte-block CFB8 backends, keys, starts, orientations and text condition, for every external IV.
+
+The [69,972-byte result](../byte_amsco/astra/prefix13/native/target/target_results.json) has SHA-256 `61fff04ed7d8e61f2d74986c086357606c8b9e2877667184ea4d008928329541`. It records 67,022,745 block calls, 5.300495 seconds summed native time and 5.726155248 seconds summed cell wall time. Root reviewed and ran the [portable verifier](../byte_amsco/astra/prefix13/native/target/verify_results.py), including the optional equality check against all 32 local atomic cells. The published combined ledger is sufficient for default verification; duplicate atomic files are not required. This checks integrity, all gate/source dependencies, canonical orientations, exact cells and factorial accounting, without a second negative enumeration.
+
+```sh
+python3 -S -B research/byte_amsco/astra/prefix13/native/target/verify_results.py
+python3 -S -B research/byte_amsco/astra/prefix13/native/target/verify_results.py --check-local-cells
+```
+
+The second command requires the original run's local atomic files.
+
+## Independent Rijndael-256 block controls
+
+The [Rijndael-256 control package](rijndael256_controls/README.md) compares the historical libmcrypt C implementation with untouched JavaScrypt source configured for a 256-bit block. Keys are explicitly constructed as ASCII Zombies followed by NUL to 16, 24 or 32 bytes. This is input construction, not inferred primitive padding. Both implementations agree on the embedded known-answer encryption and full 32-byte decryption, 12 block vectors, nine ECB vectors, 27 CBC vectors and four framing controls. ECB/CBC span one, two and three blocks; CBC covers NUL, ASCII-zero and nonuniform IVs. The mode equations are shared, reviewed Python code over independent primitives.
+
+Root reviewed the C ABI, source/build pins, JS configuration and mode equations, then regenerated the [ledger](rijndael256_controls/controls.json) byte for byte, SHA-256 `2e164a7b6091f5a1c76a1863cd45ddb2c919597350ff20e3ce52c131ed9c804c`. The historical C self-test compares decrypted binary data with strcmp and has a weak check when its first byte is NUL; our controls separately compare all 32 bytes in both implementations. Build shims, unchanged sources, licenses, provenance and reproduction commands are included, without binaries or drafts.
+
+```sh
+python3 -S -B research/rev7-20260909-codex/rijndael256_controls/controls.py
+python3 -B research/rev7-20260909-codex/rijndael256_controls/controls.py --regenerate /tmp/rijndael256-controls.json
+```
+
+The default command checks pinned inputs and recorded structures; explicit regeneration performs the synthetic cryptography. This package reads no Rev7 data and contains no target driver, gate or target result.
