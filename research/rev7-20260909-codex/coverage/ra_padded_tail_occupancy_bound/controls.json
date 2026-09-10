@@ -1,0 +1,163 @@
+{
+  "boundary_status_controls": {
+    "low_alphabet_does_not_prove": {
+      "maximum_supported_threshold": 188,
+      "padded_length": 552,
+      "possible_output_length_max": 552,
+      "possible_output_length_min": 544,
+      "prefix_length": 544,
+      "proves_no_screen_hit": false,
+      "q_distinct": 1,
+      "q_length": 544,
+      "supported_length_count": 9
+    },
+    "no_supported_lengths_does_not_prove": {
+      "maximum_supported_threshold": null,
+      "padded_length": 40,
+      "possible_output_length_max": 40,
+      "possible_output_length_min": 20,
+      "prefix_length": 20,
+      "proves_no_screen_hit": false,
+      "q_distinct": 1,
+      "q_length": 20,
+      "supported_length_count": 0
+    },
+    "out_of_range": {
+      "screen_hit": null,
+      "status": "out-of-range",
+      "threshold_d": null
+    },
+    "short": {
+      "screen_hit": null,
+      "status": "short",
+      "threshold_d": null
+    }
+  },
+  "exhaustive_tiny_tail_outputs_checked": 1210,
+  "identity": "ASTRA",
+  "lemma": {
+    "claim": "Every P||tail, with or without trailing-NUL stripping, begins with Q; therefore D(output)>=D(Q) and len(output) is between len(Q) and padded length.",
+    "construction": "Q=P.rstrip(NUL)",
+    "known_prefix_length": 544,
+    "maximum_table_threshold_over_544_through_576": 192,
+    "production_padded_lengths": {
+      "16": 560,
+      "32": 576,
+      "8": 552
+    }
+  },
+  "limits": [
+    "Controls do not inspect the frozen target result or measure its prefixes.",
+    "A proof requires the first 544 plaintext bytes to be invariant under the compared padding convention.",
+    "This does not prove PHP/tool equivalence, key derivation, IV choice, or any other mode."
+  ],
+  "production_shape": {
+    "16": {
+      "maximum_supported_threshold": 190,
+      "padded_length": 560,
+      "possible_output_length_max": 560,
+      "possible_output_length_min": 541,
+      "prefix_length": 544,
+      "proves_no_screen_hit": true,
+      "q_distinct": 193,
+      "q_length": 541,
+      "supported_length_count": 20
+    },
+    "32": {
+      "maximum_supported_threshold": 192,
+      "padded_length": 576,
+      "possible_output_length_max": 576,
+      "possible_output_length_min": 541,
+      "prefix_length": 544,
+      "proves_no_screen_hit": true,
+      "q_distinct": 193,
+      "q_length": 541,
+      "supported_length_count": 36
+    },
+    "8": {
+      "maximum_supported_threshold": 188,
+      "padded_length": 552,
+      "possible_output_length_max": 552,
+      "possible_output_length_min": 541,
+      "prefix_length": 544,
+      "proves_no_screen_hit": true,
+      "q_distinct": 193,
+      "q_length": 541,
+      "supported_length_count": 12
+    }
+  },
+  "representative_tails": [
+    {
+      "D": 193,
+      "block_size": 8,
+      "output_length": 541,
+      "status": "unflagged",
+      "tail": "zeros"
+    },
+    {
+      "D": 193,
+      "block_size": 8,
+      "output_length": 552,
+      "status": "unflagged",
+      "tail": "existing"
+    },
+    {
+      "D": 201,
+      "block_size": 8,
+      "output_length": 552,
+      "status": "unflagged",
+      "tail": "new"
+    },
+    {
+      "D": 193,
+      "block_size": 16,
+      "output_length": 541,
+      "status": "unflagged",
+      "tail": "zeros"
+    },
+    {
+      "D": 193,
+      "block_size": 16,
+      "output_length": 560,
+      "status": "unflagged",
+      "tail": "existing"
+    },
+    {
+      "D": 209,
+      "block_size": 16,
+      "output_length": 560,
+      "status": "unflagged",
+      "tail": "new"
+    },
+    {
+      "D": 193,
+      "block_size": 32,
+      "output_length": 541,
+      "status": "unflagged",
+      "tail": "zeros"
+    },
+    {
+      "D": 193,
+      "block_size": 32,
+      "output_length": 576,
+      "status": "unflagged",
+      "tail": "existing"
+    },
+    {
+      "D": 225,
+      "block_size": 32,
+      "output_length": 576,
+      "status": "unflagged",
+      "tail": "new"
+    }
+  ],
+  "saved_result_read": false,
+  "scope": "Synthetic controls for a known-prefix distinct-byte lower bound under arbitrary replacement tail and optional trailing-NUL removal.",
+  "source_pins": {
+    "controls.py": "7e2c7f3f318250f2bc01f1818af21aae59cd460d5914ca5eed67320f77d84dba",
+    "model.py": "0c830310ba3bdd823c0bc454153983d2c33a404ca28dec0286c0346da55a7081",
+    "score.js": "6ff228f71ef8e9441c3ba12418d8b49c7238ff4e66ed0eef0f24471a3573ae27",
+    "threshold_table.json": "2d084a536141c8e51045b1fa1052ddfc713e0e5f7a869fd62676cf788dfbb447"
+  },
+  "target_evaluated": false
+}

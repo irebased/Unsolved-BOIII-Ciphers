@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Online decrypt tool - Online tools</title>
+<link rel="stylesheet" href="http://www.tools4noobs.com/css/main-combined.css" />
+<script src="http://www.tools4noobs.com/js/main-combined.js"></script>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="http://www.tools4noobs.com/">Tools4noobs</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav pull-right">
+          <li class="normal"><a href="http://www.tools4noobs.com/">Home</a></li>
+          <li class="normal"><a href="http://www.tools4noobs.com/summarize/">Summarize</a></li>
+          <li class="normal"><a href="http://www.tools4noobs.com/picasa/">Picasa Slideshow</a></li>
+          <li class="active"><a href="http://www.tools4noobs.com/online_tools/">Online tools</a></li>
+          <li class="normal"><a href="http://www.tools4noobs.com/online_php_functions/">Online PHP Functions</a></li>
+          <li class="normal"><a href="http://www.tools4noobs.com/contact/">Contact</a></li>
+          <li class="normal"><a href="http://www.tools4noobs.com/about/">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<header id="header" class="visible-desktop">
+  <div class="container">  
+    <h1>Online decrypt tool</h1>
+  </div>
+</header>
+
+<div id="content" class="container">
+<ul class="breadcrumb" id="breadcrumb">
+  <li><a href="http://www.tools4noobs.com/">Home</a> <span class="divider">/</span></li>
+  <li><a href="http://www.tools4noobs.com/online_tools/">Online tools</a> <span class="divider">/</span></li>
+  <li class="active">Decrypt tool</li>
+</ul>
+  
+<div class="row">    
+<div class="span9">
+<form action="http://www.tools4noobs.com/" method="post" onsubmit="return do_submit()" class="form-inline">
+    <input type="hidden" name="action" value="ajax_decrypt" />
+
+<legend>
+    <p>
+        Encrypts a string using various algorithms (e.g. Blowfish, DES, TripleDES, Enigma). This tool uses the
+        <strong>mcrypt_encrypt()</strong> function in PHP, so for more infos about the parameters used check
+        <a href="http://www.php.net/manual/en/function.mcrypt-encrypt.php" rel="nofollow">the manual</a>.
+    </p>
+    <p>
+        You might also like the <a href="http://www.tools4noobs.com/online_tools/encrypt/">online encrypt tool</a>.
+    </p>
+</legend>
+
+<label for="key">Key:</label> <input type="text" name="key" id="key" size="50" />
+
+<br/>
+
+<textarea name="text" id="text" rows="10" cols="20" class="span9"></textarea>
+
+<label for="algo">Algorithm:</label>
+<select name="algo" id="algo">
+            <option value="arcfour">Arcfour</option>
+            <option value="blowfish">Blowfish</option>
+            <option value="blowfish-compat">Blowfish-compat</option>
+            <option value="cast-128">Cast-128</option>
+            <option value="cast-256">Cast-256</option>
+            <option value="des">Des</option>
+            <option value="enigma">Enigma</option>
+            <option value="gost">Gost</option>
+            <option value="loki97">Loki97</option>
+            <option value="rc2">Rc2</option>
+            <option value="rijndael-128">Rijndael-128</option>
+            <option value="rijndael-192">Rijndael-192</option>
+            <option value="rijndael-256">Rijndael-256</option>
+            <option value="saferplus">Saferplus</option>
+            <option value="serpent">Serpent</option>
+            <option value="tripledes">Tripledes</option>
+            <option value="twofish">Twofish</option>
+            <option value="wake">Wake</option>
+            <option value="xtea">Xtea</option>
+        </select>
+</select>
+
+<label for="mode">Mode:</label>
+<select name="mode" id="mode" class="btn-mini">
+            <option value="cbc">CBC</option>
+            <option value="cfb">CFB</option>
+            <option value="ctr">CTR</option>
+            <option value="ecb">ECB</option>
+            <option value="ncfb">NCFB</option>
+            <option value="nofb">NOFB</option>
+            <option value="ofb">OFB</option>
+            <option value="stream">STREAM</option>
+        </select>
+</select>
+
+<span style="font-size: 0.8em; margin-left: 6px">
+    (if you don't know what <i>mode</i> means, <a href="http://www.tools4noobs.com/online_tools/encrypt/help/">click here</a>
+    or don't worry about it)
+</span>
+
+<br/>
+<input type="checkbox" value="1" name="decode" id="decode" checked="checked" /> <label for="decode">Decode the input using </label>
+
+<select name="decode_method" id="decode_method">
+    <option value="1">Base64</option>
+    <option value="2">Hexa</option>
+</select>
+
+    <div style="text-align: center; margin: auto; margin-top: 10px">
+    <input type="submit" value="Decrypt this!" class="btn btn-primary" />
+    </div>
+
+    </form>
+    
+    <div id="result"></div>
+
+</div>
+    
+<div class="span3">
+    <div id="right-help">
+    <h4>Supported algorithms</h4>
+     
+    <p>
+        <strong>Algorithms supported:</strong> Cast-128, Gost, Rijndael-128, Twofish, Arcfour, Cast-256, Loki97,
+        Rijndael-192, Saferplus, Wake, Blowfish-compat, Des, Rijndael-256, Serpent, Xtea, Blowfish, Enigma, Rc2, Tripledes.
+	</p>
+    <p>
+        <strong>Modes supported:</strong> CBC, CFB, CTR, ECB, NCFB, NOFB, OFB.
+    </p>
+    </div>
+
+    <div id="right-help">
+    <h4>Donate!</h4>
+
+    <p>
+        If you like these tools and you want to help us pay for the hosting you can use the following buttons to donate some money.
+    </p>
+
+    <p style="text-align: center">
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=indy2kro%40yahoo%2ecom&lc=US&item_name=Tools4noobs%2ecom&item_number=TOOLS4NOOBS&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted"><img alt="Donate Button" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" /></a>
+    </p>
+
+    <p style="text-align: center">
+        <a class="FlattrButton" style="display:none;" href="http://www.tools4noobs.com/"></a>
+    </p>
+
+    </div>
+
+</div>
+
+        
+</div>
+
+<script type="text/javascript">
+function do_submit()
+{
+    $('#result').html('<div class="progress progress-striped active"><div class="bar"style="width: 100%;"></div></div>');
+
+    $.ajax({
+      type: 'POST',
+        url: 'http://www.tools4noobs.com/',
+        data: 
+        {
+          action:'ajax_decrypt',
+          key:$('#key').val(),
+          text:$('#text').val(),
+          algo:$('#algo').val(),
+          mode:$('#mode').val(),
+          decode:$('#decode').attr('checked'),
+          decode_method:$('#decode_method').val()
+        },
+        success: function(data) {
+          $('#result').html(data);
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+            $('#result').html("<div class=\"alert alert-error\"> Error " + xhr.status + ": " + thrownError + "</div>");
+        }
+      });
+
+      return false;
+}
+</script><hr />
+
+<footer id="footer">
+  <span>&copy; Copyright <a href="http://www.tools4noobs.com/">Tools 4 noobs</a> 2007-2014. All rights reserved.<br/>
+If you need a particular online tool, don't hesitate to give us a message by using our <a href="http://www.tools4noobs.com/contact/">contact form</a>,
+and we'll see what we can do about it.</span>
+  <span id="totop" class="pull-right">
+      <a href="#">
+      Back to Top <i class="icon-arrow-up"></i>
+      </a>
+  </span>
+</footer>
+</div>
+
+<script>
+$(window).load(function() {
+    $("#totop").click(function () {
+        $("body, html").animate({
+            scrollTop: 0
+        }, 300);
+        return false;
+    }); 
+});
+</script>
+
+</body>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    (function() {
+        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+        t.parentNode.insertBefore(s, t);
+    })();
+/* ]]> */</script>
+
+<span style="display: none">
+<div id="addfreestats"></div>
+<!-- ADDFREESTATS.COM AUTOCODE V5 -->
+<script type="text/javascript">
+<!--
+var AFS_Account="00625146";
+var AFS_Tracker="auto";
+var AFS_Server="www6";
+var AFS_Page="DetectName";
+var AFS_Url="DetectUrl";
+var speed = document.createElement('script');
+speed.type = 'text/javascript';
+speed.async = true;
+speed.src ='http://'+AFS_Server+'.addfreestats.com/cgi-bin/afstracka.cgi?usr='+AFS_Account;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(speed, s);
+// -->
+</script>
+<noscript>
+<a href="http://www.addfreestats.com" rel="nofollow" >
+<img src="http://www6.addfreestats.com/cgi-bin/connect.cgi?usr=00625146Pauto" border="0" alt="AddFreeStats.com Free Web Stats!" /></a>
+</noscript>
+<!-- ENDADDFREESTATS.COM AUTOCODE V4.0  -->
+</span>
+
+</html>

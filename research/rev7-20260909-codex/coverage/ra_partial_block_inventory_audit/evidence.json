@@ -1,0 +1,1173 @@
+{
+  "classification": "post_hoc_saved_result_accounting",
+  "identity": "ASTRA",
+  "input": {
+    "frozen_exact_output_groups": 7029,
+    "frozen_ready_labels": 11700,
+    "length": 546
+  },
+  "limits": [
+    "No row was decrypted or rescored. Output hashes and occupancy values are read from the frozen result.",
+    "This is compatibility accounting between two implementations, not a new C-wrapper conformance run.",
+    "Stream primitives RC4 and Salsa20 are excluded from the rejected subset even when retained RA labels say ECB or CBC, because their mode label is ignored."
+  ],
+  "mode_mapping": [
+    {
+      "libmcrypt_semantics": "cfb8",
+      "ra_name": "cfb",
+      "wasm_code": 0,
+      "wrapper_symbol": "MODE_CFB8"
+    },
+    {
+      "libmcrypt_semantics": "ncfb (full-block CFB)",
+      "ra_name": "ncfb",
+      "wasm_code": 3,
+      "wrapper_symbol": "MODE_CFB"
+    },
+    {
+      "libmcrypt_semantics": "nofb (full-block OFB)",
+      "ra_name": "nofb",
+      "wasm_code": 4,
+      "wrapper_symbol": "MODE_OFB"
+    },
+    {
+      "libmcrypt_semantics": "wrapper custom counter mode",
+      "ra_name": null,
+      "wasm_code": 5,
+      "wrapper_symbol": "MODE_CTR"
+    }
+  ],
+  "mode_note": "The old wrapper UI label `ofb` means its full-block OFB implementation (libmcrypt nofb semantics), not byte-feedback OFB8. RA separately names byte-feedback OFB8 as `ofb` and full-block OFB as `nofb`.",
+  "new_decryption": false,
+  "primitive_metadata": {
+    "3DES": {
+      "block_size": 8,
+      "kind": "block"
+    },
+    "AES": {
+      "block_size": 16,
+      "kind": "block"
+    },
+    "Blowfish": {
+      "block_size": 8,
+      "kind": "block"
+    },
+    "Blowfish-compat": {
+      "block_size": 8,
+      "kind": "block"
+    },
+    "CAST-128": {
+      "block_size": 8,
+      "kind": "block"
+    },
+    "DES": {
+      "block_size": 8,
+      "kind": "block"
+    },
+    "IDEA": {
+      "block_size": 8,
+      "kind": "block"
+    },
+    "Loki97": {
+      "block_size": 16,
+      "kind": "block"
+    },
+    "RC2": {
+      "block_size": 8,
+      "kind": "block"
+    },
+    "RC4": {
+      "block_size": 1,
+      "kind": "stream"
+    },
+    "Rijndael-256": {
+      "block_size": 32,
+      "kind": "block"
+    },
+    "Saferplus": {
+      "block_size": 16,
+      "kind": "block"
+    },
+    "Salsa20": {
+      "block_size": 1,
+      "kind": "stream"
+    },
+    "Serpent": {
+      "block_size": 16,
+      "kind": "block"
+    },
+    "Twofish": {
+      "block_size": 16,
+      "kind": "block"
+    },
+    "XTEA": {
+      "block_size": 8,
+      "kind": "block"
+    }
+  },
+  "remaining_ready_subset": {
+    "by_pre_mode": [
+      {
+        "count": 84,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity"
+        }
+      },
+      {
+        "count": 636,
+        "keys": {
+          "mode": "cfb",
+          "pre": "identity"
+        }
+      },
+      {
+        "count": 84,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity"
+        }
+      },
+      {
+        "count": 636,
+        "keys": {
+          "mode": "ncfb",
+          "pre": "identity"
+        }
+      },
+      {
+        "count": 636,
+        "keys": {
+          "mode": "nofb",
+          "pre": "identity"
+        }
+      },
+      {
+        "count": 636,
+        "keys": {
+          "mode": "ofb",
+          "pre": "identity"
+        }
+      },
+      {
+        "count": 84,
+        "keys": {
+          "mode": "stream",
+          "pre": "identity"
+        }
+      },
+      {
+        "count": 84,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse"
+        }
+      },
+      {
+        "count": 636,
+        "keys": {
+          "mode": "cfb",
+          "pre": "reverse"
+        }
+      },
+      {
+        "count": 84,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse"
+        }
+      },
+      {
+        "count": 636,
+        "keys": {
+          "mode": "ncfb",
+          "pre": "reverse"
+        }
+      },
+      {
+        "count": 636,
+        "keys": {
+          "mode": "nofb",
+          "pre": "reverse"
+        }
+      },
+      {
+        "count": 636,
+        "keys": {
+          "mode": "ofb",
+          "pre": "reverse"
+        }
+      },
+      {
+        "count": 84,
+        "keys": {
+          "mode": "stream",
+          "pre": "reverse"
+        }
+      },
+      {
+        "count": 84,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words"
+        }
+      },
+      {
+        "count": 636,
+        "keys": {
+          "mode": "cfb",
+          "pre": "reverse_words"
+        }
+      },
+      {
+        "count": 84,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words"
+        }
+      },
+      {
+        "count": 636,
+        "keys": {
+          "mode": "ncfb",
+          "pre": "reverse_words"
+        }
+      },
+      {
+        "count": 636,
+        "keys": {
+          "mode": "nofb",
+          "pre": "reverse_words"
+        }
+      },
+      {
+        "count": 636,
+        "keys": {
+          "mode": "ofb",
+          "pre": "reverse_words"
+        }
+      },
+      {
+        "count": 84,
+        "keys": {
+          "mode": "stream",
+          "pre": "reverse_words"
+        }
+      }
+    ],
+    "label_id_sha256": "1a69a49b9d77ea8eb27c10258416c8137724989e58ab4b8e133cec19b84f96aa",
+    "labels": 8388,
+    "minimum_distinct_bytes": 211,
+    "occupancy_flags": 0,
+    "unique_output_sha256": 5139
+  },
+  "screen_check": {
+    "conclusion": "The strict partial-block filter reveals no occupancy flags hidden by those RA-only partial ECB/CBC outputs.",
+    "original_ready_flags": 0,
+    "remaining_subset_flags": 0,
+    "removed_subset_flags": 0
+  },
+  "source_pins": {
+    "app.js": {
+      "bytes": 38043,
+      "sha256": "c8aa498de890039bab86af507e49b89d382c67594f463691deda427b04059113"
+    },
+    "mcrypt_wrapper.c": {
+      "bytes": 27395,
+      "sha256": "ae134769f33ea4f6f1e42599706d7050670ad33669ce9c8c3fc22d1496f38982"
+    },
+    "mode.rs": {
+      "bytes": 15271,
+      "sha256": "1bcd119703cccf4a644673bdeae0b503d2190a2dff10c072923fa0df57933495"
+    },
+    "prim.rs": {
+      "bytes": 33678,
+      "sha256": "179c69feb1b3c164bc01effbd6027c73ca41388fe9cae488b186d5f598c7af4d"
+    },
+    "target_results.json": {
+      "bytes": 27195205,
+      "sha256": "448ff7f95d9d07a334439ec4ddca831da5d15173bcba104858aed337f4cd67cb"
+    }
+  },
+  "strict_wrapper_rejected_subset": {
+    "by_pre_cipher_mode": [
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "3DES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "3DES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "AES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "AES"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "Blowfish"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "Blowfish"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "Blowfish-compat"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "Blowfish-compat"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "CAST-128"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "CAST-128"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "DES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "DES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "IDEA"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "IDEA"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "Loki97"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "Loki97"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "RC2"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "RC2"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "Rijndael-256"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "Rijndael-256"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "Saferplus"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "Saferplus"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "Serpent"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "Serpent"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "Twofish"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "Twofish"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "identity",
+          "primitive": "XTEA"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "identity",
+          "primitive": "XTEA"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "3DES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "3DES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "AES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "AES"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "Blowfish"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "Blowfish"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "Blowfish-compat"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "Blowfish-compat"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "CAST-128"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "CAST-128"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "DES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "DES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "IDEA"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "IDEA"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "Loki97"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "Loki97"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "RC2"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "RC2"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "Rijndael-256"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "Rijndael-256"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "Saferplus"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "Saferplus"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "Serpent"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "Serpent"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "Twofish"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "Twofish"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse",
+          "primitive": "XTEA"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse",
+          "primitive": "XTEA"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "3DES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "3DES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "AES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "AES"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "Blowfish"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "Blowfish"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "Blowfish-compat"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "Blowfish-compat"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "CAST-128"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "CAST-128"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "DES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "DES"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "IDEA"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "IDEA"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "Loki97"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "Loki97"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "RC2"
+        }
+      },
+      {
+        "count": 48,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "RC2"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "Rijndael-256"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "Rijndael-256"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "Saferplus"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "Saferplus"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "Serpent"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "Serpent"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "Twofish"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "Twofish"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "cbc",
+          "pre": "reverse_words",
+          "primitive": "XTEA"
+        }
+      },
+      {
+        "count": 36,
+        "keys": {
+          "mode": "ecb",
+          "pre": "reverse_words",
+          "primitive": "XTEA"
+        }
+      }
+    ],
+    "by_primitive_mode": [
+      {
+        "count": 108,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "3DES"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "3DES"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "AES"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "AES"
+        }
+      },
+      {
+        "count": 144,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "Blowfish"
+        }
+      },
+      {
+        "count": 144,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "Blowfish"
+        }
+      },
+      {
+        "count": 144,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "Blowfish-compat"
+        }
+      },
+      {
+        "count": 144,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "Blowfish-compat"
+        }
+      },
+      {
+        "count": 144,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "CAST-128"
+        }
+      },
+      {
+        "count": 144,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "CAST-128"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "DES"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "DES"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "IDEA"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "IDEA"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "Loki97"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "Loki97"
+        }
+      },
+      {
+        "count": 144,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "RC2"
+        }
+      },
+      {
+        "count": 144,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "RC2"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "Rijndael-256"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "Rijndael-256"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "Saferplus"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "Saferplus"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "Serpent"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "Serpent"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "Twofish"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "Twofish"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "cbc",
+          "primitive": "XTEA"
+        }
+      },
+      {
+        "count": 108,
+        "keys": {
+          "mode": "ecb",
+          "primitive": "XTEA"
+        }
+      }
+    ],
+    "label_id_sha256": "09b1cd7d33bdd5e5b6a3d490091f3bad4bdd66096bd61198c09ed27a622f6f1d",
+    "labels": 3312,
+    "minimum_distinct_bytes": 210,
+    "occupancy_flags": 0,
+    "reason": "READY RA block-primitive ECB/CBC rows have nonaligned 546-byte input; the captured C wrapper returns -1 on decrypt when dlen % block_size != 0.",
+    "unique_output_sha256": 1890
+  },
+  "target_evaluated": false
+}

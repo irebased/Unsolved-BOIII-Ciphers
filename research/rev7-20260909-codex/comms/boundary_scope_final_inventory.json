@@ -1,0 +1,213 @@
+{
+  "artifacts": [
+    {
+      "bytes": 3004,
+      "encoding": "utf-8",
+      "git_blob_sha1": "9eadc07c0587bd109e1986e5ce1665180a2c9635",
+      "path": "research/rev7-20260909-codex/comms/mode-mapping-corpus-published-20260910.json",
+      "sha256": "e817c4cc2ebb1964016a0880ee1351eff7e5a1b5a0c2175e35a81dbe8f6a0e9b"
+    },
+    {
+      "bytes": 1723,
+      "encoding": "utf-8",
+      "git_blob_sha1": "06c246d91195686dc6b46aff28625a7cc39026d4",
+      "path": "research/rev7-20260909-codex/comms/padded-tail-bound-result-20260910.json",
+      "sha256": "f975aeacbe2a890310df0de8f94a6a4be8e0dc9bfadeb471787a78d634426e14"
+    },
+    {
+      "bytes": 2674,
+      "encoding": "utf-8",
+      "git_blob_sha1": "84d5bdad5d708c93db2e18cc63123de6da1e4552",
+      "path": "research/rev7-20260909-codex/comms/padded-tail-final-prereg-20260910.json",
+      "sha256": "5d0c5f9a18d4962cae78985506713a33ed488f55630d70c356fb84e864bf58b6"
+    },
+    {
+      "bytes": 2371,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2df79b63220cbbb109fe854945e81eb072063f6b",
+      "path": "research/rev7-20260909-codex/comms/php-boundary-confirmed-prefix-plan-20260910.json",
+      "sha256": "3feaf817379cbe8f535b61bc372b9c6f785860aafa6708c47132850a97ab4c90"
+    },
+    {
+      "bytes": 1746,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e433b242de55387a9e33b6930afc46bb4c1ddc5d",
+      "path": "research/rev7-20260909-codex/comms/php-mcrypt-historical-warning-20260910.json",
+      "sha256": "12326793d0106c1fa278e973e979de3a9632abaf2323c08c30f7345584ddbc94"
+    },
+    {
+      "bytes": 7083,
+      "encoding": "utf-8",
+      "git_blob_sha1": "62e4009c0b45ac40c660e7ded42fbb54d2cb41d6",
+      "path": "research/rev7-20260909-codex/comms/publish_boundary_scope.py",
+      "sha256": "cf50c46816c90758807b4dd65d7eb6d4be5c6602a05d5c00a9a274cad87d6765"
+    },
+    {
+      "bytes": 3488,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ca421777f4ccf7832c51e45745f3532810f8c3c5",
+      "path": "research/rev7-20260909-codex/coverage/php_mcrypt_boundary_audit/README.md",
+      "sha256": "2336c039a5a995f716ea56daf80372539df97982e8933579637e0f9c01c0b46a"
+    },
+    {
+      "bytes": 4389,
+      "encoding": "utf-8",
+      "git_blob_sha1": "35c4248cc493e1a1c8534b74cb838a74720d2510",
+      "path": "research/rev7-20260909-codex/coverage/php_mcrypt_boundary_audit/audit.json",
+      "sha256": "80a9e0bdea6c2fff0af6230b2cf2e2823b1cbc5e91b16d1cced3aa3f8240d757"
+    },
+    {
+      "bytes": 4947,
+      "encoding": "utf-8",
+      "git_blob_sha1": "5ca40c6e26ccd8fc669ac9e5576f6e5b3bebb1d0",
+      "path": "research/rev7-20260909-codex/coverage/php_mcrypt_boundary_audit/audit.py",
+      "sha256": "9060d7d04e0bfaae1ed986803535c9da82d0652d4a0d4fd031bd2b06ed4d75a2"
+    },
+    {
+      "bytes": 27395,
+      "encoding": "utf-8",
+      "git_blob_sha1": "7f8f04cc35dabf4961e513068d2728845c449786",
+      "path": "research/rev7-20260909-codex/coverage/php_mcrypt_boundary_audit/source/captured-wasm-mcrypt_wrapper.c",
+      "sha256": "ae134769f33ea4f6f1e42599706d7050670ad33669ce9c8c3fc22d1496f38982"
+    },
+    {
+      "bytes": 3715,
+      "encoding": "utf-8",
+      "git_blob_sha1": "db2dba64507ad00d96e30215a0ef3fa9e06ce2f4",
+      "path": "research/rev7-20260909-codex/coverage/php_mcrypt_boundary_audit/source/php-doc-en-1d391575-mcrypt-decrypt.xml",
+      "sha256": "8a89860b7c94acb9ca643a309ba04c66d7e17d517cf827a54e63c20d35086d40"
+    },
+    {
+      "bytes": 42038,
+      "encoding": "utf-8",
+      "git_blob_sha1": "7539d9e53fb16d2bb76de48be435839b9e271fe1",
+      "path": "research/rev7-20260909-codex/coverage/php_mcrypt_boundary_audit/source/php-src-PHP-5.6.25-ext-mcrypt-mcrypt.c",
+      "sha256": "340fa4d3282823c7072c820704e0e544f0d863b12641a3b748d99cd9d3d7956d"
+    },
+    {
+      "bytes": 9454,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a79d3bf53b44d80c9804a8a09938735fafa9a946",
+      "path": "research/rev7-20260909-codex/coverage/php_mcrypt_boundary_audit/source/tools4noobs-decrypt-2014.html",
+      "sha256": "4cd8d597c517e25250a9d294885cd9abdb425a925eaaf3d9e928d631a4b9054d"
+    },
+    {
+      "bytes": 8158,
+      "encoding": "utf-8",
+      "git_blob_sha1": "0d8a9b46fe4a93662be85c33f7b1a2bd1fc33546",
+      "path": "research/rev7-20260909-codex/coverage/php_mcrypt_boundary_audit/source/tools4noobs-encrypt-20150910.html",
+      "sha256": "5a86122f5680a1974624beca07aeb3cc9bc20978b506912ab3cbdfb93b9fa3cd"
+    },
+    {
+      "bytes": 1843,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c36f7b5d3b663a29d77d418643452781e15aa29a",
+      "path": "research/rev7-20260909-codex/coverage/ra_padded_tail_occupancy_bound/README.md",
+      "sha256": "08afceafe80f5bfbd02f3fb24c279f680e86601557f2d30bde3e77885cbf2036"
+    },
+    {
+      "bytes": 1970,
+      "encoding": "utf-8",
+      "git_blob_sha1": "81699b42a17c3c412a494e8914fbe8090238cb1c",
+      "path": "research/rev7-20260909-codex/coverage/ra_padded_tail_occupancy_bound/RESULTS.md",
+      "sha256": "bbfb3c39ba65ba8c2dc0c203414dd2d2a166a45003ca17355b602317d88105b7"
+    },
+    {
+      "bytes": 956,
+      "encoding": "utf-8",
+      "git_blob_sha1": "1c60c13c36acae441905d471bee774f79058b5a3",
+      "path": "research/rev7-20260909-codex/coverage/ra_padded_tail_occupancy_bound/ROOT_VERIFICATION.md",
+      "sha256": "943792608e0746477007ecebbb6f8af32f2465ff8342241b3046346153d9f7f2"
+    },
+    {
+      "bytes": 4492,
+      "encoding": "utf-8",
+      "git_blob_sha1": "7c5e1acf596c95095361adbc0c2ea0c1c7583ea9",
+      "path": "research/rev7-20260909-codex/coverage/ra_padded_tail_occupancy_bound/controls.json",
+      "sha256": "23606072cdaa3666b51dddc3f2d9d701a4b35c7d6874cdddea22648a2192b248"
+    },
+    {
+      "bytes": 4553,
+      "encoding": "utf-8",
+      "git_blob_sha1": "590d8d0b14f98211dca6cb6acc87cabb9b3362aa",
+      "path": "research/rev7-20260909-codex/coverage/ra_padded_tail_occupancy_bound/controls.py",
+      "sha256": "7e2c7f3f318250f2bc01f1818af21aae59cd460d5914ca5eed67320f77d84dba"
+    },
+    {
+      "bytes": 1328,
+      "encoding": "utf-8",
+      "git_blob_sha1": "aaf1964aea005ab9978f277b2c6ddf44afacc994",
+      "path": "research/rev7-20260909-codex/coverage/ra_padded_tail_occupancy_bound/model.py",
+      "sha256": "0c830310ba3bdd823c0bc454153983d2c33a404ca28dec0286c0346da55a7081"
+    },
+    {
+      "bytes": 5611,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e38f2b648038af5850295b83b8cda62029c79af0",
+      "path": "research/rev7-20260909-codex/coverage/ra_padded_tail_occupancy_bound/run_saved.py",
+      "sha256": "547128efe40e5013948d2f039b890cbd427030daafbdba02ec73a12280f39024"
+    },
+    {
+      "bytes": 2830312,
+      "encoding": "utf-8",
+      "git_blob_sha1": "23c2707aeb3409ab10a3688f520ef21762eee991",
+      "path": "research/rev7-20260909-codex/coverage/ra_padded_tail_occupancy_bound/saved_bound_results.json",
+      "sha256": "40db1f8ae0a80153ff0caa9808d2bf2a830eabed2de1b1700da82331b879259f"
+    },
+    {
+      "bytes": 702,
+      "encoding": "utf-8",
+      "git_blob_sha1": "fdfec1211c0684eeefbf0771ce755acce6a48c28",
+      "path": "research/rev7-20260909-codex/coverage/ra_padded_tail_occupancy_bound/verification.json",
+      "sha256": "8ac9e17724282b85b45f2f638d0a662e2b7eaea5d04b8bf0125a2a5631d50087"
+    },
+    {
+      "bytes": 3196,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c2aa14bd515d7c31bc503f7855884fac4c2c878e",
+      "path": "research/rev7-20260909-codex/coverage/ra_padded_tail_occupancy_bound/verify_saved.py",
+      "sha256": "cfab4452d35794d601aa5b7f214491f4c822bf82f9b1896fe2d547ca4e6cd409"
+    },
+    {
+      "bytes": 2252,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d43e3378a84cbf19a8c384dfe5969da4912b4fd7",
+      "path": "research/rev7-20260909-codex/coverage/ra_partial_block_inventory_audit/README.md",
+      "sha256": "42f80271efb36d064135e6fdbcdadaadcbd47e6b7f5bc800620b13f3f503fbb4"
+    },
+    {
+      "bytes": 5754,
+      "encoding": "utf-8",
+      "git_blob_sha1": "b8a4cb49fa1514fa0aeeb54687b817c9d22abd8f",
+      "path": "research/rev7-20260909-codex/coverage/ra_partial_block_inventory_audit/audit.py",
+      "sha256": "237a296c4bf643f8f91018aaa6a57190e94b9f1c15d0a79f557c9ba4e0b22b01"
+    },
+    {
+      "bytes": 23261,
+      "encoding": "utf-8",
+      "git_blob_sha1": "4c4e75d9d90fcb27264cc4e3bbb400e1bca46d3a",
+      "path": "research/rev7-20260909-codex/coverage/ra_partial_block_inventory_audit/evidence.json",
+      "sha256": "91c7e7c686f4cf74e9c801d7d7a199b7ac904b0cc51c8a077c6a844d244b1835"
+    },
+    {
+      "bytes": 38043,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ac4a763282c2e08722f2bd087da5ba1961ab2ecc",
+      "path": "research/rev7-20260909-codex/coverage/ra_partial_block_inventory_audit/source/app.js",
+      "sha256": "c8aa498de890039bab86af507e49b89d382c67594f463691deda427b04059113"
+    },
+    {
+      "bytes": 27395,
+      "encoding": "utf-8",
+      "git_blob_sha1": "7f8f04cc35dabf4961e513068d2728845c449786",
+      "path": "research/rev7-20260909-codex/coverage/ra_partial_block_inventory_audit/source/mcrypt_wrapper.c",
+      "sha256": "ae134769f33ea4f6f1e42599706d7050670ad33669ce9c8c3fc22d1496f38982"
+    }
+  ],
+  "description": "Historical PHP mcrypt padding source audit, captured C-port compatibility accounting, and exact padded-final-block occupancy lower bounds with synthetic controls and independent saved-byte verification. No new target decryptions. Original RA/WASM experiment artifacts and source archive remain in prior commits.",
+  "identity": "ASTRA",
+  "publication_excludes": [
+    "drafts",
+    "__pycache__"
+  ]
+}

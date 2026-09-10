@@ -1,0 +1,20 @@
+{
+  "identity": "ASTRA",
+  "maximum_cutoff": 192,
+  "method": "Independent last-nonzero scan, bitmask distinct count, and comparison at EVERY supported candidate output length for every saved row. No production model imports.",
+  "minimum_margin": 19,
+  "new_decryption": false,
+  "result_sha256": "40db1f8ae0a80153ff0caa9808d2bf2a830eabed2de1b1700da82331b879259f",
+  "status": "PASS",
+  "summary": {
+    "fully_excluded": 3312,
+    "incomplete": 0,
+    "q_distinct_max": 239,
+    "q_distinct_min": 209,
+    "q_length_max": 544,
+    "q_length_min": 543,
+    "rows": 3312,
+    "unsupported_interval_rows": 0
+  },
+  "verifier_sha256": "cfab4452d35794d601aa5b7f214491f4c822bf82f9b1896fe2d547ca4e6cd409"
+}

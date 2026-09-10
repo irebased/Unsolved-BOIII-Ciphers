@@ -1,0 +1,167 @@
+{
+  "anchors": {
+    "captured_c_port": {
+      "ecb_reject": {
+        "line": 386,
+        "text": "if (dlen % bs != 0) return -1; \\"
+      },
+      "zero_unpad": {
+        "line": 388,
+        "text": "return zero_unpad(data, dlen); \\"
+      }
+    },
+    "php_doc": {
+      "padding_line": 47,
+      "text": "the data will be padded with '<literal>\\0</literal>'."
+    },
+    "php_src": {
+      "copy_input": {
+        "line": 670,
+        "text": "memcpy(data_s, data, data_len);"
+      },
+      "decrypt": {
+        "line": 1321,
+        "text": "mdecrypt_generic(td, data_s, data_size);"
+      },
+      "return_rounded": {
+        "line": 1325,
+        "text": "RETVAL_STRINGL(data_s, data_size, 0);"
+      },
+      "round_up": {
+        "line": 663,
+        "text": "data_size = (((data_len - 1) / block_size) + 1) * block_size;"
+      },
+      "zero_fill": {
+        "line": 669,
+        "text": "memset(data_s, 0, data_size);"
+      }
+    },
+    "tools4noobs_frontend": {
+      "decrypt_page_same_wording_line": 60,
+      "encrypt_mcrypt_claim_line": 61
+    }
+  },
+  "canonical_length_546": {
+    "block16": 560,
+    "block32": 576,
+    "block8": 552
+  },
+  "conclusion": "The captured C-port reject/zero_unpad behavior is not historical PHP 5.6.25 mcrypt_decrypt behavior and cannot establish tools4noobs behavior without its server-side handler source.",
+  "critical_nuance": "For decryption, PHP appends zero bytes to ciphertext before block decryption. The added output plaintext bytes are generally not zero; only the returned length is fixed by this source audit.",
+  "findings": {
+    "captured_c_port_aligned_decrypt_postprocessing": "strip_trailing_zero_bytes",
+    "captured_c_port_nonaligned_ecb_cbc_decrypt": "hard_reject",
+    "php_wrapper_nonaligned_block_input": "zero_extend_then_decrypt_and_return_rounded_length",
+    "php_wrapper_postprocessing": "no_unpad_or_trim_in_php_mcrypt_do_crypt",
+    "tools4noobs_backend_postprocessing": "unknown_from_captured_frontend"
+  },
+  "identity": "ASTRA",
+  "rounded_length_examples": [
+    {
+      "block": 8,
+      "input": 1,
+      "php_return_length": 8
+    },
+    {
+      "block": 16,
+      "input": 1,
+      "php_return_length": 16
+    },
+    {
+      "block": 32,
+      "input": 1,
+      "php_return_length": 32
+    },
+    {
+      "block": 8,
+      "input": 7,
+      "php_return_length": 8
+    },
+    {
+      "block": 16,
+      "input": 7,
+      "php_return_length": 16
+    },
+    {
+      "block": 32,
+      "input": 7,
+      "php_return_length": 32
+    },
+    {
+      "block": 8,
+      "input": 8,
+      "php_return_length": 8
+    },
+    {
+      "block": 16,
+      "input": 8,
+      "php_return_length": 16
+    },
+    {
+      "block": 32,
+      "input": 8,
+      "php_return_length": 32
+    },
+    {
+      "block": 8,
+      "input": 9,
+      "php_return_length": 16
+    },
+    {
+      "block": 16,
+      "input": 9,
+      "php_return_length": 16
+    },
+    {
+      "block": 32,
+      "input": 9,
+      "php_return_length": 32
+    },
+    {
+      "block": 8,
+      "input": 546,
+      "php_return_length": 552
+    },
+    {
+      "block": 16,
+      "input": 546,
+      "php_return_length": 560
+    },
+    {
+      "block": 32,
+      "input": 546,
+      "php_return_length": 576
+    }
+  ],
+  "source_files": {
+    "captured-wasm-mcrypt_wrapper.c": {
+      "bytes": 27395,
+      "sha256": "ae134769f33ea4f6f1e42599706d7050670ad33669ce9c8c3fc22d1496f38982"
+    },
+    "php-doc-en-1d391575-mcrypt-decrypt.xml": {
+      "bytes": 3715,
+      "sha256": "8a89860b7c94acb9ca643a309ba04c66d7e17d517cf827a54e63c20d35086d40"
+    },
+    "php-src-PHP-5.6.25-ext-mcrypt-mcrypt.c": {
+      "bytes": 42038,
+      "sha256": "340fa4d3282823c7072c820704e0e544f0d863b12641a3b748d99cd9d3d7956d"
+    },
+    "tools4noobs-decrypt-2014.html": {
+      "bytes": 9454,
+      "sha256": "4cd8d597c517e25250a9d294885cd9abdb425a925eaaf3d9e928d631a4b9054d"
+    },
+    "tools4noobs-encrypt-20150910.html": {
+      "bytes": 8158,
+      "sha256": "5a86122f5680a1974624beca07aeb3cc9bc20978b506912ab3cbdfb93b9fa3cd"
+    }
+  },
+  "source_only": true,
+  "target_evaluated": false,
+  "version_binding": {
+    "doc_commit": "1d391575445598c99175a17eb012f1c658febaa4",
+    "doc_commit_date": "2014-10-15T20:01:03Z",
+    "php_commit_date": "2016-08-18T11:07:46Z",
+    "php_tag_commit": "e37064dae4a80c70405899bb591969bbe6aad9a8",
+    "php_version": "5.6.25"
+  }
+}
