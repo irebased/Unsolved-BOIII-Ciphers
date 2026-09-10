@@ -1,0 +1,958 @@
+{
+  "artifact_hashes": {
+    "controls.py": "306e6c3aa1e4785a1ad919194189d47092d8f98a5463adeeb43f64915bac6f2d",
+    "run_target.py": "dea3bceff94993abb7f59993300f71552c3ca84b344e96b22d27479c3dc05d41",
+    "runtime.py": "8b7899fc7aedb2de04cb900876987e6b3385922d4e2e53c913562659913818f4",
+    "runtime_controls.json": "483fa566e1030e489f5bb2958bcada9f1f95762f83104b7b9e8437c360787ee5"
+  },
+  "assertions": {
+    "all_passed": true,
+    "all_seven_backends": true,
+    "boundary_dependent_states": true,
+    "every_direct_leaf_retained": true,
+    "exact_case_ids_intervals_and_classifications": true,
+    "independent_endpoint_oracle_every_traversed_case": true,
+    "mixed_depth2_retained": true,
+    "mixed_depth3_retained": true,
+    "multi_branch_584_exact_ids_intervals_oracle": true,
+    "no_target_read_or_evaluation": true,
+    "rejected_intermediate_did_not_prune": true,
+    "two_iv_replay_and_reencryption": true
+  },
+  "boundary_endpoint_controls": {
+    "empty": {
+      "accepted": null,
+      "classification": "inconclusive_empty",
+      "ending_states": [
+        0,
+        1,
+        2
+      ],
+      "initial_states": [
+        0,
+        1,
+        2
+      ],
+      "terminal_states": [
+        0,
+        1,
+        2
+      ],
+      "witness": null
+    },
+    "left_dependent": {
+      "accepted": true,
+      "classification": "retained",
+      "ending_states": [
+        0
+      ],
+      "initial_states": [
+        0,
+        1,
+        2
+      ],
+      "terminal_states": [
+        0,
+        1,
+        2
+      ],
+      "witness": null
+    },
+    "left_same_bytes_at_stream_start": {
+      "accepted": false,
+      "classification": "rejected_fsa_transition",
+      "ending_states": [],
+      "initial_states": [
+        0
+      ],
+      "terminal_states": [
+        0
+      ],
+      "witness": {
+        "absolute_offset": 0,
+        "byte": 128,
+        "prior_states": [
+          0
+        ],
+        "reason": "no five-sequence FSA transition",
+        "relative_offset": 0
+      }
+    },
+    "ordinary_full": {
+      "accepted": true,
+      "classification": "retained",
+      "ending_states": [
+        0
+      ],
+      "initial_states": [
+        0
+      ],
+      "terminal_states": [
+        0
+      ],
+      "witness": null
+    },
+    "right_partial_internal": {
+      "accepted": true,
+      "classification": "retained",
+      "ending_states": [
+        2
+      ],
+      "initial_states": [
+        0,
+        1,
+        2
+      ],
+      "terminal_states": [
+        0,
+        1,
+        2
+      ],
+      "witness": null
+    },
+    "right_same_bytes_at_stream_end": {
+      "accepted": false,
+      "classification": "rejected_fsa_terminal",
+      "ending_states": [
+        2
+      ],
+      "initial_states": [
+        0
+      ],
+      "terminal_states": [
+        0
+      ],
+      "witness": {
+        "absolute_offset": 3,
+        "prior_states": [
+          2
+        ],
+        "reason": "interval reaches stream end without terminal state 0",
+        "relative_offset": 3
+      }
+    }
+  },
+  "direct_backend_plants": [
+    {
+      "cases": [
+        {
+          "backends": [
+            "aes128"
+          ],
+          "candidate_hex": "9820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20414141414141414141414141414141454e442e0a",
+          "case_id": "forward|d1|aes128|-",
+          "depth": 1,
+          "endpoint": {
+            "accepted": true,
+            "classification": "retained",
+            "ending_states": [
+              0
+            ],
+            "initial_states": [
+              0,
+              1,
+              2
+            ],
+            "terminal_states": [
+              0
+            ],
+            "witness": null
+          },
+          "identity": "ASTRA",
+          "independent_endpoint_oracle_match": true,
+          "interlayer_transforms": [],
+          "known_bytes": 144,
+          "known_interval": [
+            16,
+            160
+          ],
+          "known_sha256": "36ef5a09ca835d228ec1c457627a091c2ef1d8206e9726bdd91c612fac07463d",
+          "orientation": "forward",
+          "two_iv_full_chain_replays": [
+            {
+              "full_plaintext_sha256": "3ec94a5f6701b4f1a4de9591877b29dfc23db3d6dd78b25a5b7d216fdc9952a2",
+              "full_reencryption_exact": true,
+              "iv_suite": 1,
+              "ivs_hex": [
+                "475a6d8093a6b9ccdff205182b3e5164"
+              ],
+              "known_interval_matches": true
+            },
+            {
+              "full_plaintext_sha256": "46f10a28d153c18af45aef8c1314e917a305a65c05aab14f8a2356dee9933c7a",
+              "full_reencryption_exact": true,
+              "iv_suite": 2,
+              "ivs_hex": [
+                "8ea1b4c7daed001326394c5f728598ab"
+              ],
+              "known_interval_matches": true
+            }
+          ]
+        }
+      ],
+      "label": "direct_aes128",
+      "leaf_retained_exact": true,
+      "outer_sha256": "11f14b88915cc8978a14ca0ce0e5977fa79fe1deba3c8b6cdaa29ab558244497",
+      "plaintext_sha256": "c8dd8f2fd9e6e4ca53057bf1862a442ec1d6a3578fdfe6e1f63c37cb74a1b480",
+      "plant_ivs_hex": [
+        "f104172a3d506376899cafc2d5e8fb0e"
+      ],
+      "traversal_count": 1
+    },
+    {
+      "cases": [
+        {
+          "backends": [
+            "des"
+          ],
+          "candidate_hex": "9320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20414141414141414141414141414141454e442e0a",
+          "case_id": "forward|d1|des|-",
+          "depth": 1,
+          "endpoint": {
+            "accepted": true,
+            "classification": "retained",
+            "ending_states": [
+              0
+            ],
+            "initial_states": [
+              0,
+              1,
+              2
+            ],
+            "terminal_states": [
+              0
+            ],
+            "witness": null
+          },
+          "identity": "ASTRA",
+          "independent_endpoint_oracle_match": true,
+          "interlayer_transforms": [],
+          "known_bytes": 152,
+          "known_interval": [
+            8,
+            160
+          ],
+          "known_sha256": "12407495c2a62c8cb987032ebbed9bcd998d8719cec4c9010082aa542069c8db",
+          "orientation": "forward",
+          "two_iv_full_chain_replays": [
+            {
+              "full_plaintext_sha256": "c5827400b47906a1a7206ef8bb3c622335de5718b1024198f189b91e3db42991",
+              "full_reencryption_exact": true,
+              "iv_suite": 1,
+              "ivs_hex": [
+                "475a6d8093a6b9cc"
+              ],
+              "known_interval_matches": true
+            },
+            {
+              "full_plaintext_sha256": "7a2d8d2776b59516a454629d3f1bc9feb479417ec238587d0980f1533511a21d",
+              "full_reencryption_exact": true,
+              "iv_suite": 2,
+              "ivs_hex": [
+                "8ea1b4c7daed0013"
+              ],
+              "known_interval_matches": true
+            }
+          ]
+        }
+      ],
+      "label": "direct_des",
+      "leaf_retained_exact": true,
+      "outer_sha256": "3d10502c49ab0f0fc90f8fca6b8ddd4e41cdc963950a6666e88f757ce0540f20",
+      "plaintext_sha256": "c8dd8f2fd9e6e4ca53057bf1862a442ec1d6a3578fdfe6e1f63c37cb74a1b480",
+      "plant_ivs_hex": [
+        "f104172a3d506376"
+      ],
+      "traversal_count": 1
+    },
+    {
+      "cases": [
+        {
+          "backends": [
+            "blowfish"
+          ],
+          "candidate_hex": "9320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20414141414141414141414141414141454e442e0a",
+          "case_id": "forward|d1|blowfish|-",
+          "depth": 1,
+          "endpoint": {
+            "accepted": true,
+            "classification": "retained",
+            "ending_states": [
+              0
+            ],
+            "initial_states": [
+              0,
+              1,
+              2
+            ],
+            "terminal_states": [
+              0
+            ],
+            "witness": null
+          },
+          "identity": "ASTRA",
+          "independent_endpoint_oracle_match": true,
+          "interlayer_transforms": [],
+          "known_bytes": 152,
+          "known_interval": [
+            8,
+            160
+          ],
+          "known_sha256": "12407495c2a62c8cb987032ebbed9bcd998d8719cec4c9010082aa542069c8db",
+          "orientation": "forward",
+          "two_iv_full_chain_replays": [
+            {
+              "full_plaintext_sha256": "20eff066f0b4fd40b5d6979dd3ce273b37ca9d5de479e6cf663d8394865a8a67",
+              "full_reencryption_exact": true,
+              "iv_suite": 1,
+              "ivs_hex": [
+                "475a6d8093a6b9cc"
+              ],
+              "known_interval_matches": true
+            },
+            {
+              "full_plaintext_sha256": "47d4d6c99483992007bbab9a131d11885942e733f09a98123dcc96f0d1a25344",
+              "full_reencryption_exact": true,
+              "iv_suite": 2,
+              "ivs_hex": [
+                "8ea1b4c7daed0013"
+              ],
+              "known_interval_matches": true
+            }
+          ]
+        }
+      ],
+      "label": "direct_blowfish",
+      "leaf_retained_exact": true,
+      "outer_sha256": "e20809335650bfa0a3d436d1f8ab6eb68863eb3b9f0a869e19e6ac1931987740",
+      "plaintext_sha256": "c8dd8f2fd9e6e4ca53057bf1862a442ec1d6a3578fdfe6e1f63c37cb74a1b480",
+      "plant_ivs_hex": [
+        "f104172a3d506376"
+      ],
+      "traversal_count": 1
+    },
+    {
+      "cases": [
+        {
+          "backends": [
+            "bfcompat"
+          ],
+          "candidate_hex": "9320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20414141414141414141414141414141454e442e0a",
+          "case_id": "forward|d1|bfcompat|-",
+          "depth": 1,
+          "endpoint": {
+            "accepted": true,
+            "classification": "retained",
+            "ending_states": [
+              0
+            ],
+            "initial_states": [
+              0,
+              1,
+              2
+            ],
+            "terminal_states": [
+              0
+            ],
+            "witness": null
+          },
+          "identity": "ASTRA",
+          "independent_endpoint_oracle_match": true,
+          "interlayer_transforms": [],
+          "known_bytes": 152,
+          "known_interval": [
+            8,
+            160
+          ],
+          "known_sha256": "12407495c2a62c8cb987032ebbed9bcd998d8719cec4c9010082aa542069c8db",
+          "orientation": "forward",
+          "two_iv_full_chain_replays": [
+            {
+              "full_plaintext_sha256": "b0a14f879bb2d9c3a936c14d50f1648f9c2b2eb208c9115c750eba64d37d9290",
+              "full_reencryption_exact": true,
+              "iv_suite": 1,
+              "ivs_hex": [
+                "475a6d8093a6b9cc"
+              ],
+              "known_interval_matches": true
+            },
+            {
+              "full_plaintext_sha256": "99b82dfd4ca4ec2a9d8bfcaf3a48dcd355b75a2ebbcf875409a212af4660fba0",
+              "full_reencryption_exact": true,
+              "iv_suite": 2,
+              "ivs_hex": [
+                "8ea1b4c7daed0013"
+              ],
+              "known_interval_matches": true
+            }
+          ]
+        }
+      ],
+      "label": "direct_bfcompat",
+      "leaf_retained_exact": true,
+      "outer_sha256": "298d4df19760ec8909afa18332ed8499109c6930aafca3479fb97427916923f0",
+      "plaintext_sha256": "c8dd8f2fd9e6e4ca53057bf1862a442ec1d6a3578fdfe6e1f63c37cb74a1b480",
+      "plant_ivs_hex": [
+        "f104172a3d506376"
+      ],
+      "traversal_count": 1
+    },
+    {
+      "cases": [
+        {
+          "backends": [
+            "rc2"
+          ],
+          "candidate_hex": "9320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20414141414141414141414141414141454e442e0a",
+          "case_id": "forward|d1|rc2|-",
+          "depth": 1,
+          "endpoint": {
+            "accepted": true,
+            "classification": "retained",
+            "ending_states": [
+              0
+            ],
+            "initial_states": [
+              0,
+              1,
+              2
+            ],
+            "terminal_states": [
+              0
+            ],
+            "witness": null
+          },
+          "identity": "ASTRA",
+          "independent_endpoint_oracle_match": true,
+          "interlayer_transforms": [],
+          "known_bytes": 152,
+          "known_interval": [
+            8,
+            160
+          ],
+          "known_sha256": "12407495c2a62c8cb987032ebbed9bcd998d8719cec4c9010082aa542069c8db",
+          "orientation": "forward",
+          "two_iv_full_chain_replays": [
+            {
+              "full_plaintext_sha256": "3cc8f6b01c9d1733bf364851d39b58d081392957cbfa4bcb6182aaa02f5908dd",
+              "full_reencryption_exact": true,
+              "iv_suite": 1,
+              "ivs_hex": [
+                "475a6d8093a6b9cc"
+              ],
+              "known_interval_matches": true
+            },
+            {
+              "full_plaintext_sha256": "9e57dd998047c1f1258d91483ffd7559540c764ac60a3e0a43e5141251c971cc",
+              "full_reencryption_exact": true,
+              "iv_suite": 2,
+              "ivs_hex": [
+                "8ea1b4c7daed0013"
+              ],
+              "known_interval_matches": true
+            }
+          ]
+        }
+      ],
+      "label": "direct_rc2",
+      "leaf_retained_exact": true,
+      "outer_sha256": "1cf9f65ef7e75c74ff50d83ae995f15ca01acf20290fbb7b0529cbcba80460da",
+      "plaintext_sha256": "c8dd8f2fd9e6e4ca53057bf1862a442ec1d6a3578fdfe6e1f63c37cb74a1b480",
+      "plant_ivs_hex": [
+        "f104172a3d506376"
+      ],
+      "traversal_count": 1
+    },
+    {
+      "cases": [
+        {
+          "backends": [
+            "twofish"
+          ],
+          "candidate_hex": "9820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20414141414141414141414141414141454e442e0a",
+          "case_id": "forward|d1|twofish|-",
+          "depth": 1,
+          "endpoint": {
+            "accepted": true,
+            "classification": "retained",
+            "ending_states": [
+              0
+            ],
+            "initial_states": [
+              0,
+              1,
+              2
+            ],
+            "terminal_states": [
+              0
+            ],
+            "witness": null
+          },
+          "identity": "ASTRA",
+          "independent_endpoint_oracle_match": true,
+          "interlayer_transforms": [],
+          "known_bytes": 144,
+          "known_interval": [
+            16,
+            160
+          ],
+          "known_sha256": "36ef5a09ca835d228ec1c457627a091c2ef1d8206e9726bdd91c612fac07463d",
+          "orientation": "forward",
+          "two_iv_full_chain_replays": [
+            {
+              "full_plaintext_sha256": "587665b90f12eebab077e54c9bbda0bca9fa74a4bf430a4143cfa07c1b6a3956",
+              "full_reencryption_exact": true,
+              "iv_suite": 1,
+              "ivs_hex": [
+                "475a6d8093a6b9ccdff205182b3e5164"
+              ],
+              "known_interval_matches": true
+            },
+            {
+              "full_plaintext_sha256": "0a94daed8da15f033328e7927a035989d2a8d3805760778d426e1596d2bf8e04",
+              "full_reencryption_exact": true,
+              "iv_suite": 2,
+              "ivs_hex": [
+                "8ea1b4c7daed001326394c5f728598ab"
+              ],
+              "known_interval_matches": true
+            }
+          ]
+        }
+      ],
+      "label": "direct_twofish",
+      "leaf_retained_exact": true,
+      "outer_sha256": "65203744b1f52d736c62fdbcba257cc80e74862774d8c53e7b02a1c22994a82b",
+      "plaintext_sha256": "c8dd8f2fd9e6e4ca53057bf1862a442ec1d6a3578fdfe6e1f63c37cb74a1b480",
+      "plant_ivs_hex": [
+        "f104172a3d506376899cafc2d5e8fb0e"
+      ],
+      "traversal_count": 1
+    },
+    {
+      "cases": [
+        {
+          "backends": [
+            "loki97"
+          ],
+          "candidate_hex": "9820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20414141414141414141414141414141454e442e0a",
+          "case_id": "forward|d1|loki97|-",
+          "depth": 1,
+          "endpoint": {
+            "accepted": true,
+            "classification": "retained",
+            "ending_states": [
+              0
+            ],
+            "initial_states": [
+              0,
+              1,
+              2
+            ],
+            "terminal_states": [
+              0
+            ],
+            "witness": null
+          },
+          "identity": "ASTRA",
+          "independent_endpoint_oracle_match": true,
+          "interlayer_transforms": [],
+          "known_bytes": 144,
+          "known_interval": [
+            16,
+            160
+          ],
+          "known_sha256": "36ef5a09ca835d228ec1c457627a091c2ef1d8206e9726bdd91c612fac07463d",
+          "orientation": "forward",
+          "two_iv_full_chain_replays": [
+            {
+              "full_plaintext_sha256": "1a1c51f8eeabb8c7563a6ae066bffd77759ed3bcb3d8ecd807dd584ea13ff086",
+              "full_reencryption_exact": true,
+              "iv_suite": 1,
+              "ivs_hex": [
+                "475a6d8093a6b9ccdff205182b3e5164"
+              ],
+              "known_interval_matches": true
+            },
+            {
+              "full_plaintext_sha256": "a5728d961693b43765fc404682526bc6c96bafbfc13c443205f957679ea593be",
+              "full_reencryption_exact": true,
+              "iv_suite": 2,
+              "ivs_hex": [
+                "8ea1b4c7daed001326394c5f728598ab"
+              ],
+              "known_interval_matches": true
+            }
+          ]
+        }
+      ],
+      "label": "direct_loki97",
+      "leaf_retained_exact": true,
+      "outer_sha256": "8262cb826b749287069e7305697dc4aab807a9ae252cf2d5731c31c000d2d8f8",
+      "plaintext_sha256": "c8dd8f2fd9e6e4ca53057bf1862a442ec1d6a3578fdfe6e1f63c37cb74a1b480",
+      "plant_ivs_hex": [
+        "f104172a3d506376899cafc2d5e8fb0e"
+      ],
+      "traversal_count": 1
+    }
+  ],
+  "identity": "ASTRA",
+  "mixed_depth2": {
+    "cases": [
+      {
+        "backends": [
+          "aes128"
+        ],
+        "candidate_hex": null,
+        "case_id": "forward|d1|aes128|-",
+        "depth": 1,
+        "endpoint": {
+          "accepted": false,
+          "classification": "rejected_a105",
+          "ending_states": [],
+          "initial_states": [
+            0,
+            1,
+            2
+          ],
+          "terminal_states": [
+            0
+          ],
+          "witness": {
+            "absolute_offset": 16,
+            "byte": 190,
+            "reason": "outside A105",
+            "relative_offset": 0
+          }
+        },
+        "identity": "ASTRA",
+        "independent_endpoint_oracle_match": true,
+        "interlayer_transforms": [],
+        "known_bytes": 144,
+        "known_interval": [
+          16,
+          160
+        ],
+        "known_sha256": "7c7c2cf77d00bd6425bdb9586ed8443d4b58d9e1c27eddb49433cb56e960245c",
+        "orientation": "forward",
+        "two_iv_full_chain_replays": null
+      },
+      {
+        "backends": [
+          "aes128",
+          "des"
+        ],
+        "candidate_hex": "a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20414141414141414141414141414141454e442e0a",
+        "case_id": "forward|d2|aes128,des|nibble_swap",
+        "depth": 2,
+        "endpoint": {
+          "accepted": true,
+          "classification": "retained",
+          "ending_states": [
+            0
+          ],
+          "initial_states": [
+            0,
+            1,
+            2
+          ],
+          "terminal_states": [
+            0
+          ],
+          "witness": null
+        },
+        "identity": "ASTRA",
+        "independent_endpoint_oracle_match": true,
+        "interlayer_transforms": [
+          "nibble_swap"
+        ],
+        "known_bytes": 136,
+        "known_interval": [
+          24,
+          160
+        ],
+        "known_sha256": "334ef8d2e0d6dfb79ce9124686260f3de705a79ae20f81e7820d8429fd45908d",
+        "orientation": "forward",
+        "two_iv_full_chain_replays": [
+          {
+            "full_plaintext_sha256": "e38d435f2e95acd1173e2cde83bd2126a30e12a755751040ffa29de7f3b113cb",
+            "full_reencryption_exact": true,
+            "iv_suite": 1,
+            "ivs_hex": [
+              "475a6d8093a6b9ccdff205182b3e5164",
+              "6c7f92a5b8cbdef1"
+            ],
+            "known_interval_matches": true
+          },
+          {
+            "full_plaintext_sha256": "b97c590b4e89c63a66153c61af8a8025c2304b9516db197b85901f2e7af1d149",
+            "full_reencryption_exact": true,
+            "iv_suite": 2,
+            "ivs_hex": [
+              "8ea1b4c7daed001326394c5f728598ab",
+              "b3c6d9ecff122538"
+            ],
+            "known_interval_matches": true
+          }
+        ]
+      }
+    ],
+    "label": "depth2_rejected_parent_retained_child",
+    "leaf_retained_exact": true,
+    "outer_sha256": "9f5d8d14bc6f705ea0161cb5ebfd622d911458b1a524c29e840b994d54759baa",
+    "plaintext_sha256": "c8dd8f2fd9e6e4ca53057bf1862a442ec1d6a3578fdfe6e1f63c37cb74a1b480",
+    "plant_ivs_hex": [
+      "f104172a3d506376899cafc2d5e8fb0e",
+      "16293c4f6275889b"
+    ],
+    "rejected_intermediate_still_expanded_to_retained_child": true,
+    "traversal_count": 2
+  },
+  "mixed_depth3": {
+    "cases": [
+      {
+        "backends": [
+          "bfcompat"
+        ],
+        "candidate_hex": null,
+        "case_id": "forward|d1|bfcompat|-",
+        "depth": 1,
+        "endpoint": {
+          "accepted": false,
+          "classification": "rejected_a105",
+          "ending_states": [],
+          "initial_states": [
+            0,
+            1,
+            2
+          ],
+          "terminal_states": [
+            0
+          ],
+          "witness": {
+            "absolute_offset": 9,
+            "byte": 137,
+            "reason": "outside A105",
+            "relative_offset": 1
+          }
+        },
+        "identity": "ASTRA",
+        "independent_endpoint_oracle_match": true,
+        "interlayer_transforms": [],
+        "known_bytes": 152,
+        "known_interval": [
+          8,
+          160
+        ],
+        "known_sha256": "cb3fc8f8f952adb39548e848b359119889889349505e0612dee90340d5610ac0",
+        "orientation": "forward",
+        "two_iv_full_chain_replays": null
+      },
+      {
+        "backends": [
+          "bfcompat",
+          "twofish"
+        ],
+        "candidate_hex": null,
+        "case_id": "forward|d2|bfcompat,twofish|byte_reverse",
+        "depth": 2,
+        "endpoint": {
+          "accepted": false,
+          "classification": "rejected_a105",
+          "ending_states": [],
+          "initial_states": [
+            0,
+            1,
+            2
+          ],
+          "terminal_states": [
+            0,
+            1,
+            2
+          ],
+          "witness": {
+            "absolute_offset": 17,
+            "byte": 209,
+            "reason": "outside A105",
+            "relative_offset": 1
+          }
+        },
+        "identity": "ASTRA",
+        "independent_endpoint_oracle_match": true,
+        "interlayer_transforms": [
+          "byte_reverse"
+        ],
+        "known_bytes": 136,
+        "known_interval": [
+          16,
+          152
+        ],
+        "known_sha256": "22954256097ffc68ec913ce40feae3ae5cf09de2abb5f91c0815fcb104ed7625",
+        "orientation": "forward",
+        "two_iv_full_chain_replays": null
+      },
+      {
+        "backends": [
+          "bfcompat",
+          "twofish",
+          "rc2"
+        ],
+        "candidate_hex": "9820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e20415343494920e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e2041414141",
+        "case_id": "forward|d3|bfcompat,twofish,rc2|byte_reverse,full_hex_reverse",
+        "depth": 3,
+        "endpoint": {
+          "accepted": true,
+          "classification": "retained",
+          "ending_states": [
+            0
+          ],
+          "initial_states": [
+            0,
+            1,
+            2
+          ],
+          "terminal_states": [
+            0,
+            1,
+            2
+          ],
+          "witness": null
+        },
+        "identity": "ASTRA",
+        "independent_endpoint_oracle_match": true,
+        "interlayer_transforms": [
+          "byte_reverse",
+          "full_hex_reverse"
+        ],
+        "known_bytes": 128,
+        "known_interval": [
+          16,
+          144
+        ],
+        "known_sha256": "24e8ef8294b03a92760548871635844b22bdbc33bde4f2898bac4fa62acd5b07",
+        "orientation": "forward",
+        "two_iv_full_chain_replays": [
+          {
+            "full_plaintext_sha256": "8d23398836d8eb5d62332d00ac6bf012dce49a0e9c00d4f2c66ec782d00f0c64",
+            "full_reencryption_exact": true,
+            "iv_suite": 1,
+            "ivs_hex": [
+              "475a6d8093a6b9cc",
+              "6c7f92a5b8cbdef104172a3d50637689",
+              "91a4b7caddf00316"
+            ],
+            "known_interval_matches": true
+          },
+          {
+            "full_plaintext_sha256": "41fc6acb4b1801e0528df1c257d06ab97db014ed0b12cc1776adef58e144163a",
+            "full_reencryption_exact": true,
+            "iv_suite": 2,
+            "ivs_hex": [
+              "8ea1b4c7daed0013",
+              "b3c6d9ecff1225384b5e718497aabdd0",
+              "d8ebfe1124374a5d"
+            ],
+            "known_interval_matches": true
+          }
+        ]
+      }
+    ],
+    "label": "depth3_two_distinct_interlayer_transforms",
+    "leaf_retained_exact": true,
+    "outer_sha256": "0115ca5946821e00dfe954181a071b183f4f9d357856266f152385e01a2f8a1c",
+    "plaintext_sha256": "c8dd8f2fd9e6e4ca53057bf1862a442ec1d6a3578fdfe6e1f63c37cb74a1b480",
+    "plant_ivs_hex": [
+      "f104172a3d506376",
+      "16293c4f6275889baec1d4e7fa0d2033",
+      "3b4e6174879aadc0"
+    ],
+    "traversal_count": 3
+  },
+  "multi_branch_grid": {
+    "backend_choices_by_depth": [
+      [
+        "bfcompat",
+        "aes128"
+      ],
+      [
+        "twofish",
+        "des"
+      ],
+      [
+        "rc2",
+        "loki97"
+      ]
+    ],
+    "canonical_rows_sha256": "0e6444288f89d7d689bd465470429a5117830b8e3e18c7b655ca980b859cfcf9",
+    "classification_counts": {
+      "rejected_a105": 583,
+      "retained": 1
+    },
+    "endpoint_count": 584,
+    "every_endpoint_matches_independent_oracle": true,
+    "every_interval_matches_full_reference": true,
+    "expected_case_ids_equal": true,
+    "full_reference_iv_suite": 11,
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "planted_leaf_retained": true,
+    "planted_path": "forward|d3|bfcompat,twofish,rc2|byte_reverse,full_hex_reverse",
+    "stored_rows": "aggregate digest and counts only; deterministic row serialization is [id,L,R,known_sha256,class,accepted,full_plaintext_sha256] in traversal order",
+    "transform_choices_by_boundary": [
+      [
+        "forward",
+        "full_hex_reverse",
+        "byte_reverse",
+        "nibble_swap"
+      ],
+      [
+        "forward",
+        "full_hex_reverse",
+        "byte_reverse",
+        "nibble_swap"
+      ]
+    ],
+    "unique_case_ids": 584
+  },
+  "rev7_read": false,
+  "runtime": {
+    "python": "3.9.6"
+  },
+  "scope": {
+    "backend_ids": [
+      "aes128",
+      "des",
+      "blowfish",
+      "bfcompat",
+      "rc2",
+      "twofish",
+      "loki97"
+    ],
+    "control_traversal": "one registered backend choice per depth; exact production traverse_grid and record_case",
+    "direct_plants": 7,
+    "mixed_depths": [
+      2,
+      3
+    ],
+    "target_total_path_endpoints": 22764,
+    "transforms_exercised": [
+      "nibble_swap",
+      "byte_reverse",
+      "full_hex_reverse"
+    ]
+  },
+  "source_build": {
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "source_binary_hashes": {
+      "bfcompat": "d4a0d8452612f2e8a14ed02b6e4459c35211dcd87d0ba08a013ad5033da2170e",
+      "loki97": "913fcb3fc0017aede6c11a1a5e4bc65e1e9556be9e841d32aec5a66cadc0f89e",
+      "twofish": "bdc474a8415a6f4cfe2f6788bedb319c0f504589b972fc33baebb26467aedae8"
+    },
+    "temporary_only": true
+  },
+  "target_evaluated": false
+}

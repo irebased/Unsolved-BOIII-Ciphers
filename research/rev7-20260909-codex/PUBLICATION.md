@@ -381,3 +381,20 @@ python3 -B research/rev7-20260909-codex/iv_independent/cascade/runtime/controls.
 ```
 
 This snapshot provides controls only. A future cascade target needs its own reviewed traversal, endpoint controls and frozen registration.
+
+
+## Controlled cascade traversal before target registration
+
+The [cascade driver and controls](iv_independent/cascade/target/README.md) prepare 22,764 CFB8 path endpoints across seven fixed-key backends, depths one to three, four outer orientations and four interlayer involutions. Nontext intermediate nodes continue to expand. Endpoint checks apply the A105 necessary byte filter and boundary-aware five-sequence UTF-8 FSA to each proved known interval.
+
+Seven direct synthetic plants, a two-layer plant with a rejected intermediate and retained child, and a mixed three-layer plant all recover their known plaintext intervals and re-encrypt exactly under two independent IV suites. A branching control exercises 584 endpoints across four orientations and all interlayer transforms. Every interval matches full-reference decryption; every classification matches a separate endpoint oracle. Exact ID accounting passes, with 583 rejected endpoints and the one intended retained leaf. Its deterministic row digest is `0e6444288f89d7d689bd465470429a5117830b8e3e18c7b655ca980b859cfcf9`.
+
+Root reviewed the complete source and regenerated the full [control ledger](iv_independent/cascade/target/controls.json), SHA-256 `0cdf349df9657818394991daf9e0c753b1e4b7c8a1aaa52a1dd43bb6f4ecd0c4`. All deterministic fields matched; only the three temporary library hashes differed. The frozen driver SHA-256 is `dea3bceff94993abb7f59993300f71552c3ca84b344e96b22d27479c3dc05d41`. Source, controls and the inert gate helper are included; this snapshot has no target gate or evaluation.
+
+```sh
+python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/target/controls.py
+python3 -B research/rev7-20260909-codex/iv_independent/cascade/target/controls.py --regenerate-dir /tmp/cascade-target-controls-new
+python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/target/run_target.py --selftest
+```
+
+The default control command verifies source and structural integrity; regeneration performs the synthetic cryptographic comparisons. The target requires a separately published gate following FABLE preregistration and root GO. Existing output/checkpoint files are refused; there is no resume mode.
