@@ -1,0 +1,89 @@
+{
+  "authorized": true,
+  "driver_sha256": "6dd45ffb0d2a5825f9388b363bc2c97bbb799bc16a1a24587884455e95ffce56",
+  "identity": "ASTRA",
+  "review": "Root read full driver/verifier/controls; independently replayed8syntheticdispatchcases byte-exact. Entirefresh2175cellselection derived from pinned evidence. One process,10000ms percell,full546bag213. Timeouts/SATunresolved; no restarts or additional grids.",
+  "reviewed_artifact_hashes": {
+    "driver_controls.json": "c9d7c595ac073b110262091dbe076fee0a28db294fc3550d86aa192b649e34da",
+    "driver_controls.py": "f5f4d5761bd4fc00660303ae1aeb4608f0de17c57adbcbf329b2ed26d5d02e68",
+    "run_target.py": "6dd45ffb0d2a5825f9388b363bc2c97bbb799bc16a1a24587884455e95ffce56",
+    "verify_results.py": "d070482f30750a9f58eece9d3caaaad294255d0dd8281ca58dda750b28312ef5"
+  },
+  "scope": {
+    "bag": 213,
+    "even_residual": [
+      {
+        "orientation": "byte_reverse",
+        "period": 16
+      },
+      {
+        "orientation": "forward",
+        "period": 562
+      },
+      {
+        "orientation": "forward",
+        "period": 972
+      },
+      {
+        "orientation": "nibble_swap",
+        "period": 850
+      },
+      {
+        "orientation": "nibble_swap",
+        "period": 972
+      },
+      {
+        "orientation": "reverse",
+        "period": 16
+      },
+      {
+        "orientation": "reverse",
+        "period": 514
+      }
+    ],
+    "existing_even_invariant_exclusions": 2177,
+    "existing_exclusions_total": 2193,
+    "existing_odd_solver_exclusions": 16,
+    "fresh_cell_ids_sha256": "6b6fcbefda4bd92099d181ac11ddb00300737fc3f3c22d1dc0f776a0b5a44019",
+    "fresh_cells": 2175,
+    "fresh_even_residual_cells": 7,
+    "fresh_odd_cells": 2168,
+    "nominal_periods_at_or_above_1092_represented_by": 1092,
+    "orientations": [
+      "forward",
+      "reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "periods": [
+      1,
+      1092
+    ],
+    "prefix_bytes": 546,
+    "timeout_ms_per_cell": 10000,
+    "universe_cells": 4368
+  },
+  "source_hashes": {
+    "audit.json": "d984d8c9ea8118e85d7f21bb226df28925392141bbf4af6d9f8e1951c6892aec",
+    "bagmode.py": "ec21d22691016d2a331a0c8a14c0573306b88ac6db772c8a6c5de64409597e06",
+    "bifid16.py": "a80c5f839511454a11a473cbfa4734bf3452656c8015e15ac759f65f45bf9af7",
+    "dataset": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "dependency/dependency.json": "e88e7bf34243264705ca5fcaa66acb5c9db96f289192a862e0e063a915897e4e",
+    "dependency/runtime/z3/lib/libz3.dylib": "3164e079c221c23a843396a485a6e912ee423918ee64ea03943e584305439a98",
+    "even_period_invariant.json": "f6f2d01801992bb145c583fdc83284ea100c99d30bf4f3e5a477b56317a84a36",
+    "even_period_invariant.py": "1fa72b75ff59028ed256dbf6853dd44669cd53b07bcce998331e212b65d2a2a2",
+    "even_target/run_target.py": "b86fdd8402319753eb0292e75b9f0712a1ed2044038761e5d7a23af30cd4ff85",
+    "even_target/target_results.json": "acc7df78f141e79b9d3c4e23dba3124ddb7665d5cb5f7450eabd5d9a88ce1dc8",
+    "even_target/verify_results.py": "547eccc6b2dc6b5ec808b857934e26af86ea209271fcac6fc2f11e16a4cb023a",
+    "odd_fullbag/run_target.py": "cd6f5abdbd63862dcb8cb84131b454e8dd9a8da6a24677b2a9b6992045edc338",
+    "odd_fullbag/target_gate.json": "9fa88c99738acce0ad230699fa46ee29b71a9264ea660e0dace2c29b5970b1a2",
+    "odd_fullbag/target_results.json": "3bbb8ccd756ea29082b2394108544601c79eb0fe19d2259b2c8ba732294225a3",
+    "odd_fullbag/verify_results.py": "37f657c01ed2ecefdf08e992da7c0a62725942e25e11c005f998a40c81ab46c0",
+    "odd_pilot/run_target.py": "52972d35244709e87f2de69b6f760b9cdc2029e82d93af9789bfffe2c34bb3eb",
+    "odd_pilot/target_gate.json": "fef5128cd5a7d80fb31a48fdfc479e215271b250d9e423d69cbb53021d0d6654",
+    "odd_pilot/target_results.json": "5ffb45b7191689e119bbb4e930f124eda5f78d8ddbb229085e9c522245c5a4a1",
+    "odd_pilot/verify_results.py": "bd2d2a58d2493b1e87e19bf0ca9e12f795c4c1b7fb26bbaa58be1bbbba276375",
+    "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "symmetry_probe.py": "8bf072deccafabe1e98db126178207d9cf3c8eccdcab6902a28b0c0d123a26e0"
+  }
+}

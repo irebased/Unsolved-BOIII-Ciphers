@@ -1,0 +1,182 @@
+{
+  "assertions": {
+    "all_last_ff_fullbag_unsat": true,
+    "all_orientation_dispatch_exact": true,
+    "all_positive_sat": true,
+    "eight_fixed_square_cases": true,
+    "sat_independent_roundtrip": true,
+    "varied_periods_and_final_blocks": true
+  },
+  "canonical_ciphertext_extracted": false,
+  "cases": [
+    {
+      "bytes": 17,
+      "canonical_hex": "446973706174636820E280930944697370",
+      "ciphertext_sha256": "efacf76cc025df0bcd57f9d0a13e54c54b795ab078ea8db4f166e0b6dfee766f",
+      "final_block_symbols": 1,
+      "kind": "positive",
+      "orientation": "forward",
+      "period": 1,
+      "smt2_sha256": "09404dac3271aabf29831ee42de9c4c4f3969e7eb2ab2204e24c72ff63502d56",
+      "status": "sat"
+    },
+    {
+      "bytes": 17,
+      "canonical_hex": "446973706174636820E2809309446973FF",
+      "ciphertext_sha256": "3eec0f0574db50101e5af8710be0e821b1171388b47666256e9bcdf8601cefab",
+      "final_block_symbols": 1,
+      "kind": "last_ff",
+      "orientation": "forward",
+      "period": 1,
+      "smt2_sha256": "36b2992c968951af50b8126317c57ebb9ae06c3bacdafee508c86bd4ef7eac7d",
+      "status": "unsat"
+    },
+    {
+      "bytes": 18,
+      "canonical_hex": "400877949691231889272668C4B68B33D464",
+      "ciphertext_sha256": "119a01ec6e86d751bbe13ed980d260ae81bfc4053236b89ffa88890902d60436",
+      "final_block_symbols": 3,
+      "kind": "positive",
+      "orientation": "reverse",
+      "period": 3,
+      "smt2_sha256": "bbe481b4765aeec93a2b525418f0bb0d211145b615a7ed0916c0e91668753ac1",
+      "status": "sat"
+    },
+    {
+      "bytes": 18,
+      "canonical_hex": "F37877949691231889272668C4B68B33D464",
+      "ciphertext_sha256": "e76d4eef6d412592ae436833a1d83cbf9177bc974b533226b48a96f9e6fee160",
+      "final_block_symbols": 3,
+      "kind": "last_ff",
+      "orientation": "reverse",
+      "period": 3,
+      "smt2_sha256": "37168a6e0278067aa3bab2a28cb84872215f7ab5f879ed350713a4bd42534de4",
+      "status": "unsat"
+    },
+    {
+      "bytes": 31,
+      "canonical_hex": "349324A27B46E133E2C9349A2A18BA932432236714AEA99E4C334982A17B46",
+      "ciphertext_sha256": "bec62d62f39f8b673df69b124753fb7458b02a30dbaf133d467bc0c6244adb3c",
+      "final_block_symbols": 14,
+      "kind": "positive",
+      "orientation": "byte_reverse",
+      "period": 16,
+      "smt2_sha256": "e4d959e7faefb06e1ff199cdd4f01bb98a02c02ba1bc061a0137a980c0e2204d",
+      "status": "sat"
+    },
+    {
+      "bytes": 31,
+      "canonical_hex": "3F9324F27B46E133E2C9349A2A18BA932432236714AEA99E4C334982A17B46",
+      "ciphertext_sha256": "d6e09ee95f854d0c2ed0947ed34ac61f36c2e3ca299cf1e04bbe1c94e22c4885",
+      "final_block_symbols": 14,
+      "kind": "last_ff",
+      "orientation": "byte_reverse",
+      "period": 16,
+      "smt2_sha256": "1c6f8e6e79e1db4c590e98f7bb2b89cc1864b04aa9dee3c3411ad6487a4beac6",
+      "status": "unsat"
+    },
+    {
+      "bytes": 33,
+      "canonical_hex": "64B71A289AEA411684684E3688224658B039121245D90530C4E93223423943819C",
+      "ciphertext_sha256": "c00b52ba14bd3ee78d2efd1f8a0be00e63dd308788f6a2e5caa1c3bd57f98fa1",
+      "final_block_symbols": 4,
+      "kind": "positive",
+      "orientation": "nibble_swap",
+      "period": 31,
+      "smt2_sha256": "7516025dd7baca7138c13bac2013ecfdb52a5ef7554a8286a5c1efbdf87c7ca9",
+      "status": "sat"
+    },
+    {
+      "bytes": 33,
+      "canonical_hex": "64B71A289AEA411684684E3688224658B039121245D90530C4E93223423943F1FC",
+      "ciphertext_sha256": "8125a2dd852b2f267f63959530d5c6abd98c83a367dea09ac7351b3338f556b0",
+      "final_block_symbols": 4,
+      "kind": "last_ff",
+      "orientation": "nibble_swap",
+      "period": 31,
+      "smt2_sha256": "adb8237fd38d6eba53d324751286db3024bdcf0d1811fa25b5b52a99ebce5dc7",
+      "status": "unsat"
+    }
+  ],
+  "derived_scope_without_target": {
+    "bag": 213,
+    "even_residual": [
+      {
+        "orientation": "byte_reverse",
+        "period": 16
+      },
+      {
+        "orientation": "forward",
+        "period": 562
+      },
+      {
+        "orientation": "forward",
+        "period": 972
+      },
+      {
+        "orientation": "nibble_swap",
+        "period": 850
+      },
+      {
+        "orientation": "nibble_swap",
+        "period": 972
+      },
+      {
+        "orientation": "reverse",
+        "period": 16
+      },
+      {
+        "orientation": "reverse",
+        "period": 514
+      }
+    ],
+    "existing_even_invariant_exclusions": 2177,
+    "existing_exclusions_total": 2193,
+    "existing_odd_solver_exclusions": 16,
+    "fresh_cell_ids_sha256": "6b6fcbefda4bd92099d181ac11ddb00300737fc3f3c22d1dc0f776a0b5a44019",
+    "fresh_cells": 2175,
+    "fresh_even_residual_cells": 7,
+    "fresh_odd_cells": 2168,
+    "nominal_periods_at_or_above_1092_represented_by": 1092,
+    "orientations": [
+      "forward",
+      "reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "periods": [
+      1,
+      1092
+    ],
+    "prefix_bytes": 546,
+    "timeout_ms_per_cell": 10000,
+    "universe_cells": 4368
+  },
+  "fresh_target_computation": false,
+  "identity": "ASTRA",
+  "prior_target_ledgers_read": true,
+  "seed": 20260911,
+  "source_hashes": {
+    "driver_controls.py": "f5f4d5761bd4fc00660303ae1aeb4608f0de17c57adbcbf329b2ed26d5d02e68",
+    "run_target.py": "6dd45ffb0d2a5825f9388b363bc2c97bbb799bc16a1a24587884455e95ffce56"
+  },
+  "target_evaluated": false,
+  "truth_square": [
+    4,
+    14,
+    9,
+    13,
+    12,
+    15,
+    3,
+    5,
+    6,
+    8,
+    2,
+    10,
+    1,
+    7,
+    0,
+    11
+  ]
+}
