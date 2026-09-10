@@ -1,0 +1,1822 @@
+{
+  "assertions": {
+    "all_256_values_per_chain": true,
+    "all_four_primitives_used": true,
+    "all_passed": true,
+    "below_at_above_boundaries_per_chain": true,
+    "five_mixed_chains": true,
+    "mode_cfb_and_ecb_recurrence_agree": true,
+    "no_intermediate_printability_assumption": true,
+    "no_target_read_or_evaluation": true,
+    "two_and_three_layer_chains": true,
+    "two_iv_suites_every_vector": true,
+    "utf8_initial_states_1_and_2_per_chain": true
+  },
+  "chains": [
+    [
+      "aes128",
+      "des"
+    ],
+    [
+      "blowfish",
+      "aes128"
+    ],
+    [
+      "arc2",
+      "des"
+    ],
+    [
+      "aes128",
+      "blowfish",
+      "arc2"
+    ],
+    [
+      "des",
+      "aes128",
+      "blowfish"
+    ]
+  ],
+  "cipher_specs": {
+    "aes128": {
+      "arc2_effective_keylen": null,
+      "block_size": 16,
+      "key_hex": "5a6f6d62696573000000000000000000"
+    },
+    "arc2": {
+      "arc2_effective_keylen": 1024,
+      "block_size": 8,
+      "key_hex": "5a6f6d62696573"
+    },
+    "blowfish": {
+      "arc2_effective_keylen": null,
+      "block_size": 8,
+      "key_hex": "5a6f6d62696573"
+    },
+    "des": {
+      "arc2_effective_keylen": null,
+      "block_size": 8,
+      "key_hex": "5a6f6d6269657300"
+    }
+  },
+  "coverage_note": "Local prior artifacts contain completed one-layer IV-independent and raw-IV-prefix proofs, but no completed direct-binary two/three-layer CFB8 cascade proof or synthetic ledger was found. This statement is limited to the retained local record.",
+  "identity": "ASTRA",
+  "limits": [
+    "Direct binary layers with unchanged byte length and alignment only.",
+    "Fixed known keys and ordinary CFB8 at every layer.",
+    "No interposed hex/Base64/numeric encoding, reversal, transposition, padding insertion/removal, truncation, or framing between layers.",
+    "No intermediate layer is required to be printable; only the final known suffix may be tested by an endpoint.",
+    "The unknown prefix of length sum(block sizes) is not recovered.",
+    "Compatibility ciphers outside PyCryptodome's standard AES/DES/Blowfish/ARC2 primitives are not controlled here."
+  ],
+  "mode_comparisons": 80,
+  "rev7_read": false,
+  "runtime": {
+    "pycryptodome": "3.23.0",
+    "python": "3.9.6"
+  },
+  "source_hashes": {
+    "proof.py": "1152ff62572b5914c1840ddd4af14efdc1ff26c58051a566c62bfb2ed1a1f8c0"
+  },
+  "sources": {
+    "nist_sp800_38a_section_6_3": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a.pdf"
+  },
+  "target_evaluated": false,
+  "theorem": {
+    "induction": "After earlier layers expose their output from offset B, layer j needs only input positions i-b_j through i at output positions i>=B+b_j. Applying the one-layer recurrence to the known suffix exposes the next output from B+b_j.",
+    "one_layer": "For i>=b, P[i]=C[i] XOR E_key(C[i-b:i])[0], because the CFB8 register then consists entirely of the preceding b ciphertext bytes.",
+    "statement": "For direct same-length binary CFB8 decryption layers in outer-to-inner decryption order with block sizes b_j, the final plaintext suffix beginning at sum(b_j) is determined by the outer ciphertext and fixed keys without any IV.",
+    "unknown_prefix": "No bytes before sum(b_j) are recovered by this theorem."
+  },
+  "vector_count": 40,
+  "vectors": [
+    {
+      "block_sizes": [
+        16,
+        8
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "aes128",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_below",
+      "plaintext_length": 23,
+      "plaintext_sha256": "1ea7eea9644552a4f9ca6e253bfd7615a680f4940871c0143c6e15d52de9a308",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "88bb528f800591782cfe8e580ccf8e7bfc27b11cd376e772370c38808741790b",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "3e61d7de13c61c77caafddc822706b6ce7379092be9f60ebbb5bf965958c7d3b",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "aes128",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_at",
+      "plaintext_length": 24,
+      "plaintext_sha256": "b9ff6e8464a9a468c665422fafef68541040edc622f6755dd4f8e2c258884cef",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "5b3f9834b9f05c34f622fe4efa676b7b3bddb648c28cdcda69797d544d8a5c57",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "9554b49f37fe868a8902d6b4d1a6ed0439e47e5620509fa1a6df25c9ee60ee34",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "aes128",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_above_one",
+      "plaintext_length": 25,
+      "plaintext_sha256": "a1550a93ca408eaaed9ce0691edfc335801c001b6cad4ded9433135acbb0bef3",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "9cbee089e6b6164f9f50ab894615ffb7eda347b7a91bb0dca1bc21fd118cfeb8",
+          "iv_free_suffix_length": 1,
+          "iv_free_suffix_sha256": "d4f09e5c5af99a24c7e304ca7997d26cb00901697de08a49be0d46ab5839b614",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "c64163477a7d49f8c988348079ce403d807d0b2bcd86769110a7cdcd820b4e2b",
+          "iv_free_suffix_length": 1,
+          "iv_free_suffix_sha256": "d4f09e5c5af99a24c7e304ca7997d26cb00901697de08a49be0d46ab5839b614",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "aes128",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_above_seventeen",
+      "plaintext_length": 41,
+      "plaintext_sha256": "edf0d9331b90a3d1c55bc3aae24fe2efc2b2ac7d108bb461ef831ec9ba8d8d65",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "a65c7d9a24b5097cee4a104e0d4bc2cee12f34070be49dddcb3261ef07992f08",
+          "iv_free_suffix_length": 17,
+          "iv_free_suffix_sha256": "dd3455c0e93bf73a129627c16ffd2e64855106d13e0e3d41251460ed4c16c933",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "2078bd882df54c44970a5c97325c9a19ef55cf5f2ecde176fd6976e2c007ce49",
+          "iv_free_suffix_length": 17,
+          "iv_free_suffix_sha256": "dd3455c0e93bf73a129627c16ffd2e64855106d13e0e3d41251460ed4c16c933",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "aes128",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "all_256_byte_values",
+      "plaintext_length": 256,
+      "plaintext_sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "0c50c60f9912b4e3b73a10c6eba2165f2912cfe2a0a669a77601b4374d645b63",
+          "iv_free_suffix_length": 232,
+          "iv_free_suffix_sha256": "f9db35970005f6dfb058b07ce2996f52d5301f2baa3a31e1ef7b2ff4b464c7fc",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "4e283089e2c02c374dcb8931b0492b278a233af12246de98922ab1cfe2efa0f4",
+          "iv_free_suffix_length": 232,
+          "iv_free_suffix_sha256": "f9db35970005f6dfb058b07ce2996f52d5301f2baa3a31e1ef7b2ff4b464c7fc",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "aes128",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "strict_text_all_five_utf8",
+      "plaintext_length": 177,
+      "plaintext_sha256": "09d235c7cdf3b63b260f22b60f59886aa7a7c684b3753c6ab0d60ea887c71c7d",
+      "strict_suffix_fsa": true,
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "c2d4435d39211732aed82ab7bc73cf9649b801badb6766ac729c61b3f4fa800d",
+          "iv_free_suffix_length": 153,
+          "iv_free_suffix_sha256": "c5f368134718aa97f2258e1bf8c925ab62de30ed55a14e788e7647819f95393b",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "dc6e592db9b8854300b4753151d65646ef3b3e11fe59300b9f052d45b37dae62",
+          "iv_free_suffix_length": 153,
+          "iv_free_suffix_sha256": "c5f368134718aa97f2258e1bf8c925ab62de30ed55a14e788e7647819f95393b",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "aes128",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "utf8_partial_boundary_state_1",
+      "plaintext_length": 52,
+      "plaintext_sha256": "d04e51b4fa60b08fdcab503ddb5757e5ebd71ec669641c55b7fc36e3e4b79c97",
+      "strict_suffix_fsa": true,
+      "suffix_begins_hex": "80a620",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "e3b76c00403d8b53f42f915706ddeeb948dd5cdb677b07eea1f587a960b9f40c",
+          "iv_free_suffix_length": 28,
+          "iv_free_suffix_sha256": "cb4b1747e440bbdbe91c508e3a7833c1261e241fedebb0269c64c09af4f36297",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "4ca98cc5e24adf47030d956789987c5bd9de7798b16c2ebb259a335eb120e0d9",
+          "iv_free_suffix_length": 28,
+          "iv_free_suffix_sha256": "cb4b1747e440bbdbe91c508e3a7833c1261e241fedebb0269c64c09af4f36297",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "aes128",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "utf8_partial_boundary_state_2",
+      "plaintext_length": 51,
+      "plaintext_sha256": "9c1110685e8e6a5d020c37694b94464ba890300da2e742537c834bb8ab09a762",
+      "strict_suffix_fsa": true,
+      "suffix_begins_hex": "a62056",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "1cfcbfc57452f0b523125890e5ed5a533bad3f67f7c48ec9a31f588ca3d2a5a3",
+          "iv_free_suffix_length": 27,
+          "iv_free_suffix_sha256": "683b4d134f5bce7dc4431f22c80c63660412c7f900d63e4630eb3f2e517020e0",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "04eb6194967e7f911e56c70e6dd9135d39ff002cc2016e643631c8775fe8e4c6",
+          "iv_free_suffix_length": 27,
+          "iv_free_suffix_sha256": "683b4d134f5bce7dc4431f22c80c63660412c7f900d63e4630eb3f2e517020e0",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "blowfish",
+        "aes128"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_below",
+      "plaintext_length": 23,
+      "plaintext_sha256": "1ea7eea9644552a4f9ca6e253bfd7615a680f4940871c0143c6e15d52de9a308",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "0863516f5407f5b4e96b1f3fb4c2e2122b8491cf0d5ec744571e3b531281e13b",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "524c2d623cfdea79184f097918b5ddff4762102ab06e90c83744584b39829855",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "blowfish",
+        "aes128"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_at",
+      "plaintext_length": 24,
+      "plaintext_sha256": "b9ff6e8464a9a468c665422fafef68541040edc622f6755dd4f8e2c258884cef",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "3c5c32676bc292ec7969432ff137ec3f96a3e70537625a07928907000e89b24f",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "4f76f8618eab346df5b13abbd6124b23dca5f04c9cde0fd84ac0243f312033a4",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "blowfish",
+        "aes128"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_above_one",
+      "plaintext_length": 25,
+      "plaintext_sha256": "a1550a93ca408eaaed9ce0691edfc335801c001b6cad4ded9433135acbb0bef3",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "b23094ea41c09eede7d82132d5b0793fb48e7f315c68441eaf4914bf7c939f1e",
+          "iv_free_suffix_length": 1,
+          "iv_free_suffix_sha256": "d4f09e5c5af99a24c7e304ca7997d26cb00901697de08a49be0d46ab5839b614",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "f11de84f7a4a608250be73064cd3d13847f3586bf162fc70f0b18b96d8d1840d",
+          "iv_free_suffix_length": 1,
+          "iv_free_suffix_sha256": "d4f09e5c5af99a24c7e304ca7997d26cb00901697de08a49be0d46ab5839b614",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "blowfish",
+        "aes128"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_above_seventeen",
+      "plaintext_length": 41,
+      "plaintext_sha256": "edf0d9331b90a3d1c55bc3aae24fe2efc2b2ac7d108bb461ef831ec9ba8d8d65",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "220d2afe3dffdac65e76c4d4e4cb3933766e2dbc028e477ffa2592b773c0a215",
+          "iv_free_suffix_length": 17,
+          "iv_free_suffix_sha256": "dd3455c0e93bf73a129627c16ffd2e64855106d13e0e3d41251460ed4c16c933",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "7f1c9e91cb843900d6c6522ea8cf92a5adf52745581f80cd6f380a743c739aac",
+          "iv_free_suffix_length": 17,
+          "iv_free_suffix_sha256": "dd3455c0e93bf73a129627c16ffd2e64855106d13e0e3d41251460ed4c16c933",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "blowfish",
+        "aes128"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "all_256_byte_values",
+      "plaintext_length": 256,
+      "plaintext_sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "8c5ab39aa4eec966f3f7f57cac9b49105753e0e153800c29dd36b6c716b47862",
+          "iv_free_suffix_length": 232,
+          "iv_free_suffix_sha256": "f9db35970005f6dfb058b07ce2996f52d5301f2baa3a31e1ef7b2ff4b464c7fc",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "037b3328643f3de9b3144818cf8a300314fb6384b1a04670f3f3612e5be26fe0",
+          "iv_free_suffix_length": 232,
+          "iv_free_suffix_sha256": "f9db35970005f6dfb058b07ce2996f52d5301f2baa3a31e1ef7b2ff4b464c7fc",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "blowfish",
+        "aes128"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "strict_text_all_five_utf8",
+      "plaintext_length": 177,
+      "plaintext_sha256": "09d235c7cdf3b63b260f22b60f59886aa7a7c684b3753c6ab0d60ea887c71c7d",
+      "strict_suffix_fsa": true,
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "d952eb19794eb60eef7b86011aedfe83095b6a8264ffe50416670c2b0cfb4132",
+          "iv_free_suffix_length": 153,
+          "iv_free_suffix_sha256": "c5f368134718aa97f2258e1bf8c925ab62de30ed55a14e788e7647819f95393b",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "6aba6e8f6afca830a22f84c30756520e33025d69700bc43e9427fa971ae12098",
+          "iv_free_suffix_length": 153,
+          "iv_free_suffix_sha256": "c5f368134718aa97f2258e1bf8c925ab62de30ed55a14e788e7647819f95393b",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "blowfish",
+        "aes128"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "utf8_partial_boundary_state_1",
+      "plaintext_length": 52,
+      "plaintext_sha256": "d04e51b4fa60b08fdcab503ddb5757e5ebd71ec669641c55b7fc36e3e4b79c97",
+      "strict_suffix_fsa": true,
+      "suffix_begins_hex": "80a620",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "62d46c23e956c019f86bdd4371c37ae988707abb4c7af83c2de953f0d11d1d19",
+          "iv_free_suffix_length": 28,
+          "iv_free_suffix_sha256": "cb4b1747e440bbdbe91c508e3a7833c1261e241fedebb0269c64c09af4f36297",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "332b4d607acfb4bf481d72f3b8f3d16a1a92f2477d7e3ad142916a9b24fff83d",
+          "iv_free_suffix_length": 28,
+          "iv_free_suffix_sha256": "cb4b1747e440bbdbe91c508e3a7833c1261e241fedebb0269c64c09af4f36297",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16
+      ],
+      "boundary": 24,
+      "decryption_layers": [
+        "blowfish",
+        "aes128"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "utf8_partial_boundary_state_2",
+      "plaintext_length": 51,
+      "plaintext_sha256": "9c1110685e8e6a5d020c37694b94464ba890300da2e742537c834bb8ab09a762",
+      "strict_suffix_fsa": true,
+      "suffix_begins_hex": "a62056",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "7eab7163c4170fa566b533ec8330b35775612cc375942ba0a9803ba983fe5803",
+          "iv_free_suffix_length": 27,
+          "iv_free_suffix_sha256": "683b4d134f5bce7dc4431f22c80c63660412c7f900d63e4630eb3f2e517020e0",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "450cea5e7ed026d0d13b08b1aada14748512cd302fbd18479d7a10549e687d7c",
+          "iv_free_suffix_length": 27,
+          "iv_free_suffix_sha256": "683b4d134f5bce7dc4431f22c80c63660412c7f900d63e4630eb3f2e517020e0",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        8
+      ],
+      "boundary": 16,
+      "decryption_layers": [
+        "arc2",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_below",
+      "plaintext_length": 15,
+      "plaintext_sha256": "3759a5591dc61fb238277f38f94f8476d49705476d81d49917f61dd88886098f",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "06b2f7d9989f2e113c57908ae05aa9991691bb4704d56f9a3e31057d56ca8d08",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "593a0a4521faf95cd2ac2550b6445b9bbfaf9670de7589c8cd304c80037c2ab1",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        8
+      ],
+      "boundary": 16,
+      "decryption_layers": [
+        "arc2",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_at",
+      "plaintext_length": 16,
+      "plaintext_sha256": "0d9b01b835ada01316072ebedf253b34496dabd68b028d6475990f4b40ca9238",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "ccc62365832279996ae6546a3617dd6a82cd13a49db20d83f75615e9f116d01e",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "3fe8871e8ac0a4963fa10f37838a5e366ced8f5011eb1388226ee1e4810cf2c0",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        8
+      ],
+      "boundary": 16,
+      "decryption_layers": [
+        "arc2",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_above_one",
+      "plaintext_length": 17,
+      "plaintext_sha256": "1733c1bfe7174368e251820110a18fe8d38f9256c8c21f0a728d951671ed5c1a",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "21412d62fe21878ad09ef229e31c584a8b973013057ce06b13e6b0395393591d",
+          "iv_free_suffix_length": 1,
+          "iv_free_suffix_sha256": "8a8950f7623663222542c9469c73be3c4c81bbdf019e2c577590a61f2ce9a157",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "e3cca39fa46ff593a0e02ff1afffa64c9bf071035846b14ab9176d88cdc89bf0",
+          "iv_free_suffix_length": 1,
+          "iv_free_suffix_sha256": "8a8950f7623663222542c9469c73be3c4c81bbdf019e2c577590a61f2ce9a157",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        8
+      ],
+      "boundary": 16,
+      "decryption_layers": [
+        "arc2",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_above_seventeen",
+      "plaintext_length": 33,
+      "plaintext_sha256": "0a43db809a4ac2cf2bdc3468d8d95555af7359f86d5c3fa71320e3f518d8258c",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "82b30a491c6f6364e0491897f83c5ef038bffc92091e7f76bbe34aa79fac1040",
+          "iv_free_suffix_length": 17,
+          "iv_free_suffix_sha256": "603e6457976203c95903b2d7ad935ee5fbdd35df20a853e7f1ee68000f4f1b45",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "17f77a0a329e071663c197fc53abe6bebacf3de58617318b020f889c5338f811",
+          "iv_free_suffix_length": 17,
+          "iv_free_suffix_sha256": "603e6457976203c95903b2d7ad935ee5fbdd35df20a853e7f1ee68000f4f1b45",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        8
+      ],
+      "boundary": 16,
+      "decryption_layers": [
+        "arc2",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "all_256_byte_values",
+      "plaintext_length": 256,
+      "plaintext_sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "895bfb960dbf301c142b0fffc8f86a08d79b90897e9c4ac1efda548751fb5669",
+          "iv_free_suffix_length": 240,
+          "iv_free_suffix_sha256": "696f3cc5a663419ba675bf849182801e5fed5c5e86d3f0d7508b1eef32b84152",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "d87b7d61cb79647249590ba2ae9f08e10b66146d474ef27da51a39a91052e8b5",
+          "iv_free_suffix_length": 240,
+          "iv_free_suffix_sha256": "696f3cc5a663419ba675bf849182801e5fed5c5e86d3f0d7508b1eef32b84152",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        8
+      ],
+      "boundary": 16,
+      "decryption_layers": [
+        "arc2",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "strict_text_all_five_utf8",
+      "plaintext_length": 169,
+      "plaintext_sha256": "9528d3dcb56f94ccc1b717138208ef2225ff1bbc93fe938aefb2b3d424ea241b",
+      "strict_suffix_fsa": true,
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "dfdd61e01d5b0909d2d049ccc338b5f5f0b0d47fc22b63ab845917cd45527431",
+          "iv_free_suffix_length": 153,
+          "iv_free_suffix_sha256": "c5f368134718aa97f2258e1bf8c925ab62de30ed55a14e788e7647819f95393b",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "d76c65136eb2f5a6da4e1bef6d7a8edde6e6c900f85c715926e5cb6abc0b6855",
+          "iv_free_suffix_length": 153,
+          "iv_free_suffix_sha256": "c5f368134718aa97f2258e1bf8c925ab62de30ed55a14e788e7647819f95393b",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        8
+      ],
+      "boundary": 16,
+      "decryption_layers": [
+        "arc2",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "utf8_partial_boundary_state_1",
+      "plaintext_length": 44,
+      "plaintext_sha256": "c52b8951e4c533255a1a2637e9b54db34514cdb16161fe3125bb88ebc1690e3b",
+      "strict_suffix_fsa": true,
+      "suffix_begins_hex": "80a620",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "b78b703f8d3258c27fbe26b50e83ee4fac7523899627e6a51b430b885d593462",
+          "iv_free_suffix_length": 28,
+          "iv_free_suffix_sha256": "cb4b1747e440bbdbe91c508e3a7833c1261e241fedebb0269c64c09af4f36297",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "f4d1994b5d54e29cd5b45ed97ab72897a35c831b055b16b51d6da629bbde2718",
+          "iv_free_suffix_length": 28,
+          "iv_free_suffix_sha256": "cb4b1747e440bbdbe91c508e3a7833c1261e241fedebb0269c64c09af4f36297",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        8
+      ],
+      "boundary": 16,
+      "decryption_layers": [
+        "arc2",
+        "des"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "utf8_partial_boundary_state_2",
+      "plaintext_length": 43,
+      "plaintext_sha256": "d621f5a743078ac8a52201b06d1b656042b62cebc6915594cf548d47d7897ea4",
+      "strict_suffix_fsa": true,
+      "suffix_begins_hex": "a62056",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "7dfe5caa39b460fb7a2667bf0dcba5ff857f41d493ece4781d0adf8691c19d9d",
+          "iv_free_suffix_length": 27,
+          "iv_free_suffix_sha256": "683b4d134f5bce7dc4431f22c80c63660412c7f900d63e4630eb3f2e517020e0",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "9fe289edad4bb1fdcd9a7ac4a77fdd94c04e5f9cbb73b2e038782f990cfa26c1",
+          "iv_free_suffix_length": 27,
+          "iv_free_suffix_sha256": "683b4d134f5bce7dc4431f22c80c63660412c7f900d63e4630eb3f2e517020e0",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d50"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "aes128",
+        "blowfish",
+        "arc2"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_below",
+      "plaintext_length": 31,
+      "plaintext_sha256": "a647437d8567b3c3bc38495faaa71603aefc4229138ae70fced37ecc72d502ee",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "c109fa9c65bfdb736125de8b0c9aefb4139531ad0143fc644da8d20ccb3a6b6e",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "3fa6780fff16742370cbd86cb0fbf920632644d1eb9538df8bf52b9455c734ea",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "aes128",
+        "blowfish",
+        "arc2"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_at",
+      "plaintext_length": 32,
+      "plaintext_sha256": "5e263b1e32c3a72987b2fa228a74f784aba8d6010a798e0034a75e9c4e1aa147",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "2916562b4bb6dbc0fcfcd0e0aa0a22bdcf3bfe54d00b0aed93e025f94792f677",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "a64aab50351dbe5b1c9c7df2157aac1b54e0083c21861f46fcee7c418070a1ae",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "aes128",
+        "blowfish",
+        "arc2"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_above_one",
+      "plaintext_length": 33,
+      "plaintext_sha256": "0a43db809a4ac2cf2bdc3468d8d95555af7359f86d5c3fa71320e3f518d8258c",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "3ef999de6429f3561a69360dd8463a6d7d3d8b19de4b396cece1b6cd8d5ab632",
+          "iv_free_suffix_length": 1,
+          "iv_free_suffix_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "f2bd55fbce4f0fcd1b2b749f8033f8a09f1f62d0b249c822013680c3a5634772",
+          "iv_free_suffix_length": 1,
+          "iv_free_suffix_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "aes128",
+        "blowfish",
+        "arc2"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_above_seventeen",
+      "plaintext_length": 49,
+      "plaintext_sha256": "c2d69eceff263d045a95d96e3266166e95396706083290725469550e136cb052",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "9133cfc4ca6dd57e50771c2aadbe7cc5af4d988f307f68b551b39d6f7cb7f769",
+          "iv_free_suffix_length": 17,
+          "iv_free_suffix_sha256": "2afc299fd4daf30c613a50f2458f2af9ba5b17bd1889868e4903d198075b7a7c",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "ddb372f79b162a86f767795a2b5638ec395144a2311d2cbdae3b97fea543e1aa",
+          "iv_free_suffix_length": 17,
+          "iv_free_suffix_sha256": "2afc299fd4daf30c613a50f2458f2af9ba5b17bd1889868e4903d198075b7a7c",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "aes128",
+        "blowfish",
+        "arc2"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "all_256_byte_values",
+      "plaintext_length": 256,
+      "plaintext_sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "7578dc9cafa3b732d37beaf0493c23fd94151096602ae51f69cd08eb3f294157",
+          "iv_free_suffix_length": 224,
+          "iv_free_suffix_sha256": "aea90164ab8e0638099106b39bffc56598aac72a0b127732fb0ecca857434153",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "21dfd0f5bb6e62cf6f7c825623c9780e1100e84a10a9beae4d0639a99d7b5cd7",
+          "iv_free_suffix_length": 224,
+          "iv_free_suffix_sha256": "aea90164ab8e0638099106b39bffc56598aac72a0b127732fb0ecca857434153",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "aes128",
+        "blowfish",
+        "arc2"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "strict_text_all_five_utf8",
+      "plaintext_length": 185,
+      "plaintext_sha256": "e59fb1388ab2c2d533d42aedcc5c36e623e328388186344f67084b996e4cebb8",
+      "strict_suffix_fsa": true,
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "13b145e9189bf020a9ee78954a956c7541b6ced11270324c3c32522e2eb2d1dd",
+          "iv_free_suffix_length": 153,
+          "iv_free_suffix_sha256": "c5f368134718aa97f2258e1bf8c925ab62de30ed55a14e788e7647819f95393b",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "225b2473aaf529e4886746414839172481552294ea031d8e9e3417811e3c9e03",
+          "iv_free_suffix_length": 153,
+          "iv_free_suffix_sha256": "c5f368134718aa97f2258e1bf8c925ab62de30ed55a14e788e7647819f95393b",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "aes128",
+        "blowfish",
+        "arc2"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "utf8_partial_boundary_state_1",
+      "plaintext_length": 60,
+      "plaintext_sha256": "4a293c41228888ffb42dccc69df5660ecd14d65ec95980cdbf2315f00ac7ef6a",
+      "strict_suffix_fsa": true,
+      "suffix_begins_hex": "80a620",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "70b81d0f7bb32f3746b5daa99bffcbd0e14c02daa7c4eb3875afb8b5d96b3831",
+          "iv_free_suffix_length": 28,
+          "iv_free_suffix_sha256": "cb4b1747e440bbdbe91c508e3a7833c1261e241fedebb0269c64c09af4f36297",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "6b4cd00f74536f034aa8b6603717b1a681b2cc1fbc06a8b41c227b83118a10f9",
+          "iv_free_suffix_length": 28,
+          "iv_free_suffix_sha256": "cb4b1747e440bbdbe91c508e3a7833c1261e241fedebb0269c64c09af4f36297",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        16,
+        8,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "aes128",
+        "blowfish",
+        "arc2"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "utf8_partial_boundary_state_2",
+      "plaintext_length": 59,
+      "plaintext_sha256": "01278c5c4a341e46270e81580e8acdf2fd39ef91e8c717006567dcf97d9736eb",
+      "strict_suffix_fsa": true,
+      "suffix_begins_hex": "a62056",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "c3e8d44c76e3182391d63e2bc1cac14c2f1d3e4a49ffd7ea89e36227dd638c98",
+          "iv_free_suffix_length": 27,
+          "iv_free_suffix_sha256": "683b4d134f5bce7dc4431f22c80c63660412c7f900d63e4630eb3f2e517020e0",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8ebfe1124374a5d70",
+            "788b9eb1c4d7eafd",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "043409699082ea07c55be6283cd86b0734153cd009afb314018d1a46de6939a7",
+          "iv_free_suffix_length": 27,
+          "iv_free_suffix_sha256": "683b4d134f5bce7dc4431f22c80c63660412c7f900d63e4630eb3f2e517020e0",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b3e5164778a9db0c3",
+            "cbdef104172a3d50",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "des",
+        "aes128",
+        "blowfish"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_below",
+      "plaintext_length": 31,
+      "plaintext_sha256": "a647437d8567b3c3bc38495faaa71603aefc4229138ae70fced37ecc72d502ee",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "f39d88a0131c93643a8297607a3466affa0367b943ef1adbd9df12bba096103d",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "465dff985c07b02a419d009e32917e69bfdaadfbdbef6870729ba228e9657216",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "des",
+        "aes128",
+        "blowfish"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_at",
+      "plaintext_length": 32,
+      "plaintext_sha256": "5e263b1e32c3a72987b2fa228a74f784aba8d6010a798e0034a75e9c4e1aa147",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "c4c4d6304ebf103212dd6ce348699986ae415da0256d418f715a4b1e0b966a28",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "27837f06d632028156ac8803b3bc5ec9240302f62771e48d75cb3a48f0c25ad8",
+          "iv_free_suffix_length": 0,
+          "iv_free_suffix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "des",
+        "aes128",
+        "blowfish"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_above_one",
+      "plaintext_length": 33,
+      "plaintext_sha256": "0a43db809a4ac2cf2bdc3468d8d95555af7359f86d5c3fa71320e3f518d8258c",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "b24024ffee92c83af5ce55738d02acd883121e0b504adf77e16c4568d1b92710",
+          "iv_free_suffix_length": 1,
+          "iv_free_suffix_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "8aa854b11dea079782c86a5c10139e8aaea4f15b417450e18d59a121bd91b542",
+          "iv_free_suffix_length": 1,
+          "iv_free_suffix_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "des",
+        "aes128",
+        "blowfish"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "boundary_above_seventeen",
+      "plaintext_length": 49,
+      "plaintext_sha256": "c2d69eceff263d045a95d96e3266166e95396706083290725469550e136cb052",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "89fecc36b06a042d351928f858255bb1435594f33083596e8ced74af3970b886",
+          "iv_free_suffix_length": 17,
+          "iv_free_suffix_sha256": "2afc299fd4daf30c613a50f2458f2af9ba5b17bd1889868e4903d198075b7a7c",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "df4922d4b923e0424104fedc479a801f05f8f01df9443cabf22e217d65ff93ed",
+          "iv_free_suffix_length": 17,
+          "iv_free_suffix_sha256": "2afc299fd4daf30c613a50f2458f2af9ba5b17bd1889868e4903d198075b7a7c",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "des",
+        "aes128",
+        "blowfish"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "all_256_byte_values",
+      "plaintext_length": 256,
+      "plaintext_sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "bfa85424748800a1a34f2c3864de7c896f1e9739ec498a4ba3698193ebddffad",
+          "iv_free_suffix_length": 224,
+          "iv_free_suffix_sha256": "aea90164ab8e0638099106b39bffc56598aac72a0b127732fb0ecca857434153",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "ac6ca8655a3108ba15b4874a507587cd6b4254f9c4b83d3fa4cd671a82a04b0a",
+          "iv_free_suffix_length": 224,
+          "iv_free_suffix_sha256": "aea90164ab8e0638099106b39bffc56598aac72a0b127732fb0ecca857434153",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "des",
+        "aes128",
+        "blowfish"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "strict_text_all_five_utf8",
+      "plaintext_length": 185,
+      "plaintext_sha256": "e59fb1388ab2c2d533d42aedcc5c36e623e328388186344f67084b996e4cebb8",
+      "strict_suffix_fsa": true,
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "bd1212be02fe1607ebbe41f523c435ecce95050f77fcc24d86f7ad62f859967c",
+          "iv_free_suffix_length": 153,
+          "iv_free_suffix_sha256": "c5f368134718aa97f2258e1bf8c925ab62de30ed55a14e788e7647819f95393b",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "176ff0a55a24a67def76ebd8921cc596f1f89c6ab218d86cff2d0f2d991bc79f",
+          "iv_free_suffix_length": 153,
+          "iv_free_suffix_sha256": "c5f368134718aa97f2258e1bf8c925ab62de30ed55a14e788e7647819f95393b",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "des",
+        "aes128",
+        "blowfish"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "utf8_partial_boundary_state_1",
+      "plaintext_length": 60,
+      "plaintext_sha256": "4a293c41228888ffb42dccc69df5660ecd14d65ec95980cdbf2315f00ac7ef6a",
+      "strict_suffix_fsa": true,
+      "suffix_begins_hex": "80a620",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "13c31eac7ddc75b374e0f59bfbcf1755678b57c39041e36d2b6e272b751e550f",
+          "iv_free_suffix_length": 28,
+          "iv_free_suffix_sha256": "cb4b1747e440bbdbe91c508e3a7833c1261e241fedebb0269c64c09af4f36297",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "964ad8b12f76dd679d4d1390f693380a2bdf76f255309c514bb182ac2c8f2c30",
+          "iv_free_suffix_length": 28,
+          "iv_free_suffix_sha256": "cb4b1747e440bbdbe91c508e3a7833c1261e241fedebb0269c64c09af4f36297",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    },
+    {
+      "block_sizes": [
+        8,
+        16,
+        8
+      ],
+      "boundary": 32,
+      "decryption_layers": [
+        "des",
+        "aes128",
+        "blowfish"
+      ],
+      "derived_suffix_identical_across_iv_suites": true,
+      "label": "utf8_partial_boundary_state_2",
+      "plaintext_length": 59,
+      "plaintext_sha256": "01278c5c4a341e46270e81580e8acdf2fd39ef91e8c717006567dcf97d9736eb",
+      "strict_suffix_fsa": true,
+      "suffix_begins_hex": "a62056",
+      "two_iv_suites": [
+        {
+          "ciphertext_sha256": "98dfd4932592320c1ade3f37ad56900baccdcfa10b29421ecc30593ac06345c6",
+          "iv_free_suffix_length": 27,
+          "iv_free_suffix_sha256": "683b4d134f5bce7dc4431f22c80c63660412c7f900d63e4630eb3f2e517020e0",
+          "iv_suite": 1,
+          "ivs_hex": [
+            "5366798c9fb2c5d8",
+            "788b9eb1c4d7eafd102336495c6f8295",
+            "9db0c3d6e9fc0f22"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        },
+        {
+          "ciphertext_sha256": "3ab06ccd28cff4b06a9133a17f53ae45569bf002119e69bd929f44944d6dc609",
+          "iv_free_suffix_length": 27,
+          "iv_free_suffix_sha256": "683b4d134f5bce7dc4431f22c80c63660412c7f900d63e4630eb3f2e517020e0",
+          "iv_suite": 2,
+          "ivs_hex": [
+            "a6b9ccdff205182b",
+            "cbdef104172a3d506376899cafc2d5e8",
+            "f00316293c4f6275"
+          ],
+          "library_roundtrip": true,
+          "suffix_equals_plaintext_from_sum_block_sizes": true
+        }
+      ]
+    }
+  ]
+}

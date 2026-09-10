@@ -297,3 +297,20 @@ Root checked all local frozen sources and result invariants. The published stand
 ```sh
 python3 -S -B research/rev7-20260909-codex/iv_independent/blowfish_solver/target/verify_results.py
 ```
+
+
+## CFB8 cascade proof and interval controls
+
+The [direct cascade proof](iv_independent/cascade/README.md) extends IV forgetting to multiple same-length binary CFB8 layers with fixed known keys. In outer-to-inner decryption order, a final plaintext suffix starting at the sum of the block sizes is determined by the outer ciphertext without knowing any layer's IV. Intermediate bytes need not be printable. Five mixed AES/DES/Blowfish/ARC2 chains have 40 synthetic vectors and 80 independent full MODE_CFB versus ECB-window comparisons, including length boundaries and partial UTF-8 starts.
+
+The [known-interval extension](iv_independent/cascade/INTERVAL_EXTENSION.md) separately covers the four canonical byte transforms between layers. A known input interval `[L,R)` becomes `[min(L+b,R),R)` after CFB8; byte reversal relocates it to `[N-R,N-L)`, and nibble swap preserves its positions. Four two-layer recipes and all 16 ordered transform pairs in the three-layer recipe produce 168 controls. Sixty-eight fixtures exercise UTF-8 splits at the exposed edges. Forty empty intervals remain explicitly inconclusive. Every vector also holds the outer ciphertext fixed and changes all IVs, confirming equal interval bytes despite different outside bytes.
+
+Root reviewed the proof and independently regenerated both complete synthetic ledgers, matching their exact contents and hashes: direct `2b0b75c096da6e3333dfe3d7390cb1d8a458d551d895ab215401c32155408b87`, interval `43b7f352f14cc87b1c0452338334f9dbde3db74abdfd16dab2ff726adb269037`. Default commands check source identity and recorded control metadata with the standard library; explicit regeneration performs the cryptographic comparisons with PyCryptodome and requires a new output path.
+
+```sh
+python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/proof.py
+python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/interval_extension.py
+python3 -B research/rev7-20260909-codex/iv_independent/cascade/interval_extension.py --regenerate /tmp/cascade-interval-controls.json
+```
+
+This package contains no Rev7 target search. It covers aligned same-length binary layers and the stated involutions; encodings, transpositions, framing and padding changes require separate reasoning. It does not recover bytes outside the proved interval. The underlying CFB recurrence is specified in [NIST SP 800-38A, section 6.3](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a.pdf); the cascade/interval consequences here follow by composition of those dependencies.
