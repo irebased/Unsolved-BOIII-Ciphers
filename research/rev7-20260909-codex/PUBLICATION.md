@@ -229,3 +229,17 @@ python3 -B research/byte_columnar/all_iv/column_a/controls.py --regenerate /tmp/
 ```
 
 This is a proof and synthetic-control package only. It contains no Rev7 target evaluation and recovers no order, IV or plaintext. The alphabet is a relaxed necessary byte filter, not a strict UTF-8 parser. Native implementation and any later target evaluation are separate artifacts.
+
+
+## Blowfish every-IV mapping solver controls
+
+The [native Blowfish control report](iv_independent/blowfish_solver/REPORT.md) adapts the completed DES mapping engine to standard Blowfish and the established historical word-conjugated compatibility primitive, each with raw seven-byte `Zombies`. The search preserves the IV-independent ciphertext-window constraints, global hex-symbol bijection, factorial accounting, caps, and strict five-sequence suffix endpoint. The suffix starts in any UTF-8 boundary state and must end in state zero; no first-block plaintext or IV recovery is claimed.
+
+The accepted controls check 64 block vectors, four independent 546-byte CFB8 plants under two IVs per cipher, and eight complete native searches against a separate exhaustive 4! reference. Exact mapping and suffix sets agree in all cases. Four planted mappings are recovered, two random and two prebound cases reject, and two cap-one controls preserve explicit incomplete accounting. Historical compatibility C is built temporarily and checked against both native OpenSSL and separate PyCryptodome conjugation. Default verification is read-only; regeneration requires a new output path and records compiler/source provenance.
+
+```sh
+python3 -B research/rev7-20260909-codex/iv_independent/blowfish_solver/controls.py
+python3 -B research/rev7-20260909-codex/iv_independent/blowfish_solver/controls.py --regenerate /tmp/bf-solver-controls.json
+```
+
+This publication is synthetic evidence only and contains no Blowfish every-IV Rev7 target evaluation. The initial incomplete helper and weak controls were rejected and are excluded from publication. Only the accepted native search, independent controls, ledger and report are included.
