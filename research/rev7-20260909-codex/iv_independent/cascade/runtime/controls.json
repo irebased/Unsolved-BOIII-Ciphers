@@ -1,0 +1,906 @@
+{
+  "accepted_cascade_proof_hashes": {
+    "iv_independent/cascade/controls.json": "2b0b75c096da6e3333dfe3d7390cb1d8a458d551d895ab215401c32155408b87",
+    "iv_independent/cascade/interval_extension.json": "43b7f352f14cc87b1c0452338334f9dbde3db74abdfd16dab2ff726adb269037",
+    "iv_independent/cascade/interval_extension.py": "b704413c6fddd24128fe1d2185de2aff780a6d8b7c5924f9dfebb35fcf561dae",
+    "iv_independent/cascade/proof.py": "1152ff62572b5914c1840ddd4af14efdc1ff26c58051a566c62bfb2ed1a1f8c0"
+  },
+  "artifact_hashes": {
+    "controls.py": "fc06c5cb6287f84f2f0c4f2d1ceaa1428e7a1fd94f25d090b9536ad4be2c5c82",
+    "runtime.py": "8b7899fc7aedb2de04cb900876987e6b3385922d4e2e53c913562659913818f4"
+  },
+  "assertions": {
+    "all_256_byte_roundtrips": true,
+    "all_passed": true,
+    "bfcompat_c_matches_independent_conjugation": true,
+    "cascade_all_backends_two_iv_suites": true,
+    "known_interval_offsets_and_bytes": true,
+    "source_kats": true,
+    "sources_hash_pinned": true,
+    "standard_four_mode_cfb_matches_pycryptodome": true,
+    "twofish_loki_match_frozen_source_controls": true
+  },
+  "benchmark": {
+    "method": "24 synthetic 500-byte interval decryptions per backend; projected time is linear scaling only, excludes graph/solver overhead",
+    "prospective_edge_count": 22764,
+    "rows": [
+      {
+        "cipher": "aes128",
+        "digest": "167165923e2d6725a2f168c03bb1bd9b4c8cd9ed21ab49cc221784df3c409597",
+        "edges_per_second": 1961.572147767853,
+        "input_bytes_each": 500,
+        "linear_seconds_for_22764_edges": 11.604977173999954,
+        "samples": 24,
+        "seconds": 0.012235083999999952
+      },
+      {
+        "cipher": "des",
+        "digest": "9a1f076b4183932a29a9caf12ece7d6efc99c713a59e49cc5dbe4bc302416053",
+        "edges_per_second": 2056.8048359595236,
+        "input_bytes_each": 500,
+        "linear_seconds_for_22764_edges": 11.067651924000037,
+        "samples": 24,
+        "seconds": 0.011668584000000037
+      },
+      {
+        "cipher": "blowfish",
+        "digest": "33f7d13cb47d80fd9f08972a6412aa4047f66decccffe263704cdc8203175cdf",
+        "edges_per_second": 2262.4878014199244,
+        "input_bytes_each": 500,
+        "linear_seconds_for_22764_edges": 10.061490712000056,
+        "samples": 24,
+        "seconds": 0.01060779200000006
+      },
+      {
+        "cipher": "bfcompat",
+        "digest": "772e895f6e1edc0c2a23c3c551d39d468e5af70753ebd68cae487d6968923728",
+        "edges_per_second": 3636.317355960921,
+        "input_bytes_each": 500,
+        "linear_seconds_for_22764_edges": 6.260179674000006,
+        "samples": 24,
+        "seconds": 0.006600084000000006
+      },
+      {
+        "cipher": "rc2",
+        "digest": "375d656b537c549a6ef019bb556c9d2bf9b4a7ad1d858bb3a70ac21af922fcd4",
+        "edges_per_second": 2316.9189920166687,
+        "input_bytes_each": 500,
+        "linear_seconds_for_22764_edges": 9.825116924000005,
+        "samples": 24,
+        "seconds": 0.010358584000000004
+      },
+      {
+        "cipher": "twofish",
+        "digest": "7ded25b55700a3ae721ead335187076271f03ffed9bc5e21a8f2a71327571947",
+        "edges_per_second": 3948.342518713507,
+        "input_bytes_each": 500,
+        "linear_seconds_for_22764_edges": 5.765457249999987,
+        "samples": 24,
+        "seconds": 0.006078499999999987
+      },
+      {
+        "cipher": "loki97",
+        "digest": "28d6d08d9bd3f8b085bddb42248c3c15ac5057063d976f98a97cc6b5d22f7b1f",
+        "edges_per_second": 3013.4032409402757,
+        "input_bytes_each": 500,
+        "linear_seconds_for_22764_edges": 7.5542495245000545,
+        "samples": 24,
+        "seconds": 0.007964417000000057
+      }
+    ]
+  },
+  "bfcompat_conjugation_rows": [
+    {
+      "block_hex": "00254a6f94b9de03",
+      "ciphertext_hex": "63fff44fb07153a4"
+    },
+    {
+      "block_hex": "13385d82a7ccf116",
+      "ciphertext_hex": "2732c0eb7626bf26"
+    },
+    {
+      "block_hex": "264b7095badf0429",
+      "ciphertext_hex": "8c9b341baeae70cb"
+    },
+    {
+      "block_hex": "395e83a8cdf2173c",
+      "ciphertext_hex": "2e8f5c004cd3f8a6"
+    },
+    {
+      "block_hex": "4c7196bbe0052a4f",
+      "ciphertext_hex": "b7ea0c095eafd6b7"
+    },
+    {
+      "block_hex": "5f84a9cef3183d62",
+      "ciphertext_hex": "1f38b46bc77d9e78"
+    },
+    {
+      "block_hex": "7297bce1062b5075",
+      "ciphertext_hex": "66e86d9697da97b2"
+    },
+    {
+      "block_hex": "85aacff4193e6388",
+      "ciphertext_hex": "19307e5f59f0e789"
+    },
+    {
+      "block_hex": "98bde2072c51769b",
+      "ciphertext_hex": "6f67d9874be8ac7a"
+    },
+    {
+      "block_hex": "abd0f51a3f6489ae",
+      "ciphertext_hex": "5ace45e0a0478404"
+    },
+    {
+      "block_hex": "bee3082d52779cc1",
+      "ciphertext_hex": "e59260a93833ffff"
+    },
+    {
+      "block_hex": "d1f61b40658aafd4",
+      "ciphertext_hex": "79643fe9713a11fb"
+    },
+    {
+      "block_hex": "e4092e53789dc2e7",
+      "ciphertext_hex": "5d4ce8af7dfa6fb9"
+    },
+    {
+      "block_hex": "f71c41668bb0d5fa",
+      "ciphertext_hex": "00ea5c4ae4414b00"
+    },
+    {
+      "block_hex": "0a2f54799ec3e80d",
+      "ciphertext_hex": "42c10c240277e8ab"
+    },
+    {
+      "block_hex": "1d42678cb1d6fb20",
+      "ciphertext_hex": "a272dbd7333147e1"
+    },
+    {
+      "block_hex": "30557a9fc4e90e33",
+      "ciphertext_hex": "271afb38afde23d7"
+    },
+    {
+      "block_hex": "43688db2d7fc2146",
+      "ciphertext_hex": "e06af137209119d5"
+    },
+    {
+      "block_hex": "567ba0c5ea0f3459",
+      "ciphertext_hex": "5c39b5b8a56ca90d"
+    },
+    {
+      "block_hex": "698eb3d8fd22476c",
+      "ciphertext_hex": "6cf035e63c569142"
+    },
+    {
+      "block_hex": "7ca1c6eb10355a7f",
+      "ciphertext_hex": "4acbbec582c3723c"
+    },
+    {
+      "block_hex": "8fb4d9fe23486d92",
+      "ciphertext_hex": "a6141aca4dc1ab88"
+    },
+    {
+      "block_hex": "a2c7ec11365b80a5",
+      "ciphertext_hex": "249b283c46fa8068"
+    },
+    {
+      "block_hex": "b5daff24496e93b8",
+      "ciphertext_hex": "c220d6bc68e9365a"
+    },
+    {
+      "block_hex": "c8ed12375c81a6cb",
+      "ciphertext_hex": "b1b7384b58e94db4"
+    },
+    {
+      "block_hex": "db00254a6f94b9de",
+      "ciphertext_hex": "4acc88227941b5da"
+    },
+    {
+      "block_hex": "ee13385d82a7ccf1",
+      "ciphertext_hex": "87264fb48bc5c60e"
+    },
+    {
+      "block_hex": "01264b7095badf04",
+      "ciphertext_hex": "295326d8e9fe8542"
+    },
+    {
+      "block_hex": "14395e83a8cdf217",
+      "ciphertext_hex": "ce8d9eec84e0d1f3"
+    },
+    {
+      "block_hex": "274c7196bbe0052a",
+      "ciphertext_hex": "ccc56dde7c68cca9"
+    },
+    {
+      "block_hex": "3a5f84a9cef3183d",
+      "ciphertext_hex": "3699134ae3a2c819"
+    },
+    {
+      "block_hex": "4d7297bce1062b50",
+      "ciphertext_hex": "bf60cfb1e78607f1"
+    }
+  ],
+  "cascade_control": {
+    "all_seven_backends_once": true,
+    "decryption_order": [
+      "aes128",
+      "des",
+      "blowfish",
+      "bfcompat",
+      "rc2",
+      "twofish",
+      "loki97"
+    ],
+    "plaintext_bytes": 416,
+    "plaintext_sha256": "7cffc9275f4c7d5d7fece4f618c4b82decfcc16aac9fa4136df88519b4e247ca",
+    "rows": [
+      {
+        "final_known_hex": "6ee2809320656de2809420656c6c6970736973e280a62e0a436173636164652072756e74696d65204153434949095554463820656ee2809320656de2809420656c6c6970736973e280a62e0a436173636164652072756e74696d65204153434949095554463820656ee2809320656de2809420656c6c6970736973e280a62e0a436173636164652072756e74696d65204153434949095554463820656ee2809320656de2809420656c6c6970736973e280a62e0a436173636164652072756e74696d65204153434949095554463820656ee2809320656de2809420656c6c6970736973e280a62e0a436173636164652072756e74696d65204153434949095554463820656ee2809320656de2809420656c6c6970736973e280a62e0a436173636164652072756e74696d65204153434949095554463820656ee2809320656de2809420656c6c6970736973e280a62e0a",
+        "final_offset": 80,
+        "iv_suite": 1,
+        "outer_ciphertext_sha256": "ff513ec3026da21e52f041a83f9f2dd418bcf62bbf9c6e75f0408e971762389c",
+        "steps": [
+          {
+            "cipher": "aes128",
+            "known_bytes": 400,
+            "offset": 16,
+            "sha256": "faadcb2f8a7d5a4e299ee9b1b01cde043569b201e7396125c4804a551b35b1ec"
+          },
+          {
+            "cipher": "des",
+            "known_bytes": 392,
+            "offset": 24,
+            "sha256": "dffddadf3d41b982e1f4429197f155a7b78832ef5c3e7b3aaa1eadf04db921fb"
+          },
+          {
+            "cipher": "blowfish",
+            "known_bytes": 384,
+            "offset": 32,
+            "sha256": "6ea3884c5c27b01bc61b813e9345ede03f1c417177afbf4f55fdaa2b7bb9bc73"
+          },
+          {
+            "cipher": "bfcompat",
+            "known_bytes": 376,
+            "offset": 40,
+            "sha256": "b742c537333acaa6637bea8f402a769f21c99e1e6ffa6bba58309ed4ea424d3e"
+          },
+          {
+            "cipher": "rc2",
+            "known_bytes": 368,
+            "offset": 48,
+            "sha256": "41ef6f801258e14d740d863da371f96624b1bd186e6a3c301d3ef70404cd245e"
+          },
+          {
+            "cipher": "twofish",
+            "known_bytes": 352,
+            "offset": 64,
+            "sha256": "9da476776fb282f870288ff711be5242fe9d2aa4881bd32345b179efb0ff3227"
+          },
+          {
+            "cipher": "loki97",
+            "known_bytes": 336,
+            "offset": 80,
+            "sha256": "4d91f47e00a70bfb2dfab10576fdcb9c4582435e224d0b57ef5861e9ab383948"
+          }
+        ]
+      },
+      {
+        "final_known_hex": "6ee2809320656de2809420656c6c6970736973e280a62e0a436173636164652072756e74696d65204153434949095554463820656ee2809320656de2809420656c6c6970736973e280a62e0a436173636164652072756e74696d65204153434949095554463820656ee2809320656de2809420656c6c6970736973e280a62e0a436173636164652072756e74696d65204153434949095554463820656ee2809320656de2809420656c6c6970736973e280a62e0a436173636164652072756e74696d65204153434949095554463820656ee2809320656de2809420656c6c6970736973e280a62e0a436173636164652072756e74696d65204153434949095554463820656ee2809320656de2809420656c6c6970736973e280a62e0a436173636164652072756e74696d65204153434949095554463820656ee2809320656de2809420656c6c6970736973e280a62e0a",
+        "final_offset": 80,
+        "iv_suite": 2,
+        "outer_ciphertext_sha256": "6492ca7cd6928e618193c93b3479a9db186a0c8d08b7c6305f3fda0b449c2102",
+        "steps": [
+          {
+            "cipher": "aes128",
+            "known_bytes": 400,
+            "offset": 16,
+            "sha256": "43979b3fea70d6ebb5b33439fc03d4ad78b737f4c19327e2d98773ff0913045a"
+          },
+          {
+            "cipher": "des",
+            "known_bytes": 392,
+            "offset": 24,
+            "sha256": "29a5ad05c932230ab2b369f750175ff353a2b98e0c56b5a4d8c8b7330e8726f5"
+          },
+          {
+            "cipher": "blowfish",
+            "known_bytes": 384,
+            "offset": 32,
+            "sha256": "13e81311f51b2f8ca9aebf95986fafa0fa86cd16bbb7f3d5914cebe6baac5572"
+          },
+          {
+            "cipher": "bfcompat",
+            "known_bytes": 376,
+            "offset": 40,
+            "sha256": "d8e1488da233d2eedb3b9b105151b495141001ead597770a575ff398b9f7dc81"
+          },
+          {
+            "cipher": "rc2",
+            "known_bytes": 368,
+            "offset": 48,
+            "sha256": "fbc1f05870d1b2eed6ac15eecca72b3864999aca706134d6f5e1f2a8b7bc970d"
+          },
+          {
+            "cipher": "twofish",
+            "known_bytes": 352,
+            "offset": 64,
+            "sha256": "1eb3c1caf803158a6eff2b6a1135583d5f2eb42aaef550efe12221020e2c5eca"
+          },
+          {
+            "cipher": "loki97",
+            "known_bytes": 336,
+            "offset": 80,
+            "sha256": "4d91f47e00a70bfb2dfab10576fdcb9c4582435e224d0b57ef5861e9ab383948"
+          }
+        ]
+      }
+    ],
+    "sum_block_sizes": 80,
+    "two_iv_suites_interval_equal": true
+  },
+  "environment": {
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "platform": "macOS-26.4-arm64-arm-64bit",
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "full_byte_cfb8": [
+    {
+      "block_size": 16,
+      "cipher": "aes128",
+      "ciphertext_hex": "d4ddde84764d34fefbc80e004c52b5267d1441608e836cadc35f7baf247b8de21f503cd764f306bf034f9175a41f0c3ea5c7369fce6af96448498f48ec1667e21a133aae3de281b39c3cbb9a77227105b226a3afb835606d5ba411d2b80a7509a6a1792102af41b73bd0c5b9feb22edd20333c55fd0c8d27e19b7070f10d52d1007085bba23dca3e5c493837993135679df489be864b8350ab34ab34d2e655738e99b7f2008fdd1f010a19d55888daa0cd783c393cc379596921888e95917ff7d7be82e3939331cf12b990ca6be4f07083c7313d1753f3d474fe940cc6bc5b33c79887fe6f562482ca453bd6623533503c8f4882148dd56d87fc651497d57315",
+      "ciphertext_sha256": "99483893f861ee0c139c76ea3755895bbab63c4fbe86c647f977160d377809d8",
+      "decrypt_roundtrip": true,
+      "independent_evidence": "PyCryptodome MODE_CFB and separate ECB-window recurrence",
+      "iv_hex": "061728394a5b6c7d8e9fb0c1d2e3f405",
+      "plaintext_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+    },
+    {
+      "block_size": 8,
+      "cipher": "des",
+      "ciphertext_hex": "604cd3110f547198bf20c473f8a87c1b6320059d46bb5027b2600484984485419fae71ec3cbe691f860f6a597e9d57402f230d599a765688e3db18bbbe1cc9f9ef45a6802239167b89dc92cd05f613522011933d10182ce5a7ee781f01e889625bf0a5857c96309601efa32f4764dffdb712e221ff8155b952aab28703f00ccc494b2f8a78edf7edc9bbce46464f0944b07c88b5057fc32ce247814fbe36bd1992b786a4089f7bdfbb08bb6464448905631caa35feccc3bd9b32a1bae3639ce8d0695a95768d0201eed24e0ae276c1ce3e338b1eabf534a5ab0aabd029fe5951599432c92e18856cdb0c2362c99b1d722fb48731daf1ed009cedb629292737f9",
+      "ciphertext_sha256": "65c660caae0acc94adcdd0925184f6c7d34d4b443bbc04b34e500a14a383a9f5",
+      "decrypt_roundtrip": true,
+      "independent_evidence": "PyCryptodome MODE_CFB and separate ECB-window recurrence",
+      "iv_hex": "031425364758697a",
+      "plaintext_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+    },
+    {
+      "block_size": 8,
+      "cipher": "blowfish",
+      "ciphertext_hex": "4aa87f390344460dd42bb82ae84b84a5882d9c6968186312cade9bcd17ba3b7f4bede3a4549d0a5949228de3ff54f17f33aef22c4e8188fd40b2ef9d7b9b28e8fde7f17571373b53f118bd2c3c6593443de208e90dd53f09704d5c9a7f36d6e9f58dbc6e9e193f177c2e63dd84d967d1297db9adebae3f416efab1165158b6a646078442ea05db817b742896c31d09b049271dbdef09972d180ec7b63d24c4eedb85174d4218c7cb39a81732f8319f5fd73188aae15dedf8231d1dedde820c00e942d139712243e6e0a9a55ea8a78575f02a5dba761e639c53f1dbaf68a7e176d38ac07ff26b7600da9bd5e552361963fe4132d7413d0101113b89ac764ee449",
+      "ciphertext_sha256": "f0b3d7fbbcc962721cbe96117294b87ce1c90ad0f42cffdaa800d158afdd93cf",
+      "decrypt_roundtrip": true,
+      "independent_evidence": "PyCryptodome MODE_CFB and separate ECB-window recurrence",
+      "iv_hex": "08192a3b4c5d6e7f",
+      "plaintext_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+    },
+    {
+      "block_size": 8,
+      "cipher": "bfcompat",
+      "ciphertext_hex": "0f15b48a2da15f7f85bd59eb3e8457b9ae5613813070d4f821ccba9b74035067a009f63cd3fa858bfe509488287b0ec7fc8dbe9a03ff16d73878f22c7d84ea7cd84624fc85837ee552203335bfa534f8da409826516241950248ce605eded8c15eb2b38d57597162f1df6e5c3c4060f532e90897b7089861ef391b3e21644cb7c9798f3d2785f43eca9d64060e3b347309fcd8238699bfbffe0d40f1b0ecf49c816b828c1731507fd4fe800416e7779cd17ad7a47d467713d7f00131c2a3fc5601338032e56cfdeb1212ce471d620f650e95e336b9799f585a4796ce2fdc0332cb8d31f931e5233e0b3d65b12a1b8ecc9fba875c3a81b8834b2fdd68ea3289bc",
+      "ciphertext_sha256": "5de67224539e64b391c4ea09c88e9c4af231b7752900a0a5623a5f775a4b5b96",
+      "decrypt_roundtrip": true,
+      "independent_evidence": "actual pinned C and independent standard-Blowfish word conjugation recurrence",
+      "iv_hex": "08192a3b4c5d6e7f",
+      "plaintext_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+    },
+    {
+      "block_size": 8,
+      "cipher": "rc2",
+      "ciphertext_hex": "606aaacc80c05bff54d4ceea59afb2b58cfa78c816cdf4ac50f7766f6fc36ae49c09349486fc26210af4411c55515a473ad7fd8eba29576df6ee5ed956f2c3dfb973d83211fa9d8f411f544a17b6556a243e1234b04b33d0e67ced96b3c7498a0d544d81793437725e327b1911cff84df5f1114cd0746a034d3f15f2834c07a3ee906b1297dcc9c8586677bc20e072b8019dc8b4743c34303bfb1c94a4687ba6ae9747a264b4828f9afc2283bae691291e9425588aa58cb89b9f7d9e64161d696dd8f1910ed1695c3fba26890239a5f5d6648c99bc92ccfaf6c745155e8cc8f95aaeaa847cb93d903871b36a3c9590c420995f0c1080ed98217f4f9552738b61",
+      "ciphertext_sha256": "102ca8418c8f5a4af6365eab4625ae0d30837f55172859a512a5d6942c926beb",
+      "decrypt_roundtrip": true,
+      "independent_evidence": "PyCryptodome MODE_CFB and separate ECB-window recurrence",
+      "iv_hex": "031425364758697a",
+      "plaintext_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+    },
+    {
+      "block_size": 16,
+      "cipher": "twofish",
+      "ciphertext_hex": "4e8221b38b793d08733d4b011ca68a03f95f2a4ff06ee0733d7c62ed75c0117bd050f460b41b889352320dfcc5ea765992d19b9bff218396349d2fe2a693ee3aeb670ac698f44825b80468d9165d150010b4b0cb0e5a2dba610a1bd765701137d350ae0d6528bc54bfde4179beafa3ebd07449bc62447a991e4c5c1d31480ccea1693d812b6b9a687561bbdada715d9bd9bdbace390d94aefdbbd4a36167e2d44467e8fac78616d90894199aeb94f892636b2863efe5b267956fcf28399aca55e9e19356e5758cfaaafb6893df2d1e1c075d6904f7e232b5241d474a6549bc49c065f8087d61892ca0d49d29fb8528b92d86f29b34d72a39748d167d55c20122",
+      "ciphertext_sha256": "31509cbd44817b6abf35549186b12b7eb6ce9572554c0c957c02559325e7b5c0",
+      "decrypt_roundtrip": true,
+      "independent_evidence": "pinned C recurrence and exact prefix of frozen solved-source control",
+      "iv_hex": "0718293a4b5c6d7e8fa0b1c2d3e4f506",
+      "plaintext_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+    },
+    {
+      "block_size": 16,
+      "cipher": "loki97",
+      "ciphertext_hex": "e41024ac1550455ca932897bb0cd3b79afdb17b6ff6af2a896e2569874afa4df047678ebddb8d9388546bddb7c3b4aa8d6ce1005d7c46f318f30707949f79aefb30f433cd0b1960da6bd3c9bbe34174dc2c29f92da6b5be6669e65b4044c2656ca250200ea1fd89a17da5dfe4e78fe4da83158e6d50120799079bf4e0f9a6dc11bcce65a19ffc7d8ede6dcab82d496259bf784b702304a33d0ab5d63f5760f88582c68191ab9d72b78e0cc6c8dd3c4927ecf5487bdf3cd8d938e38a2a064ec848c1f1fecfb92d770bf2cb6733886e079cfbbc34dada3683f385fac2646164f7638a8e35a4ccf644137abf69a18fb823376e21f9f7c8c00ae80d1839fbe698195",
+      "ciphertext_sha256": "6d6eb2875d3d9fd3df6ddc977c1f195a188d8c0ad0493d78886ee449058059e2",
+      "decrypt_roundtrip": true,
+      "independent_evidence": "pinned C recurrence and exact prefix of frozen solved-source control",
+      "iv_hex": "061728394a5b6c7d8e9fb0c1d2e3f405",
+      "plaintext_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+    }
+  ],
+  "identity": "ASTRA",
+  "key_conventions": {
+    "aes128": "Zombies + 9 NUL (16 bytes)",
+    "bfcompat": "raw 7-byte Zombies",
+    "blowfish": "raw 7-byte Zombies",
+    "des": "Zombies + NUL (8 bytes)",
+    "loki97": "Zombies + 25 NUL backing; declared 16, pinned source reads all 32 backing bytes",
+    "rc2": "raw 7-byte Zombies, effective_keylen=1024",
+    "twofish": "Zombies + 25 NUL backing; declared/consumed 16"
+  },
+  "known_interval_controls": [
+    {
+      "cases": [
+        {
+          "block_size": 16,
+          "input_interval": [
+            0,
+            256
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 16,
+          "plaintext_hex": "101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        },
+        {
+          "block_size": 16,
+          "input_interval": [
+            17,
+            230
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 33,
+          "plaintext_hex": "2122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5"
+        },
+        {
+          "block_size": 16,
+          "input_interval": [
+            31,
+            46
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 46,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 16,
+          "input_interval": [
+            31,
+            47
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 47,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 16,
+          "input_interval": [
+            31,
+            48
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 47,
+          "plaintext_hex": "2f"
+        }
+      ],
+      "cipher": "aes128"
+    },
+    {
+      "cases": [
+        {
+          "block_size": 8,
+          "input_interval": [
+            0,
+            256
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 8,
+          "plaintext_hex": "08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            17,
+            230
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 25,
+          "plaintext_hex": "191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5"
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            31,
+            38
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 38,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            31,
+            39
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 39,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            31,
+            40
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 39,
+          "plaintext_hex": "27"
+        }
+      ],
+      "cipher": "des"
+    },
+    {
+      "cases": [
+        {
+          "block_size": 8,
+          "input_interval": [
+            0,
+            256
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 8,
+          "plaintext_hex": "08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            17,
+            230
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 25,
+          "plaintext_hex": "191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5"
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            31,
+            38
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 38,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            31,
+            39
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 39,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            31,
+            40
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 39,
+          "plaintext_hex": "27"
+        }
+      ],
+      "cipher": "blowfish"
+    },
+    {
+      "cases": [
+        {
+          "block_size": 8,
+          "input_interval": [
+            0,
+            256
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 8,
+          "plaintext_hex": "08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            17,
+            230
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 25,
+          "plaintext_hex": "191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5"
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            31,
+            38
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 38,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            31,
+            39
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 39,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            31,
+            40
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 39,
+          "plaintext_hex": "27"
+        }
+      ],
+      "cipher": "bfcompat"
+    },
+    {
+      "cases": [
+        {
+          "block_size": 8,
+          "input_interval": [
+            0,
+            256
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 8,
+          "plaintext_hex": "08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            17,
+            230
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 25,
+          "plaintext_hex": "191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5"
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            31,
+            38
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 38,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            31,
+            39
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 39,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 8,
+          "input_interval": [
+            31,
+            40
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 39,
+          "plaintext_hex": "27"
+        }
+      ],
+      "cipher": "rc2"
+    },
+    {
+      "cases": [
+        {
+          "block_size": 16,
+          "input_interval": [
+            0,
+            256
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 16,
+          "plaintext_hex": "101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        },
+        {
+          "block_size": 16,
+          "input_interval": [
+            17,
+            230
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 33,
+          "plaintext_hex": "2122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5"
+        },
+        {
+          "block_size": 16,
+          "input_interval": [
+            31,
+            46
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 46,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 16,
+          "input_interval": [
+            31,
+            47
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 47,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 16,
+          "input_interval": [
+            31,
+            48
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 47,
+          "plaintext_hex": "2f"
+        }
+      ],
+      "cipher": "twofish"
+    },
+    {
+      "cases": [
+        {
+          "block_size": 16,
+          "input_interval": [
+            0,
+            256
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 16,
+          "plaintext_hex": "101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff"
+        },
+        {
+          "block_size": 16,
+          "input_interval": [
+            17,
+            230
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 33,
+          "plaintext_hex": "2122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5"
+        },
+        {
+          "block_size": 16,
+          "input_interval": [
+            31,
+            46
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 46,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 16,
+          "input_interval": [
+            31,
+            47
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 47,
+          "plaintext_hex": ""
+        },
+        {
+          "block_size": 16,
+          "input_interval": [
+            31,
+            48
+          ],
+          "matches_full_decryption_slice": true,
+          "output_offset": 47,
+          "plaintext_hex": "2f"
+        }
+      ],
+      "cipher": "loki97"
+    }
+  ],
+  "rev7_file_read": false,
+  "scope": "Synthetic-only seven-backend block/CFB8/known-interval runtime controls; no search or target driver.",
+  "source": {
+    "commit": "3bd338e2f808e985f5b229a7642d48c26615993f",
+    "files": {
+      "bfcompat/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+      "bfcompat/blowfish-compat.c": "3584374a6bae4df8899e82d36255bbac0472904aed2095e3c08c57a5dd5b4cad",
+      "bfcompat/blowfish.h": "bb4a14ecbd5dc92105b290d9261ed562a980c6e42b0d9b4b56e62b4b6c39665b",
+      "bfcompat/libdefs.h": "cdffb7ef7bc27b6eea90b73174077c377d8260ffd111fb8de3c2bbc938e28a31",
+      "bfcompat/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+      "loki97/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+      "loki97/libdefs.h": "556ec4fcebae614cd90d05a2fead50d9355ff39f65b44c8f4044c7f209074c6e",
+      "loki97/loki97.c": "4e18d184ec55776edab065cee35ac44a9269b4160d7d35ad4ea277da55ae3308",
+      "loki97/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+      "twofish/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+      "twofish/libdefs.h": "59fea1cda69837c7e4c016b36ebcc7172107491370670d3fce7dc55ed38b4ea9",
+      "twofish/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+      "twofish/twofish.c": "20e72e38b445868fe71a0274e0b9bd658c6f30cb1ad731eb3364d82e319af598",
+      "twofish/twofish.h": "c233e43572b5837f9eddc3b6c3f495d91eaa858ade2f9eaf3bc2f959fe721a6b"
+    },
+    "license": "GNU Lesser General Public License v2.1 or later as distributed in each source subdirectory COPYING.LIB",
+    "prior_evidence_hashes": {
+      "hex_cfb/native_siblings/controls.json": "731f874d9bf66ec55160b10a0663627609cd2b4c55930f870b314c503cc20043",
+      "sources/rev9_source/controls.json": "8c21ea6e275cf5989616ea9d77a19d910e55431626a83339641421ca59947f10"
+    },
+    "repository": "https://github.com/Distrotech/libmcrypt",
+    "temporary_builds": {
+      "bfcompat": {
+        "command": [
+          "clang",
+          "-shared",
+          "-fPIC",
+          "-O2",
+          "-I",
+          "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/bfcompat",
+          "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/bfcompat/blowfish-compat.c",
+          "-o",
+          "/var/folders/n1/s06ddj2x6n399bddw1zsk44m0000gn/T/astra-cascade-runtime-0lg7gn5t/libbfcompat.so"
+        ],
+        "path": "/var/folders/n1/s06ddj2x6n399bddw1zsk44m0000gn/T/astra-cascade-runtime-0lg7gn5t/libbfcompat.so",
+        "sha256": "db75bb1b388a149d2efce53275165481c5fb3894b69a1a9edf9104086473dac8"
+      },
+      "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+      "loki97": {
+        "command": [
+          "clang",
+          "-shared",
+          "-fPIC",
+          "-O2",
+          "-I",
+          "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/loki97",
+          "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/loki97/loki97.c",
+          "-o",
+          "/var/folders/n1/s06ddj2x6n399bddw1zsk44m0000gn/T/astra-cascade-runtime-0lg7gn5t/libloki97.so"
+        ],
+        "path": "/var/folders/n1/s06ddj2x6n399bddw1zsk44m0000gn/T/astra-cascade-runtime-0lg7gn5t/libloki97.so",
+        "sha256": "2b803bf1b9d00a3d7afa6c0db9afc9d103110d2f56a5f46d926c2b4bbd9cd145"
+      },
+      "twofish": {
+        "command": [
+          "clang",
+          "-shared",
+          "-fPIC",
+          "-O2",
+          "-I",
+          "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/twofish",
+          "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/twofish/twofish.c",
+          "-o",
+          "/var/folders/n1/s06ddj2x6n399bddw1zsk44m0000gn/T/astra-cascade-runtime-0lg7gn5t/libtwofish.so"
+        ],
+        "path": "/var/folders/n1/s06ddj2x6n399bddw1zsk44m0000gn/T/astra-cascade-runtime-0lg7gn5t/libtwofish.so",
+        "sha256": "dfceedd7b00149374ce9112795e3c4b11e6328a689655545f88ba111fae22f6a"
+      }
+    }
+  },
+  "source_kats": [
+    {
+      "cipher": "twofish",
+      "ciphertext_hex": "019f9809de1711858faac3a3ba20fbc3",
+      "key_hex": "9f589f5cf6122c32b6bfec2f2ae8c35a",
+      "matches_source_embedded_kat": true,
+      "plaintext_hex": "d491db16e7b1c39e86cb086b789f5419"
+    },
+    {
+      "cipher": "loki97",
+      "ciphertext_hex": "8cb28c958024bae27a94c698f96f12a9",
+      "key_hex": "0a0c0e10121416181a1c1e20222426282a2c2e30323436383a3c3e4042444648",
+      "matches_source_embedded_kat": true,
+      "plaintext_hex": "000102030405060708090a0b0c0d0e0f"
+    }
+  ],
+  "target_evaluated": false
+}

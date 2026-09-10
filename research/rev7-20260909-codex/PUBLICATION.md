@@ -365,3 +365,19 @@ The [21,605-byte ledger](../byte_columnar/all_iv/column_a_rc2/target/target_resu
 ```sh
 python3 -S -B research/byte_columnar/all_iv/column_a_rc2/target/verify_results.py
 ```
+
+
+## Seven-backend binary cascade runtime
+
+The [synthetic runtime package](iv_independent/cascade/runtime/README.md) supplies scheduled block, CFB8 and known-interval decryption for AES-128, DES, standard Blowfish, historical Blowfish compatibility, RC2, Twofish and Loki97 under the fixed solved-family Zombies conventions. Exact historical C sources, minimal build shims, provenance and licenses are included. Source-backed libraries are compiled only in a temporary directory and are excluded from publication.
+
+The [runtime ledger](iv_independent/cascade/runtime/controls.json), SHA-256 `483fa566e1030e489f5bb2958bcada9f1f95762f83104b7b9e8437c360787ee5`, records historical KATs, 32 independent compatibility block comparisons, seven complete byte-value CFB8 vectors, 35 interval boundaries and a seven-layer cascade under two unrelated IV suites. Standard backends use independent MODE_CFB and ECB-window references. Twofish and Loki97 match frozen prior source-control streams; those do not constitute independent second implementations of the primitives.
+
+Root reviewed the source and independently regenerated the full synthetic package. All deterministic fields matched. Differences were confined to benchmark timings/rates/projections and temporary library paths/build hashes. The default verifier checks source and structural integrity using the standard library; actual cryptographic regeneration requires PyCryptodome and clang. No Rev7 target was read or evaluated by this control package.
+
+```sh
+python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/runtime/controls.py
+python3 -B research/rev7-20260909-codex/iv_independent/cascade/runtime/controls.py --regenerate /tmp/cascade-runtime-controls.json
+```
+
+This snapshot provides controls only. A future cascade target needs its own reviewed traversal, endpoint controls and frozen registration.
