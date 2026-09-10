@@ -1,0 +1,53 @@
+{
+  "artifact_hashes": {
+    "controls.json": "991ded8a5e798a51805de9896ae2af054cad610a62a553dff2b8548ad1185825",
+    "controls.py": "360ef4132575a3db3107128d709bb2403be0f9cb625f7a9c77000af8aa281a89",
+    "core.py": "9a8fb8cd37ecd2453eb191c340d3da14c1a95565d7b2582d76bf4ccaa7c8f16e",
+    "run_stronger_target.py": "b56aa5e29b5a5e4b4850add8bd7d0545f141a518830a487a939ad389e587e21d",
+    "stronger.py": "f08a8164a9714643467152971d2f026b4d10874ad254a33c9a32ff000f406112",
+    "stronger_controls.json": "70ed529535a34b9c448cc568798e9074c61faac7d68aa760093609ed72ffa67c",
+    "stronger_controls.py": "0ecc8ceb40e6be8534ab05ebfb2cc30daf32aff905c66d9c290e03309b88c4f7"
+  },
+  "claim": "For rectangular variant B, every observed strided rank is an unavoidable contiguous natural ciphertext chunk. One suffix invalid from all FSA boundary states proves no order and no external IV can yield the registered endpoint.",
+  "control_gate": {
+    "all_assertions_passed": true,
+    "boundary_state_set_controls": true,
+    "corrupted_chunk_two_iv_naive_controls": true,
+    "original_controls_sha256": "991ded8a5e798a51805de9896ae2af054cad610a62a553dff2b8548ad1185825",
+    "original_partial_vs_stronger_full_weight_control": true,
+    "stronger_controls_sha256": "70ed529535a34b9c448cc568798e9074c61faac7d68aa760093609ed72ffa67c",
+    "two_iv_suffix_and_direct_recurrence": true
+  },
+  "expected_ciphertext_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "expected_mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "identity": "ASTRA",
+  "limits": "A cell with no rejected chunk remains unresolved. The scope excludes variant A, ragged columns, prepended-IV framing, other keys/ciphers/modes, and broader endpoints.",
+  "mdx_bytes_hashed_only": true,
+  "rev7_ciphertext_parsed": false,
+  "scope": {
+    "cell_count": 8,
+    "cipher": "AES-128",
+    "endpoint_utf8_sequences": [
+      "e28093",
+      "e28094",
+      "e28098",
+      "e28099",
+      "e280a6"
+    ],
+    "iv_scope": "every external 16-byte IV",
+    "key_hex": "5a6f6d62696573000000000000000000",
+    "mode": "CFB8",
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "variant": "B",
+    "widths": [
+      13,
+      14
+    ]
+  },
+  "target_evaluated": false
+}

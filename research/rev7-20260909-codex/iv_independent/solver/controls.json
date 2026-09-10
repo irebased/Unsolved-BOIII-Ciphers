@@ -1,0 +1,478 @@
+{
+  "algorithm": {
+    "anchor": "minimum unique-symbol window; tie by most contained windows then earliest suffix index",
+    "constraint_activation": "optimized path checks a window once, when its last unseeded symbol is assigned",
+    "order": "anchor symbols by descending occurrence then index; remaining symbols greedily maximize newly fully bound windows, then containment occurrence, then lower index",
+    "reference": "separate path rescans every currently fully bound window after each assignment",
+    "rejection_weight": "factorial of entries still unassigned after a failed assignment",
+    "terminal_weight": "one per complete mapping accepted by strict suffix FSA"
+  },
+  "artifacts": {
+    "controls.py": "e897b6645511098c419695049bab34b676b11bda3ddd3e25190ebabc8329723f",
+    "solver.py": "23b8755b61276f9a3fc30b1ab385dd7296cffd95407eed9663f505553f949343"
+  },
+  "assertions": {
+    "all_passed": true,
+    "cap_not_complete": true,
+    "full16_capped_prefix_exact": true,
+    "nonascii_prefix_and_arbitrary_iv_plant": true,
+    "optimized_reference_stats_equal": true,
+    "seeded_all24_naive_exact": true
+  },
+  "environment": {
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "full16_prefix": {
+    "exact_stats_and_survivors_equal": true,
+    "interpretation": "incomplete deterministic prefix only; no completeness or target claim",
+    "node_limit": 250000,
+    "optimized": {
+      "block_size": 8,
+      "certificate_complete": false,
+      "certificate_weight": 1412669880,
+      "cipher": "des",
+      "expected_completion_weight": 20922789888000,
+      "geometry": {
+        "anchor_symbols": [
+          0,
+          3,
+          4,
+          5,
+          7,
+          8,
+          11,
+          13
+        ],
+        "anchor_unique_symbols": 8,
+        "anchor_window_suffix_index": 283,
+        "fully_bound_window_counts": [
+          2,
+          4,
+          4,
+          5,
+          8,
+          33,
+          100,
+          222,
+          538
+        ],
+        "symbol_order": [
+          7,
+          8,
+          4,
+          0,
+          3,
+          11,
+          5,
+          13,
+          10,
+          15,
+          6,
+          2,
+          12,
+          1,
+          9,
+          14
+        ]
+      },
+      "identity": "ASTRA",
+      "node_limit": 250000,
+      "seeded_entries": 0,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "maximum_depth": 12,
+        "nodes": 250000,
+        "rejected_completion_weight": 1412669880,
+        "rejected_plaintext": 1058940,
+        "rejected_strict_fsa": 0,
+        "terminal_completion_weight": 0
+      },
+      "unaccounted_mapping_weight": 20921377218120
+    },
+    "optimized_seconds": 5.998098709,
+    "reference_rescan": {
+      "block_size": 8,
+      "certificate_complete": false,
+      "certificate_weight": 1412669880,
+      "cipher": "des",
+      "expected_completion_weight": 20922789888000,
+      "geometry": {
+        "anchor_symbols": [
+          0,
+          3,
+          4,
+          5,
+          7,
+          8,
+          11,
+          13
+        ],
+        "anchor_unique_symbols": 8,
+        "anchor_window_suffix_index": 283,
+        "fully_bound_window_counts": [
+          2,
+          4,
+          4,
+          5,
+          8,
+          33,
+          100,
+          222,
+          538
+        ],
+        "symbol_order": [
+          7,
+          8,
+          4,
+          0,
+          3,
+          11,
+          5,
+          13,
+          10,
+          15,
+          6,
+          2,
+          12,
+          1,
+          9,
+          14
+        ]
+      },
+      "identity": "ASTRA",
+      "node_limit": 250000,
+      "seeded_entries": 0,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "maximum_depth": 12,
+        "nodes": 250000,
+        "rejected_completion_weight": 1412669880,
+        "rejected_plaintext": 1058940,
+        "rejected_strict_fsa": 0,
+        "terminal_completion_weight": 0
+      },
+      "unaccounted_mapping_weight": 20921377218120
+    },
+    "reference_seconds": 68.950370667
+  },
+  "identity": "ASTRA",
+  "model": {
+    "equation": "for i>=8, P_i=C_i XOR DES_key(C[i-8:i])[0]",
+    "iv_not_a_solver_variable": true,
+    "key_hex": "5a6f6d6269657300",
+    "relaxed_byte_set": {
+      "ascii_count": 98,
+      "count": 105,
+      "extra_hex": [
+        "80",
+        "93",
+        "94",
+        "98",
+        "99",
+        "a6",
+        "e2"
+      ]
+    },
+    "strict_suffix_fsa": {
+      "initial_state_set": [
+        0,
+        1,
+        2
+      ],
+      "sequences": [
+        "e28093",
+        "e28094",
+        "e28098",
+        "e28099",
+        "e280a6"
+      ],
+      "terminal_state": 0
+    }
+  },
+  "rev7_read": false,
+  "scope": "Synthetic-only DES CFB8 IV-independent suffix constraint solver",
+  "seeded_four_unknown": {
+    "all_survivor_maps_and_suffix_bytes_equal": true,
+    "naive": {
+      "permutations": 24,
+      "rejected_relaxed": 23,
+      "rejected_strict": 0,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_suffix_hex": "49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a"
+        }
+      ]
+    },
+    "optimized": {
+      "block_size": 8,
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "des",
+      "expected_completion_weight": 24,
+      "geometry": {
+        "anchor_symbols": [
+          0,
+          3,
+          4,
+          5,
+          7,
+          8,
+          11,
+          13
+        ],
+        "anchor_unique_symbols": 8,
+        "anchor_window_suffix_index": 283,
+        "fully_bound_window_counts": [
+          2,
+          4,
+          4,
+          5,
+          14,
+          34,
+          98,
+          207,
+          468
+        ],
+        "symbol_order": [
+          7,
+          8,
+          4,
+          3,
+          11,
+          0,
+          5,
+          13,
+          10,
+          6,
+          1,
+          12,
+          2,
+          15,
+          9,
+          14
+        ]
+      },
+      "identity": "ASTRA",
+      "node_limit": 100000,
+      "seeded_entries": 12,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_suffix_hex": "49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "maximum_depth": 16,
+        "nodes": 5,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 6,
+        "rejected_strict_fsa": 0,
+        "terminal_completion_weight": 1
+      },
+      "unaccounted_mapping_weight": 0
+    },
+    "plant_recovered": true,
+    "reference_rescan": {
+      "block_size": 8,
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "des",
+      "expected_completion_weight": 24,
+      "geometry": {
+        "anchor_symbols": [
+          0,
+          3,
+          4,
+          5,
+          7,
+          8,
+          11,
+          13
+        ],
+        "anchor_unique_symbols": 8,
+        "anchor_window_suffix_index": 283,
+        "fully_bound_window_counts": [
+          2,
+          4,
+          4,
+          5,
+          14,
+          34,
+          98,
+          207,
+          468
+        ],
+        "symbol_order": [
+          7,
+          8,
+          4,
+          3,
+          11,
+          0,
+          5,
+          13,
+          10,
+          6,
+          1,
+          12,
+          2,
+          15,
+          9,
+          14
+        ]
+      },
+      "identity": "ASTRA",
+      "node_limit": 100000,
+      "seeded_entries": 12,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_suffix_hex": "49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "maximum_depth": 16,
+        "nodes": 5,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 6,
+        "rejected_strict_fsa": 0,
+        "terminal_completion_weight": 1
+      },
+      "unaccounted_mapping_weight": 0
+    }
+  },
+  "synthetic_plant": {
+    "arbitrary_iv_hex": "80ff017ec355aa19",
+    "ciphertext_sha256": "f896b7799876e47321f1e79f2ee48b0a50cc11e632268e2ef74839e0245105af",
+    "display_sha256": "2092e4f4770ea3fa0cf71d0b69675ae9f1d93b05514a2a9ae12772485a125cbf",
+    "mapping_display_to_nibble": [
+      6,
+      12,
+      15,
+      8,
+      9,
+      13,
+      7,
+      0,
+      14,
+      11,
+      5,
+      10,
+      2,
+      1,
+      4,
+      3
+    ],
+    "plaintext_prefix_hex": "ff00807f81fea500",
+    "plaintext_sha256": "2a158320d394987f68b5d47f7188ad1ecc5196d08fa38191e2efe9905482e172",
+    "prefix_is_deliberately_nontext": true,
+    "seeded_entries": 12,
+    "solver_geometry": {
+      "anchor_symbols": [
+        0,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11,
+        13
+      ],
+      "anchor_unique_symbols": 8,
+      "anchor_window_suffix_index": 283,
+      "fully_bound_window_counts": [
+        2,
+        4,
+        4,
+        5,
+        14,
+        34,
+        98,
+        207,
+        468
+      ],
+      "symbol_order": [
+        7,
+        8,
+        4,
+        3,
+        11,
+        0,
+        5,
+        13,
+        10,
+        6,
+        1,
+        12,
+        2,
+        15,
+        9,
+        14
+      ]
+    },
+    "suffix_sha256": "67fcd494394279dbd72327a30b41ddcebcb45df7845642b7844380ccb6a0f816",
+    "unknown_symbols": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "target_evaluated": false
+}

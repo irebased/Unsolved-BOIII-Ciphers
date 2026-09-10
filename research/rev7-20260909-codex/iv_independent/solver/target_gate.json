@@ -1,0 +1,69 @@
+{
+  "artifact_hashes": {
+    "NATIVE_README.md": "cb59f73f55e1042315f61e443107d77d201a041862aec4484c0e3b82e602ddcc",
+    "README.md": "801d2b96c3afa904532fa2ecf4de56702a20055af32ede9aac5f81dda4dfbb1f",
+    "controls.json": "8656075b2f0495444b82439d582f075e28030189d9985489301b9c030159926b",
+    "controls.py": "e897b6645511098c419695049bab34b676b11bda3ddd3e25190ebabc8329723f",
+    "native": "f205a6493ead64be879b24e308c28839aab2bc3db383bb9e743cab24f8de1574",
+    "native.cpp": "77b169a90041f57eb506134fdcdfdde0c255377c9fad60117e158132078ea1cc",
+    "native_controls.json": "9eb64df3639e671f2371ccd274306ee0c0af0bfed5bc1c416c6ecd996c5d211d",
+    "native_controls.py": "475f63bde26cd2bcca1defff8491a7af2e515f911866d18436ffeb2211b28020",
+    "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b",
+    "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "solver.py": "23b8755b61276f9a3fc30b1ab385dd7296cffd95407eed9663f505553f949343"
+  },
+  "authorization": "No target execution before separate root review, public preregistration, and explicit GO.",
+  "canonical_text_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "driver_sha256": "988b3fc575a1421c447891ec90b41712c6887f56f2b1a7ef2d2ef3b5992634ad",
+  "identity": "ASTRA",
+  "scope": {
+    "cells": 4,
+    "certificate": "16! mapping weight when complete",
+    "cipher": "DES",
+    "constraint": "for i>=8, P_i=C_i XOR DES_key(C[i-8:i])[0]",
+    "external_iv": "arbitrary eight bytes; not recovered or searched",
+    "identity": "ASTRA",
+    "key_hex": "5a6f6d6269657300",
+    "mode": "CFB8",
+    "node_limit_per_cell": 1000000000,
+    "order": "default frozen greedy geometry order; no explicit override",
+    "orientations": [
+      "forward",
+      "reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "relaxed_window_bytes": {
+      "additional_hex": [
+        "80",
+        "93",
+        "94",
+        "98",
+        "99",
+        "a6",
+        "e2"
+      ],
+      "ascii": "TAB LF CR and 32..126",
+      "count": 105
+    },
+    "search_semantics": "fresh root per cell; caps are not additive",
+    "strict_suffix": {
+      "initial_state_set": [
+        0,
+        1,
+        2
+      ],
+      "terminal_state": 0,
+      "utf8": [
+        "e28093",
+        "e28094",
+        "e28098",
+        "e28099",
+        "e280a6"
+      ]
+    },
+    "unknown_representation": "global bijection of 16 displayed hex symbols to nibbles"
+  },
+  "survivor_validation": "Map bijection and exact display reconstruction; native and direct DES-ECB suffix equation; strict suffix FSA; PyCryptodome CFB8 full decrypt/re-encrypt under two distinct IVs, with only bytes i>=8 called recovered.",
+  "target_evaluated": false
+}

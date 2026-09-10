@@ -1,0 +1,342 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "full_rejected_chunk_bytes_suffix_and_failure_recorded": true,
+    "no_rev7_access": true,
+    "other_chunks_remain_retained": true,
+    "width13_14_original_partial_vs_stronger_full_weights": true,
+    "width3_6_all_permutations_fail_under_two_ivs": true
+  },
+  "identity": "ASTRA",
+  "lemma": "Every observed rank is one contiguous natural ciphertext chunk under every rectangular variant-B order. If any chunk's IV-independent suffix is invalid from all FSA states reachable after an arbitrary prefix, every full order and every external IV is excluded.",
+  "limits": "A clean set of chunks is unresolved. This does not recover an order, IV, or plaintext. It does not cover variant A, ragged columns, other ciphers, prepended-IV framing, or endpoints outside the five-sequence FSA.",
+  "rev7_file_read": false,
+  "runtime": {
+    "pycryptodome": "3.23.0",
+    "python": "3.9.6"
+  },
+  "scope": "Synthetic controls for the stronger any-unavoidable-bad-chunk lemma; rectangular variant B, AES-128 CFB8 fixed Zombies+9NUL key, arbitrary external IV, exact five-sequence endpoint.",
+  "small_width_corrupted_plants": [
+    {
+      "any_bad_chunk_implies_all_orders_fail": true,
+      "bad_chunk_rank": 1,
+      "mutation": {
+        "ciphertext_byte_after": 167,
+        "ciphertext_byte_before": 135,
+        "forced_iv_independent_plaintext_byte": 0,
+        "observed_absolute_offset": 49,
+        "rank": 1,
+        "relative_offset": 16
+      },
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "retained_other_chunk_ranks": [
+        0,
+        2
+      ],
+      "rows": 20,
+      "two_iv_exhaustive_naive": {
+        "iv_a": {
+          "full_permutations_tested": 6,
+          "iv_hex": "4452e3e4f2a3c66f1317f129a99bd4ec",
+          "valid_plaintexts": 0
+        },
+        "iv_b": {
+          "full_permutations_tested": 6,
+          "iv_hex": "ec4f48f2477ffaca742e1c72c3260abd",
+          "valid_plaintexts": 0
+        }
+      },
+      "width": 3
+    },
+    {
+      "any_bad_chunk_implies_all_orders_fail": true,
+      "bad_chunk_rank": 1,
+      "mutation": {
+        "ciphertext_byte_after": 167,
+        "ciphertext_byte_before": 135,
+        "forced_iv_independent_plaintext_byte": 0,
+        "observed_absolute_offset": 65,
+        "rank": 1,
+        "relative_offset": 16
+      },
+      "order": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "retained_other_chunk_ranks": [
+        0,
+        2,
+        3
+      ],
+      "rows": 20,
+      "two_iv_exhaustive_naive": {
+        "iv_a": {
+          "full_permutations_tested": 24,
+          "iv_hex": "4452e3e4f2a3c66f1317f129a99bd4ec",
+          "valid_plaintexts": 0
+        },
+        "iv_b": {
+          "full_permutations_tested": 24,
+          "iv_hex": "ec4f48f2477ffaca742e1c72c3260abd",
+          "valid_plaintexts": 0
+        }
+      },
+      "width": 4
+    },
+    {
+      "any_bad_chunk_implies_all_orders_fail": true,
+      "bad_chunk_rank": 2,
+      "mutation": {
+        "ciphertext_byte_after": 138,
+        "ciphertext_byte_before": 10,
+        "forced_iv_independent_plaintext_byte": 0,
+        "observed_absolute_offset": 82,
+        "rank": 2,
+        "relative_offset": 16
+      },
+      "order": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
+      "retained_other_chunk_ranks": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rows": 20,
+      "two_iv_exhaustive_naive": {
+        "iv_a": {
+          "full_permutations_tested": 120,
+          "iv_hex": "4452e3e4f2a3c66f1317f129a99bd4ec",
+          "valid_plaintexts": 0
+        },
+        "iv_b": {
+          "full_permutations_tested": 120,
+          "iv_hex": "ec4f48f2477ffaca742e1c72c3260abd",
+          "valid_plaintexts": 0
+        }
+      },
+      "width": 5
+    },
+    {
+      "any_bad_chunk_implies_all_orders_fail": true,
+      "bad_chunk_rank": 2,
+      "mutation": {
+        "ciphertext_byte_after": 28,
+        "ciphertext_byte_before": 72,
+        "forced_iv_independent_plaintext_byte": 0,
+        "observed_absolute_offset": 98,
+        "rank": 2,
+        "relative_offset": 16
+      },
+      "order": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        1
+      ],
+      "retained_other_chunk_ranks": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "rows": 20,
+      "two_iv_exhaustive_naive": {
+        "iv_a": {
+          "full_permutations_tested": 720,
+          "iv_hex": "4452e3e4f2a3c66f1317f129a99bd4ec",
+          "valid_plaintexts": 0
+        },
+        "iv_b": {
+          "full_permutations_tested": 720,
+          "iv_hex": "ec4f48f2477ffaca742e1c72c3260abd",
+          "valid_plaintexts": 0
+        }
+      },
+      "width": 6
+    }
+  ],
+  "source_hashes": {
+    "original_controls.json": "991ded8a5e798a51805de9896ae2af054cad610a62a553dff2b8548ad1185825",
+    "original_core.py": "9a8fb8cd37ecd2453eb191c340d3da14c1a95565d7b2582d76bf4ccaa7c8f16e",
+    "stronger.py": "f08a8164a9714643467152971d2f026b4d10874ad254a33c9a32ff000f406112",
+    "stronger_controls.py": "0ecc8ceb40e6be8534ab05ebfb2cc30daf32aff905c66d9c290e03309b88c4f7"
+  },
+  "target_evaluated": false,
+  "width13_14_corrupted_plants": [
+    {
+      "complete_every_iv_every_order_exclusion": true,
+      "corrupted_observed_sha256": "ac4db757d85fad029d5da375846a838078298d8eb855f6ba8579618f387255bf",
+      "corruption": {
+        "ciphertext_byte_after": 169,
+        "ciphertext_byte_before": 137,
+        "forced_iv_independent_plaintext_byte": 0,
+        "observed_absolute_offset": 211,
+        "rank": 3,
+        "relative_offset": 16
+      },
+      "expected_completion_weight": 6227020800,
+      "order": [
+        7,
+        0,
+        12,
+        3,
+        9,
+        1,
+        5,
+        11,
+        2,
+        8,
+        4,
+        10,
+        6
+      ],
+      "original_first_column_rejected_weight": 479001600,
+      "other_chunks_retained": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "rejected_chunk_rank": 3,
+      "rejected_chunk_witness": {
+        "chunk_rejected": true,
+        "ciphertext_chunk_hex": "b4b03d7637c885b981821e956f54e610a905985551b02dadb604c7e123dd29f2475dc46cebc8f4b59e24",
+        "ciphertext_chunk_sha256": "af91b800dd3bab3902b6f2e67a74e453c996498769fc3a5f638543b0993e322b",
+        "end_state_set": [],
+        "first_failure": {
+          "chunk_relative_plaintext_offset": 16,
+          "plaintext_byte": 0,
+          "states_after": [],
+          "states_before": [
+            0,
+            1,
+            2
+          ],
+          "suffix_offset": 0
+        },
+        "iv_independent_plaintext_suffix_hex": "00cb357c3db56944f2cfc716cd71bbcf3d2e2020544845204145",
+        "iv_independent_plaintext_suffix_sha256": "8b08f82cf317587b427bbe9cf59f149fadabc5d2eccdb3fc490d4b5a59da699a",
+        "observed_positions": {
+          "count": 42,
+          "start": 3,
+          "stride": 13
+        },
+        "observed_rank": 3,
+        "starting_state_set": [
+          0,
+          1,
+          2
+        ],
+        "suffix_bytes": 26
+      },
+      "rows": 42,
+      "stronger_certificate_weight": 6227020800,
+      "valid_plant_all_chunks_retained": true,
+      "width": 13
+    },
+    {
+      "complete_every_iv_every_order_exclusion": true,
+      "corrupted_observed_sha256": "2bcb3a0acea1e5bf2800bf5a4874a32a6b21fd9d8299eb514a2a6b1316ff7608",
+      "corruption": {
+        "ciphertext_byte_after": 252,
+        "ciphertext_byte_before": 185,
+        "forced_iv_independent_plaintext_byte": 0,
+        "observed_absolute_offset": 227,
+        "rank": 3,
+        "relative_offset": 16
+      },
+      "expected_completion_weight": 87178291200,
+      "order": [
+        8,
+        0,
+        13,
+        3,
+        10,
+        1,
+        6,
+        12,
+        2,
+        9,
+        4,
+        11,
+        5,
+        7
+      ],
+      "original_first_column_rejected_weight": 6227020800,
+      "other_chunks_retained": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "rejected_chunk_rank": 3,
+      "rejected_chunk_witness": {
+        "chunk_rejected": true,
+        "ciphertext_chunk_hex": "10ddda0cdfbf3c364eb4b03d7637c885fc81821e956f54e6108905985551b02dadb604c7e123dd",
+        "ciphertext_chunk_sha256": "f55a7f8d33c0c6c5daaa0468f4be4e2d63edc7330a47a412b3e3f520860e8810",
+        "end_state_set": [],
+        "first_failure": {
+          "chunk_relative_plaintext_offset": 16,
+          "plaintext_byte": 0,
+          "states_after": [],
+          "states_before": [
+            0,
+            1,
+            2
+          ],
+          "suffix_offset": 0
+        },
+        "iv_independent_plaintext_suffix_hex": "00f10ca1c62a283c79c84fc413c3f77a0b52454d454d42",
+        "iv_independent_plaintext_suffix_sha256": "c701b650855e87ccf7252f36de24440e9cc9d84c7bddc6a18bfea4378e75dffa",
+        "observed_positions": {
+          "count": 39,
+          "start": 3,
+          "stride": 14
+        },
+        "observed_rank": 3,
+        "starting_state_set": [
+          0,
+          1,
+          2
+        ],
+        "suffix_bytes": 23
+      },
+      "rows": 39,
+      "stronger_certificate_weight": 87178291200,
+      "valid_plant_all_chunks_retained": true,
+      "width": 14
+    }
+  ]
+}

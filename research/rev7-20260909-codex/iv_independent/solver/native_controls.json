@@ -1,0 +1,603 @@
+{
+  "artifacts": {
+    "frozen_python_controls.json": "8656075b2f0495444b82439d582f075e28030189d9985489301b9c030159926b",
+    "native": "f205a6493ead64be879b24e308c28839aab2bc3db383bb9e743cab24f8de1574",
+    "native.cpp": "77b169a90041f57eb506134fdcdfdde0c255377c9fad60117e158132078ea1cc",
+    "native_controls.py": "475f63bde26cd2bcca1defff8491a7af2e515f911866d18436ffeb2211b28020",
+    "solver.py": "23b8755b61276f9a3fc30b1ab385dd7296cffd95407eed9663f505553f949343"
+  },
+  "assertions": {
+    "all_passed": true,
+    "cap_semantics": true,
+    "endpoint_native_independent_boundaries": true,
+    "full16_1m_exact": true,
+    "full16_250k_exact": true,
+    "mode_cfb8_two_iv_formula": true,
+    "openssl_des_matches_pycryptodome": true,
+    "seeded_exact": true
+  },
+  "build": {
+    "command": "clang++ -std=c++17 -O3 -Wno-deprecated-declarations native.cpp -o native -I/opt/homebrew/Cellar/openssl@3/3.6.3/include -L/opt/homebrew/Cellar/openssl@3/3.6.3/lib -lcrypto -Wl,-rpath,/opt/homebrew/Cellar/openssl@3/3.6.3/lib",
+    "openssl": "3.6.3",
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "des": {
+    "key_hex": "5a6f6d6269657300",
+    "match": true,
+    "openssl_ecb_block_hex": "414a0a3a69353129",
+    "pycryptodome_ecb_block_hex": "414a0a3a69353129"
+  },
+  "explicit_order_interface": {
+    "default_order_replay_exact": true,
+    "format": "optional fifth argument: a 16-character hexadecimal permutation after seed",
+    "note": "No alternate heuristic is selected by these controls.",
+    "validated_bijection": true
+  },
+  "full16_prefixes": [
+    {
+      "all_counters_and_survivors_equal": true,
+      "native": {
+        "certificate_complete": false,
+        "certificate_weight": 1412669880,
+        "cipher": "des",
+        "ecb_calls": 1795393,
+        "elapsed_seconds": 0.124877,
+        "expected_completion_weight": 20922789888000,
+        "geometry": {
+          "anchor_unique_symbols": 8,
+          "anchor_window_suffix_index": 283,
+          "explicit_order_override": false,
+          "fully_bound_window_counts": [
+            2,
+            4,
+            4,
+            5,
+            8,
+            33,
+            100,
+            222,
+            538
+          ],
+          "symbol_order": [
+            7,
+            8,
+            4,
+            0,
+            3,
+            11,
+            5,
+            13,
+            10,
+            15,
+            6,
+            2,
+            12,
+            1,
+            9,
+            14
+          ]
+        },
+        "identity": "ASTRA",
+        "node_limit": 250000,
+        "seeded_entries": 0,
+        "solutions": [],
+        "stats": {
+          "aborted_at_node_limit": true,
+          "maximum_depth": 12,
+          "nodes": 250000,
+          "rejected_completion_weight": 1412669880,
+          "rejected_plaintext": 1058940,
+          "rejected_strict_fsa": 0,
+          "terminal_completion_weight": 0
+        },
+        "unaccounted_mapping_weight": 20921377218120
+      },
+      "native_ecb_calls": 1795393,
+      "native_ecb_calls_per_second": 14377291.254594522,
+      "native_nodes_per_second": 2001969.9384194047,
+      "native_process_wall_seconds": 0.12874691600000077,
+      "native_reported_seconds": 0.124877,
+      "node_limit": 250000,
+      "python": {
+        "block_size": 8,
+        "certificate_complete": false,
+        "certificate_weight": 1412669880,
+        "cipher": "des",
+        "expected_completion_weight": 20922789888000,
+        "geometry": {
+          "anchor_symbols": [
+            0,
+            3,
+            4,
+            5,
+            7,
+            8,
+            11,
+            13
+          ],
+          "anchor_unique_symbols": 8,
+          "anchor_window_suffix_index": 283,
+          "fully_bound_window_counts": [
+            2,
+            4,
+            4,
+            5,
+            8,
+            33,
+            100,
+            222,
+            538
+          ],
+          "symbol_order": [
+            7,
+            8,
+            4,
+            0,
+            3,
+            11,
+            5,
+            13,
+            10,
+            15,
+            6,
+            2,
+            12,
+            1,
+            9,
+            14
+          ]
+        },
+        "identity": "ASTRA",
+        "node_limit": 250000,
+        "seeded_entries": 0,
+        "solutions": [],
+        "stats": {
+          "aborted_at_node_limit": true,
+          "maximum_depth": 12,
+          "nodes": 250000,
+          "rejected_completion_weight": 1412669880,
+          "rejected_plaintext": 1058940,
+          "rejected_strict_fsa": 0,
+          "terminal_completion_weight": 0
+        },
+        "unaccounted_mapping_weight": 20921377218120
+      },
+      "python_seconds": 4.635188
+    },
+    {
+      "all_counters_and_survivors_equal": true,
+      "native": {
+        "certificate_complete": false,
+        "certificate_weight": 5469868080,
+        "cipher": "des",
+        "ecb_calls": 7178308,
+        "elapsed_seconds": 0.523662,
+        "expected_completion_weight": 20922789888000,
+        "geometry": {
+          "anchor_unique_symbols": 8,
+          "anchor_window_suffix_index": 283,
+          "explicit_order_override": false,
+          "fully_bound_window_counts": [
+            2,
+            4,
+            4,
+            5,
+            8,
+            33,
+            100,
+            222,
+            538
+          ],
+          "symbol_order": [
+            7,
+            8,
+            4,
+            0,
+            3,
+            11,
+            5,
+            13,
+            10,
+            15,
+            6,
+            2,
+            12,
+            1,
+            9,
+            14
+          ]
+        },
+        "identity": "ASTRA",
+        "node_limit": 1000000,
+        "seeded_entries": 0,
+        "solutions": [],
+        "stats": {
+          "aborted_at_node_limit": true,
+          "maximum_depth": 12,
+          "nodes": 1000000,
+          "rejected_completion_weight": 5469868080,
+          "rejected_plaintext": 4231097,
+          "rejected_strict_fsa": 0,
+          "terminal_completion_weight": 0
+        },
+        "unaccounted_mapping_weight": 20917320019920
+      },
+      "native_ecb_calls": 7178308,
+      "native_ecb_calls_per_second": 13707903.189461906,
+      "native_nodes_per_second": 1909628.729982317,
+      "native_process_wall_seconds": 0.5278389580000002,
+      "native_reported_seconds": 0.523662,
+      "node_limit": 1000000,
+      "python": {
+        "block_size": 8,
+        "certificate_complete": false,
+        "certificate_weight": 5469868080,
+        "cipher": "des",
+        "expected_completion_weight": 20922789888000,
+        "geometry": {
+          "anchor_symbols": [
+            0,
+            3,
+            4,
+            5,
+            7,
+            8,
+            11,
+            13
+          ],
+          "anchor_unique_symbols": 8,
+          "anchor_window_suffix_index": 283,
+          "fully_bound_window_counts": [
+            2,
+            4,
+            4,
+            5,
+            8,
+            33,
+            100,
+            222,
+            538
+          ],
+          "symbol_order": [
+            7,
+            8,
+            4,
+            0,
+            3,
+            11,
+            5,
+            13,
+            10,
+            15,
+            6,
+            2,
+            12,
+            1,
+            9,
+            14
+          ]
+        },
+        "identity": "ASTRA",
+        "node_limit": 1000000,
+        "seeded_entries": 0,
+        "solutions": [],
+        "stats": {
+          "aborted_at_node_limit": true,
+          "maximum_depth": 12,
+          "nodes": 1000000,
+          "rejected_completion_weight": 5469868080,
+          "rejected_plaintext": 4231097,
+          "rejected_strict_fsa": 0,
+          "terminal_completion_weight": 0
+        },
+        "unaccounted_mapping_weight": 20917320019920
+      },
+      "python_seconds": 18.816443916
+    }
+  ],
+  "identity": "ASTRA",
+  "independent_native_endpoint": {
+    "ascii_and_all_five": {
+      "expected": true,
+      "hex": "6f6be28093e28094e28098e28099e280a60a",
+      "native": true
+    },
+    "initial_state1_completion": {
+      "expected": true,
+      "hex": "809341",
+      "native": true
+    },
+    "initial_state2_completion": {
+      "expected": true,
+      "hex": "9341",
+      "native": true
+    },
+    "truncated_e2": {
+      "expected": false,
+      "hex": "41e2",
+      "native": false
+    },
+    "truncated_e280": {
+      "expected": false,
+      "hex": "41e280",
+      "native": false
+    },
+    "wrong_third": {
+      "expected": false,
+      "hex": "41e280a5",
+      "native": false
+    }
+  },
+  "pycryptodome_cfb8_two_iv_window_formula": [
+    {
+      "ciphertext_hex": "84f4d90cec83c550c36cbd069b67fa5d5250c3116571b1c077c55a8294fd81f80e90e582e6736675f5559f609297cf9eb3e7b1b5cc1ab4c61433d239028873f7e6582555a6cad8627bc8e732128f3b89afaec6daf144cc1f3f9f73758a38daf3863c3ad76527f8aa66993f7e572e7f931cb4bcaaf7539bcc1b88c58e0db2b50471f16002eabe7f46b28c7e2f63e07ca324ee04c3b53e913978309589837a457bcb37a187eb421fc7e9ce2f9cc6fd0ae9572e910ecf9ec3ba9a95f5c7ab594f1a34cb0d2fd2adfb1d3f5f74efab4ea027b028a39d60178929b565e4604b8072da89c09fc1ac2f0a7439ec9598807fd931df44708abe9be3fd6642f5fa1de3b445d008030364bb5f36b3c2042f5df2e20897dcb4e0a1ae1a1ade06089090d586fbe537bc54704f6388a213eee657c5483589617b26177c5c068dd7f895a6556af9dc235ade095c59e9e5a67204383612e8852000ceec265c9e15da2df2b65f8223c7e605d7a78e07fbd8099900d0521d539dc4677b24a17ef8087523f0f6fbdcc053e967b367c8aa307d9ca6c363041ec960e459360dc7f5423d25f2c1aec4a6d50388fe3ad60c1ea47a5fb863fdddfafbe83d5c953a3e72a270fe68e52a90e3c08f505408cc6271e818c55e9ee5097cbdf91591b054fedcd427269903",
+      "ciphertext_sha256": "f896b7799876e47321f1e79f2ee48b0a50cc11e632268e2ef74839e0245105af",
+      "iv_hex": "80ff017ec355aa19",
+      "iv_independent_window_formula_equals_plaintext_suffix": true,
+      "pycryptodome_mode_cfb8_equals_native": true
+    },
+    {
+      "ciphertext_hex": "52f8b9de26be265d745b726863841b2ae1ac969438d2c41bbfa6b165e746d60841bff951b385352ca73c72348162e51e6f6a8f02a05ea08fbd30bd6362b6f471ca5c6809f0346de2986bb0e19b16163f02ec24545ea920c2786babd0a480b2c7d07940bca8dc6fc16f0b117e7de1cc93dff50d24a211d8fd07ff0042d75d5b8fbe6fc6a288de50e922b9016057e84bb9f220873fb7d6d7c3025a72a725a169d9ce336532e14da7e0a2b1f401245056e661db030a8493f489e514000c9031ad993fcbeb816f9913f8ab53bb56210ee924c0cf32452ac7532eadd56299f528e877a06b02ffb051404bbe0ab821aef519b063b76c9cde6d25776abe50b384177137c586e47068d59f594c2395f0e739def186ec512a7eae35d6a2822df5312d9207487cf8b624cb9cb859ca03bfbb6ec96230f210b35c359e1d9b637b4ea7dbccd0a5692a176a8cc352d94698a8b6fa9509e701abb545b73446cb089e218d53647434bdb975d917682dff3d33fb71f864b8dd1874bef16fedbafe4414db1ac9261711a4cf155b260a20963e059922a6feca428e72144f4bbca364ab29994377b7e8d37dc867aed3980f46b3baedbad22130457e55b32282c64a68f186c40a145f8f8381f9e616cd7804b23ac19fdcd4cc94d7df8c9705c9d08aadf28cf2",
+      "ciphertext_sha256": "1512c28a577d32e2797c463a8532ca479bfb476911a9faa68e6b5c2bcbba56d2",
+      "iv_hex": "3030303030303030",
+      "iv_independent_window_formula_equals_plaintext_suffix": true,
+      "pycryptodome_mode_cfb8_equals_native": true
+    }
+  ],
+  "rev7_read": false,
+  "scope": "Native DES-only IV-independent solver controls",
+  "seeded_four_unknown": {
+    "exact_counters_and_survivors": true,
+    "explicit_default_order_native": {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "des",
+      "ecb_calls": 944,
+      "elapsed_seconds": 0.000167417,
+      "expected_completion_weight": 24,
+      "geometry": {
+        "anchor_unique_symbols": 8,
+        "anchor_window_suffix_index": 283,
+        "explicit_order_override": true,
+        "fully_bound_window_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          4,
+          5,
+          14,
+          34,
+          98,
+          207,
+          468
+        ],
+        "symbol_order": [
+          7,
+          8,
+          4,
+          3,
+          11,
+          0,
+          5,
+          13,
+          10,
+          6,
+          1,
+          12,
+          2,
+          15,
+          9,
+          14
+        ]
+      },
+      "identity": "ASTRA",
+      "node_limit": 100000,
+      "seeded_entries": 12,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_suffix_hex": "49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "maximum_depth": 16,
+        "nodes": 5,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 6,
+        "rejected_strict_fsa": 0,
+        "terminal_completion_weight": 1
+      },
+      "unaccounted_mapping_weight": 0
+    },
+    "mapping_recovered": true,
+    "native": {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "des",
+      "ecb_calls": 944,
+      "elapsed_seconds": 0.00018775,
+      "expected_completion_weight": 24,
+      "geometry": {
+        "anchor_unique_symbols": 8,
+        "anchor_window_suffix_index": 283,
+        "explicit_order_override": false,
+        "fully_bound_window_counts": [
+          2,
+          4,
+          4,
+          5,
+          14,
+          34,
+          98,
+          207,
+          468
+        ],
+        "symbol_order": [
+          7,
+          8,
+          4,
+          3,
+          11,
+          0,
+          5,
+          13,
+          10,
+          6,
+          1,
+          12,
+          2,
+          15,
+          9,
+          14
+        ]
+      },
+      "identity": "ASTRA",
+      "node_limit": 100000,
+      "seeded_entries": 12,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_suffix_hex": "49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "maximum_depth": 16,
+        "nodes": 5,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 6,
+        "rejected_strict_fsa": 0,
+        "terminal_completion_weight": 1
+      },
+      "unaccounted_mapping_weight": 0
+    },
+    "python": {
+      "block_size": 8,
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "des",
+      "expected_completion_weight": 24,
+      "geometry": {
+        "anchor_symbols": [
+          0,
+          3,
+          4,
+          5,
+          7,
+          8,
+          11,
+          13
+        ],
+        "anchor_unique_symbols": 8,
+        "anchor_window_suffix_index": 283,
+        "fully_bound_window_counts": [
+          2,
+          4,
+          4,
+          5,
+          14,
+          34,
+          98,
+          207,
+          468
+        ],
+        "symbol_order": [
+          7,
+          8,
+          4,
+          3,
+          11,
+          0,
+          5,
+          13,
+          10,
+          6,
+          1,
+          12,
+          2,
+          15,
+          9,
+          14
+        ]
+      },
+      "identity": "ASTRA",
+      "node_limit": 100000,
+      "seeded_entries": 12,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_suffix_hex": "49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a49562d696e646570656e64656e7420e28093e28094e28098e28099e280a6207375666669783b0a"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "maximum_depth": 16,
+        "nodes": 5,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 6,
+        "rejected_strict_fsa": 0,
+        "terminal_completion_weight": 1
+      },
+      "unaccounted_mapping_weight": 0
+    }
+  },
+  "target_evaluated": false
+}

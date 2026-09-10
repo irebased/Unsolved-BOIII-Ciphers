@@ -1,0 +1,542 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "correct_plant_first_columns_retained": true,
+    "iv_independent_suffix_verified": true,
+    "no_rev7_access": true,
+    "random_all_iv_factorial_certificates_complete": true,
+    "small_naive_full_valid_subset_verified": true
+  },
+  "boundary_state_controls": [
+    {
+      "all_reachable_boundary_states_retain": true,
+      "case": "suffix_starts_80",
+      "ciphertext_sha256": "2be4c0d46d080181bda0c0f75d512057ba73c83024b7ee8f5ec05034f1b5b58b",
+      "ending_states": [
+        0
+      ],
+      "normal_state_only_rejects": true,
+      "suffix_first_byte": 128
+    },
+    {
+      "all_reachable_boundary_states_retain": true,
+      "case": "suffix_starts_punctuation",
+      "ciphertext_sha256": "184ec911bef1cc2dd1d0411ca336e605911cecd0dedfa7b564d5e53daf2590c1",
+      "ending_states": [
+        0
+      ],
+      "normal_state_only_rejects": true,
+      "suffix_first_byte": 147
+    }
+  ],
+  "cipher": {
+    "block_size": 16,
+    "key_hex": "5a6f6d62696573000000000000000000",
+    "name": "AES-128"
+  },
+  "claim_boundary": "A rejected first-column rank eliminates (w-1)! full orders for every external IV. A retained rank is only an unresolved first-column class, not a plaintext, IV, or full-permutation survivor. No terminal-state-zero check is made at the column boundary.",
+  "deterministic_random_complete_contradictions": {
+    "observed_sha256": "98113b4992132d199ad2b38053235a998b4e2956d98d3ba9c3b086ee1d9f96cf",
+    "rows": [
+      {
+        "claim": "retained ranks are unresolved first-column classes, not plaintext or full-permutation survivors",
+        "complete_every_iv_exclusion": true,
+        "expected_completion_weight": 6227020800,
+        "identity": "ASTRA",
+        "rejected_completion_weight": 6227020800,
+        "rejected_ranks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "retained_ranks": [],
+        "rows": 42,
+        "tested_first_column_ranks": [
+          {
+            "chunk_sha256": "30e373c50d09275780a137cc08bd2f2590f5c54720fed73fae4eec3413498653",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 0,
+            "suffix_bytes": 26,
+            "suffix_sha256": "1dfc3c40b4b9b553aacd4ed2bbbc1a7fa2f77e5b1a25b949f1c2a1e0dae6ab95"
+          },
+          {
+            "chunk_sha256": "dcb85352036528a18ed1397824536943094945e3f295a8517632fc8f5dc8ef00",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 1,
+            "suffix_bytes": 26,
+            "suffix_sha256": "2b88a9ddb422d7ca27495e7447235df319a8eeab8d6593857add892ae3b3163a"
+          },
+          {
+            "chunk_sha256": "224d16a78a6ff42754775c617c7a50c297c00f8b207ec0e52caa94bf4363075f",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 2,
+            "suffix_bytes": 26,
+            "suffix_sha256": "cd9ddcef5ac253c5ce2faabac91a67ffe6d203c69e769950ca9e00e8bc628d87"
+          },
+          {
+            "chunk_sha256": "b95a50656aa5873ed6e9f3e85a21efa5a9a725639e74ee01c4e531183ee13bae",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 3,
+            "suffix_bytes": 26,
+            "suffix_sha256": "4e52a81c36ed6e00a675daedd838e12ed07d8fde055c6bd69b1bd1435caed588"
+          },
+          {
+            "chunk_sha256": "6c6c5618f222f792b233fd7807f80b357be5173794edde680b8a998281b7148e",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 4,
+            "suffix_bytes": 26,
+            "suffix_sha256": "f4babf7c7cdbe1b5a0db5f5deb989f45930a2015a6031e53013b39e443f886db"
+          },
+          {
+            "chunk_sha256": "e3553f373d8d212809a703de5257799dcc490f16f8b10cabeb9219e9b4e32278",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 5,
+            "suffix_bytes": 26,
+            "suffix_sha256": "e1ed008aacdf526351f2419c897a98885ef6a10e53ce061c7b4e4977dfb41feb"
+          },
+          {
+            "chunk_sha256": "86bada7caf9e5ac65bd804d27e7676c27ca9b5efdbba2301adb19f0a707e326b",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 6,
+            "suffix_bytes": 26,
+            "suffix_sha256": "c975bc0f57b2f31696fb8d876203bc2605acdc680b59e2c5e68a8cf141bb890e"
+          },
+          {
+            "chunk_sha256": "a3423f2042528a2c3fabe9b43aa21619ad0f3380cc3ffdc602f8721ab419f3d2",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 7,
+            "suffix_bytes": 26,
+            "suffix_sha256": "71d0f8c069683354a760a23a81a4f750b97a9e66a27e59a183c82115bfce22f1"
+          },
+          {
+            "chunk_sha256": "128047d888084dad2b89bff821742232a47d3eb525bb7f26e06a91dfca3f9d30",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 8,
+            "suffix_bytes": 26,
+            "suffix_sha256": "1df654449fa571c646228ff69a75470aba9cc730a3197d729be4ac8d9f23eb64"
+          },
+          {
+            "chunk_sha256": "a438f3384e1a69b3ca8e4dcda03476ed1e39322fe924a221cba5b8eb00c6a196",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 9,
+            "suffix_bytes": 26,
+            "suffix_sha256": "fd7c5637412dfe1dabeb2253b4dfa757c6e7f24062473f06b3765610daf08014"
+          },
+          {
+            "chunk_sha256": "cb1d118aae5626a1d6f7a40f2c8c612fec3d60f54c10262874c4a9328a7ff1c4",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 10,
+            "suffix_bytes": 26,
+            "suffix_sha256": "fc5e9116e9fff5d40295752a8b8c39332d723479fabc9267c32c5bb019ad7ee5"
+          },
+          {
+            "chunk_sha256": "4af47d9af74386cfa4f68f5a6ae11e480821d20f546bc8285edcb29d38b306c0",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 11,
+            "suffix_bytes": 26,
+            "suffix_sha256": "9bfed49b2ec4163414ef07d1b8d3efdeecd9f144ce997367c6b6afacf189f13b"
+          },
+          {
+            "chunk_sha256": "8de85ccf17c34b0e8225f46041deb14812843884ffff57278f7309640ffce312",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 12,
+            "suffix_bytes": 26,
+            "suffix_sha256": "302dcdbb55709737d83826c096c9e3b50b0fb2acdc08d5c1d63597506aea6a4d"
+          }
+        ],
+        "weight_per_rejected_rank": 479001600,
+        "width": 13
+      },
+      {
+        "claim": "retained ranks are unresolved first-column classes, not plaintext or full-permutation survivors",
+        "complete_every_iv_exclusion": true,
+        "expected_completion_weight": 87178291200,
+        "identity": "ASTRA",
+        "rejected_completion_weight": 87178291200,
+        "rejected_ranks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "retained_ranks": [],
+        "rows": 39,
+        "tested_first_column_ranks": [
+          {
+            "chunk_sha256": "6f3d5be15a9f93ff17b3b600e95f1354041fe9098059e11ba24638f6e265aec1",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 0,
+            "suffix_bytes": 23,
+            "suffix_sha256": "1a0b5a2bae9ab5df79d8c8a981148b5a7c7e008644b8ec6a9c7cbc6a10a257d5"
+          },
+          {
+            "chunk_sha256": "c90116728a01592f147e147e34ea59768b45b8a07e6fbbaceca0fc2ae8966871",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 1,
+            "suffix_bytes": 23,
+            "suffix_sha256": "6e645eb2fed75cbb6a42eeaccdf8dd47682ee8dd5eb241cad81bc3732b2ecd38"
+          },
+          {
+            "chunk_sha256": "225ef4948ba1346102baaf2180838499b2ba27455bfb141b55af63bf4c98ff68",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 2,
+            "suffix_bytes": 23,
+            "suffix_sha256": "4d6fd95d59ccfc39a7fd55551ed3f37d3ae04d4602b8fb3c252027ee36aa0a86"
+          },
+          {
+            "chunk_sha256": "0499163d3a9a2c4812c903d3a657dbdb6581f2349c45eee5fd930b514e35a330",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 3,
+            "suffix_bytes": 23,
+            "suffix_sha256": "f7c5b295dac721d2fece78eb6a590dfde7c42b77735f2336fa9d97dea9636079"
+          },
+          {
+            "chunk_sha256": "6a1560640fa85705fa4c3a720f468a4a07c9f32d29245ce52629ce1423d7c8ef",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 4,
+            "suffix_bytes": 23,
+            "suffix_sha256": "294558e2e8a7808f3f4ec373fe105c63fe0a1d7a3112b00d847dcbcea59d3144"
+          },
+          {
+            "chunk_sha256": "92165324449c4d1e5a5fec81f2a954f7b71a06fb2dcbf9833304c9a2804753d3",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 5,
+            "suffix_bytes": 23,
+            "suffix_sha256": "1746c634fd5ea52cb7066c915fe54f09178a4cc586b412f15395df12296a6447"
+          },
+          {
+            "chunk_sha256": "d9b0d2c512947417e5840270ab9f42952826364566416d983af5adb3fe72ba40",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 6,
+            "suffix_bytes": 23,
+            "suffix_sha256": "2277dee0d927cf98ddedc5a6fd81cf0502cfb3d1999adf8b01ad7c38b1abf197"
+          },
+          {
+            "chunk_sha256": "1890b728afc2f85059cd30aa215bb08626035551d4ddc5ad2df0991754f0b2a4",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 7,
+            "suffix_bytes": 23,
+            "suffix_sha256": "3cd26340852853cdb187a9b07de20ff607864174b6be812d75f09f6ea1a6b4b0"
+          },
+          {
+            "chunk_sha256": "5ed34e8fcff287d4c5725beb1d93a2ab1abddf74205568b2d18c0074581c03eb",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 8,
+            "suffix_bytes": 23,
+            "suffix_sha256": "87a56cd6438341bf2439771694c85a74f1c4305a896cd2a388ab61bb203c9e9b"
+          },
+          {
+            "chunk_sha256": "b228eb04aedcf350ffe90ec5eb826357f9c99d89f310c9f37018f210b6c97f78",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 9,
+            "suffix_bytes": 23,
+            "suffix_sha256": "a382c696dd520587b6f136dd0bf3420481e9f798495123d6f38c58419cbc00c5"
+          },
+          {
+            "chunk_sha256": "45f79b1cb662324ce8b2f07ae5dd403411a6d03d82d306b11f10f26c52b5c758",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 10,
+            "suffix_bytes": 23,
+            "suffix_sha256": "0ad6dce54b50ac6952256a422233b1f233b8d2e9f6bf26e9b299277ed496e2f2"
+          },
+          {
+            "chunk_sha256": "3237d2f2889778e6e1cd1003226896b29b68c987ee3eaae43e33ae21fd44b2b1",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 11,
+            "suffix_bytes": 23,
+            "suffix_sha256": "69b7315204cea156dfd7f13f8c0593af92fa2d5dd890a2d2f060188cef9c6c8a"
+          },
+          {
+            "chunk_sha256": "720f2ad21ada29b74ff3f7964c5fe58a4f1dec5f7cfc2ed872d8855804829420",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 12,
+            "suffix_bytes": 23,
+            "suffix_sha256": "42828112ec97657c9f9fa998740f5025de777c06b4240c97b97a03276a095d2e"
+          },
+          {
+            "chunk_sha256": "2d41dc05cf88aa1b8cde2accd4aeaae24ea7f001000047c6be43e7bc6417fe06",
+            "end_state_set": [],
+            "necessary_prefix_retained": false,
+            "observed_rank": 13,
+            "suffix_bytes": 23,
+            "suffix_sha256": "bb88b9f9198a4908358e94f4a36a700feb1a25537676da84b811dfb1e5c60c85"
+          }
+        ],
+        "weight_per_rejected_rank": 6227020800,
+        "width": 14
+      }
+    ],
+    "seed": 20260910
+  },
+  "endpoint": {
+    "start_state_set_at_byte_16": [
+      0,
+      1,
+      2
+    ],
+    "terminal_zero_required_at_column_boundary": false,
+    "utf8_sequences": [
+      "e28093",
+      "e28094",
+      "e28098",
+      "e28099",
+      "e280a6"
+    ]
+  },
+  "fable_variant_b_fixture": {
+    "exact_match": true,
+    "inverse_hex": "0104070a0205080b00030609",
+    "n": 12,
+    "order": [
+      2,
+      0,
+      1
+    ],
+    "width": 3
+  },
+  "identity": "ASTRA",
+  "iv_independence": {
+    "ciphertext_bytes": 42,
+    "ciphertext_sha256": "b8536674286ee10a4be103eda342e411cd29ad75ef06eedded860c3e9988ce99",
+    "iv_a_hex": "00000000000000000000000000000000",
+    "iv_b_hex": "00112233445566778899aabbccddeeff",
+    "suffix_bytes": 26,
+    "suffix_sha256": "fb447eb50adb894ef8dced8343aa4edd2fa40421dab9089ab78456eb72951ee8",
+    "two_library_decryptions_and_direct_recurrence_equal_after_byte16": true
+  },
+  "rev7_file_read": false,
+  "runtime": {
+    "pycryptodome": "3.23.0",
+    "python": "3.9.6"
+  },
+  "scope": "Synthetic-only necessary-prefix controls for all external 16-byte IVs; AES-128 CFB8 fixed key Zombies plus nine NULs; rectangular variant B widths 13/14; strict five-sequence endpoint.",
+  "small_width_naive_controls": [
+    {
+      "full_valid_first_column_ranks": [
+        1
+      ],
+      "full_valid_permutation_count": 1,
+      "independent_full_valid_ranks_subset_of_necessary_retained": true,
+      "order": [
+        1,
+        0,
+        2
+      ],
+      "retained_first_column_ranks": [
+        0,
+        1,
+        2
+      ],
+      "rows": 20,
+      "width": 3
+    },
+    {
+      "full_valid_first_column_ranks": [
+        2
+      ],
+      "full_valid_permutation_count": 1,
+      "independent_full_valid_ranks_subset_of_necessary_retained": true,
+      "order": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "retained_first_column_ranks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rows": 20,
+      "width": 4
+    },
+    {
+      "full_valid_first_column_ranks": [
+        2
+      ],
+      "full_valid_permutation_count": 1,
+      "independent_full_valid_ranks_subset_of_necessary_retained": true,
+      "order": [
+        2,
+        4,
+        0,
+        1,
+        3
+      ],
+      "retained_first_column_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rows": 20,
+      "width": 5
+    },
+    {
+      "full_valid_first_column_ranks": [
+        5
+      ],
+      "full_valid_permutation_count": 1,
+      "independent_full_valid_ranks_subset_of_necessary_retained": true,
+      "order": [
+        5,
+        2,
+        4,
+        1,
+        3,
+        0
+      ],
+      "retained_first_column_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rows": 20,
+      "width": 6
+    }
+  ],
+  "source_hashes": {
+    "controls.py": "360ef4132575a3db3107128d709bb2403be0f9cb625f7a9c77000af8aa281a89",
+    "core.py": "9a8fb8cd37ecd2453eb191c340d3da14c1a95565d7b2582d76bf4ccaa7c8f16e",
+    "fable_byteTranspositions.js": "c9c09bd405bbe43b853a5efb0e25f58ae67136a5f83653e7c45c3a2f3879b7f0",
+    "fable_transpositions.js": "89f2b3c8fa5cd5144d3c2baf2e2d25edb1dcb2f3b0f7a056a506841e6438ccc6"
+  },
+  "target_evaluated": false,
+  "width13_14_arbitrary_iv_plants": [
+    {
+      "arbitrary_iv_hex": "370fc628926e46abbfe95abce41d95cf",
+      "complete_every_iv_exclusion": false,
+      "correct_first_column_rank": 1,
+      "correct_first_column_retained": true,
+      "expected_completion_weight": 6227020800,
+      "observed_sha256": "e58c5e0b5b27ac89ede50c6a4fd196d08f69e21998f59b22dba7a151def4cfe3",
+      "order": [
+        7,
+        0,
+        12,
+        3,
+        9,
+        1,
+        5,
+        11,
+        2,
+        8,
+        4,
+        10,
+        6
+      ],
+      "rejected_completion_weight": 0,
+      "retained_first_column_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "rows": 42,
+      "width": 13
+    },
+    {
+      "arbitrary_iv_hex": "370fc628926e46abbfe95abce41d95cf",
+      "complete_every_iv_exclusion": false,
+      "correct_first_column_rank": 1,
+      "correct_first_column_retained": true,
+      "expected_completion_weight": 87178291200,
+      "observed_sha256": "be0bc205e7150e97a47c7405466739186a2e5078879f6e7b8e0674b1d41b2da7",
+      "order": [
+        8,
+        0,
+        13,
+        3,
+        10,
+        1,
+        6,
+        12,
+        2,
+        9,
+        4,
+        11,
+        5,
+        7
+      ],
+      "rejected_completion_weight": 0,
+      "retained_first_column_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "rows": 39,
+      "width": 14
+    }
+  ]
+}

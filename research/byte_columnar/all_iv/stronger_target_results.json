@@ -1,0 +1,2507 @@
+{
+  "cells": [
+    {
+      "canonical_reconstruction_from_orientation": true,
+      "chunk_witnesses": [
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "8366ad685be69804ae3677f883e587f42e21d4687f94763175786142b305dbdc1b2abb16f972597459ef",
+          "ciphertext_chunk_sha256": "28d2ec424d9506ceb40124def48fbeb602090dfc7893ea4cca23539ff8f1b37a",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 135,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "4d87a05d5cb99d67239837a84aa1c45bda575da570aaba09cbfc",
+          "iv_independent_plaintext_suffix_sha256": "142304c9f699ea039effd98e4a0e042eebd4ea075442154fde2b778a690abdca",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 0
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "b53c24603f2667905e25730e736caad4217f34d71ea8ca68d9ecda62aef29b149e1ad57ebd17c696ef7c",
+          "ciphertext_chunk_sha256": "ffea99abf21489de30d79a50fd3316cdfd68edb5b1402fd739cc707ffe655d05",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 18,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "12b461a371cae25a57c0837a7cdd2eeedd726ec0dd94c0cc1f1d",
+          "iv_independent_plaintext_suffix_sha256": "1e1ab9012eb24e655ffc3752c23d9bc0282d9ea608953f62919dec06ae12a130",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 1
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "7b42b9c6cbff6875894e9b68af99bef523030bfb3bf313537c9b93aaa9dd869fcfa5dd2ae6456268641e",
+          "ciphertext_chunk_sha256": "1b82381d735cad6bc894a638e7f3ea3f546434724dd980a85d54f0ed637a6f6f",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 18,
+            "plaintext_byte": 148,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 2
+          },
+          "iv_independent_plaintext_suffix_hex": "676194ccc04c3fbf0d5f7633af36711bd41bb6fae6f3eb8bea3b",
+          "iv_independent_plaintext_suffix_sha256": "961e0b96eed3b71cd3317cf9e59ce06666cf85dce3d82f89037151b4e228318f",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 2
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "2cb73b9c36d83a1ad7943a50b66463007b59a6603e5218f6c91b789d0479d55a24e375d006a527602577",
+          "ciphertext_chunk_sha256": "271d39c4f08d415d5f3d088e99ce105b035508e1886b3e34982f2f93835f97c8",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 203,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "7dcb5a127bfef03644de331d70628e04d6e4d1ac60bb873a9c19",
+          "iv_independent_plaintext_suffix_sha256": "97af616afd1edf7e41c457858f9cd7a40002db5458a05f0fc5309922f2d9dc30",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 3
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "34f22772d91c2e9d94a1414fc2671f490e0a22214b0a44b1fddb00572cffac5313de6a3162f564ae0455",
+          "ciphertext_chunk_sha256": "7e326dfef8ab4846c15e58c4f61a7ff0d3e2c597aea4f3650c0c8226613ad04b",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 131,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "218334f7a0510e0931496fe9abdbfec6e0dab9a05c1f65f83a2f",
+          "iv_independent_plaintext_suffix_sha256": "001cdfca52aa1a8c3ba785dd5a607febc44bffba24fdfa574507b64b1a2c3aba",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 4
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "3400ffd434ac0b4a774a859291404d19ee3d4fbffaeb87c174d4b7c8d63011ee1c8e8f75428840f48844",
+          "ciphertext_chunk_sha256": "e6eb5944a07ba6df2019b57ce96c15ba999505670e700ca2116fbdc85d7fb52a",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 172,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "53ac69c41f72893a2576c9c68a51e74d8f541fda06ef40bcf237",
+          "iv_independent_plaintext_suffix_sha256": "fd73634e5cc98229954f52d56efd7b50cf1029b943df3bdaf03942ef356afcdc",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 5
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "69415497cfaa9e5fdb75624543463fcb03c029dee9779c5dd951822910eaf96d3ff45a6eec0e0d14967d",
+          "ciphertext_chunk_sha256": "e8e21f29d86cbce854e699db2494c6067dfaebcdf8dc579397a278563ef8cd30",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 249,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "f96a59a69e2804fae973ad3d860039099348cd7d2576ce1bd45e",
+          "iv_independent_plaintext_suffix_sha256": "5e480b31cca48b723e5f796b5b24e0e57c021111831958d9b72c55e21e97bb87",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 6
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "7fb5c6cd0ded64242b8c721c9f26ab2b0ea6b29c636038fe5b762dc36484ac13954f92a47089ee992fe4",
+          "ciphertext_chunk_sha256": "3001a4562f08e9eafd2058d3f91fdb801290499a68c32fda7628baa1473cecb1",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 189,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "bd8a2a72955275dfae3cd63a28edc506b09365bd5d9e4b346cec",
+          "iv_independent_plaintext_suffix_sha256": "24ddf019018f699fa26071b588f7c2e8abb59674965858534d5334281465917f",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 7
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "6fb6e7c9316240472942ad277e23a7e5cf1713d9070e1d581e8f8329635eacff46b4feb19b264ed92d29",
+          "ciphertext_chunk_sha256": "0b922739be8df4f8b2b0e0bf890805d7b63c49e92fb1ec8022f3fe266df0611c",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 11,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "0b34c6a297373cfe3bd15f4e5da191718760babfeb56e665d856",
+          "iv_independent_plaintext_suffix_sha256": "0d3df6fc69b38808df728361311b752380b5bacb903b22919170fac0bd9e04e9",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 8
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "caa09a8251266c5cc5099ad083cc5e665ab1bc69a3d8caa966ba32f91fb90d4049e02ec81991c35b3d4e",
+          "ciphertext_chunk_sha256": "fdbd7b2af43f3082f2aa3a22d9e565414f72897fd5752c422ef55931b51d8279",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 186,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "ba6fd368266df8cc82e9bb8fd6cd2725a975b3a634f1d002da58",
+          "iv_independent_plaintext_suffix_sha256": "c7bcd7a364796bed58bfdec55f2e7755e6ba05e62bdb7e4eba6b76b88c130665",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 9
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "3fda11d42ada6191446f2f06a7f800d97e7739c5b2066b00958fee2f3ca7848e23c8335c06e9755e2311",
+          "ciphertext_chunk_sha256": "609b513925a64e04f133d335adfb95a97d90bb7eaaeb0b7a0f73607175865668",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 136,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "40880c8f8bffb6def941159b23d11667f3cf66eae15e1e440387",
+          "iv_independent_plaintext_suffix_sha256": "d0ee7db601e31f57265f1b6ebf018a7ea03adc8fa4e01bbea8f5249e4fb98830",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 10
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "8e4a369cfacd0cc94deb9580f15c3d6c388e0dddfbbd9a7c76f5b3fa8b4d356503bd0d36c18827cf38a4",
+          "ciphertext_chunk_sha256": "f985a75aa98fbbc9b3a48d6abe10342f61ad8de0591234ce651a9d9abaa7e703",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 5,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "310565e7860d5fe4f69368a44f161faf2215b7e537397835af72",
+          "iv_independent_plaintext_suffix_sha256": "ead71559be6ea9f6248c7292966d388462b29f71c242dfa98355a4558602b620",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 11
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "ade0e3d278441419ead15413212d647e3c7bedf555f44fceceb388cb6bc32eecfe7ff1f4261d8845627f",
+          "ciphertext_chunk_sha256": "9a4a340967b7d4644b10a063ce23d8d92721d399df6cecd57f5d327e38264680",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 241,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "f1ba5d69476a95b08754a9ac414fefe01735e8d33787671cc0cb",
+          "iv_independent_plaintext_suffix_sha256": "6267b6cd437e1fe3677eed55d739cbdce2a57ed8aab75d65d65f56b8618528be",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 12
+        }
+      ],
+      "complete_every_iv_every_order_exclusion": true,
+      "expected_completion_weight": 6227020800,
+      "iv_scope": "every external 16-byte IV",
+      "observed_bytes_sha256": "6e3990baeddc0d503786de4ba78ffd9b1a148886f90b77eb9f5baf60867a5c88",
+      "orientation": "forward",
+      "oriented_hex_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+      "original_first_column_rejected_weight": 6227020800,
+      "rejected_chunk_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "retained_chunk_ranks": [],
+      "rows": 42,
+      "stronger_certificate_weight": 6227020800,
+      "unresolved": false,
+      "variant": "B",
+      "width": 13
+    },
+    {
+      "canonical_reconstruction_from_orientation": true,
+      "chunk_witnesses": [
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "833cb99cd9ac9e2429092f802187d4235922bfe9601da995f588b3f2865a138e5aa49b9175cf62",
+          "ciphertext_chunk_sha256": "fb6aac283d96ff008d9482e59e3f97eed6e04b8ed7b1fa25d87b6cc1baab09ea",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 171,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "2aab21ac6d948ebab38a3f9e2233a7655a3d58c39a620f",
+          "iv_independent_plaintext_suffix_sha256": "06e61a4fc05294acc25a062f49213cd2914e8b026b207a6a7a23e1334bcd175d",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 0
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "b5423b7234aa6447c56f9513e5aaf57b0a4fde630eca0076b342aeddd5531cf492b119e92745ef",
+          "ciphertext_chunk_sha256": "47f618814d62995a080e52bc08ea80b84c5d2f5d7d25a3228272b97f65455b82",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 184,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "b81b25800e482b97d7d82a49ea22d64a998d3015f388f7",
+          "iv_independent_plaintext_suffix_sha256": "cbcf367b8bba467e043b4feae0e13170efd3a9873014b070c32dd6982fd6f365",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 1
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "7bb727d4cfed405c44eb54836cbe000e3d299c07d86b7cce6162a979acee3f4ffec8068888597c",
+          "ciphertext_chunk_sha256": "506e900e369861aa26e189b47386ef4e1a5ee3f6be20d475221bf775213cfe77",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 245,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "f5d48315789960e2bdc227b94b2ffea14b0423d4f1ab7d",
+          "iv_independent_plaintext_suffix_sha256": "8f487f36849990e6f2c3c9c65d1e931314f8a707a80c6fe4e0047ac5f5474b4f",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 2
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "2cf2ff970d626c914dd1f873996349eec0b2d9a3069ace78daaa04ff116d95b42e5cc11d74ef1e",
+          "ciphertext_chunk_sha256": "f46aba7c89389996de93c93d9690afdc6423c20461d1f56c5656268ed9840395",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 146,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "9250e077846089a91f1cced0e8e04cf296a83147b3da1f",
+          "iv_independent_plaintext_suffix_sha256": "41a9ad1850c66fbd2e7a517fea78094a58e8c75db205d8fb8f511dd7d72a59d6",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 3
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "340054cd312661c9ea770eaf641f1903a61369b2bd4f75ec939d2c30f91346e033362659966477",
+          "ciphertext_chunk_sha256": "c3dd981c159d3ce80943681ba5f88b8dc55245c4fd3941c8a93397b83b443f36",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 133,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "8585d36ba14e1e93fd8dd2f1352edb495d1117b7b5e642",
+          "iv_independent_plaintext_suffix_sha256": "8737f545a01113282beb04a5ba60a09a979546108b9abb21b98fe4768dd2acb7",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 4
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "3441c6c951da0c19367368b6674dcb0e17bcc5fbf431d99b7857d6eaacff49c80df472c6682555",
+          "ciphertext_chunk_sha256": "8660361a1acc4a8cdf8d5ffecb4cc0604441125fb50fdbc6d59637fab9fce20e",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 233,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "e93bb2ce9d4534dd35066e2c5622e0c1501f408ba97f65",
+          "iv_independent_plaintext_suffix_sha256": "20f3ed0059ec18c420a8a29e5af724aff8a3f3af49baf2ea6dbd5667626de2a7",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 5
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "69b5e7822acd14ae259b50c2403f2bcfb139dd5576687c1b00c81084ac4023bdf1f91762600444",
+          "ciphertext_chunk_sha256": "c40da1f6520cbe5b4719fd9d95083ff0169d3b20627377da191f0400bd1a23a2",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 19,
+            "plaintext_byte": 154,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 3
+          },
+          "iv_independent_plaintext_suffix_hex": "597e499aa17ef5cb21a8e93502dc75b02cdd19328fe2dc",
+          "iv_independent_plaintext_suffix_sha256": "eeb9442e47ba4733cc08c1ae7337d4808e213a722a1c9ee23f5aa7c916413f5b",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 6
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "7fb69ad4fa44045e4e3a4f9146abe55a770df594ca53c9dbb729645e0d8e037f16bd4527ae887d",
+          "ciphertext_chunk_sha256": "539363cb77f02f758eb0f6918e2adb470f0a80e66f5444a732792d1efc61da7d",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 238,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "ee7a0d08378256e755b208a665672295d02a57ae5875da",
+          "iv_independent_plaintext_suffix_sha256": "616672960004d7e0cb8ea5d8f8de911ce21b8e82fce269ecf5df3eb18c4123fb",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 7
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "6fa0119c789890899441924326a7667e8eed7fa813f6fdd482c363b98465febb7ee6a564f496e4",
+          "ciphertext_chunk_sha256": "a582fe5503bc73d0a932fa21f0a6fa1421d06aec162c666c9339726af41f86ba",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 165,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "a5ebe161700933371ffdaebf9189010244021a0440401b",
+          "iv_independent_plaintext_suffix_sha256": "7bd06c7b5e097502c48a8c6af3db974476492129938a4a9f69c9349598f00ae6",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 8
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "cada36d2e66775d7a185459f235ed9387b681ef318b174512d291fa735ec2ad52a06f540142f29",
+          "ciphertext_chunk_sha256": "a995108de3e54444dbf71e316916f529fd737426a1e20ed07c38fd2addca8622",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 21,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "156c6b94f6a53a86b83585b0fc5de150aa98095dbe8170",
+          "iv_independent_plaintext_suffix_sha256": "8fb36486ee46c04e1b365fbb04c8b1ae8601a77eaa0a30c7a2fa2c4e3173984c",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 9
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "3f4ae35b26681a944a621c7ecc006c3cd4d73b5244c1d97683f93c4d2e1b1addd062880d992d4e",
+          "ciphertext_chunk_sha256": "fec4b0cb2600f64a9efc3e6a8b22c5e918e245c94113effdbb2baa14506e986b",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 236,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "ec59418cf4dbaacae3e6ebe595cd6c52ddba9252dc4dfe",
+          "iv_independent_plaintext_suffix_sha256": "653880ce5a5658bbf12c3e65accafd27b99ccbf45f9d4b4a31f170736e4d467b",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 10
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "8ee0683fff3a9d7775722783f83d7e2134fb3e0a875d5b8f322f8bc3dc9ea57531420eeed93d11",
+          "ciphertext_chunk_sha256": "ea71f0f6c5a513cbfb06f7150cb62278cb679945e8d356701366b6e6e152c732",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 18,
+            "plaintext_byte": 11,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 2
+          },
+          "iv_independent_plaintext_suffix_hex": "7b260b04e9ae8afef5330bb01cde135d8d3c3851b7d754",
+          "iv_independent_plaintext_suffix_sha256": "34dbe1432027e535ac8054db3d4683f3daea1d237eca1a704d4673a50f55d7e7",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 11
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "adad60cbd82e4adb8cadd0a75c642e7f0b604beb9cfe1ebaeefa6bdb14cfe36a75ec894e5b23a4",
+          "ciphertext_chunk_sha256": "bd8e9838751672b405f0cf276c30f87f9bf7cd5df696e6063ead97f1e99a02e9",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 18,
+            "plaintext_byte": 168,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 2
+          },
+          "iv_independent_plaintext_suffix_hex": "4151a85b7188e58c48ebceb6eee6e002abe095681f2f35",
+          "iv_independent_plaintext_suffix_sha256": "e26d8d7f7e4f60dd5000f0c0f5d2c9d95477b7c786f2b0d25ecdff3e8ee741e9",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 12
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "6624c6361c0b5f2b429a06f12df42103a621fa773858668fb3cb059b9f24de8f6e7026c35e387f",
+          "ciphertext_chunk_sha256": "dd3bfaeb0d3d9898d45bf27f76de0a60d9c09c51f863e4f1b29d2874a8b28fc9",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 151,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "97e757bac8d5e2a08ee62caef026a09c458b34f220347c",
+          "iv_independent_plaintext_suffix_sha256": "46afc59252bb9d8bc7d9c8967975f17f5c6001c3a695e37771af381768fb9767",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 13
+        }
+      ],
+      "complete_every_iv_every_order_exclusion": true,
+      "expected_completion_weight": 87178291200,
+      "iv_scope": "every external 16-byte IV",
+      "observed_bytes_sha256": "6e3990baeddc0d503786de4ba78ffd9b1a148886f90b77eb9f5baf60867a5c88",
+      "orientation": "forward",
+      "oriented_hex_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+      "original_first_column_rejected_weight": 87178291200,
+      "rejected_chunk_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "retained_chunk_ranks": [],
+      "rows": 39,
+      "stronger_certificate_weight": 87178291200,
+      "unresolved": false,
+      "variant": "B",
+      "width": 14
+    },
+    {
+      "canonical_reconstruction_from_orientation": true,
+      "chunk_witnesses": [
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "f7265488d1624f1ff7efcee23cb6bc883bececf44f555fdeb7c3e746d21231451dae914144872d3e0eda",
+          "ciphertext_chunk_sha256": "b0d02ce0be8d2a99b4c3818306c284271bf344031805eb79a17755a4efe7dd47",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 165,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "a514f9eb21e7dbc0c7258e6536ef5203234f9168bd4a817717fc",
+          "iv_independent_plaintext_suffix_sha256": "cb9d60df5e2b5a0b9f94c8efec6d7c837c0c8639866f140427e95c60a178727f",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 0
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "4a83fc72881c63d0db305653d4b8af3b5f67c7a9dbbfddd0e883c6d3c51f0859bed49cc0dcafc963a4e8",
+          "ciphertext_chunk_sha256": "3dd2a4c6fe4cefaf2f20feabaca53bb61a90b19e7259c0f4b8dcb7982d3476cc",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 251,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "fbfa049e3fc1766baf85d9a31f868b91f07c5a003eba3cb2a7fc",
+          "iv_independent_plaintext_suffix_sha256": "3dc9ba2254b2ddfcc7e15c7c170d1edb451717ac48756b18951ae11891defe2a",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 1
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "1132e5579e60c5338c32e8487ac3f2eef85900b6602b5c9377e79d008f7a60f2f6441916ada24d11adf3",
+          "ciphertext_chunk_sha256": "936a2879e7d9b9b1c651a5a6ee1429a0408d7ee65ad18f71d3dc796efc459e62",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 134,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "862ca69ee7e1db022be41f17ad882ce70412154a0eac9ba7fe6e",
+          "iv_independent_plaintext_suffix_sha256": "6267579d4ad856fc707351689af417f3f149e49e6c873664788186aa9b668a57",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 2
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "e4d3b53c19918ce20e9404d09bf19f23ab669aac8d3a96cb1ba566e5cc380da9905cc5c6621528a90aac",
+          "ciphertext_chunk_sha256": "ffb051b7c5aaedb6b1bbea0b6fde2c865c2b807712b45c779b0ecc147d762578",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 179,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "b37f34cbfa293b20822bdac22af6da959b08d58f41ef10304e16",
+          "iv_independent_plaintext_suffix_sha256": "acae88fa0739f802319c0de99f82c146b0a41005172e9aea3596d6d34dbe6278",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 3
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "92d29de462b91bef4b64ffcae5369238f8e185d1e0709d3171fc5e7a32e772da2492740426139c7e6bf6",
+          "ciphertext_chunk_sha256": "7db3238a555b625438661a457ddd5f0d35a94b6a6c65713eda4a8c906acd95fe",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 3,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "035f7aae8a1d441ab94949b716f6501f5c439a55fd18325d163f",
+          "iv_independent_plaintext_suffix_sha256": "9356c6112ae2800815dbc86fcf4aa87eb0f582083b0e825f2642f1535644c88d",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 4
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "4ef299ee98074a29f45931ca48463cd267b5ef830636c92b6ae0b2ba62f9c127c8b24246ded0dc6c5bf7",
+          "ciphertext_chunk_sha256": "04ac94518448a3df627c48db30d321c09c97675f0afa757c603370efadb22282",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 153,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "0a996e7b1e4dd57de869503bb19025c5b741615e0cf1f79f0108",
+          "iv_independent_plaintext_suffix_sha256": "6cf5a10b913e7d6ddee4ddf4c892c08398b7f17f49d596bcc177f11c1fac8c90",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 5
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "d76941d0e0cee6a54ff3d69fae019228159dd5c9779eed920c30bcf36434542657bdf5e9aafc79451496",
+          "ciphertext_chunk_sha256": "635a3894d230d10f149d7c85f722f64aea4997777e6d7d0ce295316aa28e8413",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 149,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "955b6de45c3582e2e9c49dcbe051798f59678153a97974c6ae51",
+          "iv_independent_plaintext_suffix_sha256": "d8e4b43abd15408132acca45378f19dd0e374237a19801321055650f6428128b",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 6
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "44884f04882457f8e8c1ee11036d8c7b4d471c78beaffbf4d3ee91d404192958a477a4b0ca434dff0043",
+          "ciphertext_chunk_sha256": "ed0b9a85d1d8699239e57db508968a629190e67feb95c66a94923c6ba5498073",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 195,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "28c37a735a02a6e4a87c862c280829c040293e18702c90f0cad8",
+          "iv_independent_plaintext_suffix_sha256": "b6b17a6e66626c28f38143f2fb66c8dac9152d1389ed2476d8e86026303d2784",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 7
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "5540ea465f2613a6ed3135caffc27500bddf1b44a0b41222a0e094f1762cf4141a49d9e2c19d27722f43",
+          "ciphertext_chunk_sha256": "5933aac02d6d06e15258df86730f167645f73d1d1521e6ba2c261b43e765ed89",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 18,
+            "plaintext_byte": 154,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 2
+          },
+          "iv_independent_plaintext_suffix_hex": "93609ad7640592066f2c20de688c360f2aa895b6d015c514e18c",
+          "iv_independent_plaintext_suffix_sha256": "fcb1b4250c9a8eaf874ccb679b9c417310dfee5a8cb9423be35d7b14d9d34cf2",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 8
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "775206725a600d573e42a55d9740d987b19c6f8125e3066a95b70036466b05a3497da1a38d63c9b37bc2",
+          "ciphertext_chunk_sha256": "8527e2e226e2eeeb5aa455e56bc45ad1e0f84b8f0e5397a0ccad83d5ecfb2b73",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 191,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "bf67d56a3eb0317cbe8f9a227cab934d63fe15343f9f2c5ca0eb",
+          "iv_independent_plaintext_suffix_sha256": "5e6762511b02a2aa36e4b59556af62a1e25438696787df98f4e8e901cdd24370",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 9
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "e1468626546ea2dd5afcf968dd9aaa39b9c735313fb3bfb030325feb99fa86b9e4985786ffbc6c9b24b7",
+          "ciphertext_chunk_sha256": "6d0f9c9c240f17e3befb8b22b1bd5e38dbc0aa39646e1f9442276e59876afeb6",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 177,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "b102033168f5a58315ebe404ab6f298d7cfd433b2db4df09db6a",
+          "iv_independent_plaintext_suffix_sha256": "6db69672deed9cff37198edd4de48b5b7469bcb9fe1f37b833a05b57c07f35ec",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 10
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "c7fe696c71dbe75da1e941b92fea26adce9d86ac8ae17d43f7124daac637e03752e5097662f30642c35b",
+          "ciphertext_chunk_sha256": "da17d884d8cc172a15897eb0cba31b061c09183d15e89a48d4bcb61f9d7141d5",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 224,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "e01589b16318cc32a68bc617e930504ccd400a018943315a73c5",
+          "iv_independent_plaintext_suffix_sha256": "4153e208890447c72163f44fdda6a3cb9ddf4cf9d153fa37f9d68cea292122f0",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 11
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "fe954795279f61bba2b1cdbd503b24168757136749f7864d12e24f785e388f7763ea40896eb586da6638",
+          "ciphertext_chunk_sha256": "18531f0c9e2cc036493992ceae27ce44a8153fbb79f3156f49f69b44145ba380",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 214,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "d6987c5225201b6c81c0eec13d45bcb0a5fce786508310bc0021",
+          "iv_independent_plaintext_suffix_sha256": "1ead989e587a301b800bd3104eee57c5e46b09d25953d245ed4fba56c7d0772e",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 12
+        }
+      ],
+      "complete_every_iv_every_order_exclusion": true,
+      "expected_completion_weight": 6227020800,
+      "iv_scope": "every external 16-byte IV",
+      "observed_bytes_sha256": "57b166832817f8db1e1b2c7e342d6e9613fd1a944ee55cb897750ab9a84b8c00",
+      "orientation": "full_hex_reverse",
+      "oriented_hex_sha256": "1e5c94f36483c784b10d14beba26c515efc18d4fad0f126dd18291d541192dd0",
+      "original_first_column_rejected_weight": 6227020800,
+      "rejected_chunk_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "retained_chunk_ranks": [],
+      "rows": 42,
+      "stronger_certificate_weight": 6227020800,
+      "unresolved": false,
+      "variant": "B",
+      "width": 13
+    },
+    {
+      "canonical_reconstruction_from_orientation": true,
+      "chunk_witnesses": [
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "f783e53c6207e6f8ed42f9b950bc3bf866858377af126a30124fd21f60a924b2f5b0c1636c4266",
+          "ciphertext_chunk_sha256": "d852daa2e15d4914ea54a43c97103b2f550f1663bb970e337ea21c05b3ca983a",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 8,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "083c214ce79373d963f4ca247d4d9235b5f62cd8dbca61",
+          "iv_independent_plaintext_suffix_sha256": "6a7be65d22b84c737d5d9d2b9f4e4b7c4cf26c7a34b05971b6db8a37e7bb9869",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 0
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "4a32b5e498ce57a63efc41bdb6afeeabe1efc9beb406b0f7e246c57a0ddac8bda4e28dbc06dada",
+          "ciphertext_chunk_sha256": "9993af83fff029f02fb15c4a43ddaba065c1e17038b9ebf2b766b4ba7a4ae927",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 249,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "24f912e38b854826c72eac4b2f9de03782075c63eb4056",
+          "iv_independent_plaintext_suffix_sha256": "3e51e0de98ace1c54631df8ab43d72db3c0d88e855c56994aeca3d0294285e38",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 1
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "11d39deee02413575ae9cd3cb8f223f8b5d578a0e3bf4312e7d38f3872275777d9a3fff3860ee8",
+          "ciphertext_chunk_sha256": "89655c5620d12d8bc8a20bccce75d302df268be67fedf87335641c709d1a1d4a",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 17,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "114fddb35228e10fc758d9e85462e517dfdedd302875ab",
+          "iv_independent_plaintext_suffix_sha256": "b315266d538595a524e0d1c7abbda6a22b7830541892ceac2f88de6b2bc74335",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 2
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "e4d299d088260ddda1b1e2d4c39f38679d1c4425b37d4dc3c600cce7c126a449a18662b53ea4f3",
+          "ciphertext_chunk_sha256": "f8ed7aa9054e90d41a9f5f2f50fa95e8f2a99023d3c019ec9a2700b9938395de",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 18,
+            "plaintext_byte": 170,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 2
+          },
+          "iv_independent_plaintext_suffix_hex": "295eaad14ec0f1e21616dd328af1648080d27798e4088d",
+          "iv_independent_plaintext_suffix_sha256": "caeb44f27e84bab56a23fa8f1d4a0283fd47d4dac0de0ffe8ad189037973ea88",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 3
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "92f241045f60a25da2ce537af192d215471b813fe186b7839de532f954581a7d57766e2d63adac",
+          "ciphertext_chunk_sha256": "4bbbf9ad8c17d56b53790d573e96a5b9f02ec08d4fc23fc7dad3ef43a7e902c7",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 231,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "46e7ff8b0f8d1e51d3f1223553a88137aa5480de35facc",
+          "iv_independent_plaintext_suffix_sha256": "138775c68fc573c853d9b4a899526a0d112c573e1cb17b22791450afc611a486",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 4
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "4e694f465a6ee7bbef56489b363c284ddf6f318af7dee8e7667a623429144998098987c9110af6",
+          "ciphertext_chunk_sha256": "fc7d1c1c3d95a4bd5219b81ef2f9465ff7ca1cb5040ed236ee91396ca3e88e15",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 190,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "3fbed01525816afdfa6ffed558115622d508abb8bb52d2",
+          "iv_independent_plaintext_suffix_sha256": "b4b3f002082e527a6885fae9940aa8f58e5c89f28aeadcc041b70f48936ad0d4",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 5
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "d788ea7254db61f730e8d0e546927bbd9c35ac495fd077a55eba6419f4a3e4e54044af4da96bf7",
+          "ciphertext_chunk_sha256": "57074872512ef01901636ac81ab64e450b111f3b39feb1d90c163e5ef6565b03",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 27,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "1bb0d6e8d4eaf556ea039d642a7099b75dac223fb18045",
+          "iv_independent_plaintext_suffix_sha256": "d4b515cbdfdddf07424d5dea63f72a215c205e5b2a35ceef024bdb469483b6e5",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 6
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "44400626719f1fdb3204ca48018c00b1c7866755dd931bfcb2f3042c05b952ea41dca2287e5b96",
+          "ciphertext_chunk_sha256": "6dd9947268075fc9ab6250f687f4bfc598ef711a7770a93e7f25782eb73fac95",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 191,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "bf77fa41671f8ded13bd9c4c2797db7218960d10b87c17",
+          "iv_independent_plaintext_suffix_sha256": "4fe50ccb7a52dded3a44b0671b02d8ebac8b4ac5b57067b18bf9e1d2b34cf6a0",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 7
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "5552866c274fd08c94ffcaae6d7587b99d134fbf5ccb71e0bcd4766b86376391c0ad159c6c1443",
+          "ciphertext_chunk_sha256": "85fa440c345855c45fba72104c8a4a77a02d810b7d6accef21f7ac56a3aa3323",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 20,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "14f583512566d815a4676dc0fd1734093e95305e121c6a",
+          "iv_independent_plaintext_suffix_sha256": "a571ac9bfb620a74a691b80b8005ffb2b240a7cadb70634c407d45ab1ad73662",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 8
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "774669956263330e64319f03c2d939ce57f4db2b96316a3091f146fae077ae9c166213dc450043",
+          "ciphertext_chunk_sha256": "49d29094366065691ca1f3cefa8abc63d4c6fc5771f0e63c9224ddbe29bfbca0",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 190,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "befb092962b5c9aabd7e29644065eb5c3cd99bcb629d35",
+          "iv_independent_plaintext_suffix_sha256": "282595ca64aa6389aa2e725edbe173fcf3ee53231ef3907eb92de58dda5eae72",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 9
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "e1fe47d11cc5e24b59d611ff40aaad87eca9603a9d2b0cee943699378f1dd419c626d079ff2fc2",
+          "ciphertext_chunk_sha256": "80c5d2ef1462f1da61d0c044a113ca172ed87d3ea585857d6c230cfc60d61d0e",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 238,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "eeb5b95bcd3504a66dbb1fdcba5d0642e0f1d17c6801fe",
+          "iv_independent_plaintext_suffix_sha256": "981ea3b994718ce880531b8a7a50e3ba7eebd71ac2300311ba3241d40699b5f6",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 10
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "c7958888608ceff4f3eeca979a2616ecc7b68d70c992d3e000ebc63845be44c504defc4d727bb7",
+          "ciphertext_chunk_sha256": "1dbaa570031c230ec9a9c9dbf83e7147169c68baba72b5df47e3d56ea295055d",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 11,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "0b2b71c4dc93df4134ae059fba32db0396383e549678e2",
+          "iv_independent_plaintext_suffix_sha256": "5914b7108f9ac5937e120e60d604dd8c19abc926e2dbbdec1dc893e17bb60492",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 11
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "fe54729e911b294fc1355dddea243b6700ace036edf4a0b75faa5e3159f65c7446aa4327b3245b",
+          "ciphertext_chunk_sha256": "d97f66713e90698e9a09c9d57e09c4eb5c5b1072d2286cd7b47ce973335ef0af",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 143,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "438f5baaf8cf117f77d4c825397d897b30c15fbc507b33",
+          "iv_independent_plaintext_suffix_sha256": "b8b69b689f824c4c5e87921a2dea11030b616e95eead7556eeb902bd0e990215",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 12
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "26fc5719b94aa5e831a5682f3b885f599ad1069efb2295324d781208f2909242e9ca9dc99bc338",
+          "ciphertext_chunk_sha256": "71ae8275ab3d43ebe09eda26406a12cda7e06177404f1f30a4789207609eb272",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 179,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "b307121cbd12183fee1bb4b734cdda0cf0573272819b03",
+          "iv_independent_plaintext_suffix_sha256": "71b0a9125f8e28c860a8c1894af9cfc41df8421d1aafee10d7ffc12526776ddd",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 13
+        }
+      ],
+      "complete_every_iv_every_order_exclusion": true,
+      "expected_completion_weight": 87178291200,
+      "iv_scope": "every external 16-byte IV",
+      "observed_bytes_sha256": "57b166832817f8db1e1b2c7e342d6e9613fd1a944ee55cb897750ab9a84b8c00",
+      "orientation": "full_hex_reverse",
+      "oriented_hex_sha256": "1e5c94f36483c784b10d14beba26c515efc18d4fad0f126dd18291d541192dd0",
+      "original_first_column_rejected_weight": 87178291200,
+      "rejected_chunk_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "retained_chunk_ranks": [],
+      "rows": 39,
+      "stronger_certificate_weight": 87178291200,
+      "unresolved": false,
+      "variant": "B",
+      "width": 14
+    },
+    {
+      "canonical_reconstruction_from_orientation": true,
+      "chunk_witnesses": [
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "7f6245881d26f4f17ffeec2ec36bcb88b3cece4ff455f5ed7b3c7e642d211354d1ea19144478d2e3e0ad",
+          "ciphertext_chunk_sha256": "dc5990d1aa774b1863769d6bada28eb87ab7c603e95944769de5ff3289b4c184",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 136,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "8814bdb6ddb251ca673e6e360a1c7bde68db040d82c23c7396da",
+          "iv_independent_plaintext_suffix_sha256": "a8886b3c2308921dde0286bfdd0382d4dc08e65d5357eb0edb88b8f98abbb973",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 0
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "a438cf2788c1360dbd0365354d8bfab3f5767c9abdfbdd0d8e386c3d5cf18095eb4dc90ccdfa9c364a8e",
+          "ciphertext_chunk_sha256": "d0d1d717117d0d0e5dcbb691928d33e049a41ea9c1217d3b221e8a077a977fe2",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 17,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "9311f119523803c4fb9f460c4aef0e1f0a19680f7be00bcab58d",
+          "iv_independent_plaintext_suffix_sha256": "769690bab6f4df077c9b6766cd416e83ed3d4c1b21fc67ca9aadc571ac34bf88",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 1
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "11235e75e9065c33c8238e84a73c2fee8f95006b06b2c539777ed900f8a7062f6f449161da2ad411da3f",
+          "ciphertext_chunk_sha256": "39e6ecc2831a854cf7deec8084b1bfbaa8b466913f5e38540855ea98380cb65f",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 29,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "531d27e73f2b768eaa72f7ffdfce6cf7d6c192e3df92781f3d0d",
+          "iv_independent_plaintext_suffix_sha256": "689537986428411c7b75df06aa4a31e2345629c896d6d177b32de9655727ad48",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 2
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "4e3d5bc39119c82ee049400db91ff932ba66a9cad8a369bcb15a665ecc83d09a09c55c6c2651829aa0ca",
+          "ciphertext_chunk_sha256": "8afd238e5c935ec17118bf6a30395d2d82df22752e5ecd1f8d6550a4d94b2355",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 0,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "0001c7c5d4da15c880b4ac0bfb1e10e1abd7bb4f4f755ccad662",
+          "iv_independent_plaintext_suffix_sha256": "008dca2f3d232568cb0d0da4a0187cd88ede99367aaff6ad958f184c89832f73",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 3
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "292dd94e269bb1feb446ffac5e6329838f1e581d0e07d91317cfe5a7237e27ad422947406231c9e7b66f",
+          "ciphertext_chunk_sha256": "a7000c238c57808802c90927fffd8c90988a7be07f08f96cefd4d08a194a3cf8",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 229,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "e542ec5e37ab0774f34316aa0fe6549f5179f5ba4797a27133d6",
+          "iv_independent_plaintext_suffix_sha256": "6418a241635579c1e2054632e658f2764cbba25b6f4957feed3ab33045e68035",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 4
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "e42f99ee8970a4924f9513ac8464c32d765bfe3860639cb2a60e2bab269f1c728c2b2464ed0dcdc6b57f",
+          "ciphertext_chunk_sha256": "9e19abd3d98fe805d9028967986852ce88762fb6f1f9d9be07bb766b7bc56d69",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 181,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "b56addbbc3bb27e8636687f87e7d63505146b8c017909ed0f02d",
+          "iv_independent_plaintext_suffix_sha256": "ee78e694b4a163e4de559a6712f4d10262192401604488eaadf0feb0bf9271df",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 5
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "7d96140d0eec6e5af43f6df9ea10298251d95d9c77e9de29c003cb3f4643456275db5f9eaacf97544169",
+          "ciphertext_chunk_sha256": "1acd45bc69b9b978e2bd68897d4dcc7b0e86cf286527851d3b43500f83380c3a",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 21,
+            "plaintext_byte": 139,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 5
+          },
+          "iv_independent_plaintext_suffix_hex": "6c0a6a2c638b85dc2898149adff36d3bd9a916aa93e7d6449582",
+          "iv_independent_plaintext_suffix_sha256": "c9e577c24df8f47c916fe72dc9aac41c95009f0188874b42815313cdd4663b35",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 6
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "4488f4408842758f8e1cee1130d6c8b7d474c187ebfabf4f3dee194d409192854a774a0bac34d4ff0034",
+          "ciphertext_chunk_sha256": "ed9983f42be9d98453f46545c236011e43fcd3c2ac3fca7b3d16333aeae7d606",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 181,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "36b53737159a1dc0f946cbbb827ca3d1e8617069ff85f66b3ff7",
+          "iv_independent_plaintext_suffix_sha256": "6754df23785b04d11e735d3b9d213dd6ee9e1951de831704eb5258d6480bddf1",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 7
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "5504ae64f562316ade1353acff2c5700dbfdb1440a4b21220a0e491f67c24f41a1949d2e1cd97227f234",
+          "ciphertext_chunk_sha256": "71658f14bc983a82ba67d34c8255739c0da717ac4407c8ea5cb10af79562eb67",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 178,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "99b25f083c7079a3f2ac2369618ecc031d6057c11f36e50ca2c9",
+          "iv_independent_plaintext_suffix_sha256": "07b99fb4078aa7dee8838966f2623c43cb301e9d84ce18c92d1147d8dc2cc3fd",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 8
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "77256027a506d075e3245ad579049d781bc9f618523e60a6597b006364b6503a94d71a3ad8369c3bb72c",
+          "ciphertext_chunk_sha256": "dd4b10b7bf26b0a99d2ba161094b1a6cff38cc9458ad839a4851242e6f0f0ef0",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 212,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "d4f9f425c2e4ff77ced2966570e7ededcdaf5a99f4e5abe6f08e",
+          "iv_independent_plaintext_suffix_sha256": "a6655f841ea3bb26b47360c0e91099bd44c552edc6ee26500bc25eb086337970",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 9
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "1e64686245e62adda5cf9f86dda9aa939b7c5313f33bfb0b0323f5be99af689b4e897568ffcbc6b9427b",
+          "ciphertext_chunk_sha256": "9326e9ce564f1278c11121f2016bc2701cab28a0eaa9866a178e1c5d1145ae7d",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 127,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "7fbd983d2469232c5b1b502b760c5e68375842a8ee7ef95ab1ef",
+          "iv_independent_plaintext_suffix_sha256": "8392af010c29ca93e8b2f2a9b6074c3c551e9df18493ee0d2c9643602a7f1f3f",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 10
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "7cef96c617bd7ed51a9e149bf2ae62daecd968caa81ed7347f21d4aa6c730e73255e9067263f60243cb5",
+          "ciphertext_chunk_sha256": "12683ade5e227e5ed7a1656311c2607783f7415b7017e608c0eb6227419abcfb",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 19,
+            "plaintext_byte": 7,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 3
+          },
+          "iv_independent_plaintext_suffix_hex": "993f3807ea289991ea15b355407faf79c05efaf503b6e3f17683",
+          "iv_independent_plaintext_suffix_sha256": "5df43846eacc813241a69d9887d5600d2fb9e61859720fa733a0e14776287187",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 11
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "ef59745972f916bb2a1bdcdb05b3426178753176947f68d4212ef487e583f87736ae0498e65b68ad6683",
+          "ciphertext_chunk_sha256": "f9d16f4f476b4258dc0a0b29089cda5ecd1168f4916b949f896dbc839250a0a6",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 175,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "71af388cdba9d3828e006d9567dad1566ba3c91a9dcfa85bf77f",
+          "iv_independent_plaintext_suffix_sha256": "b81b2dd81a02f799cde3ffd8406ad90b883147ba8dd9b5f52abd9cdf67442f18",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 12
+        }
+      ],
+      "complete_every_iv_every_order_exclusion": true,
+      "expected_completion_weight": 6227020800,
+      "iv_scope": "every external 16-byte IV",
+      "observed_bytes_sha256": "348156d322ae00c97ff3d4bd2fe60e3981fd53f9b2bc5f27fe12114b80248dc8",
+      "orientation": "byte_reverse",
+      "oriented_hex_sha256": "c0a0ad90fc93da8a57009b1c86c0e0e93a001bcab7ed6a7c2cd3a32fcca06af7",
+      "original_first_column_rejected_weight": 6227020800,
+      "rejected_chunk_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "retained_chunk_ranks": [],
+      "rows": 42,
+      "stronger_certificate_weight": 6227020800,
+      "unresolved": false,
+      "variant": "B",
+      "width": 13
+    },
+    {
+      "canonical_reconstruction_from_orientation": true,
+      "chunk_witnesses": [
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "7f385ec326706e8fde249f9b05cbb38f66583877fa21a60321f42df1069a422b5f0b1c36c62466",
+          "ciphertext_chunk_sha256": "63757e237882521ec9745ed6e8a70358378a990b644325913a8c25f7a70a0b60",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 162,
+            "states_after": [],
+            "states_before": [
+              1
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "e2a2b4f30c3e3b61a290a3bc152134bf4f9ebc90639460",
+          "iv_independent_plaintext_suffix_sha256": "1d92be8edaf8c1c657f4fc08691edbf7a5622cdc5856da2a9a8366731ecbadb1",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 0
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "a4235b4e89ec756ae3cf14db6bfaeeba1efe9ceb4b600b7f2e645ca7d0ad8cdb4a2ed8cb60adad",
+          "ciphertext_chunk_sha256": "4b0c840da734d4ab204e5a1f8730dd0ea694008377c38ea1893d20cbfc10159f",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 219,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "db4af4d95dc1eb50d24d254bc3a0819bf081af285d5bde",
+          "iv_independent_plaintext_suffix_sha256": "a1c29ef6b24bd8e39b17025ad84d73158db71ec318b1b797b78a19752f12b5ac",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 1
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "113dd9ee0e423175a59edcc38b2f328f5b5d870a3efb34217e3df883277275779d3aff3f68e08e",
+          "ciphertext_chunk_sha256": "802ce53f6f516484b0a9c37a11c15f77ae2e10d46cefb30e5cc1d5ef2f480dc4",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 161,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "76a1190b878687c236e73ff72429533e88688cc5c8abeb",
+          "iv_independent_plaintext_suffix_sha256": "3ba2a0e973392f5dddfb2a45c3664774f937f2b799315059e90175b27098f4eb",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 2
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "4e2d990d8862d0dd1a1b2e4d3cf98376d9c144523bd7d43c6c00cc7e1c624a941a68265be34a3f",
+          "ciphertext_chunk_sha256": "3b394543c634bddbfdcd7573f0538a66fc5be0400862a4e49fc5efd6ffcf84bc",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 176,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "b000e6e177da89abe3eed1ee8b161e8cb5d3da1b8cdc10",
+          "iv_independent_plaintext_suffix_sha256": "3ce8b7c22f6850328595b33a6fa88104244ecb61e2e56001c9b9db1247319911",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 3
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "292f1440f5062ad52aec35a71f292d5174b118f31e687b38d95e239f4585a1d77567e6d236daca",
+          "ciphertext_chunk_sha256": "a42ff14b0a1cf6d4584d9b435a45b227fdaf11e39b3c95bec56b68f93936e392",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 159,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "9ff5a94cb2ad9f030ab7731cb2c4a85c4915e3b359e71d",
+          "iv_independent_plaintext_suffix_sha256": "d01a86a7b4e8550cc025adee1eee9f5de3e711cb75db5523e41b69aa61958fc4",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 4
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "e496f464a5e67ebbfe6584b963c382d4fdf613a87fed8e7e66a72643924194899098789c11a06f",
+          "ciphertext_chunk_sha256": "e88aefb8ddbad7e7bcaef99cf7fdc86578551bbd55012ee870de8fe6d6fb544f",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 155,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "9bce71e3e8d732561c52099bea2981f36bdd716e0c94e0",
+          "iv_independent_plaintext_suffix_sha256": "470095ea4212c5660acf520ca7c2b88abd093bb27c0ab40b8d2d803f0596c1a4",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 5
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "7d88ae2745bd167f038e0d5e6429b7dbc953ca94f50d775ae5ab46914f3a4e5e0444fad49ab67f",
+          "ciphertext_chunk_sha256": "c40c693e4bcba8bf3084af5d07e0777f98d1f6fa3d19cfb56dda7fbb24a88715",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 159,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "9f319ab16cdecf8643068a4d70ec7c50bf4679f19a5e35",
+          "iv_independent_plaintext_suffix_sha256": "5b620cfb5cf9aef4ca408d4f8294fa6cdc5a04e9ef6c9ffe769218d0ef99bebb",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 6
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "4404606217f9f1bd2340ac8410c8001b7c687655dd39b1cf2b3f40c2509b25ae14cd2a82e7b569",
+          "ciphertext_chunk_sha256": "0ba5a1d38b1d2a336171281c662f879a73fde1721295f72e153747c5c2bbb622",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 157,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "399d5672abc43701894e21cb6a8b1f60e4c4fe07b654d3",
+          "iv_independent_plaintext_suffix_sha256": "e64cf714bd37358a46de5fba76f8c903c8df9b8434b4a873b95117e79123dba3",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 7
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "552568c672f40dc849ffacead657789bd931f4fbc5bc170ecb4d67b6687336190cda51c9c64134",
+          "ciphertext_chunk_sha256": "d3facc8baee01af984c06b792aa433eb78c05e7086ee7238acd3605261893a5c",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 132,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "7e8412db8ace9782393c206485ec9f6ead3effbb6d8ef0",
+          "iv_independent_plaintext_suffix_sha256": "7d6aeb0b16946987c03c086c12ba0d7da76825422da410f58d8b71a642fcd51e",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 8
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "77649659263633e04613f9302c9d93ec754fbdb26913a603191f64af0e77eac9612631cd540034",
+          "ciphertext_chunk_sha256": "a98d5c260a7a703814caf1e2d8ec61d2726528face9b896ed601d95e1968057a",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 133,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "853966001a73745ba8b65f76ea2e640be547eb3aa9e62a",
+          "iv_independent_plaintext_suffix_sha256": "e16d1df51421f7bdfe31b674cd9e69abe977ff16ea950a58b27894151f733c03",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 9
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "1eef741dc15c2eb4956d11ff04aada78ce9a06a3d9b2c0ee49639973f8d14d916c620d97fff22c",
+          "ciphertext_chunk_sha256": "56ab621e83652527ecc9071224047ce1e7c4765646e826da0b3d1d38e5f145d4",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 18,
+            "plaintext_byte": 235,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 2
+          },
+          "iv_independent_plaintext_suffix_hex": "2250ebcce6614892e0a851838022c57210c4806b20373a",
+          "iv_independent_plaintext_suffix_sha256": "720a349fb2b822b7092446994aa8e275c9737e10ac0a504b8ece5ba0c41351d5",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 10
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "7c59888806c8fe4f3feeac79a96261ce7c6bd8079c293d0e00be6c8354eb445c40edcfd427b77b",
+          "ciphertext_chunk_sha256": "7cfcd51e622c13c1ca475623c17f2a93d1912fe4c85f91a6230a5b7e9269216c",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 171,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "abc5288da5ecf05d9492b3970eda3502ddb5284d0de20c",
+          "iv_independent_plaintext_suffix_sha256": "b6744a678aad008804d390a82df2c63e100c42be911fd95a03d48b5bd8a91c31",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 11
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "ef4527e919b192f41c53d5ddae42b37600ca0e63de4f0a7bf5aae513956fc54764aa34723b42b5",
+          "ciphertext_chunk_sha256": "f60d794dbe88d39171a864b84be7db7ee405aca49fdb2c6a1fbad112c01c2a8b",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 12,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "0c4dc8575a5833d2cc4177f4c1c30879646f0e30b3d801",
+          "iv_independent_plaintext_suffix_sha256": "e5b08eb9e2bb3d36f19b9ff636e02c427ec100501241d84a9fecafefc05f38c5",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 12
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "62cf75919ba45a8e135a86f2b388f595a91d60e9bf225923d48721802f0929249eacd99cb93c83",
+          "ciphertext_chunk_sha256": "ea1d996e969ed0c143919e78b4dbfd533c72531e2d3d6da3a7088491c856c27b",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 5,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "05cbc106f16836098b741510fcf3c84e8f13c39bc0da5d",
+          "iv_independent_plaintext_suffix_sha256": "f0f79bbe0e68bf533cf946d94a4c997e87ba6a73155782bd5cdae401d1eb5570",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 13
+        }
+      ],
+      "complete_every_iv_every_order_exclusion": true,
+      "expected_completion_weight": 87178291200,
+      "iv_scope": "every external 16-byte IV",
+      "observed_bytes_sha256": "348156d322ae00c97ff3d4bd2fe60e3981fd53f9b2bc5f27fe12114b80248dc8",
+      "orientation": "byte_reverse",
+      "oriented_hex_sha256": "c0a0ad90fc93da8a57009b1c86c0e0e93a001bcab7ed6a7c2cd3a32fcca06af7",
+      "original_first_column_rejected_weight": 87178291200,
+      "rejected_chunk_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "retained_chunk_ranks": [],
+      "rows": 39,
+      "stronger_certificate_weight": 87178291200,
+      "unresolved": false,
+      "variant": "B",
+      "width": 14
+    },
+    {
+      "canonical_reconstruction_from_orientation": true,
+      "chunk_witnesses": [
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "3866da86b56e8940ea63778f385e784fe2124d86f7496713578716243b50bdcdb1a2bb619f27954795fe",
+          "ciphertext_chunk_sha256": "658314d1a5c1f1716e9ecc151b7d97f5e2b2a6cbf602647fa30b2afba684c1a0",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 208,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "d012728e3b7abf8b6c2c50186c320d823833866142a55c8e573c",
+          "iv_independent_plaintext_suffix_sha256": "9cbbd80860815203c91af08498c91ce7b9c2192908fdcdb0a785c8751eefcd8c",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 0
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "5bc34206f3627609e55237e037c6aa4d12f7437de18aac869dcead26ea2fb941e9a15de7db716c69fec7",
+          "ciphertext_chunk_sha256": "bd98882f2599700adf7b1e1512ae612a56b63d713f134ecdc8014f3eec66ecc9",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 4,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "04d53cf0e1bd6b55dd6823944df62f43f85f45c0763d22816b32",
+          "iv_independent_plaintext_suffix_sha256": "eda6c53d45bbb3ea8de5fc0ff8ebf27a84ef52d3b0f0a017773a081e4ee4f67f",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 1
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "b7249b6cbcff865798e4b986fa99eb5f3230b0bfb33f3135c7b939aa9add68f9fc5adda26e54268646e1",
+          "ciphertext_chunk_sha256": "2332683cc5d182c634fa18749cf89ee3764d84f7dbb62f626dd6f48e4f369980",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 20,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "14e013de4f3d3f0f24da986ec4bfe65ed2488bb72fd5c13ca6d7",
+          "iv_independent_plaintext_suffix_sha256": "cd5b8e294d43849cd53315b7c02a6bde82313c0a5397cbfb0e9ffcce2095e303",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 2
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "c27bb3c9638da3a17d49a3056b463600b7956a06e325816f9cb187d940975da5423e570d605a72065277",
+          "ciphertext_chunk_sha256": "00bd9a10c37f60e5be10cbc8ef56e4928233f867f882003c677d5efad0bf8766",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 252,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "fc29540139f9365ae3b58c9c2e34d7993294a699ecd0d8dcb28c",
+          "iv_independent_plaintext_suffix_sha256": "7a45a19510c82c69d9e69febc8ab4ade406fb0924853bcceaf93e1d58eaabe34",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 3
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "432f72279dc1e2d9491a14f42c76f194e0a02212b4a0441bdfbd0075c2ffca3531eda613265f46ea4055",
+          "ciphertext_chunk_sha256": "bc9193a5c713fcfa940bc976c4879b8ad1f3ffb46530bae7379137bf018d3377",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 8,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "08782b815119f8a07157ec4cd4ce8e31b4e91ed08a9c18e7f09a",
+          "iv_independent_plaintext_suffix_sha256": "8a8d1cbb8e415a98d9e1065d443b983d24ec2ceda82de5f8a3063c3ae4ea1dae",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 4
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "4300ff4d43cab0a477a458291904d491eed3f4fbafbe781c474d7b8c6d0311eec1e8f8572488044f8844",
+          "ciphertext_chunk_sha256": "2dcf3328f38bb079f2ca05757d5569ab7730a72243d73d55313fc0ac35dcc52f",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 149,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "9598ef6eae2be5ebe45655df290305cc663ab5eb94fc16d3a946",
+          "iv_independent_plaintext_suffix_sha256": "3b61bc1326012d5d412d4a25d47b1e0dc386ae800c42eb1c6b4dfb2bb82774a0",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 5
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "96144579fcaae9f5bd5726543464f3bc300c92ed9e77c9d59d15289201ae9fd6f34fa5e6cee0d04169d7",
+          "ciphertext_chunk_sha256": "1a8ceef47f0452e0a87404463f1dbad16b37cc184e098dbaa7f55b0e83d6e225",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 236,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "ec75b6ec9df4fc0d5321604cdbcd77019e9745b08385a24fecce",
+          "iv_independent_plaintext_suffix_sha256": "32bd5fa57099985038fcc9a8e2940d007f6cb2fef5b315c7fa2479b3eb1f13b9",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 6
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "f75b6cdcd0de4642b2c827c1f962bab2e06a2bc9360683efb567d23c4648ca3159f4294a0798ee99f24e",
+          "ciphertext_chunk_sha256": "69bc78f490cfb4079d08de8d318d9156763b13a437bf641ba8e779e6eb4e6547",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 18,
+            "plaintext_byte": 191,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 2
+          },
+          "iv_independent_plaintext_suffix_hex": "3a43bf9464ddaedfaf4c2432b40b765d7a2013baae1efe6621b0",
+          "iv_independent_plaintext_suffix_sha256": "ff025b9101d19ea1ab3eb75466b361611dcbfafbd93c4ea0301f92b10e78b171",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 7
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "f66b7e9c132604749224da72e7327a5efc71319d70e0d185e1f8389236e5caff644bef1bb962e49dd292",
+          "ciphertext_chunk_sha256": "90ba5aabcb656290f13f0888c78d5c1328c9f937260668eceaa35211d1508b26",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 246,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "f6063cfe1e581df989c30b6e1e3992459bc32067c97c7fdaa57b",
+          "iv_independent_plaintext_suffix_sha256": "ecbb6f4d68a323e6280fa30bd775c73701343f605f34cf1f22935a5793c17b96",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 8
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "ac0aa9281562c6c55c90a90d38cce566a51bcb963a8dac9a66ab239ff19bd004940ee28c91193cb5d3e4",
+          "ciphertext_chunk_sha256": "8b169047721d6b773e9757b4d05538ea63328fb1fe5272b9a778e8957399ea4b",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 205,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "4ecd5ac906f18d16f9d88fc9154a357ab5615c108945af8d6832",
+          "iv_independent_plaintext_suffix_sha256": "f67137c48ca01640d7a5991f857822a265c103fc1aa2821d2994a4225adb3cab",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 9
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "f3ad114da2ad161944f6f2607a8f009de777935c2b60b60059f8eef2c37a48e8328c33c5609e57e53211",
+          "ciphertext_chunk_sha256": "d1122eb1f0d828d17c98183a13f19302104fc21901dcd843ed2302f12f762cd3",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 197,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "c52038a83766986c3034636837c56fcb18073c07e4b9a6b16c16",
+          "iv_independent_plaintext_suffix_sha256": "052570bf32068b706c6b55956b18235f8e2126329b28becee4f3f5a5717a8eca",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 10
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "e8a463c9afdcc09cd4be59081fc5d3c683e8d0ddbfdba9c7675f3bafb8d4535630dbd0631c8872fc834a",
+          "ciphertext_chunk_sha256": "e0fbbd8f4b038be1a96071916f43689a13f4f46902632615b3d2fc00ddc843c2",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 21,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "1539b72c2870a7de8769f5f5791d160285583658498ddf188d49",
+          "iv_independent_plaintext_suffix_sha256": "1db1955119903bc031c1c2fb48033c84e08c476600f2183e2240cbffbb730520",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 11
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "da0e3e2d87444191ae1d453112d246e7c3b7de5f554ff4ecec3b88bcb63ce2ceeff71f4f62d1885426f7",
+          "ciphertext_chunk_sha256": "49f8391464e8ad7745bb5e328a74c03b46810ce72a81422f72c0cf3638de7592",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 212,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "d48e12a8c39a0cd73f2f23046853a70a0eb261a62e8e85ffb0c3",
+          "iv_independent_plaintext_suffix_sha256": "f61d9bf5306db4457ec3a79f68d1f5a2ee51acf67f4a151957c4fc41e0715fa9",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 12
+        }
+      ],
+      "complete_every_iv_every_order_exclusion": true,
+      "expected_completion_weight": 6227020800,
+      "iv_scope": "every external 16-byte IV",
+      "observed_bytes_sha256": "22efe0ebd93bc1fa9de393d0c76ff29e7a45e76cff95b334896e5df5cc66eec6",
+      "orientation": "nibble_swap",
+      "oriented_hex_sha256": "018dc3c27a657a877c1024f8c944d651b16b30fc66a549742c265b2f3edc9a3e",
+      "original_first_column_rejected_weight": 6227020800,
+      "rejected_chunk_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "retained_chunk_ranks": [],
+      "rows": 42,
+      "stronger_certificate_weight": 6227020800,
+      "unresolved": false,
+      "variant": "B",
+      "width": 13
+    },
+    {
+      "canonical_reconstruction_from_orientation": true,
+      "chunk_witnesses": [
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "38c39bc99dcae9429290f20812784d329522fb9e06d19a595f883b2f68a531e8a54ab91957fc26",
+          "ciphertext_chunk_sha256": "0429839db1dce3345530b6c0c4a086840ae655c410069fb5c209dc6e99451527",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 209,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "d179fd6b20b8998cd76824dfe546ff3c76911d2bc40533",
+          "iv_independent_plaintext_suffix_sha256": "c3f8172c9332c89b0fc69c06b9b4b53fb7f2b416182e1484f8d0b5b609416724",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 0
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "5b24b32743aa46745cf659315eaa5fb7a0f4ed36e0ac00673b24eadd5d35c14f291b919e7254fe",
+          "ciphertext_chunk_sha256": "c74d5f544e0dcee31b42b98d691b4b432e0b92dea55105a6f3e4856c8c8fc2b6",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 149,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "9597d75ec90a4d3ec8d36a4e47c7216ad46af910be1f9d",
+          "iv_independent_plaintext_suffix_sha256": "4adef431e5e4335ca1ad3985c3b69da2e69ec995ba76eb2e9171f3af643d49cf",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 1
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "b77b724dfcde04c544be4538c6eb00e0d392c9708db6c7ec16269a97caeef3f4ef8c60888895c7",
+          "ciphertext_chunk_sha256": "0567d1a8f8042d91cecd4ce2b869717a3461f42c9846005c426174ae87c152ab",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 211,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "d366e5723a991f6577c634a476ac449fa8547da958cd51",
+          "iv_independent_plaintext_suffix_sha256": "3437f15e855eb7f9a63a404d3a8f8b2ffeadb6fe8d995156105d9f8233393b99",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 2
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "c22fff79d026c619d41d8f37993694ee0c2b9d3a60a9ec87adaa40ff11d6594be2c51cd147fee1",
+          "ciphertext_chunk_sha256": "9743e82accf30975097fc3606137ccc441db0c10884222c6a96441f0843b673b",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 229,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "e5202de9a4a50d974164c22b97c475ade455333d9d2bdd",
+          "iv_independent_plaintext_suffix_sha256": "cf17bfb7e2136e0c7e701b5045fde44fd497690d06db802e3f20d1811fcf0ca1",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 3
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "430045dc1362169cae77e0fa46f191306a31962bdbf457ce39d9c2039f31640e33636295694677",
+          "ciphertext_chunk_sha256": "43d997fa2c7202ea9ed917727ea6f17dba15ba4af96e78f2819ccbb3ee2a16c9",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 169,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "a9991608707976cde17daf90aff4cfa0bb130aa8b201ef",
+          "iv_independent_plaintext_suffix_sha256": "57a3f40c955ed07020a1db390f4377ee5a0628778e036f00421259beec05165c",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 4
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "43146c9c15adc0916337866b76d4bce071cb5cbf4f139db987756daecaff948cd04f276c865255",
+          "ciphertext_chunk_sha256": "0e925962876fef86ab21222e3c1379a1e3f358e9b4c0bd4bf110a3561ee92fdf",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 17,
+            "plaintext_byte": 162,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 1
+          },
+          "iv_independent_plaintext_suffix_hex": "77a2f6233df702ea274ae446d5c7cd12c0f8b2a769d129",
+          "iv_independent_plaintext_suffix_sha256": "2d20c8f93caec61421222e6b890a3882b86c1441a478796b693bb7493d5ad390",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 5
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "965b7e28a2dc41ea52b9052c04f3b2fc1b93dd556786c7b1008c0148ca0432db1f9f7126064044",
+          "ciphertext_chunk_sha256": "515c6e942b95d71087de56248f35bf9e43c0f4f782199e19a0526c7558193d39",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 189,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "bd0e1be46544e60f82bc09a32495e779af4da18e1f6c55",
+          "iv_independent_plaintext_suffix_sha256": "b7bfaf1586e8e4aaeab3b5301869ae8f6390778b7cd94d5e0576abcbbaf927bc",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 6
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "f76ba94daf4440e5e4a3f41964ba5ea577d05f49ac359cbd7b9246e5d0e830f761db5472ea88d7",
+          "ciphertext_chunk_sha256": "01824d0cf047f016d2cef817b21f4a13feede222020bce2500e6e76f3f29324e",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 156,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "9cba2486d6744ecde7e323a85107c5b249ae1cc93b35a2",
+          "iv_independent_plaintext_suffix_sha256": "a8065fc1d6d2502e12948853aedabacf55e53ed21cabb1040181974e8ccd73e1",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 7
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "f60a11c98789099849142934627a66e7e8def78a316fdf4d283c369b4856efbbe76e5a464f694e",
+          "ciphertext_chunk_sha256": "81d79b1c4c56efeb512247546045bf11f46fdd4076e61f0d28d36b163fa531b8",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 228,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "e4b631d931bb33fc3c9bd59bf3d9ab9827ac95e6c22275",
+          "iv_independent_plaintext_suffix_sha256": "398b1fa08a927f3b388106b08774c973d1742f1d7f5c84693a00dfe25d85fb10",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 8
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "acad632d6e76577d1a5854f932e59d83b786e13f811b4715d292f17a53cea25da2605f0441f292",
+          "ciphertext_chunk_sha256": "969e7ece85c98c955fb0afc474a7080aa4696442da984f679aa94f535f7bc88f",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 20,
+            "plaintext_byte": 186,
+            "states_after": [],
+            "states_before": [
+              0
+            ],
+            "suffix_offset": 4
+          },
+          "iv_independent_plaintext_suffix_hex": "64485136ba7cb6dd5e72e4702578f8cb765dbefdf5b670",
+          "iv_independent_plaintext_suffix_sha256": "f46f195bdd459da83571e69d39cf37528c17b5f7cd4c19665a59148f20c1e18c",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 9
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "f3a43eb56286a149a426c1e7cc00c6c34d7db325441c9d67389fc3d4e2b1a1dd0d2688d099d2e4",
+          "ciphertext_chunk_sha256": "86bc4e0ffb6dfec50892d5aa3be9a990ef6a64c7baa7ffd8058aad25f3d35f8f",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 196,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "c43dc3a0aa2d44ef932894cba38b567c0c8b85a0d1c7ef",
+          "iv_independent_plaintext_suffix_sha256": "fceff4ff6918d44dd79fe7ed95c78a9e5cb6d9bf96e5e69c4f82f45d3af33828",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 10
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "e80e86f3ffa3d977572772388fd3e71243bfe3a078d5b5f823f2b83ccde95a571324e0ee9dd311",
+          "ciphertext_chunk_sha256": "6f445f0b1415f4445abe14363a236b34b8abc381c2cf2e465ee4c566557b1329",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 21,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "15b1947d586ab613317348a9ba3e1af16629c6d41fd55d",
+          "iv_independent_plaintext_suffix_sha256": "e7797bb5c28c3ce02fd62091c7a95c164c449d9a68b4958a6d11055b5e7c9599",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 11
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "dada06bc8de2a4bdc8da0d7ac546e2f7b006b4bec9efe1abeeafb6bd41fc3ea657ce98e4b5324a",
+          "ciphertext_chunk_sha256": "ee4d78857b5e928a7ea8d587b80d109033730c370304bc74fb3245128f50ff6b",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 242,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "f20c429a6d2c068851b3c4bd1aaf8c0ada5960388496d7",
+          "iv_independent_plaintext_suffix_sha256": "900a81df8de62b22edbf7f94abba53dcff5917c8fb54edceddea1c5a6645dc7a",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 12
+        },
+        {
+          "chunk_rejected": true,
+          "ciphertext_chunk_hex": "66426c63c1b0f5b224a9601fd24f12306a12af77838566f83bbc50b9f942edf8e607623ce583f7",
+          "ciphertext_chunk_sha256": "2ce08ac2221297ce075c368ef21bc508cf395c66a1507cee98271e045e0c4ec0",
+          "end_state_set": [],
+          "first_failure": {
+            "chunk_relative_plaintext_offset": 16,
+            "plaintext_byte": 162,
+            "states_after": [],
+            "states_before": [
+              0,
+              1,
+              2
+            ],
+            "suffix_offset": 0
+          },
+          "iv_independent_plaintext_suffix_hex": "a2b2a732f25dd91e78c6e1fa26b1268020ce89f620763b",
+          "iv_independent_plaintext_suffix_sha256": "ae0ed34a5de168501dd8f26f7639a71a7972ccc470112d9fa87a0a27fd5e13c4",
+          "library_two_iv_suffixes_match_direct_recurrence": true,
+          "observed_rank": 13
+        }
+      ],
+      "complete_every_iv_every_order_exclusion": true,
+      "expected_completion_weight": 87178291200,
+      "iv_scope": "every external 16-byte IV",
+      "observed_bytes_sha256": "22efe0ebd93bc1fa9de393d0c76ff29e7a45e76cff95b334896e5df5cc66eec6",
+      "orientation": "nibble_swap",
+      "oriented_hex_sha256": "018dc3c27a657a877c1024f8c944d651b16b30fc66a549742c265b2f3edc9a3e",
+      "original_first_column_rejected_weight": 87178291200,
+      "rejected_chunk_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "retained_chunk_ranks": [],
+      "rows": 39,
+      "stronger_certificate_weight": 87178291200,
+      "unresolved": false,
+      "variant": "B",
+      "width": 14
+    }
+  ],
+  "ciphertext_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "complete": true,
+  "gate_sha256": "c148795ae92d228c0d2a058b69b213ff87318a2edd5476ecb510df00b2425b4f",
+  "identity": "ASTRA",
+  "mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "scope": {
+    "cell_count": 8,
+    "cipher": "AES-128",
+    "endpoint_utf8_sequences": [
+      "e28093",
+      "e28094",
+      "e28098",
+      "e28099",
+      "e280a6"
+    ],
+    "iv_scope": "every external 16-byte IV",
+    "key_hex": "5a6f6d62696573000000000000000000",
+    "mode": "CFB8",
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "variant": "B",
+    "widths": [
+      13,
+      14
+    ]
+  },
+  "summary": {
+    "cells": 8,
+    "complete_every_iv_every_order_exclusions": 8,
+    "rejected_chunk_witnesses": 108,
+    "unresolved_cells": 0
+  },
+  "target_evaluated": true
+}
