@@ -576,3 +576,30 @@ python3 -B research/rev7-20260909-codex/rijndael256_windows/controls.py --regene
 ```
 
 This source/control snapshot has no target driver, gate or Rev7 evaluation. A future grid would contain 11,208 windows across three keys, four orientations and both modes. The ECB/CBC equations follow [NIST SP 800-38A sections 6.1–6.2](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a.pdf); the window coverage statement is our deduction.
+
+
+## Controlled Rijndael-256 window target harness
+
+The [inert window harness](rijndael256_windows/target/README.md) registers 24 cells and 11,208 complete window rows. Every row keeps all 64 plaintext bytes, both returned blocks, the input-window hash, classification and witness. Every surviving window receives independent JS block replay and a separate cut-aware regex check. The driver builds the pinned source temporarily, refuses existing outputs/checkpoints, and neither resumes nor caps the search.
+
+Root reviewed the driver and regenerated its [synthetic harness ledger](rijndael256_windows/target/controls.json) byte for byte, SHA-256 `0fbae87ec9cb4a27aa0b7db7f261fdb48d65377e4ae01b4b38e7e9ba05ccdc8f`. The complete ECB plant covers 483 rows (475 A105, seven FSA, one retained); the CBC plant covers 451 (444 A105, six FSA, one retained). Both expected survivors replay exactly, including CBC's predecessor-block XOR. Source, primitive, control, documentation and canonical-input hashes are bound by the future gate. This snapshot has no gate or target evaluation.
+
+```sh
+python3 -S -B research/rev7-20260909-codex/rijndael256_windows/target/controls.py
+python3 -B research/rev7-20260909-codex/rijndael256_windows/target/controls.py --regenerate-dir /tmp/r256-window-driver-controls
+```
+
+## Rijndael-256 CFB8 interval and mixed-chain controls
+
+The [CFB8 adapter](rijndael256_cfb/README.md) adds the three explicit Rijndael key lengths to the accepted seven-backend runtime. Six complete byte-value streams match independently implemented C and JavaScript CFB8 loops. Three controls hold ciphertext fixed while changing IVs and confirm the unchanged suffix after byte 32. Twenty-one interval vectors cover empty and boundary cases. The mixed suite contains 168 depth-two and 1,008 depth-three recipes, each under two IV suites; depth three uses seven cyclic existing-backend pairs. Every predicted final interval matches full decryption. All 1,176 recipes demonstrate a rejected intermediate endpoint followed by valid final text, so intermediate results never prune execution.
+
+Root reviewed the source and regenerated all controls. Every field matched except four explicitly recorded hashes of temporary compiled libraries. The original ledger contains 6,094,712 bytes, SHA-256 `511aad6d309c05b16a8b2281f69bc748f180af499988016659554324b7f135d3`. The [602,370-byte lossless pack](rijndael256_cfb/controls.pack.json), SHA-256 `32cce50eea314037ad4df0c87839ffef67e8c6dcf029203f74065ef8346b6fe4`, preserves the complete ledger. Root reviewed the bounded decoder and independently verified exact byte-for-byte reconstruction. The pack verifier checks integrity and basic counts; the original control verifier additionally checks its source pins, recipe identities and recorded byte hashes.
+
+```sh
+python3 -S -B research/rev7-20260909-codex/rijndael256_cfb/pack_controls.py
+python3 -S -B research/rev7-20260909-codex/rijndael256_cfb/pack_controls.py --unpack research/rev7-20260909-codex/rijndael256_cfb/controls.json
+python3 -S -B research/rev7-20260909-codex/rijndael256_cfb/controls.py
+python3 -B research/rev7-20260909-codex/rijndael256_cfb/controls.py --regenerate /tmp/rijndael256-cfb-controls.json
+```
+
+The unpack step is needed only in a fresh checkout and refuses an existing destination. Actual synthetic regeneration requires Node, clang and PyCryptodome; no binaries are published. These controls read no Rev7 data and establish no target result. Future searches must preserve unknown intervals and avoid pruning intermediate binary data.

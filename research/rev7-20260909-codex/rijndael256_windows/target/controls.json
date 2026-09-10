@@ -1,0 +1,142 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "all_rows_evidence_checked": true,
+    "cbc_451_rows_complete": true,
+    "ecb_483_rows_complete": true,
+    "no_target_read_or_evaluation": true,
+    "orientation_inverse_checked": true,
+    "planted_candidates_independent_js_regex_replayed": true,
+    "same_execute_cell_path": true
+  },
+  "cbc": {
+    "all_evidence_fields_checked": true,
+    "all_rows_digest": "becf419f59366ec3cf158182ed9816130f3057390a2c1c85f25b7b1ee176815c",
+    "cell_id": "k192|nibble_swap|cbc",
+    "class_counts": {
+      "rejected_a105": 444,
+      "rejected_fsa_transition": 6,
+      "retained": 1
+    },
+    "context_rows": 451,
+    "known_offset": 27,
+    "known_plaintext_hex": "454e20e2809320454d20e28094204c45465420e2809820524947485420e2809920454c4c495053495320e280a620414c49474e454420544558542e0a58585858",
+    "known_row_exact": true,
+    "retained_candidates": [
+      {
+        "independent_regex_oracle": true,
+        "javascript_plaintext_exact": true,
+        "javascript_primitive_decrypt_hex": [
+          "e31351eff5d0e0538875f72c5650d8e14e423c11bc65c08e740987f79e4d8dc8",
+          "29fb77da78ba4f42e8327fb6db7daca6135923ee87751c3198eafade24511c26"
+        ],
+        "javascript_returned_blocks_hex": [
+          "454e20e2809320454d20e28094204c45465420e2809820524947485420e28099",
+          "20454c4c495053495320e280a620414c49474e454420544558542e0a58585858"
+        ],
+        "offset": 27
+      }
+    ],
+    "row_offsets_complete_and_ordered": true
+  },
+  "ecb": {
+    "all_evidence_fields_checked": true,
+    "all_rows_digest": "0b8dc237e49a4619c506ac5631ec4ef28f51fc30dc064bd8bc637d7ad61ac5a1",
+    "cell_id": "k128|forward|ecb",
+    "class_counts": {
+      "rejected_a105": 475,
+      "rejected_fsa_transition": 7,
+      "retained": 1
+    },
+    "context_rows": 483,
+    "known_offset": 19,
+    "known_plaintext_hex": "454e20e2809320454d20e28094204c45465420e2809820524947485420e2809920454c4c495053495320e280a620414c49474e454420544558542e0a58585858",
+    "known_row_exact": true,
+    "retained_candidates": [
+      {
+        "independent_regex_oracle": true,
+        "javascript_plaintext_exact": true,
+        "javascript_primitive_decrypt_hex": [
+          "454e20e2809320454d20e28094204c45465420e2809820524947485420e28099",
+          "20454c4c495053495320e280a620414c49474e454420544558542e0a58585858"
+        ],
+        "javascript_returned_blocks_hex": [
+          "454e20e2809320454d20e28094204c45465420e2809820524947485420e28099",
+          "20454c4c495053495320e280a620414c49474e454420544558542e0a58585858"
+        ],
+        "offset": 19
+      }
+    ],
+    "row_offsets_complete_and_ordered": true
+  },
+  "identity": "ASTRA",
+  "orientation_involution_checked": true,
+  "rev7_read": false,
+  "scope": {
+    "driver_scope": {
+      "block_bytes": 32,
+      "candidates": "every retained window independently replayed with untouched JavaScript blocks and a separate cut-boundary regex oracle; no trim/unpad/framing fit",
+      "caps": "none",
+      "cells": 24,
+      "context_rows": 11208,
+      "identity": "ASTRA",
+      "input_bytes": 546,
+      "key_construction": {
+        "16": "5a6f6d62696573000000000000000000",
+        "24": "5a6f6d626965730000000000000000000000000000000000",
+        "32": "5a6f6d6269657300000000000000000000000000000000000000000000000000"
+      },
+      "modes": {
+        "cbc": {
+          "external_iv": "every IV; returned D(C1)^C0 || D(C2)^C1",
+          "offsets": 451,
+          "returned_bytes": 64,
+          "window_bytes": 96
+        },
+        "ecb": {
+          "offsets": 483,
+          "returned_bytes": 64,
+          "window_bytes": 64
+        }
+      },
+      "orientations": [
+        "forward",
+        "full_hex_reverse",
+        "byte_reverse",
+        "nibble_swap"
+      ],
+      "row_evidence": "every context retains full64 plaintext, two decrypted blocks, input-window SHA256, classification and witness"
+    },
+    "stream_bytes": 546,
+    "synthetic_cells": [
+      "k128|forward|ecb",
+      "k192|nibble_swap|cbc"
+    ]
+  },
+  "source_hashes": {
+    "../README.md": "141221f4308faf699dd62ac438c5964ed8b2653a448a12163e597b5d57a4a946",
+    "../controls.json": "56cfdfc7245b3f28b819858b40e537d787ed4bac664be6677edba30c4cdc480b",
+    "../controls.py": "08e9f4f44375f6636c68e74bd4d0e56c364639d4242a599cad705a042ad7a514",
+    "../engine.py": "7d32315f2d874fefe0c758b932a102e4c71f809370ba5a9df182bf8e8a5bf373",
+    "README.md": "a284307185f732d41c8d06a76e8b37ed1297a630a7d80c69238c561c361cc5b1",
+    "controls.py": "aa7292c508c0f368742880fdff0652d8fd29a225fc32ae2f74371b2c44426fde",
+    "prepare_gate.py": "5f495254fcf75db10fa7bf73d5995407f353a6a8cb2bdf6cf854ebd105f57f22",
+    "run_target.py": "e9796cad76be085775e6c0532faf11f1390b0792863d391be2381c965554f416"
+  },
+  "target_evaluated": false,
+  "temporary_build": {
+    "binary_hash_not_recorded": true,
+    "command": [
+      "clang",
+      "-std=c99",
+      "-O2",
+      "-dynamiclib",
+      "-I",
+      "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/rijndael256_controls/source",
+      "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/rijndael256_controls/source/rijndael-256.c",
+      "-o",
+      "<temporary-output>"
+    ],
+    "source_sha256": "fa16b72832a4cda8fd9909d88c8a7b779d352bbfb13acf76d57391dfe9219821"
+  }
+}
