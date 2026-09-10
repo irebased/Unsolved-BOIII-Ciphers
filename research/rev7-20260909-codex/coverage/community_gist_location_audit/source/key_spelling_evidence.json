@@ -1,0 +1,58 @@
+{
+  "assessment": "The documented spelling is THERE and its length is 36. The 35-character description is a counting error, not evidence for HERE.",
+  "captured_fable_keylists": [
+    {
+      "here_exact_lines": 0,
+      "path": "loki97fix/keys_union.txt",
+      "sha256": "da3722699e3228f4e5ed7e9e244b68f4810ecceca55d4d3e1fd17afe19345dde",
+      "there_exact_lines": 3
+    },
+    {
+      "here_exact_lines": 0,
+      "path": "nontext/all_keys_dedup.txt",
+      "sha256": "24bc12f37e7e73def54ae7f6c1fc8a3603c90b14365e04246da56055977ef63f",
+      "there_exact_lines": 3
+    },
+    {
+      "here_exact_lines": 0,
+      "path": "nontext/other_modes_keys.txt",
+      "sha256": "4801cf55c5d811e92f4eeda69f30ec46e686644b203e6de179b160b757aa727c",
+      "there_exact_lines": 3
+    },
+    {
+      "here_exact_lines": 0,
+      "path": "selfkeys/corpus_keys.txt",
+      "sha256": "ec8cf5dc9e8e89743d381761a51e1ddbd792ed268e0fd7a3e638100e0034c05b",
+      "there_exact_lines": 3
+    }
+  ],
+  "community_sources": [
+    {
+      "context": "Workshop Cipher Key",
+      "date": "2016-07-14",
+      "url": "https://www.callofdutyzombies.com/zombie-library/zombies-library/black-ops_ii/origins/ciphers-and-morse-code-r402/",
+      "value": "wewerethereatthebeginningandattheend"
+    },
+    {
+      "context": "Origins Ori #1 through #4 key",
+      "date": "2016-09-16",
+      "url": "https://www.reddit.com/r/CODZombies/comments/533zdm/all_black_ops_3_ciphers_and_scrap_papers_found/",
+      "value": "wewerethereatthebeginningandattheend"
+    },
+    {
+      "context": "Origins Ori #1 through #4 key",
+      "date": "2018-09-06",
+      "url": "https://www.reddit.com/r/CODZombies/comments/9d8twb/all_treyarch_zombies_ciphers/",
+      "value": "wewerethereatthebeginningandattheend"
+    }
+  ],
+  "identity": "ASTRA",
+  "keylist_limit": "These are captured prior FABLE lists, not demonstrated to be the exact unsynced 70,656-combination run list.",
+  "question": "Is the documented Origins Vigenere key THERE (36) or HERE (35)?",
+  "variants": {
+    "documented": "wewerethereatthebeginningandattheend",
+    "documented_length": 36,
+    "suggested_alternative": "wewerehereatthebeginningandattheend",
+    "suggested_length": 35
+  }
+}

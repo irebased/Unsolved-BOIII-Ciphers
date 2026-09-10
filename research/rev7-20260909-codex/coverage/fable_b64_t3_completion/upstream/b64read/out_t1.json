@@ -1,0 +1,3917 @@
+{
+ "meta": {
+  "tier": "t1",
+  "nKeys": 280,
+  "targets": [
+   "REAL:displayed",
+   "REAL:fullReversed",
+   "REAL:bytePairReversed",
+   "REAL:nibbleSwap",
+   "REAL:lowercased",
+   "NEG:random_hexalpha",
+   "POS:plant_twofish_cfb8_Zombies"
+  ],
+  "seconds": 1.365
+ },
+ "results": [
+  {
+   "reading": "nibbleSwap",
+   "label": "REAL",
+   "trials": 22400,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 19,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "THE CASTLEMAXIS"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.45454545454545453,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "serpent",
+      "mode": "ctr",
+      "key": "ZombiesZOMBIES"
+     }
+    },
+    "printableFrac": {
+     "value": 0.4520547945205479,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "serpent",
+      "mode": "ctr",
+      "key": "ZombiesZOMBIES"
+     }
+    },
+    "small_1_26": {
+     "value": 0.1442663378545006,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "TRYTHISASCENSION"
+     }
+    },
+    "small_0_31": {
+     "value": 0.17310087173100872,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "AMUNOIHSZYXWVTRQPLKJGFEDCB"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.31880448318804483,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "testsubject198346572"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.3163138231631382,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "testsubject198346572"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.09541511771995044,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "198346572ASCENSION"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.10038119440914867,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "MAXIS198346572"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.12452350698856417,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "The CastleTRYTHIS"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.07398273736128237,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "ASCENSION"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.0940279542566709,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "MAXIS198346572"
+     }
+    },
+    "frac.octal": {
+     "value": 0.06071871127633209,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "198346572ASCENSION"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.08014796547472257,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "ASCENSION"
+     }
+    },
+    "frac.binary": {
+     "value": 0.0224159402241594,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "ascension"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.05055487053020962,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "TESTSUBJECT"
+     }
+    },
+    "frac.base32": {
+     "value": 0.17632552404438964,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "198346572THE CASTLE"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.15536374845869297,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "198346572maxis"
+     }
+    },
+    "frac.printable": {
+     "value": 0.4520547945205479,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "serpent",
+      "mode": "ctr",
+      "key": "ZombiesZOMBIES"
+     }
+    },
+    "run.base64std": {
+     "value": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "MAXISASCENSION"
+     }
+    },
+    "run.base64url": {
+     "value": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "MAXISASCENSION"
+     }
+    },
+    "run.hexupper": {
+     "value": 6,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "MotherMaxis"
+     }
+    },
+    "run.hexlower": {
+     "value": 5,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "testsubjectshinonuma"
+     }
+    },
+    "run.hexmixed": {
+     "value": 8,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "saferplus",
+      "mode": "ofb",
+      "key": "shinonumazombies"
+     }
+    },
+    "run.decimal": {
+     "value": 5,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "TestsubjectZOMBIES"
+     }
+    },
+    "run.decimalsep": {
+     "value": 5,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "ASCENSIONZOMBIES"
+     }
+    },
+    "run.octal": {
+     "value": 5,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "ZOMBIESACDFGHJKLNPQRTUVWXY"
+     }
+    },
+    "run.octalsep": {
+     "value": 5,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "ZOMBIESMaxis"
+     }
+    },
+    "run.binary": {
+     "value": 3,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "TRYTHISSHINONUMA"
+     }
+    },
+    "run.binarysep": {
+     "value": 4,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "THE CASTLETESTSUBJECT"
+     }
+    },
+    "run.base32": {
+     "value": 8,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "ascensionmother"
+     }
+    },
+    "run.upperspace": {
+     "value": 7,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "maxisthe castle"
+     }
+    },
+    "run.printable": {
+     "value": 19,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "THE CASTLEMAXIS"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 19,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "THE CASTLEMAXIS"
+     },
+     "printableFrac": 0.406905055487053
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "trythisascension"
+     },
+     "printableFrac": 0.43279901356350187
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "testsubjectascension"
+     },
+     "printableFrac": 0.3711083437110834
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "MAXISTHE CASTLE"
+     },
+     "printableFrac": 0.376078914919852
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "maxistestsubject"
+     },
+     "printableFrac": 0.40443896424167697
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "TRYTHISSHINONUMA"
+     },
+     "printableFrac": 0.39827373612823674
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "serpent",
+      "mode": "ctr",
+      "key": "THE CASTLEMAXIS"
+     },
+     "printableFrac": 0.41469489414694893
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "ZOMBIESSHINONUMA"
+     },
+     "printableFrac": 0.3723536737235367
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "zombiesmother"
+     },
+     "printableFrac": 0.38964241676942046
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "198346572zombies"
+     },
+     "printableFrac": 0.4167725540025413
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "testsubjectmother"
+     },
+     "printableFrac": 0.4192355117139334
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "AscensionThe Castle"
+     },
+     "printableFrac": 0.39227895392278955
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "MAXISASCENSION"
+     },
+     "printableFrac": 0.40443896424167697
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "THE CASTLEZOMBIES"
+     },
+     "printableFrac": 0.39476961394769616
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "zombiesacdfghjklnpqrtuvwxy"
+     },
+     "printableFrac": 0.376078914919852
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "Testsubject198346572"
+     },
+     "printableFrac": 0.3785450061652281
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "TestsubjectMaxis"
+     },
+     "printableFrac": 0.41060419235511714
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "The CastleMaxis"
+     },
+     "printableFrac": 0.386052303860523
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "trythiszombies"
+     },
+     "printableFrac": 0.3786163522012579
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "cfb8",
+      "key": "ascensionzombies"
+     },
+     "printableFrac": 0.38373570520965694
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "ofb",
+      "key": "shinonumazombies"
+     },
+     "printableFrac": 0.4040660736975858
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "ofb",
+      "key": "testsubjectmother"
+     },
+     "printableFrac": 0.3875476493011436
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "ofb",
+      "key": "the castlemother"
+     },
+     "printableFrac": 0.3786531130876747
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "testsubjectshinonuma"
+     },
+     "printableFrac": 0.3761118170266836
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "testsubjectzombies"
+     },
+     "printableFrac": 0.3900889453621347
+    }
+   ]
+  },
+  {
+   "reading": "random_hexalpha",
+   "label": "NEG",
+   "trials": 22400,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 18,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "twofish",
+      "mode": "ctr",
+      "key": "TRYTHISSHINONUMA"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.45376078914919854,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "tripledes",
+      "mode": "cfb8",
+      "key": "198346572ZOMBIES"
+     }
+    },
+    "printableFrac": {
+     "value": 0.45129469790382243,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "tripledes",
+      "mode": "cfb8",
+      "key": "198346572ZOMBIES"
+     }
+    },
+    "small_1_26": {
+     "value": 0.15536374845869297,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "Testsubjectshinonuma"
+     }
+    },
+    "small_0_31": {
+     "value": 0.17509247842170161,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "Testsubjectshinonuma"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.3175591531755915,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "Trythis"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.3163138231631382,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "Trythis"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.09617755856966707,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "TRYTHISMAXIS"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.10110974106041924,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "ZOMBIESZombies"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.13316892725030827,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "ZOMBIESZombies"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.06792452830188679,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "TESTSUBJECTASCENSION"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.09001233045622688,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "The CastleMother"
+     }
+    },
+    "frac.octal": {
+     "value": 0.05603985056039851,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "ascensionmother"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.08014796547472257,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "mother"
+     }
+    },
+    "frac.binary": {
+     "value": 0.02342786683107275,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "Onlythecursedsurvive"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.0460772104607721,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "Trythis"
+     }
+    },
+    "frac.base32": {
+     "value": 0.1718555417185554,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "ASCENSIONZOMBIES"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.1504315659679408,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "trythis"
+     }
+    },
+    "frac.printable": {
+     "value": 0.45129469790382243,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "tripledes",
+      "mode": "cfb8",
+      "key": "198346572ZOMBIES"
+     }
+    },
+    "run.base64std": {
+     "value": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "shinonumazombies"
+     }
+    },
+    "run.base64url": {
+     "value": 10,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "shinonumamaxis"
+     }
+    },
+    "run.hexupper": {
+     "value": 6,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "saferplus",
+      "mode": "cfb8",
+      "key": "ASCENSIONMAXIS"
+     }
+    },
+    "run.hexlower": {
+     "value": 7,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "ZOMBIESACDFGHJKLNPQRTUVWXY"
+     }
+    },
+    "run.hexmixed": {
+     "value": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "run.decimal": {
+     "value": 5,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "ASCENSIONTHE CASTLE"
+     }
+    },
+    "run.decimalsep": {
+     "value": 5,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "ascension198346572"
+     }
+    },
+    "run.octal": {
+     "value": 4,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "TRYTHISThe Castle"
+     }
+    },
+    "run.octalsep": {
+     "value": 5,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "ascension198346572"
+     }
+    },
+    "run.binary": {
+     "value": 3,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ZOMBIESMOTHER"
+     }
+    },
+    "run.binarysep": {
+     "value": 4,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "the castlezombies"
+     }
+    },
+    "run.base32": {
+     "value": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "the castleshinonuma"
+     }
+    },
+    "run.upperspace": {
+     "value": 6,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "testsubject"
+     }
+    },
+    "run.printable": {
+     "value": 18,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "twofish",
+      "mode": "ctr",
+      "key": "TRYTHISSHINONUMA"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 18,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "twofish",
+      "mode": "ctr",
+      "key": "TRYTHISSHINONUMA"
+     },
+     "printableFrac": 0.43337484433374845
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "198346572Ascension"
+     },
+     "printableFrac": 0.40644361833952913
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "saferplus",
+      "mode": "ofb",
+      "key": "THE CASTLETRYTHIS"
+     },
+     "printableFrac": 0.41718555417185554
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "MotherAscension"
+     },
+     "printableFrac": 0.4192355117139334
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "MaxisTRYTHIS"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "ascensiontestsubject"
+     },
+     "printableFrac": 0.3698630136986301
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "shinonumazombies"
+     },
+     "printableFrac": 0.3823163138231631
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "198346572THE CASTLE"
+     },
+     "printableFrac": 0.37982565379825656
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ctr",
+      "key": "MotherTestsubject"
+     },
+     "printableFrac": 0.3970406905055487
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "198346572TESTSUBJECT"
+     },
+     "printableFrac": 0.410958904109589
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "AscensionMaxis"
+     },
+     "printableFrac": 0.40348692403486924
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "AscensionZOMBIES"
+     },
+     "printableFrac": 0.3847102342786683
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "shinonumaascension"
+     },
+     "printableFrac": 0.38042131350681535
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "ZOMBIESAscension"
+     },
+     "printableFrac": 0.406905055487053
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "TestsubjectThe Castle"
+     },
+     "printableFrac": 0.4130702836004932
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "TRYTHISMaxis"
+     },
+     "printableFrac": 0.40443896424167697
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "The CastleTRYTHIS"
+     },
+     "printableFrac": 0.40443896424167697
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "AscensionTestsubject"
+     },
+     "printableFrac": 0.3933415536374846
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "198346572mother"
+     },
+     "printableFrac": 0.39457459926017263
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "Maxis"
+     },
+     "printableFrac": 0.38854296388542964
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "Mother"
+     },
+     "printableFrac": 0.4246575342465753
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "MotherTestsubject"
+     },
+     "printableFrac": 0.4032059186189889
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "ASCENSIONMAXIS"
+     },
+     "printableFrac": 0.3970406905055487
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "MAXISZOMBIES"
+     },
+     "printableFrac": 0.41843088418430885
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "TRYTHISTestsubject"
+     },
+     "printableFrac": 0.4259028642590286
+    }
+   ]
+  },
+  {
+   "reading": "fullReversed",
+   "label": "REAL",
+   "trials": 22400,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 18,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "THE CASTLE198346572"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.45703611457036114,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "ASCENSIONTRYTHIS"
+     }
+    },
+    "printableFrac": {
+     "value": 0.45454545454545453,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "ASCENSIONTRYTHIS"
+     }
+    },
+    "small_1_26": {
+     "value": 0.14919852034525277,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "TheCastle"
+     }
+    },
+    "small_0_31": {
+     "value": 0.17755856966707767,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "TheCastle"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.32147395171537485,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "ascensiontrythis"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.3278271918678526,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "ascensiontrythis"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.09741060419235512,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "SHINONUMA198346572"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.09617755856966707,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "Maxis198346572"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.12577065351418001,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "SHINONUMA198346572"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.0660024906600249,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "TestsubjectAscension"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.09417596034696406,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "trythisascension"
+     }
+    },
+    "frac.octal": {
+     "value": 0.057285180572851806,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "TestsubjectAscension"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.08178438661710037,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "trythisascension"
+     }
+    },
+    "frac.binary": {
+     "value": 0.02342786683107275,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "mothertestsubject"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.0460772104607721,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "THE CASTLE"
+     }
+    },
+    "frac.base32": {
+     "value": 0.17262638717632553,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "TESTSUBJECT198346572"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.15384615384615385,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "ZOMBIES198346572"
+     }
+    },
+    "frac.printable": {
+     "value": 0.45454545454545453,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "ASCENSIONTRYTHIS"
+     }
+    },
+    "run.base64std": {
+     "value": 10,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "ZOMBIESARVYWHCDFGJKLNPQTUX"
+     }
+    },
+    "run.base64url": {
+     "value": 10,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "ZOMBIESARVYWHCDFGJKLNPQTUX"
+     }
+    },
+    "run.hexupper": {
+     "value": 6,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "arcfour",
+      "mode": "stream",
+      "key": "198346572"
+     }
+    },
+    "run.hexlower": {
+     "value": 6,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "TESTSUBJECTMOTHER"
+     }
+    },
+    "run.hexmixed": {
+     "value": 7,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "SHINONUMAMAXIS"
+     }
+    },
+    "run.decimal": {
+     "value": 5,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "twofish",
+      "mode": "ctr",
+      "key": "ZOMBIESMaxis"
+     }
+    },
+    "run.decimalsep": {
+     "value": 6,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "Testsubjectshinonuma"
+     }
+    },
+    "run.octal": {
+     "value": 4,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies198346572"
+     }
+    },
+    "run.octalsep": {
+     "value": 5,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "testsubject"
+     }
+    },
+    "run.binary": {
+     "value": 3,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "THECASTLE"
+     }
+    },
+    "run.binarysep": {
+     "value": 4,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "the castletrythis"
+     }
+    },
+    "run.base32": {
+     "value": 8,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "shinonumaMaxis"
+     }
+    },
+    "run.upperspace": {
+     "value": 6,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "zombiesascension"
+     }
+    },
+    "run.printable": {
+     "value": 18,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "THE CASTLE198346572"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 18,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "THE CASTLE198346572"
+     },
+     "printableFrac": 0.40567200986436497
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "only the cursed survive"
+     },
+     "printableFrac": 0.4204685573366215
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "trythis"
+     },
+     "printableFrac": 0.37733499377334995
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "cfb8",
+      "key": "TRYTHISASCENSION"
+     },
+     "printableFrac": 0.386277001270648
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "saferplus",
+      "mode": "cfb8",
+      "key": "Onlythecursedsurvive"
+     },
+     "printableFrac": 0.410958904109589
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "MOTHERSHINONUMA"
+     },
+     "printableFrac": 0.410958904109589
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "AscensionTRYTHIS"
+     },
+     "printableFrac": 0.38729763387297633
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "ASCENSIONSHINONUMA"
+     },
+     "printableFrac": 0.374845869297164
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "TestsubjectAscension"
+     },
+     "printableFrac": 0.4093711467324291
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "ASCENSION"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "cfb8",
+      "key": "shinonumathe castle"
+     },
+     "printableFrac": 0.4142312579415502
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "SHINONUMATESTSUBJECT"
+     },
+     "printableFrac": 0.39227895392278955
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "The CastleZOMBIES"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ASCENSIONSHINONUMA"
+     },
+     "printableFrac": 0.4225526641883519
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ZOMBIESshinonuma"
+     },
+     "printableFrac": 0.3878562577447336
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "198346572MAXIS"
+     },
+     "printableFrac": 0.3649815043156597
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "MotherZombies"
+     },
+     "printableFrac": 0.406905055487053
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "198346572Ascension"
+     },
+     "printableFrac": 0.3970406905055487
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "ZombiesThe Castle"
+     },
+     "printableFrac": 0.39457459926017263
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "MotherTRYTHIS"
+     },
+     "printableFrac": 0.3649815043156597
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "the castle198346572"
+     },
+     "printableFrac": 0.42714819427148193
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "MaxisTRYTHIS"
+     },
+     "printableFrac": 0.38594327990135635
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "MAXISMOTHER"
+     },
+     "printableFrac": 0.4204685573366215
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "ASCENSIONMAXIS"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "the castletrythis"
+     },
+     "printableFrac": 0.38729763387297633
+    }
+   ]
+  },
+  {
+   "reading": "lowercased",
+   "label": "REAL",
+   "trials": 22400,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "198346572THE CASTLE"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.4528301886792453,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "TRYTHISMAXIS"
+     }
+    },
+    "printableFrac": {
+     "value": 0.4498094027954257,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "THE CASTLEMOTHER"
+     }
+    },
+    "small_1_26": {
+     "value": 0.14196762141967623,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "saferplus",
+      "mode": "ofb",
+      "key": "TESTSUBJECT198346572"
+     }
+    },
+    "small_0_31": {
+     "value": 0.17094017094017094,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "enigma",
+      "mode": "stream",
+      "key": "onlythecursedsurvive"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.32254047322540474,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "TESTSUBJECT"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.32129514321295144,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "TESTSUBJECT"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.10087173100871731,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "TESTSUBJECTTRYTHIS"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.09864364981504316,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "mother198346572"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.12453760789149199,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "ZOMBIESMOTHER"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.0684931506849315,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "TESTSUBJECTTRYTHIS"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.0921544209215442,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "TESTSUBJECTTRYTHIS"
+     }
+    },
+    "frac.octal": {
+     "value": 0.05672009864364982,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.07891491985203453,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.binary": {
+     "value": 0.02096177558569667,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "maxistestsubject"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.04808877928483354,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "Zombiesarvywhcdfgjklnpqtux"
+     }
+    },
+    "frac.base32": {
+     "value": 0.17559153175591533,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "Zombiesacdfghjklnpqrtuvwxy"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.14919852034525277,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-128",
+      "mode": "cfb8",
+      "key": "Zombies198346572"
+     }
+    },
+    "frac.printable": {
+     "value": 0.4498094027954257,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "THE CASTLEMOTHER"
+     }
+    },
+    "run.base64std": {
+     "value": 11,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "maxiszombies"
+     }
+    },
+    "run.base64url": {
+     "value": 11,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "maxiszombies"
+     }
+    },
+    "run.hexupper": {
+     "value": 5,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Ascension"
+     }
+    },
+    "run.hexlower": {
+     "value": 6,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "arcfour",
+      "mode": "stream",
+      "key": "shinonumaThe Castle"
+     }
+    },
+    "run.hexmixed": {
+     "value": 6,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "the castletrythis"
+     }
+    },
+    "run.decimal": {
+     "value": 4,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "The_Castle"
+     }
+    },
+    "run.decimalsep": {
+     "value": 5,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "ASCENSION198346572"
+     }
+    },
+    "run.octal": {
+     "value": 4,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "shinonumatestsubject"
+     }
+    },
+    "run.octalsep": {
+     "value": 5,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "MaxisMother"
+     }
+    },
+    "run.binary": {
+     "value": 3,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "testsubjectmother"
+     }
+    },
+    "run.binarysep": {
+     "value": 4,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "shinonumaascension"
+     }
+    },
+    "run.base32": {
+     "value": 8,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "AscensionZOMBIES"
+     }
+    },
+    "run.upperspace": {
+     "value": 7,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "TESTSUBJECTTHE CASTLE"
+     }
+    },
+    "run.printable": {
+     "value": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "198346572THE CASTLE"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "198346572THE CASTLE"
+     },
+     "printableFrac": 0.3785450061652281
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "ZOMBIESAscension"
+     },
+     "printableFrac": 0.3723536737235367
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "shinonumamother"
+     },
+     "printableFrac": 0.40197287299630086
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3835616438356164
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "SHINONUMATRYTHIS"
+     },
+     "printableFrac": 0.37361282367447596
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "AscensionThe Castle"
+     },
+     "printableFrac": 0.3987421383647799
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "198346572Testsubject"
+     },
+     "printableFrac": 0.3540903540903541
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "Onlythecursedsurvive"
+     },
+     "printableFrac": 0.3853779429987608
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "testsubjectzombies"
+     },
+     "printableFrac": 0.4130702836004932
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "Trythis"
+     },
+     "printableFrac": 0.3686806411837238
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "THE CASTLE198346572"
+     },
+     "printableFrac": 0.41430332922318125
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "TRYTHISTestsubject"
+     },
+     "printableFrac": 0.4025157232704403
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "ascensionthe castle"
+     },
+     "printableFrac": 0.39119496855345914
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "shinonumatestsubject"
+     },
+     "printableFrac": 0.3987421383647799
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "testsubjecttrythis"
+     },
+     "printableFrac": 0.39438339438339437
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ZOMBIESSHINONUMA"
+     },
+     "printableFrac": 0.38909541511771994
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "MaxisMother"
+     },
+     "printableFrac": 0.40567200986436497
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "TRYTHISZombies"
+     },
+     "printableFrac": 0.3871763255240444
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "ascension198346572"
+     },
+     "printableFrac": 0.386052303860523
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "Maxis198346572"
+     },
+     "printableFrac": 0.39103362391033625
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "ZombiesZOMBIES"
+     },
+     "printableFrac": 0.4007398273736128
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "TRYTHISASCENSION"
+     },
+     "printableFrac": 0.3871763255240444
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "THE CASTLEMAXIS"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "THE CASTLETESTSUBJECT"
+     },
+     "printableFrac": 0.4155363748458693
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "THE CASTLE"
+     },
+     "printableFrac": 0.38594327990135635
+    }
+   ]
+  },
+  {
+   "reading": "displayed",
+   "label": "REAL",
+   "trials": 22400,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 19,
+     "params": {
+      "reading": "displayed",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "Ascensionshinonuma"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.4562268803945746,
+     "params": {
+      "reading": "displayed",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "fkmcpdyehbigqrosazlutjnwvx"
+     }
+    },
+    "printableFrac": {
+     "value": 0.45129469790382243,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "ZOMBIES198346572"
+     }
+    },
+    "small_1_26": {
+     "value": 0.14919852034525277,
+     "params": {
+      "reading": "displayed",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "the castletestsubject"
+     }
+    },
+    "small_0_31": {
+     "value": 0.17755856966707767,
+     "params": {
+      "reading": "displayed",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "onlythecursedsurvive"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.31008717310087175,
+     "params": {
+      "reading": "displayed",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "MOTHERASCENSION"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.3138231631382316,
+     "params": {
+      "reading": "displayed",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "MOTHERASCENSION"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.0958904109589041,
+     "params": {
+      "reading": "displayed",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "ZOMBIESMAXIS"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.09741060419235512,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "mother"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.12639405204460966,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "ASCENSIONMAXIS"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.06691449814126393,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "zombiesmaxis"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.09045848822800495,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "trythismaxis"
+     }
+    },
+    "frac.octal": {
+     "value": 0.055487053020961775,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "maxistrythis"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.0759651307596513,
+     "params": {
+      "reading": "displayed",
+      "cipher": "serpent",
+      "mode": "ctr",
+      "key": "Testsubjectshinonuma"
+     }
+    },
+    "frac.binary": {
+     "value": 0.025893958076448828,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "ZombiesZOMBIES"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.048567870485678705,
+     "params": {
+      "reading": "displayed",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "Zombiesshinonuma"
+     }
+    },
+    "frac.base32": {
+     "value": 0.1793275217932752,
+     "params": {
+      "reading": "displayed",
+      "cipher": "saferplus",
+      "mode": "cfb8",
+      "key": "Fkmcpdyehbigqrosazlutjnwvx"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.1559748427672956,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "testsubjectzombies"
+     }
+    },
+    "frac.printable": {
+     "value": 0.45129469790382243,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "ZOMBIES198346572"
+     }
+    },
+    "run.base64std": {
+     "value": 11,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "198346572ASCENSION"
+     }
+    },
+    "run.base64url": {
+     "value": 11,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "198346572ASCENSION"
+     }
+    },
+    "run.hexupper": {
+     "value": 5,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "zombies198346572"
+     }
+    },
+    "run.hexlower": {
+     "value": 6,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "amunoihszyxwvtrqplkjgfedcb"
+     }
+    },
+    "run.hexmixed": {
+     "value": 7,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "testsubjectthe castle"
+     }
+    },
+    "run.decimal": {
+     "value": 5,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "198346572TRYTHIS"
+     }
+    },
+    "run.decimalsep": {
+     "value": 6,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "shinonumaZOMBIES"
+     }
+    },
+    "run.octal": {
+     "value": 5,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "198346572TRYTHIS"
+     }
+    },
+    "run.octalsep": {
+     "value": 5,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "shinonumaZOMBIES"
+     }
+    },
+    "run.binary": {
+     "value": 3,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "Testsubjectshinonuma"
+     }
+    },
+    "run.binarysep": {
+     "value": 4,
+     "params": {
+      "reading": "displayed",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "198346572ASCENSION"
+     }
+    },
+    "run.base32": {
+     "value": 8,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "SHINONUMATESTSUBJECT"
+     }
+    },
+    "run.upperspace": {
+     "value": 8,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "SHINONUMATESTSUBJECT"
+     }
+    },
+    "run.printable": {
+     "value": 19,
+     "params": {
+      "reading": "displayed",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "Ascensionshinonuma"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 19,
+     "params": {
+      "reading": "displayed",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "Ascensionshinonuma"
+     },
+     "printableFrac": 0.3908754623921085
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "MAXISZOMBIES"
+     },
+     "printableFrac": 0.42131350681536556
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "TRYTHISTESTSUBJECT"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "zombiestrythis"
+     },
+     "printableFrac": 0.39227895392278955
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "MaxisZombies"
+     },
+     "printableFrac": 0.38166047087980176
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "198346572Zombies"
+     },
+     "printableFrac": 0.39119496855345914
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "testsubjectzombies"
+     },
+     "printableFrac": 0.43144654088050316
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "MAXISZOMBIES"
+     },
+     "printableFrac": 0.4155363748458693
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "Testsubject"
+     },
+     "printableFrac": 0.3563501849568434
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "TRYTHISZombies"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "mothershinonuma"
+     },
+     "printableFrac": 0.38729763387297633
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "Onlythecursedsurvive"
+     },
+     "printableFrac": 0.40197287299630086
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "maxistestsubject"
+     },
+     "printableFrac": 0.374845869297164
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "ZOMBIESSHINONUMA"
+     },
+     "printableFrac": 0.38729763387297633
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "ZOMBIESASCENSION"
+     },
+     "printableFrac": 0.38978829389788294
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "The CastleZombies"
+     },
+     "printableFrac": 0.4
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "TRYTHISZombies"
+     },
+     "printableFrac": 0.4204685573366215
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "shinonumaThe Castle"
+     },
+     "printableFrac": 0.41430332922318125
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "Maxisshinonuma"
+     },
+     "printableFrac": 0.41344956413449563
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "198346572Mother"
+     },
+     "printableFrac": 0.41843088418430885
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "displayed",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "ascensionmaxis"
+     },
+     "printableFrac": 0.40567200986436497
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "Zombies198346572"
+     },
+     "printableFrac": 0.38042131350681535
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "MOTHERTESTSUBJECT"
+     },
+     "printableFrac": 0.38166047087980176
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "shinonumaTRYTHIS"
+     },
+     "printableFrac": 0.4007398273736128
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "TestsubjectMother"
+     },
+     "printableFrac": 0.36991368680641185
+    }
+   ]
+  },
+  {
+   "reading": "plant_twofish_cfb8_Zombies",
+   "label": "POS",
+   "trials": 22400,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 803,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 1,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "printableFrac": {
+     "value": 1,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "small_1_26": {
+     "value": 0.1444582814445828,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "SHINONUMATRYTHIS"
+     }
+    },
+    "small_0_31": {
+     "value": 0.16936488169364883,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "SHINONUMATRYTHIS"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.8032378580323786,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.8032378580323786,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.28393524283935245,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.09741060419235512,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "the castletrythis"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.28393524283935245,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.06973848069738481,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "THE CASTLEMAXIS"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.18804483188044832,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.octal": {
+     "value": 0.06102117061021171,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "zombiesascension"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.18804483188044832,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.binary": {
+     "value": 0.02219482120838471,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "MotherZombies"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.18804483188044832,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.base32": {
+     "value": 0.8032378580323786,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.9912826899128269,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.printable": {
+     "value": 1,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.base64std": {
+     "value": 12,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "ASCENSIONTRYTHIS"
+     }
+    },
+    "run.base64url": {
+     "value": 12,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "ASCENSIONTRYTHIS"
+     }
+    },
+    "run.hexupper": {
+     "value": 6,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "maxistestsubject"
+     }
+    },
+    "run.hexlower": {
+     "value": 5,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ZOMBIESThe Castle"
+     }
+    },
+    "run.hexmixed": {
+     "value": 7,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "Ascension198346572"
+     }
+    },
+    "run.decimal": {
+     "value": 5,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "Mother"
+     }
+    },
+    "run.decimalsep": {
+     "value": 6,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "trythistestsubject"
+     }
+    },
+    "run.octal": {
+     "value": 5,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "Mother"
+     }
+    },
+    "run.octalsep": {
+     "value": 6,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "trythistestsubject"
+     }
+    },
+    "run.binary": {
+     "value": 3,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "ZombiesMother"
+     }
+    },
+    "run.binarysep": {
+     "value": 4,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "maxistestsubject"
+     }
+    },
+    "run.base32": {
+     "value": 11,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.upperspace": {
+     "value": 191,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.printable": {
+     "value": 803,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 803,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 1
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "Fkmcpdyehbigqrosazlutjnwvx"
+     },
+     "printableFrac": 0.39622641509433965
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "THE CASTLESHINONUMA"
+     },
+     "printableFrac": 0.3723797780517879
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "thecastle"
+     },
+     "printableFrac": 0.3908754623921085
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-256",
+      "mode": "cfb8",
+      "key": "198346572TESTSUBJECT"
+     },
+     "printableFrac": 0.41168996188055906
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "MAXISMOTHER"
+     },
+     "printableFrac": 0.40197287299630086
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "maxistestsubject"
+     },
+     "printableFrac": 0.3970406905055487
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "MOTHERSHINONUMA"
+     },
+     "printableFrac": 0.38964241676942046
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "MAXISTRYTHIS"
+     },
+     "printableFrac": 0.3933415536374846
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "198346572Mother"
+     },
+     "printableFrac": 0.3933415536374846
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "ZOMBIES198346572"
+     },
+     "printableFrac": 0.3848069738480697
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "ascension198346572"
+     },
+     "printableFrac": 0.3921085080147966
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "The Castle"
+     },
+     "printableFrac": 0.3908754623921085
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "THECASTLE"
+     },
+     "printableFrac": 0.3972602739726027
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "MotherZombies"
+     },
+     "printableFrac": 0.3686176836861768
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "motherascension"
+     },
+     "printableFrac": 0.40846824408468246
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "ctr",
+      "key": "zombiesacdfghjklnpqrtuvwxy"
+     },
+     "printableFrac": 0.398505603985056
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "The CastleTRYTHIS"
+     },
+     "printableFrac": 0.34895191122071517
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "ASCENSION198346572"
+     },
+     "printableFrac": 0.40197287299630086
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "The CastleTestsubject"
+     },
+     "printableFrac": 0.37731196054254007
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "onlythecursedsurvive"
+     },
+     "printableFrac": 0.3723797780517879
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "maxis198346572"
+     },
+     "printableFrac": 0.3995067817509248
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "198346572MAXIS"
+     },
+     "printableFrac": 0.4032059186189889
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "ZombiesZOMBIES"
+     },
+     "printableFrac": 0.3723797780517879
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "SHINONUMA198346572"
+     },
+     "printableFrac": 0.39457459926017263
+    }
+   ]
+  },
+  {
+   "reading": "bytePairReversed",
+   "label": "REAL",
+   "trials": 22400,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 17,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "testsubjecttrythis"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.45828144458281445,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "TestsubjectAscension"
+     }
+    },
+    "printableFrac": {
+     "value": 0.45828144458281445,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "TestsubjectAscension"
+     }
+    },
+    "small_1_26": {
+     "value": 0.1471698113207547,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "The CastleMother"
+     }
+    },
+    "small_0_31": {
+     "value": 0.17358490566037735,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "The CastleMother"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.31689272503082616,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "zombiestestsubject"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.3156596794081381,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "198346572Testsubject"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.09741060419235512,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "TESTSUBJECTTRYTHIS"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.09713574097135741,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "MAXIS198346572"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.1307596513075965,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "MotherMaxis"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.06973848069738481,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "MAXIS198346572"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.08717310087173101,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "shinonumaAscension"
+     }
+    },
+    "frac.octal": {
+     "value": 0.057285180572851806,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "TESTSUBJECTASCENSION"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.07721046077210461,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "shinonumaAscension"
+     }
+    },
+    "frac.binary": {
+     "value": 0.02466091245376079,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "AscensionZombies"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.05082592121982211,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-256",
+      "mode": "cfb8",
+      "key": "THE CASTLEMOTHER"
+     }
+    },
+    "frac.base32": {
+     "value": 0.17559153175591533,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "198346572MAXIS"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.15317559153175592,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "198346572MAXIS"
+     }
+    },
+    "frac.printable": {
+     "value": 0.45828144458281445,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "TestsubjectAscension"
+     }
+    },
+    "run.base64std": {
+     "value": 11,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "mothertrythis"
+     }
+    },
+    "run.base64url": {
+     "value": 11,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "the castlezombies"
+     }
+    },
+    "run.hexupper": {
+     "value": 5,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "shinonumaThe Castle"
+     }
+    },
+    "run.hexlower": {
+     "value": 5,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "198346572zombies"
+     }
+    },
+    "run.hexmixed": {
+     "value": 6,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "run.decimal": {
+     "value": 5,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "tripledes",
+      "mode": "cfb8",
+      "key": "Zombiesshinonuma"
+     }
+    },
+    "run.decimalsep": {
+     "value": 5,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "Ascensionshinonuma"
+     }
+    },
+    "run.octal": {
+     "value": 4,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "FKMCPDYEHBIGQROSAZLUTJNWVX"
+     }
+    },
+    "run.octalsep": {
+     "value": 5,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "MotherThe Castle"
+     }
+    },
+    "run.binary": {
+     "value": 3,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "TRYTHISAscension"
+     }
+    },
+    "run.binarysep": {
+     "value": 4,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "198346572zombies"
+     }
+    },
+    "run.base32": {
+     "value": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "198346572Mother"
+     }
+    },
+    "run.upperspace": {
+     "value": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "198346572Mother"
+     }
+    },
+    "run.printable": {
+     "value": 17,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "testsubjecttrythis"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 17,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "testsubjecttrythis"
+     },
+     "printableFrac": 0.40197287299630086
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-128",
+      "mode": "cfb8",
+      "key": "198346572MAXIS"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "MAXISASCENSION"
+     },
+     "printableFrac": 0.3637484586929716
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "MOTHERTRYTHIS"
+     },
+     "printableFrac": 0.374845869297164
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "xtea",
+      "mode": "ncfb",
+      "key": "MAXISTRYTHIS"
+     },
+     "printableFrac": 0.4007398273736128
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "MOTHERSHINONUMA"
+     },
+     "printableFrac": 0.386277001270648
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "cfb8",
+      "key": "TRYTHISThe Castle"
+     },
+     "printableFrac": 0.39975093399750933
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "cfb8",
+      "key": "the castleascension"
+     },
+     "printableFrac": 0.40722291407222916
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "shinonumamother"
+     },
+     "printableFrac": 0.3686176836861768
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "mother"
+     },
+     "printableFrac": 0.3711467324290999
+    },
+    {
+     "v": 14,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "arcfour",
+      "mode": "stream",
+      "key": "ascensionzombies"
+     },
+     "printableFrac": 0.39194139194139194
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ZOMBIESACDFGHJKLNPQRTUVWXY"
+     },
+     "printableFrac": 0.37670384138785623
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ZOMBIESZombies"
+     },
+     "printableFrac": 0.3878562577447336
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "MAXISTESTSUBJECT"
+     },
+     "printableFrac": 0.3797780517879161
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Testsubject198346572"
+     },
+     "printableFrac": 0.3797780517879161
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "ZOMBIESTHE CASTLE"
+     },
+     "printableFrac": 0.39457459926017263
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "motherzombies"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "ZOMBIESASCENSION"
+     },
+     "printableFrac": 0.4093711467324291
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "MAXIS198346572"
+     },
+     "printableFrac": 0.43279901356350187
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "tripledes",
+      "mode": "cfb8",
+      "key": "TRYTHISTESTSUBJECT"
+     },
+     "printableFrac": 0.37731196054254007
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "Zombies198346572"
+     },
+     "printableFrac": 0.3970406905055487
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "ASCENSION"
+     },
+     "printableFrac": 0.38594327990135635
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "198346572ZOMBIES"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "ZOMBIESZOMBIES"
+     },
+     "printableFrac": 0.39476961394769616
+    },
+    {
+     "v": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "trythistestsubject"
+     },
+     "printableFrac": 0.3960149439601494
+    }
+   ]
+  }
+ ]
+}

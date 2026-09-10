@@ -1,0 +1,3917 @@
+{
+ "meta": {
+  "tier": "t0",
+  "nKeys": 3,
+  "targets": [
+   "REAL:displayed",
+   "REAL:fullReversed",
+   "REAL:bytePairReversed",
+   "REAL:nibbleSwap",
+   "REAL:lowercased",
+   "NEG:random_hexalpha",
+   "POS:plant_twofish_cfb8_Zombies"
+  ],
+  "seconds": 0.052
+ },
+ "results": [
+  {
+   "reading": "nibbleSwap",
+   "label": "REAL",
+   "trials": 240,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 12,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.4259028642590286,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "printableFrac": {
+     "value": 0.4192355117139334,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "small_1_26": {
+     "value": 0.13316892725030827,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "small_0_31": {
+     "value": 0.15536374845869297,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "zombies"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.3026151930261519,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.3026151930261519,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.08261405672009864,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.08343711083437111,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.11207970112079702,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.055487053020961775,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.07448107448107448,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "Zombies"
+     }
+    },
+    "frac.octal": {
+     "value": 0.047619047619047616,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "Zombies"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.06837606837606838,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "Zombies"
+     }
+    },
+    "frac.binary": {
+     "value": 0.018495684340320593,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "Zombies"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.03822441430332922,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.base32": {
+     "value": 0.1656288916562889,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.13325031133250312,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.printable": {
+     "value": 0.4192355117139334,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "run.base64std": {
+     "value": 10,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "run.base64url": {
+     "value": 7,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.hexupper": {
+     "value": 4,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.hexlower": {
+     "value": 4,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "Zombies"
+     }
+    },
+    "run.hexmixed": {
+     "value": 5,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "run.decimal": {
+     "value": 3,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.decimalsep": {
+     "value": 3,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.octal": {
+     "value": 3,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.octalsep": {
+     "value": 3,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.binary": {
+     "value": 2,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.binarysep": {
+     "value": 2,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.base32": {
+     "value": 6,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.upperspace": {
+     "value": 6,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.printable": {
+     "value": 12,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 12,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.4192355117139334
+    },
+    {
+     "v": 12,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.38854296388542964
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.4052044609665427
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3723797780517879
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.38729763387297633
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.40567200986436497
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.41843088418430885
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.39457459926017263
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "arcfour",
+      "mode": "stream",
+      "key": "zombies"
+     },
+     "printableFrac": 0.4053724053724054
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.4052044609665427
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3871763255240444
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3871763255240444
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.379874213836478
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3610062893081761
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.389937106918239
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.39827373612823674
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3970406905055487
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.36744759556103573
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.4122042341220423
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3871763255240444
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3871763255240444
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3921085080147966
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3908754623921085
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.39476961394769616
+    }
+   ]
+  },
+  {
+   "reading": "plant_twofish_cfb8_Zombies",
+   "label": "POS",
+   "trials": 240,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 803,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 1,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "printableFrac": {
+     "value": 1,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "small_1_26": {
+     "value": 0.1288723667905824,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "small_0_31": {
+     "value": 0.1519302615193026,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "ofb",
+      "key": "zombies"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.8032378580323786,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.8032378580323786,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.28393524283935245,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.0859277708592777,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.28393524283935245,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.05795314426633785,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.18804483188044832,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.octal": {
+     "value": 0.048567870485678705,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.18804483188044832,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.binary": {
+     "value": 0.018867924528301886,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.18804483188044832,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.base32": {
+     "value": 0.8032378580323786,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.9912826899128269,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.printable": {
+     "value": 1,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.base64std": {
+     "value": 11,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.base64url": {
+     "value": 11,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.hexupper": {
+     "value": 4,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "run.hexlower": {
+     "value": 4,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "run.hexmixed": {
+     "value": 5,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "run.decimal": {
+     "value": 3,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.decimalsep": {
+     "value": 5,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "run.octal": {
+     "value": 3,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.octalsep": {
+     "value": 4,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "Zombies"
+     }
+    },
+    "run.binary": {
+     "value": 2,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "run.binarysep": {
+     "value": 3,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.base32": {
+     "value": 11,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.upperspace": {
+     "value": 191,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.printable": {
+     "value": 803,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 803,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 1
+    },
+    {
+     "v": 12,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.4032059186189889
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3970406905055487
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.39227895392278955
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3835616438356164
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.40567200986436497
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.36991368680641185
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "tripledes",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.40567200986436497
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.36991368680641185
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.38594327990135635
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.39622641509433965
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.43212951432129515
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.36744759556103573
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3990086741016109
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.37484433374844334
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3723797780517879
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3723797780517879
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3871763255240444
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.40099626400996263
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.40224159402241594
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3686176836861768
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.37735849056603776
+    }
+   ]
+  },
+  {
+   "reading": "displayed",
+   "label": "REAL",
+   "trials": 240,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 11,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.43279901356350187,
+     "params": {
+      "reading": "displayed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "printableFrac": {
+     "value": 0.43279901356350187,
+     "params": {
+      "reading": "displayed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "small_1_26": {
+     "value": 0.12946979038224415,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     }
+    },
+    "small_0_31": {
+     "value": 0.15413070283600494,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.29469790382244143,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.2905982905982906,
+     "params": {
+      "reading": "displayed",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.08547008547008547,
+     "params": {
+      "reading": "displayed",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.08547008547008547,
+     "params": {
+      "reading": "displayed",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.11233211233211234,
+     "params": {
+      "reading": "displayed",
+      "cipher": "enigma",
+      "mode": "stream",
+      "key": "Zombies"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.05860805860805861,
+     "params": {
+      "reading": "displayed",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "Zombies"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.0757020757020757,
+     "params": {
+      "reading": "displayed",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "Zombies"
+     }
+    },
+    "frac.octal": {
+     "value": 0.0468557336621455,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.06535141800246609,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.binary": {
+     "value": 0.018495684340320593,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.038605230386052306,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.base32": {
+     "value": 0.16064757160647572,
+     "params": {
+      "reading": "displayed",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.1381011097410604,
+     "params": {
+      "reading": "displayed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "frac.printable": {
+     "value": 0.43279901356350187,
+     "params": {
+      "reading": "displayed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "run.base64std": {
+     "value": 8,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.base64url": {
+     "value": 8,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.hexupper": {
+     "value": 5,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "run.hexlower": {
+     "value": 4,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.hexmixed": {
+     "value": 5,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "run.decimal": {
+     "value": 3,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.decimalsep": {
+     "value": 5,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "run.octal": {
+     "value": 3,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.octalsep": {
+     "value": 4,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "run.binary": {
+     "value": 2,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.binarysep": {
+     "value": 3,
+     "params": {
+      "reading": "displayed",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "Zombies"
+     }
+    },
+    "run.base32": {
+     "value": 5,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "run.upperspace": {
+     "value": 5,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "run.printable": {
+     "value": 11,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 11,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3871763255240444
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3960149439601494
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "zombies"
+     },
+     "printableFrac": 0.38729763387297633
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3786163522012579
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3847102342786683
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "displayed",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.38854296388542964
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "displayed",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.40971357409713577
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "displayed",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "zombies"
+     },
+     "printableFrac": 0.39438339438339437
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3847102342786683
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.38594327990135635
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3847102342786683
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "zombies"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "zombies"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.4032059186189889
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.36612702366127026
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.38107098381070986
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-64",
+      "mode": "ctr",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3797780517879161
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3810110974106042
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "twofish",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.39476961394769616
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.4188034188034188
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3630731102850062
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3933415536374846
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3810110974106042
+    }
+   ]
+  },
+  {
+   "reading": "fullReversed",
+   "label": "REAL",
+   "trials": 240,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 11,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.4315659679408138,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "printableFrac": {
+     "value": 0.4315659679408138,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "small_1_26": {
+     "value": 0.1307596513075965,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "small_0_31": {
+     "value": 0.14869888475836432,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.29389788293897884,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.29389788293897884,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.08513341804320203,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.09247842170160296,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.12083847102342787,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.06041923551171394,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "xtea",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.08138101109741061,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "xtea",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.octal": {
+     "value": 0.048284625158831,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.06861499364675985,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "frac.binary": {
+     "value": 0.017434620174346202,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.0410958904109589,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.base32": {
+     "value": 0.15659679408138102,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.12946979038224415,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "frac.printable": {
+     "value": 0.4315659679408138,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "run.base64std": {
+     "value": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "run.base64url": {
+     "value": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "run.hexupper": {
+     "value": 5,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "zombies"
+     }
+    },
+    "run.hexlower": {
+     "value": 4,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "run.hexmixed": {
+     "value": 5,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "zombies"
+     }
+    },
+    "run.decimal": {
+     "value": 3,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "run.decimalsep": {
+     "value": 3,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.octal": {
+     "value": 3,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "run.octalsep": {
+     "value": 3,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.binary": {
+     "value": 2,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.binarysep": {
+     "value": 3,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "Zombies"
+     }
+    },
+    "run.base32": {
+     "value": 6,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "run.upperspace": {
+     "value": 5,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "run.printable": {
+     "value": 11,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 11,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.4032059186189889
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.398505603985056
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.39644218551461247
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "saferplus",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.36363636363636365
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3921085080147966
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3900889453621347
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "saferplus",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.36488169364881695
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "arcfour",
+      "mode": "stream",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.38583638583638585
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3618339529120198
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.38594327990135635
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.36991368680641185
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.41594022415940224
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.38964241676942046
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.41296060991105465
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.4032059186189889
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.386052303860523
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.39352428393524286
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.38978829389788294
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.39827373612823674
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3882783882783883
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.4163568773234201
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3810110974106042
+    }
+   ]
+  },
+  {
+   "reading": "bytePairReversed",
+   "label": "REAL",
+   "trials": 240,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 12,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "Zombies"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.44266337854500615,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "printableFrac": {
+     "value": 0.44266337854500615,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "small_1_26": {
+     "value": 0.13325031133250312,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "small_0_31": {
+     "value": 0.15536374845869297,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.30209617755856966,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.30456226880394577,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.08877928483353884,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.08631319358816276,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.1159062885326757,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.059186189889025895,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.07448107448107448,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.octal": {
+     "value": 0.049813200498132,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.06411837237977805,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "zombies"
+     }
+    },
+    "frac.binary": {
+     "value": 0.018495684340320593,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.03785103785103785,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.base32": {
+     "value": 0.16399506781750925,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "zombies"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.136986301369863,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.printable": {
+     "value": 0.44266337854500615,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.base64std": {
+     "value": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "run.base64url": {
+     "value": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "run.hexupper": {
+     "value": 5,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "run.hexlower": {
+     "value": 4,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "run.hexmixed": {
+     "value": 6,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "run.decimal": {
+     "value": 4,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "Zombies"
+     }
+    },
+    "run.decimalsep": {
+     "value": 4,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.octal": {
+     "value": 3,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "run.octalsep": {
+     "value": 3,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "run.binary": {
+     "value": 2,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "run.binarysep": {
+     "value": 3,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.base32": {
+     "value": 5,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "run.upperspace": {
+     "value": 5,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "zombies"
+     }
+    },
+    "run.printable": {
+     "value": 12,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "Zombies"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 12,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.39975093399750933
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3786163522012579
+    },
+    {
+     "v": 11,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.40293040293040294
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.4315659679408138
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.40567200986436497
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-256",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.36086404066073696
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-256",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.36213468869123255
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.41263940520446096
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.39457459926017263
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.39352428393524286
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3960149439601494
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.410958904109589
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.41430332922318125
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3660377358490566
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.40533672172808133
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.38964241676942046
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.39476961394769616
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.39227895392278955
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.35990037359900373
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.40892193308550184
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3965303593556382
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.406905055487053
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.40197287299630086
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3871763255240444
+    }
+   ]
+  },
+  {
+   "reading": "lowercased",
+   "label": "REAL",
+   "trials": 240,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 15,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.43462017434620176,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "printableFrac": {
+     "value": 0.43462017434620176,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "small_1_26": {
+     "value": 0.13595933926302414,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "small_0_31": {
+     "value": 0.156289707750953,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.298879202988792,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.3013698630136986,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.09001233045622688,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.0859277708592777,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.11467324290998766,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.06288532675709001,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.08508014796547472,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.octal": {
+     "value": 0.05672009864364982,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.07891491985203453,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.binary": {
+     "value": 0.01726263871763255,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.038605230386052306,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.base32": {
+     "value": 0.15861214374225527,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.13878562577447337,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "frac.printable": {
+     "value": 0.43462017434620176,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "run.base64std": {
+     "value": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-64",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "run.base64url": {
+     "value": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-64",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "run.hexupper": {
+     "value": 4,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.hexlower": {
+     "value": 4,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.hexmixed": {
+     "value": 5,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "run.decimal": {
+     "value": 4,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.decimalsep": {
+     "value": 4,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "run.octal": {
+     "value": 3,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "zombies"
+     }
+    },
+    "run.octalsep": {
+     "value": 3,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "run.binary": {
+     "value": 2,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.binarysep": {
+     "value": 3,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.base32": {
+     "value": 5,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.upperspace": {
+     "value": 5,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.printable": {
+     "value": 15,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 15,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3835616438356164
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3965303593556382
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.4130702836004932
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.4032059186189889
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "zombies"
+     },
+     "printableFrac": 0.386277001270648
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-64",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.37361282367447596
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.37858032378580325
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3908754623921085
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.4192355117139334
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.41060419235511714
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "tripledes",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.41060419235511714
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3723797780517879
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.43462017434620176
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.40473225404732255
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.4176100628930818
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.38373570520965694
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-128",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3908754623921085
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "zombies"
+     },
+     "printableFrac": 0.40348692403486924
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3723536737235367
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "zombies"
+     },
+     "printableFrac": 0.37606837606837606
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.4188351920693928
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.37298636926889717
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.40396530359355637
+    }
+   ]
+  },
+  {
+   "reading": "random_hexalpha",
+   "label": "NEG",
+   "trials": 240,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 12,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.4254007398273736,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "printableFrac": {
+     "value": 0.42293464858199753,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "small_1_26": {
+     "value": 0.12946979038224415,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "small_0_31": {
+     "value": 0.1559748427672956,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "zombies"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.28976572133168926,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.2909987669543773,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "zombies"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.08261405672009864,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.08384710234278668,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.10850801479654747,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.058530510585305104,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "twofish",
+      "mode": "ofb",
+      "key": "zombies"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.07347447073474471,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "twofish",
+      "mode": "ofb",
+      "key": "zombies"
+     }
+    },
+    "frac.octal": {
+     "value": 0.047322540473225407,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.06411837237977805,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "Zombies"
+     }
+    },
+    "frac.binary": {
+     "value": 0.018495684340320593,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.03945745992601726,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.base32": {
+     "value": 0.16152897657213316,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.1307596513075965,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "frac.printable": {
+     "value": 0.42293464858199753,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    },
+    "run.base64std": {
+     "value": 9,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "zombies"
+     }
+    },
+    "run.base64url": {
+     "value": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "run.hexupper": {
+     "value": 4,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "zombies"
+     }
+    },
+    "run.hexlower": {
+     "value": 4,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "run.hexmixed": {
+     "value": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "run.decimal": {
+     "value": 3,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.decimalsep": {
+     "value": 3,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.octal": {
+     "value": 3,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.octalsep": {
+     "value": 3,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.binary": {
+     "value": 2,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.binarysep": {
+     "value": 3,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "zombies"
+     }
+    },
+    "run.base32": {
+     "value": 5,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.upperspace": {
+     "value": 5,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.printable": {
+     "value": 12,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 12,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 12,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3940520446096654
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.39827373612823674
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.386052303860523
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3723536737235367
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.4130702836004932
+    },
+    {
+     "v": 10,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "zombies"
+     },
+     "printableFrac": 0.38217338217338215
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3915737298636927
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3960149439601494
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.40197287299630086
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.38729763387297633
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "xtea",
+      "mode": "ncfb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 9,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.40197287299630086
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3853779429987608
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.40272614622057
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3797780517879161
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.38964241676942046
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.4032059186189889
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.42293464858199753
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3933415536374846
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 0.3835616438356164
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "ZOMBIES"
+     },
+     "printableFrac": 0.3972602739726027
+    },
+    {
+     "v": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "zombies"
+     },
+     "printableFrac": 0.3908754623921085
+    }
+   ]
+  }
+ ]
+}

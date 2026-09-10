@@ -1,0 +1,3917 @@
+{
+ "meta": {
+  "tier": "t3",
+  "nKeys": 704667,
+  "targets": [
+   "REAL:displayed",
+   "REAL:fullReversed",
+   "REAL:bytePairReversed",
+   "REAL:nibbleSwap",
+   "REAL:lowercased",
+   "NEG:random_hexalpha",
+   "POS:plant_twofish_cfb8_Zombies"
+  ],
+  "seconds": 3415.56
+ },
+ "results": [
+  {
+   "reading": "displayed",
+   "label": "REAL",
+   "trials": 56373360,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 24,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "nasosinuitis"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.48443337484433374,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "CZECHOSLOVAK"
+     }
+    },
+    "printableFrac": {
+     "value": 0.4794520547945205,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "CZECHOSLOVAK"
+     }
+    },
+    "small_1_26": {
+     "value": 0.1656288916562889,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "Caulicole"
+     }
+    },
+    "small_0_31": {
+     "value": 0.18988902589395806,
+     "params": {
+      "reading": "displayed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "Supersubtilized"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.33908754623921084,
+     "params": {
+      "reading": "displayed",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "nonaristocratic"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.33997509339975096,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "Hyparterial"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.1159062885326757,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "Popliteus"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.1159062885326757,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "proleague"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.1442663378545006,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "gunshot"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.08094645080946451,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "illustrious"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.1060419235511714,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "GIESECKITE"
+     }
+    },
+    "frac.octal": {
+     "value": 0.0752157829839704,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "Roratorio"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.09529860228716645,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-256",
+      "mode": "ofb",
+      "key": "Interownership"
+     }
+    },
+    "frac.binary": {
+     "value": 0.0323785803237858,
+     "params": {
+      "reading": "displayed",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "freehanded"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.06041923551171394,
+     "params": {
+      "reading": "displayed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "speed"
+     }
+    },
+    "frac.base32": {
+     "value": 0.1997533908754624,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "yieldy"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.17262638717632553,
+     "params": {
+      "reading": "displayed",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "Discutable"
+     }
+    },
+    "frac.printable": {
+     "value": 0.4794520547945205,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "CZECHOSLOVAK"
+     }
+    },
+    "run.base64std": {
+     "value": 17,
+     "params": {
+      "reading": "displayed",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "RUFULOUS"
+     }
+    },
+    "run.base64url": {
+     "value": 18,
+     "params": {
+      "reading": "displayed",
+      "cipher": "saferplus",
+      "mode": "cfb8",
+      "key": "Overblow"
+     }
+    },
+    "run.hexupper": {
+     "value": 8,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "sumph"
+     }
+    },
+    "run.hexlower": {
+     "value": 8,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "panicularia"
+     }
+    },
+    "run.hexmixed": {
+     "value": 10,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "tanged"
+     }
+    },
+    "run.decimal": {
+     "value": 7,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "Hypenantron"
+     }
+    },
+    "run.decimalsep": {
+     "value": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "Archencephala"
+     }
+    },
+    "run.octal": {
+     "value": 7,
+     "params": {
+      "reading": "displayed",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "ASSENTINGLY"
+     }
+    },
+    "run.octalsep": {
+     "value": 9,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "Archencephala"
+     }
+    },
+    "run.binary": {
+     "value": 6,
+     "params": {
+      "reading": "displayed",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "ASSENTINGLY"
+     }
+    },
+    "run.binarysep": {
+     "value": 6,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "amenism"
+     }
+    },
+    "run.base32": {
+     "value": 11,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "Reportage"
+     }
+    },
+    "run.upperspace": {
+     "value": 11,
+     "params": {
+      "reading": "displayed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "ACETANION"
+     }
+    },
+    "run.printable": {
+     "value": 24,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "nasosinuitis"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 24,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "nasosinuitis"
+     },
+     "printableFrac": 0.36991368680641185
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "UNPENCILLED"
+     },
+     "printableFrac": 0.38854296388542964
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "PHOSPHOMOLYBDIC"
+     },
+     "printableFrac": 0.40125786163522015
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "Fagger"
+     },
+     "printableFrac": 0.3933415536374846
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "displayed",
+      "cipher": "serpent",
+      "mode": "ctr",
+      "key": "VIRIPOTENT"
+     },
+     "printableFrac": 0.40348692403486924
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "sporation"
+     },
+     "printableFrac": 0.3878562577447336
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "minimuscular"
+     },
+     "printableFrac": 0.379182156133829
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "displayed",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "Monotocardian"
+     },
+     "printableFrac": 0.3785450061652281
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "Cantor"
+     },
+     "printableFrac": 0.3849056603773585
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "magnetooptic"
+     },
+     "printableFrac": 0.3951715374841169
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "displayed",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "Stipendiarian"
+     },
+     "printableFrac": 0.40722291407222916
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "displayed",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "MATRANEE"
+     },
+     "printableFrac": 0.3995067817509248
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "displayed",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "UNQUARRELED"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Unpicturability"
+     },
+     "printableFrac": 0.38413878562577447
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "viscerotomy"
+     },
+     "printableFrac": 0.39281288723667906
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "REDINGOTE"
+     },
+     "printableFrac": 0.406905055487053
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "SALPINGOSTOMATOMY"
+     },
+     "printableFrac": 0.3711467324290999
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "Unforbid"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "shineless"
+     },
+     "printableFrac": 0.42963885429638854
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "CEREBELLOPONTILE"
+     },
+     "printableFrac": 0.40443896424167697
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "abilla"
+     },
+     "printableFrac": 0.3871763255240444
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "zoilism"
+     },
+     "printableFrac": 0.3871763255240444
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "MYELOPLAST"
+     },
+     "printableFrac": 0.41430332922318125
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "MYELOPLASTIC"
+     },
+     "printableFrac": 0.41430332922318125
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "displayed",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "MYELOPLAX"
+     },
+     "printableFrac": 0.41430332922318125
+    }
+   ]
+  },
+  {
+   "reading": "lowercased",
+   "label": "REAL",
+   "trials": 56373360,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 28,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "arcfour",
+      "mode": "stream",
+      "key": "archabomination"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.4784217016029593,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "SULTANLIKE"
+     }
+    },
+    "printableFrac": {
+     "value": 0.4759556103575832,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "SULTANLIKE"
+     }
+    },
+    "small_1_26": {
+     "value": 0.16769420468557336,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-64",
+      "mode": "ctr",
+      "key": "micrologic"
+     }
+    },
+    "small_0_31": {
+     "value": 0.19371069182389938,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "Ideoplasty"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.34620174346201743,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "BALLETIC"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.35118306351183065,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "BALLETIC"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.11220715166461159,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "KILLINGNESS"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.11220715166461159,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "HOTBED"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.14549938347718866,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "HOTBED"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.0821917808219178,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "WOOTZ"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.10585305105853052,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "WOOTZ"
+     }
+    },
+    "frac.octal": {
+     "value": 0.06973848069738481,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "saferplus",
+      "mode": "cfb8",
+      "key": "jivaran"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.09494451294697903,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "Binoxide"
+     }
+    },
+    "frac.binary": {
+     "value": 0.031133250311332503,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "APHAGIA"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.05672009864364982,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "xtea",
+      "mode": "ncfb",
+      "key": "FIXTURELESS"
+     }
+    },
+    "frac.base32": {
+     "value": 0.19728729963008632,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "METALLICAL"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.16769420468557336,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "arianize"
+     }
+    },
+    "frac.printable": {
+     "value": 0.4759556103575832,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "SULTANLIKE"
+     }
+    },
+    "run.base64std": {
+     "value": 17,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "SEMIRADIAL"
+     }
+    },
+    "run.base64url": {
+     "value": 17,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "SEMIRADIAL"
+     }
+    },
+    "run.hexupper": {
+     "value": 8,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "hypostatize"
+     }
+    },
+    "run.hexlower": {
+     "value": 8,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "PROVEDORE"
+     }
+    },
+    "run.hexmixed": {
+     "value": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "Unrestfully"
+     }
+    },
+    "run.decimal": {
+     "value": 7,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "ofb",
+      "key": "CHOLINERGIC"
+     }
+    },
+    "run.decimalsep": {
+     "value": 8,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "smuisty"
+     }
+    },
+    "run.octal": {
+     "value": 6,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "OUTKITCHEN"
+     }
+    },
+    "run.octalsep": {
+     "value": 8,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "smuisty"
+     }
+    },
+    "run.binary": {
+     "value": 5,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "Smyth"
+     }
+    },
+    "run.binarysep": {
+     "value": 6,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "OVERBULKY"
+     }
+    },
+    "run.base32": {
+     "value": 12,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "Dermatic"
+     }
+    },
+    "run.upperspace": {
+     "value": 12,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Isocercy"
+     }
+    },
+    "run.printable": {
+     "value": 24,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "cfb8",
+      "key": "parochialization"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 28,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "arcfour",
+      "mode": "stream",
+      "key": "archabomination"
+     },
+     "printableFrac": 0.37606837606837606
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "cfb8",
+      "key": "parochialization"
+     },
+     "printableFrac": 0.4104193138500635
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "uncalmly"
+     },
+     "printableFrac": 0.4275092936802974
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "EFOLIOLATE"
+     },
+     "printableFrac": 0.4093711467324291
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "longly"
+     },
+     "printableFrac": 0.4475955610357583
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "longly"
+     },
+     "printableFrac": 0.4475955610357583
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "arecoline"
+     },
+     "printableFrac": 0.3933415536374846
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "parablepsy"
+     },
+     "printableFrac": 0.40846824408468246
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "locellus"
+     },
+     "printableFrac": 0.3933415536374846
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "PLAYWRIGHTRY"
+     },
+     "printableFrac": 0.39281288723667906
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "DRAWGLOVE"
+     },
+     "printableFrac": 0.40224159402241594
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "serphidae"
+     },
+     "printableFrac": 0.3995067817509248
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "Biogeographical"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "Shimose"
+     },
+     "printableFrac": 0.3834771886559803
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "octastichon"
+     },
+     "printableFrac": 0.40971357409713577
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "syncategoreme"
+     },
+     "printableFrac": 0.37484433374844334
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "nongildsman"
+     },
+     "printableFrac": 0.3970406905055487
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "curvature"
+     },
+     "printableFrac": 0.38964241676942046
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "Prestatistical"
+     },
+     "printableFrac": 0.3933415536374846
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "DIGESTIVE"
+     },
+     "printableFrac": 0.40197287299630086
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "Irreprovable"
+     },
+     "printableFrac": 0.41060419235511714
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "PLAYWOMAN"
+     },
+     "printableFrac": 0.40197287299630086
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "semiadnate"
+     },
+     "printableFrac": 0.3588162762022195
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "Mossed"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "stale"
+     },
+     "printableFrac": 0.4007398273736128
+    }
+   ]
+  },
+  {
+   "reading": "fullReversed",
+   "label": "REAL",
+   "trials": 56373360,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 25,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "RHINOCERIAN"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.47924528301886793,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "NUDICAUDATE"
+     }
+    },
+    "printableFrac": {
+     "value": 0.47322540473225405,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "Henhussy"
+     }
+    },
+    "small_1_26": {
+     "value": 0.16189290161892902,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "vanish"
+     }
+    },
+    "small_0_31": {
+     "value": 0.1935881627620222,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "UNMONITORED"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.3424657534246575,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "LEEANGLE"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.3366214549938348,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "Telegraphist"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.11721611721611722,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "Bicephalic"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.11467324290998766,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "bareheaded"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.1442663378545006,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "PERIGENITAL"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.08259212198221093,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "Myomorphic"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.10974106041923551,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "intraglacial"
+     }
+    },
+    "frac.octal": {
+     "value": 0.0724269377382465,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "Myomorphic"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.09741060419235512,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "intraglacial"
+     }
+    },
+    "frac.binary": {
+     "value": 0.029224904701397714,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "overfear"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.06041923551171394,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "Carpiodes"
+     }
+    },
+    "frac.base32": {
+     "value": 0.1960542540073983,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "METAHEWETTITE"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.17016029593094945,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "goalie"
+     }
+    },
+    "frac.printable": {
+     "value": 0.47322540473225405,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "Henhussy"
+     }
+    },
+    "run.base64std": {
+     "value": 19,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "PREIMPART"
+     }
+    },
+    "run.base64url": {
+     "value": 19,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "arcfour",
+      "mode": "stream",
+      "key": "Boiler"
+     }
+    },
+    "run.hexupper": {
+     "value": 8,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "cliffed"
+     }
+    },
+    "run.hexlower": {
+     "value": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "LAVISHING"
+     }
+    },
+    "run.hexmixed": {
+     "value": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "udometry"
+     }
+    },
+    "run.decimal": {
+     "value": 7,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Borscht"
+     }
+    },
+    "run.decimalsep": {
+     "value": 8,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "pollinodium"
+     }
+    },
+    "run.octal": {
+     "value": 7,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Borscht"
+     }
+    },
+    "run.octalsep": {
+     "value": 7,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Borscht"
+     }
+    },
+    "run.binary": {
+     "value": 5,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "Reconciliability"
+     }
+    },
+    "run.binarysep": {
+     "value": 6,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "mean"
+     }
+    },
+    "run.base32": {
+     "value": 12,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "Thondraki"
+     }
+    },
+    "run.upperspace": {
+     "value": 10,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "gymnocidium"
+     }
+    },
+    "run.printable": {
+     "value": 23,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "fitly"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 25,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "RHINOCERIAN"
+     },
+     "printableFrac": 0.37982565379825656
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Chromophotograph"
+     },
+     "printableFrac": 0.41759603469640644
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Chromophotographic"
+     },
+     "printableFrac": 0.41759603469640644
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Chromophotography"
+     },
+     "printableFrac": 0.41759603469640644
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "gastrosuccorrhea"
+     },
+     "printableFrac": 0.39245283018867927
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "fitly"
+     },
+     "printableFrac": 0.3970406905055487
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "Featherman"
+     },
+     "printableFrac": 0.4122042341220423
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "safer-64",
+      "mode": "ctr",
+      "key": "ABACATE"
+     },
+     "printableFrac": 0.3847102342786683
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Knickerbockers"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "Macrobiotic"
+     },
+     "printableFrac": 0.4241676942046856
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "PERENDURE"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "unsmoothly"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Ferryboat"
+     },
+     "printableFrac": 0.40443896424167697
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "SOREHEADEDNESS"
+     },
+     "printableFrac": 0.40597758405977585
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "outwarble"
+     },
+     "printableFrac": 0.3698630136986301
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "POLITIED"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "showery"
+     },
+     "printableFrac": 0.3987421383647799
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "Icefish"
+     },
+     "printableFrac": 0.389937106918239
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "Cryometer"
+     },
+     "printableFrac": 0.406905055487053
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "safer-64",
+      "mode": "ctr",
+      "key": "SINFULNESS"
+     },
+     "printableFrac": 0.4241676942046856
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "PALMED"
+     },
+     "printableFrac": 0.3711083437110834
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "JUBILANTLY"
+     },
+     "printableFrac": 0.39975093399750933
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "AGREEABLE"
+     },
+     "printableFrac": 0.42216687422166876
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "twofish",
+      "mode": "ofb",
+      "key": "Inadmissibility"
+     },
+     "printableFrac": 0.38854296388542964
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "Tetramethyl"
+     },
+     "printableFrac": 0.38594327990135635
+    }
+   ]
+  },
+  {
+   "reading": "plant_twofish_cfb8_Zombies",
+   "label": "POS",
+   "trials": 56373360,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 803,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 1,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "printableFrac": {
+     "value": 1,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "small_1_26": {
+     "value": 0.16313823163138233,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "Cusser"
+     }
+    },
+    "small_0_31": {
+     "value": 0.1930261519302615,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "Cusser"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.8032378580323786,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.8032378580323786,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.28393524283935245,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.11220715166461159,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "BACTRITOID"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.28393524283935245,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.08259212198221093,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "SERGER"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.18804483188044832,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.octal": {
+     "value": 0.07028360049321825,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "Geocerite"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.18804483188044832,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.binary": {
+     "value": 0.028642590286425903,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "Epulation"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.18804483188044832,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.base32": {
+     "value": 0.8032378580323786,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.9912826899128269,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.printable": {
+     "value": 1,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.base64std": {
+     "value": 17,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "PTILOPAEDES"
+     }
+    },
+    "run.base64url": {
+     "value": 18,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "ANABIOTIC"
+     }
+    },
+    "run.hexupper": {
+     "value": 9,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "Superponderant"
+     }
+    },
+    "run.hexlower": {
+     "value": 8,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "Suboxidation"
+     }
+    },
+    "run.hexmixed": {
+     "value": 10,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "HUBNERITE"
+     }
+    },
+    "run.decimal": {
+     "value": 7,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "BAGNIO"
+     }
+    },
+    "run.decimalsep": {
+     "value": 7,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "DEMIMILLIONAIRE"
+     }
+    },
+    "run.octal": {
+     "value": 7,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "BAGNIO"
+     }
+    },
+    "run.octalsep": {
+     "value": 7,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "DEMIMILLIONAIRE"
+     }
+    },
+    "run.binary": {
+     "value": 4,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "COLLIGIBLE"
+     }
+    },
+    "run.binarysep": {
+     "value": 6,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Fruiting"
+     }
+    },
+    "run.base32": {
+     "value": 11,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "Dire"
+     }
+    },
+    "run.upperspace": {
+     "value": 191,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.printable": {
+     "value": 803,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 803,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 1
+    },
+    {
+     "v": 29,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "coost"
+     },
+     "printableFrac": 0.37858032378580325
+    },
+    {
+     "v": 26,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "notional"
+     },
+     "printableFrac": 0.39476961394769616
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "SEMIROTATIVE"
+     },
+     "printableFrac": 0.36737235367372356
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "Immortally"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "Manly"
+     },
+     "printableFrac": 0.4118372379778052
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "Manly"
+     },
+     "printableFrac": 0.4118372379778052
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "pedalferic"
+     },
+     "printableFrac": 0.3921085080147966
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "CAGED"
+     },
+     "printableFrac": 0.4032059186189889
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "RAMOSELY"
+     },
+     "printableFrac": 0.3921085080147966
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "Jota"
+     },
+     "printableFrac": 0.40567200986436497
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "Stronghold"
+     },
+     "printableFrac": 0.40597758405977585
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "PROTREPTICAL"
+     },
+     "printableFrac": 0.3949685534591195
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "TRACKWORK"
+     },
+     "printableFrac": 0.4217016029593095
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-64",
+      "mode": "ctr",
+      "key": "JOLLIFICATION"
+     },
+     "printableFrac": 0.436498150431566
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "Bryophytic"
+     },
+     "printableFrac": 0.37484433374844334
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "GUIANESE"
+     },
+     "printableFrac": 0.40224159402241594
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "Undeservingly"
+     },
+     "printableFrac": 0.36737235367372356
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "PHLEGMATISM"
+     },
+     "printableFrac": 0.38661710037174724
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Exegesist"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "BENZOXATE"
+     },
+     "printableFrac": 0.3871763255240444
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "UNPARADOX"
+     },
+     "printableFrac": 0.3908754623921085
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "cetorhinoid"
+     },
+     "printableFrac": 0.40567200986436497
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "cooling"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "SEMIDIVIDED"
+     },
+     "printableFrac": 0.3847102342786683
+    }
+   ]
+  },
+  {
+   "reading": "nibbleSwap",
+   "label": "REAL",
+   "trials": 56373360,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 23,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ESOTROPE"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.48212083847102344,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "misappraise"
+     }
+    },
+    "printableFrac": {
+     "value": 0.48212083847102344,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "throwster"
+     }
+    },
+    "small_1_26": {
+     "value": 0.1656288916562889,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "postpharyngeal"
+     }
+    },
+    "small_0_31": {
+     "value": 0.18925518925518925,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "joyfulness"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.3418043202033037,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "cfb8",
+      "key": "BUDDHISTICAL"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.33908754623921084,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "overwinter"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.11457036114570361,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "Altisonant"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.11220715166461159,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "SCHUSS"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.1432129514321295,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "catarrhed"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.08426270136307311,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ELECTROTEST"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.10480887792848335,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "leopold"
+     }
+    },
+    "frac.octal": {
+     "value": 0.07311028500619579,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ELECTROTEST"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.0921544209215442,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "reimmigration"
+     }
+    },
+    "frac.binary": {
+     "value": 0.02973977695167286,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "maioidean"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.057001239157372985,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "LUCIFERIAN"
+     }
+    },
+    "frac.base32": {
+     "value": 0.20715166461159062,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "GOMARIST"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.16855345911949685,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "Gaub"
+     }
+    },
+    "frac.printable": {
+     "value": 0.48212083847102344,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "throwster"
+     }
+    },
+    "run.base64std": {
+     "value": 18,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "Runghead"
+     }
+    },
+    "run.base64url": {
+     "value": 17,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "leiotrichan"
+     }
+    },
+    "run.hexupper": {
+     "value": 8,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Mossi"
+     }
+    },
+    "run.hexlower": {
+     "value": 9,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "nearctic"
+     }
+    },
+    "run.hexmixed": {
+     "value": 9,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "Foredoor"
+     }
+    },
+    "run.decimal": {
+     "value": 7,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Understandability"
+     }
+    },
+    "run.decimalsep": {
+     "value": 8,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "ENIGMATICALNESS"
+     }
+    },
+    "run.octal": {
+     "value": 7,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Understandability"
+     }
+    },
+    "run.octalsep": {
+     "value": 8,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "avaradrano"
+     }
+    },
+    "run.binary": {
+     "value": 5,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "Antipyretic"
+     }
+    },
+    "run.binarysep": {
+     "value": 6,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "rumpuncheon"
+     }
+    },
+    "run.base32": {
+     "value": 12,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "ANACROGYNAE"
+     }
+    },
+    "run.upperspace": {
+     "value": 11,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "UNANTAGONIZED"
+     }
+    },
+    "run.printable": {
+     "value": 23,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "majestical"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 23,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "ESOTROPE"
+     },
+     "printableFrac": 0.379182156133829
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "majestical"
+     },
+     "printableFrac": 0.4007398273736128
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "PHOLAD"
+     },
+     "printableFrac": 0.376078914919852
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "hydrokinetics"
+     },
+     "printableFrac": 0.41718555417185554
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "Birdwoman"
+     },
+     "printableFrac": 0.40348692403486924
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "INTERLINEAR"
+     },
+     "printableFrac": 0.39352428393524286
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "paleentomology"
+     },
+     "printableFrac": 0.3995067817509248
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "saferplus",
+      "mode": "ofb",
+      "key": "upboil"
+     },
+     "printableFrac": 0.42341220423412207
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "saracenic"
+     },
+     "printableFrac": 0.4250309789343247
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "Candleshrift"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Cyclovertebral"
+     },
+     "printableFrac": 0.4093711467324291
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "Cernuous"
+     },
+     "printableFrac": 0.38594327990135635
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "Carrytale"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "PREDICTION"
+     },
+     "printableFrac": 0.40443896424167697
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "aspiringness"
+     },
+     "printableFrac": 0.4093711467324291
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "Anatomopathological"
+     },
+     "printableFrac": 0.3921085080147966
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "EUMENID"
+     },
+     "printableFrac": 0.38729763387297633
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "Prerenal"
+     },
+     "printableFrac": 0.3823163138231631
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "MUDDYBRAINED"
+     },
+     "printableFrac": 0.39898348157560354
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "Lately"
+     },
+     "printableFrac": 0.376078914919852
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "Olympian"
+     },
+     "printableFrac": 0.3995067817509248
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "betangle"
+     },
+     "printableFrac": 0.4093711467324291
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "Retreatal"
+     },
+     "printableFrac": 0.41800246609124536
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "sporophyll"
+     },
+     "printableFrac": 0.42909987669543775
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Rehaul"
+     },
+     "printableFrac": 0.41511771995043373
+    }
+   ]
+  },
+  {
+   "reading": "random_hexalpha",
+   "label": "NEG",
+   "trials": 56373360,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 24,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "heaveless"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.4808877928483354,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "aptiana"
+     }
+    },
+    "printableFrac": {
+     "value": 0.4784217016029593,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "aptiana"
+     }
+    },
+    "small_1_26": {
+     "value": 0.16480793060718713,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "enheritance"
+     }
+    },
+    "small_0_31": {
+     "value": 0.19235511713933415,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "MISORDINATION"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.34525277435265106,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ctr",
+      "key": "Median"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.34561626429479037,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-256",
+      "mode": "cfb8",
+      "key": "theosophic"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.1133250311332503,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "twofish",
+      "mode": "ofb",
+      "key": "bought"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.1133250311332503,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "saferplus",
+      "mode": "ofb",
+      "key": "Panophthalmia"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.14819427148194272,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "saferplus",
+      "mode": "cfb8",
+      "key": "sermonless"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.08132147395171538,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "SAULD"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.10460772104607721,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "Instigate"
+     }
+    },
+    "frac.octal": {
+     "value": 0.07115628970775095,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "SAULD"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.0940279542566709,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-256",
+      "mode": "ofb",
+      "key": "Superstratum"
+     }
+    },
+    "frac.binary": {
+     "value": 0.029593094944512947,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "NIGHTCAPPED"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.05977584059775841,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "PRISMATOIDAL"
+     }
+    },
+    "frac.base32": {
+     "value": 0.2034525277435265,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Absorbingly"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.17153748411689962,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "FLINGER"
+     }
+    },
+    "frac.printable": {
+     "value": 0.4784217016029593,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "aptiana"
+     }
+    },
+    "run.base64std": {
+     "value": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "Automatical"
+     }
+    },
+    "run.base64url": {
+     "value": 18,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Polychromatic"
+     }
+    },
+    "run.hexupper": {
+     "value": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "POLYPHYLETIC"
+     }
+    },
+    "run.hexlower": {
+     "value": 10,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "MILDLY"
+     }
+    },
+    "run.hexmixed": {
+     "value": 10,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "MILDLY"
+     }
+    },
+    "run.decimal": {
+     "value": 7,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "TETRABROMIDE"
+     }
+    },
+    "run.decimalsep": {
+     "value": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "Tjosite"
+     }
+    },
+    "run.octal": {
+     "value": 7,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "INTERRUPTIBLE"
+     }
+    },
+    "run.octalsep": {
+     "value": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "Tjosite"
+     }
+    },
+    "run.binary": {
+     "value": 4,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "ALPHONIST"
+     }
+    },
+    "run.binarysep": {
+     "value": 7,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "irrepair"
+     }
+    },
+    "run.base32": {
+     "value": 11,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "DESPERATENESS"
+     }
+    },
+    "run.upperspace": {
+     "value": 11,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-256",
+      "mode": "cfb8",
+      "key": "Rewash"
+     }
+    },
+    "run.printable": {
+     "value": 23,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "WRASSE"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 24,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "heaveless"
+     },
+     "printableFrac": 0.3933415536374846
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "WRASSE"
+     },
+     "printableFrac": 0.41263940520446096
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "GUIDE"
+     },
+     "printableFrac": 0.40099626400996263
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "Uncunningly"
+     },
+     "printableFrac": 0.4007398273736128
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "semicubit"
+     },
+     "printableFrac": 0.3965303593556382
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "synthesization"
+     },
+     "printableFrac": 0.38909541511771994
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "wynn"
+     },
+     "printableFrac": 0.38964241676942046
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "tepee"
+     },
+     "printableFrac": 0.4155363748458693
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "Kulturkampf"
+     },
+     "printableFrac": 0.4204685573366215
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "AMATERIALISTIC"
+     },
+     "printableFrac": 0.38964241676942046
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "Phrenologically"
+     },
+     "printableFrac": 0.36612702366127026
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "Argent"
+     },
+     "printableFrac": 0.39975093399750933
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "endromididae"
+     },
+     "printableFrac": 0.41168996188055906
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "Unmassed"
+     },
+     "printableFrac": 0.41676942046855736
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "HEADWORKER"
+     },
+     "printableFrac": 0.40197287299630086
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "Proselytistic"
+     },
+     "printableFrac": 0.40846824408468246
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "twofish",
+      "mode": "ofb",
+      "key": "Pliantly"
+     },
+     "printableFrac": 0.3823163138231631
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "lacquer"
+     },
+     "printableFrac": 0.374845869297164
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "Xerophytism"
+     },
+     "printableFrac": 0.41800246609124536
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "Confident"
+     },
+     "printableFrac": 0.39776951672862454
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "alcoholometry"
+     },
+     "printableFrac": 0.4155363748458693
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "BREAKSTONE"
+     },
+     "printableFrac": 0.3834771886559803
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "elderbrotherly"
+     },
+     "printableFrac": 0.3797780517879161
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "WARBLE"
+     },
+     "printableFrac": 0.3871763255240444
+    },
+    {
+     "v": 21,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "interosculate"
+     },
+     "printableFrac": 0.4315659679408138
+    }
+   ]
+  },
+  {
+   "reading": "bytePairReversed",
+   "label": "REAL",
+   "trials": 56373360,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 25,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "LEROT"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.48941469489414696,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "multilinear"
+     }
+    },
+    "printableFrac": {
+     "value": 0.48194271481942713,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "multilinear"
+     }
+    },
+    "small_1_26": {
+     "value": 0.15974842767295597,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "DAZEMENT"
+     }
+    },
+    "small_0_31": {
+     "value": 0.19235511713933415,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "JALAPIN"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.3412204234122042,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "magot"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.3449564134495641,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "magot"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.1169811320754717,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "TRILITERALLY"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.11320754716981132,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "Celtiberi"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.14796547472256474,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "dipsacaceous"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.08138101109741061,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "FROSTPROOFING"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.10585305105853052,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "serpent",
+      "mode": "ctr",
+      "key": "AMYLOSYNTHESIS"
+     }
+    },
+    "frac.octal": {
+     "value": 0.07151664611590629,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "Auscultoscope"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.093711467324291,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "Salicorn"
+     }
+    },
+    "frac.binary": {
+     "value": 0.031133250311332503,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "PERUSE"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.058530510585305104,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "nondiagnosis"
+     }
+    },
+    "frac.base32": {
+     "value": 0.20098643649815043,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "unprovidently"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.17861635220125785,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "Unjovially"
+     }
+    },
+    "frac.printable": {
+     "value": 0.48194271481942713,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "multilinear"
+     }
+    },
+    "run.base64std": {
+     "value": 19,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "DISROBEMENT"
+     }
+    },
+    "run.base64url": {
+     "value": 19,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "protype"
+     }
+    },
+    "run.hexupper": {
+     "value": 8,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "UNQUEENED"
+     }
+    },
+    "run.hexlower": {
+     "value": 9,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "protorosauroid"
+     }
+    },
+    "run.hexmixed": {
+     "value": 11,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "Thioarsenate"
+     }
+    },
+    "run.decimal": {
+     "value": 7,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "CRAPS"
+     }
+    },
+    "run.decimalsep": {
+     "value": 8,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "ladylikely"
+     }
+    },
+    "run.octal": {
+     "value": 7,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "CRAPS"
+     }
+    },
+    "run.octalsep": {
+     "value": 7,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "CRAPS"
+     }
+    },
+    "run.binary": {
+     "value": 5,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "perspiry"
+     }
+    },
+    "run.binarysep": {
+     "value": 6,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "Benzidine"
+     }
+    },
+    "run.base32": {
+     "value": 11,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "Pictoradiogram"
+     }
+    },
+    "run.upperspace": {
+     "value": 10,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "ANTENNATE"
+     }
+    },
+    "run.printable": {
+     "value": 25,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "LEROT"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 25,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "LEROT"
+     },
+     "printableFrac": 0.3921085080147966
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Monogenetica"
+     },
+     "printableFrac": 0.4315659679408138
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "triphysite"
+     },
+     "printableFrac": 0.41060419235511714
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "BARUCH"
+     },
+     "printableFrac": 0.3987421383647799
+    },
+    {
+     "v": 24,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-128",
+      "mode": "cfb8",
+      "key": "perishment"
+     },
+     "printableFrac": 0.3810110974106042
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "Euonymous"
+     },
+     "printableFrac": 0.3711467324290999
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "sparterie"
+     },
+     "printableFrac": 0.406905055487053
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "Preadmirer"
+     },
+     "printableFrac": 0.39457459926017263
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "GEOPONIC"
+     },
+     "printableFrac": 0.4254007398273736
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "GEOPONICAL"
+     },
+     "printableFrac": 0.4254007398273736
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "GEOPONICS"
+     },
+     "printableFrac": 0.4254007398273736
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "disconsideration"
+     },
+     "printableFrac": 0.398505603985056
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "SENDER"
+     },
+     "printableFrac": 0.40846824408468246
+    },
+    {
+     "v": 23,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "enigma",
+      "mode": "stream",
+      "key": "UNFRIABLE"
+     },
+     "printableFrac": 0.4017094017094017
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "jerryism"
+     },
+     "printableFrac": 0.40148698884758366
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "Schottische"
+     },
+     "printableFrac": 0.3723797780517879
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "Rickets"
+     },
+     "printableFrac": 0.374845869297164
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "BACKBONE"
+     },
+     "printableFrac": 0.39476961394769616
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "Brede"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "Breed"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "Creed"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "Brede"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "Breed"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "Creed"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 22,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "puckerbush"
+     },
+     "printableFrac": 0.37858032378580325
+    }
+   ]
+  }
+ ]
+}

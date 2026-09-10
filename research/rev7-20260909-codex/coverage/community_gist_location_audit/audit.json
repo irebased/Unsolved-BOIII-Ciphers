@@ -1,0 +1,202 @@
+{
+  "canonical_ciphertext_read_for_comparison": true,
+  "gist": {
+    "bytes": 8830,
+    "filename": "base64_rot13.py",
+    "gist_id": "8a8f4109ae19210d18435914265f220e",
+    "git_blob_sha1": "c4cba8cb993746b99d1ce96226b35efb38194191",
+    "owner": "redknight99",
+    "revision": {
+      "author_date": "2020-01-09T15:28:35-08:00",
+      "commit": "cc559bba7406ed8489eaaf2f9a5481d5fd500bc2",
+      "committer_date": "2020-01-09T15:28:35-08:00"
+    },
+    "revision_count": 2,
+    "sha256": "e800836503c2d9da327dd8a0c8efdea7f0e677910b4e432b35e6a4a98b827426",
+    "urls": {
+      "immutable_raw": "https://gist.githubusercontent.com/redknight99/8a8f4109ae19210d18435914265f220e/raw/cc559bba7406ed8489eaaf2f9a5481d5fd500bc2/base64_rot13.py",
+      "page": "https://gist.github.com/redknight99/8a8f4109ae19210d18435914265f220e"
+    }
+  },
+  "history_inventory": {
+    "dataset": {
+      "matches": [],
+      "path": "../../../../lavender/src/data/ciphers/revelations.json",
+      "sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e"
+    },
+    "latest_comments": {
+      "matches": [
+        {
+          "line": 7,
+          "terms": [
+            "Origins mound"
+          ],
+          "text": "      \"body\": \"## Rev 7: full cipher reference and research breakdown\\n\\n**Status: unsolved in the investigation summarized here. No plaintext, key, or intermediate encryption layer has been validated.** This comment supplements the issue's experiment update with the underlying puzzle, evidence, and research map. Completed-search statements below summarize the saved investigation record; this posting does not represent a fresh rerun of those searches or an exhaustive survey of every community attempt.\\n\\n### 1. Identity and source\\n\\n- **Game/map:** Call of Duty: Black Ops III, Revelations.\\n- **Location:** by the Origins mound.\\n- **Label:** Rev 7 / Revelations 7 in this repository. Numbering can differ between community sources, so identify the cipher by its ciphertext as well.\\n- **Primary transcription reference:** [repository cipher page source](https://github.com/irebased/Unsolved-BOIII-Ciphers/blob/main/lavender/src/content/docs/ciphers/bo3/rev/rev7.mdx).\\n- **Image/reference history:** [raw texture](https://i.imgur.com/nDrJx9X.jpg) and [2016 discovery thread](https://www.reddit.com/r/CODZombies/comments/51tw4k/cipher_in_the_origins_part_of_revelations_hd/).\\n\\nThe earlier investigation reports a complete row-by-row comparison against the raw texture with no transcription discrepancy. Apparent duplicate characters in an in-game screenshot were absent from that texture. For this comment, the repository transcription's length, grouping, and symbol counts were independently recalculated.\\n\\n### 2. Complete ciphertext\\n\\nThis preserves the repository's texture orientation and line breaks:\\n\\n```text\\n83 B57B2 C3434 697F6 FCA3F 8EAD6 63C42 B7F20 041B5 B6A0D A4AE0 AD24B 93B27 FF54C\\n6E79A 1136E 36860 C69C7 2D497 CDC98 2D49C D25B3 FCB36 D934C F0D31 512AF A78E6 26FFD\\n81CAC AAED6 226DA CD449 86768 3A2E0 B9E64 406C6 10C14 04907 51A9D 4A5F2 4475C 91C91\\n9AE5E 89D79 477DB 2B29C 5444D EA362 54E94 A14A7 58C42 096FE BD177 739B3 A4185 6272A\\nD9A2F 9554F 80E68 504F9 2451C 27D00 68013 8373A FB6C2 91439 F7E83 A7F12 1E56C 99646\\n74046 2623C CF85C 2D87A ABE63 1F4D3 FABA7 5E003 D64F4 D4F50 04919 CB2BE 566D9 6C7E2\\nE2123 7B0EE E030E CF5A7 E383C 217F0 3590A 3DC0A 617B1 778E7 BD434 0BA62 24F29 B213B\\nC390D ED68D 7FB60 21BFD E9CD9 69C5D DF57F 1E3B3 E4BFA E9630 7A3B2 FB559 4A8F3 520AE\\nB7760 0ED80 6BDF4 76CA1 31844 879C3 81DCA 6B9A4 F3168 53F6B 1C15D FE58A 9007C CE75D\\n97CC9 FD74D 95B1E 66957 6CE78 EC9B1 BDBD4 51768 FBA8F F5B36 1DA93 7800B 7822D 8332E\\nEB388 4262A A9D57 C829C 329F9 2FFAC BB3AE A9042 CD610 64631 F3C8B 6B05F 2DD79 FF30E\\nA845E B9A74 DC3DB 9B86D 5AC11 F9ACA C0D84 352ED C149F 5A53E E6D13 FF408 E65EC\\n1B9EC F2413 1C3F9 54649 2303F E2A1A A5E3D E8EF4 4FB4E 0C8BD 7FBBD 5DD75 6A8F5 A92FE\\n2E330 DF116 7E2AD 03175 6EA4B 1C85C 36F4F 9BDE6 06624 2EC70 9B190 6C126 72174 5A5F5\\n880E8 92691 E9881 D59C6 62276 4400D EE4EC 37527 88749 66860 AEF41 499D9 5B5EC F4559\\nEF642 50488 962F2 D3D23 3862E F7C1E 77554 47DE4 294E1 1A47F\\n```\\n\\nFor computation, remove whitespace only. Preserve the original version separately; do not silently add, delete, or substitute characters.\\n\\n### 3. Structural breakdown\\n\\n| Property | Value |\\n|---|---|\\n| Whitespace-free length | 1,092 symbols |\\n| Alphabet | All sixteen symbols 0\u20139 and A\u2013F |\\n| Decimal digit characters / A\u2013F characters | 690 / 402 |\\n| Ordinary paired-hex interpretation | 546 bytes = 4,368 bits |\\n| Display groups | 219: initial `83`, then 218 groups of five |\\n| Display rows | 16 |\\n| Groups per row | 14,14,14,14,14,14,14,14,14,14,14,13,14,14,14,10 |\\n| Texture orientation | Starts `83 B57B2`; ends `294E1 1A47F` |\\n| Full character reversal | Starts `F74A1`; ends `38` |\\n| Hex-symbol index of coincidence | 0.0623902526; uniform sixteen-symbol reference is 0.0625 |\\n\\nThe symbol counts are:\\n\\n| Symbol | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C | D | E | F |\\n|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\\n| Count | 58 | 61 | 71 | 70 | 83 | 64 | 81 | 69 | 57 | 76 | 64 | 59 | 66 | 69 | 73 | 71 |\\n\\nThe near-uniform hex-symbol IoC does not identify a cipher. Numeral conversion and multilayer classical constructions can also obscure language frequencies.\\n\\n**Why reversal is plausible:** ordinary grouping into fives leaves a two-symbol remainder at the end. Reversal moves that remainder to the beginning, matching the visible `83`. This is a formatting clue, not proof: right-aligned grouping or other processing could produce the same partition. The short twelfth row is real but does not establish missing ciphertext.\\n\\nKeep these operations distinct:\\n\\n| Operation | Example on `123456` |\\n|---|---|\\n| Full symbol reversal | `654321` |\\n| Reverse the order of byte pairs | `563412` |\\n| Swap the two nibbles within each byte | `214365` |\\n\\nThe four direct orientations used in many tests are the original plus these three variants.\\n\\n### 4. What the length does\u2014and does not\u2014tell us\\n\\n\u201c546 bytes\u201d assumes pairs of hex symbols represent bytes. A whole-integer base conversion, variable-width character representation, or coordinate alphabet need not preserve that interpretation.\\n\\nUnder ordinary paired-hex decoding:\\n\\n- 546 leaves remainder 2 modulo 4, 8, and 16.\\n- It cannot be an **unchanged standard whole-message XXTEA word array**, whose length is a multiple of four bytes.\\n- It likewise is not an unchanged sequence of complete 8- or 16-byte ECB/CBC blocks without some additional framing, truncation, or transformation.\\n- Stream and feedback modes do not generally impose the same whole-block ciphertext-length requirement.\\n\\nThese are representation-specific facts. They do not exclude XXTEA, AES, or another block cipher deeper inside a chain. They also do not justify \u201crepairing\u201d the ciphertext by default.\\n\\n### 5. A key-independent constraint on direct hex-to-text\\n\\nAny sequence of global bijective hex substitutions and symbol transpositions preserves the sorted frequency counts.\\n\\nIf the endpoint is paired-hex decoding into TAB, LF, CR, or ASCII 32\u2013126, every high nibble must occupy one of seven symbol classes. We need **546** high nibbles, but the seven most frequent input symbols total only **525**.\\n\\nTherefore **at least 21 decoded bytes must lie outside that allowed text set**, even after arbitrary reordering and an unknown global bijective hex alphabet.\\n\\nThis excludes a complete allowed-ASCII endpoint for that exact model. It does **not** exclude classical encryption, whole-number conversion, position-dependent alphabets, Unicode, altered length, or another layer. It also does not by itself reject a recognizer that allows 27 non-ASCII bytes.\","
+        }
+      ],
+      "path": "../../latest-comments.json",
+      "sha256": "493c657cb1fd8c33ddf028734464953b1847afcee84ba93dc528dbf926d09597"
+    },
+    "mdx": {
+      "matches": [
+        {
+          "line": 40,
+          "terms": [
+            "Origins mound"
+          ],
+          "text": "| Location | By the Origins mound |"
+        }
+      ],
+      "path": "../../../../lavender/src/content/docs/ciphers/bo3/rev/rev7.mdx",
+      "sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91"
+    },
+    "motd": {
+      "matches": [
+        {
+          "line": 22,
+          "terms": [
+            "MOBOFTHEDEADABCD"
+          ],
+          "text": "          \"key\": \"MOBOFTHEDEADABCD\""
+        },
+        {
+          "line": 47,
+          "terms": [
+            "MOBOFTHEDEADABCD"
+          ],
+          "text": "          \"key\": \"MOBOFTHEDEADABCD\""
+        },
+        {
+          "line": 72,
+          "terms": [
+            "MOBOFTHEDEADABCD"
+          ],
+          "text": "          \"key\": \"MOBOFTHEDEADABCD\""
+        },
+        {
+          "line": 97,
+          "terms": [
+            "MOBOFTHEDEADABCD"
+          ],
+          "text": "          \"key\": \"MOBOFTHEDEADABCD\""
+        }
+      ],
+      "path": "../../../../lavender/src/data/ciphers/motd.json",
+      "sha256": "46cffe0f38c334ada345fd5b614f23392322a9538ad54acf6ca9099e0d9cc43b"
+    },
+    "notebook": {
+      "matches": [
+        {
+          "line": 53,
+          "terms": [
+            "Origins mound"
+          ],
+          "text": "      \"body\": \"## Rev 7: full cipher reference and research breakdown\\n\\n**Status: unsolved in the investigation summarized here. No plaintext, key, or intermediate encryption layer has been validated.** This comment supplements the issue's experiment update with the underlying puzzle, evidence, and research map. Completed-search statements below summarize the saved investigation record; this posting does not represent a fresh rerun of those searches or an exhaustive survey of every community attempt.\\n\\n### 1. Identity and source\\n\\n- **Game/map:** Call of Duty: Black Ops III, Revelations.\\n- **Location:** by the Origins mound.\\n- **Label:** Rev 7 / Revelations 7 in this repository. Numbering can differ between community sources, so identify the cipher by its ciphertext as well.\\n- **Primary transcription reference:** [repository cipher page source](https://github.com/irebased/Unsolved-BOIII-Ciphers/blob/main/lavender/src/content/docs/ciphers/bo3/rev/rev7.mdx).\\n- **Image/reference history:** [raw texture](https://i.imgur.com/nDrJx9X.jpg) and [2016 discovery thread](https://www.reddit.com/r/CODZombies/comments/51tw4k/cipher_in_the_origins_part_of_revelations_hd/).\\n\\nThe earlier investigation reports a complete row-by-row comparison against the raw texture with no transcription discrepancy. Apparent duplicate characters in an in-game screenshot were absent from that texture. For this comment, the repository transcription's length, grouping, and symbol counts were independently recalculated.\\n\\n### 2. Complete ciphertext\\n\\nThis preserves the repository's texture orientation and line breaks:\\n\\n```text\\n83 B57B2 C3434 697F6 FCA3F 8EAD6 63C42 B7F20 041B5 B6A0D A4AE0 AD24B 93B27 FF54C\\n6E79A 1136E 36860 C69C7 2D497 CDC98 2D49C D25B3 FCB36 D934C F0D31 512AF A78E6 26FFD\\n81CAC AAED6 226DA CD449 86768 3A2E0 B9E64 406C6 10C14 04907 51A9D 4A5F2 4475C 91C91\\n9AE5E 89D79 477DB 2B29C 5444D EA362 54E94 A14A7 58C42 096FE BD177 739B3 A4185 6272A\\nD9A2F 9554F 80E68 504F9 2451C 27D00 68013 8373A FB6C2 91439 F7E83 A7F12 1E56C 99646\\n74046 2623C CF85C 2D87A ABE63 1F4D3 FABA7 5E003 D64F4 D4F50 04919 CB2BE 566D9 6C7E2\\nE2123 7B0EE E030E CF5A7 E383C 217F0 3590A 3DC0A 617B1 778E7 BD434 0BA62 24F29 B213B\\nC390D ED68D 7FB60 21BFD E9CD9 69C5D DF57F 1E3B3 E4BFA E9630 7A3B2 FB559 4A8F3 520AE\\nB7760 0ED80 6BDF4 76CA1 31844 879C3 81DCA 6B9A4 F3168 53F6B 1C15D FE58A 9007C CE75D\\n97CC9 FD74D 95B1E 66957 6CE78 EC9B1 BDBD4 51768 FBA8F F5B36 1DA93 7800B 7822D 8332E\\nEB388 4262A A9D57 C829C 329F9 2FFAC BB3AE A9042 CD610 64631 F3C8B 6B05F 2DD79 FF30E\\nA845E B9A74 DC3DB 9B86D 5AC11 F9ACA C0D84 352ED C149F 5A53E E6D13 FF408 E65EC\\n1B9EC F2413 1C3F9 54649 2303F E2A1A A5E3D E8EF4 4FB4E 0C8BD 7FBBD 5DD75 6A8F5 A92FE\\n2E330 DF116 7E2AD 03175 6EA4B 1C85C 36F4F 9BDE6 06624 2EC70 9B190 6C126 72174 5A5F5\\n880E8 92691 E9881 D59C6 62276 4400D EE4EC 37527 88749 66860 AEF41 499D9 5B5EC F4559\\nEF642 50488 962F2 D3D23 3862E F7C1E 77554 47DE4 294E1 1A47F\\n```\\n\\nFor computation, remove whitespace only. Preserve the original version separately; do not silently add, delete, or substitute characters.\\n\\n### 3. Structural breakdown\\n\\n| Property | Value |\\n|---|---|\\n| Whitespace-free length | 1,092 symbols |\\n| Alphabet | All sixteen symbols 0\u20139 and A\u2013F |\\n| Decimal digit characters / A\u2013F characters | 690 / 402 |\\n| Ordinary paired-hex interpretation | 546 bytes = 4,368 bits |\\n| Display groups | 219: initial `83`, then 218 groups of five |\\n| Display rows | 16 |\\n| Groups per row | 14,14,14,14,14,14,14,14,14,14,14,13,14,14,14,10 |\\n| Texture orientation | Starts `83 B57B2`; ends `294E1 1A47F` |\\n| Full character reversal | Starts `F74A1`; ends `38` |\\n| Hex-symbol index of coincidence | 0.0623902526; uniform sixteen-symbol reference is 0.0625 |\\n\\nThe symbol counts are:\\n\\n| Symbol | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C | D | E | F |\\n|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\\n| Count | 58 | 61 | 71 | 70 | 83 | 64 | 81 | 69 | 57 | 76 | 64 | 59 | 66 | 69 | 73 | 71 |\\n\\nThe near-uniform hex-symbol IoC does not identify a cipher. Numeral conversion and multilayer classical constructions can also obscure language frequencies.\\n\\n**Why reversal is plausible:** ordinary grouping into fives leaves a two-symbol remainder at the end. Reversal moves that remainder to the beginning, matching the visible `83`. This is a formatting clue, not proof: right-aligned grouping or other processing could produce the same partition. The short twelfth row is real but does not establish missing ciphertext.\\n\\nKeep these operations distinct:\\n\\n| Operation | Example on `123456` |\\n|---|---|\\n| Full symbol reversal | `654321` |\\n| Reverse the order of byte pairs | `563412` |\\n| Swap the two nibbles within each byte | `214365` |\\n\\nThe four direct orientations used in many tests are the original plus these three variants.\\n\\n### 4. What the length does\u2014and does not\u2014tell us\\n\\n\u201c546 bytes\u201d assumes pairs of hex symbols represent bytes. A whole-integer base conversion, variable-width character representation, or coordinate alphabet need not preserve that interpretation.\\n\\nUnder ordinary paired-hex decoding:\\n\\n- 546 leaves remainder 2 modulo 4, 8, and 16.\\n- It cannot be an **unchanged standard whole-message XXTEA word array**, whose length is a multiple of four bytes.\\n- It likewise is not an unchanged sequence of complete 8- or 16-byte ECB/CBC blocks without some additional framing, truncation, or transformation.\\n- Stream and feedback modes do not generally impose the same whole-block ciphertext-length requirement.\\n\\nThese are representation-specific facts. They do not exclude XXTEA, AES, or another block cipher deeper inside a chain. They also do not justify \u201crepairing\u201d the ciphertext by default.\\n\\n### 5. A key-independent constraint on direct hex-to-text\\n\\nAny sequence of global bijective hex substitutions and symbol transpositions preserves the sorted frequency counts.\\n\\nIf the endpoint is paired-hex decoding into TAB, LF, CR, or ASCII 32\u2013126, every high nibble must occupy one of seven symbol classes. We need **546** high nibbles, but the seven most frequent input symbols total only **525**.\\n\\nTherefore **at least 21 decoded bytes must lie outside that allowed text set**, even after arbitrary reordering and an unknown global bijective hex alphabet.\\n\\nThis excludes a complete allowed-ASCII endpoint for that exact model. It does **not** exclude classical encryption, whole-number conversion, position-dependent alphabets, Unicode, altered length, or another layer. It also does not by itself reject a recognizer that allows 27 non-ASCII bytes.\","
+        },
+        {
+          "line": 71,
+          "terms": [
+            "Origins mound"
+          ],
+          "text": "      \"body_html\": \"<h2 dir=\\\"auto\\\">Rev 7: full cipher reference and research breakdown</h2>\\n<p dir=\\\"auto\\\"><strong>Status: unsolved in the investigation summarized here. No plaintext, key, or intermediate encryption layer has been validated.</strong> This comment supplements the issue's experiment update with the underlying puzzle, evidence, and research map. Completed-search statements below summarize the saved investigation record; this posting does not represent a fresh rerun of those searches or an exhaustive survey of every community attempt.</p>\\n<h3 dir=\\\"auto\\\">1. Identity and source</h3>\\n<ul dir=\\\"auto\\\">\\n<li><strong>Game/map:</strong> Call of Duty: Black Ops III, Revelations.</li>\\n<li><strong>Location:</strong> by the Origins mound.</li>\\n<li><strong>Label:</strong> Rev 7 / Revelations 7 in this repository. Numbering can differ between community sources, so identify the cipher by its ciphertext as well.</li>\\n<li><strong>Primary transcription reference:</strong> <a href=\\\"https://github.com/irebased/Unsolved-BOIII-Ciphers/blob/main/lavender/src/content/docs/ciphers/bo3/rev/rev7.mdx\\\">repository cipher page source</a>.</li>\\n<li><strong>Image/reference history:</strong> <a href=\\\"https://i.imgur.com/nDrJx9X.jpg\\\" rel=\\\"nofollow\\\">raw texture</a> and <a href=\\\"https://www.reddit.com/r/CODZombies/comments/51tw4k/cipher_in_the_origins_part_of_revelations_hd/\\\" rel=\\\"nofollow\\\">2016 discovery thread</a>.</li>\\n</ul>\\n<p dir=\\\"auto\\\">The earlier investigation reports a complete row-by-row comparison against the raw texture with no transcription discrepancy. Apparent duplicate characters in an in-game screenshot were absent from that texture. For this comment, the repository transcription's length, grouping, and symbol counts were independently recalculated.</p>\\n<h3 dir=\\\"auto\\\">2. Complete ciphertext</h3>\\n<p dir=\\\"auto\\\">This preserves the repository's texture orientation and line breaks:</p>\\n<div class=\\\"snippet-clipboard-content notranslate position-relative overflow-auto\\\" data-snippet-clipboard-copy-content=\\\"83 B57B2 C3434 697F6 FCA3F 8EAD6 63C42 B7F20 041B5 B6A0D A4AE0 AD24B 93B27 FF54C\\n6E79A 1136E 36860 C69C7 2D497 CDC98 2D49C D25B3 FCB36 D934C F0D31 512AF A78E6 26FFD\\n81CAC AAED6 226DA CD449 86768 3A2E0 B9E64 406C6 10C14 04907 51A9D 4A5F2 4475C 91C91\\n9AE5E 89D79 477DB 2B29C 5444D EA362 54E94 A14A7 58C42 096FE BD177 739B3 A4185 6272A\\nD9A2F 9554F 80E68 504F9 2451C 27D00 68013 8373A FB6C2 91439 F7E83 A7F12 1E56C 99646\\n74046 2623C CF85C 2D87A ABE63 1F4D3 FABA7 5E003 D64F4 D4F50 04919 CB2BE 566D9 6C7E2\\nE2123 7B0EE E030E CF5A7 E383C 217F0 3590A 3DC0A 617B1 778E7 BD434 0BA62 24F29 B213B\\nC390D ED68D 7FB60 21BFD E9CD9 69C5D DF57F 1E3B3 E4BFA E9630 7A3B2 FB559 4A8F3 520AE\\nB7760 0ED80 6BDF4 76CA1 31844 879C3 81DCA 6B9A4 F3168 53F6B 1C15D FE58A 9007C CE75D\\n97CC9 FD74D 95B1E 66957 6CE78 EC9B1 BDBD4 51768 FBA8F F5B36 1DA93 7800B 7822D 8332E\\nEB388 4262A A9D57 C829C 329F9 2FFAC BB3AE A9042 CD610 64631 F3C8B 6B05F 2DD79 FF30E\\nA845E B9A74 DC3DB 9B86D 5AC11 F9ACA C0D84 352ED C149F 5A53E E6D13 FF408 E65EC\\n1B9EC F2413 1C3F9 54649 2303F E2A1A A5E3D E8EF4 4FB4E 0C8BD 7FBBD 5DD75 6A8F5 A92FE\\n2E330 DF116 7E2AD 03175 6EA4B 1C85C 36F4F 9BDE6 06624 2EC70 9B190 6C126 72174 5A5F5\\n880E8 92691 E9881 D59C6 62276 4400D EE4EC 37527 88749 66860 AEF41 499D9 5B5EC F4559\\nEF642 50488 962F2 D3D23 3862E F7C1E 77554 47DE4 294E1 1A47F\\\"><pre lang=\\\"text\\\" class=\\\"notranslate\\\"><code class=\\\"notranslate\\\">83 B57B2 C3434 697F6 FCA3F 8EAD6 63C42 B7F20 041B5 B6A0D A4AE0 AD24B 93B27 FF54C\\n6E79A 1136E 36860 C69C7 2D497 CDC98 2D49C D25B3 FCB36 D934C F0D31 512AF A78E6 26FFD\\n81CAC AAED6 226DA CD449 86768 3A2E0 B9E64 406C6 10C14 04907 51A9D 4A5F2 4475C 91C91\\n9AE5E 89D79 477DB 2B29C 5444D EA362 54E94 A14A7 58C42 096FE BD177 739B3 A4185 6272A\\nD9A2F 9554F 80E68 504F9 2451C 27D00 68013 8373A FB6C2 91439 F7E83 A7F12 1E56C 99646\\n74046 2623C CF85C 2D87A ABE63 1F4D3 FABA7 5E003 D64F4 D4F50 04919 CB2BE 566D9 6C7E2\\nE2123 7B0EE E030E CF5A7 E383C 217F0 3590A 3DC0A 617B1 778E7 BD434 0BA62 24F29 B213B\\nC390D ED68D 7FB60 21BFD E9CD9 69C5D DF57F 1E3B3 E4BFA E9630 7A3B2 FB559 4A8F3 520AE\\nB7760 0ED80 6BDF4 76CA1 31844 879C3 81DCA 6B9A4 F3168 53F6B 1C15D FE58A 9007C CE75D\\n97CC9 FD74D 95B1E 66957 6CE78 EC9B1 BDBD4 51768 FBA8F F5B36 1DA93 7800B 7822D 8332E\\nEB388 4262A A9D57 C829C 329F9 2FFAC BB3AE A9042 CD610 64631 F3C8B 6B05F 2DD79 FF30E\\nA845E B9A74 DC3DB 9B86D 5AC11 F9ACA C0D84 352ED C149F 5A53E E6D13 FF408 E65EC\\n1B9EC F2413 1C3F9 54649 2303F E2A1A A5E3D E8EF4 4FB4E 0C8BD 7FBBD 5DD75 6A8F5 A92FE\\n2E330 DF116 7E2AD 03175 6EA4B 1C85C 36F4F 9BDE6 06624 2EC70 9B190 6C126 72174 5A5F5\\n880E8 92691 E9881 D59C6 62276 4400D EE4EC 37527 88749 66860 AEF41 499D9 5B5EC F4559\\nEF642 50488 962F2 D3D23 3862E F7C1E 77554 47DE4 294E1 1A47F\\n</code></pre></div>\\n<p dir=\\\"auto\\\">For computation, remove whitespace only. Preserve the original version separately; do not silently add, delete, or substitute characters.</p>\\n<h3 dir=\\\"auto\\\">3. Structural breakdown</h3>\\n<markdown-accessiblity-table><table role=\\\"table\\\">\\n<thead>\\n<tr>\\n<th>Property</th>\\n<th>Value</th>\\n</tr>\\n</thead>\\n<tbody>\\n<tr>\\n<td>Whitespace-free length</td>\\n<td>1,092 symbols</td>\\n</tr>\\n<tr>\\n<td>Alphabet</td>\\n<td>All sixteen symbols 0\u20139 and A\u2013F</td>\\n</tr>\\n<tr>\\n<td>Decimal digit characters / A\u2013F characters</td>\\n<td>690 / 402</td>\\n</tr>\\n<tr>\\n<td>Ordinary paired-hex interpretation</td>\\n<td>546 bytes = 4,368 bits</td>\\n</tr>\\n<tr>\\n<td>Display groups</td>\\n<td>219: initial <code class=\\\"notranslate\\\">83</code>, then 218 groups of five</td>\\n</tr>\\n<tr>\\n<td>Display rows</td>\\n<td>16</td>\\n</tr>\\n<tr>\\n<td>Groups per row</td>\\n<td>14,14,14,14,14,14,14,14,14,14,14,13,14,14,14,10</td>\\n</tr>\\n<tr>\\n<td>Texture orientation</td>\\n<td>Starts <code class=\\\"notranslate\\\">83 B57B2</code>; ends <code class=\\\"notranslate\\\">294E1 1A47F</code></td>\\n</tr>\\n<tr>\\n<td>Full character reversal</td>\\n<td>Starts <code class=\\\"notranslate\\\">F74A1</code>; ends <code class=\\\"notranslate\\\">38</code></td>\\n</tr>\\n<tr>\\n<td>Hex-symbol index of coincidence</td>\\n<td>0.0623902526; uniform sixteen-symbol reference is 0.0625</td>\\n</tr>\\n</tbody>\\n</table></markdown-accessiblity-table>\\n<p dir=\\\"auto\\\">The symbol counts are:</p>\\n<markdown-accessiblity-table><table role=\\\"table\\\">\\n<thead>\\n<tr>\\n<th>Symbol</th>\\n<th align=\\\"right\\\">0</th>\\n<th align=\\\"right\\\">1</th>\\n<th align=\\\"right\\\">2</th>\\n<th align=\\\"right\\\">3</th>\\n<th align=\\\"right\\\">4</th>\\n<th align=\\\"right\\\">5</th>\\n<th align=\\\"right\\\">6</th>\\n<th align=\\\"right\\\">7</th>\\n<th align=\\\"right\\\">8</th>\\n<th align=\\\"right\\\">9</th>\\n<th align=\\\"right\\\">A</th>\\n<th align=\\\"right\\\">B</th>\\n<th align=\\\"right\\\">C</th>\\n<th align=\\\"right\\\">D</th>\\n<th align=\\\"right\\\">E</th>\\n<th align=\\\"right\\\">F</th>\\n</tr>\\n</thead>\\n<tbody>\\n<tr>\\n<td>Count</td>\\n<td align=\\\"right\\\">58</td>\\n<td align=\\\"right\\\">61</td>\\n<td align=\\\"right\\\">71</td>\\n<td align=\\\"right\\\">70</td>\\n<td align=\\\"right\\\">83</td>\\n<td align=\\\"right\\\">64</td>\\n<td align=\\\"right\\\">81</td>\\n<td align=\\\"right\\\">69</td>\\n<td align=\\\"right\\\">57</td>\\n<td align=\\\"right\\\">76</td>\\n<td align=\\\"right\\\">64</td>\\n<td align=\\\"right\\\">59</td>\\n<td align=\\\"right\\\">66</td>\\n<td align=\\\"right\\\">69</td>\\n<td align=\\\"right\\\">73</td>\\n<td align=\\\"right\\\">71</td>\\n</tr>\\n</tbody>\\n</table></markdown-accessiblity-table>\\n<p dir=\\\"auto\\\">The near-uniform hex-symbol IoC does not identify a cipher. Numeral conversion and multilayer classical constructions can also obscure language frequencies.</p>\\n<p dir=\\\"auto\\\"><strong>Why reversal is plausible:</strong> ordinary grouping into fives leaves a two-symbol remainder at the end. Reversal moves that remainder to the beginning, matching the visible <code class=\\\"notranslate\\\">83</code>. This is a formatting clue, not proof: right-aligned grouping or other processing could produce the same partition. The short twelfth row is real but does not establish missing ciphertext.</p>\\n<p dir=\\\"auto\\\">Keep these operations distinct:</p>\\n<markdown-accessiblity-table><table role=\\\"table\\\">\\n<thead>\\n<tr>\\n<th>Operation</th>\\n<th>Example on <code class=\\\"notranslate\\\">123456</code></th>\\n</tr>\\n</thead>\\n<tbody>\\n<tr>\\n<td>Full symbol reversal</td>\\n<td><code class=\\\"notranslate\\\">654321</code></td>\\n</tr>\\n<tr>\\n<td>Reverse the order of byte pairs</td>\\n<td><code class=\\\"notranslate\\\">563412</code></td>\\n</tr>\\n<tr>\\n<td>Swap the two nibbles within each byte</td>\\n<td><code class=\\\"notranslate\\\">214365</code></td>\\n</tr>\\n</tbody>\\n</table></markdown-accessiblity-table>\\n<p dir=\\\"auto\\\">The four direct orientations used in many tests are the original plus these three variants.</p>\\n<h3 dir=\\\"auto\\\">4. What the length does\u2014and does not\u2014tell us</h3>\\n<p dir=\\\"auto\\\">\u201c546 bytes\u201d assumes pairs of hex symbols represent bytes. A whole-integer base conversion, variable-width character representation, or coordinate alphabet need not preserve that interpretation.</p>\\n<p dir=\\\"auto\\\">Under ordinary paired-hex decoding:</p>\\n<ul dir=\\\"auto\\\">\\n<li>546 leaves remainder 2 modulo 4, 8, and 16.</li>\\n<li>It cannot be an <strong>unchanged standard whole-message XXTEA word array</strong>, whose length is a multiple of four bytes.</li>\\n<li>It likewise is not an unchanged sequence of complete 8- or 16-byte ECB/CBC blocks without some additional framing, truncation, or transformation.</li>\\n<li>Stream and feedback modes do not generally impose the same whole-block ciphertext-length requirement.</li>\\n</ul>\\n<p dir=\\\"auto\\\">These are representation-specific facts. They do not exclude XXTEA, AES, or another block cipher deeper inside a chain. They also do not justify \u201crepairing\u201d the ciphertext by default.</p>\\n<h3 dir=\\\"auto\\\">5. A key-independent constraint on direct hex-to-text</h3>\\n<p dir=\\\"auto\\\">Any sequence of global bijective hex substitutions and symbol transpositions preserves the sorted frequency counts.</p>\\n<p dir=\\\"auto\\\">If the endpoint is paired-hex decoding into TAB, LF, CR, or ASCII 32\u2013126, every high nibble must occupy one of seven symbol classes. We need <strong>546</strong> high nibbles, but the seven most frequent input symbols total only <strong>525</strong>.</p>\\n<p dir=\\\"auto\\\">Therefore <strong>at least 21 decoded bytes must lie outside that allowed text set</strong>, even after arbitrary reordering and an unknown global bijective hex alphabet.</p>\\n<p dir=\\\"auto\\\">This excludes a complete allowed-ASCII endpoint for that exact model. It does <strong>not</strong> exclude classical encryption, whole-number conversion, position-dependent alphabets, Unicode, altered length, or another layer. It also does not by itself reject a recognizer that allows 27 non-ASCII bytes.</p>\""
+        }
+      ],
+      "path": "../../notebook-snapshot.json",
+      "sha256": "ad67d420644b203a8f952d84f93d4755578c079aa9b98952cab8a73ccc3461ab"
+    },
+    "origins": {
+      "matches": [
+        {
+          "line": 20,
+          "terms": [
+            "wewerethereatthebeginningandattheend"
+          ],
+          "text": "          \"key\": \"wewerethereatthebeginningandattheend\""
+        },
+        {
+          "line": 43,
+          "terms": [
+            "wewerethereatthebeginningandattheend"
+          ],
+          "text": "          \"key\": \"wewerethereatthebeginningandattheend\""
+        },
+        {
+          "line": 67,
+          "terms": [
+            "wewerethereatthebeginningandattheend"
+          ],
+          "text": "          \"key\": \"wewerethereatthebeginningandattheend\""
+        },
+        {
+          "line": 90,
+          "terms": [
+            "wewerethereatthebeginningandattheend"
+          ],
+          "text": "          \"key\": \"wewerethereatthebeginningandattheend\""
+        },
+        {
+          "line": 117,
+          "terms": [
+            "INFERNO"
+          ],
+          "text": "          \"key\": \"INFERNO\","
+        }
+      ],
+      "path": "../../../../lavender/src/data/ciphers/origins.json",
+      "sha256": "9bf76c5c0ba7160305a210d220d2724d53a8a2dc1717ab447ec42cc49615379d"
+    }
+  },
+  "identity": "ASTRA",
+  "labels": {
+    "finding": "The exact alias and gist ID were absent from the reviewed prior corpus, but the broader Origins-mound location was already present.",
+    "gist_alias": "Origins_Trench",
+    "gist_number": "Cipher #6",
+    "repository_label": "Rev7 / Revelations 7",
+    "repository_location": "By the Origins mound"
+  },
+  "limits": [
+    "This is a representation, provenance, and local-history audit, not a cipher test.",
+    "The reported 70,656-combination FABLE key sweep is not present in the gist and was not rerun or treated as gist evidence.",
+    "Absence claims apply only to the six pinned local history sources inventoried here."
+  ],
+  "origins_key_spelling": {
+    "captured_keylists_with_here": 0,
+    "captured_keylists_with_there": 4,
+    "documented": "wewerethereatthebeginningandattheend",
+    "documented_length": 36,
+    "evidence_sha256": "c7d050f3609f078bfb72302ee1b1f7ddba36279d693bb08d0daaa8e4cbdf7c75",
+    "exact_unsynced_new_run_keylist_verified": false,
+    "finding": "THERE is consistently documented; 35 characters was a count error.",
+    "suggested_alternative": "wewerehereatthebeginningandattheend",
+    "suggested_alternative_length": 35
+  },
+  "provenance_assessment": {
+    "community_copy_corrobates_exact_tokens": true,
+    "independent_transcription_established": false,
+    "location_scope": "Origins_Trench is the gist author\u2019s alias. It is consistent with the pre-existing Origins-mound description but does not by itself establish exact game coordinates.",
+    "physical_location_verified_from_gist_alone": false,
+    "reason": "The gist links the community Revelations wiki as background and supplies no image-to-text method or capture provenance; identical grouping can reflect a shared upstream transcription."
+  },
+  "representation": {
+    "base64_characters": 1748,
+    "base64_decoded_bytes": 1310,
+    "base64_decoded_sha256": "fcc61fb3dff4bbe1c9eeee63601110f303bb2b19df2f318db58e3693040e6393",
+    "base64_decoded_type": "spaced ASCII hexadecimal text",
+    "binary_bytes_after_additional_hex_decode": 546,
+    "compact_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+    "display_tokens": 219,
+    "exact_token_sequence_matches_dataset": true,
+    "first_token_length": 2,
+    "hex_glyphs_after_whitespace_removal": 1092,
+    "note": "Base64 decoding alone yields 1,310 ASCII bytes. A separate whitespace removal and hex decode yields 546 binary bytes.",
+    "remaining_token_length": 5
+  },
+  "schema": "astra-community-gist-location-audit-v1",
+  "source_hashes": {
+    "audit.py": "08233b7cf17b49af73c3d00105d3ed9cb501b922c767bd697061920b4a6f4e6c",
+    "gist_metadata.json": "897eff01e17b4613ea0de22f5ff609d78a83aa5c4ca432dd37096096e47c8c7b",
+    "key_spelling_evidence.json": "c7d050f3609f078bfb72302ee1b1f7ddba36279d693bb08d0daaa8e4cbdf7c75",
+    "rev7_mdx_git_history.txt": "8245263b7d2cc852d59c30ef20855bb74335a92daaedda4d3ee0bb936d4a0081"
+  },
+  "target_evaluated": false
+}

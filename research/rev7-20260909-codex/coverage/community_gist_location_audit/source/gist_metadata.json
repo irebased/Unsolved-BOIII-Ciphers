@@ -1,0 +1,24 @@
+{
+  "description": "A proof of concept script for attempting to crack the remaining unsolved ciphers of Black Ops3 Zombies Revelations Map.",
+  "filename": "base64_rot13.py",
+  "gist_id": "8a8f4109ae19210d18435914265f220e",
+  "gist_url": "https://gist.github.com/redknight99/8a8f4109ae19210d18435914265f220e",
+  "head_blob_sha1": "c4cba8cb993746b99d1ce96226b35efb38194191",
+  "head_bytes": 8830,
+  "identity": "ASTRA",
+  "immutable_raw_url": "https://gist.githubusercontent.com/redknight99/8a8f4109ae19210d18435914265f220e/raw/cc559bba7406ed8489eaaf2f9a5481d5fd500bc2/base64_rot13.py",
+  "owner": "redknight99",
+  "retrieval_command": "git clone https://gist.github.com/8a8f4109ae19210d18435914265f220e.git /private/tmp/astra-community-gist-20260910",
+  "revisions": [
+    {
+      "author_date": "2020-01-09T15:26:56-08:00",
+      "commit": "4370e4f0cb74122c5994353ab90e4c9597cdec02",
+      "committer_date": "2020-01-09T15:26:56-08:00"
+    },
+    {
+      "author_date": "2020-01-09T15:28:35-08:00",
+      "commit": "cc559bba7406ed8489eaaf2f9a5481d5fd500bc2",
+      "committer_date": "2020-01-09T15:28:35-08:00"
+    }
+  ]
+}

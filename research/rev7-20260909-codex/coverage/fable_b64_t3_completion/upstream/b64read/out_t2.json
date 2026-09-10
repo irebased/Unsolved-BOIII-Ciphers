@@ -1,0 +1,3917 @@
+{
+ "meta": {
+  "tier": "t2",
+  "nKeys": 2338,
+  "targets": [
+   "REAL:displayed",
+   "REAL:fullReversed",
+   "REAL:bytePairReversed",
+   "REAL:nibbleSwap",
+   "REAL:lowercased",
+   "NEG:random_hexalpha",
+   "POS:plant_twofish_cfb8_Zombies"
+  ],
+  "seconds": 11.05
+ },
+ "results": [
+  {
+   "reading": "displayed",
+   "label": "REAL",
+   "trials": 187040,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 20,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "And_go"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.45869297163995065,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "hope"
+     }
+    },
+    "printableFrac": {
+     "value": 0.45869297163995065,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "hope"
+     }
+    },
+    "small_1_26": {
+     "value": 0.1504315659679408,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "THAT_GODDAMN"
+     }
+    },
+    "small_0_31": {
+     "value": 0.18618988902589395,
+     "params": {
+      "reading": "displayed",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "They"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.3270440251572327,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "WAS_THE"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.33081761006289306,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "WAS_THE"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.1060419235511714,
+     "params": {
+      "reading": "displayed",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "s_time"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.10585305105853052,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "am_sure"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.13449564134495642,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "IT_LOOKS"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.07421383647798742,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "forages"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.09559748427672957,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "forages"
+     }
+    },
+    "frac.octal": {
+     "value": 0.06415094339622641,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "forages"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.08553459119496855,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "forages"
+     }
+    },
+    "frac.binary": {
+     "value": 0.024906600249066,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "slowly"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.049813200498132,
+     "params": {
+      "reading": "displayed",
+      "cipher": "twofish",
+      "mode": "ctr",
+      "key": "sudden"
+     }
+    },
+    "frac.base32": {
+     "value": 0.18181818181818182,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "THAT GODDAMN"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.1569115815691158,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "WHEN"
+     }
+    },
+    "frac.printable": {
+     "value": 0.45869297163995065,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "hope"
+     }
+    },
+    "run.base64std": {
+     "value": 13,
+     "params": {
+      "reading": "displayed",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "Lake"
+     }
+    },
+    "run.base64url": {
+     "value": 13,
+     "params": {
+      "reading": "displayed",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "Lake"
+     }
+    },
+    "run.hexupper": {
+     "value": 6,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "to_that"
+     }
+    },
+    "run.hexlower": {
+     "value": 6,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Long"
+     }
+    },
+    "run.hexmixed": {
+     "value": 8,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "to_that"
+     }
+    },
+    "run.decimal": {
+     "value": 5,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Into"
+     }
+    },
+    "run.decimalsep": {
+     "value": 7,
+     "params": {
+      "reading": "displayed",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "needed anymore"
+     }
+    },
+    "run.octal": {
+     "value": 5,
+     "params": {
+      "reading": "displayed",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "andgo"
+     }
+    },
+    "run.octalsep": {
+     "value": 7,
+     "params": {
+      "reading": "displayed",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "needed anymore"
+     }
+    },
+    "run.binary": {
+     "value": 3,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "IT_WAS"
+     }
+    },
+    "run.binarysep": {
+     "value": 4,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "neededanymore"
+     }
+    },
+    "run.base32": {
+     "value": 8,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "Watching"
+     }
+    },
+    "run.upperspace": {
+     "value": 8,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "SURE"
+     }
+    },
+    "run.printable": {
+     "value": 20,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "And_go"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 20,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "And_go"
+     },
+     "printableFrac": 0.41594022415940224
+    },
+    {
+     "v": 19,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Russmanabigail"
+     },
+     "printableFrac": 0.40272614622057
+    },
+    {
+     "v": 19,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "has"
+     },
+     "printableFrac": 0.37731196054254007
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "Hertravels"
+     },
+     "printableFrac": 0.39457459926017263
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "displayed",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "Fitting"
+     },
+     "printableFrac": 0.37361282367447596
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "cfb8",
+      "key": "request"
+     },
+     "printableFrac": 0.4032059186189889
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "chalk_boxes"
+     },
+     "printableFrac": 0.37361282367447596
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "Them"
+     },
+     "printableFrac": 0.410958904109589
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "displayed",
+      "cipher": "xtea",
+      "mode": "ncfb",
+      "key": "Zielinski"
+     },
+     "printableFrac": 0.3970406905055487
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "Leftthe"
+     },
+     "printableFrac": 0.38909541511771994
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "Have thought"
+     },
+     "printableFrac": 0.3543990086741016
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "itwas"
+     },
+     "printableFrac": 0.41016109045848825
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "beautiful_and"
+     },
+     "printableFrac": 0.3686176836861768
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "Lastone"
+     },
+     "printableFrac": 0.40473225404732255
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "Divinium"
+     },
+     "printableFrac": 0.3847102342786683
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "Divinium"
+     },
+     "printableFrac": 0.3847102342786683
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "Can go"
+     },
+     "printableFrac": 0.38729763387297633
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "without"
+     },
+     "printableFrac": 0.37608966376089664
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "the"
+     },
+     "printableFrac": 0.39622641509433965
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "And go"
+     },
+     "printableFrac": 0.41804320203303685
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "SCENES_GO"
+     },
+     "printableFrac": 0.4155019059720457
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "wrong"
+     },
+     "printableFrac": 0.4122042341220423
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "go_behind"
+     },
+     "printableFrac": 0.37733499377334995
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "HOW HARD"
+     },
+     "printableFrac": 0.398505603985056
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "displayed",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "russians"
+     },
+     "printableFrac": 0.3785103785103785
+    }
+   ]
+  },
+  {
+   "reading": "bytePairReversed",
+   "label": "REAL",
+   "trials": 187040,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 18,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "ofb",
+      "key": "here i"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.4636251541307028,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "THAT GODDAMN"
+     }
+    },
+    "printableFrac": {
+     "value": 0.4636251541307028,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "THAT GODDAMN"
+     }
+    },
+    "small_1_26": {
+     "value": 0.1506849315068493,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "FINALLY LEFT"
+     }
+    },
+    "small_0_31": {
+     "value": 0.18306351183063513,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "TIME_TO"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.32129514321295144,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "Rockets"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.3275217932752179,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "Rockets"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.10110974106041924,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "contraption"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.11083437110834371,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "Icome"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.1319358816276202,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "boxes"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.07098381070983811,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "I WILL"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.09124537607891492,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "Safe"
+     }
+    },
+    "frac.octal": {
+     "value": 0.06288532675709001,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "Safe"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.08384710234278668,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "Safe"
+     }
+    },
+    "frac.binary": {
+     "value": 0.02389937106918239,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "Unison"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.05157232704402516,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "RANGE"
+     }
+    },
+    "frac.base32": {
+     "value": 0.1935881627620222,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "Mustadmit"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.15289765721331688,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "Mustadmit"
+     }
+    },
+    "frac.printable": {
+     "value": 0.4636251541307028,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "THAT GODDAMN"
+     }
+    },
+    "run.base64std": {
+     "value": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "Leaving"
+     }
+    },
+    "run.base64url": {
+     "value": 13,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-64",
+      "mode": "ctr",
+      "key": "EIGHT"
+     }
+    },
+    "run.hexupper": {
+     "value": 6,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "MONTYTOOK"
+     }
+    },
+    "run.hexlower": {
+     "value": 7,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "KNOWS THIS"
+     }
+    },
+    "run.hexmixed": {
+     "value": 7,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "KNOWS THIS"
+     }
+    },
+    "run.decimal": {
+     "value": 5,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "house"
+     }
+    },
+    "run.decimalsep": {
+     "value": 6,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "Apothicon"
+     }
+    },
+    "run.octal": {
+     "value": 5,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "UNDERSTAND HOW"
+     }
+    },
+    "run.octalsep": {
+     "value": 6,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "Apothicon"
+     }
+    },
+    "run.binary": {
+     "value": 4,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "Be"
+     }
+    },
+    "run.binarysep": {
+     "value": 5,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "tranzit"
+     }
+    },
+    "run.base32": {
+     "value": 10,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "BELOW"
+     }
+    },
+    "run.upperspace": {
+     "value": 10,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "BELOW"
+     }
+    },
+    "run.printable": {
+     "value": 18,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "serpent",
+      "mode": "ctr",
+      "key": "visions"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 18,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "ofb",
+      "key": "here i"
+     },
+     "printableFrac": 0.40597758405977585
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "ofb",
+      "key": "I_MEAN"
+     },
+     "printableFrac": 0.35367372353673726
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "serpent",
+      "mode": "ctr",
+      "key": "visions"
+     },
+     "printableFrac": 0.38854296388542964
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "Keep"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "some"
+     },
+     "printableFrac": 0.38978829389788294
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "ASSET"
+     },
+     "printableFrac": 0.3970406905055487
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "saferplus",
+      "mode": "cfb8",
+      "key": "Pablo As"
+     },
+     "printableFrac": 0.39227895392278955
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "chill"
+     },
+     "printableFrac": 0.39281288723667906
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "I_MEAN"
+     },
+     "printableFrac": 0.374845869297164
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "drshuster"
+     },
+     "printableFrac": 0.40224159402241594
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "Iwill"
+     },
+     "printableFrac": 0.40597758405977585
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-192",
+      "mode": "ncfb",
+      "key": "Signing_off"
+     },
+     "printableFrac": 0.39748427672955977
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "this world"
+     },
+     "printableFrac": 0.42820838627700125
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "this world"
+     },
+     "printableFrac": 0.3786531130876747
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "Swimming"
+     },
+     "printableFrac": 0.4254007398273736
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "TO_BE"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "enigma",
+      "mode": "stream",
+      "key": "NOW"
+     },
+     "printableFrac": 0.3968253968253968
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "was the"
+     },
+     "printableFrac": 0.3921085080147966
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "HOW"
+     },
+     "printableFrac": 0.3711467324290999
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Signing off"
+     },
+     "printableFrac": 0.3908754623921085
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Sudden"
+     },
+     "printableFrac": 0.42293464858199753
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "Others_along"
+     },
+     "printableFrac": 0.36744759556103573
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "Retirement_here"
+     },
+     "printableFrac": 0.4254007398273736
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "lookslike"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "bytePairReversed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "LAST"
+     },
+     "printableFrac": 0.40567200986436497
+    }
+   ]
+  },
+  {
+   "reading": "nibbleSwap",
+   "label": "REAL",
+   "trials": 187040,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 20,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "SOLVE"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.45499383477188654,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "xtea",
+      "mode": "ncfb",
+      "key": "SECURED"
+     }
+    },
+    "printableFrac": {
+     "value": 0.45129469790382243,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "APOTHICON_KEEPERS"
+     }
+    },
+    "small_1_26": {
+     "value": 0.15442092154420922,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "saferplus",
+      "mode": "cfb8",
+      "key": "nothing can"
+     }
+    },
+    "small_0_31": {
+     "value": 0.17683686176836863,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "PABLO AS"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.3218249075215783,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "TOPACK"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.322180916976456,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "FATHER"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.10480887792848335,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Keep"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.10357583230579531,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ncfb",
+      "key": "MOTD"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.13070283600493218,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "machines and"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.07644882860665844,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "You"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.093711467324291,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "ASCENSION"
+     }
+    },
+    "frac.octal": {
+     "value": 0.06411837237977805,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "You"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.08261405672009864,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "Sheknows"
+     }
+    },
+    "frac.binary": {
+     "value": 0.025893958076448828,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "Admit"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.048567870485678705,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "lastone"
+     }
+    },
+    "frac.base32": {
+     "value": 0.1880559085133418,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-256",
+      "mode": "ofb",
+      "key": "pablo"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.1569115815691158,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "twofish",
+      "mode": "ofb",
+      "key": "most"
+     }
+    },
+    "frac.printable": {
+     "value": 0.45129469790382243,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "tripledes",
+      "mode": "ofb",
+      "key": "APOTHICON_KEEPERS"
+     }
+    },
+    "run.base64std": {
+     "value": 15,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "pass"
+     }
+    },
+    "run.base64url": {
+     "value": 15,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "pass"
+     }
+    },
+    "run.hexupper": {
+     "value": 6,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "where"
+     }
+    },
+    "run.hexlower": {
+     "value": 6,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "your"
+     }
+    },
+    "run.hexmixed": {
+     "value": 7,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "IT WAS"
+     }
+    },
+    "run.decimal": {
+     "value": 5,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "Big"
+     }
+    },
+    "run.decimalsep": {
+     "value": 6,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "FIND"
+     }
+    },
+    "run.octal": {
+     "value": 5,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "Big"
+     }
+    },
+    "run.octalsep": {
+     "value": 6,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "FIND"
+     }
+    },
+    "run.binary": {
+     "value": 4,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-128",
+      "mode": "ctr",
+      "key": "Russians"
+     }
+    },
+    "run.binarysep": {
+     "value": 5,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "Broomstick"
+     }
+    },
+    "run.base32": {
+     "value": 8,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "EXPERIENCE"
+     }
+    },
+    "run.upperspace": {
+     "value": 8,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "UNDERSTAND HOW"
+     }
+    },
+    "run.printable": {
+     "value": 20,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "SOLVE"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 20,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "SOLVE"
+     },
+     "printableFrac": 0.38594327990135635
+    },
+    {
+     "v": 19,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "TROUBLE"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 19,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "TROUBLE"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "Zielinski"
+     },
+     "printableFrac": 0.40224159402241594
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "WORLD"
+     },
+     "printableFrac": 0.37858032378580325
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "Her_the"
+     },
+     "printableFrac": 0.3933415536374846
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "looks like"
+     },
+     "printableFrac": 0.40971357409713577
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "how hard"
+     },
+     "printableFrac": 0.3680297397769517
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "None"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "Ages and"
+     },
+     "printableFrac": 0.3686176836861768
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "Time_to"
+     },
+     "printableFrac": 0.39352428393524286
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "FORAGES"
+     },
+     "printableFrac": 0.3848069738480697
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "Wrong now"
+     },
+     "printableFrac": 0.386052303860523
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "DIVINIUM"
+     },
+     "printableFrac": 0.37361282367447596
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "DIVINIUM"
+     },
+     "printableFrac": 0.37361282367447596
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "ONE"
+     },
+     "printableFrac": 0.37858032378580325
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "left_the"
+     },
+     "printableFrac": 0.389937106918239
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "final"
+     },
+     "printableFrac": 0.4081381011097411
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "GO WRONG"
+     },
+     "printableFrac": 0.3972602739726027
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Explored_i"
+     },
+     "printableFrac": 0.4188351920693928
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "i_have"
+     },
+     "printableFrac": 0.39776951672862454
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "revelations"
+     },
+     "printableFrac": 0.3908754623921085
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "and_go"
+     },
+     "printableFrac": 0.406905055487053
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "If"
+     },
+     "printableFrac": 0.3847102342786683
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "nibbleSwap",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "WARM"
+     },
+     "printableFrac": 0.4254007398273736
+    }
+   ]
+  },
+  {
+   "reading": "plant_twofish_cfb8_Zombies",
+   "label": "POS",
+   "trials": 187040,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 803,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 1,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "printableFrac": {
+     "value": 1,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "small_1_26": {
+     "value": 0.1506849315068493,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "TAKEO"
+     }
+    },
+    "small_0_31": {
+     "value": 0.17338217338217338,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "Wrong now"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.8032378580323786,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.8032378580323786,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.28393524283935245,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.10480887792848335,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "SAW"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.28393524283935245,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.07398273736128237,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "understand how"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.18804483188044832,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.octal": {
+     "value": 0.06071871127633209,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "Procure"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.18804483188044832,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.binary": {
+     "value": 0.02466091245376079,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "keep"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.18804483188044832,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.base32": {
+     "value": 0.8032378580323786,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.9912826899128269,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "frac.printable": {
+     "value": 1,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.base64std": {
+     "value": 13,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "Flashed"
+     }
+    },
+    "run.base64url": {
+     "value": 12,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "Scenes"
+     }
+    },
+    "run.hexupper": {
+     "value": 7,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "zielinski"
+     }
+    },
+    "run.hexlower": {
+     "value": 6,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "Shewill"
+     }
+    },
+    "run.hexmixed": {
+     "value": 7,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "explored_i"
+     }
+    },
+    "run.decimal": {
+     "value": 5,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Without"
+     }
+    },
+    "run.decimalsep": {
+     "value": 7,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "SHE_WAS"
+     }
+    },
+    "run.octal": {
+     "value": 5,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "zielinski"
+     }
+    },
+    "run.octalsep": {
+     "value": 6,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "gost",
+      "mode": "cfb8",
+      "key": "COME_IT"
+     }
+    },
+    "run.binary": {
+     "value": 4,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Will see"
+     }
+    },
+    "run.binarysep": {
+     "value": 5,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "THESE"
+     }
+    },
+    "run.base32": {
+     "value": 11,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.upperspace": {
+     "value": 191,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    },
+    "run.printable": {
+     "value": 803,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 803,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "cfb8",
+      "key": "Zombies"
+     },
+     "printableFrac": 1
+    },
+    {
+     "v": 19,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "In"
+     },
+     "printableFrac": 0.38742138364779877
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "I_must"
+     },
+     "printableFrac": 0.39975093399750933
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "ARMY"
+     },
+     "printableFrac": 0.35990037359900373
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "Sureshe"
+     },
+     "printableFrac": 0.40567200986436497
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "flowing"
+     },
+     "printableFrac": 0.4118372379778052
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "EXPLORED I"
+     },
+     "printableFrac": 0.386052303860523
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Zetsubou"
+     },
+     "printableFrac": 0.3995067817509248
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "Titan_Project"
+     },
+     "printableFrac": 0.406905055487053
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "Nothing can"
+     },
+     "printableFrac": 0.376078914919852
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "Is big"
+     },
+     "printableFrac": 0.41676942046855736
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "now signing"
+     },
+     "printableFrac": 0.376078914919852
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "stars"
+     },
+     "printableFrac": 0.4118372379778052
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "chilli"
+     },
+     "printableFrac": 0.3711467324290999
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "comeit"
+     },
+     "printableFrac": 0.3972602739726027
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "gost",
+      "mode": "ctr",
+      "key": "lingers"
+     },
+     "printableFrac": 0.37731196054254007
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "MY"
+     },
+     "printableFrac": 0.3933415536374846
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "and needs"
+     },
+     "printableFrac": 0.3785450061652281
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "ONEI"
+     },
+     "printableFrac": 0.4130702836004932
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "With"
+     },
+     "printableFrac": 0.37361282367447596
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "Always"
+     },
+     "printableFrac": 0.38964241676942046
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "Time_to"
+     },
+     "printableFrac": 0.410958904109589
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "twofish",
+      "mode": "ctr",
+      "key": "YOUR"
+     },
+     "printableFrac": 0.37982565379825656
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "panama",
+      "mode": "stream",
+      "key": "HER TRAVELS"
+     },
+     "printableFrac": 0.40415140415140416
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "plant_twofish_cfb8_Zombies",
+      "cipher": "arcfour",
+      "mode": "stream",
+      "key": "NOW"
+     },
+     "printableFrac": 0.39316239316239315
+    }
+   ]
+  },
+  {
+   "reading": "lowercased",
+   "label": "REAL",
+   "trials": 187040,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 20,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "twofish",
+      "mode": "ofb",
+      "key": "never"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.45703611457036114,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "Soon"
+     }
+    },
+    "printableFrac": {
+     "value": 0.4520547945205479,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "now signing"
+     }
+    },
+    "small_1_26": {
+     "value": 0.14842767295597484,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "FINALLYLEFT"
+     }
+    },
+    "small_0_31": {
+     "value": 0.1843088418430884,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-128",
+      "mode": "cfb8",
+      "key": "LAST_ONE"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.3220125786163522,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "FLASHED"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.3218249075215783,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "TO"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.10532837670384139,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "YOUR"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.1119496855345912,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "SHEWILL"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.13836477987421383,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "SHEWILL"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.07274969173859433,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "US"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.09148665819567979,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "ASCENSION"
+     }
+    },
+    "frac.octal": {
+     "value": 0.06165228113440197,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "US"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.08384710234278668,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "t-7_all"
+     }
+    },
+    "frac.binary": {
+     "value": 0.027127003699136867,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "GO_WRONG"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.05055487053020962,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "the_last"
+     }
+    },
+    "frac.base32": {
+     "value": 0.17987421383647798,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "FLASHED"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.15566625155666253,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "WHEN"
+     }
+    },
+    "frac.printable": {
+     "value": 0.4520547945205479,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "now signing"
+     }
+    },
+    "run.base64std": {
+     "value": 14,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "PERMANENTLY"
+     }
+    },
+    "run.base64url": {
+     "value": 14,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "PERMANENTLY"
+     }
+    },
+    "run.hexupper": {
+     "value": 7,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "ENTRY"
+     }
+    },
+    "run.hexlower": {
+     "value": 6,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "samantha_finally"
+     }
+    },
+    "run.hexmixed": {
+     "value": 7,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "ENTRY"
+     }
+    },
+    "run.decimal": {
+     "value": 6,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "Range"
+     }
+    },
+    "run.decimalsep": {
+     "value": 6,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "HOWHARD"
+     }
+    },
+    "run.octal": {
+     "value": 5,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ofb",
+      "key": "ENTRY"
+     }
+    },
+    "run.octalsep": {
+     "value": 5,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "Kids"
+     }
+    },
+    "run.binary": {
+     "value": 4,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "wake",
+      "mode": "stream",
+      "key": "COUGH-DEATH"
+     }
+    },
+    "run.binarysep": {
+     "value": 4,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Thechalk"
+     }
+    },
+    "run.base32": {
+     "value": 9,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "MONTY_TOOK"
+     }
+    },
+    "run.upperspace": {
+     "value": 8,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "Now signing"
+     }
+    },
+    "run.printable": {
+     "value": 20,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "twofish",
+      "mode": "ofb",
+      "key": "never"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 20,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "twofish",
+      "mode": "ofb",
+      "key": "never"
+     },
+     "printableFrac": 0.37982565379825656
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "THEIR"
+     },
+     "printableFrac": 0.36744759556103573
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "white"
+     },
+     "printableFrac": 0.40099626400996263
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "Preparing"
+     },
+     "printableFrac": 0.3951715374841169
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "TITANPROJECT"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-128",
+      "mode": "ncfb",
+      "key": "UPALL"
+     },
+     "printableFrac": 0.38964241676942046
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "Beautiful_and"
+     },
+     "printableFrac": 0.42839352428393523
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "ncfb",
+      "key": "Montythere"
+     },
+     "printableFrac": 0.40597758405977585
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "notneeded"
+     },
+     "printableFrac": 0.3960149439601494
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "prison"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "prison"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "DEVOURING"
+     },
+     "printableFrac": 0.41430332922318125
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "KEEPER"
+     },
+     "printableFrac": 0.40224159402241594
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "loki97",
+      "mode": "ncfb",
+      "key": "she_was"
+     },
+     "printableFrac": 0.41594022415940224
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "cfb8",
+      "key": "OR"
+     },
+     "printableFrac": 0.3958076448828607
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "Requesting"
+     },
+     "printableFrac": 0.3847102342786683
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-128",
+      "mode": "ncfb",
+      "key": "ALONG_HER"
+     },
+     "printableFrac": 0.36363636363636365
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "rijndael-192",
+      "mode": "cfb8",
+      "key": "for"
+     },
+     "printableFrac": 0.39748427672955977
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "Come_it"
+     },
+     "printableFrac": 0.4155363748458693
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "saferplus",
+      "mode": "ofb",
+      "key": "one"
+     },
+     "printableFrac": 0.40224159402241594
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "arcfour",
+      "mode": "stream",
+      "key": "Sometimesi"
+     },
+     "printableFrac": 0.39438339438339437
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "ARMY"
+     },
+     "printableFrac": 0.3952912019826518
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "Them"
+     },
+     "printableFrac": 0.38042131350681535
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "SCENES"
+     },
+     "printableFrac": 0.3952912019826518
+    },
+    {
+     "v": 15,
+     "params": {
+      "reading": "lowercased",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "better"
+     },
+     "printableFrac": 0.38042131350681535
+    }
+   ]
+  },
+  {
+   "reading": "random_hexalpha",
+   "label": "NEG",
+   "trials": 187040,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 29,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "WORLDIS"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.46115906288532676,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "ONSITE"
+     }
+    },
+    "printableFrac": {
+     "value": 0.45869297163995065,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "ONSITE"
+     }
+    },
+    "small_1_26": {
+     "value": 0.15166461159062886,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "Humanity"
+     }
+    },
+    "small_0_31": {
+     "value": 0.18057285180572852,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "serpent",
+      "mode": "cfb8",
+      "key": "Her the"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.33045622688039455,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "hardit"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.32922318125770655,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "hardit"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.10234278668310727,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ncfb",
+      "key": "and_machines"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.10709838107098381,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "shangri"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.13070283600493218,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "LOOKING"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.0752157829839704,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "their"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.09339975093399751,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "shangri"
+     }
+    },
+    "frac.octal": {
+     "value": 0.0660024906600249,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "shangri"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.08717310087173101,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "serpent",
+      "mode": "ofb",
+      "key": "shangri"
+     }
+    },
+    "frac.binary": {
+     "value": 0.02342786683107275,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "chalk"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.05672009864364982,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "finally"
+     }
+    },
+    "frac.base32": {
+     "value": 0.18002466091245375,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ofb",
+      "key": "IS BIG"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.15659679408138102,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ncfb",
+      "key": "Thelast"
+     }
+    },
+    "frac.printable": {
+     "value": 0.45869297163995065,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "ONSITE"
+     }
+    },
+    "run.base64std": {
+     "value": 12,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "nothing"
+     }
+    },
+    "run.base64url": {
+     "value": 13,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "Like_i"
+     }
+    },
+    "run.hexupper": {
+     "value": 7,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "Sun"
+     }
+    },
+    "run.hexlower": {
+     "value": 6,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "cfb8",
+      "key": "Group935"
+     }
+    },
+    "run.hexmixed": {
+     "value": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Zombies"
+     }
+    },
+    "run.decimal": {
+     "value": 6,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish-compat",
+      "mode": "ofb",
+      "key": "GOROD"
+     }
+    },
+    "run.decimalsep": {
+     "value": 7,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "Apothicon keepers"
+     }
+    },
+    "run.octal": {
+     "value": 5,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "Four"
+     }
+    },
+    "run.octalsep": {
+     "value": 5,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "today"
+     }
+    },
+    "run.binary": {
+     "value": 4,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "octobernsarefortttheywoundthesourceonmenusbeginningextraction"
+     }
+    },
+    "run.binarysep": {
+     "value": 5,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "twofish",
+      "mode": "ctr",
+      "key": "now_i"
+     }
+    },
+    "run.base32": {
+     "value": 10,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "xtea",
+      "mode": "ctr",
+      "key": "others along"
+     }
+    },
+    "run.upperspace": {
+     "value": 8,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rc2",
+      "mode": "ofb",
+      "key": "POSSIBLE"
+     }
+    },
+    "run.printable": {
+     "value": 29,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "WORLDIS"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 29,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "serpent",
+      "mode": "ncfb",
+      "key": "WORLDIS"
+     },
+     "printableFrac": 0.38729763387297633
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "friends-cough"
+     },
+     "printableFrac": 0.41800246609124536
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "with"
+     },
+     "printableFrac": 0.39622641509433965
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "At"
+     },
+     "printableFrac": 0.4238993710691824
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "About_for"
+     },
+     "printableFrac": 0.3952912019826518
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "EVOLVED"
+     },
+     "printableFrac": 0.374845869297164
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "gost",
+      "mode": "ofb",
+      "key": "and go"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "DULL"
+     },
+     "printableFrac": 0.41635220125786165
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ncfb",
+      "key": "somewhere"
+     },
+     "printableFrac": 0.4093711467324291
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ofb",
+      "key": "about"
+     },
+     "printableFrac": 0.35511713933415534
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "saferplus",
+      "mode": "cfb8",
+      "key": "COME_IT"
+     },
+     "printableFrac": 0.37484433374844334
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "saferplus",
+      "mode": "ncfb",
+      "key": "Grew"
+     },
+     "printableFrac": 0.3698630136986301
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "saferplus",
+      "mode": "ofb",
+      "key": "scenesgo"
+     },
+     "printableFrac": 0.42341220423412207
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "today_she"
+     },
+     "printableFrac": 0.38042131350681535
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "EIGHT"
+     },
+     "printableFrac": 0.38107098381070986
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "am"
+     },
+     "printableFrac": 0.40224159402241594
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "it looks"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "tripledes",
+      "mode": "ncfb",
+      "key": "it looks"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "WILL SEE"
+     },
+     "printableFrac": 0.40099626400996263
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "HUMANITY"
+     },
+     "printableFrac": 0.40099626400996263
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "Will see"
+     },
+     "printableFrac": 0.3886792452830189
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "rijndael-256",
+      "mode": "ncfb",
+      "key": "KEEPERS"
+     },
+     "printableFrac": 0.4104193138500635
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "cfb8",
+      "key": "Shadowy"
+     },
+     "printableFrac": 0.3834771886559803
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-64",
+      "mode": "ctr",
+      "key": "VRIL"
+     },
+     "printableFrac": 0.40567200986436497
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "random_hexalpha",
+      "cipher": "safer-128",
+      "mode": "cfb8",
+      "key": "Intimacy"
+     },
+     "printableFrac": 0.41060419235511714
+    }
+   ]
+  },
+  {
+   "reading": "fullReversed",
+   "label": "REAL",
+   "trials": 187040,
+   "errors": 0,
+   "best": {
+    "utf8_longestRun": {
+     "value": 19,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "flowing"
+     }
+    },
+    "utf8_validFrac": {
+     "value": 0.4646840148698885,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "TREYARCHENDING"
+     }
+    },
+    "printableFrac": {
+     "value": 0.4623921085080148,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "eisendrache"
+     }
+    },
+    "small_1_26": {
+     "value": 0.15906288532675708,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "xtea",
+      "mode": "ofb",
+      "key": "big and"
+     }
+    },
+    "small_0_31": {
+     "value": 0.1794871794871795,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "enigma",
+      "mode": "stream",
+      "key": "four"
+     }
+    },
+    "frac.base64std": {
+     "value": 0.32305795314426633,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "xtea",
+      "mode": "ncfb",
+      "key": "lake"
+     }
+    },
+    "frac.base64url": {
+     "value": 0.3279901356350185,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "xtea",
+      "mode": "ncfb",
+      "key": "lake"
+     }
+    },
+    "frac.hexupper": {
+     "value": 0.10834371108343711,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "Signing off"
+     }
+    },
+    "frac.hexlower": {
+     "value": 0.10110974106041924,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "ctr",
+      "key": "forages"
+     }
+    },
+    "frac.hexmixed": {
+     "value": 0.1319358816276202,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "ctr",
+      "key": "LIFE"
+     }
+    },
+    "frac.decimal": {
+     "value": 0.074719800747198,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "NOTHINGCAN"
+     }
+    },
+    "frac.decimalsep": {
+     "value": 0.09713574097135741,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "IF"
+     }
+    },
+    "frac.octal": {
+     "value": 0.06351183063511831,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "twofish",
+      "mode": "ncfb",
+      "key": "NOTHINGCAN"
+     }
+    },
+    "frac.octalsep": {
+     "value": 0.0821917808219178,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "ofb",
+      "key": "IF"
+     }
+    },
+    "frac.binary": {
+     "value": 0.024906600249066,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "S TIME"
+     }
+    },
+    "frac.binarysep": {
+     "value": 0.052503052503052504,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "arcfour",
+      "mode": "stream",
+      "key": "Swimming"
+     }
+    },
+    "frac.base32": {
+     "value": 0.18372379778051787,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "xtea",
+      "mode": "cfb8",
+      "key": "Grew"
+     }
+    },
+    "frac.upperspace": {
+     "value": 0.15659679408138102,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-128",
+      "mode": "ctr",
+      "key": "Unison"
+     }
+    },
+    "frac.printable": {
+     "value": 0.4623921085080148,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "safer-128",
+      "mode": "ofb",
+      "key": "eisendrache"
+     }
+    },
+    "run.base64std": {
+     "value": 13,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ofb",
+      "key": "machinesand"
+     }
+    },
+    "run.base64url": {
+     "value": 14,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "xtea",
+      "mode": "ncfb",
+      "key": "amnot"
+     }
+    },
+    "run.hexupper": {
+     "value": 6,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ncfb",
+      "key": "EDDIE"
+     }
+    },
+    "run.hexlower": {
+     "value": 6,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ctr",
+      "key": "Vril"
+     }
+    },
+    "run.hexmixed": {
+     "value": 7,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "ofb",
+      "key": "last_one"
+     }
+    },
+    "run.decimal": {
+     "value": 6,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "And_machines"
+     }
+    },
+    "run.decimalsep": {
+     "value": 6,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "mean"
+     }
+    },
+    "run.octal": {
+     "value": 5,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-128",
+      "mode": "ofb",
+      "key": "hard_it"
+     }
+    },
+    "run.octalsep": {
+     "value": 6,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "mean"
+     }
+    },
+    "run.binary": {
+     "value": 3,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "About"
+     }
+    },
+    "run.binarysep": {
+     "value": 6,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish-compat",
+      "mode": "cfb8",
+      "key": "mean"
+     }
+    },
+    "run.base32": {
+     "value": 9,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "Transferred"
+     }
+    },
+    "run.upperspace": {
+     "value": 7,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "Grew"
+     }
+    },
+    "run.printable": {
+     "value": 18,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "thisworld"
+     }
+    }
+   },
+   "topUtf8": [
+    {
+     "v": 19,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "cfb8",
+      "key": "flowing"
+     },
+     "printableFrac": 0.39476961394769616
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "cfb8",
+      "key": "thisworld"
+     },
+     "printableFrac": 0.3667905824039653
+    },
+    {
+     "v": 18,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "saferplus",
+      "mode": "ctr",
+      "key": "Find"
+     },
+     "printableFrac": 0.410958904109589
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "cast-256",
+      "mode": "cfb8",
+      "key": "surrounded"
+     },
+     "printableFrac": 0.39227895392278955
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "FOR_HER"
+     },
+     "printableFrac": 0.4032059186189889
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "LOOKSLIKE"
+     },
+     "printableFrac": 0.4130702836004932
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "must admit"
+     },
+     "printableFrac": 0.3884093711467324
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "russmanabigail"
+     },
+     "printableFrac": 0.40722291407222916
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "loki97",
+      "mode": "ctr",
+      "key": "shuster"
+     },
+     "printableFrac": 0.39476961394769616
+    },
+    {
+     "v": 17,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "Wrong now"
+     },
+     "printableFrac": 0.38742138364779877
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ofb",
+      "key": "great"
+     },
+     "printableFrac": 0.37174721189591076
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "3-way",
+      "mode": "ctr",
+      "key": "Gone"
+     },
+     "printableFrac": 0.3990086741016109
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "blowfish",
+      "mode": "ncfb",
+      "key": "T-7all"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "Sacrifice"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "des",
+      "mode": "cfb8",
+      "key": "Sacrifices"
+     },
+     "printableFrac": 0.38224414303329224
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "des",
+      "mode": "ncfb",
+      "key": "Unitedstates"
+     },
+     "printableFrac": 0.39457459926017263
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "des",
+      "mode": "ctr",
+      "key": "staves"
+     },
+     "printableFrac": 0.3785450061652281
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "tripledes",
+      "mode": "ctr",
+      "key": "staves"
+     },
+     "printableFrac": 0.3785450061652281
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "gost",
+      "mode": "ncfb",
+      "key": "Motd"
+     },
+     "printableFrac": 0.4204685573366215
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rc2",
+      "mode": "ctr",
+      "key": "Image"
+     },
+     "printableFrac": 0.41060419235511714
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "ofb",
+      "key": "PACK"
+     },
+     "printableFrac": 0.3574097135740971
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-128",
+      "mode": "ctr",
+      "key": "WhiteSands"
+     },
+     "printableFrac": 0.3686176836861768
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-192",
+      "mode": "ofb",
+      "key": "finally left"
+     },
+     "printableFrac": 0.41635220125786165
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-192",
+      "mode": "ctr",
+      "key": "ahead"
+     },
+     "printableFrac": 0.4025157232704403
+    },
+    {
+     "v": 16,
+     "params": {
+      "reading": "fullReversed",
+      "cipher": "rijndael-256",
+      "mode": "ctr",
+      "key": "FUTURE"
+     },
+     "printableFrac": 0.3799237611181703
+    }
+   ]
+  }
+ ]
+}
