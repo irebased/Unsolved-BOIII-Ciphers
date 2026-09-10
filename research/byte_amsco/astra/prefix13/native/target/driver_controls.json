@@ -1,0 +1,151 @@
+{
+  "artifact_hashes": {
+    "build_native.py": "1a4a5e8e5e18c382e259a82f1deef4d88dbde5489ea30bf75d36874e8cec81ee",
+    "native.cpp": "f9c731e222381597dcb03d00155549f12fb6d82923975b13f2a18d3c05e631d0",
+    "native_controls.json": "97eb5e5783c8c0aedfe98c27e112da8ffb2a641fa284a6ff3690de867be62766",
+    "prefix13/proof.py": "2b349a27f9bed45c3e114fc1210fa5ecfac377c51e616f25ef8abfa3ab71efb2",
+    "run_target.py": "166edaadd98a95abfa6c6336652be4d2218491d548335f6714d048c7e491fa59"
+  },
+  "assertions": {
+    "all_passed": true,
+    "all_survivors_independently_replayed": true,
+    "complete_width7_cells": true,
+    "factorial_accounting": true,
+    "no_target": true,
+    "positive_and_rejected_prefixes": true,
+    "same_execute_cell_path": true,
+    "temporary_build_exact": true
+  },
+  "build": {
+    "binary_sha256": "704f5f431b0b92136624eaba960605f2a652e8818a42b86a8a44e14566722b04",
+    "commands": [
+      {
+        "command": [
+          "clang",
+          "-O2",
+          "-I/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source_build",
+          "-I/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source",
+          "-c",
+          "/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source/rc2.c",
+          "-o",
+          "<TMP>/rc2.o"
+        ],
+        "stderr": "/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source/rc2.c:303:13: warning: passing 'unsigned char[16]' to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]\n  303 |         if (strcmp(ciphertext, plaintext) != 0) {\n      |                    ^~~~~~~~~~\n/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:89:25: note: passing argument to parameter '__s1' here\n   89 | int      strcmp(const char *__s1, const char *__s2);\n      |                             ^\n/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source/rc2.c:303:25: warning: passing 'unsigned char[16]' to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]\n  303 |         if (strcmp(ciphertext, plaintext) != 0) {\n      |                                ^~~~~~~~~\n/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:89:43: note: passing argument to parameter '__s2' here\n   89 | int      strcmp(const char *__s1, const char *__s2);\n      |                                               ^\n2 warnings generated.\n",
+        "stdout": ""
+      },
+      {
+        "command": [
+          "clang++",
+          "-std=c++17",
+          "-O3",
+          "-Wno-deprecated-declarations",
+          "/private/tmp/rev7-astra-20260909/research/byte_amsco/astra/prefix13/native/native.cpp",
+          "<TMP>/rc2.o",
+          "-o",
+          "<TMP>/native_search",
+          "-I/opt/homebrew/Cellar/openssl@3/3.6.3/include",
+          "-L/opt/homebrew/Cellar/openssl@3/3.6.3/lib",
+          "-lssl",
+          "-lcrypto"
+        ],
+        "stderr": "",
+        "stdout": ""
+      }
+    ],
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "object_sha256": "022a0517d79e7dfc9566ca3cf04462a7ffb62aaf9f2d4d0d8edb2ca0a2803b4e",
+    "openssl_version": "3.6.3",
+    "temporary_build": true
+  },
+  "environment": {
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "identity": "ASTRA",
+  "records": [
+    {
+      "all_survivors_independently_replayed": true,
+      "backend": "des",
+      "block_calls": 8245,
+      "command_shape": [
+        "<TMP>/native_search",
+        "--search",
+        "des",
+        "7",
+        "1",
+        "5040",
+        "<OBSERVED_HEX>"
+      ],
+      "observed_sha256": "70a3ce373ef91393dc5e3e6ad11b047db4692af5d1f40c3e228914dae8345f38",
+      "order": [
+        4,
+        0,
+        6,
+        2,
+        5,
+        1,
+        3
+      ],
+      "prefixes_examined": 5040,
+      "rejected_prefixes": 4905,
+      "rows": 4,
+      "same_execute_cell_path": true,
+      "start": 1,
+      "survivor_digest_fnv1a64": "8fae58fefa3338aa",
+      "survivor_prefix_count": 135,
+      "truth_assignment": [
+        1,
+        5,
+        3,
+        6,
+        0,
+        4
+      ],
+      "truth_retained": true,
+      "width": 7
+    },
+    {
+      "all_survivors_independently_replayed": true,
+      "backend": "rc2",
+      "block_calls": 8389,
+      "command_shape": [
+        "<TMP>/native_search",
+        "--search",
+        "rc2",
+        "7",
+        "2",
+        "5040",
+        "<OBSERVED_HEX>"
+      ],
+      "observed_sha256": "0418471b9aead826c511c0a37370765de95196c59670f3e4818813f06bce0262",
+      "order": [
+        4,
+        0,
+        6,
+        2,
+        5,
+        1,
+        3
+      ],
+      "prefixes_examined": 5040,
+      "rejected_prefixes": 4895,
+      "rows": 4,
+      "same_execute_cell_path": true,
+      "start": 2,
+      "survivor_digest_fnv1a64": "2f79e34343a7b20c",
+      "survivor_prefix_count": 145,
+      "truth_assignment": [
+        1,
+        5,
+        3,
+        6,
+        0,
+        4
+      ],
+      "truth_retained": true,
+      "width": 7
+    }
+  ],
+  "rev7_file_read": false,
+  "scope": "Synthetic-only callback controls for the inert width13 target driver's execute_cell path.",
+  "target_evaluated": false
+}

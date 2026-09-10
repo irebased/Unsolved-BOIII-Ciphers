@@ -504,3 +504,27 @@ python3 -B research/byte_amsco/astra/prefix13/native/native_controls.py --regene
 ```
 
 These controls do not read Rev7 or register a width-13 target. The filter remains a necessary A105 condition; surviving prefixes would not be complete orders or recovered plaintexts.
+
+
+## Completed general byte-AMSCO search
+
+The [completed result](../byte_amsco/astra/search/target/RESULTS.md) covers all 64 registered geometries, 3,272,896 column orders and 22,910,272 backend contexts. Every case rejects: 22,463,286 at A105 and 446,986 at a strict FSA transition. No candidates or unexamined contexts remain. This is a finite exclusion for byte-unit AMSCO widths 2–9, two alternating starts, four orientations, seven fixed-key CFB8 backends and the specified text endpoint, independent of every external IV.
+
+The [230,874-byte ledger](../byte_amsco/astra/search/target/target_results.json) has SHA-256 `baf3fc16f2eb84008b75fc80521502134945fdeece075183fa61050c19779cdd`. Root reviewed and ran the [portable verifier](../byte_amsco/astra/search/target/verify_results.py), checking all pinned artifacts, canonical orientations, Cartesian cell IDs, factorial/backend/class accounting and zero retained contexts. This does not repeat the negative cryptographic enumeration. The driver did not record elapsed time.
+
+```sh
+python3 -S -B research/byte_amsco/astra/search/target/verify_results.py
+```
+
+## Controlled width-13 byte-AMSCO target harness
+
+The [inert width-13 harness](../byte_amsco/astra/prefix13/native/target/README.md) defines 32 contexts: four eight-byte-block backends, both starts and four orientations. Each cell enumerates all 1,235,520 six-column assignments; the grid totals 39,536,640 prefixes. Every retained assignment and all 28 computed ninth plaintext bytes are kept and independently replayed. Each cell partitions 13! full orders, with weight 7! per prefix. A surviving prefix leaves those full orders unresolved.
+
+Root reviewed the driver and independently regenerated the [synthetic callback ledger](../byte_amsco/astra/prefix13/native/target/driver_controls.json) byte for byte, SHA-256 `f86b6eb63765565849838e4ff0da843f34fa5e4a3e0bbab40813cdc32bfda487`. Two complete width-7 plants contain 135 and 145 survivors respectively, all independently replayed. Temporary native binary and RC2 object hashes match the accepted control builds exactly. These tests exercise the same execute_cell function as the future target.
+
+```sh
+python3 -S -B research/byte_amsco/astra/prefix13/native/target/driver_controls.py
+python3 -B research/byte_amsco/astra/prefix13/native/target/driver_controls.py --regenerate /tmp/prefix13-driver-controls.json
+```
+
+This snapshot has no width-13 target gate or evaluation. FABLE preregistration, the frozen gate and separate root GO precede the target run. The driver refuses existing outputs and has no cap, count-only target mode or resume.
