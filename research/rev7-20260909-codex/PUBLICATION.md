@@ -426,3 +426,17 @@ python3 -B research/byte_amsco/astra/controls.py --regenerate /tmp/byte-amsco-co
 ```
 
 The default command performs standard-library source/dependency/structure checks. Regeneration performs the actual synthetic cryptography using the separately controlled seven-backend runtime.
+
+
+## Completed binary CFB8 cascade search
+
+The [cascade result](iv_independent/cascade/target/RESULTS.md) closes all 22,764 registered path endpoints, with exact depth counts 28, 784 and 21,952. Every case fails the A105 necessary byte condition. There are zero retained candidates, empty intervals or cases requiring the strict FSA stage. Rejected intermediate endpoints still expanded. The finite exclusion covers only the seven fixed-key CFB8 backends, depths one through three, four outer orientations and four interlayer involutions, under the proved interval recurrence for arbitrary independent layer IVs.
+
+The original ledger contains 23,151,009 bytes, SHA-256 `2eb167a4ec5503a3b27fe84dd4a3a96f781443eade8d78bfefdab9ff01aacf7e`. The [1,562,439-byte lossless pack](iv_independent/cascade/target/target_results.pack.json), SHA-256 `31b57482ed2898a901509cd4d9eb4c5da2da3aa9918ebac3aee7150a4dcd1da7`, preserves every original byte in a zlib/base85 JSON envelope. The standard-library [decoder and verifier](iv_independent/cascade/target/pack_results.py) bounds decompression, checks the exact original hash, source/gate identities, complete Cartesian ID set, every interval geometry, all summaries and all 22,764 stored invalid-byte witness structures. Root ran it and separately confirmed byte-for-byte equality with the full local ledger.
+
+```sh
+python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/target/pack_results.py
+python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/target/pack_results.py --unpack /tmp/cascade-target-results.json
+```
+
+This verifies lossless reconstruction, integrity and accounting of the controlled run; it is not a second target cryptographic replay. No candidates existed for the driver's independent candidate replay. The driver did not record elapsed time, so no timing is inferred. No plaintext or outside-interval bytes were recovered, and interposed encodings, transpositions, other modes, keys or depths remain outside scope.
