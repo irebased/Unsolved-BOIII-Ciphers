@@ -1,0 +1,98 @@
+{
+  "assumptions": [
+    "Each candidate output is marginally uniform over its byte sequence under the chosen null. Independence between candidates or start offsets is unnecessary for the union bound.",
+    "A run starts at a codepoint boundary and counts only complete allowed codepoints. Finite end-of-buffer truncation can only lower the probability.",
+    "538 possible starts per candidate is an illustrative input parameter, not audited coverage of a FABLE grid.",
+    "Adaptive missing-ciphertext reconstruction is not modeled by fixed uniform candidate outputs."
+  ],
+  "codeword_counts_by_length": {
+    "1": 98,
+    "2": 96,
+    "3": 7
+  },
+  "formula": "f(L)=98/256*f(L-1)+96/256^2*f(L-2)+7/256^3*f(L-3), f(L)=1 for L<=0; P(max>=L)<=min(1,T*f(L)) by union bound",
+  "identity": "ASTRA",
+  "illustrative_grid_bounds": [
+    {
+      "combos": 184,
+      "minimum_L_union_bound_at_most_0_01": 17,
+      "starts_upper_bound": 98992
+    },
+    {
+      "combos": 4232,
+      "minimum_L_union_bound_at_most_0_01": 21,
+      "starts_upper_bound": 2276816
+    },
+    {
+      "combos": 67712,
+      "minimum_L_union_bound_at_most_0_01": 24,
+      "starts_upper_bound": 36429056
+    },
+    {
+      "combos": 389344,
+      "minimum_L_union_bound_at_most_0_01": 26,
+      "starts_upper_bound": 209467072
+    },
+    {
+      "combos": 105984,
+      "minimum_L_union_bound_at_most_0_01": 24,
+      "starts_upper_bound": 57019392
+    },
+    {
+      "combos": 4376736,
+      "minimum_L_union_bound_at_most_0_01": 28,
+      "starts_upper_bound": 2354683968
+    }
+  ],
+  "probabilities": {
+    "20": {
+      "exact": "264840793079125751479863033574036504393415393/47890485652059026823698344598447161988085597568237568",
+      "float": 5.530133793239974e-09
+    },
+    "25": {
+      "exact": "5029769192886050443200821177072031362701104872535381511/105312291668557186697918027683670432318895095400549111254310977536",
+      "float": 4.7760514116585076e-11
+    },
+    "30": {
+      "exact": "11940465175122778889805584035497121043541478235371745883837010719/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+      "float": 4.124794795143825e-13
+    },
+    "35": {
+      "exact": "56692346360534038370438899049051436180380351375983605074139658437998272657/15914343565113172548972231940698266883214596825515126958094847260581103904401068017057792",
+      "float": 3.5623427462514305e-15
+    },
+    "40": {
+      "exact": "4306729546931184525285122486143540233216854476918282021695231105501988731342674899161/139984046386112763159840142535527767382602843577165595931249318810236991948760059086304843329475444736",
+      "float": 3.07658598112823e-17
+    }
+  },
+  "reduced_alphabet_exact_checks": [
+    {
+      "L": 1,
+      "accepted": 106,
+      "exact_probability": "106/343",
+      "strings": 343
+    },
+    {
+      "L": 2,
+      "accepted": 268,
+      "exact_probability": "268/2401",
+      "strings": 2401
+    },
+    {
+      "L": 3,
+      "accepted": 691,
+      "exact_probability": "691/16807",
+      "strings": 16807
+    },
+    {
+      "L": 4,
+      "accepted": 1756,
+      "exact_probability": "1756/117649",
+      "strings": 117649
+    }
+  ],
+  "scope": "Exact probability under independent uniform bytes for a prefix-free complete-codepoint gate with98 one-byte,96 two-byte,7 three-byte words. Scorer implementation equivalence and null-preserving search transforms are not established here.",
+  "source_sha256": "9f51736128b8e89e3a65ae5e3fc0f12e80044585898a968d53c6425bd0ffc427",
+  "target_evaluated": false
+}

@@ -1,0 +1,240 @@
+{
+  "assertions": {
+    "all_16_paths_complete": true,
+    "all_solutions_independently_verified": true,
+    "all_source_emissions_exact": true,
+    "all_truths_retained": true
+  },
+  "driver_sha256": "036ab0f597906ca90699d63f4ea42033030e21a1fca28476e2746b735144ae4c",
+  "identity": "ASTRA",
+  "plant": {
+    "bytes": 819,
+    "contexts": [
+      {
+        "accepted_states": 7248,
+        "block_calls": 7223,
+        "canonical_sha256": "01f0396b90af94c61262235f3597634c776c232bd7e231da7d14a368ecf9a48d",
+        "extra_solutions": 25,
+        "id": "forward|des|nul",
+        "inverse_orientation_exact": true,
+        "max_frontier": 60,
+        "observed_sha256": "01f0396b90af94c61262235f3597634c776c232bd7e231da7d14a368ecf9a48d",
+        "solution_count": 26,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 7248,
+        "block_calls": 7223,
+        "canonical_sha256": "843a1cd216a15bc4d1f4b715bd4f9f76b6466c616de742ccfd6b70c04920ed6b",
+        "extra_solutions": 25,
+        "id": "full_hex_reverse|des|nul",
+        "inverse_orientation_exact": true,
+        "max_frontier": 60,
+        "observed_sha256": "01f0396b90af94c61262235f3597634c776c232bd7e231da7d14a368ecf9a48d",
+        "solution_count": 26,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 7248,
+        "block_calls": 7223,
+        "canonical_sha256": "a1ec8f5bc3768e9843d7ba751b67019b5c14cce4d49899a56cb1cc21abb34d5d",
+        "extra_solutions": 25,
+        "id": "byte_reverse|des|nul",
+        "inverse_orientation_exact": true,
+        "max_frontier": 60,
+        "observed_sha256": "01f0396b90af94c61262235f3597634c776c232bd7e231da7d14a368ecf9a48d",
+        "solution_count": 26,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 7248,
+        "block_calls": 7223,
+        "canonical_sha256": "bc953fe0dd0d5d280235a98869b80b1c0f26e6098c07f6a354bc14ba0de595f8",
+        "extra_solutions": 25,
+        "id": "nibble_swap|des|nul",
+        "inverse_orientation_exact": true,
+        "max_frontier": 60,
+        "observed_sha256": "01f0396b90af94c61262235f3597634c776c232bd7e231da7d14a368ecf9a48d",
+        "solution_count": 26,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 7355,
+        "block_calls": 7314,
+        "canonical_sha256": "c535e5591db0bd2c5219ec2dab61667dff224ade3c30f2c12de92c17bbc5c3f2",
+        "extra_solutions": 41,
+        "id": "forward|des|ascii0",
+        "inverse_orientation_exact": true,
+        "max_frontier": 64,
+        "observed_sha256": "c535e5591db0bd2c5219ec2dab61667dff224ade3c30f2c12de92c17bbc5c3f2",
+        "solution_count": 42,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 7355,
+        "block_calls": 7314,
+        "canonical_sha256": "a113debca71897b0c8433ec1d589035b45224c382dd74adcbb465dd684461edb",
+        "extra_solutions": 41,
+        "id": "full_hex_reverse|des|ascii0",
+        "inverse_orientation_exact": true,
+        "max_frontier": 64,
+        "observed_sha256": "c535e5591db0bd2c5219ec2dab61667dff224ade3c30f2c12de92c17bbc5c3f2",
+        "solution_count": 42,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 7355,
+        "block_calls": 7314,
+        "canonical_sha256": "5d6de87d5982b0f49507d9dec4faf5ab441bb9fe093e90c4e82148396b9ecb24",
+        "extra_solutions": 41,
+        "id": "byte_reverse|des|ascii0",
+        "inverse_orientation_exact": true,
+        "max_frontier": 64,
+        "observed_sha256": "c535e5591db0bd2c5219ec2dab61667dff224ade3c30f2c12de92c17bbc5c3f2",
+        "solution_count": 42,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 7355,
+        "block_calls": 7314,
+        "canonical_sha256": "248623b04a9a3bc36d3451befdc3a713f7aef155f63727c83bcc9521adcf7d74",
+        "extra_solutions": 41,
+        "id": "nibble_swap|des|ascii0",
+        "inverse_orientation_exact": true,
+        "max_frontier": 64,
+        "observed_sha256": "c535e5591db0bd2c5219ec2dab61667dff224ade3c30f2c12de92c17bbc5c3f2",
+        "solution_count": 42,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 7383,
+        "block_calls": 7358,
+        "canonical_sha256": "be9253f450f3f4eaad03785683dc7cf9051d5f1d9d009b963affd52a4c3fb5f7",
+        "extra_solutions": 25,
+        "id": "forward|aes128|nul",
+        "inverse_orientation_exact": true,
+        "max_frontier": 60,
+        "observed_sha256": "be9253f450f3f4eaad03785683dc7cf9051d5f1d9d009b963affd52a4c3fb5f7",
+        "solution_count": 26,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 7383,
+        "block_calls": 7358,
+        "canonical_sha256": "b78285c3a49a049153056ecab6b72e7999ff3b4f9d4cf0f3d57f6747ad453c4e",
+        "extra_solutions": 25,
+        "id": "full_hex_reverse|aes128|nul",
+        "inverse_orientation_exact": true,
+        "max_frontier": 60,
+        "observed_sha256": "be9253f450f3f4eaad03785683dc7cf9051d5f1d9d009b963affd52a4c3fb5f7",
+        "solution_count": 26,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 7383,
+        "block_calls": 7358,
+        "canonical_sha256": "219ed4fef504290c6fee60220bf35ffa0ec2ebec0f01a14268f3d6882f65d3aa",
+        "extra_solutions": 25,
+        "id": "byte_reverse|aes128|nul",
+        "inverse_orientation_exact": true,
+        "max_frontier": 60,
+        "observed_sha256": "be9253f450f3f4eaad03785683dc7cf9051d5f1d9d009b963affd52a4c3fb5f7",
+        "solution_count": 26,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 7383,
+        "block_calls": 7358,
+        "canonical_sha256": "ab461d79347fd878d5f6e13b19a620568bbe5f96817419f835016080a0eb4a83",
+        "extra_solutions": 25,
+        "id": "nibble_swap|aes128|nul",
+        "inverse_orientation_exact": true,
+        "max_frontier": 60,
+        "observed_sha256": "be9253f450f3f4eaad03785683dc7cf9051d5f1d9d009b963affd52a4c3fb5f7",
+        "solution_count": 26,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 6588,
+        "block_calls": 6574,
+        "canonical_sha256": "9917798ac39e8ec5d03aab7a8d47dce006118fcc43f312984fefbe41b553819e",
+        "extra_solutions": 14,
+        "id": "forward|aes128|ascii0",
+        "inverse_orientation_exact": true,
+        "max_frontier": 53,
+        "observed_sha256": "9917798ac39e8ec5d03aab7a8d47dce006118fcc43f312984fefbe41b553819e",
+        "solution_count": 15,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 6588,
+        "block_calls": 6574,
+        "canonical_sha256": "dbff6b1dc735cb7b21b1d70a37e80e6fb207bb33c397d4d5a278219e49f62818",
+        "extra_solutions": 14,
+        "id": "full_hex_reverse|aes128|ascii0",
+        "inverse_orientation_exact": true,
+        "max_frontier": 53,
+        "observed_sha256": "9917798ac39e8ec5d03aab7a8d47dce006118fcc43f312984fefbe41b553819e",
+        "solution_count": 15,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 6588,
+        "block_calls": 6574,
+        "canonical_sha256": "d196d5d36da4f0633c661c900f9d84eb98940fabbfda9ee38a9cf2c48ddbcc85",
+        "extra_solutions": 14,
+        "id": "byte_reverse|aes128|ascii0",
+        "inverse_orientation_exact": true,
+        "max_frontier": 53,
+        "observed_sha256": "9917798ac39e8ec5d03aab7a8d47dce006118fcc43f312984fefbe41b553819e",
+        "solution_count": 15,
+        "truth_retained": true
+      },
+      {
+        "accepted_states": 6588,
+        "block_calls": 6574,
+        "canonical_sha256": "f05b73711bb387c692eeeb0573070fd31f38e4171270b8b34826232626c86337",
+        "extra_solutions": 14,
+        "id": "nibble_swap|aes128|ascii0",
+        "inverse_orientation_exact": true,
+        "max_frontier": 53,
+        "observed_sha256": "9917798ac39e8ec5d03aab7a8d47dce006118fcc43f312984fefbe41b553819e",
+        "solution_count": 15,
+        "truth_retained": true
+      }
+    ],
+    "plaintext_sha256": "baf4d915f74ac49d4f17affcf4afeca9073afa77f0ac56c1bda8f4d6aa748944"
+  },
+  "scope": {
+    "allowed_plaintext": "A-Z plus SPACE",
+    "ciphers": [
+      "des",
+      "aes128"
+    ],
+    "contexts": 16,
+    "identity": "ASTRA",
+    "ivs": [
+      "nul",
+      "ascii0"
+    ],
+    "legacy_key": "2016",
+    "mask_cycle": [
+      "ff",
+      "0f",
+      "f0"
+    ],
+    "max_accepted_states": 5000000,
+    "max_frontier": 100000,
+    "natural_ciphertext_bytes": 819,
+    "observed_hex_chars": 1092,
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "retention": "every complete solution; capped contexts explicitly incomplete",
+    "source_start": "21"
+  },
+  "target_evaluated": false
+}

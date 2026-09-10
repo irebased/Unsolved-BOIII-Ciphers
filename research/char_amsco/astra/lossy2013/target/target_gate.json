@@ -1,0 +1,58 @@
+{
+  "authorization": "public preregistration recorded; separate root GO required",
+  "canonical_text_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "control_ledger_sha256": "ccf85c2f000b3269de87de7b3d636b30577dc964dbe24bc23b667af70e5ea837",
+  "control_source_sha256": "86bbd8c080fb9de8c3404de9f09fad16e97e471f1a4641c84f7b65732445d565",
+  "dataset_sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+  "dependency_hashes": {
+    "cryptool_bug/amsco_geometry.py": "c43e6412cbf2ac34e137801e1fd9c13e8c46bb89296bb89484c01d28a505cae6",
+    "cryptool_bug/analyze.py": "ba66b3c844cf5784749587af960a11163d5e47deddf523a04530bea4f5d9629b",
+    "cryptool_bug/source/class.amsco.php.base64": "25143ebd1a720d9fe35ac3aa2579be722a8ded03b67d6ff2da0f071e40f8c3ac",
+    "cryptool_bug/source/default_tool.php": "e71bcfe75ae9250b00f8adf38eaec4547b854bfafd23a559cfef482d0f81a7d6",
+    "cryptool_bug/source/infobox.template": "0e6f9a9f73a2aee868567fe082a342a75334a3944ca050599da6bfcb97c040af",
+    "lossy2013/README.md": "4d947424b3041e43dffff1ddfeee49c822622e22f0aa59f4086a359619d4be53",
+    "lossy2013/REPORT.md": "59b213162a47bbaa7f66baf1f0d30958d709ae76dda4bbb16de5f6e674bca637",
+    "lossy2013/controls.json": "ccf85c2f000b3269de87de7b3d636b30577dc964dbe24bc23b667af70e5ea837",
+    "lossy2013/controls.py": "86bbd8c080fb9de8c3404de9f09fad16e97e471f1a4641c84f7b65732445d565",
+    "lossy2013/core.py": "abadb49e68477b2875cffb712889798c8206ad3dde2357d7d71a5f5a09d1752e"
+  },
+  "driver_sha256": "dfd41b1dfcd5c1f3b62465478fb4ecfda20973a5a29a1c480f9bb4ed277456e9",
+  "fable_reference": "ASTRA message254 on FABLE channel",
+  "gate_builder_sha256": "6e26e8ebb5c07fa8af8162e7f7120ea5c358394888919298f29d9eed018bbef0",
+  "identity": "ASTRA",
+  "mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "review_evidence": "Root source and driver review; parent controls and all 16 synthetic driver controls independently replayed PASS with ledger SHA-256 58789b68c67773b03c6008a68252170f17ea53f1530fe7c04ce8353aa4bdcfda",
+  "scope": {
+    "cap_semantics": "INCOMPLETE; never an exclusion",
+    "ciphers": [
+      "des",
+      "aes128"
+    ],
+    "contexts": 16,
+    "equivalent_emission_model": "literal keys 2013 and 2014 counted once",
+    "identity": "ASTRA",
+    "ivs": [
+      "nul",
+      "ascii0"
+    ],
+    "max_accepted_states": 5000000,
+    "max_frontier": 100000,
+    "natural_ciphertext_bytes": 655,
+    "observed_hex_characters": 1092,
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "plaintext_bytes": "printable ASCII 32..126 inclusive",
+    "retention": "every complete plaintext/ciphertext path; no score or language pruning"
+  },
+  "target_artifact_hashes": {
+    "target/README.md": "90178c6728ff61403635820c6051bc8aa3e1d95a7cb4d25197bafc502980497f",
+    "target/driver_controls.json": "58789b68c67773b03c6008a68252170f17ea53f1530fe7c04ce8353aa4bdcfda",
+    "target/driver_controls.py": "c27e23c09a395661b917cc48dc55c71a581c93f3c143cd4c4f2b228e36a9cfd9",
+    "target/prepare_gate.py": "6e26e8ebb5c07fa8af8162e7f7120ea5c358394888919298f29d9eed018bbef0"
+  },
+  "target_evaluated": false
+}

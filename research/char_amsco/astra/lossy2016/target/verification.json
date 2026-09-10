@@ -1,0 +1,535 @@
+{
+  "cells": [
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 148,
+              "mask_match": false,
+              "plaintext_byte": 18
+            }
+          ],
+          "keystream_byte": 134,
+          "observed_mask": 255,
+          "observed_value": 148,
+          "register_hex": "0000000000000000"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "forward|des|nul"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 148,
+              "mask_match": false,
+              "plaintext_byte": 57
+            }
+          ],
+          "keystream_byte": 173,
+          "observed_mask": 255,
+          "observed_value": 148,
+          "register_hex": "3030303030303030"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "forward|des|ascii0"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 41,
+              "mask_match": false,
+              "plaintext_byte": 32
+            },
+            {
+              "ciphertext_byte": 72,
+              "mask_match": false,
+              "plaintext_byte": 65
+            },
+            {
+              "ciphertext_byte": 75,
+              "mask_match": false,
+              "plaintext_byte": 66
+            },
+            {
+              "ciphertext_byte": 74,
+              "mask_match": false,
+              "plaintext_byte": 67
+            },
+            {
+              "ciphertext_byte": 77,
+              "mask_match": false,
+              "plaintext_byte": 68
+            },
+            {
+              "ciphertext_byte": 76,
+              "mask_match": false,
+              "plaintext_byte": 69
+            },
+            {
+              "ciphertext_byte": 79,
+              "mask_match": false,
+              "plaintext_byte": 70
+            },
+            {
+              "ciphertext_byte": 78,
+              "mask_match": false,
+              "plaintext_byte": 71
+            },
+            {
+              "ciphertext_byte": 65,
+              "mask_match": false,
+              "plaintext_byte": 72
+            },
+            {
+              "ciphertext_byte": 64,
+              "mask_match": false,
+              "plaintext_byte": 73
+            },
+            {
+              "ciphertext_byte": 67,
+              "mask_match": false,
+              "plaintext_byte": 74
+            },
+            {
+              "ciphertext_byte": 66,
+              "mask_match": false,
+              "plaintext_byte": 75
+            },
+            {
+              "ciphertext_byte": 69,
+              "mask_match": false,
+              "plaintext_byte": 76
+            },
+            {
+              "ciphertext_byte": 68,
+              "mask_match": false,
+              "plaintext_byte": 77
+            },
+            {
+              "ciphertext_byte": 71,
+              "mask_match": false,
+              "plaintext_byte": 78
+            },
+            {
+              "ciphertext_byte": 70,
+              "mask_match": false,
+              "plaintext_byte": 79
+            },
+            {
+              "ciphertext_byte": 89,
+              "mask_match": false,
+              "plaintext_byte": 80
+            },
+            {
+              "ciphertext_byte": 88,
+              "mask_match": false,
+              "plaintext_byte": 81
+            },
+            {
+              "ciphertext_byte": 91,
+              "mask_match": false,
+              "plaintext_byte": 82
+            },
+            {
+              "ciphertext_byte": 90,
+              "mask_match": false,
+              "plaintext_byte": 83
+            },
+            {
+              "ciphertext_byte": 93,
+              "mask_match": false,
+              "plaintext_byte": 84
+            },
+            {
+              "ciphertext_byte": 92,
+              "mask_match": false,
+              "plaintext_byte": 85
+            },
+            {
+              "ciphertext_byte": 95,
+              "mask_match": false,
+              "plaintext_byte": 86
+            },
+            {
+              "ciphertext_byte": 94,
+              "mask_match": false,
+              "plaintext_byte": 87
+            },
+            {
+              "ciphertext_byte": 81,
+              "mask_match": false,
+              "plaintext_byte": 88
+            },
+            {
+              "ciphertext_byte": 80,
+              "mask_match": false,
+              "plaintext_byte": 89
+            },
+            {
+              "ciphertext_byte": 83,
+              "mask_match": false,
+              "plaintext_byte": 90
+            }
+          ],
+          "keystream_byte": 9,
+          "observed_mask": 240,
+          "observed_value": 48,
+          "register_hex": "000000000000000000000000000094e8"
+        }
+      ],
+      "failure_offset": 2,
+      "first_empty_after_bytes": 3,
+      "frontier_counts": [
+        1,
+        1,
+        0
+      ],
+      "id": "forward|aes128|nul"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 148,
+              "mask_match": false,
+              "plaintext_byte": 252
+            }
+          ],
+          "keystream_byte": 104,
+          "observed_mask": 255,
+          "observed_value": 148,
+          "register_hex": "30303030303030303030303030303030"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "forward|aes128|ascii0"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 85,
+              "mask_match": false,
+              "plaintext_byte": 211
+            }
+          ],
+          "keystream_byte": 134,
+          "observed_mask": 255,
+          "observed_value": 85,
+          "register_hex": "0000000000000000"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "full_hex_reverse|des|nul"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 85,
+              "mask_match": false,
+              "plaintext_byte": 248
+            }
+          ],
+          "keystream_byte": 173,
+          "observed_mask": 255,
+          "observed_value": 85,
+          "register_hex": "3030303030303030"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "full_hex_reverse|des|ascii0"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 85,
+              "mask_match": false,
+              "plaintext_byte": 143
+            }
+          ],
+          "keystream_byte": 218,
+          "observed_mask": 255,
+          "observed_value": 85,
+          "register_hex": "00000000000000000000000000000000"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "full_hex_reverse|aes128|nul"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 85,
+              "mask_match": false,
+              "plaintext_byte": 61
+            }
+          ],
+          "keystream_byte": 104,
+          "observed_mask": 255,
+          "observed_value": 85,
+          "register_hex": "30303030303030303030303030303030"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "full_hex_reverse|aes128|ascii0"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 85,
+              "mask_match": false,
+              "plaintext_byte": 211
+            }
+          ],
+          "keystream_byte": 134,
+          "observed_mask": 255,
+          "observed_value": 85,
+          "register_hex": "0000000000000000"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "byte_reverse|des|nul"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 85,
+              "mask_match": false,
+              "plaintext_byte": 248
+            }
+          ],
+          "keystream_byte": 173,
+          "observed_mask": 255,
+          "observed_value": 85,
+          "register_hex": "3030303030303030"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "byte_reverse|des|ascii0"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 85,
+              "mask_match": false,
+              "plaintext_byte": 143
+            }
+          ],
+          "keystream_byte": 218,
+          "observed_mask": 255,
+          "observed_value": 85,
+          "register_hex": "00000000000000000000000000000000"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "byte_reverse|aes128|nul"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 85,
+              "mask_match": false,
+              "plaintext_byte": 61
+            }
+          ],
+          "keystream_byte": 104,
+          "observed_mask": 255,
+          "observed_value": 85,
+          "register_hex": "30303030303030303030303030303030"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "byte_reverse|aes128|ascii0"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 73,
+              "mask_match": false,
+              "plaintext_byte": 207
+            }
+          ],
+          "keystream_byte": 134,
+          "observed_mask": 255,
+          "observed_value": 73,
+          "register_hex": "0000000000000000"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "nibble_swap|des|nul"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 73,
+              "mask_match": false,
+              "plaintext_byte": 228
+            }
+          ],
+          "keystream_byte": 173,
+          "observed_mask": 255,
+          "observed_value": 73,
+          "register_hex": "3030303030303030"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "nibble_swap|des|ascii0"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 73,
+              "mask_match": false,
+              "plaintext_byte": 147
+            }
+          ],
+          "keystream_byte": 218,
+          "observed_mask": 255,
+          "observed_value": 73,
+          "register_hex": "00000000000000000000000000000000"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "nibble_swap|aes128|nul"
+    },
+    {
+      "all_failed_candidates_retained": true,
+      "failing_states": [
+        {
+          "candidates": [
+            {
+              "ciphertext_byte": 73,
+              "mask_match": false,
+              "plaintext_byte": 33
+            }
+          ],
+          "keystream_byte": 104,
+          "observed_mask": 255,
+          "observed_value": 73,
+          "register_hex": "30303030303030303030303030303030"
+        }
+      ],
+      "failure_offset": 0,
+      "first_empty_after_bytes": 1,
+      "frontier_counts": [
+        0
+      ],
+      "id": "nibble_swap|aes128|ascii0"
+    }
+  ],
+  "driver_sha256": "036ab0f597906ca90699d63f4ea42033030e21a1fca28476e2746b735144ae4c",
+  "gate_sha256": "da753b01353e65fc5d81e6905ab5a0b9747be0091fbbc6c7bd0a20336f24f9a7",
+  "identity": "ASTRA",
+  "result_sha256": "1bc9a98a2af2f6d3f2f9c5c2adde5c87c78f7327840a8de7ba39407cf4676995",
+  "summary": {
+    "all_complete": true,
+    "cells": 16,
+    "failure_offsets": {
+      "0": 15,
+      "2": 1
+    },
+    "solutions": 0
+  },
+  "target_evaluated": true,
+  "verification_kind": "independent bounded first-empty-frontier replay; no full target rerun"
+}

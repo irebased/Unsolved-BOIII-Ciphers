@@ -1,0 +1,60 @@
+{
+  "artifact_hashes": {
+    "lavender/src/data/ciphers/revelations.json": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "research/char_amsco/astra/cryptool_bug/analyze.py": "ba66b3c844cf5784749587af960a11163d5e47deddf523a04530bea4f5d9629b",
+    "research/char_amsco/astra/cryptool_bug/evidence.json": "71ee944899ce7a202e07ee4b0d292309978f3a7eb3eb697d0c196f858844daab",
+    "research/char_amsco/astra/cryptool_bug/source/class.amsco.php.base64": "25143ebd1a720d9fe35ac3aa2579be722a8ded03b67d6ff2da0f071e40f8c3ac",
+    "research/char_amsco/astra/cryptool_bug/source/default_tool.php": "e71bcfe75ae9250b00f8adf38eaec4547b854bfafd23a559cfef482d0f81a7d6",
+    "research/char_amsco/astra/lossy2016/README.md": "0121c877950f19a1f8622fc45db876622e43fff188b8684f9ca18a70d57207aa",
+    "research/char_amsco/astra/lossy2016/REPORT.md": "c21bf94ee4a61b36f5adec52b553c0f28322f665f10639641ca07e46a35e403e",
+    "research/char_amsco/astra/lossy2016/controls.json": "c8ec2e3d707d4dec845e4711477fcbb50ce410e3f9d42aeeddde9144b0ca3ba7",
+    "research/char_amsco/astra/lossy2016/controls.py": "d84ac6338f60427b3899739c0664f36eac8ddfc2b3b80815f570e8a2d7ab3382",
+    "research/char_amsco/astra/lossy2016/core.py": "869f707b0f7ff318f576db14c6cbd2b7f9e3bac1495126e0fb06312aa010d75a",
+    "research/rev7-20260909-codex/homophonic/lossy2016_case_controls/README.md": "045951d36553803bc2907293b2586cdf8e42ef3fa77cd372c29468d7bdab212a",
+    "research/rev7-20260909-codex/homophonic/lossy2016_case_controls/case_frontier.py": "b40adb473aa4e1816cab3362b2a4628b0ff8f47184ceac1813322be2e15451bb",
+    "research/rev7-20260909-codex/homophonic/lossy2016_case_controls/controls.json": "55f5a044a137befed570c3c8acafd3a8e8b98fc1027610b097c73715ec6c901d",
+    "research/rev7-20260909-codex/homophonic/lossy2016_case_controls/target/README.md": "dfb8ae2a50ea7a339efb125ac4247884ebe246b93a228b4bc68b774001614fe2",
+    "research/rev7-20260909-codex/homophonic/lossy2016_case_controls/target/controls.json": "29c83583b52697632acd9ae8e7c5b02def454dc5fb0083c1c886891cf1ab0626",
+    "research/rev7-20260909-codex/homophonic/lossy2016_case_controls/target/driver_controls.py": "d868a9d5f9754020f19f3db07c61de38ee3a09c0c7f81ceff7a06d404b0fbd99",
+    "research/rev7-20260909-codex/homophonic/lossy2016_case_controls/target/prepare_gate.py": "48009542f73691cbb622a42eb8738e5bbe477e0636322eef1fc1f7a1b422617c"
+  },
+  "authorization": "external preregistration; separate root GO required",
+  "canonical_text_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "dataset_sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+  "driver_sha256": "5d2c53e88e64bd05e825a14abba29bcc1c4d2e68eadfd0926130f769031367df",
+  "fable_reference": "ASTRA message253 on FABLE channel",
+  "identity": "ASTRA",
+  "mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "scope": {
+    "allowed_plaintext": "ASCII letters plus SPACE under exact lower/Title/ALLCAPS word DFA",
+    "ciphers": [
+      "des",
+      "aes128"
+    ],
+    "contexts": 16,
+    "identity": "ASTRA",
+    "ivs": [
+      "nul",
+      "ascii0"
+    ],
+    "legacy_key": "2016",
+    "mask_cycle": [
+      "ff",
+      "0f",
+      "f0"
+    ],
+    "max_accepted_states": 5000000,
+    "max_frontier": 100000,
+    "natural_ciphertext_bytes": 819,
+    "observed_hex_chars": 1092,
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "retention": "every complete solution; capped contexts explicitly incomplete",
+    "source_start": "21"
+  },
+  "target_evaluated": false
+}

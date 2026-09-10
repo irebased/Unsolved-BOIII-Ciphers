@@ -1,0 +1,403 @@
+{
+  "cells": [
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "des",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "forward|des|nul",
+      "inverse_orientation_exact": true,
+      "iv": "nul",
+      "iv_hex": "0000000000000000",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+      "orientation": "forward",
+      "seconds": 2.9374999999998153e-05,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "des",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "forward|des|ascii0",
+      "inverse_orientation_exact": true,
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+      "orientation": "forward",
+      "seconds": 4.4999999999975615e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 2,
+      "block_calls": 3,
+      "capped_reason": null,
+      "cipher": "aes128",
+      "complete": true,
+      "frontier_counts": [
+        1,
+        1,
+        0
+      ],
+      "id": "forward|aes128|nul",
+      "inverse_orientation_exact": true,
+      "iv": "nul",
+      "iv_hex": "00000000000000000000000000000000",
+      "max_frontier": 1,
+      "observed_length": 1092,
+      "observed_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+      "orientation": "forward",
+      "seconds": 2.2500000000001685e-05,
+      "solutions": [],
+      "stopped_after_bytes": 3
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "aes128",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "forward|aes128|ascii0",
+      "inverse_orientation_exact": true,
+      "iv": "ascii0",
+      "iv_hex": "30303030303030303030303030303030",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+      "orientation": "forward",
+      "seconds": 2.9579999999973516e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "des",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "full_hex_reverse|des|nul",
+      "inverse_orientation_exact": true,
+      "iv": "nul",
+      "iv_hex": "0000000000000000",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "1e5c94f36483c784b10d14beba26c515efc18d4fad0f126dd18291d541192dd0",
+      "orientation": "full_hex_reverse",
+      "seconds": 2.874999999999406e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "des",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "full_hex_reverse|des|ascii0",
+      "inverse_orientation_exact": true,
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "1e5c94f36483c784b10d14beba26c515efc18d4fad0f126dd18291d541192dd0",
+      "orientation": "full_hex_reverse",
+      "seconds": 2.9579999999973516e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "aes128",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "full_hex_reverse|aes128|nul",
+      "inverse_orientation_exact": true,
+      "iv": "nul",
+      "iv_hex": "00000000000000000000000000000000",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "1e5c94f36483c784b10d14beba26c515efc18d4fad0f126dd18291d541192dd0",
+      "orientation": "full_hex_reverse",
+      "seconds": 2.874999999999406e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "aes128",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "full_hex_reverse|aes128|ascii0",
+      "inverse_orientation_exact": true,
+      "iv": "ascii0",
+      "iv_hex": "30303030303030303030303030303030",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "1e5c94f36483c784b10d14beba26c515efc18d4fad0f126dd18291d541192dd0",
+      "orientation": "full_hex_reverse",
+      "seconds": 2.709000000003514e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "des",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "byte_reverse|des|nul",
+      "inverse_orientation_exact": true,
+      "iv": "nul",
+      "iv_hex": "0000000000000000",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "c0a0ad90fc93da8a57009b1c86c0e0e93a001bcab7ed6a7c2cd3a32fcca06af7",
+      "orientation": "byte_reverse",
+      "seconds": 3.124999999999656e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "des",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "byte_reverse|des|ascii0",
+      "inverse_orientation_exact": true,
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "c0a0ad90fc93da8a57009b1c86c0e0e93a001bcab7ed6a7c2cd3a32fcca06af7",
+      "orientation": "byte_reverse",
+      "seconds": 2.79200000000146e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "aes128",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "byte_reverse|aes128|nul",
+      "inverse_orientation_exact": true,
+      "iv": "nul",
+      "iv_hex": "00000000000000000000000000000000",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "c0a0ad90fc93da8a57009b1c86c0e0e93a001bcab7ed6a7c2cd3a32fcca06af7",
+      "orientation": "byte_reverse",
+      "seconds": 2.833000000000696e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "aes128",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "byte_reverse|aes128|ascii0",
+      "inverse_orientation_exact": true,
+      "iv": "ascii0",
+      "iv_hex": "30303030303030303030303030303030",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "c0a0ad90fc93da8a57009b1c86c0e0e93a001bcab7ed6a7c2cd3a32fcca06af7",
+      "orientation": "byte_reverse",
+      "seconds": 2.7910000000019863e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "des",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "nibble_swap|des|nul",
+      "inverse_orientation_exact": true,
+      "iv": "nul",
+      "iv_hex": "0000000000000000",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "018dc3c27a657a877c1024f8c944d651b16b30fc66a549742c265b2f3edc9a3e",
+      "orientation": "nibble_swap",
+      "seconds": 3.0000000000030003e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "des",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "nibble_swap|des|ascii0",
+      "inverse_orientation_exact": true,
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "018dc3c27a657a877c1024f8c944d651b16b30fc66a549742c265b2f3edc9a3e",
+      "orientation": "nibble_swap",
+      "seconds": 2.7500000000027502e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "aes128",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "nibble_swap|aes128|nul",
+      "inverse_orientation_exact": true,
+      "iv": "nul",
+      "iv_hex": "00000000000000000000000000000000",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "018dc3c27a657a877c1024f8c944d651b16b30fc66a549742c265b2f3edc9a3e",
+      "orientation": "nibble_swap",
+      "seconds": 2.7079999999971016e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    },
+    {
+      "accepted_states": 0,
+      "block_calls": 1,
+      "capped_reason": null,
+      "cipher": "aes128",
+      "complete": true,
+      "frontier_counts": [
+        0
+      ],
+      "id": "nibble_swap|aes128|ascii0",
+      "inverse_orientation_exact": true,
+      "iv": "ascii0",
+      "iv_hex": "30303030303030303030303030303030",
+      "max_frontier": 0,
+      "observed_length": 1092,
+      "observed_sha256": "018dc3c27a657a877c1024f8c944d651b16b30fc66a549742c265b2f3edc9a3e",
+      "orientation": "nibble_swap",
+      "seconds": 2.6249999999991558e-06,
+      "solutions": [],
+      "stopped_after_bytes": 1
+    }
+  ],
+  "configuration": {
+    "artifact_hashes": {
+      "lavender/src/data/ciphers/revelations.json": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+      "research/char_amsco/astra/cryptool_bug/analyze.py": "ba66b3c844cf5784749587af960a11163d5e47deddf523a04530bea4f5d9629b",
+      "research/char_amsco/astra/cryptool_bug/evidence.json": "71ee944899ce7a202e07ee4b0d292309978f3a7eb3eb697d0c196f858844daab",
+      "research/char_amsco/astra/cryptool_bug/source/class.amsco.php.base64": "25143ebd1a720d9fe35ac3aa2579be722a8ded03b67d6ff2da0f071e40f8c3ac",
+      "research/char_amsco/astra/cryptool_bug/source/default_tool.php": "e71bcfe75ae9250b00f8adf38eaec4547b854bfafd23a559cfef482d0f81a7d6",
+      "research/char_amsco/astra/lossy2016/README.md": "0121c877950f19a1f8622fc45db876622e43fff188b8684f9ca18a70d57207aa",
+      "research/char_amsco/astra/lossy2016/REPORT.md": "c21bf94ee4a61b36f5adec52b553c0f28322f665f10639641ca07e46a35e403e",
+      "research/char_amsco/astra/lossy2016/controls.json": "c8ec2e3d707d4dec845e4711477fcbb50ce410e3f9d42aeeddde9144b0ca3ba7",
+      "research/char_amsco/astra/lossy2016/controls.py": "d84ac6338f60427b3899739c0664f36eac8ddfc2b3b80815f570e8a2d7ab3382",
+      "research/char_amsco/astra/lossy2016/core.py": "869f707b0f7ff318f576db14c6cbd2b7f9e3bac1495126e0fb06312aa010d75a",
+      "research/char_amsco/astra/lossy2016/target/README.md": "d4fc61d77739916fe309a4f87e12f844ecb3ca3053f58eb84b5d8b6936fb8727",
+      "research/char_amsco/astra/lossy2016/target/controls.json": "33831558e7055114cc01c61a5027273f8d2b6eb42f0322d603932906ab15dbc3",
+      "research/char_amsco/astra/lossy2016/target/driver_controls.py": "ecba2a456faf4722846baaa5c2ee9edb36e1e4815cc416d6e56b1dcfd1d7a0d1",
+      "research/char_amsco/astra/lossy2016/target/prepare_gate.py": "2338297f5c9a04844b0b9e94bef12455b76612cb65fa30e5777bea5e833673ea"
+    },
+    "canonical_text_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+    "dataset_sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "driver_sha256": "036ab0f597906ca90699d63f4ea42033030e21a1fca28476e2746b735144ae4c",
+    "gate_sha256": "da753b01353e65fc5d81e6905ab5a0b9747be0091fbbc6c7bd0a20336f24f9a7",
+    "mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91"
+  },
+  "identity": "ASTRA",
+  "scope": {
+    "allowed_plaintext": "A-Z plus SPACE",
+    "ciphers": [
+      "des",
+      "aes128"
+    ],
+    "contexts": 16,
+    "identity": "ASTRA",
+    "ivs": [
+      "nul",
+      "ascii0"
+    ],
+    "legacy_key": "2016",
+    "mask_cycle": [
+      "ff",
+      "0f",
+      "f0"
+    ],
+    "max_accepted_states": 5000000,
+    "max_frontier": 100000,
+    "natural_ciphertext_bytes": 819,
+    "observed_hex_chars": 1092,
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "retention": "every complete solution; capped contexts explicitly incomplete",
+    "source_start": "21"
+  },
+  "summary": {
+    "complete_contexts": 16,
+    "incomplete_contexts": 0,
+    "solutions": 0
+  },
+  "target_evaluated": true
+}
