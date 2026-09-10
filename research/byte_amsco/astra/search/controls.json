@@ -1,0 +1,1185 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "early_reject_matches_independent_full_cfb": true,
+    "exact_context_count": true,
+    "exact_transform_count": true,
+    "full_plants_all_backends_starts_orientations": true,
+    "index_gather_matches_accepted_base_inverse": true,
+    "no_target_read_or_evaluation": true,
+    "utf8_initial_states_1_2_and_terminal": true
+  },
+  "benchmark": {
+    "backend_contexts": 140000,
+    "classification_counts": {
+      "rejected_a105": 137242,
+      "rejected_fsa_transition": 2758
+    },
+    "contexts_per_second": 290258.91094856604,
+    "digest": "5fc94e5640aac0071f64833a2a0a016c4a490eab877e44761b1042122bf83551",
+    "exact_prospective_contexts": 22910272,
+    "limits": "Synthetic width-9 sample only; linear estimate excludes survivor output, checkpoints, target extraction, and platform variance.",
+    "linear_seconds_estimate": 78.93046909440001,
+    "orders": 20000,
+    "orders_per_second": 41465.55870693801,
+    "seconds": 0.4823280000000001
+  },
+  "dependency_hashes": {
+    "base/README.md": "cc25ff6fbba54f4125ea0ab82c68389f5da3feb0f792abfd6e235a07b108e20b",
+    "base/REPORT.md": "457887f63345831ea8c7d636318c5cb919c30e5f11e1fb709bf00c8916c8dbf0",
+    "base/controls.json": "767d651729055d1d6fa202e8983635d3afafd46d06729924569db7260ed21175",
+    "base/controls.py": "b187ab27bbde490399333c19ddf62f8cb13f514b90fb50614cb231b4a5f65ad0",
+    "base/core.py": "2e7b413cb01396c8c6c97f21ad4a1e46939c3c1488c27e1c48bed8e24a48b990",
+    "controls.py": "4243df3439b6ebceed182c31c0d3a28486cbaa332526ded9ffb712862a190bc6",
+    "engine.py": "f768b990340ea4143fdf75ebb23fd27245e71517065c2736a41d739027ea114c",
+    "runtime.py": "8b7899fc7aedb2de04cb900876987e6b3385922d4e2e53c913562659913818f4",
+    "runtime/controls.json": "483fa566e1030e489f5bb2958bcada9f1f95762f83104b7b9e8437c360787ee5",
+    "target/reference.py": "dea3bceff94993abb7f59993300f71552c3ca84b344e96b22d27479c3dc05d41"
+  },
+  "early_rejections": [
+    {
+      "cipher": "aes128",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "forward",
+      "rejection": {
+        "ciphertext_index": 16,
+        "plaintext_byte": 24,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "des",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "forward",
+      "rejection": {
+        "ciphertext_index": 8,
+        "plaintext_byte": 229,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "blowfish",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "forward",
+      "rejection": {
+        "ciphertext_index": 8,
+        "plaintext_byte": 237,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "bfcompat",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "forward",
+      "rejection": {
+        "ciphertext_index": 9,
+        "plaintext_byte": 236,
+        "reason": "outside A105",
+        "suffix_offset": 1
+      }
+    },
+    {
+      "cipher": "rc2",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "forward",
+      "rejection": {
+        "ciphertext_index": 8,
+        "plaintext_byte": 16,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "twofish",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "forward",
+      "rejection": {
+        "ciphertext_index": 16,
+        "plaintext_byte": 240,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "loki97",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "forward",
+      "rejection": {
+        "ciphertext_index": 17,
+        "plaintext_byte": 245,
+        "reason": "outside A105",
+        "suffix_offset": 1
+      }
+    },
+    {
+      "cipher": "aes128",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "full_hex_reverse",
+      "rejection": {
+        "ciphertext_index": 17,
+        "plaintext_byte": 5,
+        "reason": "outside A105",
+        "suffix_offset": 1
+      }
+    },
+    {
+      "cipher": "des",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "full_hex_reverse",
+      "rejection": {
+        "ciphertext_index": 8,
+        "plaintext_byte": 230,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "blowfish",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "full_hex_reverse",
+      "rejection": {
+        "ciphertext_index": 8,
+        "plaintext_byte": 25,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "bfcompat",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "full_hex_reverse",
+      "rejection": {
+        "ciphertext_index": 9,
+        "plaintext_byte": 140,
+        "reason": "outside A105",
+        "suffix_offset": 1
+      }
+    },
+    {
+      "cipher": "rc2",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "full_hex_reverse",
+      "rejection": {
+        "ciphertext_index": 8,
+        "plaintext_byte": 151,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "twofish",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "full_hex_reverse",
+      "rejection": {
+        "ciphertext_index": 16,
+        "plaintext_byte": 216,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "loki97",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "full_hex_reverse",
+      "rejection": {
+        "ciphertext_index": 16,
+        "plaintext_byte": 196,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "aes128",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "byte_reverse",
+      "rejection": {
+        "ciphertext_index": 16,
+        "plaintext_byte": 11,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "des",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "byte_reverse",
+      "rejection": {
+        "ciphertext_index": 8,
+        "plaintext_byte": 1,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "blowfish",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "byte_reverse",
+      "rejection": {
+        "ciphertext_index": 9,
+        "plaintext_byte": 223,
+        "reason": "outside A105",
+        "suffix_offset": 1
+      }
+    },
+    {
+      "cipher": "bfcompat",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "byte_reverse",
+      "rejection": {
+        "ciphertext_index": 8,
+        "plaintext_byte": 24,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "rc2",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "byte_reverse",
+      "rejection": {
+        "ciphertext_index": 8,
+        "plaintext_byte": 197,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "twofish",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "byte_reverse",
+      "rejection": {
+        "ciphertext_index": 19,
+        "plaintext_byte": 237,
+        "reason": "outside A105",
+        "suffix_offset": 3
+      }
+    },
+    {
+      "cipher": "loki97",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "byte_reverse",
+      "rejection": {
+        "ciphertext_index": 16,
+        "plaintext_byte": 165,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "aes128",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "nibble_swap",
+      "rejection": {
+        "ciphertext_index": 16,
+        "plaintext_byte": 164,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "des",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "nibble_swap",
+      "rejection": {
+        "ciphertext_index": 8,
+        "plaintext_byte": 140,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "blowfish",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "nibble_swap",
+      "rejection": {
+        "ciphertext_index": 9,
+        "plaintext_byte": 27,
+        "reason": "outside A105",
+        "suffix_offset": 1
+      }
+    },
+    {
+      "cipher": "bfcompat",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "nibble_swap",
+      "rejection": {
+        "ciphertext_index": 8,
+        "plaintext_byte": 155,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    },
+    {
+      "cipher": "rc2",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "nibble_swap",
+      "rejection": {
+        "ciphertext_index": 9,
+        "plaintext_byte": 20,
+        "reason": "outside A105",
+        "suffix_offset": 1
+      }
+    },
+    {
+      "cipher": "twofish",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "nibble_swap",
+      "rejection": {
+        "ciphertext_index": 18,
+        "plaintext_byte": 28,
+        "reason": "outside A105",
+        "suffix_offset": 2
+      }
+    },
+    {
+      "cipher": "loki97",
+      "classification": "rejected_a105",
+      "independent_full_reference_and_first_failure": true,
+      "orientation": "nibble_swap",
+      "rejection": {
+        "ciphertext_index": 16,
+        "plaintext_byte": 236,
+        "reason": "outside A105",
+        "suffix_offset": 0
+      }
+    }
+  ],
+  "environment": {
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "python": "3.9.6"
+  },
+  "geometry": {
+    "all_permutations": true,
+    "base_inverse_exact": true,
+    "both_starts": true,
+    "cases": 43600,
+    "digest": "24634395543814bab9998a606d329a9ff56ac23e064a0cbc8f561678a02ffea5",
+    "lengths": [
+      0,
+      24
+    ],
+    "widths": [
+      2,
+      6
+    ]
+  },
+  "identity": "ASTRA",
+  "plants": {
+    "all_7_backends_both_starts_all_4_orientations": true,
+    "plaintext_sha256": "b77cd56a3bf9a1de29c5df66683f6ffa8e30666674e40bd8eb1b1f79842e1a01",
+    "rows": [
+      {
+        "cipher": "aes128",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "2d5e27db77f6fb604f1f42f65a8484b761579611f90a62c30f03c30ff18aff5c",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "0d5a7c3d5c25717eade7cfe1959cce5e7f8c6554ffebb20f9ab4c5ac97f49523",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "5b491f0209929e78618050fa2a4f9690cd625493413e994fc05da6e05dea351a",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "7c8dc176e310eebb3fd8e4cda8d4c19a831fe1420f5157ef3902a3d414f2b2eb",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          }
+        ],
+        "start": 1
+      },
+      {
+        "cipher": "aes128",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "35e5b9f2ab4618a98fcdea50cffc31ff4fb44db4ad2c8fecbf2ab63c483f0e9a",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "1e3f0092f625dfd726d79f13336ffac384aeaec9f134aec17e89efc4cc2307b6",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "4ab16764dd3b92a723764cd47f1f0089ef4aefb89f8705a838b2225b443d75de",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "2f0953bf8ee627d4ef78504783a9da694d6a894208f348d797a1fc6b7e139744",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          }
+        ],
+        "start": 2
+      },
+      {
+        "cipher": "des",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "0720ac98d57be12370acaf12dc79a8532ccaa1c8cff46b33dafd8671eb106181",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "7e964b2ed1c403a1c5ac764e5ab94f6a2839e40f5964c5276f0e3e82df4220c3",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "44c56cc9e81d80eba734c78c9086537eed9a0bcfb5b49b1987d398e7aebe4947",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "910f7a3bc7a953625cc144ffd6ba5bbcbb9c2bc2ba62b3896bb57fa02090efd5",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          }
+        ],
+        "start": 1
+      },
+      {
+        "cipher": "des",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "e7e660c4e3250d42bbb78826ce3b2b8f3492522802e2392595e633611ca40b99",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "20a6f22d9a75768883c12995e1d94cb6b09a31d511c399dce2bde6451396d50a",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "0561ec2adb1a8d9b12605406a6efaaa88a63ea396184a5b8c8d1cac8d6d4eee7",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "15a97bec77adf9c9435819f83983f955ce87b5cb3a28e11f3c622f119d3650a9",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          }
+        ],
+        "start": 2
+      },
+      {
+        "cipher": "blowfish",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "fab8c9262aba69c0e5e65485b53e9aa76d4f023011dcc7db70a0205fa5c05b3e",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "ced4952882c68f6f3631bea8231839c0073b0503d1131f857120226f2e007cd5",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "0c830898f16115991fd0aea9549a6b35e433a4d8f5820e246bf7d87764984caa",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "2545ca560480ad64807c2a1d2977810710e28e753175f542c874e430accd21ee",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          }
+        ],
+        "start": 1
+      },
+      {
+        "cipher": "blowfish",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "e290c59919a6f5db9b18762fcc37749147c6be9e8b508a7051490c0bc20402fa",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "ab3dfd94e3043a2abc9172da9100e536f68818f96ea5b25dd4c2fec9a4244fc4",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "88f610f23b6d0f580fa01a6fc1fe56fb584b120de7b4d2ff0385f357663ed3b3",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "b4bd064a15736f54054e78f744de6706e96a942708f04be9e5bcb786d72f1e5d",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          }
+        ],
+        "start": 2
+      },
+      {
+        "cipher": "bfcompat",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "31e9b7676bab32ca7edd8f365212a35548ec1dc38f83a908cbbf0331c853accc",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "2a46b573d07e26a4c9df3fbaea4fcb22f64fbe6b1389b9a6b1c12c0258898b14",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "dac33f0e2131f2451edbc1132b2af713dc263f3efc09c108db7fcc487b7951f4",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "feae78790302089b8b987d2c864e5bd85a7568c23c80d6d9f246762b97b0d368",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          }
+        ],
+        "start": 1
+      },
+      {
+        "cipher": "bfcompat",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "20fe1736807e44c8c180632ad6da4dea3b6ab2dbabbc2ab9e8b6dbcddd159d2c",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "2e13a6cc60d83c48c35bf8a7631fa8c2583dac6166e6f5bfbd423a39455b0b2a",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "091ee130a12503f2ca2785bb15cb75de6b0dfd0c69e0c1129f84a4d6bc3ebc9d",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "7e8c5a25f43bf6b1fe8cd9314ed0529755991510eab557dcc0e2402b51a7fa17",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          }
+        ],
+        "start": 2
+      },
+      {
+        "cipher": "rc2",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "49895452aceb4dd62faae03af55e9f5eae553816cc79ca9c4fb39fa8d5d82994",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "f02f19260524a8d42cad60483b144eb446992466d8a9fc826319d250bd81c5d4",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "edcb4c9df06a4bb4aeb2c303d5e374bbe1a7155e192b6e7e564cd5ea0448c60c",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "a99f2dc71653231d4d5a7cb013ff6eb219d9a6071c029db1395aee8b47abda34",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          }
+        ],
+        "start": 1
+      },
+      {
+        "cipher": "rc2",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "2c3b83e9079eaf9473ee3c7cff091e18bfab417eee29925474b747ec66232e0a",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "79a9de87cdd8913e8926c868cb505552c307c2d9816996487115983c248912e4",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "341325eec0252056d2d9aba48d2ba5337ded75ced1041e3537f0555987877102",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "0de6f53674879a9b9ff9b35baaa15371f5fd88a8aa86f73cfd582afb0da9b814",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "6d579cd7a111ce777275fb29d4dbbb073f42108b0f400734d9fcedbcd800afc4"
+          }
+        ],
+        "start": 2
+      },
+      {
+        "cipher": "twofish",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "d84928359edd39fb6df37b882c7e0a24da8a0691544f0379fc22aa40faba6906",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "13dff2bf199fa638f35e3a05968ddc1b3742aa3ea57a95bf1c3d38c1df013253",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "d54288b6c3fa63c7e71a1f1fbba604d4388adc028dc1571b99c603832873a700",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "e1d7b4b4660f258f942a9be6b1fe5ce5e36d7d7834b4a7fa2ff58eb0b38113fe",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          }
+        ],
+        "start": 1
+      },
+      {
+        "cipher": "twofish",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "1703d81b17dee6880eb8af14c8799c0090296efb9f54a1c85464a9c4b80430b7",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "100cb20cd13c4b69c6d799e255111a4d6ea0716e276d45777ec0eaaf10cb8043",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "fa48e6cb46fcfc0b057a890a2a72e5f594d4ae07c61e14227e4b27b84479bf94",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "f575003f7990790d64c03624b02a5d8fe0898daf80ed5b77b48eb11ae38a188c",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          }
+        ],
+        "start": 2
+      },
+      {
+        "cipher": "loki97",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "12c74a02e0c6c9a27cad25ac7b674c769a98698d4a7bde29e1ff7d6d9060c44b",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "aa496b24f6e9e08db356836b71528df42de42693038264c41ccb48ab5aa4ce9f",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "3e344ab7c03a4bb872ffb04fdacf456221ca403b5fe0fc23d23fea832e5fdb17",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "bd75922fdde2aae2886998f2339fb4916c52962120ea2847c2b867f9003b3609",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          }
+        ],
+        "start": 1
+      },
+      {
+        "cipher": "loki97",
+        "order": [
+          3,
+          5,
+          1,
+          6,
+          0,
+          4,
+          2
+        ],
+        "orientations": [
+          {
+            "classification": "retained",
+            "displayed_sha256": "0e320881107cd7c5d5f20782c8da43f5eaa303128e3a5d7ab699bca736db5177",
+            "exact_full_reference": true,
+            "orientation": "forward",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "f238b9617055eb78ef134020e39fc3ad53b27fc51cf3e50a92ef0e9f464c6236",
+            "exact_full_reference": true,
+            "orientation": "full_hex_reverse",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "772fa5317c68213d37c1294e8462c5bbeddd3de988e09bcb67f7ca7e9b71e71a",
+            "exact_full_reference": true,
+            "orientation": "byte_reverse",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          },
+          {
+            "classification": "retained",
+            "displayed_sha256": "da1d8fbed053fc044f2c61524c931dc4d59d5e16af3ec9273c2642621a4de4ed",
+            "exact_full_reference": true,
+            "orientation": "nibble_swap",
+            "suffix_sha256": "9818765a0226a736d65920163dd7bfe29d38cd6c55f3a0db27d27e8066fbf8f0"
+          }
+        ],
+        "start": 2
+      }
+    ]
+  },
+  "prospective_scope": {
+    "backends": [
+      "aes128",
+      "des",
+      "blowfish",
+      "bfcompat",
+      "rc2",
+      "twofish",
+      "loki97"
+    ],
+    "context_cases": 22910272,
+    "mode": "CFB8 every external IV by block-boundary suffix",
+    "orders": "all width!",
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "starts": [
+      1,
+      2
+    ],
+    "transform_count": 3272896,
+    "widths": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "rev7_read": false,
+  "scope": "Synthetic-only lazy byte-AMSCO inverse plus all-IV seven-backend CFB8 endpoint search controls; widths 2..9 prospective only.",
+  "target_evaluated": false,
+  "utf8_boundaries": [
+    {
+      "cipher": "aes128",
+      "classification": "retained",
+      "incoming_state": 1,
+      "suffix_prefix_hex": "80a641"
+    },
+    {
+      "cipher": "aes128",
+      "classification": "retained",
+      "incoming_state": 2,
+      "suffix_prefix_hex": "a64141"
+    },
+    {
+      "cipher": "aes128",
+      "classification": "rejected_fsa_terminal",
+      "incoming_state": "terminal_fixture",
+      "terminal_prior_states": [
+        2
+      ]
+    },
+    {
+      "cipher": "des",
+      "classification": "retained",
+      "incoming_state": 1,
+      "suffix_prefix_hex": "80a641"
+    },
+    {
+      "cipher": "des",
+      "classification": "retained",
+      "incoming_state": 2,
+      "suffix_prefix_hex": "a64141"
+    },
+    {
+      "cipher": "des",
+      "classification": "rejected_fsa_terminal",
+      "incoming_state": "terminal_fixture",
+      "terminal_prior_states": [
+        2
+      ]
+    },
+    {
+      "cipher": "blowfish",
+      "classification": "retained",
+      "incoming_state": 1,
+      "suffix_prefix_hex": "80a641"
+    },
+    {
+      "cipher": "blowfish",
+      "classification": "retained",
+      "incoming_state": 2,
+      "suffix_prefix_hex": "a64141"
+    },
+    {
+      "cipher": "blowfish",
+      "classification": "rejected_fsa_terminal",
+      "incoming_state": "terminal_fixture",
+      "terminal_prior_states": [
+        2
+      ]
+    },
+    {
+      "cipher": "bfcompat",
+      "classification": "retained",
+      "incoming_state": 1,
+      "suffix_prefix_hex": "80a641"
+    },
+    {
+      "cipher": "bfcompat",
+      "classification": "retained",
+      "incoming_state": 2,
+      "suffix_prefix_hex": "a64141"
+    },
+    {
+      "cipher": "bfcompat",
+      "classification": "rejected_fsa_terminal",
+      "incoming_state": "terminal_fixture",
+      "terminal_prior_states": [
+        2
+      ]
+    },
+    {
+      "cipher": "rc2",
+      "classification": "retained",
+      "incoming_state": 1,
+      "suffix_prefix_hex": "80a641"
+    },
+    {
+      "cipher": "rc2",
+      "classification": "retained",
+      "incoming_state": 2,
+      "suffix_prefix_hex": "a64141"
+    },
+    {
+      "cipher": "rc2",
+      "classification": "rejected_fsa_terminal",
+      "incoming_state": "terminal_fixture",
+      "terminal_prior_states": [
+        2
+      ]
+    },
+    {
+      "cipher": "twofish",
+      "classification": "retained",
+      "incoming_state": 1,
+      "suffix_prefix_hex": "80a641"
+    },
+    {
+      "cipher": "twofish",
+      "classification": "retained",
+      "incoming_state": 2,
+      "suffix_prefix_hex": "a64141"
+    },
+    {
+      "cipher": "twofish",
+      "classification": "rejected_fsa_terminal",
+      "incoming_state": "terminal_fixture",
+      "terminal_prior_states": [
+        2
+      ]
+    },
+    {
+      "cipher": "loki97",
+      "classification": "retained",
+      "incoming_state": 1,
+      "suffix_prefix_hex": "80a641"
+    },
+    {
+      "cipher": "loki97",
+      "classification": "retained",
+      "incoming_state": 2,
+      "suffix_prefix_hex": "a64141"
+    },
+    {
+      "cipher": "loki97",
+      "classification": "rejected_fsa_terminal",
+      "incoming_state": "terminal_fixture",
+      "terminal_prior_states": [
+        2
+      ]
+    }
+  ]
+}

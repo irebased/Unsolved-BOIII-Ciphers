@@ -454,3 +454,17 @@ Root reviewed the proof and independently regenerated the complete [ledger](../b
 python3 -S -B research/byte_amsco/astra/prefix13/controls.py
 python3 -B research/byte_amsco/astra/prefix13/controls.py --regenerate /tmp/prefix13-controls.json
 ```
+
+
+## Indexed byte-AMSCO all-IV search controls
+
+The [indexed search engine](../byte_amsco/astra/search/README.md) precomputes natural-byte column/offset maps and gathers one ciphertext prefix shared across the seven backends. Each backend begins at its IV-free block boundary and stops at the first impossible A105 or strict-FSA byte. A retained case reaches the true stream end in state 0 and keeps its full suffix and exact order. The prospective widths-2-through-9 grid contains 3,272,896 transforms and 22,910,272 backend contexts.
+
+The [control ledger](../byte_amsco/astra/search/controls.json), SHA-256 `7431dbdf75e8d9e7389063d59b5e33260e487e11befd0898170ea46085ad0a70`, records 43,600 independent inverse comparisons; plants for all seven backends, both starts and four orientations; 28 exact independent early-failure checks; and 21 incoming-state/terminal fixtures. Root independently regenerated the whole package. All deterministic fields matched, including the 140,000-context benchmark digest `5fc94e5640aac0071f64833a2a0a016c4a490eab877e44761b1042122bf83551`; only four timing-derived fields differed.
+
+The original benchmark processed 20,000 width-9 orders in 0.482 seconds, while root measured 0.503 seconds. Linear full-grid projections are about 79–82 seconds before target checkpointing, survivor output and other overhead. Portable Python is adequate for this bounded model. This snapshot contains no target driver, gate or Rev7 evaluation.
+
+```sh
+python3 -S -B research/byte_amsco/astra/search/controls.py
+python3 -B research/byte_amsco/astra/search/controls.py --regenerate /tmp/byte-amsco-search-controls.json
+```
