@@ -1,0 +1,13 @@
+{
+  "hex_period_to_sufficient_byte_period": {
+    "19": 19,
+    "38": 19,
+    "57": 57
+  },
+  "identity": "ASTRA",
+  "local_byte_identities": 65536,
+  "status": "PASS",
+  "stream_digest_sha256": "aa2fb5a08edc00436003928db7688781d61e6fe61f29b3680d0fd50daa65fd12",
+  "stream_trials": 912,
+  "target_read": false
+}

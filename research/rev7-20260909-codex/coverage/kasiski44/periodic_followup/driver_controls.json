@@ -1,0 +1,14 @@
+{
+  "driver_sha256": "2559bc81e0be5d29bd3716ef40bafd24b7bfd0fc9ccad21e3dc1bce9b25ad295",
+  "driver_six_plants_fast_slow_all_cells_equal": true,
+  "identity": "ASTRA",
+  "target_read": false,
+  "truth_preserved_for": [
+    "byte_p19_xor",
+    "byte_p19_subtract",
+    "byte_p38_xor",
+    "byte_p38_subtract",
+    "byte_p57_xor",
+    "byte_p57_subtract"
+  ]
+}

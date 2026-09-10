@@ -1,0 +1,47 @@
+{
+  "canonical_hex_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "cells": [
+    [
+      19,
+      "xor"
+    ],
+    [
+      19,
+      "subtract"
+    ],
+    [
+      38,
+      "xor"
+    ],
+    [
+      38,
+      "subtract"
+    ],
+    [
+      57,
+      "xor"
+    ],
+    [
+      57,
+      "subtract"
+    ]
+  ],
+  "dataset_sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+  "decoded_hex_sha256": "1cb32555f497309352adec7f5757bc3e9f5fb02fe077995ae0b83ff3a052d1be",
+  "files_sha256": {
+    "research/rev7-20260909-codex/coverage/kasiski44/geometry.py": "cad6c29e75cc1d43ba9f43d172767c081bed8b0394ce5ae7c8adee3e22427e61",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_xor_period.json": "b323e087f87187ab1de0c1a835ffe6f7c3b84ce17280571ea3c59735c708628c",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_xor_period.py": "16e65c5d2a3c788a9ebd58487a9ac4cb4185eaa36d9797b7401e5e0199ede1fd",
+    "research/rev7-20260909-codex/coverage/kasiski44/periodic_followup/controls.json": "a2aa9c6c7be46263221b11ad4b5f0f64d43dae63e1df8ac166fbb133828148d3",
+    "research/rev7-20260909-codex/coverage/kasiski44/periodic_followup/controls.py": "ef52f5332d854fc10560a7149af79d41280c02bdca854e3ae5ed5d377269b58c",
+    "research/rev7-20260909-codex/coverage/kasiski44/periodic_followup/driver_controls.json": "fd387548d664fdeecb11021a8a16e3369ce8a9421dac4f2e33a04f77e342a038",
+    "research/rev7-20260909-codex/coverage/kasiski44/periodic_followup/driver_controls.py": "2a21d02fcc2f9ffe7e66a96f5f2b781c891ae9bc5f088df8eeb8cd3dc995effb",
+    "research/rev7-20260909-codex/coverage/kasiski44/periodic_followup/run_target.py": "2559bc81e0be5d29bd3716ef40bafd24b7bfd0fc9ccad21e3dc1bce9b25ad295",
+    "research/rev7-20260909-codex/coverage/periodic_bytebag_controls/model.py": "bce745611e7a9b91d6471b348587c4f9af84ad39ffddae1c148a2ab5a670a444"
+  },
+  "identity": "ASTRA",
+  "mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "prior_target_mask_run": false,
+  "scope": "AMSCO equal4/ZOMBIES decode forward; arbitrary repeating byte keys; bag165",
+  "target_authorized": true
+}
