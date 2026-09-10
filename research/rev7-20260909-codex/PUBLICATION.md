@@ -739,3 +739,26 @@ The [FABLE replay](coverage/fable_bytebag_replay/README.md) reproduces all 184 p
 python3 -B research/rev7-20260909-codex/coverage/transposition_byte_bag/proof.py
 python3 -B research/rev7-20260909-codex/coverage/fable_bytebag_replay/verify_outputs.py
 ```
+
+
+## Twelve-map DES completion with four prior cells reused
+
+The [completed generic lossy-map target](lossy4_alliv_controls/target/RESULTS.md) covers all 12 one-character-loss source maps, representing 336 positive four-digit keys, under the four registered orientations. All 48 logical cells are complete with zero printable-ASCII suffixes and no cap reached. Exactly 44 cells were searched anew; four source-identical `2013`/`2014` cells reuse their prior complete result and certificate.
+
+The new searches used 915,412 accepted states and 1,003,476 DES block calls. The reused evidence contributes 114,486 accepted states and 130,870 calls to the logical totals, not to new coverage. The [independent verifier](lossy4_alliv_controls/target/verify_results.py) recomputes rejection prefixes for only the 44 new cells using ciphertext-first enumeration, matches every root digest and per-byte counter, and checks the four prior copies without recomputing them. Root replay passed. Result SHA-256: `25286408d594956aab904e3e4111866160c300b85a8eb73c61791285733dd507`.
+
+This excludes the fixed DES `Zombies\0` CFB8 model, 655 natural bytes, every external IV and printable ASCII from offset 8. It does not exclude broader endpoints, other primitives or keys, or other malformed-key families.
+
+```sh
+python3 -B research/rev7-20260909-codex/lossy4_alliv_controls/target/verify_results.py
+```
+
+## Source inventory for four-character rows
+
+The [two-character-loss inventory](../char_amsco/astra/lossy4_twochar_inventory/REPORT.md) classifies the 864 positive four-digit keys whose six-character full row emits four characters. Exact quotient/remainder and source-map checks admit only 1,636, 1,638 and 1,640 natural characters (818, 819 and 820 bytes). These have 12, 14 and 6 distinct emission maps respectively; key memberships overlap across lengths.
+
+The 32 map classes require either 1,048,576 or 16,777,216 possible first-eight-byte ciphertext registers. Those counts are geometry only: no register assignments or cipher states were enumerated. This inventory is retained as prioritization data; it makes no cryptographic claim for Rev7. The source reproduces all 9,000 full-row classifications and each of the six candidate even lengths for every qualifying key.
+
+```sh
+python3 -B research/char_amsco/astra/lossy4_twochar_inventory/inventory.py
+```
