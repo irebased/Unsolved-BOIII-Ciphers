@@ -1,0 +1,18 @@
+{
+  "identity": "ASTRA",
+  "target_chunk": "31c55a",
+  "target_exit_code": 0,
+  "verification_chunk": "3bf7ae",
+  "verification_exit_code": 0,
+  "target_sha256": "18f1404543dc0474c0de38c76d39bbe87243f6f08042e6416a108579cc348a15",
+  "gzip_sha256": "965e55fae81554537fa80145ce50a4e43ee2a94b640281c3caa2230ac8c0155b",
+  "gzip_bytes": 780167,
+  "minimum_upper": 283,
+  "maximum_upper": 324,
+  "threshold": 410,
+  "unresolved": 0,
+  "source_supported_block_rows": 760,
+  "empirical_stream_rows": 20,
+  "prior_overlap_rows": 40,
+  "context_extension_rows": 740
+}

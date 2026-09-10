@@ -1,0 +1,82 @@
+{
+  "identity": "ASTRA",
+  "target_evaluated": false,
+  "status": "empirical synthetic probes complete",
+  "warning": "passing finite probes is not a source proof",
+  "length": 546,
+  "probe_count": 3,
+  "rows": [
+    {
+      "cipher": "enigma",
+      "key": "Zombies",
+      "xor_law_three_probes": false,
+      "first_mismatch": {
+        "probe": 0,
+        "i": 1,
+        "keystream": 189,
+        "output": 9,
+        "input": 1
+      }
+    },
+    {
+      "cipher": "enigma",
+      "key": "ZOMBIES",
+      "xor_law_three_probes": false,
+      "first_mismatch": {
+        "probe": 0,
+        "i": 1,
+        "keystream": 51,
+        "output": 168,
+        "input": 1
+      }
+    },
+    {
+      "cipher": "panama",
+      "key": "Zombies",
+      "xor_law_three_probes": true,
+      "first_mismatch": null
+    },
+    {
+      "cipher": "panama",
+      "key": "ZOMBIES",
+      "xor_law_three_probes": true,
+      "first_mismatch": null
+    },
+    {
+      "cipher": "arcfour",
+      "key": "Zombies",
+      "xor_law_three_probes": true,
+      "first_mismatch": null
+    },
+    {
+      "cipher": "arcfour",
+      "key": "ZOMBIES",
+      "xor_law_three_probes": true,
+      "first_mismatch": null
+    },
+    {
+      "cipher": "wake",
+      "key": "Zombies",
+      "xor_law_three_probes": false,
+      "first_mismatch": {
+        "probe": 0,
+        "i": 4,
+        "keystream": 210,
+        "output": 255,
+        "input": 4
+      }
+    },
+    {
+      "cipher": "wake",
+      "key": "ZOMBIES",
+      "xor_law_three_probes": false,
+      "first_mismatch": {
+        "probe": 0,
+        "i": 4,
+        "keystream": 178,
+        "output": 145,
+        "input": 4
+      }
+    }
+  ]
+}

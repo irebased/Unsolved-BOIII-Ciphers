@@ -1,0 +1,193 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2603,
+      "encoding": "utf-8",
+      "git_blob_sha1": "09d17ce675332e5ab8680a0e2ab4f93c4a7b28ee",
+      "path": "research/rev7-20260909-codex/comms/astra-coverage-reconciliation-20260910.json",
+      "sha256": "d527e1c3d5126db1a917008c26d561b0c3dc6d984d8768d6adad13db7ae89932"
+    },
+    {
+      "bytes": 1418,
+      "encoding": "utf-8",
+      "git_blob_sha1": "4c53969ca1a51460798aeb1adbaf6b1a4930febf",
+      "path": "research/rev7-20260909-codex/comms/astra-ctr-source-confirmation-20260910.json",
+      "sha256": "940ee2efba8bd16b2ee7ad8d6e5d74ec4dfa1d83e5a0214009e24d03bd74a3c3"
+    },
+    {
+      "bytes": 3120,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ba26dc83fbdbdd7a12235c6ca5098bd0c474e7d8",
+      "path": "research/rev7-20260909-codex/comms/astra-hex-keystream-frozen-plan-20260910.json",
+      "sha256": "d08164c48e862ce218a8d26c3ff49bf8f3af60bb9f724cfd1047d4dadfdac120"
+    },
+    {
+      "bytes": 1959,
+      "encoding": "utf-8",
+      "git_blob_sha1": "6389d128d8de3d310891bc1969c700fab831c681",
+      "path": "research/rev7-20260909-codex/comms/astra-hex-keystream-result-20260910.json",
+      "sha256": "0bae2205dea55dccf1c9c27a32ff1f4afcf048d7bc0abe08c1e9e0b495c5fff0"
+    },
+    {
+      "bytes": 1568,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ff7bf72ca015259c27c5f3661d44fbb0bb55d924",
+      "path": "research/rev7-20260909-codex/comms/astra-kamasutra-scope-20260910.json",
+      "sha256": "81c5b29b1bb7224089a9164caa182681024a8ca170d3820dd94a44c961f0bac6"
+    },
+    {
+      "bytes": 2562,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ee1e728ef544035e05c0ce1d6bbf636a99a061e8",
+      "path": "research/rev7-20260909-codex/comms/astra-luna-renewal-keystream-plan-20260910.json",
+      "sha256": "0672ca898f9b6b6ef98fe8d4ec0dc923e8fe7c39635498f318ab19ba201541b8"
+    },
+    {
+      "bytes": 7068,
+      "encoding": "utf-8",
+      "git_blob_sha1": "72f3d7cc21da2490276dd52dc65a5735366b8349",
+      "path": "research/rev7-20260909-codex/comms/publish_hex_keystream.py",
+      "sha256": "d45edeba3eb9a2e3d267ae9fb8d813d8962244a62257f7fdfc73d89f4569f2e9"
+    },
+    {
+      "bytes": 3987,
+      "encoding": "utf-8",
+      "git_blob_sha1": "cf5b1d0327b0836b1322560fc1fa66d39c30ad2c",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/README.md",
+      "sha256": "f8af6a6915735d100c560b02edf77bf19fa6b9781962262d875789cb80a355a6"
+    },
+    {
+      "bytes": 2799,
+      "encoding": "utf-8",
+      "git_blob_sha1": "dce8cf2e9cd2535d8c8043e515bca2c544482df7",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/RESULTS.md",
+      "sha256": "5ac4427f29e6fe00951df44adab117a5fec2ff04ae17d8174dfeb22f83fff60e"
+    },
+    {
+      "bytes": 557,
+      "encoding": "utf-8",
+      "git_blob_sha1": "f9a827b65d6d14caa4a9970e944feac32c7e2e0c",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/ROOT_EXECUTION.json",
+      "sha256": "8264dd909d97b4accc082008826bf228c857c3ff98abb7989ca8d9b4bc4d8c2c"
+    },
+    {
+      "bytes": 2112,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e70cb8bf5324f408a5428dfc2382402f2b5213fc",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/ROOT_REVIEW.md",
+      "sha256": "130ee523de195e8dd09723ee0c3f2609049fcc663620bd551d539331aa9f838d"
+    },
+    {
+      "bytes": 12262,
+      "encoding": "utf-8",
+      "git_blob_sha1": "f9455b88ce3f7e1c8bbeb6615a8d90f3a96af12b",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/controls.js",
+      "sha256": "8637cb0a3ebff22222622cf5a83ea844b7945974e816e295811e496fd42054c3"
+    },
+    {
+      "bytes": 140434,
+      "encoding": "utf-8",
+      "git_blob_sha1": "202c8f339b56691007c5223d0685127fda0d72fe",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/controls.json",
+      "sha256": "a1446e169e077446ab638c56d2c52de6f52402b116c3238add3079d68a592037"
+    },
+    {
+      "bytes": 6516,
+      "encoding": "utf-8",
+      "git_blob_sha1": "96db879babb9ee64d96bfc89bf3a531039844f09",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/model.js",
+      "sha256": "e5b9066e9672cc7daf7baf3874c27a292e6d87af87eae2dbc6d5587394d7de81"
+    },
+    {
+      "bytes": 3048,
+      "encoding": "utf-8",
+      "git_blob_sha1": "cb9c27402f72d1c48e1c46250b54baf235f8616a",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/prepare_gate.js",
+      "sha256": "0203efef941e00fe8065ccad733ea75798058ef986ba4758142de65e52302fff"
+    },
+    {
+      "bytes": 10167,
+      "encoding": "utf-8",
+      "git_blob_sha1": "bf38171b525847623db7a83a064f1ccce4dbb73c",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/run_target.js",
+      "sha256": "d44e3b0206c2d56c1ec1e601479144468c1b56fcba1803f8a0039f80b723566d"
+    },
+    {
+      "bytes": 2513,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2cce0594a6a1e660c197e18a2fd9293c39e82f54",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/target_gate.json",
+      "sha256": "f94eca9ca644e4cad576a642590555024d96e44d430e9c6a299decb44c9253e4"
+    },
+    {
+      "bytes": 2213,
+      "encoding": "utf-8",
+      "git_blob_sha1": "8ca65d7810f56f10194eb50c3316edaa81149fe5",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/target_gate_inert.json",
+      "sha256": "2e95be35e7dc7ac2782ed8e7a6e99db3ae9aca3e3f1120893e48efa7e19a76e1"
+    },
+    {
+      "bytes": 780167,
+      "encoding": "base64",
+      "git_blob_sha1": "0698cae458eb837a92a79530f0bae444d39a180f",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/target_results.json.gz",
+      "sha256": "965e55fae81554537fa80145ce50a4e43ee2a94b640281c3caa2230ac8c0155b"
+    },
+    {
+      "bytes": 787,
+      "encoding": "utf-8",
+      "git_blob_sha1": "b61a04e9aba1efddb9e1e2673f8e69d53facff47",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/verification.json",
+      "sha256": "3c7962a1153c84365ce58a22b520d6def9d804f7373efadd19aa2d58b98f236f"
+    },
+    {
+      "bytes": 10823,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a41eed4a05013286414900c4d897a98cfcc66ac2",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream/verify_result.js",
+      "sha256": "15052d01237b3a7758c2f265a4559e307a4445185a3700bca082e5b08830e0f6"
+    },
+    {
+      "bytes": 6811,
+      "encoding": "utf-8",
+      "git_blob_sha1": "43c4d96367e7bc3e97c64ea16db1d9b423bef917",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream_audit/REVIEW.md",
+      "sha256": "5ed4c4546febf9a62a0c31ea5e2fd4c3b02fea58f950862eeff1ce869541819e"
+    },
+    {
+      "bytes": 6920,
+      "encoding": "utf-8",
+      "git_blob_sha1": "064a90caacf116787899767347bb38d14c12a0aa",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream_audit/bound_controls.json",
+      "sha256": "615a93e3d2380415b79ab474064b925f7d8e0e4ba1ee41201dc0a7a8893b1fc9"
+    },
+    {
+      "bytes": 2285,
+      "encoding": "utf-8",
+      "git_blob_sha1": "38204053dd7bfb8d18e6166cc453a44abd6786c6",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream_audit/bound_reference.py",
+      "sha256": "69b1be0f8259bb69023b8c54c29fa494ee57e6da63897a71bc43820524f3126f"
+    },
+    {
+      "bytes": 1006,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a230f1ec4cbef75c49af08fc044b7aab375685a5",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream_audit/stream_probe.js",
+      "sha256": "19de67a538cf679fc3f0357c98542a4519851191d6bf8399535d8c60eed2d92c"
+    },
+    {
+      "bytes": 1678,
+      "encoding": "utf-8",
+      "git_blob_sha1": "b7cb8fa00c2da8c85656b6111c208b68ec7b8b67",
+      "path": "research/rev7-20260909-codex/coverage/hex_substitution_keystream_audit/stream_probe.json",
+      "sha256": "100dcea5baf976e7a7ced649c17dd24cca9b451e5689729ea1ce3f43857ba1a0"
+    }
+  ],
+  "identity": "ASTRA",
+  "large_raw_json_retained_as_exact_deterministic_gzip": "coverage/hex_substitution_keystream/target_results.json.gz",
+  "publication_excludes": [
+    "drafts",
+    "__pycache__"
+  ],
+  "purpose": "LUNA-inspired arbitrary hex substitution fixed-keystream certificates with exact finite scope"
+}

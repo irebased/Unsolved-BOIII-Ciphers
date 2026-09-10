@@ -1,0 +1,19 @@
+{
+  "identity": "ASTRA",
+  "status": "PASS",
+  "verification_only": true,
+  "new_target_search": false,
+  "target_result_sha256": "18f1404543dc0474c0de38c76d39bbe87243f6f08042e6416a108579cc348a15",
+  "verifier_source_sha256": "15052d01237b3a7758c2f265a4559e307a4445185a3700bca082e5b08830e0f6",
+  "rows": 780,
+  "keystream_bytes_checked": 425880,
+  "high_matrices_checked": 780,
+  "pair_bounds_checked": 0,
+  "certified_below_75": 780,
+  "full_ascii_excluded_by_recomputed_bound": 780,
+  "csp_unsat_claims_not_independently_replayed": 0,
+  "survivors_checked": 0,
+  "canonical_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "controls_sha256": "a1446e169e077446ab638c56d2c52de6f52402b116c3238add3079d68a592037",
+  "base_keystreams_bound_to_controls": 156
+}
