@@ -642,3 +642,18 @@ The original CrypTool Online PHP accepts numeric keys without validating a rank 
 ## Loki97 key-buffer history in FABLE runtime
 
 The [synthetic key-tail probe](loki97_key_tail/README.md) establishes that FABLE's mirrored WASM can produce different Loki97 results for the same short key, IV and data after an earlier longer key call. Clearing the backing buffer restores the baseline; changing only backing byte 31 changes the short-key output. Root reproduced the complete result byte for byte, SHA-256 `a115b77693cae20c7365750cf45634a0bc167d17711325236e2b7a923c4673ec`. The source and all four complete outputs were sent to FABLE in message 163. This demonstrates a mechanism that can invalidate scan reproducibility, without claiming every historical mismatch is explained or rerunning a target scan.
+
+
+## Historical homophonic-100 with whole-integer conversion
+
+The [CrypTool100 result](homophonic/cryptool100/target/RESULTS.md) retains all 64,000 candidates from the historical 4,000-board German allocation under four hex and four decimal orientations. Source-faithful array controls, two varying-homophone plants using all 100 codes, and a reproducible sibling-only tetragram model preceded the run. Both plants rank first. The whole-integer representation loses leading zero pairs, so recovered text may omit an unknown prefix or suffix.
+
+Every target path yielded 658 letters. No global top-ten candidate reads as coherent English; this manual ranking observation does not exclude lower-ranked candidates. The complete 67,783,676-byte candidate NDJSON is preserved losslessly in [results.pack.json](homophonic/cryptool100/target/results.pack.json), with raw SHA-256 `426a5be079cf553ba657e3bb3f9d4e8153ee15422efc0e8793e1840249dcac39`. Root independently replayed all saved rows, their Cartesian IDs, historical board decoding, plaintext hashes and stored top-20 ordering using the [portable verifier](homophonic/cryptool100/target/verify_results.py). No additional target search was run.
+
+## Complete UTF-8 character-AMSCO finite result
+
+The [character-AMSCO result](../char_amsco/astra/utf8_search/target/RESULTS.md) completes the valid historical PHP key model: widths 2 through 9, fixed alternating start 21, all column permutations, four hex orientations and ten fixed CFB8 backend conventions. All 1,636,448 orders and 16,364,480 backend contexts rejected; no candidate or unexamined context remains. The result ledger SHA-256 is `2687f94d8eb669fc28ab0d1f5dbd134098bc74451e8298d7a0e991cf06ee6b54`.
+
+This endpoint permits every well-formed RFC 3629 scalar encoding, including ASCII NUL and controls. The known CFB8 suffix is independent of every external IV and may start inside an unknown code point; the true endpoint must finish a code point. Root independently regenerated the UTF-8, geometry, 80 real-backend plants and driver-wiring controls before the target run. Each completed cell records exact factorial accounting, stream and first-witness digests, reason totals and its first and last rows. These are execution evidence, not an independent second exhaustive search.
+
+Repeated-label lossy PHP keys remain outside this result. The [lossy planning note](../char_amsco/astra/cryptool_bug/LOSSY_PLAN.md) explains the source row map, finite input-length bounds and why missing ciphertext prevents straightforward CFB8 resynchronization. The [repeat statistics](homophonic/repeats/README.md) separately preserve Rev7's exact byte-equality structure; they do not establish plaintext uniqueness or exclude homophonic schemes after whole-integer conversion.

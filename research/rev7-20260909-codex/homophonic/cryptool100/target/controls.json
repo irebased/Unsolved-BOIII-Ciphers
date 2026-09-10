@@ -1,0 +1,574 @@
+{
+  "assertions": {
+    "all_hex_decimal_paths": true,
+    "all_passed": true,
+    "complete_board_rows": true
+  },
+  "complete_board_cell": {
+    "all_exact": true,
+    "row_digest": "24216684811c9df5cda583bc90322ea086ce782d59afe1769ce5b550abec3690",
+    "rows": 4000,
+    "truth_rank": 1
+  },
+  "driver_sha256": "e76c3da624a5fef003ca8853fa3466d826c7afaf143f3606810ca2e3ee8013e0",
+  "identity": "ASTRA",
+  "leading_zero_controls": [
+    {
+      "decimal_orientation": "identity",
+      "input": "00001234",
+      "lost_digits": 4,
+      "recovered": "1234",
+      "unknown_side": "prefix"
+    },
+    {
+      "decimal_orientation": "swap_within_pair",
+      "input": "00001234",
+      "lost_digits": 4,
+      "recovered": "1234",
+      "unknown_side": "prefix"
+    },
+    {
+      "decimal_orientation": "digit_reverse",
+      "input": "12340000",
+      "lost_digits": 4,
+      "recovered": "1234",
+      "unknown_side": "suffix"
+    },
+    {
+      "decimal_orientation": "pair_reverse",
+      "input": "12340000",
+      "lost_digits": 4,
+      "recovered": "1234",
+      "unknown_side": "suffix"
+    }
+  ],
+  "scope": {
+    "decimal_orientations": [
+      "identity",
+      "digit_reverse",
+      "pair_reverse",
+      "swap_within_pair"
+    ],
+    "hex_orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "identity": "ASTRA",
+    "leading_zero_ambiguity": "restore one decimal zero for pair phase; further 00 pairs are unknown prefix or suffix according to decimal orientation",
+    "multipliers": [
+      1,
+      3,
+      7,
+      9,
+      11,
+      13,
+      17,
+      19,
+      21,
+      23,
+      27,
+      29,
+      31,
+      33,
+      37,
+      39,
+      41,
+      43,
+      47,
+      49,
+      51,
+      53,
+      57,
+      59,
+      61,
+      63,
+      67,
+      69,
+      71,
+      73,
+      77,
+      79,
+      81,
+      83,
+      87,
+      89,
+      91,
+      93,
+      97,
+      99
+    ],
+    "representation": "two-digit homophones -> decimal orientation -> whole integer -> uppercase even-length hex -> hex orientation",
+    "retention": "every plaintext row; score ranks only",
+    "rotations": 100,
+    "rows": 64000
+  },
+  "sixteen_full_chain_paths": [
+    {
+      "construction": {
+        "directed_decimal_sha256": "27238bd01180c75abf448a71962072cb5430726f65361f019967c1e9f09ee6bc",
+        "hex_parity_zero": 1,
+        "minimal_hex_length": 333
+      },
+      "digits": 400,
+      "displayed_sha256": "a282d19d82a35774a366ee639238b0b3c66ceaa4115955901d9175aba2b5f210",
+      "id": "forward|identity",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "prefix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "a282d19d82a35774a366ee639238b0b3c66ceaa4115955901d9175aba2b5f210",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "identity",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "forward",
+        "id": "h=forward|d=identity|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "714782c4310e4a9d18b1c9223804369a794f331a6b69f516e9ded104ab328840",
+        "hex_parity_zero": 0,
+        "minimal_hex_length": 332
+      },
+      "digits": 400,
+      "displayed_sha256": "258b8169453958571daf52be403aeb785abef7e7b41811b80008ea34fdb9ea94",
+      "id": "forward|digit_reverse",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "suffix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "258b8169453958571daf52be403aeb785abef7e7b41811b80008ea34fdb9ea94",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "digit_reverse",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "forward",
+        "id": "h=forward|d=digit_reverse|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "324f2b4c760861619bd793d8c63a6a1bf9c8411546006b099641f7d144e73cd1",
+        "hex_parity_zero": 0,
+        "minimal_hex_length": 332
+      },
+      "digits": 400,
+      "displayed_sha256": "a53ced5db205443bf32cab67ce911701786123a68defd4ba1f40303de26cfe12",
+      "id": "forward|pair_reverse",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "suffix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "a53ced5db205443bf32cab67ce911701786123a68defd4ba1f40303de26cfe12",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "pair_reverse",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "forward",
+        "id": "h=forward|d=pair_reverse|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "62f9f2564fbf1e985b5785d39e996d11e85de64526f379740eba67848dbf0c96",
+        "hex_parity_zero": 0,
+        "minimal_hex_length": 332
+      },
+      "digits": 400,
+      "displayed_sha256": "b4f90f0622ee8b34f484073baca848c3863c343ee814fddf1700d646c6c33cb6",
+      "id": "forward|swap_within_pair",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "prefix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "b4f90f0622ee8b34f484073baca848c3863c343ee814fddf1700d646c6c33cb6",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "swap_within_pair",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "forward",
+        "id": "h=forward|d=swap_within_pair|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "27238bd01180c75abf448a71962072cb5430726f65361f019967c1e9f09ee6bc",
+        "hex_parity_zero": 1,
+        "minimal_hex_length": 333
+      },
+      "digits": 400,
+      "displayed_sha256": "f91c9384f2a4cba964ad17db7cccd912d29949b90ff3ccfa18d9aec50b6dd3d7",
+      "id": "full_hex_reverse|identity",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "prefix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "a282d19d82a35774a366ee639238b0b3c66ceaa4115955901d9175aba2b5f210",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "identity",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "full_hex_reverse",
+        "id": "h=full_hex_reverse|d=identity|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "714782c4310e4a9d18b1c9223804369a794f331a6b69f516e9ded104ab328840",
+        "hex_parity_zero": 0,
+        "minimal_hex_length": 332
+      },
+      "digits": 400,
+      "displayed_sha256": "19685139710b0e609abfe4da48c7ef2980a65ad28120e308a954d3187e28e224",
+      "id": "full_hex_reverse|digit_reverse",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "suffix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "258b8169453958571daf52be403aeb785abef7e7b41811b80008ea34fdb9ea94",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "digit_reverse",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "full_hex_reverse",
+        "id": "h=full_hex_reverse|d=digit_reverse|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "324f2b4c760861619bd793d8c63a6a1bf9c8411546006b099641f7d144e73cd1",
+        "hex_parity_zero": 0,
+        "minimal_hex_length": 332
+      },
+      "digits": 400,
+      "displayed_sha256": "ed03afc1ec8f1d4369abd987feef84170e8cd2aa4ef2f6446fe6c0b35fbdd9d2",
+      "id": "full_hex_reverse|pair_reverse",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "suffix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "a53ced5db205443bf32cab67ce911701786123a68defd4ba1f40303de26cfe12",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "pair_reverse",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "full_hex_reverse",
+        "id": "h=full_hex_reverse|d=pair_reverse|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "62f9f2564fbf1e985b5785d39e996d11e85de64526f379740eba67848dbf0c96",
+        "hex_parity_zero": 0,
+        "minimal_hex_length": 332
+      },
+      "digits": 400,
+      "displayed_sha256": "6cab803cd52d60214d2bac60c725825f4f41193d40a90db9462b477de5ed5ed2",
+      "id": "full_hex_reverse|swap_within_pair",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "prefix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "b4f90f0622ee8b34f484073baca848c3863c343ee814fddf1700d646c6c33cb6",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "swap_within_pair",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "full_hex_reverse",
+        "id": "h=full_hex_reverse|d=swap_within_pair|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "27238bd01180c75abf448a71962072cb5430726f65361f019967c1e9f09ee6bc",
+        "hex_parity_zero": 1,
+        "minimal_hex_length": 333
+      },
+      "digits": 400,
+      "displayed_sha256": "3cfee8809f8a70f26c6a509adfe7c1377b2206a3048c5f5da18fa8132b99821c",
+      "id": "byte_reverse|identity",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "prefix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "a282d19d82a35774a366ee639238b0b3c66ceaa4115955901d9175aba2b5f210",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "identity",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "byte_reverse",
+        "id": "h=byte_reverse|d=identity|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "714782c4310e4a9d18b1c9223804369a794f331a6b69f516e9ded104ab328840",
+        "hex_parity_zero": 0,
+        "minimal_hex_length": 332
+      },
+      "digits": 400,
+      "displayed_sha256": "0db1ab775e034b8981392b093519e5060d34cd039743ea0fa1970309a0b5ed35",
+      "id": "byte_reverse|digit_reverse",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "suffix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "258b8169453958571daf52be403aeb785abef7e7b41811b80008ea34fdb9ea94",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "digit_reverse",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "byte_reverse",
+        "id": "h=byte_reverse|d=digit_reverse|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "324f2b4c760861619bd793d8c63a6a1bf9c8411546006b099641f7d144e73cd1",
+        "hex_parity_zero": 0,
+        "minimal_hex_length": 332
+      },
+      "digits": 400,
+      "displayed_sha256": "41df4ee434fedadf5d4ccb31669c6349333fca11d6f30809b84de15990dd37fb",
+      "id": "byte_reverse|pair_reverse",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "suffix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "a53ced5db205443bf32cab67ce911701786123a68defd4ba1f40303de26cfe12",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "pair_reverse",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "byte_reverse",
+        "id": "h=byte_reverse|d=pair_reverse|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "62f9f2564fbf1e985b5785d39e996d11e85de64526f379740eba67848dbf0c96",
+        "hex_parity_zero": 0,
+        "minimal_hex_length": 332
+      },
+      "digits": 400,
+      "displayed_sha256": "71da2b2e9e79ec674a044ee04f66071a62a83e105edcec57998d935c9080e55f",
+      "id": "byte_reverse|swap_within_pair",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "prefix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "b4f90f0622ee8b34f484073baca848c3863c343ee814fddf1700d646c6c33cb6",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "swap_within_pair",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "byte_reverse",
+        "id": "h=byte_reverse|d=swap_within_pair|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "27238bd01180c75abf448a71962072cb5430726f65361f019967c1e9f09ee6bc",
+        "hex_parity_zero": 1,
+        "minimal_hex_length": 333
+      },
+      "digits": 400,
+      "displayed_sha256": "f30a5d2d90d51cda68d32cb832d12216919c5aaeadf21e9e87ddc1324f64318c",
+      "id": "nibble_swap|identity",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "prefix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "a282d19d82a35774a366ee639238b0b3c66ceaa4115955901d9175aba2b5f210",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "identity",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "nibble_swap",
+        "id": "h=nibble_swap|d=identity|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "714782c4310e4a9d18b1c9223804369a794f331a6b69f516e9ded104ab328840",
+        "hex_parity_zero": 0,
+        "minimal_hex_length": 332
+      },
+      "digits": 400,
+      "displayed_sha256": "b4c78e99ce06cb5003a5307824c22575c2ac656e3e4dec44e722e86cb7bf515e",
+      "id": "nibble_swap|digit_reverse",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "suffix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "258b8169453958571daf52be403aeb785abef7e7b41811b80008ea34fdb9ea94",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "digit_reverse",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "nibble_swap",
+        "id": "h=nibble_swap|d=digit_reverse|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "324f2b4c760861619bd793d8c63a6a1bf9c8411546006b099641f7d144e73cd1",
+        "hex_parity_zero": 0,
+        "minimal_hex_length": 332
+      },
+      "digits": 400,
+      "displayed_sha256": "4bf86814e3c3daf261a2dfd469ef016212375e05abc3c74d61894b1aca71a747",
+      "id": "nibble_swap|pair_reverse",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "suffix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "a53ced5db205443bf32cab67ce911701786123a68defd4ba1f40303de26cfe12",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "pair_reverse",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "nibble_swap",
+        "id": "h=nibble_swap|d=pair_reverse|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    },
+    {
+      "construction": {
+        "directed_decimal_sha256": "62f9f2564fbf1e985b5785d39e996d11e85de64526f379740eba67848dbf0c96",
+        "hex_parity_zero": 0,
+        "minimal_hex_length": 332
+      },
+      "digits": 400,
+      "displayed_sha256": "cf3a44b412d857801944f349de3de58464fa17f7004fdb69ba2034002b2ec341",
+      "id": "nibble_swap|swap_within_pair",
+      "recovery": {
+        "additional_zero_pair_ambiguity_side": "prefix",
+        "minimal_decimal_length": 400,
+        "oriented_hex_sha256": "b4f90f0622ee8b34f484073baca848c3863c343ee814fddf1700d646c6c33cb6",
+        "parity_zero_restored": 0
+      },
+      "truth_row": {
+        "a": 1,
+        "b": 0,
+        "decimal_orientation": "swap_within_pair",
+        "exact_integer_reencryption": true,
+        "hex_orientation": "nibble_swap",
+        "id": "h=nibble_swap|d=swap_within_pair|a=01|b=00",
+        "letters": 200,
+        "observed_codes_valid_for_board": true,
+        "plaintext": "SPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOFBLACKQUARTZJUDGEMYVOWWHILECAREFULAGENTSPRESERVEEVERYCODEANDVERIFYTHERECONSTRUCTEDMESSAGESPHINXOF",
+        "plaintext_sha256": "86d9f2401aa3de1141fa758df7e3fa36a0ca3eb954d2b3d70852fd601fa1f3ff",
+        "score_per_tetragram": -12.84393255456589
+      }
+    }
+  ],
+  "target_evaluated": false
+}
