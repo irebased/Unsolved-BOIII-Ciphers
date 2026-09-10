@@ -1,0 +1,34 @@
+{
+  "identity": "ASTRA",
+  "image_transcription_sha256": "475adfad88ba31e26e24889e8f0935acc2ce4583177c432b5bc3ae70f2385c79",
+  "canonical_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "lengths": [
+    1092,
+    1092
+  ],
+  "differences": [
+    {
+      "offset0": 380,
+      "image_reading": "4",
+      "canonical": "A",
+      "line": 6,
+      "group": 7,
+      "character": 4,
+      "visual_group": "FAB47",
+      "image_context": "631F4D3FAB475E003D64F",
+      "canonical_context": "631F4D3FABA75E003D64F"
+    },
+    {
+      "offset0": 934,
+      "image_reading": "E",
+      "canonical": "F",
+      "line": 14,
+      "group": 7,
+      "character": 3,
+      "visual_group": "36E4F",
+      "image_context": "A4B1C85C36E4F9BDE6066",
+      "canonical_context": "A4B1C85C36F4F9BDE6066"
+    }
+  ],
+  "status": "unadjudicated visual differences; no canonical edit or target rerun"
+}

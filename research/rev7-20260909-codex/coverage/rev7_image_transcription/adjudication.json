@@ -1,0 +1,49 @@
+{
+  "adjudications": [
+    {
+      "alternatives": [
+        "4",
+        "A"
+      ],
+      "confidence": "high",
+      "coordinate": {
+        "character": 4,
+        "group": 7,
+        "line": 6
+      },
+      "corrected_visual_group": "FABA7",
+      "final_visual_reading": "A",
+      "original_group": "FAB47",
+      "original_reading": "4",
+      "typographic_evidence": "The glyph matches A at character 2 of the same group and the terminal A in row 6 group 4: pointed apex, paired diagonals, and crossbar. It lacks the open angular top and vertical/right construction of 4 in row 6 groups 1, 8, 9, and 10."
+    },
+    {
+      "alternatives": [
+        "E",
+        "F"
+      ],
+      "confidence": "high",
+      "coordinate": {
+        "character": 3,
+        "group": 7,
+        "line": 14
+      },
+      "corrected_visual_group": "36F4F",
+      "final_visual_reading": "F",
+      "original_group": "36E4F",
+      "original_reading": "E",
+      "typographic_evidence": "The glyph matches F at row 14 group 2 character 2 and group 7 character 5: top and middle bars with no bottom bar. Same-row E glyphs in groups 1, 3, 5, and 10 have a visible lower horizontal stroke."
+    }
+  ],
+  "crop_sha256": {
+    "row06.png": "1467f754e869bae860cf8d8020a5930bdf0ebca5277e812166fa64d24d840be4",
+    "row14.png": "df81de21da193eb8d636ccce933f948d2b47beeba16e1c82430105763160058c"
+  },
+  "frozen_transcription_unchanged": {
+    "transcription.json_sha256": "058a71fb00c0dc3585141cf6a7258b656ea67c0f6b83e8637d37a616055b6ccf",
+    "transcription.txt_sha256": "8eaa8bd0156fa523a696ce8a22cdde677d2a3621bc54367ae71002d0e375024a"
+  },
+  "identity": "ASTRA",
+  "image_sha256": "36a1883ede6abadcf4d4420f26484ca81134f3b62fe0ac7521352c682bf0b3b7",
+  "scope": "visual adjudication of exactly two one-based glyph coordinates; canonical and root comparison not consulted"
+}

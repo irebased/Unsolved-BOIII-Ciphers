@@ -796,3 +796,14 @@ The [reverse-CFB8 package](coverage/reverse_cfb_backwards_controls/README.md) ch
 python3 -B research/rev7-20260909-codex/coverage/fable_nofb_audit/audit.py --replay-mode4
 python3 -B research/rev7-20260909-codex/coverage/reverse_cfb_backwards_controls/control.py
 ```
+
+
+## Full image transcription reconciliation
+
+The [image audit](coverage/rev7_image_transcription/REPORT.md) preserves an independently frozen 16-line, 1,092-glyph transcription, two subsequent image-based adjudications, and the final mechanical comparison. The first reading differed at two glyphs; comparison with enlarged same-row letterforms corrected those reading errors to `FABA7` and `36F4F`. The adjudicated reading matches the existing MDX and dataset at every position. No canonical input changed and no cipher search was repeated.
+
+The raw transcription, source image and crop hashes, visual rationale, adjudicated derivative and comparison are retained separately. Root independently inspected the two enlarged rows and replayed the portable [reconciliation verifier](coverage/rev7_image_transcription/verify_reconciliation.py). The check supports the current visual reading; it is not a proof that human or model perception cannot err. Canonical joined SHA-256 remains `5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c`.
+
+```sh
+python3 -B research/rev7-20260909-codex/coverage/rev7_image_transcription/verify_reconciliation.py
+```

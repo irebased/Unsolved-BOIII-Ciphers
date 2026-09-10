@@ -1,0 +1,81 @@
+{
+  "canonical_records": {
+    "dataset": {
+      "file_sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+      "path": "lavender/src/data/ciphers/revelations.json"
+    },
+    "mdx": {
+      "file_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+      "path": "lavender/src/content/docs/ciphers/bo3/rev/rev7.mdx"
+    }
+  },
+  "conclusion": "Applying only the two independently image-adjudicated glyph changes makes all 1092 glyphs exactly equal to both repository records. The input records were not edited.",
+  "identity": "ASTRA",
+  "row_crop_evidence": {
+    "row06.png": "1467f754e869bae860cf8d8020a5930bdf0ebca5277e812166fa64d24d840be4",
+    "row14.png": "df81de21da193eb8d636ccce933f948d2b47beeba16e1c82430105763160058c"
+  },
+  "scope": "source-image transcription reconciliation only; no cipher experiment or target rerun",
+  "source_image": {
+    "dimensions": [
+      981,
+      412
+    ],
+    "path": "lavender/src/assets/revelations_7.png",
+    "sha256": "36a1883ede6abadcf4d4420f26484ca81134f3b62fe0ac7521352c682bf0b3b7"
+  },
+  "stages": [
+    {
+      "canonical_available": false,
+      "glyphs": 1092,
+      "joined_sha256": "475adfad88ba31e26e24889e8f0935acc2ce4583177c432b5bc3ae70f2385c79",
+      "later_identified_visual_errors": 2,
+      "name": "blind image transcription",
+      "stage": 1,
+      "text_file": "transcription.txt",
+      "text_file_sha256": "8eaa8bd0156fa523a696ce8a22cdde677d2a3621bc54367ae71002d0e375024a"
+    },
+    {
+      "canonical_available": false,
+      "changes": [
+        {
+          "character": 4,
+          "confidence": "high",
+          "corrected_group": "FABA7",
+          "from": "4",
+          "group": 7,
+          "joined_one_based": 381,
+          "line": 6,
+          "to": "A"
+        },
+        {
+          "character": 3,
+          "confidence": "high",
+          "corrected_group": "36F4F",
+          "from": "E",
+          "group": 7,
+          "joined_one_based": 935,
+          "line": 14,
+          "to": "F"
+        }
+      ],
+      "ledger": "adjudication.json",
+      "ledger_sha256": "b815d33176318d5abf22124ebbb2abaddf59afb35e791bf9798557bcd52ea749",
+      "name": "image-only adjudication of two coordinates",
+      "stage": 2
+    },
+    {
+      "canonical_available": true,
+      "dataset_exact_match": true,
+      "glyphs": 1092,
+      "joined_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+      "mdx_dataset_exact_match": true,
+      "mdx_exact_match": true,
+      "name": "mechanical comparison after image adjudication",
+      "stage": 3,
+      "text_file": "adjudicated_transcription.txt",
+      "text_file_sha256": "1702381306e7a543ceafad11343fc3432e19914001168f9f02fe7e019a17e215"
+    }
+  ],
+  "target_evaluated": false
+}
