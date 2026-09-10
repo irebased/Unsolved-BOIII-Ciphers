@@ -1,0 +1,53 @@
+{
+  "identity": "ASTRA",
+  "target_evaluated": false,
+  "rev7_read": false,
+  "crypto_evaluated": true,
+  "scope": "Synthetic Loki97 wrapper key-buffer tail/state probe only; fixed 7-byte Zombies key, 64-byte synthetic input, zero IV, CFB8 decrypt.",
+  "backend": {
+    "module": "/private/tmp/rev7-fable-20260909/old-ciphers/js/mcrypt.js",
+    "wasm": "/private/tmp/rev7-fable-20260909/old-ciphers/js/mcrypt.wasm",
+    "source": "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/loki97/loki97.c",
+    "node": "v26.4.0",
+    "source_sha256": "4e18d184ec55776edab065cee35ac44a9269b4160d7d35ad4ea277da55ae3308",
+    "wasm_sha256": "60a8215b8f6f7774511004ec51528b60e781ca8c260d0b1cf1baad0dfc932be7",
+    "script_sha256": "7a0e72a7587bb988df0cb97ff67906661f3ba5620d0732c921167a701b460c1c"
+  },
+  "cases": {
+    "A": "clear256 then write Zombies7",
+    "B": "seed32 nonzero via actual Loki97 call then write Zombies7",
+    "C": "clear256 then write Zombies7",
+    "D": "clear256 write Zombies7 then alter only key byte31"
+  },
+  "input_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+  "input_sha256": "fdeab9acf3710362bd2658cdc9a29e8f9c757fcf9811603a8c447cd1d9151108",
+  "rows": {
+    "A": {
+      "output_hex": "dbda116cab9b77abcbbf790e3faa017e021fa9b129b440aed1e60246007c6bf35a324b657527bfcf608354961d96ded484c0d49da991ba721239d18a1b31a36c",
+      "key32_hex": "5a6f6d6269657300000000000000000000000000000000000000000000000000",
+      "output_sha256": "37330cd187b244c1ed66b8378e2db0dc758d40e38e0c94aeac0ff2d9c9119adb"
+    },
+    "B": {
+      "output_hex": "abaa2ced032fe20030010b5e90a714a25d8f02148e7c47664d98e5cdba70ac6edeef7ce377b6c5588b7d342e5b7638cc2b2577731d7d2fb119bb9a29e7160596",
+      "key32_hex": "5a6f6d62696573000000000000000000b0b1b2b3b4b5b6b7b8b9babbbcbdbebf",
+      "output_sha256": "192dd5d1ad886698823488e7a174db905fe1909f81e7aa2965c28f1a1bd921e7"
+    },
+    "C": {
+      "output_hex": "dbda116cab9b77abcbbf790e3faa017e021fa9b129b440aed1e60246007c6bf35a324b657527bfcf608354961d96ded484c0d49da991ba721239d18a1b31a36c",
+      "key32_hex": "5a6f6d6269657300000000000000000000000000000000000000000000000000",
+      "output_sha256": "37330cd187b244c1ed66b8378e2db0dc758d40e38e0c94aeac0ff2d9c9119adb"
+    },
+    "D": {
+      "output_hex": "42437f076562e07504db50cc7382fc729c622a1acaa3595251394e37262df70d718fa35c2990b27aee991cb932284d302e11a10bb70d2da85017f3218312fc63",
+      "key32_hex": "5a6f6d626965730000000000000000000000000000000000000000000000005a",
+      "output_sha256": "64c50aac9955a12bd8f563940cf327b72ea0ecb6071daa9e342cc8036f984296"
+    }
+  },
+  "comparisons": {
+    "A_eq_C": true,
+    "B_eq_C": false,
+    "C_eq_D": false,
+    "A_eq_B": false
+  },
+  "interpretation": "A/B/C/D comparisons test history and backing-tail influence; no conclusion is inferred until execution."
+}

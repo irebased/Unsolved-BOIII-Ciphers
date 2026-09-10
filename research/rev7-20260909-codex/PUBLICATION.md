@@ -621,3 +621,24 @@ python3 -S -B research/char_amsco/astra/amsco_geometry.py --regenerate /tmp/char
 ```
 
 Default verification recomputes the synthetic certificates using only the standard library. This establishes geometry and validation behavior; it performs no cryptography or target search and makes no claim of equivalence to every historical frontend. The rejected prototype drafts are excluded from publication.
+
+
+## Completed Rijndael-256 window result
+
+The registered target ran once to completion: 24 cells and 11,208 windows, with 11,006 A105 failures, 202 exact FSA-transition failures and zero retained candidates. The condition remains the specified five UTF-8 punctuation sequences and ASCII whitespace/printable text in two complete blocks; this does not exclude broader plaintext alphabets or other constructions.
+
+The [lossless result pack](rijndael256_windows/target/target_results.pack.json) preserves every input-window hash, both decrypted blocks, all 64 plaintext bytes and the rejection witness. Its SHA-256 is `7cc9927dbd1a53ff87ded3c80980518faaf2b2d44cc05ccd5deaf3c019acd5b7`; it reconstructs the complete 8,339,129-byte result with SHA-256 `c50a7103736310aa6aba1c58834d62554d11aaec22bbf1430e35d56efbb4890d`. Root reviewed the bounded decoder and portable verifier, then replayed all 11,208 stored endpoint witnesses and independent regex decisions, checked all source/gate pins, exact cell IDs, offsets, window hashes, and two-block/full-plaintext relationships. This replay does not perform a second cryptographic enumeration. See [results and limits](rijndael256_windows/target/RESULTS.md).
+
+```sh
+python3 -S -B research/rev7-20260909-codex/rijndael256_windows/target/verify_results.py
+python3 -S -B research/rev7-20260909-codex/rijndael256_windows/target/pack_results.py --unpack /tmp/astra-r256-window-results.json
+```
+
+## Historical AMSCO scope correction
+
+The original CrypTool Online PHP accepts numeric keys without validating a rank permutation. Repeated key digits overwrite earlier row cells; zero or out-of-range labels are not emitted. Thus some accepted keys silently discard input, unlike the invertible byte/character geometry packages above. Source and minimal reproducer were shared in FABLE message 161. The [source-backed bug report and reproducer](../char_amsco/astra/cryptool_bug/README.md) preserve ten examples, including the partial-row duplicate fallback. Root regenerated the full evidence ledger byte for byte (SHA-256 `71ee944899ce7a202e07ee4b0d292309978f3a7eb3eb697d0c196f858844daab`) using a direct Python model; PHP itself was unavailable. Valid permutations remain a separate, invertible family. No claim that Rev7 uses a lossy key is established, and no character-AMSCO target has been run.
+
+
+## Loki97 key-buffer history in FABLE runtime
+
+The [synthetic key-tail probe](loki97_key_tail/README.md) establishes that FABLE's mirrored WASM can produce different Loki97 results for the same short key, IV and data after an earlier longer key call. Clearing the backing buffer restores the baseline; changing only backing byte 31 changes the short-key output. Root reproduced the complete result byte for byte, SHA-256 `a115b77693cae20c7365750cf45634a0bc167d17711325236e2b7a923c4673ec`. The source and all four complete outputs were sent to FABLE in message 163. This demonstrates a mechanism that can invalidate scan reproducibility, without claiming every historical mismatch is explained or rerunning a target scan.

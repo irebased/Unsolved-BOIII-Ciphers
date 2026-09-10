@@ -1,0 +1,547 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "minimal_duplicate_loses_AB": true,
+    "minimal_zero_and_out_of_range_lose_C": true,
+    "no_target_read_or_evaluation": true,
+    "partial_row_last_duplicate_rule": true,
+    "valid_permutations_bijective": true,
+    "valid_start21_matches_generic_model": true,
+    "width10_single_character_rank10_missing": true
+  },
+  "coverage_conclusion": "The generic character model covers valid CrypTool keys at widths 2..9 when start=21 is included. It deliberately rejects malformed keys and therefore does not cover this lossy implementation bug. The byte-unit AMSCO model is a distinct analogue, not the historical PHP geometry.",
+  "finding": {
+    "decryption_effect": "cannot recover deleted bytes; missing ranks alias natural column 1 under historical null arithmetic and duplicate ranks address only the first occurrence, so malformed-key decode is not an inverse",
+    "encryption_effect": "lossy and noninvertible for malformed effective keys once affected columns contain data",
+    "historical_start": "The code begins with a two-character cell because n=1 makes 1+(n%2)=2; it has no start-pattern option.",
+    "primary": "default_tool.php accepts any numeric integer key; class.amsco.php uses each key digit as an array label without validating a permutation. Duplicate labels overwrite earlier cells in the same row; label 0 and labels outside 1..width are never emitted. Encryption can therefore delete plaintext bytes.",
+    "valid_key_limit": "For exact permutations of characters 1..width, widths 2..9, no mapping defect was found. Width 10 cannot express rank 10 as one key character."
+  },
+  "identity": "ASTRA",
+  "length_geometry": {
+    "byte_analogue_n546": {
+      "cells": 364,
+      "final_cell_truncated": false,
+      "full_row_widths_2_to_9": [
+        2,
+        4,
+        7
+      ],
+      "partial_row_widths_2_to_9": [
+        3,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    "historical_unit": "one byte/character; uppercase hexadecimal therefore has 1092 units, not 546",
+    "n1092": {
+      "cells": 728,
+      "final_cell_truncated": false,
+      "full_row_widths_2_to_9": [
+        2,
+        4,
+        7,
+        8
+      ],
+      "partial_row_widths_2_to_9": [
+        3,
+        5,
+        6,
+        9
+      ]
+    },
+    "partial_duplicate_rule": "Within each row, the last populated natural column carrying a repeated label wins. If that later duplicate column is absent in a partial final row, an earlier occurrence survives there; the selected natural column can therefore differ in the final row."
+  },
+  "limits": [
+    "No claim that Rev7 used a malformed key or this tool.",
+    "A malformed-key ciphertext may be shorter than its pre-AMSCO input; deleted bytes cannot be inferred by inverse permutation alone.",
+    "Per-character trim removes space, TAB, LF, VT, CR, and NUL before matrix construction; for already whitespace-free uppercase hexadecimal this does not change bytes.",
+    "No PHP runtime was available; the harness models the cited assignment/read loops and historical scalar/null behavior directly. No target ciphertext was read or evaluated."
+  ],
+  "reproducers": [
+    {
+      "ciphertext_grouped_ascii": "ABC",
+      "ciphertext_ungrouped_ascii": "ABC",
+      "decoded_ascii": "ABC",
+      "effective_key": "12",
+      "emitted_positions": [
+        0,
+        1,
+        2
+      ],
+      "input_bytes_after_preprocess": 3,
+      "lost_positions": [],
+      "name": "valid_control_12",
+      "output_bytes": 3,
+      "plaintext_ascii": "ABC",
+      "preprocessed_ascii": "ABC",
+      "submitted_key": "12"
+    },
+    {
+      "ciphertext_grouped_ascii": "CAB",
+      "ciphertext_ungrouped_ascii": "CAB",
+      "decoded_ascii": "ABC",
+      "effective_key": "21",
+      "emitted_positions": [
+        2,
+        0,
+        1
+      ],
+      "input_bytes_after_preprocess": 3,
+      "lost_positions": [],
+      "name": "valid_control_21",
+      "output_bytes": 3,
+      "plaintext_ascii": "ABC",
+      "preprocessed_ascii": "ABC",
+      "submitted_key": "21"
+    },
+    {
+      "ciphertext_grouped_ascii": "C",
+      "ciphertext_ungrouped_ascii": "C",
+      "decoded_ascii": "",
+      "effective_key": "11",
+      "emitted_positions": [
+        2
+      ],
+      "input_bytes_after_preprocess": 3,
+      "lost_positions": [
+        0,
+        1
+      ],
+      "name": "duplicate_label_overwrite",
+      "output_bytes": 1,
+      "plaintext_ascii": "ABC",
+      "preprocessed_ascii": "ABC",
+      "submitted_key": "11"
+    },
+    {
+      "ciphertext_grouped_ascii": "AB",
+      "ciphertext_ungrouped_ascii": "AB",
+      "decoded_ascii": "",
+      "effective_key": "10",
+      "emitted_positions": [
+        0,
+        1
+      ],
+      "input_bytes_after_preprocess": 3,
+      "lost_positions": [
+        2
+      ],
+      "name": "zero_label_dropped",
+      "output_bytes": 2,
+      "plaintext_ascii": "ABC",
+      "preprocessed_ascii": "ABC",
+      "submitted_key": "10"
+    },
+    {
+      "ciphertext_grouped_ascii": "AB",
+      "ciphertext_ungrouped_ascii": "AB",
+      "decoded_ascii": "",
+      "effective_key": "13",
+      "emitted_positions": [
+        0,
+        1
+      ],
+      "input_bytes_after_preprocess": 3,
+      "lost_positions": [
+        2
+      ],
+      "name": "out_of_range_label_dropped",
+      "output_bytes": 2,
+      "plaintext_ascii": "ABC",
+      "preprocessed_ascii": "ABC",
+      "submitted_key": "13"
+    },
+    {
+      "ciphertext_grouped_ascii": "CDE",
+      "ciphertext_ungrouped_ascii": "CDE",
+      "decoded_ascii": "E",
+      "effective_key": "11",
+      "emitted_positions": [
+        2,
+        3,
+        4
+      ],
+      "input_bytes_after_preprocess": 5,
+      "lost_positions": [
+        0,
+        1
+      ],
+      "name": "duplicate_longer_decode",
+      "output_bytes": 3,
+      "plaintext_ascii": "ABCDE",
+      "preprocessed_ascii": "ABCDE",
+      "submitted_key": "11"
+    },
+    {
+      "ciphertext_grouped_ascii": "ABDEG HCFI",
+      "ciphertext_ungrouped_ascii": "ABDEGHCFI",
+      "decoded_ascii": "ABCDEFGHI",
+      "effective_key": "12",
+      "emitted_positions": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        2,
+        5,
+        8
+      ],
+      "input_bytes_after_preprocess": 9,
+      "lost_positions": [],
+      "name": "leading_zero_frontend_width_change",
+      "output_bytes": 9,
+      "plaintext_ascii": "ABCDEFGHI",
+      "preprocessed_ascii": "ABCDEFGHI",
+      "submitted_key": "012"
+    },
+    {
+      "ciphertext_grouped_ascii": "DEFCG H",
+      "ciphertext_ungrouped_ascii": "DEFCGH",
+      "decoded_ascii": "GHC",
+      "effective_key": "121",
+      "emitted_positions": [
+        3,
+        4,
+        5,
+        2,
+        6,
+        7
+      ],
+      "input_bytes_after_preprocess": 8,
+      "lost_positions": [
+        0,
+        1
+      ],
+      "name": "partial_row_duplicate_fallback",
+      "output_bytes": 6,
+      "plaintext_ascii": "ABCDEFGH",
+      "preprocessed_ascii": "ABCDEFGH",
+      "submitted_key": "121"
+    },
+    {
+      "ciphertext_grouped_ascii": "ABCDE FGHIJ KLMN",
+      "ciphertext_ungrouped_ascii": "ABCDEFGHIJKLMN",
+      "decoded_ascii": "CDEFGHIJKLMN",
+      "effective_key": "1234567890",
+      "emitted_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "input_bytes_after_preprocess": 15,
+      "lost_positions": [
+        14
+      ],
+      "name": "width10_missing_rank10",
+      "output_bytes": 14,
+      "plaintext_ascii": "ABCDEFGHIJKLMNO",
+      "preprocessed_ascii": "ABCDEFGHIJKLMNO",
+      "submitted_key": "1234567890"
+    },
+    {
+      "ciphertext_grouped_ascii": "ABD0C",
+      "ciphertext_ungrouped_ascii": "ABD0C",
+      "decoded_ascii": "ABCD0",
+      "effective_key": "12",
+      "emitted_positions": [
+        0,
+        1,
+        3,
+        4,
+        2
+      ],
+      "input_bytes_after_preprocess": 5,
+      "lost_positions": [],
+      "name": "per_character_trim_preprocessing",
+      "output_bytes": 5,
+      "plaintext_ascii": "A B\tC\nD0",
+      "preprocessed_ascii": "ABCD0",
+      "submitted_key": "12"
+    }
+  ],
+  "rev7_read": false,
+  "source_hashes": {
+    "analyze.py": "ba66b3c844cf5784749587af960a11163d5e47deddf523a04530bea4f5d9629b"
+  },
+  "source_provenance": {
+    "class_git_blob_sha1": "33eccb9a91008386fbcc24fecb690d7589aa66e0",
+    "class_url": "https://github.com/cryptool-org/cto/blob/4fc443f0d87c0e86815695a47ab2d6174c725f82/_ctoLegacy/tools/amsco/class.amsco.php#L191",
+    "commit": "4fc443f0d87c0e86815695a47ab2d6174c725f82",
+    "commit_context": "legacy tools added 2016-08-12",
+    "default_tool_git_blob_sha1": "a1e07baad71ae378707b888890edd81a7ecd37aa",
+    "repository": "cryptool-org/cto",
+    "source_hashes": {
+      "../amsco_geometry.py": "c43e6412cbf2ac34e137801e1fd9c13e8c46bb89296bb89484c01d28a505cae6",
+      "source/class.amsco.php": "132d61ff8b794ab9717a0ce284d7bf21f82c8dbfe39bf9f1a3b5f7aa7eb91e4f",
+      "source/class.amsco.php.base64": "25143ebd1a720d9fe35ac3aa2579be722a8ded03b67d6ff2da0f071e40f8c3ac",
+      "source/default_tool.php": "e71bcfe75ae9250b00f8adf38eaec4547b854bfafd23a559cfef482d0f81a7d6",
+      "source/infobox.template": "0e6f9a9f73a2aee868567fe082a342a75334a3944ca050599da6bfcb97c040af"
+    }
+  },
+  "target_evaluated": false,
+  "valid_permutation_check": {
+    "all_bijective": true,
+    "all_equal_to_generic_start21": true,
+    "full_1092_model_comparisons": [
+      {
+        "equal": true,
+        "key": "12",
+        "n": 1092,
+        "order": [
+          0,
+          1
+        ],
+        "sha256": "feae286f12e02d458cdc80b7b7910e6048c209da998893321e2f738d202f603a",
+        "width": 2
+      },
+      {
+        "equal": true,
+        "key": "21",
+        "n": 1092,
+        "order": [
+          1,
+          0
+        ],
+        "sha256": "902752b1e2f4e67fb30881f6b26b1366a73a4c102a3654dc2b86866b59fcb292",
+        "width": 2
+      },
+      {
+        "equal": true,
+        "key": "123",
+        "n": 1092,
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "sha256": "6a353d7f1dd25febbb8a157f6b2932c8bbc5691b27ec5aa8555451eb2a5845dc",
+        "width": 3
+      },
+      {
+        "equal": true,
+        "key": "321",
+        "n": 1092,
+        "order": [
+          2,
+          1,
+          0
+        ],
+        "sha256": "c0bba90a437211fc6807af00cc3a8146d4acc7257bf4311b4ead04b4d7a60951",
+        "width": 3
+      },
+      {
+        "equal": true,
+        "key": "1234",
+        "n": 1092,
+        "order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "sha256": "1d499eedcd269c57aa1d25e1ccf4bf896edfe1f28dbc90b80e92a482c3f6f1c6",
+        "width": 4
+      },
+      {
+        "equal": true,
+        "key": "4321",
+        "n": 1092,
+        "order": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "sha256": "e0832a74e684daa20d0ad39b28a79b5c13802a008dc44a4a7b404a7d5d0d6d41",
+        "width": 4
+      },
+      {
+        "equal": true,
+        "key": "12345",
+        "n": 1092,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "sha256": "b644d12dd95b7565868a6a6c99d1fe59111a50f0e6368701c808e55b568e9a3f",
+        "width": 5
+      },
+      {
+        "equal": true,
+        "key": "54321",
+        "n": 1092,
+        "order": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "sha256": "27e0fe8504f38b21b3b9a8d2bc315051dd20d72d31af5793ba1399fdcaeaa070",
+        "width": 5
+      },
+      {
+        "equal": true,
+        "key": "123456",
+        "n": 1092,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "sha256": "6329c9eddc6350b2f3bfd5a7238556ee430719c602c718f6bc3dee0fe2f69eb6",
+        "width": 6
+      },
+      {
+        "equal": true,
+        "key": "654321",
+        "n": 1092,
+        "order": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "sha256": "3b5ed831b4eaaadcf5f68744202087a9d1b6b2aebe069b8c97ada80d9929bbb7",
+        "width": 6
+      },
+      {
+        "equal": true,
+        "key": "1234567",
+        "n": 1092,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "sha256": "6e1bf1f57be6c3bb10495444ead498c5492ee3b4c4ffd9f448e1db7c7f6ace9a",
+        "width": 7
+      },
+      {
+        "equal": true,
+        "key": "7654321",
+        "n": 1092,
+        "order": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "sha256": "95eefdf504f1dad9cedbb96de2d08ab2aeb7aca95d34bd68eba9f28aacacf4ee",
+        "width": 7
+      },
+      {
+        "equal": true,
+        "key": "12345678",
+        "n": 1092,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "sha256": "ce09929168a1b8584aff5748f6a3ec4e82cd300f15df9afecfc73026c98107b5",
+        "width": 8
+      },
+      {
+        "equal": true,
+        "key": "87654321",
+        "n": 1092,
+        "order": [
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "sha256": "d8ec3c94c2b331d2dc089b3a48f293a490b22607708d3e33778ed763fd9973cb",
+        "width": 8
+      },
+      {
+        "equal": true,
+        "key": "123456789",
+        "n": 1092,
+        "order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "sha256": "86aba2091b0a2b121c665a7bdc3e22932050c0853b4d9a2b4991d22b3ec767aa",
+        "width": 9
+      },
+      {
+        "equal": true,
+        "key": "987654321",
+        "n": 1092,
+        "order": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "sha256": "a59ce338d30638226679038a9cbaf882047696fb623517432549fe7c12c12c9c",
+        "width": 9
+      }
+    ],
+    "keys_structurally_enumerated": 409112,
+    "widths": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
