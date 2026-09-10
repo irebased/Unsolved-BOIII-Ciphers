@@ -1,0 +1,20 @@
+{
+  "cells_verified": 31440,
+  "driver_sha256": "a6663aca9933ad29148a904f07e6e11773f5d8bc60accd49c4fd1686b9aa613f",
+  "histogram_bins_verified": 8048640,
+  "identity": "ASTRA",
+  "method": "independent source-map placement and global plaintext-byte indexing",
+  "new_target_search": false,
+  "pair_values_verified": 14282448,
+  "result_sha256": "cbe78dd96151e19e1e79a689030e436a670fa490075a894150ebfa30183c3744",
+  "status": "PASS",
+  "summary": {
+    "bound_165_excluded": 31440,
+    "bound_165_unresolved": 0,
+    "bound_213_excluded": 11654,
+    "bound_213_unresolved": 19786,
+    "cells": 31440
+  },
+  "target_evaluated": true,
+  "verification_only": true
+}
