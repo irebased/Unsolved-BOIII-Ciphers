@@ -1,0 +1,680 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "fable_first_and_last_exact": true,
+    "five_utf8_sequences_present": true,
+    "small_all_orders_two_ivs_fail": true,
+    "tail_invariance": true,
+    "width32_supported_width33_unsupported": true
+  },
+  "boundary_controls": [
+    {
+      "convention": "first",
+      "corrupted_exclusion": true,
+      "corrupted_rank": 7,
+      "corrupted_suffix_hex": "00",
+      "positive_all_32_ranks_retained": true,
+      "q": 17,
+      "r": 2,
+      "width": 32
+    },
+    {
+      "convention": "last",
+      "corrupted_exclusion": true,
+      "corrupted_rank": 7,
+      "corrupted_suffix_hex": "00",
+      "positive_all_32_ranks_retained": true,
+      "q": 17,
+      "r": 2,
+      "width": 32
+    }
+  ],
+  "cipher": {
+    "key_hex": "5a6f6d62696573000000000000000000",
+    "name": "AES-128 CFB8"
+  },
+  "endpoint": {
+    "states_at_chunk_byte_16": [
+      0,
+      1,
+      2
+    ],
+    "terminal_zero_required_at_chunk_boundary": false,
+    "utf8_sequences": [
+      "e28093",
+      "e28094",
+      "e28098",
+      "e28099",
+      "e280a6"
+    ]
+  },
+  "fable_live_ragged_fixture": {
+    "n": 14,
+    "order": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "rows": [
+      {
+        "convention": "first",
+        "inverse": "0105090c03070b0d00040802060a",
+        "mapping": [
+          1,
+          5,
+          9,
+          12,
+          3,
+          7,
+          11,
+          13,
+          0,
+          4,
+          8,
+          2,
+          6,
+          10
+        ],
+        "python_exact_match": true
+      },
+      {
+        "convention": "last",
+        "inverse": "01050903070b0004080c02060a0d",
+        "mapping": [
+          1,
+          5,
+          9,
+          3,
+          7,
+          11,
+          0,
+          4,
+          8,
+          12,
+          2,
+          6,
+          10,
+          13
+        ],
+        "python_exact_match": true
+      }
+    ],
+    "width": 4
+  },
+  "forced_zero_controls": [
+    {
+      "convention": "first",
+      "every_order_every_iv_exclusion": true,
+      "first_failure": {
+        "chunk_plaintext_offset": 16,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_prefixes_unchanged": true,
+      "rank": 1,
+      "width": 3
+    },
+    {
+      "convention": "last",
+      "every_order_every_iv_exclusion": true,
+      "first_failure": {
+        "chunk_plaintext_offset": 16,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_prefixes_unchanged": true,
+      "rank": 1,
+      "width": 3
+    },
+    {
+      "convention": "first",
+      "every_order_every_iv_exclusion": true,
+      "first_failure": {
+        "chunk_plaintext_offset": 16,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_prefixes_unchanged": true,
+      "rank": 2,
+      "width": 4
+    },
+    {
+      "convention": "last",
+      "every_order_every_iv_exclusion": true,
+      "first_failure": {
+        "chunk_plaintext_offset": 16,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_prefixes_unchanged": true,
+      "rank": 2,
+      "width": 4
+    },
+    {
+      "convention": "first",
+      "every_order_every_iv_exclusion": true,
+      "first_failure": {
+        "chunk_plaintext_offset": 16,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_prefixes_unchanged": true,
+      "rank": 4,
+      "width": 9
+    },
+    {
+      "convention": "last",
+      "every_order_every_iv_exclusion": true,
+      "first_failure": {
+        "chunk_plaintext_offset": 16,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_prefixes_unchanged": true,
+      "rank": 4,
+      "width": 9
+    },
+    {
+      "convention": "first",
+      "every_order_every_iv_exclusion": true,
+      "first_failure": {
+        "chunk_plaintext_offset": 16,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_prefixes_unchanged": true,
+      "rank": 6,
+      "width": 13
+    },
+    {
+      "convention": "last",
+      "every_order_every_iv_exclusion": true,
+      "first_failure": {
+        "chunk_plaintext_offset": 16,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_prefixes_unchanged": true,
+      "rank": 6,
+      "width": 13
+    },
+    {
+      "convention": "first",
+      "every_order_every_iv_exclusion": true,
+      "first_failure": {
+        "chunk_plaintext_offset": 16,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_prefixes_unchanged": true,
+      "rank": 16,
+      "width": 32
+    },
+    {
+      "convention": "last",
+      "every_order_every_iv_exclusion": true,
+      "first_failure": {
+        "chunk_plaintext_offset": 16,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_prefixes_unchanged": true,
+      "rank": 16,
+      "width": 32
+    }
+  ],
+  "identity": "ASTRA",
+  "limits": "A bad unavoidable chunk proves every order impossible for each convention. The same witness closes both convention models; their factorial weights are parallel and are not added. If all ranks retain, the cell is unresolved. Width 33 has no guaranteed byte after the 16-byte CFB register.",
+  "rev7_file_read": false,
+  "runtime": {
+    "node": "v26.4.0",
+    "pycryptodome": "3.23.0",
+    "python": "3.9.6"
+  },
+  "scope": "Synthetic-only AES-128 CFB8 ragged-B guaranteed-full-row predicate; key Zombies plus nine NULs; every external IV; n=546 widths 2..32; first/last natural long-column conventions.",
+  "small_width_exhaustive_controls": [
+    {
+      "convention": "first",
+      "n": 61,
+      "orders_times_ivs_checked": 12,
+      "q": 20,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 3
+    },
+    {
+      "convention": "last",
+      "n": 61,
+      "orders_times_ivs_checked": 12,
+      "q": 20,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 3
+    },
+    {
+      "convention": "first",
+      "n": 81,
+      "orders_times_ivs_checked": 48,
+      "q": 20,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 4
+    },
+    {
+      "convention": "last",
+      "n": 81,
+      "orders_times_ivs_checked": 48,
+      "q": 20,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 4
+    },
+    {
+      "convention": "first",
+      "n": 101,
+      "orders_times_ivs_checked": 240,
+      "q": 20,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 5
+    },
+    {
+      "convention": "last",
+      "n": 101,
+      "orders_times_ivs_checked": 240,
+      "q": 20,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 5
+    },
+    {
+      "convention": "first",
+      "n": 121,
+      "orders_times_ivs_checked": 1440,
+      "q": 20,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 6
+    },
+    {
+      "convention": "last",
+      "n": 121,
+      "orders_times_ivs_checked": 1440,
+      "q": 20,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 6
+    }
+  ],
+  "source_hashes": {
+    "controls.py": "8a985df62f6862a1377692f4b8be7455953db76b1e264a1511f94772b8134d8b",
+    "core.py": "5dba6b7a2d2d79dba15a9dee008e2a0b8ddd4798ea4bbecb8f4b7d2547b4e450",
+    "fable_byteTranspositions.js": "c9c09bd405bbe43b853a5efb0e25f58ae67136a5f83653e7c45c3a2f3879b7f0",
+    "fable_transpositions.js": "89f2b3c8fa5cd5144d3c2baf2e2d25edb1dcb2f3b0f7a056a506841e6438ccc6",
+    "parent_core.py": "9a8fb8cd37ecd2453eb191c340d3da14c1a95565d7b2582d76bf4ccaa7c8f16e"
+  },
+  "tail_mutation_invariance": [
+    {
+      "convention": "first",
+      "prefixes_and_predicate_invariant": true,
+      "tail_bytes": 2,
+      "tail_start": 544,
+      "width": 4
+    },
+    {
+      "convention": "last",
+      "prefixes_and_predicate_invariant": true,
+      "tail_bytes": 2,
+      "tail_start": 544,
+      "width": 4
+    },
+    {
+      "convention": "first",
+      "prefixes_and_predicate_invariant": true,
+      "tail_bytes": 6,
+      "tail_start": 540,
+      "width": 9
+    },
+    {
+      "convention": "last",
+      "prefixes_and_predicate_invariant": true,
+      "tail_bytes": 6,
+      "tail_start": 540,
+      "width": 9
+    },
+    {
+      "convention": "first",
+      "prefixes_and_predicate_invariant": true,
+      "tail_bytes": 2,
+      "tail_start": 544,
+      "width": 32
+    },
+    {
+      "convention": "last",
+      "prefixes_and_predicate_invariant": true,
+      "tail_bytes": 2,
+      "tail_start": 544,
+      "width": 32
+    }
+  ],
+  "target_evaluated": false,
+  "valid_arbitrary_iv_plants": [
+    {
+      "all_ranks_retained": true,
+      "convention": "first",
+      "iv_hex": "8ecf247037e7c709d11c79f4a7b73ccc",
+      "observed_sha256": "cc450d049635b96e1af8377ddea9ae2e516730dd1b4c4d1de9818adeb2e9e5a4",
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "q": 182,
+      "r": 0,
+      "width": 3
+    },
+    {
+      "all_ranks_retained": true,
+      "convention": "last",
+      "iv_hex": "5f96baefae74d63892de35d37a98482a",
+      "observed_sha256": "300d63d8e2f58303e4168a7f288dd74eb9d05539426ccf8deb89635f00d1d2b7",
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "q": 182,
+      "r": 0,
+      "width": 3
+    },
+    {
+      "all_ranks_retained": true,
+      "convention": "first",
+      "iv_hex": "8ecf247037e7c709d11c79f4a7b73ccc",
+      "observed_sha256": "573e66c214897738aff5988a11057040ec7a772426010775c1d6b737059e3651",
+      "order": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "q": 136,
+      "r": 2,
+      "width": 4
+    },
+    {
+      "all_ranks_retained": true,
+      "convention": "last",
+      "iv_hex": "5f96baefae74d63892de35d37a98482a",
+      "observed_sha256": "eaae697405a0bf27617d9c948ab743bed993e2f120a0dc4e5fade6bcead2a22c",
+      "order": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "q": 136,
+      "r": 2,
+      "width": 4
+    },
+    {
+      "all_ranks_retained": true,
+      "convention": "first",
+      "iv_hex": "8ecf247037e7c709d11c79f4a7b73ccc",
+      "observed_sha256": "b87f714ff24087ca308c7a44ed29f6ae83cf43132c722a195940ec564a7b8f2c",
+      "order": [
+        3,
+        2,
+        7,
+        1,
+        8,
+        0,
+        6,
+        4,
+        5
+      ],
+      "q": 60,
+      "r": 6,
+      "width": 9
+    },
+    {
+      "all_ranks_retained": true,
+      "convention": "last",
+      "iv_hex": "5f96baefae74d63892de35d37a98482a",
+      "observed_sha256": "b90f405bb11c2aa7e5651a6761a1c90cc0c0e0515530709da9285ffc9567dc5d",
+      "order": [
+        3,
+        2,
+        7,
+        1,
+        8,
+        0,
+        6,
+        4,
+        5
+      ],
+      "q": 60,
+      "r": 6,
+      "width": 9
+    },
+    {
+      "all_ranks_retained": true,
+      "convention": "first",
+      "iv_hex": "8ecf247037e7c709d11c79f4a7b73ccc",
+      "observed_sha256": "10eb0df04314ab58e67efe6ff00b0ab0a8ededc1a420c15f6b8eb05fc28e4845",
+      "order": [
+        0,
+        12,
+        4,
+        7,
+        2,
+        3,
+        9,
+        1,
+        5,
+        8,
+        10,
+        11,
+        6
+      ],
+      "q": 42,
+      "r": 0,
+      "width": 13
+    },
+    {
+      "all_ranks_retained": true,
+      "convention": "last",
+      "iv_hex": "5f96baefae74d63892de35d37a98482a",
+      "observed_sha256": "c1f60dcc7e8cfffbfb552400ff77a509d02883e8df313c05ee1f13cae4be8764",
+      "order": [
+        0,
+        12,
+        4,
+        7,
+        2,
+        3,
+        9,
+        1,
+        5,
+        8,
+        10,
+        11,
+        6
+      ],
+      "q": 42,
+      "r": 0,
+      "width": 13
+    },
+    {
+      "all_ranks_retained": true,
+      "convention": "first",
+      "iv_hex": "8ecf247037e7c709d11c79f4a7b73ccc",
+      "observed_sha256": "902fe4fa8d152e0f8eb76416f9afd56dc5877c4e3b4a66415b39d8c8623598a4",
+      "order": [
+        24,
+        20,
+        9,
+        2,
+        28,
+        30,
+        1,
+        3,
+        12,
+        4,
+        22,
+        29,
+        27,
+        23,
+        0,
+        10,
+        8,
+        14,
+        5,
+        18,
+        16,
+        19,
+        26,
+        17,
+        21,
+        15,
+        25,
+        6,
+        13,
+        11,
+        31,
+        7
+      ],
+      "q": 17,
+      "r": 2,
+      "width": 32
+    },
+    {
+      "all_ranks_retained": true,
+      "convention": "last",
+      "iv_hex": "5f96baefae74d63892de35d37a98482a",
+      "observed_sha256": "7566682f2eb772d412146b36db1782eaad99eb5e8fcbfdb485f5c9224c15c11e",
+      "order": [
+        24,
+        20,
+        9,
+        2,
+        28,
+        30,
+        1,
+        3,
+        12,
+        4,
+        22,
+        29,
+        27,
+        23,
+        0,
+        10,
+        8,
+        14,
+        5,
+        18,
+        16,
+        19,
+        26,
+        17,
+        21,
+        15,
+        25,
+        6,
+        13,
+        11,
+        31,
+        7
+      ],
+      "q": 17,
+      "r": 2,
+      "width": 32
+    }
+  ],
+  "width33_unsupported": {
+    "chunk_start_states": [
+      0,
+      1,
+      2
+    ],
+    "complete_every_iv_every_order_exclusion": false,
+    "conventions": [
+      "first",
+      "last"
+    ],
+    "conventions_alias": false,
+    "identity": "ASTRA",
+    "n": 546,
+    "q": 16,
+    "r": 18,
+    "ranks_examined": 0,
+    "reason": "no guaranteed IV-independent suffix",
+    "rejected_rank": null,
+    "supported": false,
+    "terminal_zero_required": false,
+    "unresolved": true,
+    "width": 33
+  }
+}
