@@ -1,0 +1,162 @@
+{
+  "assertions": {
+    "diagonal_only_equals_independent_all_pairs_brute": true,
+    "inverse_rank_formula_equals_independent_matrix_materialization": true,
+    "overlapping_114_diagonals_preserved": true
+  },
+  "binary_exhaustive": [
+    {
+      "length": 0,
+      "strings": 1,
+      "units": [
+        2,
+        3
+      ]
+    },
+    {
+      "length": 1,
+      "strings": 2,
+      "units": [
+        2,
+        3
+      ]
+    },
+    {
+      "length": 2,
+      "strings": 4,
+      "units": [
+        2,
+        3
+      ]
+    },
+    {
+      "length": 3,
+      "strings": 8,
+      "units": [
+        2,
+        3
+      ]
+    },
+    {
+      "length": 4,
+      "strings": 16,
+      "units": [
+        2,
+        3
+      ]
+    },
+    {
+      "length": 5,
+      "strings": 32,
+      "units": [
+        2,
+        3
+      ]
+    },
+    {
+      "length": 6,
+      "strings": 64,
+      "units": [
+        2,
+        3
+      ]
+    },
+    {
+      "length": 7,
+      "strings": 128,
+      "units": [
+        2,
+        3
+      ]
+    },
+    {
+      "length": 8,
+      "strings": 256,
+      "units": [
+        2,
+        3
+      ]
+    },
+    {
+      "length": 9,
+      "strings": 512,
+      "units": [
+        2,
+        3
+      ]
+    },
+    {
+      "length": 10,
+      "strings": 1024,
+      "units": [
+        2,
+        3
+      ]
+    },
+    {
+      "length": 11,
+      "strings": 2048,
+      "units": [
+        2,
+        3
+      ]
+    }
+  ],
+  "binary_strings_total": 4095,
+  "diagonal_fixture": {
+    "runs": [
+      {
+        "gap": 114,
+        "length": 6,
+        "start_a": 0,
+        "start_b": 114,
+        "text": "ABCDEF"
+      },
+      {
+        "gap": 228,
+        "length": 6,
+        "start_a": 0,
+        "start_b": 228,
+        "text": "ABCDEF"
+      },
+      {
+        "gap": 114,
+        "length": 6,
+        "start_a": 114,
+        "start_b": 228,
+        "text": "ABCDEF"
+      }
+    ],
+    "sha256": "e3136f72ae3e0f4264e6cb1be2f7fc06e1e5b538c85c9923d5e1bacee093e75c"
+  },
+  "geometry": [
+    {
+      "cell": 1,
+      "columns": 2,
+      "orders": 2,
+      "rows": 3
+    },
+    {
+      "cell": 2,
+      "columns": 3,
+      "orders": 6,
+      "rows": 2
+    },
+    {
+      "cell": 2,
+      "columns": 4,
+      "orders": 24,
+      "rows": 3
+    },
+    {
+      "cell": 3,
+      "columns": 5,
+      "orders": 120,
+      "rows": 2
+    }
+  ],
+  "identity": "ASTRA",
+  "kind": "verifier_synthetic_controls",
+  "target_evaluated": false,
+  "verifier_source_sha256": "4bc99a1325cf5a8fd68d2b1cd3969a59a548acb8dfba2d1b6be9e6c543af0542"
+}

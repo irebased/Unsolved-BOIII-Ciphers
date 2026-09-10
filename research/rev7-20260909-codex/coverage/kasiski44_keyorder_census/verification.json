@@ -1,0 +1,49 @@
+{
+  "canonical_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "distribution": {
+    "0:0": 4125,
+    "4:1": 176,
+    "4:2": 9,
+    "5:1": 535,
+    "5:2": 51,
+    "6:1": 135,
+    "6:2": 9
+  },
+  "identity": "ASTRA",
+  "limits": "Independent saved-result replay; no target generation or cipher inference.",
+  "new_target_search": false,
+  "orders_verified": 5040,
+  "result_sha256": "6edb51727cef5eac35d225827877bf9df7c2f3724109459b8024c36eba8bf36a",
+  "status": "PASS",
+  "target_evaluated": true,
+  "verification_only": true,
+  "verifier_source_sha256": "4bc99a1325cf5a8fd68d2b1cd3969a59a548acb8dfba2d1b6be9e6c543af0542",
+  "zombies": {
+    "order": [
+      3,
+      5,
+      4,
+      2,
+      1,
+      6,
+      0
+    ],
+    "qualifying_witnesses": [
+      {
+        "gap": 114,
+        "length": 5,
+        "start_a": 828,
+        "start_b": 942,
+        "text": "030E6"
+      }
+    ],
+    "rank_with_ties": 196,
+    "score": {
+      "maximum_qualifying_length": 5,
+      "qualifying_region_count": 1
+    },
+    "stream_sha256": "1cb32555f497309352adec7f5757bc3e9f5fb02fe077995ae0b83ff3a052d1be",
+    "strictly_better_orders": 195,
+    "tied_orders": 535
+  }
+}

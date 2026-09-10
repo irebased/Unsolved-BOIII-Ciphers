@@ -1,0 +1,185 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1994,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a2e9bdfb8505b9b1e8122ac8e630e4990ea91b2b",
+      "path": "lavender/src/content/docs/ciphers/bo3/rev/rev7.mdx",
+      "sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91"
+    },
+    {
+      "bytes": 45454,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e1064d230b405277352150c6a95bc5d635de110b",
+      "path": "lavender/src/data/ciphers/revelations.json",
+      "sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e"
+    },
+    {
+      "bytes": 2104,
+      "encoding": "utf-8",
+      "git_blob_sha1": "aed955fb780442d60696e51da02916208124adfc",
+      "path": "research/rev7-20260909-codex/comms/kasiski-keyorder-final-prereg-20260910.json",
+      "sha256": "2b9458476500585cd50673d59ec770573556cb4ac40d40f9d07c070b8c1e9e72"
+    },
+    {
+      "bytes": 7081,
+      "encoding": "utf-8",
+      "git_blob_sha1": "4fdf05c4aed4dc28377ae3557528e7429c87202d",
+      "path": "research/rev7-20260909-codex/comms/publish_kasiski_occupancy.py",
+      "sha256": "5eccde6895282c98e0d58f6e063657ac15e50c480e7866265fe2b8047b49cf6c"
+    },
+    {
+      "bytes": 2831,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d903796d8e302138e0ccf8711a1517a37afaa01b",
+      "path": "research/rev7-20260909-codex/coverage/distinct_byte_occupancy/README.md",
+      "sha256": "34e260a4d58bdac55d56f18b76f0f8cce1beaa9392eb7c82e7c6a008d95e5a7b"
+    },
+    {
+      "bytes": 62741,
+      "encoding": "utf-8",
+      "git_blob_sha1": "954009d1926a1fa7b64e41a3605b60aa55047964",
+      "path": "research/rev7-20260909-codex/coverage/distinct_byte_occupancy/evidence.json",
+      "sha256": "25f8dc232c0f0020747ddf46cefc316030b111cc39fdda3df009d7ca748f4b37"
+    },
+    {
+      "bytes": 5286,
+      "encoding": "utf-8",
+      "git_blob_sha1": "235ebf6a1d01fc7adf6026991a8768692606f03f",
+      "path": "research/rev7-20260909-codex/coverage/distinct_byte_occupancy/occupancy.py",
+      "sha256": "2506d407801a6f581ecfe01b91d71bf6e9a4a0524104ec582f5ef22cb2df3cd9"
+    },
+    {
+      "bytes": 1845,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2f8a68418bae99556b3996da2d31134441e1100e",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44/INDEPENDENT_REPLAY.md",
+      "sha256": "fad62dd41990ac7b702248f4fea59cab9ddb2dd3ffedf47ded407b990057452e"
+    },
+    {
+      "bytes": 6884,
+      "encoding": "utf-8",
+      "git_blob_sha1": "254ac456109e0f9b7c0fe441a40faee926357434",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44/REPORT.md",
+      "sha256": "94e010dbd7b347b9b23bb0dec2c57779715b2e3367fe9386ee0ff64358d833f8"
+    },
+    {
+      "bytes": 1160,
+      "encoding": "utf-8",
+      "git_blob_sha1": "259158fde6a947298b3246701b5b891a7ed0c6f4",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44/geometry.py",
+      "sha256": "cad6c29e75cc1d43ba9f43d172767c081bed8b0394ce5ae7c8adee3e22427e61"
+    },
+    {
+      "bytes": 1353,
+      "encoding": "utf-8",
+      "git_blob_sha1": "4b28845b4158c6208e242c2519bac2a406d14340",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44/independent_witness.json",
+      "sha256": "01db009b438a131057e1de7338ca27b646dc4df41d8c227ff5643998d2338b19"
+    },
+    {
+      "bytes": 2458,
+      "encoding": "utf-8",
+      "git_blob_sha1": "6c54641fde593940a57dc29a3e0c6a159dc5cf5a",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44/independent_witness.py",
+      "sha256": "ffb0b0677fbd681ed24a6c671d1816e1f5931b5f53ce98029216a5dfd200611e"
+    },
+    {
+      "bytes": 1929,
+      "encoding": "utf-8",
+      "git_blob_sha1": "cbea0b64f5c5ca61757214ba34044c312072d3fc",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_keyorder_census/INDEPENDENT_REPLAY.md",
+      "sha256": "cbd3b1b081bb3c2a9bc7739df617beef9a01145e99a110b9bf62bbf9e3f0259e"
+    },
+    {
+      "bytes": 3667,
+      "encoding": "utf-8",
+      "git_blob_sha1": "02a17d908f2a9705e6b417b758871f21e4b29919",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_keyorder_census/README.md",
+      "sha256": "459a736efe45b044b106c10198292f6945bc555f6b9fd32567af16c98755656d"
+    },
+    {
+      "bytes": 3239,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a31a4d6e533b87a4b00628ca5b87e0e149b5ad77",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_keyorder_census/RESULTS.md",
+      "sha256": "0ba4678a2289db6528eec080df12206150a7c467b4abbea487ce625102e9a576"
+    },
+    {
+      "bytes": 2443,
+      "encoding": "utf-8",
+      "git_blob_sha1": "edcccfec5dd729995ba1cb2fea795a4668fbe9e3",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_keyorder_census/controls.json",
+      "sha256": "6f4846ef1c5058e8e5f28e91671833a475cc6cef4647d33fac8fe1dcabe40ff9"
+    },
+    {
+      "bytes": 4795,
+      "encoding": "utf-8",
+      "git_blob_sha1": "1f2e02da35c13d24d642e870ae0aa43ef3810db2",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_keyorder_census/controls.py",
+      "sha256": "bed12a5728819bbe54ef9c9692f138ae2d05dd8a0a5766479764818c6d79a36d"
+    },
+    {
+      "bytes": 2229,
+      "encoding": "utf-8",
+      "git_blob_sha1": "910bbba9424ac58df34f647b4924652c4d46b5da",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_keyorder_census/model.py",
+      "sha256": "e7ef87e8cda01a75b45fd0f834f5b785338724dc326a7256e52018704ee37fb9"
+    },
+    {
+      "bytes": 5487,
+      "encoding": "utf-8",
+      "git_blob_sha1": "f8a654b9cce748c00355a708828d81b7e198dad6",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_keyorder_census/run_target.py",
+      "sha256": "917fccd6688eaa380783088dd9131bcb924a2c0fe756e4272105174349579168"
+    },
+    {
+      "bytes": 1872997,
+      "encoding": "utf-8",
+      "git_blob_sha1": "3faaa038a6758046f7240629147a3c2fb9aa2a09",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_keyorder_census/target_results.json",
+      "sha256": "6edb51727cef5eac35d225827877bf9df7c2f3724109459b8024c36eba8bf36a"
+    },
+    {
+      "bytes": 1194,
+      "encoding": "utf-8",
+      "git_blob_sha1": "3b786453e33b72db5a0afa0ddd081ca440cdc7ff",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_keyorder_census/verification.json",
+      "sha256": "b449d65b96453d2403bc5f8b6d3591a247039112ba6b18a7854d4c4a701fe492"
+    },
+    {
+      "bytes": 2537,
+      "encoding": "utf-8",
+      "git_blob_sha1": "33bddd25816e5499807e7f27ff8163360dfa52e5",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_keyorder_census/verifier_controls.json",
+      "sha256": "1eaf28775811b25a071939d9792df55ec42644682afad94c0e204326258c3c5b"
+    },
+    {
+      "bytes": 8238,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2ecdc24d60828b9e4b65b71908c09e2060aee6bb",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_keyorder_census/verify_results.py",
+      "sha256": "4bc99a1325cf5a8fd68d2b1cd3969a59a548acb8dfba2d1b6be9e6c543af0542"
+    },
+    {
+      "bytes": 5122,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e90bac50b3f5e94c3f1e7aafd115ca0d7fbabd01",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_next_design/DESIGN.md",
+      "sha256": "3dad80616cdc4f1421c4acc2b2cb1574e58b5ba59a1b81b5e7636b01ab7161eb"
+    },
+    {
+      "bytes": 4341,
+      "encoding": "utf-8",
+      "git_blob_sha1": "673e7e7548a2993152feac1db819e6502943e783",
+      "path": "research/rev7-20260909-codex/coverage/kasiski44_next_design/evidence.json",
+      "sha256": "14ad1f31cb850919c0124edc816c2382ff761afde953aa1953074b1a7f4ffe89"
+    }
+  ],
+  "description": "Frozen Kasiski width-7 key-order census, independent replay, next-design evidence, exact distinct-byte occupancy oracle, historical witness context, canonical sources, and preregistration payload.",
+  "identity": "ASTRA",
+  "publication_excludes": [
+    "drafts",
+    "__pycache__"
+  ]
+}

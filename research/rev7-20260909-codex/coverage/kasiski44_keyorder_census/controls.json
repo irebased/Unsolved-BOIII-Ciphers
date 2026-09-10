@@ -1,0 +1,101 @@
+{
+  "assertions": {
+    "all_5040_order_indices_permutations": true,
+    "both_geometry_roundtrips": true,
+    "boundary_ending_supported": true,
+    "fast_equals_independent_brute": true,
+    "independent_gather_matches_decode": true,
+    "nested_and_overlapping_supported": true,
+    "triplicate_occurrence_pairs_retained": true
+  },
+  "exhaustive_binary_strings": 4095,
+  "fixtures": {
+    "boundary_end": {
+      "pairs": [
+        {
+          "gap": 5,
+          "length": 4,
+          "start_a": 0,
+          "start_b": 5,
+          "text": "WXYZ"
+        }
+      ],
+      "text": "WXYZ0WXYZ"
+    },
+    "nested": {
+      "pairs": [
+        {
+          "gap": 7,
+          "length": 6,
+          "start_a": 0,
+          "start_b": 7,
+          "text": "QABCDE"
+        }
+      ],
+      "text": "QABCDEZQABCDEX"
+    },
+    "no_repeat": {
+      "pairs": [],
+      "text": "0123456789ABCDEF"
+    },
+    "overlap": {
+      "pairs": [
+        {
+          "gap": 2,
+          "length": 6,
+          "start_a": 0,
+          "start_b": 2,
+          "text": "ABABAB"
+        },
+        {
+          "gap": 4,
+          "length": 4,
+          "start_a": 0,
+          "start_b": 4,
+          "text": "ABAB"
+        }
+      ],
+      "text": "ABABABABX"
+    }
+  },
+  "geometry": {
+    "all_order_stream_digest_sha256": "9917f800a233585730f6fbb86b9c6ef126e9fe6345c39c311b3c08e4b72c071a",
+    "orders": 5040,
+    "synthetic_sha256": "59436706dc03d00ecfed57ce02b09528e030ee3252565228f5c16e4e1e5407a5",
+    "two_row_natural": "labelled r,c cells",
+    "two_row_observed_sha256": "40543823d4fec3201c30c1d986854065c425d817eb3e5c04086ddded73cb4d0b"
+  },
+  "identity": "ASTRA",
+  "scope": "Synthetic-only exact 7! equal-cut-4 geometry and maximal-repeat controls.",
+  "source_hashes": {
+    "controls.py": "bed12a5728819bbe54ef9c9692f138ae2d05dd8a0a5766479764818c6d79a36d",
+    "model.py": "e7ef87e8cda01a75b45fd0f834f5b785338724dc326a7256e52018704ee37fb9"
+  },
+  "target_evaluated": false,
+  "triplicate": {
+    "length": 236,
+    "qualifying_planted_pairs": [
+      {
+        "gap": 114,
+        "length": 5,
+        "start_a": 0,
+        "start_b": 114,
+        "text": "ABCDE"
+      },
+      {
+        "gap": 228,
+        "length": 5,
+        "start_a": 0,
+        "start_b": 228,
+        "text": "ABCDE"
+      },
+      {
+        "gap": 114,
+        "length": 5,
+        "start_a": 114,
+        "start_b": 228,
+        "text": "ABCDE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "facts": {
+    "bifid_existing_scope": "4368 direct canonical-orientation cells only; fixed cipher/plain squares, periods1..1092, bag213.",
+    "canonical_hex_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+    "collapsed_observation": {
+      "gap": 114,
+      "maximal_region_count_len_ge_4_supporting_all_19_38_57": 1,
+      "starts": [
+        828,
+        942
+      ],
+      "text": "030E6"
+    },
+    "direct_two_square_bifid_on_exact_decoded_stream_already_done": false,
+    "exact_decoded_stream_periodic_coverage": {
+      "byte_xor_subtract_periods_19_38_57_result_sha256": "04a478d11641af321bb5dcfb999af4dc067d9e1130663987a39269409f8f23b8",
+      "nibble_subtract_beaufort_periods_19_38_57_result_sha256": "fc5be291fc8be6158e32cbcd0f16b49f4bb7c748f2971eaca609eea66d365f7f",
+      "status": "all declared cells excluded under the 165-byte necessary endpoint"
+    },
+    "exact_key_order_census_found_in_reviewed_corpus": false,
+    "fixed_amsco_decode_forward_sha256": "1cb32555f497309352adec7f5757bc3e9f5fb02fe077995ae0b83ff3a052d1be",
+    "reason": "Published ASTRA package explicitly has no random null or significance estimate. FABLE 200-null result used a different unreproduced statistic and did not reproduce the supplied support counts.",
+    "rigorous_matched_null_for_collapsed_statistic_already_done": false,
+    "zombies_column_order_zero_based": [
+      3,
+      5,
+      4,
+      2,
+      1,
+      6,
+      0
+    ]
+  },
+  "identity": "ASTRA",
+  "new_target_search": false,
+  "recommendation": {
+    "comparison": "report the complete exact distribution and ZOMBIES rank/ties for the predeclared pair (maximum supporting-region length, supporting-region count)",
+    "enumeration": "all 7! = 5040 distinct column-read permutations; ZOMBIES is order [3,5,4,2,1,6,0]",
+    "fixed_geometry": "273 indivisible four-symbol cells, 39x7, conventional decode, forward input",
+    "fixed_input": "canonical 1092 hex symbols",
+    "interpretation": "finite conditional calibration across column orders only; descriptive because cut4, direction, periods, threshold and ZOMBIES were selected after broader unknown exploration",
+    "name": "exact 7! conditional column-order census",
+    "primary_record": "for each order, enumerate left/right-maximal repeated occurrence-pair regions of length >=4 whose gap is divisible by lcm(19,38,57)=114; retain count, maximum length, and full witnesses"
+  },
+  "reviewed_hashes": {
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join_target/COVERAGE_FINAL.md": "10e0b6e84df820d401454d92f2f6cb3dc4869fb42fb365bc1ab9bcd0950633c4",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join_target/two_square_coverage.json": "4618295aca0e67294851f097a1c68010e4f109639242163447ba5b16a3407bae",
+    "research/rev7-20260909-codex/coverage/kasiski44/REPORT.md": "94e010dbd7b347b9b23bb0dec2c57779715b2e3367fe9386ee0ff64358d833f8",
+    "research/rev7-20260909-codex/coverage/kasiski44/geometry.py": "cad6c29e75cc1d43ba9f43d172767c081bed8b0394ce5ae7c8adee3e22427e61",
+    "research/rev7-20260909-codex/coverage/kasiski44/independent_witness.json": "01db009b438a131057e1de7338ca27b646dc4df41d8c227ff5643998d2338b19",
+    "research/rev7-20260909-codex/coverage/kasiski44/independent_witness.py": "ffb0b0677fbd681ed24a6c671d1816e1f5931b5f53ce98029216a5dfd200611e",
+    "research/rev7-20260909-codex/coverage/kasiski44/maximal_repeats.json": "d19ddbe0b7b3fd41c3c168833e6b7562a56968f4e3f5cc5528f96828abd0fb9e",
+    "research/rev7-20260909-codex/coverage/kasiski44/maximal_repeats.py": "32d08db3a4e1252c25f7448c44bc46774c3fc3b1e5ee1927a347ff716c222b37",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_target/RESULTS.md": "7911cf370603056b54280f3f68f135bfa1151c7d4309e7494534aca61ce66a26",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_target/target_results.json": "fc5be291fc8be6158e32cbcd0f16b49f4bb7c748f2971eaca609eea66d365f7f",
+    "research/rev7-20260909-codex/coverage/kasiski44/periodic_followup/RESULTS.md": "60047819fe028c02c1202e8114b301321e583e679aca0e2ddc74cbc336970d8e",
+    "research/rev7-20260909-codex/coverage/kasiski44/periodic_followup/results.json": "04a478d11641af321bb5dcfb999af4dc067d9e1130663987a39269409f8f23b8"
+  },
+  "status": "design_only",
+  "target_evaluated": false
+}
