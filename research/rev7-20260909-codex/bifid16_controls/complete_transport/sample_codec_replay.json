@@ -1,0 +1,16 @@
+{
+  "codec_sha256": "2984ce1a8a8053bc7bc7745880da603832a7b8d3708828d75841f6a7b607278a",
+  "exact_in_memory_and_filesystem_restore": "PASS",
+  "fixed_sample_records": 64,
+  "identity": "ASTRA",
+  "new_solver_run": false,
+  "new_target_search": false,
+  "original_gzip_bytes": 3971701,
+  "transport_part_bytes": [
+    1736977
+  ],
+  "transport_part_sha256": [
+    "19fd563f7a4a3af3db08c9823b01076971b0bc41e6c7e1219ec71330f66226d2"
+  ],
+  "whole_corpus_packed": false
+}

@@ -1,0 +1,45 @@
+{
+  "assertions": {
+    "all_eleven_negative_cases": true,
+    "all_passed": true,
+    "all_records_exact": true,
+    "multipart": true
+  },
+  "configuration": {
+    "production_part_original_gzip_limit": 8388608,
+    "schema": "astra-exact-gzip-xz-json-v1",
+    "xz_preset": 6
+  },
+  "identity": "ASTRA",
+  "multipart": {
+    "exact_record_roundtrip": true,
+    "first_restore_written": 6,
+    "input_records": 6,
+    "part_sha256": [
+      "51a9c0fb3f4eb7b590584f7cb4340b07e0f66c857a04a10751312d6b590a7115",
+      "3e76c23636edb654fffd70f26602647072136462c3024675ddcb8938a189ccf0",
+      "b61eeba22a41d2c9bc8b0d7582bc33c50c0d5d2cd5fa079a37a99e04e189f178"
+    ],
+    "parts": 3,
+    "second_restore_verified_identical": 6
+  },
+  "rejections": [
+    "compressed_corruption",
+    "truncated_xz",
+    "trailing_xz",
+    "duplicate_path",
+    "path_traversal",
+    "noncanonical_outer",
+    "decoder_memlimit",
+    "oversized_declared_inner",
+    "oversized_declared_raw",
+    "symlink_parent",
+    "nonidentical_existing"
+  ],
+  "source_hashes": {
+    "codec.py": "2984ce1a8a8053bc7bc7745880da603832a7b8d3708828d75841f6a7b607278a",
+    "codec_controls.py": "6583c7f24fa3ff52f2f30b2cb3b443cd8f6a55f02659d4122fd6bc9052d3dd77"
+  },
+  "synthetic_only": true,
+  "target_evaluated": false
+}

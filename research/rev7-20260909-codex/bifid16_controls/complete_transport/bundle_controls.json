@@ -1,0 +1,31 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "exact_2175_record_set": true,
+    "ordered_parts": true,
+    "six_manifest_and_file_rejections": true,
+    "unique_paths": true
+  },
+  "exact_order_and_union": true,
+  "exact_restore": true,
+  "identity": "ASTRA",
+  "parts": 28,
+  "records": 2175,
+  "rejections": [
+    "reversed_part_order",
+    "malformed_part_filename",
+    "manifest_record_count_mismatch",
+    "manifest_original_bytes_mismatch",
+    "invalid_partition_limit",
+    "oversized_part_file"
+  ],
+  "restore_package_entrypoint": true,
+  "source_hashes": {
+    "bundle.py": "d02e6814a28a87e332e8b902773b889b00fcb63b672f1852035c03a5bbbe0df7",
+    "bundle_controls.py": "6e96563b9438c1698cc021a29fa7b521c13327281652910ebc6c16e9ec28aac0",
+    "codec.py": "2984ce1a8a8053bc7bc7745880da603832a7b8d3708828d75841f6a7b607278a",
+    "codec_controls.json": "7e11d5c38bfbe1b82a5e28506e7292f13b30183aac227a8a2a66f89a88c367b5"
+  },
+  "synthetic_only": true,
+  "target_evaluated": false
+}
