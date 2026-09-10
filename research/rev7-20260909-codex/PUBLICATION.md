@@ -636,7 +636,7 @@ python3 -S -B research/rev7-20260909-codex/rijndael256_windows/target/pack_resul
 
 ## Historical AMSCO scope correction
 
-The original CrypTool Online PHP accepts numeric keys without validating a rank permutation. Repeated key digits overwrite earlier row cells; zero or out-of-range labels are not emitted. Thus some accepted keys silently discard input, unlike the invertible byte/character geometry packages above. Source and minimal reproducer were shared in FABLE message 161. The [source-backed bug report and reproducer](../char_amsco/astra/cryptool_bug/README.md) preserve ten examples, including the partial-row duplicate fallback. Root regenerated the full evidence ledger byte for byte (SHA-256 `71ee944899ce7a202e07ee4b0d292309978f3a7eb3eb697d0c196f858844daab`) using a direct Python model; PHP itself was unavailable. Valid permutations remain a separate, invertible family. No claim that Rev7 uses a lossy key is established, and no character-AMSCO target has been run.
+The original CrypTool Online PHP accepts numeric keys without validating a rank permutation. Repeated key digits overwrite earlier row cells; zero or out-of-range labels are not emitted. Thus some accepted keys silently discard input, unlike the invertible byte/character geometry packages above. Source and minimal reproducer were shared in FABLE message 161. The [source-backed bug report and reproducer](../char_amsco/astra/cryptool_bug/README.md) preserve ten examples, including the partial-row duplicate fallback. Root regenerated the full evidence ledger byte for byte (SHA-256 `71ee944899ce7a202e07ee4b0d292309978f3a7eb3eb697d0c196f858844daab`) using a direct Python model; PHP itself was unavailable. Valid permutations remain a separate, invertible family. No claim that Rev7 uses a lossy key is established. The later character-AMSCO and lossy results below supersede this original controls-stage snapshot.
 
 
 ## Loki97 key-buffer history in FABLE runtime
@@ -691,3 +691,27 @@ The [accepted-result audit](coverage/accepted_result_audit_20260910.md) links ei
 
 
 The [completed printable-ASCII target](../char_amsco/astra/lossy2013/target/RESULTS.md) covers one equivalent2013/2014 emission model, 655 natural bytes, four orientations, DES/AES128 and NUL/ASCII-zero IVs. All16 contexts finish without a cap, with zero solutions and at most10 bytes processed before an empty frontier. The independent verifier reconstructs source emission indices and masks and replays each short rejection certificate. Result SHA-256: `95e2fd9023cf6a7ceb4f570d7cec4a4e0191b2aebde002b54e564b15c649a69d`. This is a finite fixed-IV printable-ASCII plaintext result, not a general exclusion of malformed AMSCO keys.
+
+
+## Lossy AMSCO2013/2014 with every external IV
+
+The [completed all-IV DES result](lossy2013_alliv_controls/target/RESULTS.md) tests four orientations under DES CFB8 with `Zombies\0`, the equivalent source keys `2013`/`2014`, and 655 natural ciphertext bytes. All 4,096 observation-compatible first-eight-byte registers finish in every orientation. There are zero terminal printable-ASCII suffixes, no capped roots and no unexamined roots. The first eight plaintext bytes are unconstrained; the contradiction applies from offset 8 independently of the external IV.
+
+The corrected synthetic controls recover both plants and validate all 348 terminal solutions using source emission, library CFB8 and a separate manual recurrence. An explicit cap fixture reports incomplete accounting and never returns partial paths as full solutions. Root independently replayed these controls and all four orientation controls before releasing the target.
+
+The [independent verifier](lossy2013_alliv_controls/target/verify_results.py) reconstructs source emission indices and performs a second negative-prefix computation by enumerating compatible ciphertext bytes before testing plaintext. It reproduces all per-byte counters, root digests, 114,486 accepted suffix states and 130,870 DES block calls. This is a finite exclusion for the stated source/key/endpoint model, not recovered plaintext. Result SHA-256: `bbebe2a33edcdd11f335f2f8f6abc3377f4203e825702613d827128abf63862c`.
+
+```sh
+python3 -B research/rev7-20260909-codex/lossy2013_alliv_controls/target/verify_results.py
+```
+
+
+## Complete inventory of four-digit keys losing one character per row
+
+The [source-only inventory](../char_amsco/astra/lossy4_onechar_inventory/REPORT.md) classifies all 9,000 positive four-digit keys. Exactly 336 emit five characters from each complete six-character row: 192 drop natural column 1 and 144 drop column 3, using zero-based columns. Their complete emission-index maps collapse to exactly 12 classes at 1,310 natural hex characters (655 bytes). These 12 classes cover the 336 qualifying keys only.
+
+The output length 1,092 forces 218 complete rows. Exact partial-row source checks leave only the even input length 1,310; length 1,312 emits three extra characters for 168 keys and four for 168, so it never matches. Two independent six-character fixtures under all 9,000 keys and two long fixtures at every relevant partial length under all 336 qualifiers agree with the original source port. The ledger retains every key, class member, emission index and map hash. This is geometry only; it performs no Rev7 cryptographic evaluation.
+
+```sh
+python3 -B research/char_amsco/astra/lossy4_onechar_inventory/inventory.py
+```

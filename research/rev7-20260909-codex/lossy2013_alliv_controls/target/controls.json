@@ -1,0 +1,83 @@
+{
+  "assertions": {
+    "all_cells_complete": true,
+    "all_orientation_inverses_exact": true,
+    "all_terminal_solutions_independently_validated": true,
+    "exact_four_orientation_ids": true,
+    "no_target_read_or_evaluation": true,
+    "truth_full_ciphertext_and_suffix_retained_once_in_every_cell": true
+  },
+  "crypto_evaluated": true,
+  "driver_sha256": "1c7d79ba1d0181eb9046675ce03880f16c60f3e5c359e8346c3ce273776eed9a",
+  "identity": "ASTRA",
+  "parent_controls_sha256": "5c8905b96efeb510a0e049e2fd857b480f51d42000f6b8b209f9bcd5b2fbdd61",
+  "plant": {
+    "ciphertext_sha256": "2abd6b23091061a23dbd829de400d1f895b97f373b41275ae81c655e4f718dd1",
+    "natural_bytes": 655,
+    "original_iv_hex": "13579bdf2468ace0",
+    "original_plaintext_prefix_unrecovered": true,
+    "plaintext_sha256": "e070b263fc7931ab78210d3c2cb793fdf62862abb607db8296e5e8aa0c227654",
+    "source_observed_sha256": "2b7c9f0dc69c0bf421d1c819723c1c1bd61d5c8b3d0fe664c158a0dcaaf28a69"
+  },
+  "rows": [
+    {
+      "accepted_states": 938891,
+      "block_calls": 942363,
+      "canonical_sha256": "2b7c9f0dc69c0bf421d1c819723c1c1bd61d5c8b3d0fe664c158a0dcaaf28a69",
+      "complete": true,
+      "id": "forward",
+      "max_live_frontier_per_root": 1296,
+      "observed_sha256": "2b7c9f0dc69c0bf421d1c819723c1c1bd61d5c8b3d0fe664c158a0dcaaf28a69",
+      "roots_completed": 4096,
+      "roots_unexamined": 0,
+      "solution_count": 624,
+      "terminal_solution_material_sha256": "acadea887661764a7da2c2bcdf452e1dd172108b292a7cf87752a72383e0c5ec",
+      "truth_retained_exactly_once": true
+    },
+    {
+      "accepted_states": 938891,
+      "block_calls": 942363,
+      "canonical_sha256": "5a1da45959d59a6bc8163f8a00466df5112d70207b92159d4e31169d6bf6f4f1",
+      "complete": true,
+      "id": "full_hex_reverse",
+      "max_live_frontier_per_root": 1296,
+      "observed_sha256": "2b7c9f0dc69c0bf421d1c819723c1c1bd61d5c8b3d0fe664c158a0dcaaf28a69",
+      "roots_completed": 4096,
+      "roots_unexamined": 0,
+      "solution_count": 624,
+      "terminal_solution_material_sha256": "acadea887661764a7da2c2bcdf452e1dd172108b292a7cf87752a72383e0c5ec",
+      "truth_retained_exactly_once": true
+    },
+    {
+      "accepted_states": 938891,
+      "block_calls": 942363,
+      "canonical_sha256": "ed8e203fae52bccbcbb2d3bb8e6a0010a3329589a4e0374754b0611cb31925d8",
+      "complete": true,
+      "id": "byte_reverse",
+      "max_live_frontier_per_root": 1296,
+      "observed_sha256": "2b7c9f0dc69c0bf421d1c819723c1c1bd61d5c8b3d0fe664c158a0dcaaf28a69",
+      "roots_completed": 4096,
+      "roots_unexamined": 0,
+      "solution_count": 624,
+      "terminal_solution_material_sha256": "acadea887661764a7da2c2bcdf452e1dd172108b292a7cf87752a72383e0c5ec",
+      "truth_retained_exactly_once": true
+    },
+    {
+      "accepted_states": 938891,
+      "block_calls": 942363,
+      "canonical_sha256": "1f130d6ee281ba88a13c68adf0f7cb6c802704ed9eb68f6dd393836c7d5182d9",
+      "complete": true,
+      "id": "nibble_swap",
+      "max_live_frontier_per_root": 1296,
+      "observed_sha256": "2b7c9f0dc69c0bf421d1c819723c1c1bd61d5c8b3d0fe664c158a0dcaaf28a69",
+      "roots_completed": 4096,
+      "roots_unexamined": 0,
+      "solution_count": 624,
+      "terminal_solution_material_sha256": "acadea887661764a7da2c2bcdf452e1dd172108b292a7cf87752a72383e0c5ec",
+      "truth_retained_exactly_once": true
+    }
+  ],
+  "scope": "Synthetic 655-byte DES all-IV driver wiring across exactly four involutive hex orientations.",
+  "source_sha256": "65494f3d65d5cb89e1678ef78113516f47fa2464de23ccbefca4ba0089d80496",
+  "target_evaluated": false
+}
