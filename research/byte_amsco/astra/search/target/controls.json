@@ -1,0 +1,322 @@
+{
+  "aggregate": {
+    "backend_contexts": 56,
+    "cells": 2,
+    "expected_contexts": 56,
+    "expected_orders": 8,
+    "negative": 54,
+    "orders": 8,
+    "retained": 2
+  },
+  "artifact_hashes": {
+    "base_core.py": "2e7b413cb01396c8c6c97f21ad4a1e46939c3c1488c27e1c48bed8e24a48b990",
+    "controls.py": "ddb47104cac0dd833a7b98252329b494906b577fc6f08a379edcdddcf93a2369",
+    "engine.py": "f768b990340ea4143fdf75ebb23fd27245e71517065c2736a41d739027ea114c",
+    "engine_controls.json": "7431dbdf75e8d9e7389063d59b5e33260e487e11befd0898170ea46085ad0a70",
+    "run_target.py": "a3b865878f889799fbbebb7d8de3956677fdad0696ee96434f7e30982cde3ec3",
+    "runtime.py": "8b7899fc7aedb2de04cb900876987e6b3385922d4e2e53c913562659913818f4",
+    "runtime_controls.json": "483fa566e1030e489f5bb2958bcada9f1f95762f83104b7b9e8437c360787ee5"
+  },
+  "assertions": {
+    "all_passed": true,
+    "callbacks_count_every_context": true,
+    "complete_width2_width3": true,
+    "exact_context_counts": true,
+    "known_survivors_present": true,
+    "negative_digests_present": true,
+    "no_target_read_or_evaluation": true,
+    "production_scan_cell_used": true,
+    "two_iv_reference_and_reencrypt_every_survivor": true
+  },
+  "environment": {
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "python": "3.9.6"
+  },
+  "identity": "ASTRA",
+  "rev7_read": false,
+  "rows": [
+    {
+      "cell": {
+        "backend_contexts_examined": 14,
+        "cell_id": "nibble_swap|w2|s1",
+        "classification_counts": {
+          "rejected_a105": 12,
+          "rejected_fsa_transition": 1,
+          "retained": 1
+        },
+        "complete_uncapped": true,
+        "counts_by_backend": {
+          "aes128": {
+            "rejected_a105": 1,
+            "retained": 1
+          },
+          "bfcompat": {
+            "rejected_a105": 2
+          },
+          "blowfish": {
+            "rejected_a105": 2
+          },
+          "des": {
+            "rejected_a105": 2
+          },
+          "loki97": {
+            "rejected_a105": 2
+          },
+          "rc2": {
+            "rejected_a105": 2
+          },
+          "twofish": {
+            "rejected_a105": 1,
+            "rejected_fsa_transition": 1
+          }
+        },
+        "expected_backend_contexts": 14,
+        "expected_orders": 2,
+        "first_negative_examples": [
+          {
+            "cipher": "aes128",
+            "classification": "rejected_a105",
+            "order": [
+              0,
+              1
+            ],
+            "recovered_cipher_prefix_sha256": "4bad3bc2a2c32b139f7cd8429c297596db81fe55f8875ff528426399b296e0c6",
+            "rejection": {
+              "ciphertext_index": 17,
+              "plaintext_byte": 224,
+              "reason": "outside A105",
+              "suffix_offset": 1
+            },
+            "tested_suffix_sha256": "ada18941314ecefca74bccbfe9ce8c29c9709f845e2af1c0da255b1da453928b"
+          },
+          {
+            "cipher": "des",
+            "classification": "rejected_a105",
+            "order": [
+              0,
+              1
+            ],
+            "recovered_cipher_prefix_sha256": "89a47cf279a80fd9feaf36ca60e1e763d750768e26656ebb2eb12b4640352f31",
+            "rejection": {
+              "ciphertext_index": 8,
+              "plaintext_byte": 222,
+              "reason": "outside A105",
+              "suffix_offset": 0
+            },
+            "tested_suffix_sha256": "7941cb07924fdc7b710e11d98d82850e89566e1c3cb980517ffe4b430f86dfd5"
+          },
+          {
+            "cipher": "blowfish",
+            "classification": "rejected_a105",
+            "order": [
+              0,
+              1
+            ],
+            "recovered_cipher_prefix_sha256": "89a47cf279a80fd9feaf36ca60e1e763d750768e26656ebb2eb12b4640352f31",
+            "rejection": {
+              "ciphertext_index": 8,
+              "plaintext_byte": 31,
+              "reason": "outside A105",
+              "suffix_offset": 0
+            },
+            "tested_suffix_sha256": "ffe679bb831c95b67dc17819c63c5090d221aac6f4c7bf530f594ab43d21fa1e"
+          }
+        ],
+        "identity": "ASTRA",
+        "negative_count": 13,
+        "negative_digest_serialization": "UTF-8 canonical JSON array [order,cipher,class,rejection,tested_bytes,tested_sha,prefix_bytes,prefix_sha] plus LF in scan callback order",
+        "negative_rows_sha256": "432f16ffddea7a55d1c779f80c9a40168a630ab355a65cf73253f2a3886e34cf",
+        "observed_sha256": "f7feef73a9a432ced5d87059c1408abb1b4fc82c0ab3dc481e198780fefe48af",
+        "orders_examined": 2,
+        "orientation": "nibble_swap",
+        "retained": [
+          {
+            "cipher": "aes128",
+            "full_suffix_hex": "809820e2809920e280a620434f4e54524f4c2e2044524956455220e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e2044524956455220e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e2041414141414141454e442e0a",
+            "order": [
+              1,
+              0
+            ],
+            "suffix_bytes": 104,
+            "suffix_sha256": "ff0c60af91b36c3ddf265084808e6689cda79fe2a1128bb2aaf8f7773536138f",
+            "two_iv_full_reference": [
+              {
+                "full_plaintext_sha256": "05bf210b75c4b50adeadc10522085ae7903f7534419d930f6a6f01598b1e60b7",
+                "iv_hex": "556c839ab1c8dff60d243b52698097ae",
+                "iv_suite": 1,
+                "reencryption_exact": true,
+                "suffix_exact": true
+              },
+              {
+                "full_plaintext_sha256": "4a0a0cc7a183875cedf5797b9f732ccf688992ab3d9639059e76a5be6d6f7ce4",
+                "iv_hex": "a4bbd2e900172e455c738aa1b8cfe6fd",
+                "iv_suite": 2,
+                "reencryption_exact": true,
+                "suffix_exact": true
+              }
+            ]
+          }
+        ],
+        "retained_count": 1,
+        "start": 1,
+        "unexamined_backend_contexts": 0,
+        "unexamined_orders": 0,
+        "width": 2
+      },
+      "cipher_plant": "aes128",
+      "correct_survivor_present_once": true,
+      "displayed_sha256": "fafdb1310fb7e1d238159a0dbff97d501f99f4faeface0280478b07e092eec44",
+      "orientation_roundtrip": true,
+      "plaintext_sha256": "7cd84409b0b3dd7a065f7983ff1be4c4dc680e37256c125e876c2d2dc950527a",
+      "plant_iv_hex": "23405d7a97b4d1ee0b2845627f9cb9d6",
+      "plant_order": [
+        1,
+        0
+      ]
+    },
+    {
+      "cell": {
+        "backend_contexts_examined": 42,
+        "cell_id": "full_hex_reverse|w3|s2",
+        "classification_counts": {
+          "rejected_a105": 41,
+          "retained": 1
+        },
+        "complete_uncapped": true,
+        "counts_by_backend": {
+          "aes128": {
+            "rejected_a105": 6
+          },
+          "bfcompat": {
+            "rejected_a105": 6
+          },
+          "blowfish": {
+            "rejected_a105": 6
+          },
+          "des": {
+            "rejected_a105": 6
+          },
+          "loki97": {
+            "rejected_a105": 5,
+            "retained": 1
+          },
+          "rc2": {
+            "rejected_a105": 6
+          },
+          "twofish": {
+            "rejected_a105": 6
+          }
+        },
+        "expected_backend_contexts": 42,
+        "expected_orders": 6,
+        "first_negative_examples": [
+          {
+            "cipher": "aes128",
+            "classification": "rejected_a105",
+            "order": [
+              0,
+              1,
+              2
+            ],
+            "recovered_cipher_prefix_sha256": "8fb697826400710b63f6705efd6bc8e23b3f28136514c75b6a3f2f4c04dc1eed",
+            "rejection": {
+              "ciphertext_index": 16,
+              "plaintext_byte": 237,
+              "reason": "outside A105",
+              "suffix_offset": 0
+            },
+            "tested_suffix_sha256": "f3df1f9c358ae8eceb8fce7c00614288d113ad55315f4ebb909774a7daadfc84"
+          },
+          {
+            "cipher": "des",
+            "classification": "rejected_a105",
+            "order": [
+              0,
+              1,
+              2
+            ],
+            "recovered_cipher_prefix_sha256": "04af798d1652f9c54e8190d8e24bc4b93f47fb7c4ad0c7e9fdd0ddcaa1eb7114",
+            "rejection": {
+              "ciphertext_index": 8,
+              "plaintext_byte": 251,
+              "reason": "outside A105",
+              "suffix_offset": 0
+            },
+            "tested_suffix_sha256": "04b8d34e20e604cadb04b9db8f6778c35f45a2d2a3335ea517dafe8c9cd9b06e"
+          },
+          {
+            "cipher": "blowfish",
+            "classification": "rejected_a105",
+            "order": [
+              0,
+              1,
+              2
+            ],
+            "recovered_cipher_prefix_sha256": "e778c527cf918f17548c40d3a988de41fab392bdbda12706182371c569a144ce",
+            "rejection": {
+              "ciphertext_index": 9,
+              "plaintext_byte": 218,
+              "reason": "outside A105",
+              "suffix_offset": 1
+            },
+            "tested_suffix_sha256": "12add1630b5d8720fd61fd2717e271fa2510b29dfe296c214e7b36dffda133c3"
+          }
+        ],
+        "identity": "ASTRA",
+        "negative_count": 41,
+        "negative_digest_serialization": "UTF-8 canonical JSON array [order,cipher,class,rejection,tested_bytes,tested_sha,prefix_bytes,prefix_sha] plus LF in scan callback order",
+        "negative_rows_sha256": "96e3d0bc202b8df0c9f4c24191232229c2f1f257ecc2846c4acf0f942ffd19b4",
+        "observed_sha256": "ba5a541734f29d81c6132d05eb96a7970d84a144a6315add9c8ca91caa2763f2",
+        "orders_examined": 6,
+        "orientation": "full_hex_reverse",
+        "retained": [
+          {
+            "cipher": "loki97",
+            "full_suffix_hex": "809820e2809920e280a620434f4e54524f4c2e2044524956455220e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e2044524956455220e2809320e2809420e2809820e2809920e280a620434f4e54524f4c2e2041414141414141454e442e0a",
+            "order": [
+              2,
+              0,
+              1
+            ],
+            "suffix_bytes": 104,
+            "suffix_sha256": "ff0c60af91b36c3ddf265084808e6689cda79fe2a1128bb2aaf8f7773536138f",
+            "two_iv_full_reference": [
+              {
+                "full_plaintext_sha256": "9e97c9a7e344330ded83f0bfe9aca5cae0cec4d8692620ae3860c7c2dce3068d",
+                "iv_hex": "556c839ab1c8dff60d243b52698097ae",
+                "iv_suite": 1,
+                "reencryption_exact": true,
+                "suffix_exact": true
+              },
+              {
+                "full_plaintext_sha256": "9e6561187ca896602fe114fc1cbb11595d9279c51d553e63d2db1bbdc7ee9f39",
+                "iv_hex": "a4bbd2e900172e455c738aa1b8cfe6fd",
+                "iv_suite": 2,
+                "reencryption_exact": true,
+                "suffix_exact": true
+              }
+            ]
+          }
+        ],
+        "retained_count": 1,
+        "start": 2,
+        "unexamined_backend_contexts": 0,
+        "unexamined_orders": 0,
+        "width": 3
+      },
+      "cipher_plant": "loki97",
+      "correct_survivor_present_once": true,
+      "displayed_sha256": "924d523a22e75c6b498de220fefa0a9000892f2ca4e652321c3001efe3ee0299",
+      "orientation_roundtrip": true,
+      "plaintext_sha256": "7cd84409b0b3dd7a065f7983ff1be4c4dc680e37256c125e876c2d2dc950527a",
+      "plant_iv_hex": "35526f8ca9c6e3001d3a577491aecbe8",
+      "plant_order": [
+        2,
+        0,
+        1
+      ]
+    }
+  ],
+  "scope": "Synthetic complete width-2 and width-3 scans through production scan_cell; no target extraction, gate, or run.",
+  "target_evaluated": false
+}

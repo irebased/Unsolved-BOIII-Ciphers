@@ -468,3 +468,18 @@ The original benchmark processed 20,000 width-9 orders in 0.482 seconds, while r
 python3 -S -B research/byte_amsco/astra/search/controls.py
 python3 -B research/byte_amsco/astra/search/controls.py --regenerate /tmp/byte-amsco-search-controls.json
 ```
+
+
+## Controlled byte-AMSCO target harness
+
+The [target harness](../byte_amsco/astra/search/target/README.md) specifies 64 geometries at widths 2–9, both starts and four orientations. It requires every width! order and every seven-backend context, totalling 3,272,896 transforms and 22,910,272 contexts. The driver records class/backend counters, a deterministic digest over every negative callback, three witness examples per geometry and all complete survivors. Survivors receive independent full-CFB decryption and exact re-encryption under two IVs. A digest records callback output; it does not independently prove execution.
+
+Two synthetic complete grids exercise the production driver callbacks: a width-2 AES plant and width-3 Loki97 plant. All eight orders and 56 contexts complete, with 54 negatives and the two expected retained cases. Both survivors pass exact two-IV replay. Root independently regenerated the [11,544-byte ledger](../byte_amsco/astra/search/target/controls.json), reproducing SHA-256 `cecad094eff30630f4cafd7c8352f9a0c651bcdf096b443cdb20840dc8c733f8` byte for byte. The frozen driver SHA-256 is `a3b865878f889799fbbebb7d8de3956677fdad0696ee96434f7e30982cde3ec3`.
+
+```sh
+python3 -S -B research/byte_amsco/astra/search/target/controls.py
+python3 -B research/byte_amsco/astra/search/target/controls.py --regenerate /tmp/byte-amsco-target-controls.json
+python3 -S -B research/byte_amsco/astra/search/target/run_target.py --selftest
+```
+
+This source/control snapshot has no target gate or evaluation. Gate creation follows FABLE preregistration and execution requires separate root GO. Existing outputs/checkpoints are refused; no cap or resume mode is allowed.
