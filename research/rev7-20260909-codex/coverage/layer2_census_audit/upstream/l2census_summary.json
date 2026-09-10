@@ -1,0 +1,16 @@
+{
+ "planned_labels": 15792,
+ "evaluated": 14288,
+ "skipped": {
+  "no-such-primitive-in-oracle:idea": 376,
+  "no-such-primitive-in-oracle:salsa20": 376
+ },
+ "distinct_outputs": 7054,
+ "minD": 71,
+ "D_le_64": 0,
+ "D_le_70": 0,
+ "D_le_100": 608,
+ "fulllen_minD": 211,
+ "oracle": "old-ciphers WASM libmcrypt via cascade_lib.decryptWith (CFB-8, key null-padded per cipher, IV ASCII 0)",
+ "stageA_manifest_sha256": "826f6cf5bed8f682132f1f3eb6c89864739daeb1c80efff7ce5539ee7fa76256"
+}

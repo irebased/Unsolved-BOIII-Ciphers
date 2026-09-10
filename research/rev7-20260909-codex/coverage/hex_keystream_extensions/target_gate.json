@@ -1,0 +1,53 @@
+{
+  "identity": "ASTRA",
+  "status": "authorized frozen target manifest",
+  "target_evaluated": false,
+  "go_granted": true,
+  "authorization_status": "AUTHORIZED",
+  "authorization_reference": "ASTRA root authorization under existing solve goal; FABLE bus preregistration 804",
+  "scope": {
+    "incremental_base_contexts": 540,
+    "cells": 2700,
+    "family_A_cells": 1560,
+    "family_B_cells": 1140,
+    "source_supported_cells": 2660,
+    "empirically_supported_stream_cells": 40,
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_pair_reverse",
+      "nibble_swap",
+      "visible_token_reverse"
+    ],
+    "endpoint": "TAB LF CR and ASCII bytes 32..126",
+    "threshold_75": 410
+  },
+  "canonical_pins": {
+    "mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "dataset_sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "normalized_hex_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c"
+  },
+  "source_pins": {
+    "model_js": "4c7e05c8a692fd0e4dd5721b82052d6864f95ae94bc9bf5fc52dbf93ba130651",
+    "runtime_js": "9577225bb8b8e21b0cc7ddfff1c2e4f6c6d090661abe8ad95216f8a73a08ab47",
+    "pyref": "e60386a1fbddf60bec1e6cec5db72602a064820e79755b1128fafda74953c21d",
+    "controls_js": "e171f96017c053e9f454cf12a0696c6f09500ec3a290e65cbbf27b532c0b6154",
+    "controls_json": "237a2a5f403ab33cde275c33dd664afceed267e389f6fd2b7662c8a7903d9c14",
+    "readme": "89881fbc58d2302b8db5cc1c3952ce529c5b49750dbb4034dbbe3cee9665c155",
+    "prior_model": "e5b9066e9672cc7daf7baf3874c27a292e6d87af87eae2dbc6d5587394d7de81",
+    "orientation_model": "412a1ed6c42cc8fa1ac625d5f19848e39fff1fb9967ff2587d59250776d29425",
+    "first_layer_runtime": "fd9d62dd20105757ec41c9affca23375b7276e4bda306feed05eeb0782fd3e30",
+    "prior_stream_csp": "f1d9024065f82e75479c4e03f1c871f9c2e0c661e63c6a42cb6da6594addde87",
+    "prior_stream_csp_compat": "598dfa8ec497321f62f1b4f445de4f642f755ef0fb51c9d2164c708145aad7f2",
+    "run_target_js": "6a3fc82a7c1fa011070061b84567b7d6e236676bd96cc9ddc830d9731c6759e8",
+    "prepare_gate_js": "94a89cf2c0165d8214eb000be4f7cca5ee6874a907edf6e0839d603fef82f022",
+    "verify_result_js": "51462df2cd40c065ddda378ae0f25d49e1d9dd06f36f776e37cf3a7351b186c7",
+    "verify_result_controls_json": "01197d32cf2973e91def23040d3886932e987b8c139ba863ad02f58005e04022"
+  },
+  "review_evidence": [
+    "Root source/model review and actual controls passed (ROOT_REVIEW.md).",
+    "Independent verifier reviewed; runtime const bug fixed before target. Actual verifier assignment controls passed.",
+    "FABLE bus 804 preregistered exact scope, threshold, sources, limitations."
+  ],
+  "execution_command": "node research/rev7-20260909-codex/coverage/hex_keystream_extensions/run_target.js --run-target"
+}

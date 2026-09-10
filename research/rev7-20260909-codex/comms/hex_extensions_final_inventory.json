@@ -1,0 +1,247 @@
+{
+  "artifacts": [
+    {
+      "bytes": 3369,
+      "encoding": "utf-8",
+      "git_blob_sha1": "b14a9a22cf7645a1487b3b5d655b73a2a253da20",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/FINAL_REVIEW.md",
+      "sha256": "9ff5dde3658b393dc1934d8a0c6e9e859963ef46dfeb557aaf33102302e174de"
+    },
+    {
+      "bytes": 3852,
+      "encoding": "utf-8",
+      "git_blob_sha1": "f303563189708b4e4634ac7202a5ff6ee9a06537",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/README.md",
+      "sha256": "89881fbc58d2302b8db5cc1c3952ce529c5b49750dbb4034dbbe3cee9665c155"
+    },
+    {
+      "bytes": 2875,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ac2d429a85159e2c64fdf7fce37b59261732f9c5",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/RESULTS.md",
+      "sha256": "dc686280cc19f280e3946764e85a70a5403affbe10536c4a6521b3fffe8bf2bb"
+    },
+    {
+      "bytes": 2145,
+      "encoding": "utf-8",
+      "git_blob_sha1": "726ab213a34545e6bbd38f27fe28b5c45be03da5",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/ROOT_REVIEW.md",
+      "sha256": "2bcbd9f03b85fb67ee671da3428c90b9f43bff9778cef5b4ec12a4f5884d4d71"
+    },
+    {
+      "bytes": 11392,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e54699dbe8591fd5950d934a3218e35daa8be739",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/controls.js",
+      "sha256": "e171f96017c053e9f454cf12a0696c6f09500ec3a290e65cbbf27b532c0b6154"
+    },
+    {
+      "bytes": 350466,
+      "encoding": "utf-8",
+      "git_blob_sha1": "35a78e6f995412129ecaa676609ef227481f9c0c",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/controls.json",
+      "sha256": "237a2a5f403ab33cde275c33dd664afceed267e389f6fd2b7662c8a7903d9c14"
+    },
+    {
+      "bytes": 2275,
+      "encoding": "utf-8",
+      "git_blob_sha1": "788d5c06aec9d001ab1a02888f4d81c6604ea650",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/model.js",
+      "sha256": "4c7e05c8a692fd0e4dd5721b82052d6864f95ae94bc9bf5fc52dbf93ba130651"
+    },
+    {
+      "bytes": 850,
+      "encoding": "utf-8",
+      "git_blob_sha1": "6e70b7943e0c35457565c6d8f634f094be46b351",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/ofb8_pyref.py",
+      "sha256": "e60386a1fbddf60bec1e6cec5db72602a064820e79755b1128fafda74953c21d"
+    },
+    {
+      "bytes": 3347,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c8c1b6ca633c44a254c5a039b8875aa727244c86",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/prepare_gate.js",
+      "sha256": "94a89cf2c0165d8214eb000be4f7cca5ee6874a907edf6e0839d603fef82f022"
+    },
+    {
+      "bytes": 9690,
+      "encoding": "utf-8",
+      "git_blob_sha1": "cbee8889301e4bd1f7f8fe6b26c7efca968eab7a",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/run_target.js",
+      "sha256": "6a3fc82a7c1fa011070061b84567b7d6e236676bd96cc9ddc830d9731c6759e8"
+    },
+    {
+      "bytes": 4004,
+      "encoding": "utf-8",
+      "git_blob_sha1": "58862bf5b03d6ff64ae7b0fec3b23247c9adf997",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/runtime.js",
+      "sha256": "9577225bb8b8e21b0cc7ddfff1c2e4f6c6d090661abe8ad95216f8a73a08ab47"
+    },
+    {
+      "bytes": 2819,
+      "encoding": "utf-8",
+      "git_blob_sha1": "76cf9607c7b420f01fe878da8c764b73e25c7938",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/target_gate.json",
+      "sha256": "8bc4e3cacf0b7c7131b79cc2fc9c3f5c4ec832d492cb8b5f0321750f45287d68"
+    },
+    {
+      "bytes": 2407,
+      "encoding": "utf-8",
+      "git_blob_sha1": "1ae5e74ab33521631579e27d22e6755446eb46e5",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/target_gate_inert.json",
+      "sha256": "28079b77bb8f1222b5d95f036452168aa37c56606b041f218f4965a0ec497e0d"
+    },
+    {
+      "bytes": 2703285,
+      "encoding": "base64",
+      "git_blob_sha1": "f017c23f922bb3377b2180fc7a31449118b5c6b8",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/target_results.json.gz",
+      "sha256": "3c6eae63635793bc34be227870aee21568ea2619fe7e7ed0be91fb0e728717e7"
+    },
+    {
+      "bytes": 785,
+      "encoding": "utf-8",
+      "git_blob_sha1": "1049002b7d8b44e92bca809fe25cd050bae39e38",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/verification.json",
+      "sha256": "e2e2cbff68db73fb0304db86785d24b5dcf6d6f33c03b4213679546f8faae70e"
+    },
+    {
+      "bytes": 12828,
+      "encoding": "utf-8",
+      "git_blob_sha1": "b15cd6206c0fdbae201126d256ab8b3fa6c3ef8f",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/verify_result.js",
+      "sha256": "51462df2cd40c065ddda378ae0f25d49e1d9dd06f36f776e37cf3a7351b186c7"
+    },
+    {
+      "bytes": 1431,
+      "encoding": "utf-8",
+      "git_blob_sha1": "7f62200e579ecc2a1fbda54511753e58985fe3a4",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions/verify_result_controls.json",
+      "sha256": "01197d32cf2973e91def23040d3886932e987b8c139ba863ad02f58005e04022"
+    },
+    {
+      "bytes": 2919,
+      "encoding": "utf-8",
+      "git_blob_sha1": "42f16de4cada892a69509fe1c17c145197385bbe",
+      "path": "research/rev7-20260909-codex/coverage/hex_keystream_extensions_audit/REVIEW.md",
+      "sha256": "517bdf380fcf0832811f6c682bbb09d4c6d85f0a92ee6c7f4c6379305056fc51"
+    },
+    {
+      "bytes": 2072,
+      "encoding": "utf-8",
+      "git_blob_sha1": "45619f4d9526b11e70d3200c34234d15e86315a4",
+      "path": "research/rev7-20260909-codex/coverage/layer2_census_audit/LOWD_SUPPLEMENT.md",
+      "sha256": "13db77e486ac981b853a83dd09a9fa2b6ca9eb123da0d3a5fd0e1e59590b35c9"
+    },
+    {
+      "bytes": 2648,
+      "encoding": "utf-8",
+      "git_blob_sha1": "636cd1f932ab0271cbe22342b84ee235740d074e",
+      "path": "research/rev7-20260909-codex/coverage/layer2_census_audit/REPORT.md",
+      "sha256": "8bd0f4e4e1950fb8339115110462e57ec5b1803e4b56e99bfe502e5434a4fdfe"
+    },
+    {
+      "bytes": 1284,
+      "encoding": "utf-8",
+      "git_blob_sha1": "fed568895de4e1f8e0b66e57065f63cf9e0f5366",
+      "path": "research/rev7-20260909-codex/coverage/layer2_census_audit/REPRODUCTION.md",
+      "sha256": "3b38f3576e6a6e1d40ec3c380cee853ee657c5e55e4fa1365481f3d9fc1a3b97"
+    },
+    {
+      "bytes": 1427,
+      "encoding": "utf-8",
+      "git_blob_sha1": "99e6ef64b46fcb8b035afbad9e7a4045819eefb2",
+      "path": "research/rev7-20260909-codex/coverage/layer2_census_audit/audit.json",
+      "sha256": "b88ea0241a1a94be773549290d6b8093ce916f5f9459d593984c6b125f213252"
+    },
+    {
+      "bytes": 3357,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c79575289ef932d63ce48ba3a41e1d548c1d4368",
+      "path": "research/rev7-20260909-codex/coverage/layer2_census_audit/audit.py",
+      "sha256": "0addcdb2dc5df1afc7b592622c6fbafccc04ffcb5ebe12b35d0447c6c383e66e"
+    },
+    {
+      "bytes": 570,
+      "encoding": "utf-8",
+      "git_blob_sha1": "0e5d48499a53239923fa6593997342940890e695",
+      "path": "research/rev7-20260909-codex/coverage/layer2_census_audit/base64_bound_counterexample.json",
+      "sha256": "fd55309c3df39425e2beabff1e8efcb4525f6db4eba65c24f69a113945c80f37"
+    },
+    {
+      "bytes": 928,
+      "encoding": "utf-8",
+      "git_blob_sha1": "420fe9a96530c7d776abbe94533bd3ccace8b262",
+      "path": "research/rev7-20260909-codex/coverage/layer2_census_audit/base64_bound_counterexample.py",
+      "sha256": "632fc7516a00888ba01a5122bafc02321428f7a98f5a81aee7b9eb6f34771dbd"
+    },
+    {
+      "bytes": 1732,
+      "encoding": "utf-8",
+      "git_blob_sha1": "bb8b03e14bfa5ad645becf2a23d1e8d2cb4b6fa9",
+      "path": "research/rev7-20260909-codex/coverage/layer2_census_audit/upstream/l2_lowD_check.js",
+      "sha256": "227e6513d888602a3a2f60700e74c1f624101b71897c21cbb4358d1a2c110ee8"
+    },
+    {
+      "bytes": 609,
+      "encoding": "utf-8",
+      "git_blob_sha1": "df18ef23ca44dbc9c88e2d86829f9db0cf13c66e",
+      "path": "research/rev7-20260909-codex/coverage/layer2_census_audit/upstream/l2_lowD_check.json",
+      "sha256": "3e4253a5e2a53923a08a78b1fa8a00ccde227a415079ed293f400d8776f5e074"
+    },
+    {
+      "bytes": 653929,
+      "encoding": "base64",
+      "git_blob_sha1": "c18218db2f36fe744ee7e0e891603c1f9bbaa0ce",
+      "path": "research/rev7-20260909-codex/coverage/layer2_census_audit/upstream/l2census_rows.json.gz",
+      "sha256": "4e717a651eb3213c9970ff307066e8486a588f33497c3213c3b1cf7bd93da495"
+    },
+    {
+      "bytes": 477,
+      "encoding": "utf-8",
+      "git_blob_sha1": "59ca5003b35dc3c4aec6f65520cbe4a81a387083",
+      "path": "research/rev7-20260909-codex/coverage/layer2_census_audit/upstream/l2census_summary.json",
+      "sha256": "bfd8f04d67908076d340e669dbb19278d3f8a298503c0ae7e642942b57372bfb"
+    },
+    {
+      "bytes": 2561,
+      "encoding": "utf-8",
+      "git_blob_sha1": "67c48ef3665a0cbc8dfc52acb285500d0f672eed",
+      "path": "research/rev7-20260909-codex/coverage/layer2_census_audit/upstream/l2census_v2.js",
+      "sha256": "e2a3ec96909c8a4a6fcd8388ce76fbf58d57dee426eefd07bf9e5fb1239b0a8b"
+    },
+    {
+      "bytes": 7096,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ce84b7d2a99af1b1ce8ffa6dd86dbd9b4b4ce2fe",
+      "path": "research/rev7-20260909-codex/comms/publish_hex_extensions.py",
+      "sha256": "8b8c0ff0c584abcff3ea54c030874b31d4330b33299898e4adc65401fee66b45"
+    },
+    {
+      "bytes": 2686,
+      "encoding": "utf-8",
+      "git_blob_sha1": "0890cbfa00081a47881ddb5c89e00907e3a5f2a8",
+      "path": "research/rev7-20260909-codex/comms/astra-extension-prereg-20260910.json",
+      "sha256": "e7f21ea6a267e3a58212945a481ffad9fdb82c41e893cfbdd8f4c06d1203f9cf"
+    },
+    {
+      "bytes": 2757,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ece0a463856879aea5d9d542e25a33f34c524d7f",
+      "path": "research/rev7-20260909-codex/comms/astra-extension-result-20260910.json",
+      "sha256": "212bb10f835a54eb23c2b8bcb1186d5a5e28a6e634cc71fb32a384faa5516bd6"
+    },
+    {
+      "bytes": 1818,
+      "encoding": "utf-8",
+      "git_blob_sha1": "7fdbb68eef296ccf771ba79cf0e547627215d578",
+      "path": "research/rev7-20260909-codex/comms/astra-base64-padding-correction-20260910.json",
+      "sha256": "ea899bd5d4ab214d89377da748da202166d440a47a869c207a50c4642daa7a38"
+    }
+  ],
+  "identity": "ASTRA",
+  "publication_excludes": [
+    "drafts",
+    "__pycache__"
+  ]
+}

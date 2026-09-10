@@ -1,0 +1,30 @@
+[
+ {
+  "id": "d3_rev7_0033",
+  "xf": "identity",
+  "prim": "cast-128",
+  "key": "Zombies",
+  "mode": "cfb8",
+  "in_len": 98,
+  "out_len": 98,
+  "D": 71,
+  "sha256": "280b4cba2e0f69a5420565e7ef62074d23afa4703b3f8ec199d2539ba5a1a86a",
+  "alias_of": null,
+  "non_b64_bytes": 70,
+  "b64_fraction": 0.286
+ },
+ {
+  "id": "d3_rev7_0114",
+  "xf": "reverse",
+  "prim": "rijndael-128",
+  "key": "ZOMBIES",
+  "mode": "cfb8",
+  "in_len": 96,
+  "out_len": 96,
+  "D": 71,
+  "sha256": "6143f98829e8e6f6a09ed119cec48692299c63b59459e689d4e28a0cc64f4455",
+  "alias_of": null,
+  "non_b64_bytes": 79,
+  "b64_fraction": 0.177
+ }
+]

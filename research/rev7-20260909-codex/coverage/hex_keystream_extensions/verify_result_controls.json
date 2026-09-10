@@ -1,0 +1,60 @@
+{
+  "identity": "ASTRA",
+  "status": "PASS",
+  "target_evaluated": false,
+  "control_only": true,
+  "verifier_source_sha256": "51462df2cd40c065ddda378ae0f25d49e1d9dd06f36f776e37cf3a7351b186c7",
+  "controls_sha256": "237a2a5f403ab33cde275c33dd664afceed267e389f6fd2b7662c8a7903d9c14",
+  "zero_matrix_upper": 0,
+  "distinct_diagonal_upper": 136,
+  "reduced_exhaustive_fixtures": [
+    {
+      "fixture": 0,
+      "brute_upper": 70,
+      "brute_witness_count": 1,
+      "verifier_assignment_upper": 12070
+    },
+    {
+      "fixture": 1,
+      "brute_upper": 61,
+      "brute_witness_count": 1,
+      "verifier_assignment_upper": 12061
+    },
+    {
+      "fixture": 2,
+      "brute_upper": 65,
+      "brute_witness_count": 1,
+      "verifier_assignment_upper": 12065
+    },
+    {
+      "fixture": 3,
+      "brute_upper": 69,
+      "brute_witness_count": 1,
+      "verifier_assignment_upper": 12069
+    },
+    {
+      "fixture": 4,
+      "brute_upper": 78,
+      "brute_witness_count": 1,
+      "verifier_assignment_upper": 12078
+    },
+    {
+      "fixture": 5,
+      "brute_upper": 67,
+      "brute_witness_count": 1,
+      "verifier_assignment_upper": 12067
+    },
+    {
+      "fixture": 6,
+      "brute_upper": 77,
+      "brute_witness_count": 1,
+      "verifier_assignment_upper": 12077
+    },
+    {
+      "fixture": 7,
+      "brute_upper": 67,
+      "brute_witness_count": 2,
+      "verifier_assignment_upper": 12067
+    }
+  ]
+}
