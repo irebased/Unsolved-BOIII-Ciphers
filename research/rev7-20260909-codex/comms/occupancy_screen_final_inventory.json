@@ -1,0 +1,73 @@
+{
+  "artifacts": [
+    {
+      "bytes": 4862,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a1873468d9c5cccf419dbc24dc48bbabb5e5aa02",
+      "path": "research/rev7-20260909-codex/coverage/occupancy_screen_controls/README.md",
+      "sha256": "e8b8495c072bc412a05c4a88da225c1163f33f82e26b608ed43824bdb02c5592"
+    },
+    {
+      "bytes": 2815,
+      "encoding": "utf-8",
+      "git_blob_sha1": "307e54be4d7d81d8ec65fb98b2ca07d4b768758f",
+      "path": "research/rev7-20260909-codex/coverage/occupancy_screen_controls/build_table.py",
+      "sha256": "1a45f4f32fca74ced1bf440a862a3c66795234486310f152c1275b3ff61bc41b"
+    },
+    {
+      "bytes": 489072,
+      "encoding": "utf-8",
+      "git_blob_sha1": "0a84d586f84ce8031814dbb949985785646bb835",
+      "path": "research/rev7-20260909-codex/coverage/occupancy_screen_controls/threshold_table.json",
+      "sha256": "2d084a536141c8e51045b1fa1052ddfc713e0e5f7a869fd62676cf788dfbb447"
+    },
+    {
+      "bytes": 2269,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a18f49126faf487440fd7847b201d9620ded66e2",
+      "path": "research/rev7-20260909-codex/coverage/occupancy_screen_controls/score.js",
+      "sha256": "6ff228f71ef8e9441c3ba12418d8b49c7238ff4e66ed0eef0f24471a3573ae27"
+    },
+    {
+      "bytes": 6544,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a3e743c1d1c368a895ee24e59158d6bda9e79f81",
+      "path": "research/rev7-20260909-codex/coverage/occupancy_screen_controls/controls.py",
+      "sha256": "1db544a213716870b359001a47b0bce9c151734e45a10d9e254b917d4809e262"
+    },
+    {
+      "bytes": 11496,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a959659f69713771faa8c11477db94cef3e21bb2",
+      "path": "research/rev7-20260909-codex/coverage/occupancy_screen_controls/controls.json",
+      "sha256": "54f5861811e5b91db0341593cbe9486dc74251ec7280dd971cf7b3f55d9caf8c"
+    },
+    {
+      "bytes": 5286,
+      "encoding": "utf-8",
+      "git_blob_sha1": "235ebf6a1d01fc7adf6026991a8768692606f03f",
+      "path": "research/rev7-20260909-codex/coverage/distinct_byte_occupancy/occupancy.py",
+      "sha256": "2506d407801a6f581ecfe01b91d71bf6e9a4a0524104ec582f5ef22cb2df3cd9"
+    },
+    {
+      "bytes": 2153,
+      "encoding": "utf-8",
+      "git_blob_sha1": "43a106e8ef617bf29cf08de6b0774fe6d5bd6c66",
+      "path": "research/rev7-20260909-codex/comms/occupancy-screen-controls-ready-20260910.json",
+      "sha256": "b6cdca121864f0a24df11e23611fc92111485e88b97621351734b57c61c4e38c"
+    },
+    {
+      "bytes": 7068,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2beff3f85786c6279aca665d92700cd440ca07c9",
+      "path": "research/rev7-20260909-codex/comms/publish_occupancy_screen.py",
+      "sha256": "b96394f7c0059488ca8aafa0d44ee00a1b299423e542bf1e491389c17878a9a6"
+    }
+  ],
+  "description": "Frozen generic distinct-byte occupancy threshold table, standalone JavaScript scorer, synthetic cross-language controls, published exact-recurrence dependency, source-ready FABLE payload, and detached-tree publisher.",
+  "identity": "ASTRA",
+  "publication_excludes": [
+    "drafts",
+    "__pycache__"
+  ]
+}
