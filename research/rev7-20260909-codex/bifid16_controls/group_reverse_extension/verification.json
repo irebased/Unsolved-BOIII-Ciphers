@@ -1,0 +1,43 @@
+{
+  "canonical_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "cells_verified": 1092,
+  "checkpoint_sha256": "2abaacb354dec27b8fdc1d53b1849575c29c149eada75ed7702e567ec6d44d1a",
+  "coupled_join_count": 18,
+  "coupled_join_periods": [
+    365,
+    367,
+    369,
+    373,
+    375,
+    377,
+    379,
+    383,
+    391,
+    397,
+    399,
+    401,
+    409,
+    411,
+    413,
+    415,
+    427,
+    443
+  ],
+  "forward_index_permutation_sha256": "3fe27cd7c7a8dabc9bb61ff94e272cc8b15c612eec9840477ae03ed4eb053ec9",
+  "gate_sha256": "d1203bc420268bf75692f935ffb794b3d151c45841f64a1494bcadb3a1f4cce9",
+  "identity": "ASTRA",
+  "limits": "Independent replay of saved finite evidence; it is not a second target-driver execution.",
+  "method_counts": {
+    "coupled_join": 18,
+    "empty_rectangle": 1,
+    "pair_cardinality_213": 545,
+    "single_typed_graph": 528
+  },
+  "natural_after_inverse_sha256": "c2abbfb1160cb78d4b5f7e39c337a899d739192c8a0f35f34cd877243ddc65c8",
+  "new_target_search": false,
+  "result_sha256": "65d44a6a765b01e7c9bceaf90c6d612a9a636690882bd3416405fc5a534c9afa",
+  "status": "PASS",
+  "target_evaluated": true,
+  "verification_only": true,
+  "verifier_source_sha256": "cd2e402ac0b6ebcb1b46c67902f5015649f9fd574563559f07743d488f733749"
+}

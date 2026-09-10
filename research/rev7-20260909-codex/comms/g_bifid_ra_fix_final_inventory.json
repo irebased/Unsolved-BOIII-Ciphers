@@ -1,0 +1,241 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1994,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a2e9bdfb8505b9b1e8122ac8e630e4990ea91b2b",
+      "path": "lavender/src/content/docs/ciphers/bo3/rev/rev7.mdx",
+      "sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91"
+    },
+    {
+      "bytes": 45454,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e1064d230b405277352150c6a95bc5d635de110b",
+      "path": "lavender/src/data/ciphers/revelations.json",
+      "sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e"
+    },
+    {
+      "bytes": 3700,
+      "encoding": "utf-8",
+      "git_blob_sha1": "791e975965ad2506e1a2fa5caaa6129671a34759",
+      "path": "research/rev7-20260909-codex/bifid16_controls/bifid16.py",
+      "sha256": "a80c5f839511454a11a473cbfa4734bf3452656c8015e15ac759f65f45bf9af7"
+    },
+    {
+      "bytes": 16207,
+      "encoding": "utf-8",
+      "git_blob_sha1": "78e1c453a83a4c7cf148e3372b53122c4fe49f1e",
+      "path": "research/rev7-20260909-codex/bifid16_controls/even_period_invariant.json",
+      "sha256": "f6f2d01801992bb145c583fdc83284ea100c99d30bf4f3e5a477b56317a84a36"
+    },
+    {
+      "bytes": 6334,
+      "encoding": "utf-8",
+      "git_blob_sha1": "8c9a7822ae056aec5e9f6515b271e620acb60090",
+      "path": "research/rev7-20260909-codex/bifid16_controls/even_period_invariant.py",
+      "sha256": "1fa72b75ff59028ed256dbf6853dd44669cd53b07bcce998331e212b65d2a2a2"
+    },
+    {
+      "bytes": 5510558,
+      "encoding": "utf-8",
+      "git_blob_sha1": "9c06c15e4f32e5b3ed08b9a2e7eaa6cfbcf3c336",
+      "path": "research/rev7-20260909-codex/bifid16_controls/even_rectangle_controls/controls.json",
+      "sha256": "9f443af6c503d7fc377551b2842d5f701a21649d910d9aebdaf30597efe17f57"
+    },
+    {
+      "bytes": 1351,
+      "encoding": "utf-8",
+      "git_blob_sha1": "4a78d87bf96d03f481f7b5d0a06c2550bfdf0921",
+      "path": "research/rev7-20260909-codex/bifid16_controls/even_rectangle_controls/model.py",
+      "sha256": "46c1f18e473450aba5dde3675b594d9f0b86f28d4a670514e10a806a92942e84"
+    },
+    {
+      "bytes": 3147,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d30c0d1bc9a775f5ec100e1689bb80841527d791",
+      "path": "research/rev7-20260909-codex/bifid16_controls/group_reverse_extension/README.md",
+      "sha256": "5f83582cf3c557da7de0bc72fd42e3224759e01171f1808200bae0540f727ac3"
+    },
+    {
+      "bytes": 2278,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c5647457ff1f0880823bfd16770af01a92a6209b",
+      "path": "research/rev7-20260909-codex/bifid16_controls/group_reverse_extension/RESULTS.md",
+      "sha256": "13d42bc6b5af6661dfb35fd0c4896e18cf0913569fd91ca475668b728b80a320"
+    },
+    {
+      "bytes": 544836,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2618294eb83ef3bb7089b26d8650c781f33e6300",
+      "path": "research/rev7-20260909-codex/bifid16_controls/group_reverse_extension/checkpoint.jsonl",
+      "sha256": "2abaacb354dec27b8fdc1d53b1849575c29c149eada75ed7702e567ec6d44d1a"
+    },
+    {
+      "bytes": 61108,
+      "encoding": "utf-8",
+      "git_blob_sha1": "82c7775b553e5dfc89e6d9977ba2a26cd11730f4",
+      "path": "research/rev7-20260909-codex/bifid16_controls/group_reverse_extension/controls.json",
+      "sha256": "8ffa496f3a6b72f37f80decb649f034763c6c96ce5c7a63122cae578eadd8373"
+    },
+    {
+      "bytes": 6809,
+      "encoding": "utf-8",
+      "git_blob_sha1": "75b52ee5f9367ca512df290fcc0a22ccfdcb6e8c",
+      "path": "research/rev7-20260909-codex/bifid16_controls/group_reverse_extension/controls.py",
+      "sha256": "d8bd68b77c10298dc91b055ec73c1bebf079fdf869256d035b00a3fc070c7e49"
+    },
+    {
+      "bytes": 1702,
+      "encoding": "utf-8",
+      "git_blob_sha1": "807e1a584d523747ce367deab799adf894c7b030",
+      "path": "research/rev7-20260909-codex/bifid16_controls/group_reverse_extension/prepare_gate.py",
+      "sha256": "7e524fa04596b9e151eca0746edf1bc7cce8267981c1f658e31ca436a3e49b03"
+    },
+    {
+      "bytes": 9339,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d84138f7c83d6f4f4735b925f33c702ceb103988",
+      "path": "research/rev7-20260909-codex/bifid16_controls/group_reverse_extension/run_target.py",
+      "sha256": "41e88953ee9afa074b95cff8507783b23bc7aaa0e2ea7500dd191c12caae7468"
+    },
+    {
+      "bytes": 16979,
+      "encoding": "utf-8",
+      "git_blob_sha1": "5c3dcabf6f3573049ce52de5c1f2a514b3d843bb",
+      "path": "research/rev7-20260909-codex/bifid16_controls/group_reverse_extension/target_gate.json",
+      "sha256": "d1203bc420268bf75692f935ffb794b3d151c45841f64a1494bcadb3a1f4cce9"
+    },
+    {
+      "bytes": 900971,
+      "encoding": "utf-8",
+      "git_blob_sha1": "3db2124203cf0ebb1f693bb68546aa7c78c7a1f4",
+      "path": "research/rev7-20260909-codex/bifid16_controls/group_reverse_extension/target_results.json",
+      "sha256": "65d44a6a765b01e7c9bceaf90c6d612a9a636690882bd3416405fc5a534c9afa"
+    },
+    {
+      "bytes": 1281,
+      "encoding": "utf-8",
+      "git_blob_sha1": "7fef47824c0fb76088ee56bfdaf22aa69d634a10",
+      "path": "research/rev7-20260909-codex/bifid16_controls/group_reverse_extension/verification.json",
+      "sha256": "4582a86fe2998f6ac4c0dbdb2de5ae137c72f9bbc036672852f595c5d35eeb9a"
+    },
+    {
+      "bytes": 9778,
+      "encoding": "utf-8",
+      "git_blob_sha1": "073e105bb95fa8d9ed8d2ab88c2e5ec7866614a4",
+      "path": "research/rev7-20260909-codex/bifid16_controls/group_reverse_extension/verify_results.py",
+      "sha256": "cd2e402ac0b6ebcb1b46c67902f5015649f9fd574563559f07743d488f733749"
+    },
+    {
+      "bytes": 39250,
+      "encoding": "utf-8",
+      "git_blob_sha1": "957c2c4c42ee768524fddf67ddf246333c10b872",
+      "path": "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join/controls.json",
+      "sha256": "62c78645ffd10d892e54225a88917a63ad7e8fee99f80f1b1feae3788440dc23"
+    },
+    {
+      "bytes": 6869,
+      "encoding": "utf-8",
+      "git_blob_sha1": "f8533f2f364dc12354213f2d5c7df15829c31b67",
+      "path": "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join/model.py",
+      "sha256": "221ea25d48f80a26476e1fe4abea0e89e099bf35f4325ed8e8f7aef6bd00be45"
+    },
+    {
+      "bytes": 54259,
+      "encoding": "utf-8",
+      "git_blob_sha1": "3bb6dacefde06dfc95cb9a315945c1712d7dc20a",
+      "path": "research/rev7-20260909-codex/bifid16_controls/odd_single_graph_filter/controls.json",
+      "sha256": "afb1eb9bafb4221c86feef4f1e32120dde790255a982a458b04365fb3cfbe3a2"
+    },
+    {
+      "bytes": 1523,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ac5c51926a124ab9eaef4e66757f6a032425e7d3",
+      "path": "research/rev7-20260909-codex/bifid16_controls/odd_single_graph_filter/model.py",
+      "sha256": "924ea3a4acc7618be25b1cbf92952115805fa898448c402727e922d1f4526014"
+    },
+    {
+      "bytes": 43396,
+      "encoding": "utf-8",
+      "git_blob_sha1": "21c1a66bdbcbf57b766b488094a288896bdab654",
+      "path": "research/rev7-20260909-codex/bifid16_controls/odd_typed_rectangles/controls.json",
+      "sha256": "e931ff2d471d089cb498f8e01733c82c62c2f2400d86fa527ff0d956bf9ecb6a"
+    },
+    {
+      "bytes": 7069,
+      "encoding": "utf-8",
+      "git_blob_sha1": "5cb7474d713e9bc916d133cac828643b463e68c2",
+      "path": "research/rev7-20260909-codex/comms/publish_g_bifid_ra_fix.py",
+      "sha256": "3f185dfd277bd6348be06b2460a8717cd31988caecbab9d22c919b8efdc21bad"
+    },
+    {
+      "bytes": 2153,
+      "encoding": "utf-8",
+      "git_blob_sha1": "24f138b12588085aa436d5ab909d8d6e5db82d15",
+      "path": "research/rev7-20260909-codex/coverage/fable_ra_pre_fix_review/README.md",
+      "sha256": "180cbfd6e28ffdf2110e69933bd112e39cf10744d6a7e69ea2ac2e7da8d5f155"
+    },
+    {
+      "bytes": 1361,
+      "encoding": "utf-8",
+      "git_blob_sha1": "7bd2bb43e1727a84960541d6dbf7cb2cacd9d4b8",
+      "path": "research/rev7-20260909-codex/coverage/fable_ra_pre_fix_review/REPORT.md",
+      "sha256": "20fb7606d34446789f9ad00876caec803f6185e323e7770d40f0f663743239c5"
+    },
+    {
+      "bytes": 4846,
+      "encoding": "utf-8",
+      "git_blob_sha1": "1484a83c9c672acbf1389cb1259608a869aead78",
+      "path": "research/rev7-20260909-codex/coverage/fable_ra_pre_fix_review/audit.py",
+      "sha256": "443d439d4574c0ecbccfa0fc9b82bbc4015c79fe085d46ccae74d00330347391"
+    },
+    {
+      "bytes": 3718,
+      "encoding": "utf-8",
+      "git_blob_sha1": "54b1615a0cc91367237cba2340613e9258263bab",
+      "path": "research/rev7-20260909-codex/coverage/fable_ra_pre_fix_review/review.json",
+      "sha256": "9ee1f751d2f7b9b5a93421d53a49a7a2f353f37acae24f8c673a306d566c53bc"
+    },
+    {
+      "bytes": 18676,
+      "encoding": "utf-8",
+      "git_blob_sha1": "6c262537cea57c7649f24105dc76474deb2c8828",
+      "path": "research/rev7-20260909-codex/coverage/fable_ra_pre_fix_review/source/Cargo.lock",
+      "sha256": "03f3b58196c11fcd795d1ebffc97b29e441785989e4e44ebfb568be945198dd6"
+    },
+    {
+      "bytes": 53951,
+      "encoding": "utf-8",
+      "git_blob_sha1": "edb99efb72f78e7cba5ec7b746eccab13ea7f01b",
+      "path": "research/rev7-20260909-codex/coverage/fable_ra_pre_fix_review/source/commit.patch",
+      "sha256": "5588a74059e402920102731e5e14c6edbe753e8eb71c7cd2e7c1299511026196"
+    },
+    {
+      "bytes": 266644,
+      "encoding": "utf-8",
+      "git_blob_sha1": "71d012bf9f3a9b0b23250fae1b1c1604c71d60bc",
+      "path": "research/rev7-20260909-codex/coverage/fable_ra_pre_fix_review/source/sweep.rs",
+      "sha256": "59465e5c1d2d43ef102bbbc41d6dd2930ab7f29eeb753f60825a1bcf83663dcf"
+    },
+    {
+      "bytes": 45276,
+      "encoding": "utf-8",
+      "git_blob_sha1": "1aa528a9c938f89533888b16b2e7b470a42fcafd",
+      "path": "research/rev7-20260909-codex/coverage/fable_ra_pre_fix_review/source/variants.rs",
+      "sha256": "6199e8658bfa4ce0cba1043b75a5a667a37f43203d9f32c80109c5711959782b"
+    },
+    {
+      "bytes": 1406,
+      "encoding": "utf-8",
+      "git_blob_sha1": "88ab49cac07e86755838bdf73f87f543c4e7db98",
+      "path": "research/rev7-20260909-codex/coverage/fable_ra_pre_fix_review/test_receipt.json",
+      "sha256": "f8d8d56ba7b6c0dc044b523ae370ee59a6edadc177459414b2164f24b5ed8699"
+    }
+  ],
+  "description": "Frozen one-G Bifid result, independent verification, RA pre-fix audit, exact dependencies, and canonical sources.",
+  "identity": "ASTRA",
+  "publication_excludes": [
+    "drafts",
+    "__pycache__"
+  ]
+}

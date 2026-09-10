@@ -1,0 +1,35 @@
+{
+  "commands": [
+    "cargo test --manifest-path /private/tmp/ra-prefix-fix/Cargo.toml --locked --offline --target-dir /private/tmp/astra-ra-prefix-fix-target -p ra-cli sweep_pre_ -- --nocapture",
+    "cargo test --manifest-path /private/tmp/ra-prefix-fix/Cargo.toml --locked --offline --target-dir /private/tmp/astra-ra-prefix-fix-target -p ra-cli whitespace_preserving_apply -- --nocapture",
+    "cargo test --manifest-path /private/tmp/ra-prefix-fix/Cargo.toml --locked --offline --target-dir /private/tmp/astra-ra-prefix-fix-target -p ra-cli staged_input_ -- --nocapture"
+  ],
+  "commit": "e127b8d6c17f567b930fe67624d3ea199528b775",
+  "compiler_artifact_sha256": "8a89779329e746f5a98220532e3e8eab2ad0091831ae83f84118cdadcfd11bc4",
+  "identity": "ASTRA",
+  "results": [
+    {
+      "failed": 0,
+      "filter": "sweep_pre_",
+      "filtered": 119,
+      "passed": 3
+    },
+    {
+      "failed": 0,
+      "filter": "whitespace_preserving_apply",
+      "filtered": 118,
+      "passed": 4
+    },
+    {
+      "failed": 0,
+      "filter": "staged_input_",
+      "filtered": 121,
+      "passed": 1
+    }
+  ],
+  "test_scope": "focused synthetic unit tests only; no target sweep",
+  "warnings": [
+    "duplicated #[test] attribute at sweep.rs:5461",
+    "post_axis_is_omitted_at_default_so_old_commitments_still_reconcile is dead code at sweep.rs:5550; both predate/are outside the focused fix behavior"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "accepted_core": {
+    "assessment": "Execution and --recompute use the same verbatim target helper. Variant masks are mapped to the kth non-ASCII-whitespace byte, preserving mask meaning and whitespace positions.",
+    "execution_splice_line": 2310,
+    "raw_target_helper_line": 1933,
+    "sweep_ctx_raw_line": 2964,
+    "variant_splice_line": 500,
+    "verify_recompute_raw_helper_line": 2785
+  },
+  "commit": "e127b8d6c17f567b930fe67624d3ea199528b775",
+  "conclusion": "Scoped acceptance of the raw-whitespace execution and recompute fix. The new side-metadata certificate is not yet self-verifying and its census scope is narrower than its presentation.",
+  "diff": {
+    "deletions": 35,
+    "files": [
+      "crates/ra-cli/src/sweep.rs",
+      "crates/ra-cli/src/variants.rs"
+    ],
+    "insertions": 885
+  },
+  "findings": [
+    {
+      "effect": "Structural and --recompute claim verification can pass if staged_inputs hashes, statuses, tuple counts or collision fields are altered. Merkle execution evidence remains checked; this defect concerns the new side metadata.",
+      "evidence": {
+        "emission_line": 3065,
+        "verify_line": 3569
+      },
+      "recommendation": "Reconstruct staged_inputs_json from the loaded target and recorded axes during verification and require exact equality.",
+      "severity": "auditability",
+      "title": "Saved staged-input metadata is not verified"
+    },
+    {
+      "effect": "It applies XF to the first pre value immediately after display decode. Under T3 the actual XF runs after layer-1 decryption and therefore depends on primitive, key, mode and IV; under all tiers later pre values can produce different inputs. The global-looking XF census is not provenance for actual T3 XF inputs. This does not change candidate execution.",
+      "evidence": {
+        "first_pre_line": 2167,
+        "function_line": 2159
+      },
+      "recommendation": "Label this as a first-variant/first-pre, pre-decrypt/T2 diagnostic. For T3 provenance, record actual post-layer1 XF inputs or omit the census; for T1/T2, qualify or record the relevant pre cross-product.",
+      "severity": "scope-labeling",
+      "title": "XF census is a first-pre pre-decrypt probe, not actual T3 XF provenance"
+    },
+    {
+      "effect": "A warning based on one reading is worded as if it establishes the whole axis contributes no distinct coverage. The actual candidates retain all variants.",
+      "evidence": {
+        "first_mask_line": 2107,
+        "function_line": 2106
+      },
+      "recommendation": "Qualify the warning to the recorded representative variant or census all variants.",
+      "severity": "scope-labeling",
+      "title": "Pre degeneracy diagnostic uses only the first transcription variant"
+    }
+  ],
+  "focused_tests": [
+    {
+      "failed": 0,
+      "filter": "sweep_pre_",
+      "filtered": 119,
+      "passed": 3
+    },
+    {
+      "failed": 0,
+      "filter": "whitespace_preserving_apply",
+      "filtered": 118,
+      "passed": 4
+    },
+    {
+      "failed": 0,
+      "filter": "staged_input_",
+      "filtered": 121,
+      "passed": 1
+    }
+  ],
+  "identity": "ASTRA",
+  "parent": "e6c282187cc8a555580349d819210b544e5417b1",
+  "review_only": true,
+  "source_hashes": {
+    "Cargo.lock": "03f3b58196c11fcd795d1ebffc97b29e441785989e4e44ebfb568be945198dd6",
+    "commit.patch": "5588a74059e402920102731e5e14c6edbe753e8eb71c7cd2e7c1299511026196",
+    "sweep.rs": "59465e5c1d2d43ef102bbbc41d6dd2930ab7f29eeb753f60825a1bcf83663dcf",
+    "test_receipt.json": "f8d8d56ba7b6c0dc044b523ae370ee59a6edadc177459414b2164f24b5ed8699",
+    "variants.rs": "6199e8658bfa4ce0cba1043b75a5a667a37f43203d9f32c80109c5711959782b"
+  },
+  "target_evaluated": false
+}

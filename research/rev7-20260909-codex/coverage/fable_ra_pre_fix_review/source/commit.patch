@@ -1,0 +1,1135 @@
+commit e127b8d6c17f567b930fe67624d3ea199528b775
+Author:     irebased <180613221+irebased@users.noreply.github.com>
+AuthorDate: Thu Sep 10 19:01:13 2026 +0200
+Commit:     irebased <180613221+irebased@users.noreply.github.com>
+CommitDate: Thu Sep 10 19:01:13 2026 +0200
+
+    Feed `--pre` the raw ciphertext text, whitespace and all
+    
+    `ra sweep`'s `--pre` axis is documented -- in its own `--help` and in a comment
+    inside `Ctx::stage` -- to run against the raw ciphertext text, above the initial
+    decode. It was fed the WHITESPACE-STRIPPED text instead.
+    
+    A stripped transcription is a single token, so `reverse_words` had nothing to
+    reorder and silently *was* `identity`. Any sweep naming it enumerated one
+    pipeline under two labels and published a negative it had never tested. rev7 is
+    the case in point: `identity` and `reverse_words` staged byte-identical streams,
+    so a three-value `--pre` axis covered two points while claiming three.
+    
+    `Ctx::compact` becomes `Ctx::text` and carries the transcription verbatim. The
+    subtlety is the variant masks: `VariantSpace::positions` indexes the *compacted*
+    text, so splicing a mask into raw text naively would shift every offset and
+    corrupt TG4's 128 readings -- a far worse bug than the one being fixed. Hence
+    `VariantSpace::apply_preserving_whitespace`, which substitutes at the k-th
+    NON-whitespace character and leaves whitespace where it found it. Stripping its
+    output reproduces `apply` exactly, over every mask, which is asserted.
+    
+    Both production sites now go through one helper, `sweep_input_text`: the sweep
+    driver and the claim recompute path each rebuilt their own stripped copy, and
+    fixing only one would have made a replayed claim disagree with the sweep that
+    produced it -- nondeterminism, which is harder to diagnose than the original bug.
+    
+    Also adds a degeneracy guard, because the real failure was not "whitespace got
+    stripped" but "a named axis became a no-op and nobody was told". Each `--pre`
+    and `--xf` value's staged input is hashed against the REAL target's bytes (an
+    axis can be correct in general and identity on the one ciphertext under attack),
+    and colliding values are named on stdout and recorded in the claim as side
+    metadata -- never inside a merkle leaf, which is left byte-for-byte unchanged.
+    It warns rather than errors: `stripws+reverse_words` really is the identity, and
+    only the analyst can say whether a given collision is legitimate.
+    
+    Verified: TG4's 128 readings reproduce their merkle root and coverage digest
+    byte-identically (34f4b48d..., sha256:0fce6585...); rev7's three `--pre` values
+    now stage three distinct streams, with `reverse_words` giving `1A47F 294E1 ...`
+    (last group first, interiors intact) against `reverse`'s `F74A1 1E492 ...`.
+    
+    Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_0129jh8H7PaFbXyo7vb1qDm3
+
+diff --git a/crates/ra-cli/src/sweep.rs b/crates/ra-cli/src/sweep.rs
+index 952a675..71d012b 100644
+--- a/crates/ra-cli/src/sweep.rs
++++ b/crates/ra-cli/src/sweep.rs
+@@ -1901,15 +1901,379 @@ enum Stage2 {
+ struct Ctx<'a> {
+     plan: &'a Plan,
+     axes: &'a Axes,
+-    /// The recorded display text with whitespace removed. A candidate's ciphertext is
+-    /// this text with its variant's glyph corrections spliced in.
+-    compact: &'a [u8],
++    /// The recorded display text **verbatim** -- whitespace intact, exactly as the
++    /// corpus records it. A candidate's ciphertext is this text with its variant's
++    /// glyph corrections spliced in.
++    ///
++    /// Whitespace is kept because `--pre` sits above the initial decode and is
++    /// documented to run on the raw ciphertext text: `reverse_words`, `stripws` and
++    /// `group` all mean something only while the word boundaries still exist. Feeding
++    /// the *compacted* text here (what this field held before 2026-09-10) silently
++    /// turned the whole transcription into one token, so `reverse_words` degenerated
++    /// to identity and any sweep naming it reported a negative it had never tested.
++    ///
++    /// The variant masks still index the *compacted* text, so splicing must go through
++    /// `VariantSpace::apply_preserving_whitespace` rather than `apply` -- see there.
++    text: &'a [u8],
+     display: ra_core::Display,
+     oracle: &'static OracleSpec,
+     /// Node name that decodes the ciphertext's recorded display, for chain specs.
+     initial_decode: &'static str,
+ }
+ 
++/// The bytes a sweep feeds its pipeline for `target`: the recorded transcription
++/// **verbatim**, whitespace and all.
++///
++/// This is the single definition of `Ctx::text`, and it exists as a function so that
++/// the sweep driver and the claim recompute path cannot disagree about it. They did
++/// disagree in the obvious way before: each rebuilt its own whitespace-stripped copy,
++/// and a fix applied to one would have left a replayed claim silently deriving from
++/// different bytes than the sweep it was auditing -- which reads as nondeterminism,
++/// and is harder to diagnose than the original bug. A third caller must call this.
++fn sweep_input_text(target: &crate::corpus::Target) -> Vec<u8> {
++    target.raw.clone().into_bytes()
++}
++
++/// The whitespace-free view of `target`'s transcription -- the text
++/// [`crate::variants::VariantSpace`] *indexes*.
++///
++/// Not what a candidate is fed (that is [`sweep_input_text`]); this is only the
++/// coordinate system glyph offsets are quoted in, so that a reported position like
++/// `@37:0->O` means the same thing whether or not the transcription is spaced.
++fn variant_index_text(target: &crate::corpus::Target) -> Vec<u8> {
++    target
++        .raw
++        .bytes()
++        .filter(|c| !c.is_ascii_whitespace())
++        .collect()
++}
++
++/// The digest and length of one exact byte string, recorded together so a reader can
++/// tell "the same bytes" from "a hash collision in my reading of the report", and can
++/// see at a glance that a value did something to the length.
++#[derive(Clone, Debug, PartialEq, Eq)]
++struct ByteRecord {
++    sha256: String,
++    bytes: usize,
++}
++
++impl ByteRecord {
++    fn of(data: &[u8]) -> ByteRecord {
++        ByteRecord {
++            sha256: hex::encode(ra_merkle::h(data)),
++            bytes: data.len(),
++        }
++    }
++}
++
++/// What one axis value actually did to this target's bytes.
++///
++/// The three states are deliberately distinct and must never collapse into each
++/// other, because they mean different things to a reader auditing a negative:
++///
++/// - `Accepted` -- the value produced bytes. An *empty* result is still `Accepted`,
++///   with a `ByteRecord` of length 0 and the digest of the empty string; that is a
++///   value that ran and destroyed the input, which is not the same event as a value
++///   that declined to run.
++/// - `Rejected` -- the value refused the input outright (only `bwt` does this
++///   today), so no bytes exist to hash.
++/// - `Undecodable` -- the value produced bytes, but the display's strict decode then
++///   refused them, so every candidate under it is skipped. The text digest is still
++///   recorded; the canonical one cannot be.
++#[derive(Clone, Debug, PartialEq, Eq)]
++enum StagedStatus {
++    Accepted,
++    Rejected,
++    Undecodable,
++}
++
++impl StagedStatus {
++    fn as_str(&self) -> &'static str {
++        match self {
++            StagedStatus::Accepted => "accepted",
++            StagedStatus::Rejected => "rejected",
++            StagedStatus::Undecodable => "undecodable",
++        }
++    }
++}
++
++/// One axis value's **staged input**: the bytes that value actually hands to the
++/// next stage, for the real loaded target.
++///
++/// Keyed by `(variant, label)` because a transcription reading and an axis value
++/// together determine the bytes; quoting only the axis label would leave a reader
++/// unable to tell which reading was measured.
++#[derive(Clone, Debug, PartialEq, Eq)]
++struct StagedInput {
++    variant: String,
++    label: String,
++    status: StagedStatus,
++    /// The text this value produced, before the display's initial decode consumed it
++    /// -- the literal top-of-stack bytes. `None` only when the value rejected.
++    text: Option<ByteRecord>,
++    /// The canonical bytes that text decodes to -- what the cipher layer is actually
++    /// handed. `None` when the value rejected or the decode refused the result.
++    canonical: Option<ByteRecord>,
++}
++
++/// Find the axis values that are indistinguishable on this target.
++///
++/// # Why this exists
++///
++/// The bug this guards against is not "whitespace got stripped". It is that a
++/// **named axis silently became a no-op** and the sweep then published confident
++/// coverage over a space it never visited. `--pre reverse_words` was handed
++/// whitespace-free text, so it had one token to reorder and quietly *was*
++/// `identity`; three `pre` values enumerated one real pipeline, and the resulting
++/// negative was believed. A negative from a degenerate axis is worse than no result
++/// at all, because it gets published.
++///
++/// # Why it compares canonical bytes, not the text
++///
++/// Because the canonical bytes are what reaches the cipher. Two `pre` values can
++/// produce visibly different *text* and still be the same experiment: on a hex
++/// target, `group` only inserts spaces, and `decode_hex` discards them again. Judged
++/// on the text those two look distinct; judged on what the cipher sees they are one
++/// candidate wearing two labels, and it is the second reading that tells an analyst
++/// whether their axis bought them anything.
++///
++/// # Why it is a warning and not an error
++///
++/// Collisions are sometimes *correct*. `stripws+reverse_words` genuinely is identity
++/// -- after an explicit `stripws` there really is only one word -- as is `rot:n=13`
++/// composed with itself. The requirement is only that a collision is never
++/// **silent**; deciding whether a given one is legitimate needs the analyst.
++///
++/// Colliding labels are all **retained**, never deduplicated: the report is "N
++/// tuples, M distinct inputs", and hiding one label would hide the difference.
++///
++/// Returns one line per group of colliding values, in first-appearance order so the
++/// output is deterministic.
++fn degeneracy_warnings(axis: &str, target: &str, staged: &[StagedInput]) -> Vec<String> {
++    let mut groups: Vec<(ByteRecord, Vec<String>)> = Vec::new();
++    for st in staged {
++        // A value that rejected, or whose output would not decode, produced no bytes
++        // for the cipher at all. It cannot be said to produce the *same* bytes as
++        // anything else; that it contributes no coverage is a separate report.
++        let Some(c) = &st.canonical else { continue };
++        match groups.iter_mut().find(|(g, _)| g == c) {
++            Some((_, labels)) => labels.push(st.label.clone()),
++            None => groups.push((c.clone(), vec![st.label.clone()])),
++        }
++    }
++    groups
++        .into_iter()
++        .filter(|(_, labels)| labels.len() > 1)
++        .map(|(c, labels)| {
++            let quoted: Vec<String> = labels.iter().map(|l| format!("{l:?}")).collect();
++            format!(
++                "WARNING: --{axis} values {} produce identical staged bytes for {target} \
++                 (sha256:{}, {} bytes); this axis contributes no distinct coverage \
++                 across them.",
++                join_english(&quoted),
++                c.sha256,
++                c.bytes
++            )
++        })
++        .collect()
++}
++
++/// `["a", "b", "c"]` -> `a, b and c`. Used only by [`degeneracy_warnings`]; the
++/// warning is read by a human deciding whether a collision is legitimate, so it
++/// reads as a sentence.
++fn join_english(items: &[String]) -> String {
++    match items {
++        [] => String::new(),
++        [a] => a.clone(),
++        [a, b] => format!("{a} and {b}"),
++        [rest @ .., last] => format!("{} and {last}", rest.join(", ")),
++    }
++}
++
++/// The staged input each `--pre` value produces for **the real target's actual
++/// bytes**.
++///
++/// Measured against the loaded ciphertext and never a synthetic fixture, because
++/// degeneracy is a property of an axis *against this input*: an axis can be
++/// perfectly implemented, non-degenerate in general, and still be the identity on
++/// the one ciphertext under attack. A fixture would report it working fine.
++///
++/// The representative reading is `variant_masks[0]`. Degeneracy of the `pre` axis is
++/// a property of the axis against this ciphertext, and the readings differ from one
++/// another in a handful of glyphs, so one reading answers the question at 1/128th of
++/// the cost and of the report's size. The reading used is recorded in every entry
++/// rather than left implicit.
++fn pre_staged_inputs(axes: &Axes, raw_text: &[u8], display: ra_core::Display) -> Vec<StagedInput> {
++    let mask = axes.variant_masks[0];
++    let variant = axes.vspace.label(mask);
++    let mut text = Vec::new();
++    axes.vspace
++        .apply_preserving_whitespace(mask, raw_text, &mut text);
++    axes.pres
++        .iter()
++        .map(|p| {
++            let label = p.label();
++            match p.apply(&text) {
++                None => StagedInput {
++                    variant: variant.clone(),
++                    label,
++                    status: StagedStatus::Rejected,
++                    text: None,
++                    canonical: None,
++                },
++                Some(t) => {
++                    let rec = ByteRecord::of(&t);
++                    match Repr::new(t, display).canonical_bytes_strict() {
++                        Some(c) => StagedInput {
++                            variant: variant.clone(),
++                            label,
++                            status: StagedStatus::Accepted,
++                            text: Some(rec),
++                            canonical: Some(ByteRecord::of(&c)),
++                        },
++                        None => StagedInput {
++                            variant: variant.clone(),
++                            label,
++                            status: StagedStatus::Undecodable,
++                            text: Some(rec),
++                            canonical: None,
++                        },
++                    }
++                }
++            }
++        })
++        .collect()
++}
++
++/// The staged input each `--xf` value produces: the canonical bytes with that
++/// transform applied, which is what the modern layer below is handed.
++///
++/// Measured against the first `--pre` value's canonical bytes. `--xf` sits below the
++/// decode, so it sees the same shape of input whichever `pre` ran above it, and a
++/// full cross product would report the same collisions once per `pre`.
++///
++/// `--codec` is deliberately **not** covered here. A codec sits between two modern
++/// layers, so its staged input is a decryption's output: there is no way to compute
++/// it without choosing a key, and a per-key report is neither small nor meaningful.
++/// It is left unguarded rather than guarded badly.
++fn xf_staged_inputs(axes: &Axes, raw_text: &[u8], display: ra_core::Display) -> Vec<StagedInput> {
++    let mask = axes.variant_masks[0];
++    let variant = axes.vspace.label(mask);
++    let mut text = Vec::new();
++    axes.vspace
++        .apply_preserving_whitespace(mask, raw_text, &mut text);
++    let base = axes
++        .pres
++        .first()
++        .and_then(|p| p.apply(&text))
++        .and_then(|t| Repr::new(t, display).canonical_bytes_strict());
++    axes.xfs
++        .iter()
++        .map(|x| {
++            let label = x.label().to_string();
++            match base.as_ref().map(|b| x.apply(b)) {
++                Some(Some(out)) => StagedInput {
++                    variant: variant.clone(),
++                    label,
++                    status: StagedStatus::Accepted,
++                    text: None,
++                    canonical: Some(ByteRecord::of(&out)),
++                },
++                // The transform refused these bytes (`bwt` on a non-BWT buffer)...
++                Some(None) => StagedInput {
++                    variant: variant.clone(),
++                    label,
++                    status: StagedStatus::Rejected,
++                    text: None,
++                    canonical: None,
++                },
++                // ...or there were no bytes to refuse, because `pre` or the decode
++                // already failed above it. Reported as undecodable rather than as a
++                // rejection by this axis, which did not get to run.
++                None => StagedInput {
++                    variant: variant.clone(),
++                    label,
++                    status: StagedStatus::Undecodable,
++                    text: None,
++                    canonical: None,
++                },
++            }
++        })
++        .collect()
++}
++
++/// `(parameter tuples, distinct byte inputs)` for one axis.
++///
++/// Two separate numbers on purpose. Equal counts mean every value bought a distinct
++/// experiment; `3 tuples, 1 distinct input` is the shape of the bug this whole guard
++/// exists for. Collapsing them into one number is what made the original defect
++/// invisible.
++fn staged_input_census(staged: &[StagedInput]) -> (usize, usize) {
++    let mut distinct: Vec<&ByteRecord> = Vec::new();
++    for st in staged {
++        if let Some(c) = &st.canonical {
++            if !distinct.contains(&c) {
++                distinct.push(c);
++            }
++        }
++    }
++    (staged.len(), distinct.len())
++}
++
++/// The staged-input side metadata for a claim, as JSON.
++///
++/// **Side** metadata: this is recorded alongside the leaves, never inside them. The
++/// merkle leaf spelling is left exactly as it was, because changing it would make
++/// every stored root unreconcilable for a second, unrelated reason and nobody could
++/// then tell which change caused which mismatch.
++fn staged_inputs_json(raw_text: &[u8], pres: &[StagedInput], xfs: &[StagedInput]) -> serde_json::Value {
++    let entries = |staged: &[StagedInput]| -> serde_json::Value {
++        staged
++            .iter()
++            .map(|st| {
++                serde_json::json!({
++                    "variant": st.variant,
++                    "value": st.label,
++                    "status": st.status.as_str(),
++                    "text_sha256": st.text.as_ref().map(|r| r.sha256.clone()),
++                    "text_bytes": st.text.as_ref().map(|r| r.bytes),
++                    "canonical_sha256": st.canonical.as_ref().map(|r| r.sha256.clone()),
++                    "canonical_bytes": st.canonical.as_ref().map(|r| r.bytes),
++                })
++            })
++            .collect::<Vec<_>>()
++            .into()
++    };
++    let (pre_tuples, pre_distinct) = staged_input_census(pres);
++    let (xf_tuples, xf_distinct) = staged_input_census(xfs);
++    serde_json::json!({
++        // What every entry below derives from: the transcription as fed, verbatim.
++        // Recorded separately so a reader can confirm the run started from the
++        // ciphertext they think it did, before asking what each axis value did to it.
++        "raw_text": {
++            "sha256": hex::encode(ra_merkle::h(raw_text)),
++            "bytes": raw_text.len(),
++        },
++        "note": "Side metadata, not part of any merkle leaf. `tuples` counts axis \
++                 values enumerated; `distinct_inputs` counts the distinct byte strings \
++                 they actually produced for this target. tuples > distinct_inputs means \
++                 some values were aliases here -- sometimes legitimately (an explicit \
++                 `stripws` really does make `reverse_words` the identity), sometimes \
++                 because the axis is degenerate on this input. Colliding labels are \
++                 all retained.",
++        "pre": {
++            "tuples": pre_tuples,
++            "distinct_inputs": pre_distinct,
++            "values": entries(pres),
++        },
++        "xf": {
++            "tuples": xf_tuples,
++            "distinct_inputs": xf_distinct,
++            "values": entries(xfs),
++        },
++    })
++}
++
+ /// One transcription variant's ciphertext bytes (after `--pre` and the initial
+ /// decode), plus the `--xf` transform pre-applied for T1/T2 (where it precedes
+ /// the only modern layer).
+@@ -1938,10 +2302,22 @@ impl Ctx<'_> {
+     fn stage(&self, digit: usize, pre_digit: usize) -> VariantStage {
+         let mask = self.axes.variant_masks[digit];
+         let mut text = Vec::new();
+-        self.axes.vspace.apply(mask, self.compact, &mut text);
+-        // `--pre` runs against the raw ciphertext text, before the display's
+-        // initial decode -- the genuine top of the stack. Only once it accepts
+-        // the text does the display get normalised into `canonical`.
++        // Whitespace-preserving, because `self.text` is the raw transcription and the
++        // mask's positions index the compacted one; this substitutes at the k-th
++        // non-whitespace character, so the mask names the same reading either way.
++        self.axes
++            .vspace
++            .apply_preserving_whitespace(mask, self.text, &mut text);
++        // `--pre` runs against the raw ciphertext text -- whitespace and all -- before
++        // the display's initial decode, the genuine top of the stack. This comment used
++        // to be a lie: `text` was built from the whitespace-stripped transcription, so
++        // every word-boundary-sensitive `--pre` value (`reverse_words` above all) was
++        // handed a single token and quietly became identity. Only once `--pre` accepts
++        // the text does the display get normalised into `canonical` -- and every
++        // decoder `canonical_bytes_strict` dispatches to filters or splits on
++        // whitespace already (`decode_hex` keeps only hex digits, `decode_base64` only
++        // base64 glyphs, `decode_radix` splits *on* whitespace), so carrying it this
++        // far costs the decode nothing.
+         let pre = &self.axes.pres[pre_digit];
+         // A `--pre` transform can change the text so the display no longer decodes
+         // (e.g. ubchi turns 192 base64 chars into 191). `canonical_bytes` would
+@@ -2190,7 +2566,9 @@ fn run_range(ctx: &Ctx, start: u64, end: u64) -> ChunkOut {
+                         } else {
+                             // the exact bytes, since the corpus record does not hold them
+                             let mut text = Vec::new();
+-                            ctx.axes.vspace.apply(mask, ctx.compact, &mut text);
++                            ctx.axes
++                                .vspace
++                                .apply_preserving_whitespace(mask, ctx.text, &mut text);
+                             format!(
+                                 "{}  ciphertext={}",
+                                 ctx.axes.vspace.describe(mask),
+@@ -2400,11 +2778,12 @@ pub fn run(data: &Path, args: SweepArgs) -> Result<()> {
+     let oracle = ra_oracle::oracle(&args.oracle)
+         .with_context(|| format!("unknown oracle {:?}", args.oracle))?;
+     let axes = resolve_axes(&args, &target)?;
+-    let compact: Vec<u8> = target
+-        .raw
+-        .bytes()
+-        .filter(|c| !c.is_ascii_whitespace())
+-        .collect();
++    // Two views of the same transcription, and they are not interchangeable.
++    // `raw_text` is what a candidate is actually fed (see `Ctx::text`); `compact` is
++    // the whitespace-free text the variant machinery *indexes*, so it stays the basis
++    // for reported glyph offsets and for the character count printed below.
++    let raw_text: Vec<u8> = sweep_input_text(&target);
++    let compact: Vec<u8> = variant_index_text(&target);
+ 
+     let tiers = resolve_tiers(&args.tier, &axes)?;
+     let plans: Vec<Plan> = tiers.iter().map(|&t| Plan::new(t, &axes)).collect();
+@@ -2509,6 +2888,27 @@ pub fn run(data: &Path, args: SweepArgs) -> Result<()> {
+         );
+     }
+ 
++    // What each axis value actually does to THIS ciphertext, before a single
++    // candidate is spent on it. A named axis that turns out to be a no-op here is the
++    // difference between a negative worth publishing and a negative that is an
++    // artefact of the harness, so it is stated up front rather than discovered later.
++    let pre_staged = pre_staged_inputs(&axes, &raw_text, target.display);
++    let xf_staged = xf_staged_inputs(&axes, &raw_text, target.display);
++    let (pre_tuples, pre_distinct) = staged_input_census(&pre_staged);
++    let (xf_tuples, xf_distinct) = staged_input_census(&xf_staged);
++    if pre_tuples > 1 || xf_tuples > 1 {
++        println!(
++            "staged inputs: --pre {pre_tuples} values -> {pre_distinct} distinct byte \
++             inputs; --xf {xf_tuples} -> {xf_distinct}"
++        );
++    }
++    for w in degeneracy_warnings("pre", &target.id, &pre_staged) {
++        println!("{w}");
++    }
++    for w in degeneracy_warnings("xf", &target.id, &xf_staged) {
++        println!("{w}");
++    }
++
+     // The total is predictable before any work starts, per skeleton.
+     println!("\nplan");
+     let mut planned_total: u128 = 0;
+@@ -2561,7 +2961,7 @@ pub fn run(data: &Path, args: SweepArgs) -> Result<()> {
+         let ctx = Ctx {
+             plan: p,
+             axes: &axes,
+-            compact: &compact,
++            text: &raw_text,
+             display: target.display,
+             oracle,
+             initial_decode,
+@@ -2658,6 +3058,11 @@ pub fn run(data: &Path, args: SweepArgs) -> Result<()> {
+             },
+             // The transcription dimension, stated in full: what is ambiguous, how many
+             // readings that admits, and which of them this run actually covered.
++            // Side metadata, alongside the leaves and never inside them: what each
++            // axis value did to this target's bytes, so a reader can verify after the
++            // fact that a claimed axis actually varied the input rather than trusting
++            // the axis label.
++            "staged_inputs": staged_inputs_json(&raw_text, &pre_staged, &xf_staged),
+             "transcription": {
+                 "open_glyph_pairs": crate::variants::AMBIGUOUS_PAIRS
+                     .iter().map(|(a,b)| format!("{}/{}", *a as char, *b as char))
+@@ -3169,11 +3574,9 @@ pub fn verify(data: &Path, path: &Path, recompute: bool) -> Result<()> {
+         .as_str()
+         .with_context(|| format!("{} names no target", path.display()))?;
+     let target = crate::corpus::load_target(data, target_id)?;
+-    let compact: Vec<u8> = target
+-        .raw
+-        .bytes()
+-        .filter(|c| !c.is_ascii_whitespace())
+-        .collect();
++    // The same helper the sweep driver uses, so a recompute cannot derive from
++    // different bytes than the run it is auditing.
++    let raw_text: Vec<u8> = sweep_input_text(&target);
+     let oracle_id = doc["oracle"].as_str().unwrap_or("printable-0.75");
+     let oracle = ra_oracle::oracle(oracle_id)
+         .with_context(|| format!("claim cites unknown oracle {oracle_id:?}"))?;
+@@ -3232,7 +3635,7 @@ pub fn verify(data: &Path, path: &Path, recompute: bool) -> Result<()> {
+             let ctx = Ctx {
+                 plan: &plan,
+                 axes: &axes,
+-                compact: &compact,
++                text: &raw_text,
+                 display: target.display,
+                 oracle,
+                 initial_decode,
+@@ -3963,14 +4366,27 @@ mod tests {
+         assert_eq!(axes.variant_masks, axes.vspace.masks());
+         assert_eq!(axes.vspace.count(), 1);
+ 
+-        // The bytes a chain is actually handed: `compact` with the selected mask's
+-        // glyph corrections spliced in, exactly as `Ctx::stage` does before any
+-        // decode or transform runs.
+-        let compact: Vec<u8> =
+-            target.raw.bytes().filter(|c| !c.is_ascii_whitespace()).collect();
++        // The bytes a chain is actually handed, obtained through the PRODUCTION path
++        // -- `sweep_input_text` plus the whitespace-preserving splice -- and not a
++        // local re-implementation of it. A local copy of the stripping logic would go
++        // on passing even if `Ctx::stage` stopped agreeing with it, which is exactly
++        // the regression this test exists to catch.
+         let mut fed = Vec::new();
+-        axes.vspace.apply(axes.variant_masks[0], &compact, &mut fed);
++        axes.vspace.apply_preserving_whitespace(
++            axes.variant_masks[0],
++            &sweep_input_text(&target),
++            &mut fed,
++        );
+ 
++        // `fed` now carries whatever whitespace the transcription has (TG4 has none,
++        // but this test must not silently start depending on that), so the comparison
++        // against the corpus's canonical reading is made in the whitespace-free
++        // coordinate system both readings are recorded in.
++        let strip = |b: &[u8]| -> Vec<u8> {
++            b.iter().copied().filter(|c| !c.is_ascii_whitespace()).collect()
++        };
++        let fed_compact = strip(&fed);
++        let legacy_compact = variant_index_text(&target);
+         let canonical_bytes = target
+             .ciphertext_canonical
+             .as_ref()
+@@ -3979,15 +4395,24 @@ mod tests {
+             .filter(|c| !c.is_ascii_whitespace())
+             .collect::<Vec<u8>>();
+         assert_eq!(
+-            fed, canonical_bytes,
++            fed_compact, canonical_bytes,
+             "the sweep must feed the canonical reading, not the legacy one"
+         );
+         assert_ne!(
+-            fed,
+-            compact,
++            fed_compact,
++            legacy_compact,
+             "the canonical and legacy readings differ at offsets 31, 36 and 90, so this \
+              would only pass by coincidence if the fix regressed"
+         );
++        // The whitespace-preserving splice must not have moved or dropped anything:
++        // TG4 is unspaced, so the fed bytes are their own compaction. This is what
++        // keeps the `strip` above from being a place a real defect could hide.
++        assert_eq!(
++            fed, fed_compact,
++            "TG4's transcription carries no whitespace, so the raw and compacted feeds \
++             must be identical -- if this fires, the corpus record gained whitespace \
++             and the offsets 31/36/90 quoted above need re-deriving"
++        );
+         // v2c, not the v10 this pinned before 2026-08-02: the project owner supplied a
+         // corrected canonical transcription that reads `lIllIII` at the seven derived
+         // I/l offsets, against the legacy `ciphertext` field's `lIIIIlI` -- mask 44.
+@@ -4169,7 +4594,7 @@ mod tests {
+         let ctx = Ctx {
+             plan: &plan,
+             axes: &axes,
+-            compact: TG4,
++            text: TG4,
+             display: ra_core::Display::Base64,
+             oracle: ra_oracle::oracle("printable-0.75").unwrap(),
+             initial_decode: "b64decode",
+@@ -4239,6 +4664,240 @@ mod tests {
+         assert_ne!(plan.axes[plan.variant_axis].values, vec!["v00"]);
+     }
+ 
++    // -----------------------------------------------------------------------
++    // `--pre` sees the RAW ciphertext text, whitespace and all
++    //
++    // The defect these pin: `Ctx::stage` used to build its text from the
++    // WHITESPACE-STRIPPED transcription while its own comment (and `--pre`'s help)
++    // claimed the raw one. A stripped transcription is a single token, so
++    // `reverse_words` -- the distinct sibling of `reverse` on
++    // `unit-conversion.info/texttools` -- had nothing to reorder and silently WAS
++    // `identity`. Every sweep that named it enumerated one pipeline under three
++    // labels and reported a negative it had never tested.
++    // -----------------------------------------------------------------------
++
++    /// A grouped hex display of rev7's shape: whitespace-separated groups, so word
++    /// boundaries exist and `reverse_words` has something to do. Deliberately
++    /// asymmetric (the last group is `1A47F`) so word-order reversal and character
++    /// reversal cannot be confused for each other.
++    const GROUPED_HEX: &[u8] = b"83B57 B2C34 34697 F61A4 7F";
++
++    fn grouped_hex_axes(pres: Vec<Pre>) -> Axes {
++        let compact: Vec<u8> = GROUPED_HEX
++            .iter()
++            .copied()
++            .filter(|c| !c.is_ascii_whitespace())
++            .collect();
++        Axes {
++            vspace: VariantSpace::derive(&compact, ra_core::Display::Hex, "hex-exact").unwrap(),
++            variant_masks: vec![0],
++            pres,
++            xfs: vec![Xf::Identity],
++            ..test_axes()
++        }
++    }
++
++    fn grouped_hex_ctx<'a>(axes: &'a Axes, plan: &'a Plan) -> Ctx<'a> {
++        Ctx {
++            plan,
++            axes,
++            text: GROUPED_HEX,
++            display: ra_core::Display::Hex,
++            oracle: ra_oracle::oracle("printable-0.75").unwrap(),
++            initial_decode: "hexdecode",
++        }
++    }
++
++    /// The headline regression: in the SWEEP path, `--pre reverse_words` and
++    /// `--pre identity` must stage DIFFERENT bytes for a whitespace-bearing display.
++    ///
++    /// Before the fix these were equal, and `reverse` was the only `pre` value that
++    /// did anything -- which is precisely how a three-value axis covered one point
++    /// while claiming three.
++    #[test]
++    fn sweep_pre_reverse_words_is_not_identity_on_a_grouped_display() {
++        let axes = grouped_hex_axes(vec![Pre::Identity, Pre::ReverseWords, Pre::Reverse]);
++        let plan = Plan::new(Tier::T1, &axes);
++        let ctx = grouped_hex_ctx(&axes, &plan);
++
++        let identity = ctx.stage(0, 0).canonical.expect("identity always decodes");
++        let words = ctx.stage(0, 1).canonical.expect("reverse_words decodes");
++        let chars = ctx.stage(0, 2).canonical.expect("reverse decodes");
++
++        assert_ne!(
++            words, identity,
++            "`reverse_words` staged the same bytes as `identity`: the sweep is feeding \
++             `--pre` whitespace-stripped text again, so the axis is a no-op"
++        );
++        assert_ne!(
++            words, chars,
++            "`reverse_words` must also differ from full character reversal -- they are \
++             two distinct tools, not aliases"
++        );
++        assert_ne!(chars, identity);
++    }
++
++    /// ...and it must be word-order reversal specifically: last group first, each
++    /// group's interior intact. Asserted on the staged TEXT rather than the decoded
++    /// bytes, because the groups are what the property is about.
++    #[test]
++    fn sweep_pre_reverse_words_reverses_group_order_not_group_interiors() {
++        let axes = grouped_hex_axes(vec![Pre::ReverseWords]);
++        let mut text = Vec::new();
++        axes.vspace
++            .apply_preserving_whitespace(0, GROUPED_HEX, &mut text);
++        let staged = Pre::ReverseWords.apply(&text).expect("reverse_words never rejects");
++
++        assert_eq!(
++            staged,
++            b"7F F61A4 34697 B2C34 83B57".to_vec(),
++            "the groups must appear in reverse order with their interiors unchanged"
++        );
++
++        // The interiors really are intact, stated independently of the literal above
++        // so that a future re-grouping of the fixture cannot make this vacuous.
++        let input_groups: Vec<&[u8]> = GROUPED_HEX.split(|c| *c == b' ').collect();
++        let staged_groups: Vec<&[u8]> = staged.split(|c| *c == b' ').collect();
++        let reversed: Vec<&[u8]> = input_groups.iter().rev().copied().collect();
++        assert_eq!(staged_groups, reversed);
++
++        // And it is NOT character reversal, which would turn `1A47F` into `F74A1`.
++        let chars = Pre::Reverse.apply(&text).expect("reverse never rejects");
++        assert_ne!(staged, chars);
++        assert!(
++            chars.starts_with(b"F7"),
++            "character reversal reverses group interiors too; got {:?}",
++            String::from_utf8_lossy(&chars[..5.min(chars.len())])
++        );
++    }
++
++    /// The stage must hand `--pre` the transcription VERBATIM. Pinned directly,
++    /// because every property above is downstream of this one and a future change
++    /// that re-introduced stripping "somewhere else" would be caught here first.
++    #[test]
++    fn sweep_stages_the_raw_text_with_its_whitespace_intact() {
++        let axes = grouped_hex_axes(vec![Pre::Identity]);
++        let mut text = Vec::new();
++        axes.vspace
++            .apply_preserving_whitespace(0, GROUPED_HEX, &mut text);
++        assert_eq!(text, GROUPED_HEX.to_vec());
++        assert!(
++            text.contains(&b' '),
++            "the staged text must still carry the group separators that `--pre` reads"
++        );
++    }
++
++    /// `stripws + reverse_words` degenerating to `identity` is CORRECT, not a
++    /// regression: after an explicit `stripws` there genuinely is one word left. The
++    /// distinction this test draws is the whole point of the fix -- degeneracy must
++    /// follow from what the analyst asked for, never from the harness.
++    #[test]
++    fn sweep_pre_stripws_then_reverse_words_correctly_degenerates_to_identity() {
++        let axes = grouped_hex_axes(vec![
++            Pre::Identity,
++            Pre::Composite(vec![Pre::StripWs, Pre::ReverseWords]),
++            Pre::ReverseWords,
++        ]);
++        let plan = Plan::new(Tier::T1, &axes);
++        let ctx = grouped_hex_ctx(&axes, &plan);
++
++        let identity = ctx.stage(0, 0).canonical.unwrap();
++        let stripped = ctx.stage(0, 1).canonical.unwrap();
++        let words = ctx.stage(0, 2).canonical.unwrap();
++
++        assert_eq!(
++            stripped, identity,
++            "after an explicit stripws there is one word, so reversing the word order \
++             is genuinely the identity -- this collision is legitimate"
++        );
++        assert_ne!(
++            words, identity,
++            "...whereas WITHOUT the explicit stripws it must not be, which is the bug"
++        );
++    }
++
++    // -----------------------------------------------------------------------
++    // The degeneracy guard
++    // -----------------------------------------------------------------------
++
++    /// The guard must FIRE on a genuine collision, naming both colliding values and
++    /// keeping both labels rather than deduplicating one away.
++    #[test]
++    fn degeneracy_guard_fires_when_two_pre_values_stage_identical_bytes() {
++        let axes = grouped_hex_axes(vec![
++            Pre::Identity,
++            Pre::Composite(vec![Pre::StripWs, Pre::ReverseWords]),
++        ]);
++        let staged = pre_staged_inputs(&axes, GROUPED_HEX, ra_core::Display::Hex);
++        let warnings = degeneracy_warnings("pre", "fixture", &staged);
++
++        assert_eq!(warnings.len(), 1, "one collision group, one warning: {warnings:?}");
++        let w = &warnings[0];
++        assert!(w.starts_with("WARNING: --pre values "), "got {w:?}");
++        assert!(w.contains("\"identity\""), "the first colliding label survives: {w:?}");
++        assert!(
++            w.contains("\"stripws|reverse_words\""),
++            "the second colliding label survives -- retained, not deduplicated: {w:?}"
++        );
++
++        // Two tuples, one distinct input: the two numbers must not be collapsed, since
++        // their difference IS the finding.
++        assert_eq!(staged_input_census(&staged), (2, 1));
++    }
++
++    /// ...and must stay SILENT when the axis genuinely varies the input, or it would
++    /// be noise a reader learns to ignore.
++    #[test]
++    fn degeneracy_guard_is_silent_when_every_pre_value_stages_distinct_bytes() {
++        let axes = grouped_hex_axes(vec![Pre::Identity, Pre::Reverse, Pre::ReverseWords]);
++        let staged = pre_staged_inputs(&axes, GROUPED_HEX, ra_core::Display::Hex);
++        assert_eq!(
++            degeneracy_warnings("pre", "fixture", &staged),
++            Vec::<String>::new(),
++            "three genuinely distinct pipelines must not be reported as degenerate"
++        );
++        assert_eq!(staged_input_census(&staged), (3, 3));
++    }
++
++    /// A value that REJECTED and a value that produced EMPTY bytes are different
++    /// events and must not collapse into one record -- the first never ran, the
++    /// second ran and destroyed the input.
++    #[test]
++    fn staged_input_distinguishes_rejection_from_an_empty_accepted_result() {
++        // `bwt` rejects text with no sentinel; `stripws` on an all-whitespace input
++        // accepts and yields nothing.
++        let axes = grouped_hex_axes(vec![Pre::Bwt, Pre::StripWs]);
++        let staged = pre_staged_inputs(&axes, b"   ", ra_core::Display::Hex);
++
++        assert_eq!(staged[0].status, StagedStatus::Rejected);
++        assert!(staged[0].text.is_none(), "a rejected value produced no bytes to hash");
++
++        assert_eq!(
++            staged[1].status,
++            StagedStatus::Accepted,
++            "stripws ran and produced empty bytes -- an empty hex string decodes to \
++             empty bytes, so this is an accepted result, not a failure"
++        );
++        let rec = staged[1].text.as_ref().expect("accepted values record their bytes");
++        assert_eq!(rec.bytes, 0, "an empty ACCEPTED result is still a recorded result");
++        assert_eq!(
++            rec.sha256,
++            hex::encode(ra_merkle::h(b"")),
++            "and it is hashed as the empty string, not left null like a rejection"
++        );
++        assert_eq!(
++            staged[1].canonical.as_ref().map(|r| r.bytes),
++            Some(0),
++            "the empty result reaches the cipher as zero bytes, which is a fact worth \
++             recording -- not the absence of a record that a rejection produces"
++        );
++
++        // The census counts the ONE value that produced bytes. The rejection is not
++        // reported as colliding with it: "produced nothing" is not "produced the same".
++        assert_eq!(staged_input_census(&staged), (2, 1));
++        assert!(degeneracy_warnings("pre", "fixture", &staged).is_empty());
++    }
++
+     // -----------------------------------------------------------------------
+     // The commitment must be regenerable from the claim
+     // -----------------------------------------------------------------------
+@@ -4275,7 +4934,7 @@ mod tests {
+         let ctx = Ctx {
+             plan: &plan,
+             axes,
+-            compact: TG4,
++            text: TG4,
+             display: ra_core::Display::Base64,
+             oracle: ra_oracle::oracle("printable-0.75").unwrap(),
+             initial_decode: "b64decode",
+@@ -4529,7 +5188,7 @@ mod tests {
+         let ctx = Ctx {
+             plan: &plan,
+             axes: &axes,
+-            compact: &compact,
++            text: &compact,
+             display: ra_core::Display::Base64,
+             oracle: ra_oracle::oracle("printable-0.75").unwrap(),
+             initial_decode: "b64decode",
+@@ -4566,7 +5225,7 @@ mod tests {
+         let ctx = Ctx {
+             plan: &plan,
+             axes: &axes,
+-            compact: &compact,
++            text: &compact,
+             display: ra_core::Display::Base64,
+             oracle: ra_oracle::oracle("printable-0.75").unwrap(),
+             initial_decode: "b64decode",
+@@ -4621,7 +5280,7 @@ mod tests {
+         let ctx = Ctx {
+             plan: &plan,
+             axes: &axes,
+-            compact: ct,
++            text: ct,
+             display: ra_core::Display::Base64,
+             oracle: ra_oracle::oracle("printable-0.75").unwrap(),
+             initial_decode: "b64decode",
+@@ -5183,7 +5842,7 @@ mod tests {
+         let ctx = Ctx {
+             plan: &plan,
+             axes: &axes,
+-            compact: &display_text,
++            text: &display_text,
+             display: ra_core::Display::Base64,
+             // `printable-0.75` cannot discriminate here: the un-decoded Baconian
+             // `A`/`B` text is itself 100% printable ASCII letters, so it would
+diff --git a/crates/ra-cli/src/variants.rs b/crates/ra-cli/src/variants.rs
+index 6afe65f..1aa528a 100644
+--- a/crates/ra-cli/src/variants.rs
++++ b/crates/ra-cli/src/variants.rs
+@@ -456,6 +456,10 @@ impl VariantSpace {
+     }
+ 
+     /// Write the transcription named by `mask` into `out`.
++    ///
++    /// `compact` must be the display text with whitespace removed, because
++    /// [`Self::positions`] indexes that text. To splice a mask into text that still
++    /// carries its whitespace, use [`Self::apply_preserving_whitespace`].
+     pub fn apply(&self, mask: u32, compact: &[u8], out: &mut Vec<u8>) {
+         out.clear();
+         out.extend_from_slice(compact);
+@@ -469,6 +473,57 @@ impl VariantSpace {
+         }
+     }
+ 
++    /// The glyph `mask` selects at ambiguous position `i`.
++    fn glyph(&self, mask: u32, i: usize) -> u8 {
++        if mask >> i & 1 == 1 {
++            self.alternative[i]
++        } else {
++            self.recorded[i]
++        }
++    }
++
++    /// As [`Self::apply`], but splices `mask` into `raw` — the display text with its
++    /// **whitespace intact** — and writes whitespace-preserving output.
++    ///
++    /// [`Self::positions`] are offsets into the *compacted* text, so they cannot index
++    /// `raw` directly: position `k` means "the `k`-th non-whitespace character", and in
++    /// a whitespace-bearing transcription that sits at a larger raw offset. This walks
++    /// `raw`, counting only non-whitespace characters, and substitutes at the counted
++    /// position — so a mask names exactly the same *reading* whether it is applied to
++    /// the compacted or the raw text.
++    ///
++    /// The invariant that ties the two together, and the reason this is not simply a
++    /// second implementation that could drift: stripping whitespace from this
++    /// function's output must give exactly [`Self::apply`]'s output for the same mask.
++    /// [`tests::whitespace_preserving_apply_agrees_with_compact_apply`] asserts it over
++    /// every mask of a whitespace-bearing fixture.
++    pub fn apply_preserving_whitespace(&self, mask: u32, raw: &[u8], out: &mut Vec<u8>) {
++        out.clear();
++        out.extend_from_slice(raw);
++        if self.positions.is_empty() {
++            return;
++        }
++        // `positions` is ascending, so one forward walk with a cursor into it is
++        // enough; no per-position search, and no allocation.
++        let mut next = 0usize;
++        let mut seen = 0usize;
++        for byte in out.iter_mut() {
++            if byte.is_ascii_whitespace() {
++                continue;
++            }
++            if next < self.positions.len() && self.positions[next] == seen {
++                *byte = self.glyph(mask, next);
++                next += 1;
++            }
++            seen += 1;
++        }
++        debug_assert_eq!(
++            next,
++            self.positions.len(),
++            "every ambiguous position must have been reached: the raw text has fewer              non-whitespace characters than the compacted text it was derived from"
++        );
++    }
++
+     /// Human-readable statement of what `mask` changes, for a hit report: an auditor
+     /// has to be able to reconstruct the exact bytes from the claim alone.
+     pub fn describe(&self, mask: u32) -> String {
+@@ -809,4 +864,140 @@ mod tests {
+             assert_eq!(partner(b), Some(a));
+         }
+     }
++
++    // -----------------------------------------------------------------------
++    // Whitespace-preserving variant application
++    //
++    // `--pre` is documented to run on the RAW ciphertext text, but the sweep used to
++    // hand it the whitespace-stripped text, so `reverse_words` saw a single token and
++    // silently became the identity. Fixing that means the variant masks -- whose
++    // positions index the COMPACTED text -- must now be spliced into text that still
++    // has its whitespace, and an off-by-one there would corrupt every reading while
++    // still "working". These pin the exact property that makes the fix safe.
++    // -----------------------------------------------------------------------
++
++    /// A deliberately tiny, spaced fixture with exactly TWO ambiguous glyphs, so all
++    /// four masks are enumerable and an index error is visible by eye.
++    ///
++    /// `I` sits at compact offset 1 and `l` at compact offset 5; in the raw text they
++    /// are at byte offsets 1 and 6, because of the space at offset 4. Any
++    /// implementation that confuses the two coordinate systems gets a different
++    /// answer here.
++    const SPACED: &[u8] = b"aIbc dlef";
++
++    fn spaced_space() -> VariantSpace {
++        let compact: Vec<u8> = SPACED
++            .iter()
++            .copied()
++            .filter(|c| !c.is_ascii_whitespace())
++            .collect();
++        VariantSpace::derive(&compact, Display::Base64, "b64-exact").unwrap()
++    }
++
++    /// The fixture is only worth anything if it really has two open positions at the
++    /// offsets the other tests reason about; assert that rather than assume it.
++    #[test]
++    fn spaced_fixture_has_exactly_two_ambiguous_positions() {
++        let space = spaced_space();
++        assert_eq!(space.positions(), &[1, 5], "compacted offsets of `I` and `l`");
++        assert_eq!(space.count(), 4, "two open positions is four readings");
++        assert_eq!(SPACED[1], b'I');
++        assert_eq!(SPACED[6], b'l', "`l` is at RAW offset 6, not compact offset 5");
++    }
++
++    /// (a) The substitution still picks the same glyphs.
++    ///
++    /// Compacting the whitespace-preserving output must give exactly what the
++    /// compact-indexed [`VariantSpace::apply`] produces for the same mask. This is the
++    /// invariant that makes a mask mean one reading regardless of which text it was
++    /// applied to, and it is what an index shift would break.
++    #[test]
++    fn whitespace_preserving_apply_agrees_with_compact_apply() {
++        let space = spaced_space();
++        let compact: Vec<u8> = SPACED
++            .iter()
++            .copied()
++            .filter(|c| !c.is_ascii_whitespace())
++            .collect();
++        for mask in 0..4u32 {
++            let mut want = Vec::new();
++            space.apply(mask, &compact, &mut want);
++
++            let mut raw_out = Vec::new();
++            space.apply_preserving_whitespace(mask, SPACED, &mut raw_out);
++            let got: Vec<u8> = raw_out
++                .iter()
++                .copied()
++                .filter(|c| !c.is_ascii_whitespace())
++                .collect();
++
++            assert_eq!(
++                got, want,
++                "mask {mask:#04x}: stripping the whitespace-preserving output must \
++                 reproduce the compact application exactly"
++            );
++        }
++    }
++
++    /// (b) The whitespace itself is untouched.
++    ///
++    /// Every whitespace byte of the input must still be present at its ORIGINAL
++    /// offset. Dropping one would re-break `reverse_words` (fewer words), and moving
++    /// one would change the word boundaries `--pre` reads -- both silently, since the
++    /// glyphs would still be right.
++    #[test]
++    fn whitespace_preserving_apply_moves_no_whitespace() {
++        let space = spaced_space();
++        for mask in 0..4u32 {
++            let mut out = Vec::new();
++            space.apply_preserving_whitespace(mask, SPACED, &mut out);
++            assert_eq!(out.len(), SPACED.len(), "mask {mask:#04x}: length is preserved");
++            for (i, &c) in SPACED.iter().enumerate() {
++                if c.is_ascii_whitespace() {
++                    assert_eq!(
++                        out[i], c,
++                        "mask {mask:#04x}: the whitespace byte at offset {i} moved or \
++                         was overwritten"
++                    );
++                }
++            }
++        }
++    }
++
++    /// The masks must actually reach the RAW offsets, not the compact ones. This is
++    /// the off-by-one written out explicitly: mask `0b10` flips the second ambiguous
++    /// glyph, which lives at raw offset 6; a naive implementation would write at raw
++    /// offset 5 and corrupt the space instead.
++    #[test]
++    fn whitespace_preserving_apply_substitutes_at_the_raw_offset() {
++        let space = spaced_space();
++        let mut out = Vec::new();
++        space.apply_preserving_whitespace(0b10, SPACED, &mut out);
++        assert_eq!(out, b"aIbc dIef".to_vec(), "`l` at raw offset 6 becomes `I`");
++        assert_eq!(out[4], b' ', "the space at raw offset 4 is untouched");
++
++        space.apply_preserving_whitespace(0b01, SPACED, &mut out);
++        assert_eq!(out, b"albc dlef".to_vec(), "`I` at raw offset 1 becomes `l`");
++
++        space.apply_preserving_whitespace(0b11, SPACED, &mut out);
++        assert_eq!(out, b"albc dIef".to_vec(), "both flip independently");
++
++        space.apply_preserving_whitespace(0b00, SPACED, &mut out);
++        assert_eq!(out, SPACED.to_vec(), "the recorded reading is the input verbatim");
++    }
++
++    /// An unspaced transcription -- TG4's shape -- must be unaffected by the
++    /// whitespace-preserving path, since there is no whitespace to preserve. This is
++    /// the property that lets the TG4 merkle root stay byte-identical across the fix.
++    #[test]
++    fn whitespace_preserving_apply_is_identical_to_compact_apply_when_unspaced() {
++        let space = tg4();
++        for mask in [0u32, 1, 0x2c, 0x55, 0x7f] {
++            let mut want = Vec::new();
++            space.apply(mask, TG4, &mut want);
++            let mut got = Vec::new();
++            space.apply_preserving_whitespace(mask, TG4, &mut got);
++            assert_eq!(got, want, "mask {mask:#04x} on an unspaced transcription");
++        }
++    }
+ }
