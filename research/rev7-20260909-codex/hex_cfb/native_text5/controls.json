@@ -1,0 +1,686 @@
+{
+  "artifact_hashes": {
+    "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/hex_cfb/prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b",
+    "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/sources/rev9_source/controls.json": "8c21ea6e275cf5989616ea9d77a19d910e55431626a83339641421ca59947f10",
+    "endpoint5.py": "64516c9730f7d4381d166888b19eda612873e9edee3a2f02f8a1091e50d2529e",
+    "native_text5": "3b84a08161e1dde80ad5b12613e7cd6e6a0905411e4f7e9098cd5f55792fbd0d",
+    "native_text5.cpp": "81bd9902f3f5fb0585214c2c93117523426cdc61edb524334d64412d4a5d724f",
+    "source/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+    "source/loki97.c": "4e18d184ec55776edab065cee35ac44a9269b4160d7d35ad4ea277da55ae3308",
+    "source/rc2.c": "37c9398507cea1685255da9550f5a3a55b529b66e1bbc9a35e1996fecae7dc19",
+    "source/rc2.h": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_build/libdefs.h": "556ec4fcebae614cd90d05a2fead50d9355ff39f65b44c8f4044c7f209074c6e",
+    "source_build/libloki97.so": "297b73e3926d82cc52c1023c9bba53a3d1102470f3633ea2c8ed6f243347c175",
+    "source_build/librc2.so": "83dd446b5453e47252e8803d1143b4d235d39b1cba6efe557a94b273d318b2d6",
+    "source_build/loki97.o": "2c417e8b2b6f70e2f175d58dbb8b011be234b2fbc4c8c838960817fec13ddc06",
+    "source_build/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "source_build/rc2.o": "022a0517d79e7dfc9566ca3cf04462a7ffb62aaf9f2d4d0d8edb2ca0a2803b4e"
+  },
+  "assertions": {
+    "all_byte_cfb8_native_python_roundtrip": true,
+    "all_passed": true,
+    "caps_not_completeness_claims": true,
+    "full16_prefix_stats_solutions_exact": true,
+    "rev9_endpoint_boundary": true,
+    "seeded_all24_exact": true,
+    "terminal_rejections": true
+  },
+  "build": {
+    "commands": [
+      "clang -O2 -Isource_build -Isource -c source/rc2.c -o source_build/rc2.o",
+      "clang -O2 -Isource_build -Isource -c source/loki97.c -o source_build/loki97.o",
+      "clang -shared -fPIC -O2 -Isource_build -Isource source/rc2.c -o source_build/librc2.so",
+      "clang -shared -fPIC -O2 -Isource_build -Isource source/loki97.c -o source_build/libloki97.so",
+      "clang++ -std=c++17 -O3 -Wno-deprecated-declarations native_text5.cpp source_build/rc2.o source_build/loki97.o -o native_text5 -I/opt/homebrew/Cellar/openssl@3/3.6.3/include -L/opt/homebrew/Cellar/openssl@3/3.6.3/lib -lcrypto -Wl,-rpath,/opt/homebrew/Cellar/openssl@3/3.6.3/lib"
+    ],
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "openssl": "3.6.3",
+    "platform": "macOS-26.4-arm64-arm-64bit",
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "endpoint": {
+    "ascii": "TAB LF CR and 32..126",
+    "terminal_state": 0,
+    "utf8": [
+      "e28093",
+      "e28094",
+      "e28098",
+      "e28099",
+      "e280a6"
+    ]
+  },
+  "full16_capped_exact_prefix": [
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12866124438720,
+      "cipher": "aes128",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0167125,
+      "node_limit": 250000,
+      "python_plus_native_wall_seconds": 0.9833749169999999,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 23,
+        "nodes": 250000,
+        "rejected_completion_weight": 12866124438720,
+        "rejected_plaintext": 403270,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12872046687558,
+      "cipher": "aes128",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0646919,
+      "node_limit": 1000000,
+      "python_plus_native_wall_seconds": 3.809080416,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 23,
+        "nodes": 1000000,
+        "rejected_completion_weight": 12872046687558,
+        "rejected_plaintext": 1615844,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12818640481770,
+      "cipher": "blowfish",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0184996,
+      "node_limit": 250000,
+      "python_plus_native_wall_seconds": 0.9537743750000001,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 26,
+        "nodes": 250000,
+        "rejected_completion_weight": 12818640481770,
+        "rejected_plaintext": 402423,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12819153588455,
+      "cipher": "blowfish",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0747351,
+      "node_limit": 1000000,
+      "python_plus_native_wall_seconds": 3.8235330419999993,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 26,
+        "nodes": 1000000,
+        "rejected_completion_weight": 12819153588455,
+        "rejected_plaintext": 1611894,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12966960419188,
+      "cipher": "des",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0253009,
+      "node_limit": 250000,
+      "python_plus_native_wall_seconds": 0.9790370829999997,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 26,
+        "nodes": 250000,
+        "rejected_completion_weight": 12966960419188,
+        "rejected_plaintext": 403975,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 13055540474160,
+      "cipher": "des",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.10133,
+      "node_limit": 1000000,
+      "python_plus_native_wall_seconds": 3.9463694580000013,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 29,
+        "nodes": 1000000,
+        "rejected_completion_weight": 13055540474160,
+        "rejected_plaintext": 1611214,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 13138088816160,
+      "cipher": "blowfish_compat",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0191916,
+      "node_limit": 250000,
+      "python_plus_native_wall_seconds": 1.024633999999999,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 26,
+        "nodes": 250000,
+        "rejected_completion_weight": 13138088816160,
+        "rejected_plaintext": 402337,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 14463081631776,
+      "cipher": "blowfish_compat",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0751833,
+      "node_limit": 1000000,
+      "python_plus_native_wall_seconds": 4.058762124999998,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 29,
+        "nodes": 1000000,
+        "rejected_completion_weight": 14463081631776,
+        "rejected_plaintext": 1610410,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12951562697148,
+      "cipher": "rc2",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0305358,
+      "node_limit": 250000,
+      "python_plus_native_wall_seconds": 0.8769088339999982,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 23,
+        "nodes": 250000,
+        "rejected_completion_weight": 12951562697148,
+        "rejected_plaintext": 403457,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12952037584628,
+      "cipher": "rc2",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.127053,
+      "node_limit": 1000000,
+      "python_plus_native_wall_seconds": 3.579510457999998,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 23,
+        "nodes": 1000000,
+        "rejected_completion_weight": 12952037584628,
+        "rejected_plaintext": 1614243,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12973707827440,
+      "cipher": "loki97",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0652412,
+      "node_limit": 250000,
+      "python_plus_native_wall_seconds": 0.9541679579999993,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 29,
+        "nodes": 250000,
+        "rejected_completion_weight": 12973707827440,
+        "rejected_plaintext": 402453,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 13071351661200,
+      "cipher": "loki97",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.255949,
+      "node_limit": 1000000,
+      "python_plus_native_wall_seconds": 3.870752665999998,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 29,
+        "nodes": 1000000,
+        "rejected_completion_weight": 13071351661200,
+        "rejected_plaintext": 1608501,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    }
+  ],
+  "full_byte_cfb8": [
+    {
+      "block_size": 16,
+      "cipher": "aes128",
+      "ciphertext_hex": "681fa1e341f0deb0dcc5fed212ccb638812153a7d1e061ec1effe30ebc63c5c7472e6babb231c38689e05f7e84c9d3440e56aec8aacc546e678aa95f66097989136cbc23b76a07f49a36d643481fbacc2f2dd240c6c048eb968ef4b49be495bc5439d719cf40c991d10f2f9793b0a61d8ccaa43f912ea1989585e8bccd07f85fc916e1bd9e6868bdc80748e2bc2f667346243d0f1daf833f513b591a886bba52059a38b95391259eeef3fcf4dd808cc82e75abb3a9d065544e847ed33c8e7c0f00ea252d37536348977fce3f531ac636a9c2ed3ee91a5d2fbb90682682bd64b17b28e57817cc5ae04bbe932efb127e9db515733551f22fd8769b31a4436bfcd359f5e8d77f669d4608eb958e570afa08839365e1ec23429c5d40bd",
+      "ciphertext_sha256": "0be4aa493a48aee8f648b4fcf5ffbcbbe462833e9d4966efbf6adf8ff389becf",
+      "iv_hex": "30303030303030303030303030303030",
+      "key_convention": "Zombies+9NUL",
+      "native_equal_python": true,
+      "plaintext_sha256": "2502e3920c626a833b2d7557a7828ff47414363df620f107b8942ef21df9a9e1",
+      "roundtrip": true
+    },
+    {
+      "block_size": 8,
+      "cipher": "blowfish",
+      "ciphertext_hex": "46d25d40b0c76b07b529b048bbc2d03738e937078b33c48fc550ebe177a64a4525606b7212fea700b68563689e995f9fd07ce8033848623545d7dc816b891c6838c28572a88239d5c6625ddb28daa91fa14d3eb42383bc819aa1453cb371fb4923851d71ecab9ce278d2ca59c7781cc65a4776679867d5150af2bf6fabd5016c1b5e36ab12dd0459e70d171a790ce2d99b5f30a441b0eef136ad0265fe77c15da3ed091bf93350ee1a8d1d5f76fb410682e347f6ca3be94a7b96324719dc72ea12a461a491f7098e7a9318d44b78ac4e348f242b2f0fc92408c6b83647b65a3f8d894c2a1cb67c0c52090d2bf15fd6dcc57f4c0f145b0ac4330dd02098267bd7671073ce8a2d5c39e2287b9211bd9bc015dbf34b5f7f51d76428b1",
+      "ciphertext_sha256": "1847e3df10d5573f4302b373d6540548b7b20ba2b561f44b7c802da56698887d",
+      "iv_hex": "3030303030303030",
+      "key_convention": "raw7",
+      "native_equal_python": true,
+      "plaintext_sha256": "2502e3920c626a833b2d7557a7828ff47414363df620f107b8942ef21df9a9e1",
+      "roundtrip": true
+    },
+    {
+      "block_size": 8,
+      "cipher": "des",
+      "ciphertext_hex": "adb951f73645b74d845dc7ec5b616278590d13e77e8e1de000cd21b5d21e425880353379130bde1e9999517fd41455d29e9e887189fd60752cf0ca1c534ea5c27806f1dd77993689ead9612dc1f9547d42dec1c21fdefd4ed8b42b526139a2dcb7dfc7a67812639e55f1e8e596ab77d66d59b5a1124ff5ea5c7f19004c20eb4f9df98b089763d45cecc887d190cc8060440f534b90ff1ba12c036c581e6aa869f4aa924c7d6dd014cd3ef343fb840e82047cee785a55739d7d1e632f484cac3c148554c695b45d8e13ec4d456cd8938b93e13025b7ddbd41927b77eee54b7b461d5bb1b740edf9695a1b847b719c925aca8c3988a09287efe9939cdbe947881f240ab498893da991da1627284095ff956147d7098a2fd1adadb88a",
+      "ciphertext_sha256": "4a4ed19f800d17313a231dcfddde62e97ecaf96eba3795c052052546364e55fe",
+      "iv_hex": "3030303030303030",
+      "key_convention": "Zombies+NUL",
+      "native_equal_python": true,
+      "plaintext_sha256": "2502e3920c626a833b2d7557a7828ff47414363df620f107b8942ef21df9a9e1",
+      "roundtrip": true
+    },
+    {
+      "block_size": 8,
+      "cipher": "blowfish_compat",
+      "ciphertext_hex": "bad0b4999b7a7bb25b55cc325634a9f435de9149a902737ae51105119ce39de3969514273c4b1c440b19cb77d829bc06c98af414f0f093e352d9492b86ac2aff76f81f571a7562f28250c69f017be6ceadf0b5e1cb6dfd85f6271b4453daf68b6483c5f425661b8f0c7634286262ec4352150c9cc881f44dd32ba4ff126c742b975026ff1aa1c5d62f994cda0667b82b9f9fed59cd2ad849c4bc4cb5dda874ec4b91705b9872df728301f788118ba18937c2355e2adabc83e45dbf227d6afd5207e0a8977f061d4587b8461e13a7909adcdc924c8061277e59fdba4338f7aa38e3de7421898c1ba645c873389185929bc23aedcd074a71f4480b358b2fe30190da4d92d81c329657001ea9f7f396db71263d8919d7faf3c8af86a7",
+      "ciphertext_sha256": "09a3f201da76c952f24f3d98d03f922ba10efbeeb89fbe22702e9b1e13d38e78",
+      "iv_hex": "3030303030303030",
+      "key_convention": "raw7 word_reverse adapter",
+      "native_equal_python": true,
+      "plaintext_sha256": "2502e3920c626a833b2d7557a7828ff47414363df620f107b8942ef21df9a9e1",
+      "roundtrip": true
+    },
+    {
+      "block_size": 8,
+      "cipher": "rc2",
+      "ciphertext_hex": "ba70dca29d0283c24385265ba9e935e02933199eebde1c5b9f8fd2fc8a268325afd32aaa113ae93ee501000c20bb9ecd0863fbec64559ce78301927b9a5d050733854e61ca82b0bfcf3377c184d4c8e2a332907763fd915339057016e1f374f126c094ccb612fb13672b9de8e6f4e5f8d303f3cf408c4fbb3d52c7436795da9bac45ed1f0fe9b22f936853e58b222d7b2047ba6d8350be63a9431c2b2d1e346e7709d0872b7eb374809e3f9e71a27c7ab5edc3d294d76dc74992917c62a7312f446154ffe19bcfdedfd7f6a6356945ed4d8bbd9619bcf5592e706a97d8764e76110632f5c6b8ccef64e63dec3855b9935d9c3e504ec7ce57d3b66ba999239994d8febeb3961d223805b96edb0f825b6f3ec0553435b5cabdc710b4",
+      "ciphertext_sha256": "a818b858e2566e58d9fd003c75512742cf07cdc92aef5eeceb3f83935b5c904e",
+      "iv_hex": "3030303030303030",
+      "key_convention": "raw7 source",
+      "native_equal_python": true,
+      "plaintext_sha256": "2502e3920c626a833b2d7557a7828ff47414363df620f107b8942ef21df9a9e1",
+      "roundtrip": true
+    },
+    {
+      "block_size": 16,
+      "cipher": "loki97",
+      "ciphertext_hex": "592a9acc36fc3149dcc3877ad6eb697d5b9a9c78701ab2e0a64ec2b93d0c8365a10005383ada0d71436116e01133db3096b896fa5a130fd7be02dd3f2d54e0ae03a6eca9b25b12383c6bbbf40eee7dfbdf1e2c74895dedf9e81090fd0e782d864db1db90c3664cfa1e84e6837d716cc7cfbd3003d8b74f1a9fb44d27b43adeecf80b13edb2f0483165cdb053977a516d07a3cab80a98f78ec759a00c393d651ad54d329f968f0c7aceef8fd4faccb742fe8e5272a9e05613bd11b4355ea128353a64414d80f8bc29d961c8eac3958417aa2bd2d692185d164a8e9644cbad22819d15a068256caa65a168d26ceeb83154cbc77de2fd3c73b32192b09933003d3f9be7b1b1f0ba354124ac8f5eb8692c66236cf0c0957ab0d1a92639",
+      "ciphertext_sha256": "a1be4c651e8a76f5dce530a9ddc3a8bf649a8c427f462c04548928c3ae4b72ab",
+      "iv_hex": "30303030303030303030303030303030",
+      "key_convention": "selected16 in zeroed32 source backing",
+      "native_equal_python": true,
+      "plaintext_sha256": "2502e3920c626a833b2d7557a7828ff47414363df620f107b8942ef21df9a9e1",
+      "roundtrip": true
+    }
+  ],
+  "identity": "ASTRA",
+  "mixed_five_sequence_seeded_four_unknown": [
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "aes128",
+      "expected_completion_weight": 24,
+      "naive_exact_match": true,
+      "naive_permutations": 24,
+      "native_seconds": 1.7291e-05,
+      "node_limit": 100000,
+      "plant_recovered": true,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_hex": "4153434949096c696e650d0ae28093e28094e28098e28099e280a63b4153434949096c696e650d0ae28093e28094e28098e28099e280a63b4153434949096c696e650d0ae28093e28094e28098e28099e280a63b"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 84,
+        "nodes": 99,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 9,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "blowfish",
+      "expected_completion_weight": 24,
+      "naive_exact_match": true,
+      "naive_permutations": 24,
+      "native_seconds": 4.3833e-05,
+      "node_limit": 100000,
+      "plant_recovered": true,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_hex": "4153434949096c696e650d0ae28093e28094e28098e28099e280a63b4153434949096c696e650d0ae28093e28094e28098e28099e280a63b4153434949096c696e650d0ae28093e28094e28098e28099e280a63b"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 84,
+        "nodes": 92,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 10,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "des",
+      "expected_completion_weight": 24,
+      "naive_exact_match": true,
+      "naive_permutations": 24,
+      "native_seconds": 2.0125e-05,
+      "node_limit": 100000,
+      "plant_recovered": true,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_hex": "4153434949096c696e650d0ae28093e28094e28098e28099e280a63b4153434949096c696e650d0ae28093e28094e28098e28099e280a63b4153434949096c696e650d0ae28093e28094e28098e28099e280a63b"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 84,
+        "nodes": 90,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 8,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "blowfish_compat",
+      "expected_completion_weight": 24,
+      "naive_exact_match": true,
+      "naive_permutations": 24,
+      "native_seconds": 4.2583e-05,
+      "node_limit": 100000,
+      "plant_recovered": true,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_hex": "4153434949096c696e650d0ae28093e28094e28098e28099e280a63b4153434949096c696e650d0ae28093e28094e28098e28099e280a63b4153434949096c696e650d0ae28093e28094e28098e28099e280a63b"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 84,
+        "nodes": 89,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 10,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "rc2",
+      "expected_completion_weight": 24,
+      "naive_exact_match": true,
+      "naive_permutations": 24,
+      "native_seconds": 3.4791e-05,
+      "node_limit": 100000,
+      "plant_recovered": true,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_hex": "4153434949096c696e650d0ae28093e28094e28098e28099e280a63b4153434949096c696e650d0ae28093e28094e28098e28099e280a63b4153434949096c696e650d0ae28093e28094e28098e28099e280a63b"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 84,
+        "nodes": 94,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 10,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "loki97",
+      "expected_completion_weight": 24,
+      "naive_exact_match": true,
+      "naive_permutations": 24,
+      "native_seconds": 0.000184208,
+      "node_limit": 100000,
+      "plant_recovered": true,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_hex": "4153434949096c696e650d0ae28093e28094e28098e28099e280a63b4153434949096c696e650d0ae28093e28094e28098e28099e280a63b4153434949096c696e650d0ae28093e28094e28098e28099e280a63b"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 84,
+        "nodes": 92,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 10,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "rev7_file_read": false,
+  "rev9_endpoint_fixture": {
+    "rev9_new5_accepted": true,
+    "rev9_old4_rejected": true,
+    "rev9_plaintext_sha256": "10d049e3b2c0d9840e52e746bc45a9ce0590ec3939a16ccdc258fffa72d1b197",
+    "truncated_e280_rejected": true,
+    "truncated_e2_rejected": true,
+    "wrong_third_byte_rejected": true
+  },
+  "scope": "Unified six-backend ASCII plus five UTF-8 sequence endpoint controls only",
+  "source": {
+    "commit": "3bd338e2f808e985f5b229a7642d48c26615993f",
+    "copied_unmodified": [
+      "source/rc2.c",
+      "source/rc2.h",
+      "source/loki97.c",
+      "source/COPYING.LIB"
+    ],
+    "repository": "https://github.com/Distrotech/libmcrypt"
+  },
+  "target_evaluated": false
+}

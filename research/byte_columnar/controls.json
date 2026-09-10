@@ -1,0 +1,522 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "large_plants_unique_and_exhaustive": true,
+    "no_rev7_input_access": true,
+    "random_controls_exhaustive_zero_survivors": true,
+    "small_naive_reference_native_exact": true
+  },
+  "backend": {
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "cpp_standard": "C++17",
+    "openssl_version": "3.6.3",
+    "optimization": "-O3",
+    "primitive": "OpenSSL AES_set_encrypt_key/AES_encrypt"
+  },
+  "cap_semantics_control": {
+    "certificate_weight": 6227020800,
+    "expected_weight": 87178291200,
+    "lower_bound_only": true,
+    "node_limit": 1,
+    "stats": {
+      "accepted_complete": 0,
+      "capped": true,
+      "maximum_depth": 0,
+      "nodes": 1,
+      "rejected_full": 0,
+      "rejected_prefix": 1,
+      "rejected_unterminated": 0,
+      "rejected_weight": 6227020800,
+      "terminal_weight": 0
+    },
+    "variant": "A",
+    "width": 14
+  },
+  "definitions": {
+    "certificate": "rejected assignment charges factorial(unassigned); accepted complete candidate charges one; capped certificate weight is a lower bound only",
+    "node": "accepted-prefix DFS entry including root and complete entries",
+    "order": "order[k] is the natural column emitted at observed rank k, matching the cited FABLE implementation",
+    "variant_A": "pre-transposition bytes row-major; observed bytes are contiguous column chunks in order",
+    "variant_B": "pre-transposition bytes are contiguous natural-column chunks; observed bytes are row-major with columns visited in order"
+  },
+  "deterministic_random_546_byte_control": {
+    "observed_sha256": "9bb1f07c67949ff03e9570a0f198729998b4a44b8118861847f29f58c5bac420",
+    "rows": [
+      {
+        "certificate_weight": 6227020800,
+        "elapsed_seconds": 0.0955355,
+        "expected_weight": 6227020800,
+        "solution_count": 0,
+        "stats": {
+          "accepted_complete": 0,
+          "capped": false,
+          "maximum_depth": 12,
+          "nodes": 449236,
+          "rejected_full": 35711,
+          "rejected_prefix": 816675,
+          "rejected_unterminated": 0,
+          "rejected_weight": 6227020800,
+          "terminal_weight": 0
+        },
+        "variant": "A",
+        "width": 13
+      },
+      {
+        "certificate_weight": 6227020800,
+        "elapsed_seconds": 1.325e-05,
+        "expected_weight": 6227020800,
+        "solution_count": 0,
+        "stats": {
+          "accepted_complete": 0,
+          "capped": false,
+          "maximum_depth": 0,
+          "nodes": 1,
+          "rejected_full": 0,
+          "rejected_prefix": 13,
+          "rejected_unterminated": 0,
+          "rejected_weight": 6227020800,
+          "terminal_weight": 0
+        },
+        "variant": "B",
+        "width": 13
+      },
+      {
+        "certificate_weight": 87178291200,
+        "elapsed_seconds": 0.448865,
+        "expected_weight": 87178291200,
+        "solution_count": 0,
+        "stats": {
+          "accepted_complete": 0,
+          "capped": false,
+          "maximum_depth": 13,
+          "nodes": 2096165,
+          "rejected_full": 165415,
+          "rejected_prefix": 3814909,
+          "rejected_unterminated": 0,
+          "rejected_weight": 87178291200,
+          "terminal_weight": 0
+        },
+        "variant": "A",
+        "width": 14
+      },
+      {
+        "certificate_weight": 87178291200,
+        "elapsed_seconds": 1.2083e-05,
+        "expected_weight": 87178291200,
+        "solution_count": 0,
+        "stats": {
+          "accepted_complete": 0,
+          "capped": false,
+          "maximum_depth": 0,
+          "nodes": 1,
+          "rejected_full": 0,
+          "rejected_prefix": 14,
+          "rejected_unterminated": 0,
+          "rejected_weight": 87178291200,
+          "terminal_weight": 0
+        },
+        "variant": "B",
+        "width": 14
+      }
+    ],
+    "seed": 20260910
+  },
+  "endpoint": {
+    "ascii": [
+      9,
+      10,
+      13,
+      "32..126"
+    ],
+    "strict_terminal_state_zero": true,
+    "utf8_sequences": [
+      "e28093",
+      "e28094",
+      "e28098",
+      "e28099",
+      "e280a6"
+    ]
+  },
+  "fable_fixed_inverse_fixture": {
+    "A": {
+      "expected_inverse_hex": "040800050901060a02070b03",
+      "matched": true
+    },
+    "B": {
+      "expected_inverse_hex": "0104070a0205080b00030609",
+      "matched": true
+    }
+  },
+  "identity": "ASTRA",
+  "rev7_file_read": false,
+  "rev9_endpoint_control": {
+    "ellipsis_byte_offset": 134,
+    "five_sequence_fsa_accepts": true,
+    "old_four_sequence_fsa_accepts": false,
+    "plaintext_sha256": "10d049e3b2c0d9840e52e746bc45a9ce0590ec3939a16ccdc258fffa72d1b197",
+    "source_control_sha256": "8c21ea6e275cf5989616ea9d77a19d910e55431626a83339641421ca59947f10",
+    "truncated_e280_rejected": true,
+    "truncated_e2_rejected": true
+  },
+  "scope": "Synthetic equal-column byte transposition controls only; AES-128 CFB8, key Zombies NUL-padded to 16, ASCII-zero IV, widths 13/14, exact five-punctuation UTF-8 FSA.",
+  "small_width_3_to_6_exact_comparisons": [
+    {
+      "naive_reference_native_sets_equal": true,
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "roundtrip_inverse": true,
+      "solution_count": 1,
+      "stats": {
+        "accepted_complete": 1,
+        "capped": false,
+        "maximum_depth": 3,
+        "nodes": 6,
+        "rejected_full": 0,
+        "rejected_prefix": 4,
+        "rejected_unterminated": 0,
+        "rejected_weight": 5,
+        "terminal_weight": 1
+      },
+      "variant": "A",
+      "width": 3
+    },
+    {
+      "naive_reference_native_sets_equal": true,
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "roundtrip_inverse": true,
+      "solution_count": 1,
+      "stats": {
+        "accepted_complete": 1,
+        "capped": false,
+        "maximum_depth": 3,
+        "nodes": 4,
+        "rejected_full": 0,
+        "rejected_prefix": 3,
+        "rejected_unterminated": 0,
+        "rejected_weight": 5,
+        "terminal_weight": 1
+      },
+      "variant": "B",
+      "width": 3
+    },
+    {
+      "naive_reference_native_sets_equal": true,
+      "order": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "roundtrip_inverse": true,
+      "solution_count": 1,
+      "stats": {
+        "accepted_complete": 1,
+        "capped": false,
+        "maximum_depth": 4,
+        "nodes": 11,
+        "rejected_full": 1,
+        "rejected_prefix": 13,
+        "rejected_unterminated": 0,
+        "rejected_weight": 23,
+        "terminal_weight": 1
+      },
+      "variant": "A",
+      "width": 4
+    },
+    {
+      "naive_reference_native_sets_equal": true,
+      "order": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "roundtrip_inverse": true,
+      "solution_count": 1,
+      "stats": {
+        "accepted_complete": 1,
+        "capped": false,
+        "maximum_depth": 4,
+        "nodes": 5,
+        "rejected_full": 0,
+        "rejected_prefix": 6,
+        "rejected_unterminated": 0,
+        "rejected_weight": 23,
+        "terminal_weight": 1
+      },
+      "variant": "B",
+      "width": 4
+    },
+    {
+      "naive_reference_native_sets_equal": true,
+      "order": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
+      "roundtrip_inverse": true,
+      "solution_count": 1,
+      "stats": {
+        "accepted_complete": 1,
+        "capped": false,
+        "maximum_depth": 5,
+        "nodes": 21,
+        "rejected_full": 3,
+        "rejected_prefix": 31,
+        "rejected_unterminated": 0,
+        "rejected_weight": 119,
+        "terminal_weight": 1
+      },
+      "variant": "A",
+      "width": 5
+    },
+    {
+      "naive_reference_native_sets_equal": true,
+      "order": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
+      "roundtrip_inverse": true,
+      "solution_count": 1,
+      "stats": {
+        "accepted_complete": 1,
+        "capped": false,
+        "maximum_depth": 5,
+        "nodes": 6,
+        "rejected_full": 0,
+        "rejected_prefix": 10,
+        "rejected_unterminated": 0,
+        "rejected_weight": 119,
+        "terminal_weight": 1
+      },
+      "variant": "B",
+      "width": 5
+    },
+    {
+      "naive_reference_native_sets_equal": true,
+      "order": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        1
+      ],
+      "roundtrip_inverse": true,
+      "solution_count": 1,
+      "stats": {
+        "accepted_complete": 1,
+        "capped": false,
+        "maximum_depth": 6,
+        "nodes": 35,
+        "rejected_full": 7,
+        "rejected_prefix": 57,
+        "rejected_unterminated": 0,
+        "rejected_weight": 719,
+        "terminal_weight": 1
+      },
+      "variant": "A",
+      "width": 6
+    },
+    {
+      "naive_reference_native_sets_equal": true,
+      "order": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        1
+      ],
+      "roundtrip_inverse": true,
+      "solution_count": 1,
+      "stats": {
+        "accepted_complete": 1,
+        "capped": false,
+        "maximum_depth": 6,
+        "nodes": 7,
+        "rejected_full": 0,
+        "rejected_prefix": 15,
+        "rejected_unterminated": 0,
+        "rejected_weight": 719,
+        "terminal_weight": 1
+      },
+      "variant": "B",
+      "width": 6
+    }
+  ],
+  "source_hashes": {
+    "controls.py": "dbdfc1fdc3d110585d391f82ff03dbd737c89b644965fc377c873b82d4c4b0a9",
+    "core.py": "149eebf8b729c2ea66a1c1fc22172fad38282daae4386beb6494535cb08d6662",
+    "fable_byteTranspositions.js": "c9c09bd405bbe43b853a5efb0e25f58ae67136a5f83653e7c45c3a2f3879b7f0",
+    "fable_transpositions.js": "89f2b3c8fa5cd5144d3c2baf2e2d25edb1dcb2f3b0f7a056a506841e6438ccc6",
+    "native.cpp": "643acda025697a1ff30d92d198444dea823d654b11825c87e5843657123bda76",
+    "native_search": "e86ca412592c807ea0440f17de7f8653c9cbfde9a352f722da46c1f5195cc31d",
+    "rev9_source_controls.json": "8c21ea6e275cf5989616ea9d77a19d910e55431626a83339641421ca59947f10"
+  },
+  "target_evaluated": false,
+  "width_13_14_registered_five_utf8_plants": [
+    {
+      "certificate_weight": 6227020800,
+      "elapsed_seconds": 0.0889804,
+      "expected_weight": 6227020800,
+      "observed_sha256": "4b7b7317c391218cc89edc81bbbe4a17603b8e92d0dc030e7e949afc33ccc4a6",
+      "order": [
+        7,
+        0,
+        12,
+        3,
+        9,
+        1,
+        5,
+        11,
+        2,
+        8,
+        4,
+        10,
+        6
+      ],
+      "plaintext_sha256": "811db5e745b1b43292241c286009f0e3653ba370e37a75872942630e9482acbb",
+      "stats": {
+        "accepted_complete": 1,
+        "capped": false,
+        "maximum_depth": 13,
+        "nodes": 416773,
+        "rejected_full": 32876,
+        "rejected_prefix": 756648,
+        "rejected_unterminated": 0,
+        "rejected_weight": 6227020799,
+        "terminal_weight": 1
+      },
+      "truth_recovered": true,
+      "unique_solution": true,
+      "variant": "A",
+      "width": 13
+    },
+    {
+      "certificate_weight": 6227020800,
+      "elapsed_seconds": 5.7208e-05,
+      "expected_weight": 6227020800,
+      "observed_sha256": "3eb03c27a89fcff76da99de7435db7e24653162cf041c2e79a700cc8ed4414ff",
+      "order": [
+        7,
+        0,
+        12,
+        3,
+        9,
+        1,
+        5,
+        11,
+        2,
+        8,
+        4,
+        10,
+        6
+      ],
+      "plaintext_sha256": "811db5e745b1b43292241c286009f0e3653ba370e37a75872942630e9482acbb",
+      "stats": {
+        "accepted_complete": 1,
+        "capped": false,
+        "maximum_depth": 13,
+        "nodes": 14,
+        "rejected_full": 0,
+        "rejected_prefix": 78,
+        "rejected_unterminated": 0,
+        "rejected_weight": 6227020799,
+        "terminal_weight": 1
+      },
+      "truth_recovered": true,
+      "unique_solution": true,
+      "variant": "B",
+      "width": 13
+    },
+    {
+      "certificate_weight": 87178291200,
+      "elapsed_seconds": 0.460803,
+      "expected_weight": 87178291200,
+      "observed_sha256": "49533fd908ccde73d0ebf6c4110b4254d5b2d06a1a21e25f39412978be0b7517",
+      "order": [
+        8,
+        0,
+        13,
+        3,
+        10,
+        1,
+        6,
+        12,
+        2,
+        9,
+        4,
+        11,
+        5,
+        7
+      ],
+      "plaintext_sha256": "811db5e745b1b43292241c286009f0e3653ba370e37a75872942630e9482acbb",
+      "stats": {
+        "accepted_complete": 1,
+        "capped": false,
+        "maximum_depth": 14,
+        "nodes": 2157257,
+        "rejected_full": 171057,
+        "rejected_prefix": 3919232,
+        "rejected_unterminated": 0,
+        "rejected_weight": 87178291199,
+        "terminal_weight": 1
+      },
+      "truth_recovered": true,
+      "unique_solution": true,
+      "variant": "A",
+      "width": 14
+    },
+    {
+      "certificate_weight": 87178291200,
+      "elapsed_seconds": 6.05e-05,
+      "expected_weight": 87178291200,
+      "observed_sha256": "05dd21b343d1b8476282b11da0e607f665761bd622c3192dd238fb542e4833fb",
+      "order": [
+        8,
+        0,
+        13,
+        3,
+        10,
+        1,
+        6,
+        12,
+        2,
+        9,
+        4,
+        11,
+        5,
+        7
+      ],
+      "plaintext_sha256": "811db5e745b1b43292241c286009f0e3653ba370e37a75872942630e9482acbb",
+      "stats": {
+        "accepted_complete": 1,
+        "capped": false,
+        "maximum_depth": 14,
+        "nodes": 15,
+        "rejected_full": 0,
+        "rejected_prefix": 91,
+        "rejected_unterminated": 0,
+        "rejected_weight": 87178291199,
+        "terminal_weight": 1
+      },
+      "truth_recovered": true,
+      "unique_solution": true,
+      "variant": "B",
+      "width": 14
+    }
+  ]
+}

@@ -1,0 +1,3856 @@
+{
+  "canonical_hex_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "crypto_evaluated": false,
+  "full_ledger_regeneration_command": "python3 research/rev7-20260909-codex/iv_independent/geometry.py",
+  "full_ledger_sha256": "1069eef993bfe27ca6fe8f7aa34395da744d35fd986979267da6a1996b39ac07",
+  "identity": "ASTRA",
+  "omitted_from_summary": "per-window complete endpoint records (the full geometry.json remains the ledger)",
+  "orientations": {
+    "byte_reverse": {
+      "BS16": {
+        "P(16,k)": 871782912000,
+        "anchor": {
+          "contained_endpoints": [
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235
+          ],
+          "contained_window_count": 8,
+          "endpoint_byte": 228,
+          "symbols": [
+            "1",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        },
+        "greedy_steps": [
+          {
+            "added_symbol": "A",
+            "chosen_symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 11,
+            "newly_fully_bound_windows": 3
+          },
+          {
+            "added_symbol": "3",
+            "chosen_symbols": [
+              "1",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 25,
+            "newly_fully_bound_windows": 14
+          },
+          {
+            "added_symbol": "2",
+            "chosen_symbols": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 72,
+            "newly_fully_bound_windows": 47
+          },
+          {
+            "added_symbol": "0",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 530,
+            "newly_fully_bound_windows": 458
+          }
+        ],
+        "histogram_k": {
+          "12": 28,
+          "13": 92,
+          "14": 184,
+          "15": 150,
+          "16": 76
+        },
+        "min_k": 12,
+        "minimizer_windows": [
+          {
+            "endpoint_byte": 28,
+            "hex_end_exclusive": 58,
+            "hex_start": 24,
+            "k": 12,
+            "symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 51,
+            "hex_end_exclusive": 104,
+            "hex_start": 70,
+            "k": 12,
+            "symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 59,
+            "hex_end_exclusive": 120,
+            "hex_start": 86,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 228,
+            "hex_end_exclusive": 458,
+            "hex_start": 424,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 229,
+            "hex_end_exclusive": 460,
+            "hex_start": 426,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 230,
+            "hex_end_exclusive": 462,
+            "hex_start": 428,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 231,
+            "hex_end_exclusive": 464,
+            "hex_start": 430,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 232,
+            "hex_end_exclusive": 466,
+            "hex_start": 432,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 233,
+            "hex_end_exclusive": 468,
+            "hex_start": 434,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 234,
+            "hex_end_exclusive": 470,
+            "hex_start": 436,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 235,
+            "hex_end_exclusive": 472,
+            "hex_start": 438,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 261,
+            "hex_end_exclusive": 524,
+            "hex_start": 490,
+            "k": 12,
+            "symbols": [
+              "1",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 338,
+            "hex_end_exclusive": 678,
+            "hex_start": 644,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "5",
+              "7",
+              "8",
+              "A",
+              "B",
+              "C",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 445,
+            "hex_end_exclusive": 892,
+            "hex_start": 858,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 446,
+            "hex_end_exclusive": 894,
+            "hex_start": 860,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 447,
+            "hex_end_exclusive": 896,
+            "hex_start": 862,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 452,
+            "hex_end_exclusive": 906,
+            "hex_start": 872,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 456,
+            "hex_end_exclusive": 914,
+            "hex_start": 880,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 458,
+            "hex_end_exclusive": 918,
+            "hex_start": 884,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 459,
+            "hex_end_exclusive": 920,
+            "hex_start": 886,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 460,
+            "hex_end_exclusive": 922,
+            "hex_start": 888,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 481,
+            "hex_end_exclusive": 964,
+            "hex_start": 930,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 482,
+            "hex_end_exclusive": 966,
+            "hex_start": 932,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 483,
+            "hex_end_exclusive": 968,
+            "hex_start": 934,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 484,
+            "hex_end_exclusive": 970,
+            "hex_start": 936,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 485,
+            "hex_end_exclusive": 972,
+            "hex_start": 938,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "3",
+              "5",
+              "6",
+              "7",
+              "8",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 503,
+            "hex_end_exclusive": 1008,
+            "hex_start": 974,
+            "k": 12,
+            "symbols": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 504,
+            "hex_end_exclusive": 1010,
+            "hex_start": 976,
+            "k": 12,
+            "symbols": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          }
+        ],
+        "window_count": 530
+      },
+      "BS8": {
+        "P(16,k)": 57657600,
+        "anchor": {
+          "contained_endpoints": [
+            502,
+            503
+          ],
+          "contained_window_count": 2,
+          "endpoint_byte": 502,
+          "symbols": [
+            "2",
+            "4",
+            "7",
+            "8",
+            "9",
+            "C",
+            "D"
+          ]
+        },
+        "greedy_steps": [
+          {
+            "added_symbol": "6",
+            "chosen_symbols": [
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ],
+            "cumulative_fully_bound_windows": 3,
+            "newly_fully_bound_windows": 1
+          },
+          {
+            "added_symbol": "0",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ],
+            "cumulative_fully_bound_windows": 5,
+            "newly_fully_bound_windows": 2
+          },
+          {
+            "added_symbol": "3",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ],
+            "cumulative_fully_bound_windows": 6,
+            "newly_fully_bound_windows": 1
+          },
+          {
+            "added_symbol": "E",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ],
+            "cumulative_fully_bound_windows": 9,
+            "newly_fully_bound_windows": 3
+          },
+          {
+            "added_symbol": "5",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ],
+            "cumulative_fully_bound_windows": 18,
+            "newly_fully_bound_windows": 9
+          },
+          {
+            "added_symbol": "F",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 37,
+            "newly_fully_bound_windows": 19
+          },
+          {
+            "added_symbol": "1",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 75,
+            "newly_fully_bound_windows": 38
+          },
+          {
+            "added_symbol": "A",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 223,
+            "newly_fully_bound_windows": 148
+          },
+          {
+            "added_symbol": "B",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 538,
+            "newly_fully_bound_windows": 315
+          }
+        ],
+        "histogram_k": {
+          "10": 110,
+          "11": 164,
+          "12": 120,
+          "13": 62,
+          "14": 10,
+          "15": 3,
+          "7": 4,
+          "8": 18,
+          "9": 47
+        },
+        "min_k": 7,
+        "minimizer_windows": [
+          {
+            "endpoint_byte": 338,
+            "hex_end_exclusive": 678,
+            "hex_start": 660,
+            "k": 7,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "7",
+              "B",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 461,
+            "hex_end_exclusive": 924,
+            "hex_start": 906,
+            "k": 7,
+            "symbols": [
+              "0",
+              "1",
+              "4",
+              "6",
+              "9",
+              "C",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 502,
+            "hex_end_exclusive": 1006,
+            "hex_start": 988,
+            "k": 7,
+            "symbols": [
+              "2",
+              "4",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "endpoint_byte": 503,
+            "hex_end_exclusive": 1008,
+            "hex_start": 990,
+            "k": 7,
+            "symbols": [
+              "2",
+              "4",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ]
+          }
+        ],
+        "window_count": 538
+      }
+    },
+    "forward": {
+      "BS16": {
+        "P(16,k)": 871782912000,
+        "anchor": {
+          "contained_endpoints": [
+            326,
+            327,
+            328,
+            329,
+            330,
+            331,
+            332,
+            333
+          ],
+          "contained_window_count": 8,
+          "endpoint_byte": 326,
+          "symbols": [
+            "1",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        },
+        "greedy_steps": [
+          {
+            "added_symbol": "A",
+            "chosen_symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 11,
+            "newly_fully_bound_windows": 3
+          },
+          {
+            "added_symbol": "3",
+            "chosen_symbols": [
+              "1",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 25,
+            "newly_fully_bound_windows": 14
+          },
+          {
+            "added_symbol": "2",
+            "chosen_symbols": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 72,
+            "newly_fully_bound_windows": 47
+          },
+          {
+            "added_symbol": "0",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 530,
+            "newly_fully_bound_windows": 458
+          }
+        ],
+        "histogram_k": {
+          "12": 28,
+          "13": 92,
+          "14": 184,
+          "15": 150,
+          "16": 76
+        },
+        "min_k": 12,
+        "minimizer_windows": [
+          {
+            "endpoint_byte": 57,
+            "hex_end_exclusive": 116,
+            "hex_start": 82,
+            "k": 12,
+            "symbols": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 58,
+            "hex_end_exclusive": 118,
+            "hex_start": 84,
+            "k": 12,
+            "symbols": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 76,
+            "hex_end_exclusive": 154,
+            "hex_start": 120,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "3",
+              "5",
+              "6",
+              "7",
+              "8",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 77,
+            "hex_end_exclusive": 156,
+            "hex_start": 122,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 78,
+            "hex_end_exclusive": 158,
+            "hex_start": 124,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 79,
+            "hex_end_exclusive": 160,
+            "hex_start": 126,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 80,
+            "hex_end_exclusive": 162,
+            "hex_start": 128,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 101,
+            "hex_end_exclusive": 204,
+            "hex_start": 170,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 102,
+            "hex_end_exclusive": 206,
+            "hex_start": 172,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 103,
+            "hex_end_exclusive": 208,
+            "hex_start": 174,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 105,
+            "hex_end_exclusive": 212,
+            "hex_start": 178,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 109,
+            "hex_end_exclusive": 220,
+            "hex_start": 186,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 114,
+            "hex_end_exclusive": 230,
+            "hex_start": 196,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 115,
+            "hex_end_exclusive": 232,
+            "hex_start": 198,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 116,
+            "hex_end_exclusive": 234,
+            "hex_start": 200,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 223,
+            "hex_end_exclusive": 448,
+            "hex_start": 414,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "5",
+              "7",
+              "8",
+              "A",
+              "B",
+              "C",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 300,
+            "hex_end_exclusive": 602,
+            "hex_start": 568,
+            "k": 12,
+            "symbols": [
+              "1",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 326,
+            "hex_end_exclusive": 654,
+            "hex_start": 620,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 327,
+            "hex_end_exclusive": 656,
+            "hex_start": 622,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 328,
+            "hex_end_exclusive": 658,
+            "hex_start": 624,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 329,
+            "hex_end_exclusive": 660,
+            "hex_start": 626,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 330,
+            "hex_end_exclusive": 662,
+            "hex_start": 628,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 331,
+            "hex_end_exclusive": 664,
+            "hex_start": 630,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 332,
+            "hex_end_exclusive": 666,
+            "hex_start": 632,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 333,
+            "hex_end_exclusive": 668,
+            "hex_start": 634,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 502,
+            "hex_end_exclusive": 1006,
+            "hex_start": 972,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 510,
+            "hex_end_exclusive": 1022,
+            "hex_start": 988,
+            "k": 12,
+            "symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 533,
+            "hex_end_exclusive": 1068,
+            "hex_start": 1034,
+            "k": 12,
+            "symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          }
+        ],
+        "window_count": 530
+      },
+      "BS8": {
+        "P(16,k)": 57657600,
+        "anchor": {
+          "contained_endpoints": [
+            50,
+            51
+          ],
+          "contained_window_count": 2,
+          "endpoint_byte": 50,
+          "symbols": [
+            "2",
+            "4",
+            "7",
+            "8",
+            "9",
+            "C",
+            "D"
+          ]
+        },
+        "greedy_steps": [
+          {
+            "added_symbol": "6",
+            "chosen_symbols": [
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ],
+            "cumulative_fully_bound_windows": 3,
+            "newly_fully_bound_windows": 1
+          },
+          {
+            "added_symbol": "0",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ],
+            "cumulative_fully_bound_windows": 5,
+            "newly_fully_bound_windows": 2
+          },
+          {
+            "added_symbol": "3",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ],
+            "cumulative_fully_bound_windows": 6,
+            "newly_fully_bound_windows": 1
+          },
+          {
+            "added_symbol": "E",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ],
+            "cumulative_fully_bound_windows": 9,
+            "newly_fully_bound_windows": 3
+          },
+          {
+            "added_symbol": "5",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ],
+            "cumulative_fully_bound_windows": 18,
+            "newly_fully_bound_windows": 9
+          },
+          {
+            "added_symbol": "F",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 37,
+            "newly_fully_bound_windows": 19
+          },
+          {
+            "added_symbol": "1",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 75,
+            "newly_fully_bound_windows": 38
+          },
+          {
+            "added_symbol": "A",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 223,
+            "newly_fully_bound_windows": 148
+          },
+          {
+            "added_symbol": "B",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 538,
+            "newly_fully_bound_windows": 315
+          }
+        ],
+        "histogram_k": {
+          "10": 110,
+          "11": 164,
+          "12": 120,
+          "13": 62,
+          "14": 10,
+          "15": 3,
+          "7": 4,
+          "8": 18,
+          "9": 47
+        },
+        "min_k": 7,
+        "minimizer_windows": [
+          {
+            "endpoint_byte": 50,
+            "hex_end_exclusive": 102,
+            "hex_start": 84,
+            "k": 7,
+            "symbols": [
+              "2",
+              "4",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "endpoint_byte": 51,
+            "hex_end_exclusive": 104,
+            "hex_start": 86,
+            "k": 7,
+            "symbols": [
+              "2",
+              "4",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "endpoint_byte": 92,
+            "hex_end_exclusive": 186,
+            "hex_start": 168,
+            "k": 7,
+            "symbols": [
+              "0",
+              "1",
+              "4",
+              "6",
+              "9",
+              "C",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 215,
+            "hex_end_exclusive": 432,
+            "hex_start": 414,
+            "k": 7,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "7",
+              "B",
+              "E"
+            ]
+          }
+        ],
+        "window_count": 538
+      }
+    },
+    "nibble_swap": {
+      "BS16": {
+        "P(16,k)": 871782912000,
+        "anchor": {
+          "contained_endpoints": [
+            326,
+            327,
+            328,
+            329,
+            330,
+            331,
+            332,
+            333
+          ],
+          "contained_window_count": 8,
+          "endpoint_byte": 326,
+          "symbols": [
+            "1",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        },
+        "greedy_steps": [
+          {
+            "added_symbol": "A",
+            "chosen_symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 11,
+            "newly_fully_bound_windows": 3
+          },
+          {
+            "added_symbol": "3",
+            "chosen_symbols": [
+              "1",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 25,
+            "newly_fully_bound_windows": 14
+          },
+          {
+            "added_symbol": "2",
+            "chosen_symbols": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 72,
+            "newly_fully_bound_windows": 47
+          },
+          {
+            "added_symbol": "0",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 530,
+            "newly_fully_bound_windows": 458
+          }
+        ],
+        "histogram_k": {
+          "12": 28,
+          "13": 92,
+          "14": 184,
+          "15": 150,
+          "16": 76
+        },
+        "min_k": 12,
+        "minimizer_windows": [
+          {
+            "endpoint_byte": 57,
+            "hex_end_exclusive": 116,
+            "hex_start": 82,
+            "k": 12,
+            "symbols": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 58,
+            "hex_end_exclusive": 118,
+            "hex_start": 84,
+            "k": 12,
+            "symbols": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 76,
+            "hex_end_exclusive": 154,
+            "hex_start": 120,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "3",
+              "5",
+              "6",
+              "7",
+              "8",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 77,
+            "hex_end_exclusive": 156,
+            "hex_start": 122,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 78,
+            "hex_end_exclusive": 158,
+            "hex_start": 124,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 79,
+            "hex_end_exclusive": 160,
+            "hex_start": 126,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 80,
+            "hex_end_exclusive": 162,
+            "hex_start": 128,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 101,
+            "hex_end_exclusive": 204,
+            "hex_start": 170,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 102,
+            "hex_end_exclusive": 206,
+            "hex_start": 172,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 103,
+            "hex_end_exclusive": 208,
+            "hex_start": 174,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 105,
+            "hex_end_exclusive": 212,
+            "hex_start": 178,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 109,
+            "hex_end_exclusive": 220,
+            "hex_start": 186,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 114,
+            "hex_end_exclusive": 230,
+            "hex_start": 196,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 115,
+            "hex_end_exclusive": 232,
+            "hex_start": 198,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 116,
+            "hex_end_exclusive": 234,
+            "hex_start": 200,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 223,
+            "hex_end_exclusive": 448,
+            "hex_start": 414,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "5",
+              "7",
+              "8",
+              "A",
+              "B",
+              "C",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 300,
+            "hex_end_exclusive": 602,
+            "hex_start": 568,
+            "k": 12,
+            "symbols": [
+              "1",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 326,
+            "hex_end_exclusive": 654,
+            "hex_start": 620,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 327,
+            "hex_end_exclusive": 656,
+            "hex_start": 622,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 328,
+            "hex_end_exclusive": 658,
+            "hex_start": 624,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 329,
+            "hex_end_exclusive": 660,
+            "hex_start": 626,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 330,
+            "hex_end_exclusive": 662,
+            "hex_start": 628,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 331,
+            "hex_end_exclusive": 664,
+            "hex_start": 630,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 332,
+            "hex_end_exclusive": 666,
+            "hex_start": 632,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 333,
+            "hex_end_exclusive": 668,
+            "hex_start": 634,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 502,
+            "hex_end_exclusive": 1006,
+            "hex_start": 972,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 510,
+            "hex_end_exclusive": 1022,
+            "hex_start": 988,
+            "k": 12,
+            "symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 533,
+            "hex_end_exclusive": 1068,
+            "hex_start": 1034,
+            "k": 12,
+            "symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          }
+        ],
+        "window_count": 530
+      },
+      "BS8": {
+        "P(16,k)": 57657600,
+        "anchor": {
+          "contained_endpoints": [
+            50,
+            51
+          ],
+          "contained_window_count": 2,
+          "endpoint_byte": 50,
+          "symbols": [
+            "2",
+            "4",
+            "7",
+            "8",
+            "9",
+            "C",
+            "D"
+          ]
+        },
+        "greedy_steps": [
+          {
+            "added_symbol": "6",
+            "chosen_symbols": [
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ],
+            "cumulative_fully_bound_windows": 3,
+            "newly_fully_bound_windows": 1
+          },
+          {
+            "added_symbol": "0",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ],
+            "cumulative_fully_bound_windows": 5,
+            "newly_fully_bound_windows": 2
+          },
+          {
+            "added_symbol": "3",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ],
+            "cumulative_fully_bound_windows": 6,
+            "newly_fully_bound_windows": 1
+          },
+          {
+            "added_symbol": "E",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ],
+            "cumulative_fully_bound_windows": 9,
+            "newly_fully_bound_windows": 3
+          },
+          {
+            "added_symbol": "5",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ],
+            "cumulative_fully_bound_windows": 18,
+            "newly_fully_bound_windows": 9
+          },
+          {
+            "added_symbol": "F",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 37,
+            "newly_fully_bound_windows": 19
+          },
+          {
+            "added_symbol": "1",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 75,
+            "newly_fully_bound_windows": 38
+          },
+          {
+            "added_symbol": "A",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 223,
+            "newly_fully_bound_windows": 148
+          },
+          {
+            "added_symbol": "B",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 538,
+            "newly_fully_bound_windows": 315
+          }
+        ],
+        "histogram_k": {
+          "10": 110,
+          "11": 164,
+          "12": 120,
+          "13": 62,
+          "14": 10,
+          "15": 3,
+          "7": 4,
+          "8": 18,
+          "9": 47
+        },
+        "min_k": 7,
+        "minimizer_windows": [
+          {
+            "endpoint_byte": 50,
+            "hex_end_exclusive": 102,
+            "hex_start": 84,
+            "k": 7,
+            "symbols": [
+              "2",
+              "4",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "endpoint_byte": 51,
+            "hex_end_exclusive": 104,
+            "hex_start": 86,
+            "k": 7,
+            "symbols": [
+              "2",
+              "4",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "endpoint_byte": 92,
+            "hex_end_exclusive": 186,
+            "hex_start": 168,
+            "k": 7,
+            "symbols": [
+              "0",
+              "1",
+              "4",
+              "6",
+              "9",
+              "C",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 215,
+            "hex_end_exclusive": 432,
+            "hex_start": 414,
+            "k": 7,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "7",
+              "B",
+              "E"
+            ]
+          }
+        ],
+        "window_count": 538
+      }
+    },
+    "reverse": {
+      "BS16": {
+        "P(16,k)": 871782912000,
+        "anchor": {
+          "contained_endpoints": [
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235
+          ],
+          "contained_window_count": 8,
+          "endpoint_byte": 228,
+          "symbols": [
+            "1",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        },
+        "greedy_steps": [
+          {
+            "added_symbol": "A",
+            "chosen_symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 11,
+            "newly_fully_bound_windows": 3
+          },
+          {
+            "added_symbol": "3",
+            "chosen_symbols": [
+              "1",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 25,
+            "newly_fully_bound_windows": 14
+          },
+          {
+            "added_symbol": "2",
+            "chosen_symbols": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 72,
+            "newly_fully_bound_windows": 47
+          },
+          {
+            "added_symbol": "0",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 530,
+            "newly_fully_bound_windows": 458
+          }
+        ],
+        "histogram_k": {
+          "12": 28,
+          "13": 92,
+          "14": 184,
+          "15": 150,
+          "16": 76
+        },
+        "min_k": 12,
+        "minimizer_windows": [
+          {
+            "endpoint_byte": 28,
+            "hex_end_exclusive": 58,
+            "hex_start": 24,
+            "k": 12,
+            "symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 51,
+            "hex_end_exclusive": 104,
+            "hex_start": 70,
+            "k": 12,
+            "symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 59,
+            "hex_end_exclusive": 120,
+            "hex_start": 86,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 228,
+            "hex_end_exclusive": 458,
+            "hex_start": 424,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 229,
+            "hex_end_exclusive": 460,
+            "hex_start": 426,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 230,
+            "hex_end_exclusive": 462,
+            "hex_start": 428,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 231,
+            "hex_end_exclusive": 464,
+            "hex_start": 430,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 232,
+            "hex_end_exclusive": 466,
+            "hex_start": 432,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 233,
+            "hex_end_exclusive": 468,
+            "hex_start": 434,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 234,
+            "hex_end_exclusive": 470,
+            "hex_start": 436,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 235,
+            "hex_end_exclusive": 472,
+            "hex_start": 438,
+            "k": 12,
+            "symbols": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 261,
+            "hex_end_exclusive": 524,
+            "hex_start": 490,
+            "k": 12,
+            "symbols": [
+              "1",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 338,
+            "hex_end_exclusive": 678,
+            "hex_start": 644,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "5",
+              "7",
+              "8",
+              "A",
+              "B",
+              "C",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 445,
+            "hex_end_exclusive": 892,
+            "hex_start": 858,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 446,
+            "hex_end_exclusive": 894,
+            "hex_start": 860,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 447,
+            "hex_end_exclusive": 896,
+            "hex_start": 862,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 452,
+            "hex_end_exclusive": 906,
+            "hex_start": 872,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 456,
+            "hex_end_exclusive": 914,
+            "hex_start": 880,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 458,
+            "hex_end_exclusive": 918,
+            "hex_start": 884,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 459,
+            "hex_end_exclusive": 920,
+            "hex_start": 886,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 460,
+            "hex_end_exclusive": 922,
+            "hex_start": 888,
+            "k": 12,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "9",
+              "A",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 481,
+            "hex_end_exclusive": 964,
+            "hex_start": 930,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 482,
+            "hex_end_exclusive": 966,
+            "hex_start": 932,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 483,
+            "hex_end_exclusive": 968,
+            "hex_start": 934,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 484,
+            "hex_end_exclusive": 970,
+            "hex_start": 936,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 485,
+            "hex_end_exclusive": 972,
+            "hex_start": 938,
+            "k": 12,
+            "symbols": [
+              "1",
+              "2",
+              "3",
+              "5",
+              "6",
+              "7",
+              "8",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 503,
+            "hex_end_exclusive": 1008,
+            "hex_start": 974,
+            "k": 12,
+            "symbols": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          },
+          {
+            "endpoint_byte": 504,
+            "hex_end_exclusive": 1010,
+            "hex_start": 976,
+            "k": 12,
+            "symbols": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "B",
+              "C",
+              "D",
+              "F"
+            ]
+          }
+        ],
+        "window_count": 530
+      },
+      "BS8": {
+        "P(16,k)": 57657600,
+        "anchor": {
+          "contained_endpoints": [
+            502,
+            503
+          ],
+          "contained_window_count": 2,
+          "endpoint_byte": 502,
+          "symbols": [
+            "2",
+            "4",
+            "7",
+            "8",
+            "9",
+            "C",
+            "D"
+          ]
+        },
+        "greedy_steps": [
+          {
+            "added_symbol": "6",
+            "chosen_symbols": [
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ],
+            "cumulative_fully_bound_windows": 3,
+            "newly_fully_bound_windows": 1
+          },
+          {
+            "added_symbol": "0",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ],
+            "cumulative_fully_bound_windows": 5,
+            "newly_fully_bound_windows": 2
+          },
+          {
+            "added_symbol": "3",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ],
+            "cumulative_fully_bound_windows": 6,
+            "newly_fully_bound_windows": 1
+          },
+          {
+            "added_symbol": "E",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ],
+            "cumulative_fully_bound_windows": 9,
+            "newly_fully_bound_windows": 3
+          },
+          {
+            "added_symbol": "5",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E"
+            ],
+            "cumulative_fully_bound_windows": 18,
+            "newly_fully_bound_windows": 9
+          },
+          {
+            "added_symbol": "F",
+            "chosen_symbols": [
+              "0",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 37,
+            "newly_fully_bound_windows": 19
+          },
+          {
+            "added_symbol": "1",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 75,
+            "newly_fully_bound_windows": 38
+          },
+          {
+            "added_symbol": "A",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 223,
+            "newly_fully_bound_windows": 148
+          },
+          {
+            "added_symbol": "B",
+            "chosen_symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "cumulative_fully_bound_windows": 538,
+            "newly_fully_bound_windows": 315
+          }
+        ],
+        "histogram_k": {
+          "10": 110,
+          "11": 164,
+          "12": 120,
+          "13": 62,
+          "14": 10,
+          "15": 3,
+          "7": 4,
+          "8": 18,
+          "9": 47
+        },
+        "min_k": 7,
+        "minimizer_windows": [
+          {
+            "endpoint_byte": 338,
+            "hex_end_exclusive": 678,
+            "hex_start": 660,
+            "k": 7,
+            "symbols": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "7",
+              "B",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 461,
+            "hex_end_exclusive": 924,
+            "hex_start": 906,
+            "k": 7,
+            "symbols": [
+              "0",
+              "1",
+              "4",
+              "6",
+              "9",
+              "C",
+              "E"
+            ]
+          },
+          {
+            "endpoint_byte": 502,
+            "hex_end_exclusive": 1006,
+            "hex_start": 988,
+            "k": 7,
+            "symbols": [
+              "2",
+              "4",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "endpoint_byte": 503,
+            "hex_end_exclusive": 1008,
+            "hex_start": 990,
+            "k": 7,
+            "symbols": [
+              "2",
+              "4",
+              "7",
+              "8",
+              "9",
+              "C",
+              "D"
+            ]
+          }
+        ],
+        "window_count": 538
+      }
+    }
+  },
+  "scope": "structural byte-window geometry only; no key, IV, crypto, or plaintext evaluation",
+  "source_hashes": {
+    "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b",
+    "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91"
+  },
+  "target_evaluated": true
+}

@@ -1,0 +1,55 @@
+{
+  "artifact_hashes": {
+    "controls.json": "641dd0a14db911050631e47579e4905bf38715a1bb22c1453e52b3ce1635afb2",
+    "controls.py": "dbdfc1fdc3d110585d391f82ff03dbd737c89b644965fc377c873b82d4c4b0a9",
+    "core.py": "149eebf8b729c2ea66a1c1fc22172fad38282daae4386beb6494535cb08d6662",
+    "generate_fable_fixtures.js": "68794783aac80ee05af912a6893334b7db12973d66d077a37274e11949564a4e",
+    "native.cpp": "643acda025697a1ff30d92d198444dea823d654b11825c87e5843657123bda76",
+    "native_search": "e86ca412592c807ea0440f17de7f8653c9cbfde9a352f722da46c1f5195cc31d",
+    "run_target.py": "1aada314fca7d765a0e9214bef8af15b9a7d74e74fca22eb7c24d9d7b663e1ed"
+  },
+  "control_gate": {
+    "all_control_assertions_passed": true,
+    "cap_weight_is_lower_bound_when_incomplete": true,
+    "controls_sha256": "641dd0a14db911050631e47579e4905bf38715a1bb22c1453e52b3ce1635afb2",
+    "fable_fixed_fixtures_matched": true,
+    "small_naive_reference_native_equal": true,
+    "width13_14_plants_unique_and_exhaustive": true
+  },
+  "expected_ciphertext_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "expected_mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "identity": "ASTRA",
+  "limits": "Each cell starts a fresh root and stops at 10,000,000 accepted-prefix DFS entries. A capped certificate is only a lower bound. Widths, variants, cipher, key, IV, orientations, and five UTF-8 punctuation sequences are the entire registered scope.",
+  "mdx_bytes_hashed_only": true,
+  "rev7_ciphertext_parsed": false,
+  "scope": {
+    "cell_count": 16,
+    "cipher": "AES-128",
+    "endpoint_utf8_sequences": [
+      "e28093",
+      "e28094",
+      "e28098",
+      "e28099",
+      "e280a6"
+    ],
+    "iv_hex": "30303030303030303030303030303030",
+    "key_hex": "5a6f6d62696573000000000000000000",
+    "mode": "CFB8",
+    "node_limit_per_cell": 10000000,
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "variants": [
+      "A",
+      "B"
+    ],
+    "widths": [
+      13,
+      14
+    ]
+  },
+  "target_evaluated": false
+}

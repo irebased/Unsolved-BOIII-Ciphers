@@ -1,0 +1,4779 @@
+{
+  "allowlists": {
+    "added": "A6",
+    "expanded_size": 105,
+    "old_size": 104
+  },
+  "bijection_count": 4,
+  "bijection_count_proofs": [
+    {
+      "allowed_expanded": 105,
+      "bijection_impossible": true,
+      "cipher": "blowfish",
+      "dataset": "stream_csp",
+      "distinct_display_bytes": 226,
+      "iv_kind": "nul",
+      "keystream_sha256": "2d7ac730fec7c4314e62588db0f6afdc7dd13f94598ef374aa4dddd992b40f96",
+      "mode": "ofb8",
+      "orientation": "forward"
+    },
+    {
+      "allowed_expanded": 105,
+      "bijection_impossible": true,
+      "cipher": "blowfish",
+      "dataset": "stream_csp",
+      "distinct_display_bytes": 226,
+      "iv_kind": "nul",
+      "keystream_sha256": "2d7ac730fec7c4314e62588db0f6afdc7dd13f94598ef374aa4dddd992b40f96",
+      "mode": "ofb8",
+      "orientation": "reverse"
+    },
+    {
+      "allowed_expanded": 105,
+      "bijection_impossible": true,
+      "cipher": "blowfish",
+      "dataset": "stream_csp",
+      "distinct_display_bytes": 226,
+      "iv_kind": "nul",
+      "keystream_sha256": "2d7ac730fec7c4314e62588db0f6afdc7dd13f94598ef374aa4dddd992b40f96",
+      "mode": "ofb8",
+      "orientation": "byte_reverse"
+    },
+    {
+      "allowed_expanded": 105,
+      "bijection_impossible": true,
+      "cipher": "blowfish",
+      "dataset": "stream_csp",
+      "distinct_display_bytes": 226,
+      "iv_kind": "nul",
+      "keystream_sha256": "2d7ac730fec7c4314e62588db0f6afdc7dd13f94598ef374aa4dddd992b40f96",
+      "mode": "ofb8",
+      "orientation": "nibble_swap"
+    }
+  ],
+  "crypto_recomputed": true,
+  "dependency_hashes": {
+    "compat_stream.py": "f0f5eab61e2940aada5ee92828d2fc8474b99e4d68ec10b63053190d0bddd38c",
+    "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b",
+    "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91"
+  },
+  "evaluation_kind": "hash-matched stream reconstruction plus arithmetic witness regeneration",
+  "fixed_byte_witnesses": [
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "30303030303030303030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "c8775845d1ed7656041790811e3f6b228e60bbd25d56c9b78a74501a922976b8",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          92,
+          188,
+          48
+        ],
+        "positions": [
+          18,
+          192,
+          198
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        26
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          92,
+          188,
+          48,
+          92,
+          222
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 18
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "30303030303030303030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "c8775845d1ed7656041790811e3f6b228e60bbd25d56c9b78a74501a922976b8",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          34,
+          93,
+          178,
+          199
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          34,
+          93,
+          178,
+          199,
+          141
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 19
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "30303030303030303030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "c8775845d1ed7656041790811e3f6b228e60bbd25d56c9b78a74501a922976b8",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          34,
+          93,
+          178,
+          199
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          34,
+          93,
+          178,
+          199,
+          141
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 19
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "30303030303030303030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "c8775845d1ed7656041790811e3f6b228e60bbd25d56c9b78a74501a922976b8",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          92,
+          188,
+          48
+        ],
+        "positions": [
+          18,
+          192,
+          198
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        26
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          92,
+          188,
+          48,
+          92,
+          222
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 18
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "00000000000000000000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "dfbf2eaeb9ad8ccd23cf362b8a97080cb5af9aebe7f811b0ff0d9493e107ccee",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "0D",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          247,
+          126,
+          111,
+          26
+        ],
+        "positions": [
+          59,
+          245,
+          399,
+          453
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        81
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0D",
+        "keystream_bytes": [
+          247,
+          126,
+          111,
+          26,
+          134
+        ],
+        "positions": [
+          59,
+          245,
+          399,
+          453,
+          500
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 15
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "00000000000000000000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "dfbf2eaeb9ad8ccd23cf362b8a97080cb5af9aebe7f811b0ff0d9493e107ccee",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "12",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          12,
+          26,
+          246,
+          200
+        ],
+        "positions": [
+          294,
+          324,
+          336,
+          377
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        80,
+        110
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "26",
+        "keystream_bytes": [
+          8,
+          111,
+          51,
+          177,
+          174,
+          17
+        ],
+        "positions": [
+          13,
+          49,
+          73,
+          193,
+          409,
+          472
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 13
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "00000000000000000000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "dfbf2eaeb9ad8ccd23cf362b8a97080cb5af9aebe7f811b0ff0d9493e107ccee",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "0E",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          110,
+          126,
+          181,
+          40,
+          205
+        ],
+        "positions": [
+          58,
+          264,
+          330,
+          333,
+          401
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0E",
+        "keystream_bytes": [
+          110,
+          126,
+          181,
+          40,
+          205
+        ],
+        "positions": [
+          58,
+          264,
+          330,
+          333,
+          401
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 13
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "00000000000000000000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "dfbf2eaeb9ad8ccd23cf362b8a97080cb5af9aebe7f811b0ff0d9493e107ccee",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "12",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          33,
+          65,
+          250,
+          214
+        ],
+        "positions": [
+          168,
+          209,
+          221,
+          251
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "12",
+        "keystream_bytes": [
+          33,
+          65,
+          250,
+          214
+        ],
+        "positions": [
+          168,
+          209,
+          221,
+          251
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 15
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a4314c92a81925825",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "b15b42c35e156475e232ddbb64f17a15310b23553dc01a72a0b2434f81fce512",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "0E",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          219,
+          58,
+          12,
+          146
+        ],
+        "positions": [
+          144,
+          212,
+          215,
+          281
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0E",
+        "keystream_bytes": [
+          219,
+          58,
+          12,
+          146,
+          27
+        ],
+        "positions": [
+          144,
+          212,
+          215,
+          281,
+          487
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a4314c92a81925825",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "b15b42c35e156475e232ddbb64f17a15310b23553dc01a72a0b2434f81fce512",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          83,
+          59,
+          2,
+          134,
+          204
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          83,
+          59,
+          2,
+          134,
+          204
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 16
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a4314c92a81925825",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "b15b42c35e156475e232ddbb64f17a15310b23553dc01a72a0b2434f81fce512",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          83,
+          59,
+          2,
+          134,
+          204
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          83,
+          59,
+          2,
+          134,
+          204
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 16
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a4314c92a81925825",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "b15b42c35e156475e232ddbb64f17a15310b23553dc01a72a0b2434f81fce512",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "04",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          73,
+          61,
+          215,
+          157
+        ],
+        "positions": [
+          86,
+          174,
+          412,
+          499
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "04",
+        "keystream_bytes": [
+          73,
+          61,
+          215,
+          157
+        ],
+        "positions": [
+          86,
+          174,
+          412,
+          499
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "30303030303030303030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "0eb92afe86b80f07756926575e54aaba5fabd5f4ba0a733acd7c4611c4951be4",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          199,
+          87,
+          64,
+          201
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          199,
+          87,
+          64,
+          201,
+          175
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 24
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "30303030303030303030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "0eb92afe86b80f07756926575e54aaba5fabd5f4ba0a733acd7c4611c4951be4",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          54,
+          45,
+          239,
+          245
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          54,
+          45,
+          239,
+          245,
+          66
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 21
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "30303030303030303030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "0eb92afe86b80f07756926575e54aaba5fabd5f4ba0a733acd7c4611c4951be4",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          54,
+          45,
+          239,
+          245
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          54,
+          45,
+          239,
+          245,
+          66
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 21
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "30303030303030303030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "0eb92afe86b80f07756926575e54aaba5fabd5f4ba0a733acd7c4611c4951be4",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          199,
+          87,
+          64,
+          201
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          199,
+          87,
+          64,
+          201,
+          175
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 24
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "00000000000000000000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "b18b2929fa2b20a26ad4cd14d4df22c778129561f7c3574528d2c3c217b9a01a",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "0D",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          214,
+          55,
+          68,
+          44,
+          223
+        ],
+        "positions": [
+          59,
+          245,
+          399,
+          453,
+          500
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0D",
+        "keystream_bytes": [
+          214,
+          55,
+          68,
+          44,
+          223
+        ],
+        "positions": [
+          59,
+          245,
+          399,
+          453,
+          500
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 20
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "00000000000000000000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "b18b2929fa2b20a26ad4cd14d4df22c778129561f7c3574528d2c3c217b9a01a",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          1,
+          173,
+          169,
+          57
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          1,
+          173,
+          169,
+          57,
+          207
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 14
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "00000000000000000000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "b18b2929fa2b20a26ad4cd14d4df22c778129561f7c3574528d2c3c217b9a01a",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          1,
+          173,
+          169,
+          57
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          1,
+          173,
+          169,
+          57,
+          207
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 14
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "00000000000000000000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "b18b2929fa2b20a26ad4cd14d4df22c778129561f7c3574528d2c3c217b9a01a",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "04",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          116,
+          145,
+          49,
+          18
+        ],
+        "positions": [
+          86,
+          174,
+          412,
+          499
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "04",
+        "keystream_bytes": [
+          116,
+          145,
+          49,
+          18
+        ],
+        "positions": [
+          86,
+          174,
+          412,
+          499
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 20
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a4314c92a81925825",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "38faaf7b07d83f1cd6ad4cfdf880fac4ef331a3e2d6a6c7ee5ee8fb7824760e3",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": true,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "0D",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          213,
+          225,
+          148,
+          7
+        ],
+        "positions": [
+          59,
+          245,
+          399,
+          453
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        161
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0D",
+        "keystream_bytes": [
+          213,
+          225,
+          148,
+          7,
+          21
+        ],
+        "positions": [
+          59,
+          245,
+          399,
+          453,
+          500
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 19
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a4314c92a81925825",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "38faaf7b07d83f1cd6ad4cfdf880fac4ef331a3e2d6a6c7ee5ee8fb7824760e3",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          173,
+          125,
+          63,
+          236
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          173,
+          125,
+          63,
+          236,
+          240
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 20
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a4314c92a81925825",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "38faaf7b07d83f1cd6ad4cfdf880fac4ef331a3e2d6a6c7ee5ee8fb7824760e3",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          173,
+          125,
+          63,
+          236
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          173,
+          125,
+          63,
+          236,
+          240
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 20
+    },
+    {
+      "cipher": "aes128",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a4314c92a81925825",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "keystream_sha256": "38faaf7b07d83f1cd6ad4cfdf880fac4ef331a3e2d6a6c7ee5ee8fb7824760e3",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": true,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "26",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          135,
+          173,
+          193,
+          235,
+          68
+        ],
+        "positions": [
+          73,
+          136,
+          352,
+          472,
+          496
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        226
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "26",
+        "keystream_bytes": [
+          135,
+          173,
+          193,
+          235,
+          68,
+          107
+        ],
+        "positions": [
+          73,
+          136,
+          352,
+          472,
+          496,
+          532
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 19
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "918cf400875ff74a8e46e93a9c06bbe42ddf44158500bd5f3d157a0ae4883160",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          37,
+          220,
+          170,
+          13,
+          77
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          37,
+          220,
+          170,
+          13,
+          77
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 21
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "918cf400875ff74a8e46e93a9c06bbe42ddf44158500bd5f3d157a0ae4883160",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "06",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          217,
+          171,
+          202,
+          66
+        ],
+        "positions": [
+          35,
+          265,
+          295,
+          505
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        228
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "24",
+        "keystream_bytes": [
+          76,
+          4,
+          222,
+          148
+        ],
+        "positions": [
+          72,
+          194,
+          420,
+          530
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 20
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "918cf400875ff74a8e46e93a9c06bbe42ddf44158500bd5f3d157a0ae4883160",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "0D",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          226,
+          188,
+          86,
+          16
+        ],
+        "positions": [
+          45,
+          92,
+          146,
+          300
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0D",
+        "keystream_bytes": [
+          226,
+          188,
+          86,
+          16,
+          67
+        ],
+        "positions": [
+          45,
+          92,
+          146,
+          300,
+          486
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 20
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "918cf400875ff74a8e46e93a9c06bbe42ddf44158500bd5f3d157a0ae4883160",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          37,
+          220,
+          170,
+          13,
+          77
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          37,
+          220,
+          170,
+          13,
+          77
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 21
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "12d4a6c89b4a49c5ff4409a7a7276fb9a2515ed4508072ca5d8728abac1c88aa",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          81,
+          141,
+          189,
+          164,
+          210
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        247
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0D",
+        "keystream_bytes": [
+          126,
+          101,
+          247,
+          155,
+          108
+        ],
+        "positions": [
+          59,
+          245,
+          399,
+          453,
+          500
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 18
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "12d4a6c89b4a49c5ff4409a7a7276fb9a2515ed4508072ca5d8728abac1c88aa",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          70,
+          222,
+          156,
+          102
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          70,
+          222,
+          156,
+          102,
+          94
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 18
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "12d4a6c89b4a49c5ff4409a7a7276fb9a2515ed4508072ca5d8728abac1c88aa",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          70,
+          222,
+          156,
+          102
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          70,
+          222,
+          156,
+          102,
+          94
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 18
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "12d4a6c89b4a49c5ff4409a7a7276fb9a2515ed4508072ca5d8728abac1c88aa",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          81,
+          141,
+          189,
+          164,
+          210
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        247
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "06",
+        "keystream_bytes": [
+          227,
+          70,
+          43,
+          200
+        ],
+        "positions": [
+          40,
+          250,
+          280,
+          510
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 18
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "68f4863cb1d76a84058813b29c608db5c48c3f865649ab8c431c779804f4252b",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          144,
+          69,
+          72,
+          159,
+          44
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          144,
+          69,
+          72,
+          159,
+          44
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 20
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "68f4863cb1d76a84058813b29c608db5c48c3f865649ab8c431c779804f4252b",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          94,
+          166,
+          55,
+          73,
+          149
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          94,
+          166,
+          55,
+          73,
+          149
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 21
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "68f4863cb1d76a84058813b29c608db5c48c3f865649ab8c431c779804f4252b",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          94,
+          166,
+          55,
+          73,
+          149
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          94,
+          166,
+          55,
+          73,
+          149
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 21
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "68f4863cb1d76a84058813b29c608db5c48c3f865649ab8c431c779804f4252b",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          144,
+          69,
+          72,
+          159,
+          44
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          144,
+          69,
+          72,
+          159,
+          44
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 20
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "eacc52eb4df9511cc27d2051b493dbf6d6fbc7627ba1a8204607527f6baafba8",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          65,
+          154,
+          172,
+          152,
+          202
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          65,
+          154,
+          172,
+          152,
+          202
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 18
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "eacc52eb4df9511cc27d2051b493dbf6d6fbc7627ba1a8204607527f6baafba8",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          120,
+          31,
+          78,
+          48,
+          251
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          120,
+          31,
+          78,
+          48,
+          251
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "eacc52eb4df9511cc27d2051b493dbf6d6fbc7627ba1a8204607527f6baafba8",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          120,
+          31,
+          78,
+          48,
+          251
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          120,
+          31,
+          78,
+          48,
+          251
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "eacc52eb4df9511cc27d2051b493dbf6d6fbc7627ba1a8204607527f6baafba8",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          65,
+          154,
+          172,
+          152,
+          202
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          65,
+          154,
+          172,
+          152,
+          202
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 18
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "fbd41ed0a32dd5ea7809c82626542502c815bf1db592eb931656db0e6abe944b",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "13",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          90,
+          133,
+          145,
+          144,
+          4
+        ],
+        "positions": [
+          155,
+          242,
+          288,
+          410,
+          420
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "13",
+        "keystream_bytes": [
+          90,
+          133,
+          145,
+          144,
+          4
+        ],
+        "positions": [
+          155,
+          242,
+          288,
+          410,
+          420
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 21
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "fbd41ed0a32dd5ea7809c82626542502c815bf1db592eb931656db0e6abe944b",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          30,
+          92,
+          227,
+          108
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          30,
+          92,
+          227,
+          108,
+          65
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 24
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "fbd41ed0a32dd5ea7809c82626542502c815bf1db592eb931656db0e6abe944b",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          30,
+          92,
+          227,
+          108
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          30,
+          92,
+          227,
+          108,
+          65
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 24
+    },
+    {
+      "cipher": "blowfish",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "fbd41ed0a32dd5ea7809c82626542502c815bf1db592eb931656db0e6abe944b",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": true,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "06",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          216,
+          49,
+          32,
+          95
+        ],
+        "positions": [
+          40,
+          250,
+          280,
+          510
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        126
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "12",
+        "keystream_bytes": [
+          21,
+          143,
+          197,
+          9
+        ],
+        "positions": [
+          168,
+          209,
+          221,
+          251
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 21
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "a43c1e969292216dfe1c92be44896ae765cbbbd516161bd54c87974be8f5e2d0",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          21,
+          91,
+          129,
+          216
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          21,
+          91,
+          129,
+          216,
+          47
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 14
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "a43c1e969292216dfe1c92be44896ae765cbbbd516161bd54c87974be8f5e2d0",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          180,
+          46,
+          154,
+          54
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          180,
+          46,
+          154,
+          54,
+          173
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 16
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "a43c1e969292216dfe1c92be44896ae765cbbbd516161bd54c87974be8f5e2d0",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          180,
+          46,
+          154,
+          54
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          180,
+          46,
+          154,
+          54,
+          173
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 16
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "a43c1e969292216dfe1c92be44896ae765cbbbd516161bd54c87974be8f5e2d0",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          21,
+          91,
+          129,
+          216
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          21,
+          91,
+          129,
+          216,
+          47
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 14
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "2e59a16d190cab24bca04c848237109238633e073adee201cdd86b5bdfffa8dc",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          149,
+          55,
+          52,
+          193
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          149,
+          55,
+          52,
+          193,
+          128
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 22
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "2e59a16d190cab24bca04c848237109238633e073adee201cdd86b5bdfffa8dc",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "12",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          15,
+          61,
+          182,
+          176
+        ],
+        "positions": [
+          294,
+          324,
+          336,
+          377
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        155
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "26",
+        "keystream_bytes": [
+          224,
+          43,
+          1,
+          88,
+          217,
+          96
+        ],
+        "positions": [
+          13,
+          49,
+          73,
+          193,
+          409,
+          472
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 18
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "2e59a16d190cab24bca04c848237109238633e073adee201cdd86b5bdfffa8dc",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "03",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          14,
+          253,
+          130
+        ],
+        "positions": [
+          118,
+          322,
+          331
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        168
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "06",
+        "keystream_bytes": [
+          52,
+          47,
+          183,
+          129
+        ],
+        "positions": [
+          67,
+          74,
+          262,
+          392
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 18
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "2e59a16d190cab24bca04c848237109238633e073adee201cdd86b5bdfffa8dc",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          149,
+          55,
+          52,
+          193
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          149,
+          55,
+          52,
+          193,
+          128
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 22
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "dbedb99cd33b429b849df20354ea9e1d3f55eafce7aef4944d07341d05d399cf",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          2,
+          190,
+          245,
+          210,
+          127
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          2,
+          190,
+          245,
+          210,
+          127
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "dbedb99cd33b429b849df20354ea9e1d3f55eafce7aef4944d07341d05d399cf",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          5,
+          225,
+          203,
+          97
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          5,
+          225,
+          203,
+          97,
+          47
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 14
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "dbedb99cd33b429b849df20354ea9e1d3f55eafce7aef4944d07341d05d399cf",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          5,
+          225,
+          203,
+          97
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          5,
+          225,
+          203,
+          97,
+          47
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 14
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "dbedb99cd33b429b849df20354ea9e1d3f55eafce7aef4944d07341d05d399cf",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          2,
+          190,
+          245,
+          210,
+          127
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          2,
+          190,
+          245,
+          210,
+          127
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "56c5253e54da4107ab3bd2a0f4bf8a9f665c16ff88404a821cdd2a4185043aeb",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "0D",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          234,
+          251,
+          111,
+          206,
+          82
+        ],
+        "positions": [
+          59,
+          245,
+          399,
+          453,
+          500
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0D",
+        "keystream_bytes": [
+          234,
+          251,
+          111,
+          206,
+          82
+        ],
+        "positions": [
+          59,
+          245,
+          399,
+          453,
+          500
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 16
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "56c5253e54da4107ab3bd2a0f4bf8a9f665c16ff88404a821cdd2a4185043aeb",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          234,
+          96,
+          72,
+          200
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          234,
+          96,
+          72,
+          200,
+          20
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "56c5253e54da4107ab3bd2a0f4bf8a9f665c16ff88404a821cdd2a4185043aeb",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          234,
+          96,
+          72,
+          200
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          234,
+          96,
+          72,
+          200,
+          20
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "56c5253e54da4107ab3bd2a0f4bf8a9f665c16ff88404a821cdd2a4185043aeb",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "04",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          132,
+          164,
+          51,
+          67
+        ],
+        "positions": [
+          86,
+          174,
+          412,
+          499
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "04",
+        "keystream_bytes": [
+          132,
+          164,
+          51,
+          67
+        ],
+        "positions": [
+          86,
+          174,
+          412,
+          499
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 16
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "4b17a07c61d687c8f29844f7c5f116aab8057ad520f4bfc6f1a7934a83307ac9",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "0D",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          15,
+          253,
+          18,
+          161
+        ],
+        "positions": [
+          59,
+          245,
+          399,
+          453
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0D",
+        "keystream_bytes": [
+          15,
+          253,
+          18,
+          161,
+          65
+        ],
+        "positions": [
+          59,
+          245,
+          399,
+          453,
+          500
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 15
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "4b17a07c61d687c8f29844f7c5f116aab8057ad520f4bfc6f1a7934a83307ac9",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "06",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          204,
+          231,
+          73,
+          119
+        ],
+        "positions": [
+          35,
+          265,
+          295,
+          505
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "06",
+        "keystream_bytes": [
+          204,
+          231,
+          73,
+          119
+        ],
+        "positions": [
+          35,
+          265,
+          295,
+          505
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "4b17a07c61d687c8f29844f7c5f116aab8057ad520f4bfc6f1a7934a83307ac9",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "0E",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          42,
+          238,
+          196,
+          251,
+          94
+        ],
+        "positions": [
+          58,
+          264,
+          330,
+          333,
+          401
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0E",
+        "keystream_bytes": [
+          42,
+          238,
+          196,
+          251,
+          94
+        ],
+        "positions": [
+          58,
+          264,
+          330,
+          333,
+          401
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "4b17a07c61d687c8f29844f7c5f116aab8057ad520f4bfc6f1a7934a83307ac9",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": true,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "13",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          194,
+          68,
+          32
+        ],
+        "positions": [
+          60,
+          299,
+          459
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        100
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "26",
+        "keystream_bytes": [
+          143,
+          132,
+          236,
+          93,
+          11,
+          227
+        ],
+        "positions": [
+          73,
+          136,
+          352,
+          472,
+          496,
+          532
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 15
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "9650b197842f09a1dab319cf4154ffb453d819b3c38922122b91338cff904835",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          5,
+          13,
+          202,
+          153
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          5,
+          13,
+          202,
+          153,
+          11
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 13
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "9650b197842f09a1dab319cf4154ffb453d819b3c38922122b91338cff904835",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "display_pair": "26",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          255,
+          36,
+          233,
+          180,
+          120
+        ],
+        "positions": [
+          13,
+          49,
+          73,
+          193,
+          409
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "26",
+        "keystream_bytes": [
+          255,
+          36,
+          233,
+          180,
+          120,
+          190
+        ],
+        "positions": [
+          13,
+          49,
+          73,
+          193,
+          409,
+          472
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 19
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "9650b197842f09a1dab319cf4154ffb453d819b3c38922122b91338cff904835",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": true,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "display_pair": "06",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          250,
+          69,
+          67,
+          220
+        ],
+        "positions": [
+          67,
+          74,
+          262,
+          392
+        ]
+      },
+      "original_witness_expanded_survivors": [
+        122
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0D",
+        "keystream_bytes": [
+          164,
+          18,
+          46,
+          92,
+          242
+        ],
+        "positions": [
+          45,
+          92,
+          146,
+          300,
+          486
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 19
+    },
+    {
+      "cipher": "des",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp",
+      "independent_cipher_implementation": true,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d6269657300",
+      "keystream_sha256": "9650b197842f09a1dab319cf4154ffb453d819b3c38922122b91338cff904835",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "display_pair": "00",
+        "interpretation": "No fixed ciphertext byte for this repeated displayed pair makes every listed position relaxed-valid.",
+        "intersection": [],
+        "keystream_bytes": [
+          5,
+          13,
+          202,
+          153
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309
+        ]
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          5,
+          13,
+          202,
+          153,
+          11
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 13
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "1ee81d2ab737d2c264ffc74c4a9cae05a208267a8ac93bbdc35fab2bdabbd37c",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "forward",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "0E",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          45,
+          59,
+          27,
+          242,
+          121
+        ],
+        "positions": [
+          144,
+          212,
+          215,
+          281,
+          487
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [
+        84
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "23",
+        "keystream_bytes": [
+          250,
+          102,
+          235,
+          99
+        ],
+        "positions": [
+          177,
+          210,
+          426,
+          530
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 15
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "1ee81d2ab737d2c264ffc74c4a9cae05a208267a8ac93bbdc35fab2bdabbd37c",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          78,
+          165,
+          23,
+          236
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          78,
+          165,
+          23,
+          236,
+          148
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "1ee81d2ab737d2c264ffc74c4a9cae05a208267a8ac93bbdc35fab2bdabbd37c",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          78,
+          165,
+          23,
+          236
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          78,
+          165,
+          23,
+          236,
+          148
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "1ee81d2ab737d2c264ffc74c4a9cae05a208267a8ac93bbdc35fab2bdabbd37c",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "24",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          60,
+          74,
+          117,
+          160
+        ],
+        "positions": [
+          15,
+          125,
+          351,
+          473
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [
+        6
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "26",
+        "keystream_bytes": [
+          23,
+          120,
+          36,
+          248,
+          147,
+          112
+        ],
+        "positions": [
+          73,
+          136,
+          352,
+          472,
+          496,
+          532
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 15
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "5aec32d0b8124a8e18c9fc562ef213618d1d3603c589ea77e83db179c500f176",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          141,
+          123,
+          188,
+          62
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          141,
+          123,
+          188,
+          62,
+          149
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 14
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "5aec32d0b8124a8e18c9fc562ef213618d1d3603c589ea77e83db179c500f176",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          154,
+          117,
+          177,
+          109,
+          77
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          154,
+          117,
+          177,
+          109,
+          77
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 18
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "5aec32d0b8124a8e18c9fc562ef213618d1d3603c589ea77e83db179c500f176",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          154,
+          117,
+          177,
+          109,
+          77
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          154,
+          117,
+          177,
+          109,
+          77
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 18
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "5aec32d0b8124a8e18c9fc562ef213618d1d3603c589ea77e83db179c500f176",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          141,
+          123,
+          188,
+          62
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          141,
+          123,
+          188,
+          62,
+          149
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 14
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "ae28f3a8a65649608906138ced3a438a161d1b42dedd79fcdcfd2439b84ddc34",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "forward",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "06",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          156,
+          174,
+          9,
+          31
+        ],
+        "positions": [
+          153,
+          283,
+          471,
+          478
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [
+        58
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0E",
+        "keystream_bytes": [
+          3,
+          176,
+          32,
+          42,
+          177
+        ],
+        "positions": [
+          144,
+          212,
+          215,
+          281,
+          487
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "ae28f3a8a65649608906138ced3a438a161d1b42dedd79fcdcfd2439b84ddc34",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          232,
+          107,
+          179,
+          119
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          232,
+          107,
+          179,
+          119,
+          225
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 20
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "ae28f3a8a65649608906138ced3a438a161d1b42dedd79fcdcfd2439b84ddc34",
+      "mode": "ofb8",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          232,
+          107,
+          179,
+          119
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          232,
+          107,
+          179,
+          119,
+          225
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 20
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "ae28f3a8a65649608906138ced3a438a161d1b42dedd79fcdcfd2439b84ddc34",
+      "mode": "ofb8",
+      "old_short_witness_lost": true,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "1B",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          91,
+          188,
+          50
+        ],
+        "positions": [
+          230,
+          303,
+          463
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [
+        26
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "26",
+        "keystream_bytes": [
+          51,
+          74,
+          177,
+          162,
+          202,
+          38
+        ],
+        "positions": [
+          73,
+          136,
+          352,
+          472,
+          496,
+          532
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 17
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "0e5cd0e960ef7712c4d5367be9fa422e55a244e5ba8fcc45ef3977b8ce48ffeb",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          160,
+          47,
+          101,
+          235
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          160,
+          47,
+          101,
+          235,
+          36
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 21
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "0e5cd0e960ef7712c4d5367be9fa422e55a244e5ba8fcc45ef3977b8ce48ffeb",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "06",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          41,
+          180,
+          45,
+          145
+        ],
+        "positions": [
+          35,
+          265,
+          295,
+          505
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "06",
+        "keystream_bytes": [
+          41,
+          180,
+          45,
+          145
+        ],
+        "positions": [
+          35,
+          265,
+          295,
+          505
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 19
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "0e5cd0e960ef7712c4d5367be9fa422e55a244e5ba8fcc45ef3977b8ce48ffeb",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": true,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "0D",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          20,
+          127,
+          22,
+          74,
+          142
+        ],
+        "positions": [
+          45,
+          92,
+          146,
+          300,
+          486
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [
+        40
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "0E",
+        "keystream_bytes": [
+          62,
+          242,
+          192,
+          59,
+          239
+        ],
+        "positions": [
+          58,
+          264,
+          330,
+          333,
+          401
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 19
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "3030303030303030",
+      "iv_kind": "ascii_zero",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "0e5cd0e960ef7712c4d5367be9fa422e55a244e5ba8fcc45ef3977b8ce48ffeb",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          160,
+          47,
+          101,
+          235
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          160,
+          47,
+          101,
+          235,
+          36
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 21
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "68f3b231596d9e9acaa9b634f4b6cfac21cdfd3e026b560f566d193b3b00e863",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "06",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          164,
+          0,
+          70,
+          184
+        ],
+        "positions": [
+          153,
+          283,
+          471,
+          478
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "06",
+        "keystream_bytes": [
+          164,
+          0,
+          70,
+          184
+        ],
+        "positions": [
+          153,
+          283,
+          471,
+          478
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 15
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "68f3b231596d9e9acaa9b634f4b6cfac21cdfd3e026b560f566d193b3b00e863",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          231,
+          138,
+          3,
+          127
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          231,
+          138,
+          3,
+          127,
+          25
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 21
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "68f3b231596d9e9acaa9b634f4b6cfac21cdfd3e026b560f566d193b3b00e863",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          231,
+          138,
+          3,
+          127
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          231,
+          138,
+          3,
+          127,
+          25
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 21
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "0000000000000000",
+      "iv_kind": "nul",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "68f3b231596d9e9acaa9b634f4b6cfac21cdfd3e026b560f566d193b3b00e863",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": true,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "06",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          154,
+          22,
+          247
+        ],
+        "positions": [
+          40,
+          250,
+          280
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [
+        176
+      ],
+      "representative_regenerated_contradiction": {
+        "display_pair": "06",
+        "keystream_bytes": [
+          154,
+          22,
+          247,
+          26
+        ],
+        "positions": [
+          40,
+          250,
+          280,
+          510
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 15
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "7f697cce6439e3dec4364e23ea73208b79f6c29e99f9c72309ce4c53d7b5da20",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "forward",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          53,
+          190,
+          120,
+          30,
+          238
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          53,
+          190,
+          120,
+          30,
+          238
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 20
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "7f697cce6439e3dec4364e23ea73208b79f6c29e99f9c72309ce4c53d7b5da20",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "reverse",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          23,
+          89,
+          53,
+          151,
+          105
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          23,
+          89,
+          53,
+          151,
+          105
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 16
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "7f697cce6439e3dec4364e23ea73208b79f6c29e99f9c72309ce4c53d7b5da20",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "byte_reverse",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          23,
+          89,
+          53,
+          151,
+          105
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          23,
+          89,
+          53,
+          151,
+          105
+        ],
+        "positions": [
+          203,
+          236,
+          347,
+          353,
+          527
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 16
+    },
+    {
+      "cipher": "blowfish_compat",
+      "crypto_recomputed": true,
+      "dataset": "stream_csp_compat",
+      "independent_cipher_implementation": false,
+      "iv_hex": "4711f7565028433a",
+      "iv_kind": "sha1_prefix",
+      "key_hex": "5a6f6d62696573",
+      "keystream_sha256": "7f697cce6439e3dec4364e23ea73208b79f6c29e99f9c72309ce4c53d7b5da20",
+      "mode": "fullblock_ofb",
+      "old_short_witness_lost": false,
+      "orientation": "nibble_swap",
+      "original_witness": {
+        "direct_ciphertext_bytes_checked": 256,
+        "display_pair": "00",
+        "independent_of_nibble_bijection": true,
+        "keystream_bytes": [
+          53,
+          190,
+          120,
+          30,
+          238
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "surviving_ciphertext_bytes": []
+      },
+      "original_witness_expanded_survivors": [],
+      "representative_regenerated_contradiction": {
+        "display_pair": "00",
+        "keystream_bytes": [
+          53,
+          190,
+          120,
+          30,
+          238
+        ],
+        "positions": [
+          18,
+          192,
+          198,
+          309,
+          342
+        ],
+        "survivors_expanded": []
+      },
+      "total_contradictory_pairs": 20
+    }
+  ],
+  "fixed_count": 92,
+  "identity": "ASTRA",
+  "old_short_witness_lost_count": 20,
+  "prior_input_hashes": {
+    "compat_ledger": "1937e53cdbb0487e8ff95326f3a1a131d7402eb3374d0556030f2508ef2d35d6",
+    "compat_target": "598dfa8ec497321f62f1b4f445de4f642f755ef0fb51c9d2164c708145aad7f2",
+    "stream_ledger": "07e61bdfbc777e43a36902720ef70b295a117953707653dc97060df372bf2c1c",
+    "stream_target": "f1d9024065f82e75479c4e03f1c871f9c2e0c661e63c6a42cb6da6594addde87"
+  },
+  "reconstruction_scope": "AES/DES/Blowfish PyCryptodome ECB OFB8/fullblock; Blowfish-compat uses the previously independently verified compat_stream block recurrence; every generated stream SHA was matched to its target cell before arithmetic checks.",
+  "target_evaluated": true,
+  "total_contradictory_pairs": 1650,
+  "unresolved_after_regeneration_count": 0
+}
