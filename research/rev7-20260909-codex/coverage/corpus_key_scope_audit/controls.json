@@ -1,0 +1,478 @@
+{
+  "identity": "ASTRA",
+  "limits": [
+    "These are frequencies in frozen solved records, not a generative rule for Rev7.",
+    "Structured steps omit some solved-record steps and some substitution keys or mappings.",
+    "The seven direct lore key fields do not include keys written only inside free-text configuration.",
+    "The counterexample establishes possibility only; it does not assert that Rev7 uses Beaufort or key F."
+  ],
+  "modern_decrypt_steps": [
+    {
+      "file": "revelations.json",
+      "id": "rev1",
+      "step": {
+        "iv": "30303030303030303030303030303030",
+        "key": "Zombies",
+        "method": "RC2",
+        "mode": "ECB",
+        "type": "decrypt"
+      },
+      "step_count": 4,
+      "step_index": 1
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev1",
+      "step": {
+        "iv": "30303030303030303030303030303030",
+        "key": "Zombies",
+        "method": "rijndael-256",
+        "mode": "ECB",
+        "type": "decrypt"
+      },
+      "step_count": 4,
+      "step_index": 3
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev2",
+      "step": {
+        "key": "ZOMBIES",
+        "method": "DES",
+        "mode": "CFB",
+        "type": "decrypt"
+      },
+      "step_count": 4,
+      "step_index": 2
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev5",
+      "step": {
+        "iv": "30303030303030303030303030303030",
+        "key": "Zombies",
+        "method": "RC2",
+        "mode": "CFB",
+        "type": "decrypt"
+      },
+      "step_count": 5,
+      "step_index": 0
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev5",
+      "step": {
+        "iv": "30303030303030303030303030303030",
+        "key": "Zombies",
+        "method": "Blowfish",
+        "mode": "CFB",
+        "type": "decrypt"
+      },
+      "step_count": 5,
+      "step_index": 3
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev5",
+      "step": {
+        "iv": "30303030303030303030303030303030",
+        "key": "Zombies",
+        "method": "Loki97",
+        "mode": "CFB",
+        "type": "decrypt"
+      },
+      "step_count": 5,
+      "step_index": 4
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev6",
+      "step": {
+        "iv": "30303030303030303030303030303030",
+        "key": "Zombies",
+        "method": "Serpent",
+        "mode": "CFB",
+        "type": "decrypt"
+      },
+      "step_count": 5,
+      "step_index": 3
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev8",
+      "step": {
+        "iv": "30303030303030303030303030303030",
+        "key": "Zombies",
+        "method": "Blowfish-compat",
+        "mode": "CFB",
+        "type": "decrypt"
+      },
+      "step_count": 6,
+      "step_index": 4
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev9",
+      "step": {
+        "iv": "30303030303030303030303030303030",
+        "key": "Zombies",
+        "method": "DES",
+        "mode": "CFB",
+        "type": "decrypt"
+      },
+      "step_count": 4,
+      "step_index": 0
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev9",
+      "step": {
+        "iv": "30303030303030303030303030303030",
+        "key": "Zombies",
+        "method": "Twofish",
+        "mode": "CFB",
+        "type": "decrypt"
+      },
+      "step_count": 4,
+      "step_index": 3
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev10",
+      "step": {
+        "key": "Zombies",
+        "method": "RC4",
+        "type": "decrypt"
+      },
+      "step_count": 5,
+      "step_index": 1
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev10",
+      "step": {
+        "iv": "30303030303030303030303030303030",
+        "key": "Zombies",
+        "method": "Saferplus",
+        "mode": "CFB",
+        "type": "decrypt"
+      },
+      "step_count": 5,
+      "step_index": 4
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev12",
+      "step": {
+        "iv": "30303030303030303030303030303030",
+        "key": "Zombies",
+        "method": "XTEA",
+        "mode": "CFB",
+        "type": "decrypt"
+      },
+      "step_count": 4,
+      "step_index": 1
+    }
+  ],
+  "new_search": false,
+  "non_revelations_explicit_classical_keys": [
+    {
+      "file": "soe.json",
+      "id": "soe1",
+      "step": {
+        "key": "ONLYTHECURSEDSURVIVE",
+        "method": "porta",
+        "type": "classical"
+      },
+      "step_count": 1,
+      "step_index": 0
+    },
+    {
+      "file": "der_eisendrache.json",
+      "id": "de3",
+      "step": {
+        "key": "testsubject",
+        "method": "playfair",
+        "type": "classical"
+      },
+      "step_count": 1,
+      "step_index": 0
+    },
+    {
+      "file": "der_eisendrache.json",
+      "id": "de7",
+      "step": {
+        "key": "198346572",
+        "method": "2-1_AMSCO",
+        "type": "classical"
+      },
+      "step_count": 1,
+      "step_index": 0
+    },
+    {
+      "file": "zetsubou.json",
+      "id": "zns3",
+      "step": {
+        "key": "Ascension",
+        "method": "Vigenere",
+        "type": "classical"
+      },
+      "step_count": 1,
+      "step_index": 0
+    },
+    {
+      "file": "zetsubou.json",
+      "id": "zns4",
+      "step": {
+        "key": "Mother",
+        "method": "Vigenere",
+        "type": "classical"
+      },
+      "step_count": 1,
+      "step_index": 0
+    },
+    {
+      "file": "zetsubou.json",
+      "id": "zns7",
+      "step": {
+        "key": "Aurora Borealis",
+        "method": "keyed_caesar",
+        "type": "classical"
+      },
+      "step_count": 1,
+      "step_index": 0
+    },
+    {
+      "file": "gorod_krovi.json",
+      "id": "gk12",
+      "step": {
+        "alphabet": "ZOMBIESAREEVERYWHERE",
+        "key": "TRYTHIS",
+        "method": "autokey",
+        "type": "classical"
+      },
+      "step_count": 1,
+      "step_index": 0
+    }
+  ],
+  "revelations_layered_explicit_keyed_classical_steps": [
+    {
+      "file": "revelations.json",
+      "id": "rev1",
+      "step": {
+        "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+        "key": "ZOMBIES",
+        "method": "beaufort",
+        "type": "classical"
+      },
+      "step_count": 4,
+      "step_index": 0
+    },
+    {
+      "file": "revelations.json",
+      "id": "rev11",
+      "step": {
+        "key": "ZOMBIES",
+        "method": "playfair",
+        "type": "classical"
+      },
+      "step_count": 7,
+      "step_index": 2
+    }
+  ],
+  "scope": {
+    "audited_data_files": [
+      "revelations.json",
+      "soe.json",
+      "der_eisendrache.json",
+      "the_giant.json",
+      "zetsubou.json",
+      "gorod_krovi.json",
+      "conformance_suite.json",
+      "evidence_base.json",
+      "zombies_sources.csv"
+    ],
+    "note": "The nine-file inventory is six map JSON files plus conformance_suite.json, evidence_base.json, and zombies_sources.csv; structured solution-step counts come from the six maps.",
+    "structured_map_files": [
+      "revelations.json",
+      "soe.json",
+      "der_eisendrache.json",
+      "the_giant.json",
+      "zetsubou.json",
+      "gorod_krovi.json"
+    ]
+  },
+  "source_pins": {
+    "conformance_suite.json": {
+      "bytes": 2285,
+      "sha256": "4d6c0c62e1b580dd45fe40910d4f3f59b3b75656e9869968d8676b378e13e175"
+    },
+    "crates/ra-cli/src/corpus.rs": {
+      "bytes": 54670,
+      "sha256": "964793ef1019be613b28bcfb68cf177285e88562b34be7acd90cf4b31d703e01"
+    },
+    "crates/ra-core/src/nodes.rs": {
+      "bytes": 29922,
+      "sha256": "ea93e1b0e235f691d7814eec0eef2b2a2b0c7f7c0fc1a76ffbebbc218796c43c"
+    },
+    "der_eisendrache.json": {
+      "bytes": 11325,
+      "sha256": "d1e9030643d2f0ce4c98ea280f57c394993ca4de4d30482cc24459db01836d00"
+    },
+    "evidence_base.json": {
+      "bytes": 18023,
+      "sha256": "cb669c458863d9d42ed1610b20ca9847fce2d1f438208faad0263eb11bcc23c8"
+    },
+    "gorod_krovi.json": {
+      "bytes": 11547,
+      "sha256": "f05703ae5173e02187e4840593cf9137048a60e5dec13898961ec606ddef0d3d"
+    },
+    "lavender/src/content/docs/ciphers/bo3/rev/rev3.mdx": {
+      "bytes": 1382,
+      "sha256": "0185f674db09dfe542de8ecf2880cf83690cc8331001ebfefa65ddc4f965a243"
+    },
+    "revelations.json": {
+      "bytes": 45454,
+      "sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e"
+    },
+    "soe.json": {
+      "bytes": 3793,
+      "sha256": "352bc73f7780b529b2ee50e15d05b91a70bde85c6d0ceb9b2daf490fe00a7a73"
+    },
+    "the_giant.json": {
+      "bytes": 6735,
+      "sha256": "e730927364ad146ce579d4b6cd700f615758ab901f46c4dadeb49d4e8c079da5"
+    },
+    "zetsubou.json": {
+      "bytes": 12825,
+      "sha256": "c0eee2efe0385a08e0a108e6d3bd7a1b90089e92782c4e0da17410336c098de8"
+    },
+    "zombies_sources.csv": {
+      "bytes": 34384,
+      "sha256": "4aeac9cc75f52eef12259edf20ca6f08c5e270c3296d99fba87068f91ca6e238"
+    }
+  },
+  "structured_counts": {
+    "modern_decrypt_steps": 13,
+    "modern_key_spelling_counts": {
+      "ZOMBIES": 1,
+      "Zombies": 12
+    },
+    "non_revelations_explicit_classical_key_fields": 7,
+    "records": 65,
+    "revelations_layered_explicit_keyed_classical_steps": 2,
+    "solution_steps": 101,
+    "solved_records": 63,
+    "those_explicit_key_records_with_exactly_one_step": 7
+  },
+  "structured_gaps": {
+    "configuration_strings_with_embedded_key_text": [
+      {
+        "configuration": "key 'Maxis' and a period of 99 (ciphertext length)",
+        "file": "der_eisendrache.json",
+        "id": "de4",
+        "step_index": 0
+      },
+      {
+        "configuration": "Reflector UKW B, Key settings WAD, Ring settings AAD, Rotors 123, and plug board settings PO ML IU KJ NH YT GB VF RE DC.",
+        "file": "the_giant.json",
+        "id": "tg5",
+        "step_index": 0
+      },
+      {
+        "configuration": "Key: G & T = 1, a & c = 0",
+        "file": "zetsubou.json",
+        "id": "zns9",
+        "step_index": 0
+      },
+      {
+        "configuration": "the key 'shinonuma' and alphabet key 'AMUNOIHSZYXWVTRQPLKJGFEDCB'",
+        "file": "zetsubou.json",
+        "id": "zns12",
+        "step_index": 0
+      },
+      {
+        "configuration": "Keys '654371979' and '10271978'",
+        "file": "gorod_krovi.json",
+        "id": "gk11",
+        "step_index": 0
+      }
+    ],
+    "interpretation": "A count of seven direct classical key fields excludes parameters embedded in free-text configuration and excludes records with missing key/mapping fields.",
+    "rev11_trifid_missing_explicit_key": {
+      "file": "revelations.json",
+      "has_key_field": false,
+      "id": "rev11",
+      "method": "Trifid",
+      "note": "The structured final Trifid step has output text but no explicit key field.",
+      "step_index": 6
+    },
+    "rev3_documented_alternate_solution": {
+      "documented_checkerboard_key_or_alphabet": "fkmcpdyehbigqrosazlutjnwvx",
+      "interpretation": "The MDX labels this the original four-step solution, while the JSON stores a different simplified three-step solution. The string is a documented checkerboard key/alphabet for that decode; this audit does not identify it as the puzzle author original keyword.",
+      "json_explicit_key_fields": 0,
+      "json_steps": [
+        "base10",
+        "straddling_checkerboard",
+        "substitution"
+      ],
+      "mdx_lines": "22-38",
+      "mdx_original_solution_steps": 4,
+      "spare_positions": [
+        3,
+        7
+      ]
+    },
+    "solved_records_with_no_steps": [
+      {
+        "file": "soe.json",
+        "id": "soe6"
+      }
+    ],
+    "substitution_like_steps": [
+      {
+        "file": "revelations.json",
+        "id": "rev3",
+        "step": {
+          "method": "substitution",
+          "notes": "IOC closest to English",
+          "type": "classical"
+        },
+        "step_count": 3,
+        "step_index": 2
+      },
+      {
+        "file": "revelations.json",
+        "id": "rev6",
+        "step": {
+          "alphabet": "hdixvqlmenojkpbrstcufwgyza",
+          "method": "substitution",
+          "type": "classical"
+        },
+        "step_count": 5,
+        "step_index": 4
+      },
+      {
+        "file": "der_eisendrache.json",
+        "id": "de6",
+        "step": {
+          "method": "homophonic_substitution",
+          "type": "classical"
+        },
+        "step_count": 1,
+        "step_index": 0
+      }
+    ]
+  },
+  "synthetic_beaufort": {
+    "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+    "claim": "This existential source-defined transformation refutes the claim that every letter-52 classical pre-layer must destroy hexness.",
+    "hex_alphabet_preserved": true,
+    "input": "ABCDEF0123456789",
+    "key": "F",
+    "output": "FEDCBA0123456789",
+    "reciprocal_output": "ABCDEF0123456789",
+    "source_anchor": "nodes.rs:173-200"
+  },
+  "target_evaluated": false
+}

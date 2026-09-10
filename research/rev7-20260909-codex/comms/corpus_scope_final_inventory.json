@@ -1,0 +1,108 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1382,
+      "encoding": "utf-8",
+      "git_blob_sha1": "9dd8275adc617951d34077d5057652baa4922c9e",
+      "path": "lavender/src/content/docs/ciphers/bo3/rev/rev3.mdx",
+      "sha256": "0185f674db09dfe542de8ecf2880cf83690cc8331001ebfefa65ddc4f965a243"
+    },
+    {
+      "bytes": 2526,
+      "encoding": "utf-8",
+      "git_blob_sha1": "cf31fd0a31e2cfbd271af8e4fef90ce1e7b1e5c7",
+      "path": "research/rev7-20260909-codex/comms/corpus-inference-correction-20260910.json",
+      "sha256": "59d092d590b767845a28b2de10f3f9833616f2e08110852aa4a3df478a3c345a"
+    },
+    {
+      "bytes": 2077,
+      "encoding": "utf-8",
+      "git_blob_sha1": "4d4de65e71e2b1c62f7fbfed30c6f30739a3b869",
+      "path": "research/rev7-20260909-codex/comms/corpus-key-audit-result-20260910.json",
+      "sha256": "cd90a84e5e74f5975c7bc96300c11eeedb3192cfcda429dad539c26bbdef0428"
+    },
+    {
+      "bytes": 7067,
+      "encoding": "utf-8",
+      "git_blob_sha1": "018e7979ff90961555b47517758a355af21dfa44",
+      "path": "research/rev7-20260909-codex/comms/publish_corpus_scope.py",
+      "sha256": "312f4a761aca33c893b69cc0e9dc86d5089c87a79b90d89182e16271144ab648"
+    },
+    {
+      "bytes": 6997,
+      "encoding": "utf-8",
+      "git_blob_sha1": "3175f6653c1afb2c98732ffe78d213713ceea26a",
+      "path": "research/rev7-20260909-codex/comms/whole-radix-history-correction-20260910.json",
+      "sha256": "c9cb0a46d211690ee328262e4136baed3f9c3d759637697e2ff8f9bf5dbca362"
+    },
+    {
+      "bytes": 7710,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e56860e4236a814d089ded1d49749981df3169e8",
+      "path": "research/rev7-20260909-codex/coverage/REPORT.md",
+      "sha256": "2a5d20ae6eee4d2ddf2a8ba9ef7bd208e43f0f372fac29e5305f3bdf6918c57e"
+    },
+    {
+      "bytes": 3250,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d33646fdabb4fb3e7b6e3bdd5278425db0f4378e",
+      "path": "research/rev7-20260909-codex/coverage/corpus_key_scope_audit/README.md",
+      "sha256": "8fe6b3d1e649e57555f16d8544f02342f966a51ea719fb266b6791790854f206"
+    },
+    {
+      "bytes": 8569,
+      "encoding": "utf-8",
+      "git_blob_sha1": "acdd5d56b2081f42bde9afcd3953b8222bb15e81",
+      "path": "research/rev7-20260909-codex/coverage/corpus_key_scope_audit/audit.py",
+      "sha256": "8d319fb7859540aacb66b3d905279728be7c8c3bc8e119315f99f01d34f891d9"
+    },
+    {
+      "bytes": 12727,
+      "encoding": "utf-8",
+      "git_blob_sha1": "585f2cbc25010da1afa9b0bb53c2a0bf587e3ec7",
+      "path": "research/rev7-20260909-codex/coverage/corpus_key_scope_audit/controls.json",
+      "sha256": "1811f360adea00adc238c0e0ae30db9775fc3ea3ac99a926e4c7cdfb132d5ed6"
+    },
+    {
+      "bytes": 6737,
+      "encoding": "utf-8",
+      "git_blob_sha1": "97e7e7dc7f771ffe63b8077a5c43567bc1ef70f5",
+      "path": "research/rev7-20260909-codex/coverage/rev3_classical_scope/INVENTORY.md",
+      "sha256": "8e92660141e545d4371c77478792c4ed7b854fd5503ab9557b775e4402aaab5d"
+    },
+    {
+      "bytes": 6257,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d7dbaf25d56a2ce1ccaf4169e4d825e0306878ce",
+      "path": "research/rev7-20260909-codex/coverage/whole_radix_checkerboard_scope/DESIGN.md",
+      "sha256": "0267d53bdfab8e9cbf5a2a0bfb79c7b63e111e504c41330742d322f0cff10337"
+    },
+    {
+      "bytes": 474024,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c4325e58804e03425b5b8a93bfb428c082539fd2",
+      "path": "research/rev7-20260909-codex/notebook-snapshot.json",
+      "sha256": "ad67d420644b203a8f952d84f93d4755578c079aa9b98952cab8a73ccc3461ab"
+    },
+    {
+      "bytes": 2748,
+      "encoding": "utf-8",
+      "git_blob_sha1": "42008d4eafcbfd7e590ab6661cb623e62b839f48",
+      "path": "research/rev7-20260909-codex/whole_numeric/README.md",
+      "sha256": "3e5d66ba62e19d6d61b93c1373d00ae7d90168d8962b3e0a8e3d19927cc96b0e"
+    },
+    {
+      "bytes": 22235,
+      "encoding": "utf-8",
+      "git_blob_sha1": "3418bc93dcc406643ae6f98c42f8267f691c2267",
+      "path": "research/rev7-20260909-codex/whole_numeric/controls.py",
+      "sha256": "937dfea250ca67e6788263db4431d4b324c08d807eade51c034755bbe745408e"
+    }
+  ],
+  "description": "Read-only corpus key-field census and source-defined synthetic Beaufort counterexample, with Rev3 structured-field omissions, plus historical whole-radix checkerboard coverage audit and its frozen evidence. No target decryption or new hypothesis sweep. RA source/data dependencies are already published inside the prior upstream archive.",
+  "identity": "ASTRA",
+  "publication_excludes": [
+    "drafts",
+    "__pycache__"
+  ]
+}
