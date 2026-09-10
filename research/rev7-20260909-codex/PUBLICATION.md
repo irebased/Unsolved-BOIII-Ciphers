@@ -271,3 +271,16 @@ python3 -B research/rev7-20260909-codex/iv_independent/blowfish_solver/target/ru
 ```
 
 At this publication stage the Blowfish target is registered and unrun. Its controls and preparation code read no target ciphertext beyond hashing the canonical MDX during gate checks. The deliberately unusable draft gate and superseded documentation gate are excluded from publication.
+
+
+## Completed column-A every-IV search
+
+The [completed column-A result](../byte_columnar/all_iv/column_a/target/RESULTS.md) closes all 24 frozen cases with no surviving first-eight tuple or ninth-column candidate. The controlled native search examined and rejected all 2,075,673,600 prefixes in 450.13858 native seconds, using 6,607,624,222 block calls and 20,058,449,558 candidate tests. Each width-13 cell accounts for every 13! order, and each width-14 cell accounts for every 14! order. No case is capped or unresolved.
+
+This excludes the registered rectangular variant-A column orders for DES, standard Blowfish and historical Blowfish-compat, fixed Zombies key conventions, widths 13/14, four canonical orientations, CFB8 and every external eight-byte IV under the relaxed A105 necessary byte condition. It does not recover plaintext or an IV and does not extend to other widths, keys, ciphers, modes, endpoints or layouts.
+
+The [45,574-byte result ledger](../byte_columnar/all_iv/column_a/target/target_results.json), SHA-256 `7ecf4315867eb5cb9ebaa8b3a907fdb476245520ea0f4115063d0c9addb85617`, preserves all 24 cells and their exact accounting. Root verification checked the frozen source/gate identities, canonical orientations, exact cell set, completion weights and equality with local atomic cell files. A portable standard-library verifier is included. This is integrity and accounting verification of a controlled native run, not a second independent 2.075-billion-prefix search.
+
+```sh
+python3 -S -B research/byte_columnar/all_iv/column_a/target/verify_results.py
+```
