@@ -1,0 +1,174 @@
+{
+  "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "counts": {
+    "A": 262,
+    "B": 56,
+    "C": 67,
+    "D": 105,
+    "E": 405,
+    "F": 75,
+    "G": 77,
+    "H": 173,
+    "I": 222,
+    "J": 6,
+    "K": 32,
+    "L": 142,
+    "M": 95,
+    "N": 231,
+    "O": 240,
+    "P": 39,
+    "Q": 3,
+    "R": 172,
+    "S": 211,
+    "T": 283,
+    "U": 99,
+    "V": 39,
+    "W": 91,
+    "X": 6,
+    "Y": 62,
+    "Z": 3
+  },
+  "crypto_evaluated": false,
+  "identity": "ASTRA",
+  "input": {
+    "excluded_ids": [
+      "rev7"
+    ],
+    "included_ids": [
+      "rev1",
+      "rev2",
+      "rev3",
+      "rev4",
+      "rev5",
+      "rev6",
+      "rev8",
+      "rev9",
+      "rev10",
+      "rev11",
+      "rev12",
+      "rev13",
+      "rev14"
+    ],
+    "path": "lavender/src/data/ciphers/revelations.json",
+    "sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e"
+  },
+  "letters_total": 3196,
+  "normalization": "uppercase then retain A-Z only, exactly per cryptool100/build_model.py",
+  "probability_definitions": {
+    "allocation_cryptool100": [
+      6,
+      2,
+      3,
+      5,
+      16,
+      2,
+      3,
+      4,
+      7,
+      1,
+      1,
+      3,
+      4,
+      9,
+      3,
+      1,
+      1,
+      7,
+      7,
+      6,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "allocation_sum": 100,
+    "homophonic_code": "p(code)=p(letter(code))/allocation(letter(code))",
+    "letter_add_one": "p_l=(count_l+1)/(3196+26)",
+    "uniform_letter": "p=1/(26*allocation(letter))"
+  },
+  "record_rows": [
+    {
+      "id": "rev1",
+      "normalized_length": 22,
+      "normalized_sha256": "e571c7b73f24a9777b6745604f3e2a92943a889a5278d84e6fccb908df588d05",
+      "source_plaintext_sha256": "2d069b01329b40e9eef91c8a6ace676b91d15be2d2234e3b051ae2771cd779f3"
+    },
+    {
+      "id": "rev2",
+      "normalized_length": 419,
+      "normalized_sha256": "82068bff1bc4841a7c1d619141eb605e5bcc9f082b2e99c5f47023c34e92488e",
+      "source_plaintext_sha256": "fd358f78e49a6247e31b73fbd3d87a5f79139eba73c7a13a8604c01aa0d4fbca"
+    },
+    {
+      "id": "rev3",
+      "normalized_length": 61,
+      "normalized_sha256": "167c935d9359803e819e9c285b11229a9a7f36c3736eaa6fe42a685b7e657a4d",
+      "source_plaintext_sha256": "167c935d9359803e819e9c285b11229a9a7f36c3736eaa6fe42a685b7e657a4d"
+    },
+    {
+      "id": "rev4",
+      "normalized_length": 165,
+      "normalized_sha256": "7baa04598e5c9208e5b5acf8a427c7b7d76c2315d3fcb864e2182af9465d87c3",
+      "source_plaintext_sha256": "9bdd92a43866e16be4c0133e8799d0abc92aeb7a8fad7ceb90d0e8da0ee1c2a6"
+    },
+    {
+      "id": "rev5",
+      "normalized_length": 472,
+      "normalized_sha256": "c5b78419b76d43b268fb1b8b4932950d38aef3318de5ebca8ebeede1571be160",
+      "source_plaintext_sha256": "33517b1c205192bea8fe4c6222bbf0486fac5dc95e57907bd16d69ab5e486d1e"
+    },
+    {
+      "id": "rev6",
+      "normalized_length": 99,
+      "normalized_sha256": "16bd389463d618f268ef208c9995bfe17e975773a115fe94d892c2c412c2bdce",
+      "source_plaintext_sha256": "3876d7f0e19589cba8fccddcce8afcfe15ecd8834d00ab2cb80f3d4784d1a28a"
+    },
+    {
+      "id": "rev8",
+      "normalized_length": 672,
+      "normalized_sha256": "18bb52feedb62aa8f53fde676f775f7d510277e6f73357069235e23f49096fae",
+      "source_plaintext_sha256": "96e40d74f06d7a1d249818f6efbcd5b56fcbf141ecfae243499e78021c2c0896"
+    },
+    {
+      "id": "rev9",
+      "normalized_length": 113,
+      "normalized_sha256": "27fc93cc6284788b75cf1418ccc610c9ce233c2d71f1b8301acd68580f6a8c54",
+      "source_plaintext_sha256": "f717b7b1a2411328887a1d39737455a525853547e3d67a902405d121b33017c9"
+    },
+    {
+      "id": "rev10",
+      "normalized_length": 177,
+      "normalized_sha256": "635cd1f34161d670bb77c84c327b74be1b04b7b021a120035401ba0fe06f5bfd",
+      "source_plaintext_sha256": "52a4be5af5a5492d8178da5398aa7994b5cda322623f8cf91b3193e8bcd509c2"
+    },
+    {
+      "id": "rev11",
+      "normalized_length": 454,
+      "normalized_sha256": "ec838d9ca4a7e72dfbe3393406162c7dff897507cd44a663f09ea11e85861ec1",
+      "source_plaintext_sha256": "414c5e31d50a70611cd9060a45109d8f2db620cbf9fe0d021106eb1a6378428b"
+    },
+    {
+      "id": "rev12",
+      "normalized_length": 155,
+      "normalized_sha256": "2427d7fcfc8a76869b88485ab51aad4bc58586f641f346de3102a2b50dd74acb",
+      "source_plaintext_sha256": "475f0d537a0f29f719938466c9dd13358dd09899cdd8dafc8608ac8a11d76a52"
+    },
+    {
+      "id": "rev13",
+      "normalized_length": 259,
+      "normalized_sha256": "44b2a806f30cb104330d208f3f0cb241a744e1689dc97ec5d551f024581c7fa7",
+      "source_plaintext_sha256": "7fe9969ab9438ca7319c559a5d5bc422e2ea3f90a41a4e29b2ac4c639c8d32e1"
+    },
+    {
+      "id": "rev14",
+      "normalized_length": 128,
+      "normalized_sha256": "d48dcf3ab1b8f01534093c1e24441db6d85a584fb8d1c9f39a5d44e93072eed7",
+      "source_plaintext_sha256": "f13edc6ecc281ae28dda0784e481231e1f577348d44ce01e3187e7f1baa74983"
+    }
+  ],
+  "scope": "Derived A-Z unigram fingerprint from solved sibling plaintext records; rev7 excluded. No target stream scoring.",
+  "source_sha256": "bda59c04f96277c184b76c7e9861d00c2ffc3fc99e9c66b27231479a10e11aff",
+  "target_evaluated": false
+}
