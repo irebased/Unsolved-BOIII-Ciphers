@@ -603,3 +603,21 @@ python3 -B research/rev7-20260909-codex/rijndael256_cfb/controls.py --regenerate
 ```
 
 The unpack step is needed only in a fresh checkout and refuses an existing destination. Actual synthetic regeneration requires Node, clang and PyCryptodome; no binaries are published. These controls read no Rev7 data and establish no target result. Future searches must preserve unknown intervals and avoid pruning intermediate binary data.
+
+
+## Frozen Rijndael-256 window gate
+
+Following FABLE preregistration message 154, the [window gate](rijndael256_windows/target/target_gate.json) freezes the exact 24 cells and 11,208 full-evidence rows, all source/control/documentation inputs and canonical ciphertext identities. Gate SHA-256 is `a9611eb904ae8575f6b85368f339be69500bae45bd15710abe77d77ee580464d`. Root's MDX-hash-only selftest passed. This snapshot precedes a separate root GO and target execution.
+
+## Independent character-unit AMSCO geometry
+
+The [character AMSCO geometry](../char_amsco/astra/README.md) treats each hexadecimal character as a token, with continuous alternating one/two-character cells and arbitrary column order. The complete character stream is reconstructed before hex decoding, including across odd column boundaries. This differs from the previously tested byte-unit model.
+
+Root reviewed the replacement implementation and independently regenerated the [12,174-byte ledger](../char_amsco/astra/geometry.json) byte for byte, SHA-256 `5e61da73d918e2e4b52d81927f01227152bd15ad6e8a9b8f7732ec9ad81939b7`. The small exhaustive grid compares production against an independent explicit-row oracle in 43,600 cases and 566,800 prefix checks, including 13,952 truncated-cell cases. A separate 1,092-character grid covers widths 2–10, both starts, four orientations and three order variants: 216 full cases and 2,799 prefix probes. It reconstructs and decodes the full natural stream exactly. Because 1,092 is divisible by three, those full-length cases never truncate a cell; width 10 instead ends in a partial row of eight cells.
+
+```sh
+python3 -S -B research/char_amsco/astra/amsco_geometry.py
+python3 -S -B research/char_amsco/astra/amsco_geometry.py --regenerate /tmp/char-amsco-geometry.json
+```
+
+Default verification recomputes the synthetic certificates using only the standard library. This establishes geometry and validation behavior; it performs no cryptography or target search and makes no claim of equivalence to every historical frontend. The rejected prototype drafts are excluded from publication.

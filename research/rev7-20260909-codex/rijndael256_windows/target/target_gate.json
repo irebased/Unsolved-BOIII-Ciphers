@@ -1,0 +1,65 @@
+{
+  "artifact_hashes": {
+    "research/rev7-20260909-codex/rijndael256_controls/README.md": "485218f6fe8a15e74d451c1f32ececf1f610316ee638cd3c2b090f031b070b2a",
+    "research/rev7-20260909-codex/rijndael256_controls/build_source.py": "d32cac36412340865b2fd28d8b6437f9c2f508cd229c58881c3285d3e3039961",
+    "research/rev7-20260909-codex/rijndael256_controls/controls.json": "2e164a7b6091f5a1c76a1863cd45ddb2c919597350ff20e3ce52c131ed9c804c",
+    "research/rev7-20260909-codex/rijndael256_controls/controls.py": "c35dde4e66b4a5633c0b0d14086bb1011ae313448d4e460ef405dd53d29f6cb2",
+    "research/rev7-20260909-codex/rijndael256_controls/js_blocks.js": "ceefc2c2c15b7cb60b07ba14539c1ec99bda682409a728bc2fa04ee4df292f52",
+    "research/rev7-20260909-codex/rijndael256_controls/provenance.json": "4540e73a6c76f42413df9ead612db3b173af663a2351b104a4c6c4ea2f0f1905",
+    "research/rev7-20260909-codex/rijndael256_controls/source/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+    "research/rev7-20260909-codex/rijndael256_controls/source/aes.js": "c8d6903ff7d6b090b2050f1c59dcf63ee08ac0c084caa11f9912bf5b20f90a8a",
+    "research/rev7-20260909-codex/rijndael256_controls/source/libdefs.h": "556ec4fcebae614cd90d05a2fead50d9355ff39f65b44c8f4044c7f209074c6e",
+    "research/rev7-20260909-codex/rijndael256_controls/source/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "research/rev7-20260909-codex/rijndael256_controls/source/rijndael-256.c": "fa16b72832a4cda8fd9909d88c8a7b779d352bbfb13acf76d57391dfe9219821",
+    "research/rev7-20260909-codex/rijndael256_controls/source/rijndael.h": "57142416d7b11f6788a10ded626ad426aca430ed5bff34d60b87868feb3fe0e2",
+    "research/rev7-20260909-codex/rijndael256_windows/README.md": "141221f4308faf699dd62ac438c5964ed8b2653a448a12163e597b5d57a4a946",
+    "research/rev7-20260909-codex/rijndael256_windows/controls.json": "56cfdfc7245b3f28b819858b40e537d787ed4bac664be6677edba30c4cdc480b",
+    "research/rev7-20260909-codex/rijndael256_windows/controls.py": "08e9f4f44375f6636c68e74bd4d0e56c364639d4242a599cad705a042ad7a514",
+    "research/rev7-20260909-codex/rijndael256_windows/engine.py": "7d32315f2d874fefe0c758b932a102e4c71f809370ba5a9df182bf8e8a5bf373",
+    "research/rev7-20260909-codex/rijndael256_windows/target/README.md": "a284307185f732d41c8d06a76e8b37ed1297a630a7d80c69238c561c361cc5b1",
+    "research/rev7-20260909-codex/rijndael256_windows/target/controls.json": "0fbae87ec9cb4a27aa0b7db7f261fdb48d65377e4ae01b4b38e7e9ba05ccdc8f",
+    "research/rev7-20260909-codex/rijndael256_windows/target/controls.py": "aa7292c508c0f368742880fdff0652d8fd29a225fc32ae2f74371b2c44426fde",
+    "research/rev7-20260909-codex/rijndael256_windows/target/prepare_gate.py": "5f495254fcf75db10fa7bf73d5995407f353a6a8cb2bdf6cf854ebd105f57f22"
+  },
+  "authorization": "FABLE preregistered; root GO required",
+  "canonical_text_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "driver_sha256": "e9796cad76be085775e6c0532faf11f1390b0792863d391be2381c965554f416",
+  "fable_reference": "FABLE loopback message 154; immutable harness c4e9a5c59a41e0cb72efaf3bb373ceaf94c25383; root reviewed source and regenerated harness ledger byte for byte",
+  "identity": "ASTRA",
+  "mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "scope": {
+    "block_bytes": 32,
+    "candidates": "every retained window independently replayed with untouched JavaScript blocks and a separate cut-boundary regex oracle; no trim/unpad/framing fit",
+    "caps": "none",
+    "cells": 24,
+    "context_rows": 11208,
+    "identity": "ASTRA",
+    "input_bytes": 546,
+    "key_construction": {
+      "16": "5a6f6d62696573000000000000000000",
+      "24": "5a6f6d626965730000000000000000000000000000000000",
+      "32": "5a6f6d6269657300000000000000000000000000000000000000000000000000"
+    },
+    "modes": {
+      "cbc": {
+        "external_iv": "every IV; returned D(C1)^C0 || D(C2)^C1",
+        "offsets": 451,
+        "returned_bytes": 64,
+        "window_bytes": 96
+      },
+      "ecb": {
+        "offsets": 483,
+        "returned_bytes": 64,
+        "window_bytes": 64
+      }
+    },
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "row_evidence": "every context retains full64 plaintext, two decrypted blocks, input-window SHA256, classification and witness"
+  },
+  "target_evaluated": false
+}
