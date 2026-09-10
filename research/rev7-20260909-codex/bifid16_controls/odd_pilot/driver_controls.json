@@ -1,0 +1,59 @@
+{
+  "assertions": {
+    "all_four_orientations_exact": true,
+    "forbidden_fixed_square_unsat": true,
+    "positive_sat_and_exact": true
+  },
+  "cells": [
+    {
+      "ciphertext_hex": "f16128168a2aaaba86f4c746266438693591215e59d92594ec2332203ecedc68a2aaab6881a9a46266438664f98825e59d92599302000203ecedc99294e2b6881a9ae1394ec23322",
+      "classified_as_negative": false,
+      "label": "positive",
+      "period": 31,
+      "plaintext_hex": "53796e746865746963206261672070696c6f7420e280930953796e746865746963206261672070696c6f7420e280930953796e746865746963206261672070696c6f7420e2809309",
+      "smt2_sha256": "f3434ab8bd384cbd77ee8ac60de5d5db0e1d15bbdf3892f2c1c62b1199876ca7",
+      "status": "sat"
+    },
+    {
+      "ciphertext_hex": "f16128168a2aaab8f6f4c746266438693591215e59d92594ec2332203ecedc68a2aaab6881a9a46266438664f98825e59d92599302000203ecedc99294e2b6881a9ae1394ec23322",
+      "classified_as_negative": true,
+      "label": "forbidden_first_byte",
+      "period": 31,
+      "plaintext_hex": "ff796e746865746963206261672070696c6f7420e280930953796e746865746963206261672070696c6f7420e280930953796e746865746963206261672070696c6f7420e2809309",
+      "smt2_sha256": "aefaf0fd77195e10dcfd45fb5ff55e42c8ba555831c9b7990dc5b937485cea5f",
+      "status": "unsat"
+    }
+  ],
+  "fixed_square": [
+    4,
+    14,
+    9,
+    13,
+    12,
+    15,
+    3,
+    5,
+    6,
+    8,
+    2,
+    10,
+    1,
+    7,
+    0,
+    11
+  ],
+  "identity": "ASTRA",
+  "orientation_fixture": {
+    "byte_reverse": "563412",
+    "forward": "123456",
+    "nibble_swap": "214365",
+    "reverse": "654321"
+  },
+  "rev7_read": false,
+  "seed": 20260911,
+  "source_hashes": {
+    "driver_controls.py": "2f0c9cf17de99ead451ab970e299895d16802a944bf94f4a56624062d4b8b01f",
+    "run_target.py": "52972d35244709e87f2de69b6f760b9cdc2029e82d93af9789bfffe2c34bb3eb"
+  },
+  "target_evaluated": false
+}

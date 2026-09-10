@@ -1,0 +1,43 @@
+{
+  "authorized": true,
+  "driver_sha256": "52972d35244709e87f2de69b6f760b9cdc2029e82d93af9789bfffe2c34bb3eb",
+  "identity": "ASTRA",
+  "review": "Root read complete driver, independent retained-model/formula verifier and synthetic controls; root synthetic controls replay byte-exact. Bounded 16-cell pilot. SAT compatible only, UNKNOWN unresolved. No expansion authorized.",
+  "reviewed_artifact_hashes": {
+    "PLAN.md": "e4576441e5fda75a9c5dcc0dbf2b6b0ce75149632de0997c66ba83ecb382cd3f",
+    "driver_controls.json": "f4a18cbc5cdc24246aa93f89f1bd88689392d410226c19fae1342338d4bf4cb4",
+    "run_target.py": "52972d35244709e87f2de69b6f760b9cdc2029e82d93af9789bfffe2c34bb3eb",
+    "verify_results.py": "bd2d2a58d2493b1e87e19bf0ca9e12f795c4c1b7fb26bbaa58be1bbbba276375"
+  },
+  "scope": {
+    "bag": 213,
+    "cells": 16,
+    "orientations": [
+      "forward",
+      "reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "periods": [
+      3,
+      31,
+      99,
+      1091
+    ],
+    "prefix_bytes": 128,
+    "timeout_ms_per_cell": 10000
+  },
+  "source_hashes": {
+    "audit.json": "d984d8c9ea8118e85d7f21bb226df28925392141bbf4af6d9f8e1951c6892aec",
+    "audit_controls.py": "4261a5df90d45e3b04482ddbddf5a793f4209f3a12678c23b068a171243c6b25",
+    "bagmode.py": "ec21d22691016d2a331a0c8a14c0573306b88ac6db772c8a6c5de64409597e06",
+    "bagmode_controls.json": "380c7e0573e7e541e19d66331847e5d71c2f8ee6bc735d6b8aa9dbf45ce311bb",
+    "bagmode_controls.py": "6aa56ea3298ab53b6a862a724b481d9078f529dee569d0b5bb4e438e4326dda8",
+    "bifid16.py": "a80c5f839511454a11a473cbfa4734bf3452656c8015e15ac759f65f45bf9af7",
+    "dataset": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "dependency/dependency.json": "e88e7bf34243264705ca5fcaa66acb5c9db96f289192a862e0e063a915897e4e",
+    "dependency/runtime/z3/lib/libz3.dylib": "3164e079c221c23a843396a485a6e912ee423918ee64ea03943e584305439a98",
+    "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "symmetry_probe.py": "8bf072deccafabe1e98db126178207d9cf3c8eccdcab6902a28b0c0d123a26e0"
+  }
+}

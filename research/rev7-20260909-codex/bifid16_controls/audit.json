@@ -1,0 +1,451 @@
+{
+  "assertions": {
+    "all_256_bag_predicates_match": true,
+    "all_48_fully_fixed_qfbv_checks_match": true,
+    "all_8_saved_bag_sat_models_roundtrip": true,
+    "all_reduced24_independently_enumerated": true,
+    "all_source_pins_match": true,
+    "old_exact_fixed_full_matches": true,
+    "old_exact_reduced24_matches": true,
+    "unknown_searches_not_rerun": true
+  },
+  "bag_reduced24": [
+    {
+      "accepted_count": 7,
+      "accepted_models_sha256": "c2b07cdc1f11785e8ea1cbd7702a51d9b2b61279cce13ae7946f6313b74e9f6a",
+      "all24_oracle_count": 24,
+      "bag": 165,
+      "complete_saved_sets_equal": true,
+      "fully_fixed_qfbv_sat": 7,
+      "fully_fixed_qfbv_unsat": 17
+    },
+    {
+      "accepted_count": 12,
+      "accepted_models_sha256": "40cb85df2733c9280b796f6033b704f37744e9438be7e36518e277bc49ddab7a",
+      "all24_oracle_count": 24,
+      "bag": 213,
+      "complete_saved_sets_equal": true,
+      "fully_fixed_qfbv_sat": 12,
+      "fully_fixed_qfbv_unsat": 12
+    }
+  ],
+  "bag_saved_sat_models": [
+    {
+      "bag": 165,
+      "ciphertext_sha256": "6ed66bfc9e96690c7de12df7436acb5d37648b5dc07f85435681015ec2d95fc7",
+      "fixture": "full_fixed_truth",
+      "independent_roundtrip": true,
+      "plaintext_sha256": "342d4338c4d168375f1299091abc8e9860209db5195ab407e72c6afc42e64199",
+      "prefix_bytes": 546,
+      "square": [
+        2,
+        12,
+        4,
+        15,
+        14,
+        0,
+        3,
+        5,
+        7,
+        11,
+        10,
+        8,
+        9,
+        1,
+        6,
+        13
+      ]
+    },
+    {
+      "bag": 213,
+      "ciphertext_sha256": "6ed66bfc9e96690c7de12df7436acb5d37648b5dc07f85435681015ec2d95fc7",
+      "fixture": "full_fixed_truth",
+      "independent_roundtrip": true,
+      "plaintext_sha256": "342d4338c4d168375f1299091abc8e9860209db5195ab407e72c6afc42e64199",
+      "prefix_bytes": 546,
+      "square": [
+        2,
+        12,
+        4,
+        15,
+        14,
+        0,
+        3,
+        5,
+        7,
+        11,
+        10,
+        8,
+        9,
+        1,
+        6,
+        13
+      ]
+    },
+    {
+      "bag": 165,
+      "ciphertext_sha256": "84796e21cf4d4e132e9bff4aba45124b05ad08af2c37b40decd74ae4aa90a596",
+      "fixture": "short48",
+      "independent_roundtrip": true,
+      "plaintext_sha256": "a0a8e08f14d53c0df84e050cfe65aaa01557ee1cf5ae8b3775bc11bd7659698c",
+      "prefix_bytes": 48,
+      "square": [
+        8,
+        15,
+        5,
+        0,
+        3,
+        13,
+        1,
+        12,
+        14,
+        9,
+        4,
+        2,
+        7,
+        11,
+        6,
+        10
+      ]
+    },
+    {
+      "bag": 213,
+      "ciphertext_sha256": "84796e21cf4d4e132e9bff4aba45124b05ad08af2c37b40decd74ae4aa90a596",
+      "fixture": "short48",
+      "independent_roundtrip": true,
+      "plaintext_sha256": "ee0c353cbbd95ee4c1672dccaf7749824afba85e399365ed54c925b83d4f69ef",
+      "prefix_bytes": 48,
+      "square": [
+        9,
+        5,
+        7,
+        13,
+        3,
+        14,
+        2,
+        1,
+        0,
+        8,
+        15,
+        11,
+        10,
+        6,
+        12,
+        4
+      ]
+    },
+    {
+      "bag": 165,
+      "ciphertext_sha256": "6ed66bfc9e96690c7de12df7436acb5d37648b5dc07f85435681015ec2d95fc7",
+      "fixture": "full546_prefix",
+      "independent_roundtrip": true,
+      "plaintext_sha256": "321646f95c600d5d6b68c393cb77990a07b6d4fb59a1105d1ae1e1369920c5fa",
+      "prefix_bytes": 64,
+      "square": [
+        5,
+        3,
+        9,
+        2,
+        11,
+        6,
+        13,
+        0,
+        14,
+        12,
+        8,
+        7,
+        4,
+        15,
+        10,
+        1
+      ]
+    },
+    {
+      "bag": 165,
+      "ciphertext_sha256": "6ed66bfc9e96690c7de12df7436acb5d37648b5dc07f85435681015ec2d95fc7",
+      "fixture": "full546_prefix",
+      "independent_roundtrip": true,
+      "plaintext_sha256": "b0b28e662355588ea081230c82349b98fda0ae245e1f03ff0d01fa4cd2abe64e",
+      "prefix_bytes": 128,
+      "square": [
+        5,
+        3,
+        14,
+        11,
+        12,
+        7,
+        8,
+        15,
+        13,
+        2,
+        10,
+        1,
+        6,
+        9,
+        4,
+        0
+      ]
+    },
+    {
+      "bag": 213,
+      "ciphertext_sha256": "6ed66bfc9e96690c7de12df7436acb5d37648b5dc07f85435681015ec2d95fc7",
+      "fixture": "full546_prefix",
+      "independent_roundtrip": true,
+      "plaintext_sha256": "5922cf12b4e9abdfb3c73a5ba983541db13ff76ab0e2b371f1db897c24664efe",
+      "prefix_bytes": 64,
+      "square": [
+        12,
+        5,
+        4,
+        2,
+        8,
+        11,
+        10,
+        14,
+        1,
+        13,
+        9,
+        6,
+        7,
+        15,
+        3,
+        0
+      ]
+    },
+    {
+      "bag": 213,
+      "ciphertext_sha256": "6ed66bfc9e96690c7de12df7436acb5d37648b5dc07f85435681015ec2d95fc7",
+      "fixture": "full546_prefix",
+      "independent_roundtrip": true,
+      "plaintext_sha256": "bb2605f7e60d5bb29876b5ab27fab725dc5715b4bb8a213f56bf4d4cd1faa186",
+      "prefix_bytes": 128,
+      "square": [
+        10,
+        7,
+        11,
+        13,
+        14,
+        2,
+        9,
+        4,
+        6,
+        5,
+        12,
+        0,
+        3,
+        15,
+        1,
+        8
+      ]
+    }
+  ],
+  "exact_endpoint": {
+    "accepted_count": 2,
+    "all24_oracle_count": 24,
+    "complete_saved_sets_equal": true,
+    "fixed_full_ciphertext_sha256": "6aa51cd3adbd3fb501e3af0acfc41e3ac4e7444c9890c0ba2bfa280eb2fbab88",
+    "fixed_full_plaintext_sha256": "5e4609e5b52e983f35e26d409a4477193009b4ed4f2038312a337e83ca178217",
+    "fixed_full_roundtrip": true
+  },
+  "fixtures": {
+    "bag": {
+      "fixed_positions": {
+        "0": 14,
+        "1": 12,
+        "2": 10,
+        "3": 6,
+        "4": 0,
+        "5": 7,
+        "6": 8,
+        "7": 13,
+        "8": 9,
+        "9": 2,
+        "10": 11,
+        "11": 15
+      },
+      "full546": {
+        "ciphertext_hex": "2d6cd991ceb1eb93432366a9efe7fe745ab451431117fd71ff21221ae537b7cd991ceb1eb9eb67366a9efe7fe7fe9b451431117fd75df21221ae537b7c8891ceb1eb9eb6aeb6a9efe7fe7fe99fe1431117fd75dffee21ae537b7c88a8ceb1eb9eb6aebdeb7fe7fe7fe99fe2f31117fd75dffe0453e537b7c88a8c214eb9eb6aebdeb855efe7fe99fe2f3bc17fd75dffe04504547b7c88a8c214214eb6aebdeb85532d9fe99fe2f3bc1a4375dffe045045c457c88a8c21421421faebdeb85532d6cd99fe2f3bc1a43236ffe045045c45ab45a8c21421421ff21deb85532d6cd99122f3bc1a432366a9045045c45ab4514021421421ff2122185532d6cd991ceb6bc1a432366a9efe045c45ab4514311621421ff21221ae532d6cd991ceb1eb1a432366a9efe7fec45ab451431117f621ff21221ae537b6cd991ceb1eb9eb62366a9efe7fe7feab451431117fd75df21221ae537b7c8991ceb1eb9eb6aea6a9efe7fe7fe99f51431117fd75dff0221ae537b7c88a8ceb1eb9eb6aebde7efe7fe7fe99fe2f31117fd75dffe040ae537b7c88a8c211eb9eb6aebdeb85e7fe7fe99fe2f3bc17fd75dffe04504537b7c88a8c214219eb6aebdeb8553297fe99fe2f3bc1a4d75dffe045045c407c88a8c214214216aebdeb85532d6c999fe2f3bc1a4323dffe045045c45abf8a8c21421421ff2bdeb85532d6cd99de2f3bc1a432366ae045045c45ab451fc21421421ff2122b85532d6cd991ce83bc1a432366a9ef5040421",
+        "period": 31,
+        "plaintext_hex": "426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e280",
+        "truth_square": [
+          2,
+          12,
+          4,
+          15,
+          14,
+          0,
+          3,
+          5,
+          7,
+          11,
+          10,
+          8,
+          9,
+          1,
+          6,
+          13
+        ]
+      },
+      "short24": {
+        "ciphertext_hex": "9a66400e2d866c431a23aee28219369ae82a68f3a4e28203",
+        "period": 5,
+        "plaintext_hex": "426167206d6f646520e28093e28094e2809878e28099e280",
+        "truth_square": [
+          4,
+          14,
+          9,
+          13,
+          12,
+          15,
+          3,
+          5,
+          6,
+          8,
+          2,
+          10,
+          1,
+          7,
+          0,
+          11
+        ]
+      },
+      "short48": {
+        "ciphertext_hex": "499a39a206576ad9010ff58851ac1b8f5483eb4ff68811c716a4015cdd25626c3d3a79623fe1af1d8f548014f1558212",
+        "period": 5,
+        "plaintext_hex": "426167206d6f646520e28093e28094e2809878e28099e280a6090d0a426167206d6f646520e28093e28094e2809878e2",
+        "truth_square": [
+          6,
+          9,
+          5,
+          7,
+          13,
+          11,
+          1,
+          2,
+          3,
+          8,
+          14,
+          15,
+          10,
+          4,
+          0,
+          12
+        ]
+      }
+    },
+    "bag_seed": 20260911,
+    "exact": {
+      "full546": {
+        "ciphertext_hex": "45c34a81f10addaf776424b757089cbdf88af5aada4dd29dcdcdca8c3c544e47842842284984a882880887288284d65b210aafa8661f33dc1e0353de97e3f029f6316106618b6b6b6807b7bc0081c21e218e21221009e2ae293e29e2615c34a81f10adda6676424b757089cb7f88af5aada4dd22fcdcdca8c3c544e27842842284984a432880887288284d75b210aafa8661fd1dc1e0353de97e3d029f631610661847b6b6807b7bc0088c21e218e21221063e2ae293e29e2613c34a81f10adda6f66424b757089cb7688af5aada4dd221cdcdca8c3c544e29842842284984a45c880887288284d77b210aafa8661fdf4c1e0353de97e3dc29f631610661847b6b6807b7bc0088221e218e21221065e2ae293e29e2613d34a81f10adda6f07424b757089cb76b8af5aada4dd221cacdca8c3c544e29e42842284984a45c380887288284d776210aafa8661fdf8e1e0353de97e3dcd9f6316106618478bb6807b7bc0088281e218e21221065b2ae293e29e2613dc4a81f10adda6f02a24b757089cb76b6af5aada4dd221c20dca8c3c544e29e22842284984a45c380887288284d776410aafa8661fdf889e0353de97e3dcdcf6316106618478476807b7bc0088288e218e21221065b2fe293e29e2613dc1a81f10adda6f02904b757089cb76b6bf5aada4dd221c214ca8c3c544e29e2a842284984a33333c887288284566666777777777777777addddddddddddddd3333333333333335666666666666666777addd",
+        "period": 31,
+        "plaintext_hex": "415354524120426966696420313620636f6e74726f6c3a096c696e650d0ae28093e28094e2809878e28099e280a6415354524120426966696420313620636f6e74726f6c3a096c696e650d0ae28093e28094e2809878e28099e280a6415354524120426966696420313620636f6e74726f6c3a096c696e650d0ae28093e28094e2809878e28099e280a6415354524120426966696420313620636f6e74726f6c3a096c696e650d0ae28093e28094e2809878e28099e280a6415354524120426966696420313620636f6e74726f6c3a096c696e650d0ae28093e28094e2809878e28099e280a6415354524120426966696420313620636f6e74726f6c3a096c696e650d0ae28093e28094e2809878e28099e280a6415354524120426966696420313620636f6e74726f6c3a096c696e650d0ae28093e28094e2809878e28099e280a6415354524120426966696420313620636f6e74726f6c3a096c696e650d0ae28093e28094e2809878e28099e280a6415354524120426966696420313620636f6e74726f6c3a096c696e650d0ae28093e28094e2809878e28099e280a6415354524120426966696420313620636f6e74726f6c3a096c696e650d0ae28093e28094e2809878e28099e280a6415354524120426966696420313620636f6e74726f6c3a096c696e650d0ae28093e28094e2809878e28099e280a65a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a",
+        "truth_square": [
+          5,
+          12,
+          13,
+          3,
+          11,
+          14,
+          4,
+          8,
+          6,
+          0,
+          15,
+          1,
+          7,
+          2,
+          10,
+          9
+        ]
+      },
+      "short": {
+        "ciphertext_hex": "56635f29f5862e7f304c9a73824a590a",
+        "fixed_positions": {
+          "0": 2,
+          "1": 11,
+          "2": 7,
+          "3": 5,
+          "4": 13,
+          "5": 1,
+          "6": 9,
+          "7": 12,
+          "8": 4,
+          "9": 15,
+          "10": 8,
+          "11": 0
+        },
+        "period": 5,
+        "plaintext_hex": "53686f727420e280932074657874210a",
+        "truth_square": [
+          11,
+          5,
+          0,
+          15,
+          8,
+          3,
+          13,
+          2,
+          10,
+          6,
+          14,
+          1,
+          7,
+          4,
+          12,
+          9
+        ]
+      }
+    },
+    "exact_seed": 20260910
+  },
+  "identity": "ASTRA",
+  "purpose": "independent reconstruction and retained-model audit of frozen synthetic ledgers",
+  "qfbv_allowed_predicates": {
+    "165": {
+      "accepted_count": 165,
+      "accepted_sha256": "75eb7cd62f2202619659f1e14842df1be234842cca431b976164e376e91f03ea",
+      "all_256_checked": true
+    },
+    "213": {
+      "accepted_count": 213,
+      "accepted_sha256": "9c017716896fd326753342d444b2ec395344d9b54ed314f1bc3cfa422665ba8a",
+      "all_256_checked": true
+    }
+  },
+  "rev7_read": false,
+  "source_hashes": {
+    "attempts.json": "27cdfa1b928d010da9c39ffc0c65fb4b597c9d4c2abeb1ba3b4a1b72d6c1c528",
+    "audit_controls.py": "4261a5df90d45e3b04482ddbddf5a793f4209f3a12678c23b068a171243c6b25",
+    "bagmode.py": "ec21d22691016d2a331a0c8a14c0573306b88ac6db772c8a6c5de64409597e06",
+    "bagmode_controls.json": "380c7e0573e7e541e19d66331847e5d71c2f8ee6bc735d6b8aa9dbf45ce311bb",
+    "bagmode_controls.py": "6aa56ea3298ab53b6a862a724b481d9078f529dee569d0b5bb4e438e4326dda8",
+    "bifid16.py": "a80c5f839511454a11a473cbfa4734bf3452656c8015e15ac759f65f45bf9af7",
+    "controls.json": "b95abb4c6bc3c129e64be79bea69bfa9e812bb62f7451b898bd664cfff0dc899",
+    "controls.py": "670f824070f47d1cc05bf4221e8f45ca152302b880fe56238b6e279a7fae6ead",
+    "dependency/dependency.json": "e88e7bf34243264705ca5fcaa66acb5c9db96f289192a862e0e063a915897e4e",
+    "dependency/runtime/z3/lib/libz3.dylib": "3164e079c221c23a843396a485a6e912ee423918ee64ea03943e584305439a98",
+    "source/functions.bifid.php": "fb4542ac9e3320d83cb41020a8548842e7f8850c24674a1399dc28b210c0234c",
+    "symmetry_probe.py": "8bf072deccafabe1e98db126178207d9cf3c8eccdcab6902a28b0c0d123a26e0"
+  },
+  "target_evaluated": false,
+  "unresolved_attempts": [
+    {
+      "classified_as_negative": false,
+      "period": 31,
+      "status": "unknown",
+      "timeout_ms": 120000
+    },
+    {
+      "classified_as_negative": false,
+      "period": 3,
+      "status": "interrupted",
+      "timeout_ms": 120000
+    },
+    {
+      "classified_as_negative": false,
+      "period": 2,
+      "status": "unknown",
+      "timeout_ms": 120000
+    }
+  ]
+}

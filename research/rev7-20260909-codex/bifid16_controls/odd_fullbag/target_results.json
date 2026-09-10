@@ -1,0 +1,265 @@
+{
+  "cells": [
+    {
+      "bag": 213,
+      "cell_id": "forward_p99",
+      "ciphertext_sha256": "6e3990baeddc0d503786de4ba78ffd9b1a148886f90b77eb9f5baf60867a5c88",
+      "classified_as_negative": true,
+      "elapsed_seconds": 0.04980195799999976,
+      "orientation": "forward",
+      "period": 99,
+      "prefix_bytes": 546,
+      "prior_status": "unknown",
+      "reason_unknown": null,
+      "smt_dump": {
+        "gzip_bytes": 63546,
+        "gzip_sha256": "b6982341dfae7a72eda48d2e4ee296fe37b5278d062c6292d0eefa7bc5ca3167",
+        "path": "smt/forward_p99.smt2.gz",
+        "smt2_sha256": "0d20ec16823edbb3763bb55ed51fa3e522b262ccc40b27a70b33b36a8ca37efc"
+      },
+      "status": "unsat",
+      "timeout_ms": 10000
+    },
+    {
+      "bag": 213,
+      "cell_id": "forward_p1091",
+      "ciphertext_sha256": "6e3990baeddc0d503786de4ba78ffd9b1a148886f90b77eb9f5baf60867a5c88",
+      "classified_as_negative": true,
+      "elapsed_seconds": 0.050805667000000554,
+      "orientation": "forward",
+      "period": 1091,
+      "prefix_bytes": 546,
+      "prior_status": "unknown",
+      "reason_unknown": null,
+      "smt_dump": {
+        "gzip_bytes": 61520,
+        "gzip_sha256": "64d44289186fdeb6207c3c04f47bfb0de37b5cc414792a8f567ca02a62aa75ac",
+        "path": "smt/forward_p1091.smt2.gz",
+        "smt2_sha256": "968b53a6b7bed43eabcc5654e54056d0778637cf0c19c37318b2df5d93cce4e9"
+      },
+      "status": "unsat",
+      "timeout_ms": 10000
+    },
+    {
+      "bag": 213,
+      "cell_id": "reverse_p31",
+      "ciphertext_sha256": "57b166832817f8db1e1b2c7e342d6e9613fd1a944ee55cb897750ab9a84b8c00",
+      "classified_as_negative": true,
+      "elapsed_seconds": 0.05729312500000017,
+      "orientation": "reverse",
+      "period": 31,
+      "prefix_bytes": 546,
+      "prior_status": "sat",
+      "reason_unknown": null,
+      "smt_dump": {
+        "gzip_bytes": 65577,
+        "gzip_sha256": "655a6173b677aa1a7ec9872158a3ae417fd18011ffe9d9da31d1065d703c28b0",
+        "path": "smt/reverse_p31.smt2.gz",
+        "smt2_sha256": "6763d5cd9be7d0d89dd3170bcb302e38a3ca36e7ef2d1a0a80bd199a44d1069a"
+      },
+      "status": "unsat",
+      "timeout_ms": 10000
+    },
+    {
+      "bag": 213,
+      "cell_id": "reverse_p99",
+      "ciphertext_sha256": "57b166832817f8db1e1b2c7e342d6e9613fd1a944ee55cb897750ab9a84b8c00",
+      "classified_as_negative": true,
+      "elapsed_seconds": 0.056466207999999796,
+      "orientation": "reverse",
+      "period": 99,
+      "prefix_bytes": 546,
+      "prior_status": "sat",
+      "reason_unknown": null,
+      "smt_dump": {
+        "gzip_bytes": 63406,
+        "gzip_sha256": "bdec8c27d08a7c4773b907eaa867e80aa77ecdc49e5264bb9dd1e562549ca3ba",
+        "path": "smt/reverse_p99.smt2.gz",
+        "smt2_sha256": "1d101f48f31a1c9820d466c32345f2fc5e1ff66ae4428f5f9667d205f7f8a6e3"
+      },
+      "status": "unsat",
+      "timeout_ms": 10000
+    },
+    {
+      "bag": 213,
+      "cell_id": "byte_reverse_p3",
+      "ciphertext_sha256": "348156d322ae00c97ff3d4bd2fe60e3981fd53f9b2bc5f27fe12114b80248dc8",
+      "classified_as_negative": true,
+      "elapsed_seconds": 0.05876683299999996,
+      "orientation": "byte_reverse",
+      "period": 3,
+      "prefix_bytes": 546,
+      "prior_status": "sat",
+      "reason_unknown": null,
+      "smt_dump": {
+        "gzip_bytes": 71510,
+        "gzip_sha256": "c3cc2c1c5c0cc596ea6d0ae6ad8391b03136ad6f04efdd7cc173b0192a22a508",
+        "path": "smt/byte_reverse_p3.smt2.gz",
+        "smt2_sha256": "fee11159a28cde33a983fb2af6f67350f15563544370efa89f87332e162cb2a1"
+      },
+      "status": "unsat",
+      "timeout_ms": 10000
+    },
+    {
+      "bag": 213,
+      "cell_id": "byte_reverse_p99",
+      "ciphertext_sha256": "348156d322ae00c97ff3d4bd2fe60e3981fd53f9b2bc5f27fe12114b80248dc8",
+      "classified_as_negative": true,
+      "elapsed_seconds": 0.05349179100000079,
+      "orientation": "byte_reverse",
+      "period": 99,
+      "prefix_bytes": 546,
+      "prior_status": "sat",
+      "reason_unknown": null,
+      "smt_dump": {
+        "gzip_bytes": 63188,
+        "gzip_sha256": "c5c38e3c297f3621914e0963b6c67b52cbb08712efc02b9f331f531ec4fa284b",
+        "path": "smt/byte_reverse_p99.smt2.gz",
+        "smt2_sha256": "eb94a2a9cd293c670fd6061b851ab41b698405d8d84e28d01f7383e7d0e67f6b"
+      },
+      "status": "unsat",
+      "timeout_ms": 10000
+    },
+    {
+      "bag": 213,
+      "cell_id": "nibble_swap_p31",
+      "ciphertext_sha256": "22efe0ebd93bc1fa9de393d0c76ff29e7a45e76cff95b334896e5df5cc66eec6",
+      "classified_as_negative": true,
+      "elapsed_seconds": 0.8950249170000006,
+      "orientation": "nibble_swap",
+      "period": 31,
+      "prefix_bytes": 546,
+      "prior_status": "sat",
+      "reason_unknown": null,
+      "smt_dump": {
+        "gzip_bytes": 65618,
+        "gzip_sha256": "91d22ffcfa3db123bd6fc1e8387a93dd0b8da28f1ac1ffed5d30367358e62e5d",
+        "path": "smt/nibble_swap_p31.smt2.gz",
+        "smt2_sha256": "c08e9c726e20112811eefc37288f28eab0d618072c6e1a15dba7b8191f5ab7f1"
+      },
+      "status": "unsat",
+      "timeout_ms": 10000
+    },
+    {
+      "bag": 213,
+      "cell_id": "nibble_swap_p99",
+      "ciphertext_sha256": "22efe0ebd93bc1fa9de393d0c76ff29e7a45e76cff95b334896e5df5cc66eec6",
+      "classified_as_negative": true,
+      "elapsed_seconds": 0.049550041999999905,
+      "orientation": "nibble_swap",
+      "period": 99,
+      "prefix_bytes": 546,
+      "prior_status": "unknown",
+      "reason_unknown": null,
+      "smt_dump": {
+        "gzip_bytes": 63258,
+        "gzip_sha256": "37a178a38bb442b809c2b4dc757518d249904d26416a5698fe8216fa4479d6e6",
+        "path": "smt/nibble_swap_p99.smt2.gz",
+        "smt2_sha256": "b16f480f58f39c9a639b15f5074bdf4ff6c3d937699f811ed1cf9c59422b5c65"
+      },
+      "status": "unsat",
+      "timeout_ms": 10000
+    },
+    {
+      "bag": 213,
+      "cell_id": "nibble_swap_p1091",
+      "ciphertext_sha256": "22efe0ebd93bc1fa9de393d0c76ff29e7a45e76cff95b334896e5df5cc66eec6",
+      "classified_as_negative": true,
+      "elapsed_seconds": 0.05130820900000188,
+      "orientation": "nibble_swap",
+      "period": 1091,
+      "prefix_bytes": 546,
+      "prior_status": "sat",
+      "reason_unknown": null,
+      "smt_dump": {
+        "gzip_bytes": 61232,
+        "gzip_sha256": "48bd59e50779f17b448261f64f22998d387eaeb9c5ff782fbf1a972b860c911e",
+        "path": "smt/nibble_swap_p1091.smt2.gz",
+        "smt2_sha256": "94e6428d13e3e38a49f6f1a2ef76d4c89db9aeab7c4b91a42f9b885ac664d134"
+      },
+      "status": "unsat",
+      "timeout_ms": 10000
+    }
+  ],
+  "driver_sha256": "cd6f5abdbd63862dcb8cb84131b454e8dd9a8da6a24677b2a9b6992045edc338",
+  "gate_sha256": "9fa88c99738acce0ad230699fa46ee29b71a9264ea660e0dace2c29b5970b1a2",
+  "identity": "ASTRA",
+  "limits": "UNSAT excludes only the exact selected cell under full 546-byte bag213. SAT is necessary-byte compatibility only, not UTF-8 or plaintext. UNKNOWN is unresolved.",
+  "normalized_text_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "prior_result_sha256": "5ffb45b7191689e119bbb4e930f124eda5f78d8ddbb229085e9c522245c5a4a1",
+  "scope": {
+    "bag": 213,
+    "cells": 9,
+    "prefix_bytes": 546,
+    "selected": [
+      {
+        "orientation": "forward",
+        "period": 99,
+        "prior_status": "unknown"
+      },
+      {
+        "orientation": "forward",
+        "period": 1091,
+        "prior_status": "unknown"
+      },
+      {
+        "orientation": "reverse",
+        "period": 31,
+        "prior_status": "sat"
+      },
+      {
+        "orientation": "reverse",
+        "period": 99,
+        "prior_status": "sat"
+      },
+      {
+        "orientation": "byte_reverse",
+        "period": 3,
+        "prior_status": "sat"
+      },
+      {
+        "orientation": "byte_reverse",
+        "period": 99,
+        "prior_status": "sat"
+      },
+      {
+        "orientation": "nibble_swap",
+        "period": 31,
+        "prior_status": "sat"
+      },
+      {
+        "orientation": "nibble_swap",
+        "period": 99,
+        "prior_status": "unknown"
+      },
+      {
+        "orientation": "nibble_swap",
+        "period": 1091,
+        "prior_status": "sat"
+      }
+    ],
+    "timeout_ms_per_cell": 10000
+  },
+  "source_hashes": {
+    "audit.json": "d984d8c9ea8118e85d7f21bb226df28925392141bbf4af6d9f8e1951c6892aec",
+    "bagmode.py": "ec21d22691016d2a331a0c8a14c0573306b88ac6db772c8a6c5de64409597e06",
+    "bagmode_controls.json": "380c7e0573e7e541e19d66331847e5d71c2f8ee6bc735d6b8aa9dbf45ce311bb",
+    "bifid16.py": "a80c5f839511454a11a473cbfa4734bf3452656c8015e15ac759f65f45bf9af7",
+    "dataset": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "dependency/dependency.json": "e88e7bf34243264705ca5fcaa66acb5c9db96f289192a862e0e063a915897e4e",
+    "dependency/runtime/z3/lib/libz3.dylib": "3164e079c221c23a843396a485a6e912ee423918ee64ea03943e584305439a98",
+    "odd_pilot/run_target.py": "52972d35244709e87f2de69b6f760b9cdc2029e82d93af9789bfffe2c34bb3eb",
+    "odd_pilot/target_gate.json": "fef5128cd5a7d80fb31a48fdfc479e215271b250d9e423d69cbb53021d0d6654",
+    "odd_pilot/target_results.json": "5ffb45b7191689e119bbb4e930f124eda5f78d8ddbb229085e9c522245c5a4a1",
+    "odd_pilot/verify_results.py": "bd2d2a58d2493b1e87e19bf0ca9e12f795c4c1b7fb26bbaa58be1bbbba276375",
+    "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "symmetry_probe.py": "8bf072deccafabe1e98db126178207d9cf3c8eccdcab6902a28b0c0d123a26e0"
+  },
+  "summary": {
+    "negative_claims": 9,
+    "sat": 0,
+    "unknown": 0,
+    "unsat": 9
+  },
+  "target_evaluated": true
+}

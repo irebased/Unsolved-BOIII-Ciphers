@@ -1,0 +1,79 @@
+{
+  "authorized": true,
+  "driver_sha256": "cd6f5abdbd63862dcb8cb84131b454e8dd9a8da6a24677b2a9b6992045edc338",
+  "identity": "ASTRA",
+  "review": "Root read driver/control/verifier; independent extension control byte-exact replay. Exactly9priornonUNSATcells,full546bag213,10000ms,noexpansion.",
+  "reviewed_artifact_hashes": {
+    "driver_controls.json": "2f463b69dfa83ea3b7469ca25085c67f498f9b74a438edd6ed1d21ff158845f7",
+    "run_target.py": "cd6f5abdbd63862dcb8cb84131b454e8dd9a8da6a24677b2a9b6992045edc338",
+    "verify_results.py": "37f657c01ed2ecefdf08e992da7c0a62725942e25e11c005f998a40c81ab46c0"
+  },
+  "scope": {
+    "bag": 213,
+    "cells": 9,
+    "prefix_bytes": 546,
+    "selected": [
+      {
+        "orientation": "forward",
+        "period": 99,
+        "prior_status": "unknown"
+      },
+      {
+        "orientation": "forward",
+        "period": 1091,
+        "prior_status": "unknown"
+      },
+      {
+        "orientation": "reverse",
+        "period": 31,
+        "prior_status": "sat"
+      },
+      {
+        "orientation": "reverse",
+        "period": 99,
+        "prior_status": "sat"
+      },
+      {
+        "orientation": "byte_reverse",
+        "period": 3,
+        "prior_status": "sat"
+      },
+      {
+        "orientation": "byte_reverse",
+        "period": 99,
+        "prior_status": "sat"
+      },
+      {
+        "orientation": "nibble_swap",
+        "period": 31,
+        "prior_status": "sat"
+      },
+      {
+        "orientation": "nibble_swap",
+        "period": 99,
+        "prior_status": "unknown"
+      },
+      {
+        "orientation": "nibble_swap",
+        "period": 1091,
+        "prior_status": "sat"
+      }
+    ],
+    "timeout_ms_per_cell": 10000
+  },
+  "source_hashes": {
+    "audit.json": "d984d8c9ea8118e85d7f21bb226df28925392141bbf4af6d9f8e1951c6892aec",
+    "bagmode.py": "ec21d22691016d2a331a0c8a14c0573306b88ac6db772c8a6c5de64409597e06",
+    "bagmode_controls.json": "380c7e0573e7e541e19d66331847e5d71c2f8ee6bc735d6b8aa9dbf45ce311bb",
+    "bifid16.py": "a80c5f839511454a11a473cbfa4734bf3452656c8015e15ac759f65f45bf9af7",
+    "dataset": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "dependency/dependency.json": "e88e7bf34243264705ca5fcaa66acb5c9db96f289192a862e0e063a915897e4e",
+    "dependency/runtime/z3/lib/libz3.dylib": "3164e079c221c23a843396a485a6e912ee423918ee64ea03943e584305439a98",
+    "odd_pilot/run_target.py": "52972d35244709e87f2de69b6f760b9cdc2029e82d93af9789bfffe2c34bb3eb",
+    "odd_pilot/target_gate.json": "fef5128cd5a7d80fb31a48fdfc479e215271b250d9e423d69cbb53021d0d6654",
+    "odd_pilot/target_results.json": "5ffb45b7191689e119bbb4e930f124eda5f78d8ddbb229085e9c522245c5a4a1",
+    "odd_pilot/verify_results.py": "bd2d2a58d2493b1e87e19bf0ca9e12f795c4c1b7fb26bbaa58be1bbbba276375",
+    "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "symmetry_probe.py": "8bf072deccafabe1e98db126178207d9cf3c8eccdcab6902a28b0c0d123a26e0"
+  }
+}

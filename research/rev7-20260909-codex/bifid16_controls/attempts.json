@@ -1,0 +1,38 @@
+{
+  "identity": "ASTRA",
+  "target_evaluated": false,
+  "rev7_read": false,
+  "note": "Historical execution log for the initial Int div/mod endpoint formulation. Timeout and interruption are incomplete controls, never negatives.",
+  "attempts": [
+    {
+      "period": 31,
+      "bytes": 546,
+      "ciphertext_sha256": "6aa51cd3adbd3fb501e3af0acfc41e3ac4e7444c9890c0ba2bfa280eb2fbab88",
+      "timeout_ms": 120000,
+      "status": "unknown",
+      "reason_unknown": "timeout",
+      "classified_as_negative": false,
+      "session_id": 20101
+    },
+    {
+      "period": 3,
+      "bytes": 546,
+      "ciphertext_sha256": "afc5c609e217e2bcf8df8da0b3da9bec2e4863018d3b00ed0be0321be12a1c6c",
+      "timeout_ms": 120000,
+      "status": "interrupted",
+      "observed_before_interrupt": "no solver result after approximately 90 seconds",
+      "classified_as_negative": false,
+      "session_id": 31514
+    },
+    {
+      "period": 2,
+      "bytes": 546,
+      "ciphertext_sha256": "1e17bcc5264f4afc816fb98825cfbbf0a00ec398eaf30d0d5a3ac53db402a201",
+      "timeout_ms": 120000,
+      "status": "unknown",
+      "reason_unknown": "timeout",
+      "classified_as_negative": false,
+      "session_id": 41853
+    }
+  ]
+}
