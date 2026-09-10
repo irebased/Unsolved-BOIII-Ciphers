@@ -339,3 +339,16 @@ The comparison uses the saved repository image, SHA-256 `36a1883ede6abadcf4d4420
 ```sh
 python3 -S -B research/rev7-20260909-codex/texture_audit/compare.py
 ```
+
+
+## Frozen RC2 column-A target
+
+The [registered RC2 target](../byte_columnar/all_iv/column_a_rc2/target/README.md) freezes eight cases: historical RC2 with raw seven-byte Zombies, widths 13/14, four canonical orientations, rectangular variant A, CFB8, every external eight-byte IV, and the necessary A105 ninth-column constraint. The exact workload is 691,891,200 first-eight tuples. Every survivor prefix/mask is retained and independently replayed through ARC2 effective-keylen 1024; each case closes only after complete zero-survivor enumeration.
+
+The gate SHA-256 is `191240f56bcdea2233fece19cfa5f429c4296463f2a081bba8899152b4de642b`, and the reviewed driver SHA-256 is `deea54124124bae750ba57a35ebed6c5770e4f861ed25ae3aed6a7c660b1ab9a`. Source, controls, docs, build helper and gate builder are bound by hashes. A target invocation temporarily compiles the historical source and requires exact agreement with the object/executable hashes independently reproduced during controls. Preparation selftest passed while hashing the MDX only.
+
+```sh
+python3 -S -B research/byte_columnar/all_iv/column_a_rc2/target/run_target.py --selftest
+```
+
+This snapshot registers an unrun experiment. Execution follows a separate FABLE preregistration and root GO; no target result or plaintext is included here. Existing outputs are refused, and each result cell is written atomically.
