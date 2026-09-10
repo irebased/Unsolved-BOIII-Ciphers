@@ -352,3 +352,16 @@ python3 -S -B research/byte_columnar/all_iv/column_a_rc2/target/run_target.py --
 ```
 
 This snapshot registers an unrun experiment. Execution follows a separate FABLE preregistration and root GO; no target result or plaintext is included here. Existing outputs are refused, and each result cell is written atomically.
+
+
+## Completed RC2 column-A every-IV search
+
+The [completed RC2 result](../byte_columnar/all_iv/column_a_rc2/target/RESULTS.md) closes all eight preregistered cases with zero survivors and no unexamined weight. The controlled native enumerator examined and rejected all 691,891,200 first-eight prefixes in 221.8278 native seconds, recording 2,202,549,490 block calls and 6,686,103,593 ninth-rank candidate tests. Each width-13 cell accounts for all 13! orders, and each width-14 cell for all 14! orders; these per-orientation spaces are not additive evidence.
+
+The exclusion is limited to historical RC2, raw seven-byte Zombies with the effective 1024-bit schedule, CFB8, rectangular FABLE columnar A at widths 13/14, four canonical orientations, every external eight-byte IV, and the relaxed A105 necessary endpoint condition. No plaintext or IV was recovered.
+
+The [21,605-byte ledger](../byte_columnar/all_iv/column_a_rc2/target/target_results.json), SHA-256 `8c8b94ed9def1daacfc04e25aa03f4c25a89568ab29072a6672c49dde766e9de`, preserves all eight results. Root replayed the portable verifier under Python's standard library, including equality against every local atomic cell. It checks frozen source/control/gate/build identities, canonical orientations, exact cell identifiers, factorial completion weights and recorded aggregates. This is integrity and accounting verification, not a second enumeration. With no survivors, the independent target ARC2 candidate replay had no masks to evaluate.
+
+```sh
+python3 -S -B research/byte_columnar/all_iv/column_a_rc2/target/verify_results.py
+```
