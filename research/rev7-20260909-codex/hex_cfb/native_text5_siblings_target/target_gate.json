@@ -1,0 +1,73 @@
+{
+  "artifact_hashes": {
+    "README.md": "092c8bd4d290f01ee5d4b76fca61478f8b96d36b2b7db32bbc63523db06a9db5",
+    "controls.json": "5bc6fda80e29a9d723cc4a72436406dc0275b456635a484a2d394a6553e77891",
+    "controls.py": "fb1194f4e577a7e5b23e66693c87d212ac6554df4d7e1299dada37ec69c54859",
+    "endpoint5.py": "64516c9730f7d4381d166888b19eda612873e9edee3a2f02f8a1091e50d2529e",
+    "native_text5": "3b84a08161e1dde80ad5b12613e7cd6e6a0905411e4f7e9098cd5f55792fbd0d",
+    "native_text5.cpp": "81bd9902f3f5fb0585214c2c93117523426cdc61edb524334d64412d4a5d724f",
+    "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b",
+    "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "source/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+    "source/loki97.c": "4e18d184ec55776edab065cee35ac44a9269b4160d7d35ad4ea277da55ae3308",
+    "source/rc2.c": "37c9398507cea1685255da9550f5a3a55b529b66e1bbc9a35e1996fecae7dc19",
+    "source/rc2.h": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_build/libdefs.h": "556ec4fcebae614cd90d05a2fead50d9355ff39f65b44c8f4044c7f209074c6e",
+    "source_build/libloki97.so": "297b73e3926d82cc52c1023c9bba53a3d1102470f3633ea2c8ed6f243347c175",
+    "source_build/librc2.so": "83dd446b5453e47252e8803d1143b4d235d39b1cba6efe557a94b273d318b2d6",
+    "source_build/loki97.o": "2c417e8b2b6f70e2f175d58dbb8b011be234b2fbc4c8c838960817fec13ddc06",
+    "source_build/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "source_build/rc2.o": "022a0517d79e7dfc9566ca3cf04462a7ffb62aaf9f2d4d0d8edb2ca0a2803b4e"
+  },
+  "authorization": "No target execution before a separate explicit GO.",
+  "authorization_reference": "ASTRA message 329 on FABLE bus",
+  "authorized": true,
+  "canonical_text_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "driver_sha256": "31b5eedd01f3d05f392cc5b7e52e87ebae1f538ac1436647004ec695067fabfb",
+  "extension_hashes": {
+    "README.md": "b05dbf4c83cbad15149a248278762158f31ad6ec7559ef4b08748710a8552566",
+    "build_gate.py": "5cb5a1ac1dbdbde5bd307539ce59843c8e042b468bcace53292feb14165b46ea",
+    "driver_controls.json": "e00fda2d030cdbe1d2fe9296c7839a30ab63ec3663f9dea6fbcd8fa3a097f0a7",
+    "driver_controls.py": "f76cf7ec209f1b0551dfa8a6aef6c94056f0a430195ab6a4af4eefa839432b8d",
+    "preflight.py": "71d5e6876d93ea5f07e413a02ce444ba9848097ac6e4728e9d1c13eff7bccf2b",
+    "run_target.py": "31b5eedd01f3d05f392cc5b7e52e87ebae1f538ac1436647004ec695067fabfb",
+    "target_gate.template.json": "1762541664c1ea42091c769b89be40f9348e3e34a912d3416048616b68fbbff9"
+  },
+  "identity": "ASTRA",
+  "review_evidence": "Root source review and independent replay of all eight deterministic driver-control cells passed before GO.",
+  "scope": {
+    "cells": 8,
+    "certificate": "16! mapping weight when complete",
+    "cipher_conventions": {
+      "loki97": "selected16 with explicit zeroed32 backing from pinned libmcrypt source",
+      "rc2": "raw7 Zombies from pinned libmcrypt source"
+    },
+    "ciphers": [
+      "rc2",
+      "loki97"
+    ],
+    "endpoint": {
+      "ascii": "TAB LF CR and 32..126",
+      "terminal_state": 0,
+      "utf8": [
+        "e28093",
+        "e28094",
+        "e28098",
+        "e28099",
+        "e280a6"
+      ]
+    },
+    "identity": "ASTRA",
+    "iv": "ASCII zero bytes at block size",
+    "mode": "CFB8",
+    "node_limit_per_cell": 1000000000,
+    "orientations": [
+      "forward",
+      "reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "search_semantics": "Each cell starts from a fresh root; caps are not additive."
+  },
+  "target_evaluated": false
+}

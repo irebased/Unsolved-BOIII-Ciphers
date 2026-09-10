@@ -762,3 +762,37 @@ The 32 map classes require either 1,048,576 or 16,777,216 possible first-eight-b
 ```sh
 python3 -B research/char_amsco/astra/lossy4_twochar_inventory/inventory.py
 ```
+
+
+## Exact Unicode extension of the twelve lossy maps
+
+The [Unicode target](lossy4_utf8_controls/target/RESULTS.md) completes all 48 new source-map/orientation cells with zero terminal candidates and no cap. It exhausts 104,448 compatible initial ciphertext registers using 4,718,844 accepted states and 4,823,292 DES block calls. This is the same 655-byte DES-CFB8 model with `Zombies\0` and unknown external IV, now permitting TAB/LF/CR, printable ASCII, U+00A0 through U+00FF and the seven specified punctuation codepoints in the suffix from offset 8.
+
+The controls preserve one full-length all-roots positive as incomplete at five million states. A separately labeled seeded initial-register control completes and recovers the true ciphertext/suffix exactly once; it does not finish that capped search. Root revalidated all 13,796 parent terminal candidates and the separate 182 seeded candidates. The actual target completes every root below the registered caps.
+
+Root reviewed and replayed the [independent verifier](lossy4_utf8_controls/target/verify_results.py), which enumerates compatible ciphertext bytes first and uses a literal-codeword trie separately from the search's numeric-state automaton. Every saved per-byte count, block-call count and root outcome matches. The first draft verifier duplicated the search's candidate generation and was replaced before acceptance. Result SHA-256: `c409b9ae4aafb3093694f615075f180d828ef6ec994f3719bcf612c84d44f690`.
+
+```sh
+python3 -B research/rev7-20260909-codex/lossy4_utf8_controls/target/verify_results.py
+```
+
+## RC2 and Loki97 global hexadecimal mappings
+
+The [eight-cell extension](hex_cfb/native_text5_siblings_target/RESULTS.md) adds historical RC2 with raw seven-byte `Zombies` and Loki97 with selected key length 16 backed by 32 explicitly zero-padded bytes. All four orientations under each cipher complete with zero survivors and exact `16!` mapping weight, without reaching the one-billion-node cell limit. The combined accepted matrix now has six cipher conventions and 24 cells, all using the fixed ASCII-zero IV and the same ASCII plus five-punctuation endpoint.
+
+The unchanged native engine and primitive controls were reused. Root replayed the new synthetic driver controls and [saved-result verifier](hex_cfb/native_text5_siblings_target/verify_results.py). The latter checks source integrity and factorial accounting; it is not a second full cryptographic enumeration. New target work used 1,490,659,590 nodes and 259.04032 native seconds. Result SHA-256: `5ee7d589b4917f53f87c4c6b503a4661604b7744f9f1b013bf49a38ddd7454fc`.
+
+```sh
+python3 -B research/rev7-20260909-codex/hex_cfb/native_text5_siblings_target/verify_results.py
+```
+
+## FABLE full-block OFB audit and reverse-CFB8 controls
+
+The [OFB audit](coverage/fable_nofb_audit/README.md) independently replays 180 saved DES/AES/Blowfish vectors with PyCryptodome OFB and a manual ECB-encrypt recurrence. Six deterministic controls using the pinned FABLE WASM confirm wrapper mode 4 equals full-block OFB and differs from OFB8 for those three ciphers. The source and Base64-transported WASM are included. This is control verification, with no repeated Rev7 target scan and no claim for the remaining wrapper primitives.
+
+The [reverse-CFB8 package](coverage/reverse_cfb_backwards_controls/README.md) checks the hypothetical construction `X = CFB8_DECRYPT(P, IV)`. A known eight-byte plaintext fragment determines a forward suffix and permits exact branching reconstruction of the preceding plaintext and compatible IVs. DES and Blowfish plants retain nine and five full plaintext/IV candidates respectively, each including the truth exactly once. All candidates pass library and manual round trips; 24 forward controls and two explicit cap fixtures also pass. This is synthetic mechanics evidence, not target coverage or unrestricted all-IV plaintext exclusion.
+
+```sh
+python3 -B research/rev7-20260909-codex/coverage/fable_nofb_audit/audit.py --replay-mode4
+python3 -B research/rev7-20260909-codex/coverage/reverse_cfb_backwards_controls/control.py
+```

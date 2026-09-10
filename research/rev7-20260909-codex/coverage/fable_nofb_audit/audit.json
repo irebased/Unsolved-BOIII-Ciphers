@@ -1,0 +1,176 @@
+{
+  "conclusion": {
+    "generalization_limit": "No inference is made for the other wrapper ciphers.",
+    "key_lengths_bytes": {
+      "blowfish": 16,
+      "des": 8,
+      "rijndael-128": 16
+    },
+    "mode4_statement": "For the six deterministic fixtures on these three ciphers, wrapper mode 4 equaled full-block OFB and differed from OFB8.",
+    "recurrence": "register=E_key(register); XOR complete encrypted blocks; truncate only final output block",
+    "supported_ciphers": [
+      "des",
+      "rijndael-128",
+      "blowfish"
+    ]
+  },
+  "decoded_wasm_sha256": "60a8215b8f6f7774511004ec51528b60e781ca8c260d0b1cf1baad0dfc932be7",
+  "deterministic_mode4_replay": {
+    "all_mode4_differ_ofb8": true,
+    "all_mode4_equal_fullblock": true,
+    "fixture_count": 6,
+    "per_cipher": {
+      "blowfish": 2,
+      "des": 2,
+      "rijndael-128": 2
+    },
+    "rows": [
+      {
+        "case_id": "partial",
+        "cipher": "des",
+        "data_hex": "1f4375b5035fc941c75bfdad6b3711f9eff30525538fd931970b8d1dbb6721e9bfa39595a3",
+        "first_diff_nofb_ofb8": 1,
+        "iv_hex": "173b6dadfb57c139",
+        "key_hex": "0b2f61a1ef4bb52d",
+        "mode4_equals_nofb": true,
+        "mode4_equals_ofb8": false,
+        "mode4_hex": "8d460bfe3626977b485a90876e9cf6dbbdefa7bca23471dc720db633158563ee914e77775b",
+        "nofb_hex": "8d460bfe3626977b485a90876e9cf6dbbdefa7bca23471dc720db633158563ee914e77775b",
+        "ofb8_hex": "8d948a81f430076e0ed72c00da9158a33e565ab1563e3591c8abaa71872d8eab7dde35bb26"
+      },
+      {
+        "case_id": "multiblock",
+        "cipher": "des",
+        "data_hex": "284c7ebe0c68d24ad06406b674401a02f8fc0e2e5c98e23aa0149626c4702af2c8ac9e9eacc8f22a70c4269614a03ae2985c2e0efcf8021a4074b60664d04ad2680cbe7e4c28120a10244676b4005ac238bc4eee9c5822fae0d4d6e604306ab2086cde5eec8832eab084665654607aa2d81c6ece3cb842da8034f6c6a4908a92",
+        "first_diff_nofb_ofb8": 1,
+        "iv_hex": "173b6dadfb57c139",
+        "key_hex": "0b2f61a1ef4bb52d",
+        "mode4_equals_nofb": true,
+        "mode4_equals_ofb8": false,
+        "mode4_hex": "ba4900f539118c705f656b9c71ebfd20aae0acb7ad234ad74512ad086a9268f5e6417c7c54149631fea40121b427dbb5b26aa76c244cd64e2fbbe6c3988b7c2ddc58a9841a4ea5dc6601333f829f2ca431187efc40ee0139434c8128997b5eabbfd295d92865fc1330e5931f1916a7ff00c489a53dfe2f466166d3e3e01f47d0",
+        "nofb_hex": "ba4900f539118c705f656b9c71ebfd20aae0acb7ad234ad74512ad086a9268f5e6417c7c54149631fea40121b427dbb5b26aa76c244cd64e2fbbe6c3988b7c2ddc58a9841a4ea5dc6601333f829f2ca431187efc40ee0139434c8128997b5eabbfd295d92865fc1330e5931f1916a7ff00c489a53dfe2f466166d3e3e01f47d0",
+        "ofb8_hex": "ba9b818afb071c6519e8d71bc5e65358295951ba59290e9affb4b14af83a85b00ad13eb02960877f70a64ef43bef28d5d0efa0f876c0201b4e8fa3af51b0ae05f9b7aeb3a33326fd0e9f807e50e44cda43384632f31529fc3fb953fadff692bd0378b5a96a34fa688681bf0b71f69a4759635f6e01e23161cf1f140a5a730436"
+      },
+      {
+        "case_id": "partial",
+        "cipher": "rijndael-128",
+        "data_hex": "4a6ea0e02e8af46cf28628d896623c241a1e30507eba045cc236b848e6924c14eacec0c0ce",
+        "first_diff_nofb_ofb8": 1,
+        "iv_hex": "3c6092d2207ce65ee4781aca88542e16",
+        "key_hex": "34588aca1874de56dc7012c2804c260e",
+        "mode4_equals_nofb": true,
+        "mode4_equals_ofb8": false,
+        "mode4_hex": "0b2eddbd3e76c9c10e27d59990c195885482f9bb4e5eab0f158ae793227ff3c7fa4a0188f4",
+        "nofb_hex": "0b2eddbd3e76c9c10e27d59990c195885482f9bb4e5eab0f158ae793227ff3c7fa4a0188f4",
+        "ofb8_hex": "0b37eaa8754c9f04411b96249eb5b4312ac0669fd59d64febd6dc7d4b06c3fc88afd7f74c2"
+      },
+      {
+        "case_id": "multiblock",
+        "cipher": "rijndael-128",
+        "data_hex": "5377a9e93793fd75fb8f31e19f6b452d2327395987c30d65cb3fc151ef9b551df3d7c9c9d7f31d559bef51c13fcb650dc387593927232d456b9fe1318ffb75fd9337e9a977533d353b4f71a1df2b85ed63e77919c7834d250bff01112f5b95dd3397098917b35d15dbaf91817f8ba5cd034799f967e36d05ab5f21f1cfbbb5bd",
+        "first_diff_nofb_ofb8": 1,
+        "iv_hex": "3c6092d2207ce65ee4781aca88542e16",
+        "key_hex": "34588aca1874de56dc7012c2804c260e",
+        "mode4_equals_nofb": true,
+        "mode4_equals_ofb8": false,
+        "mode4_hex": "1237d4b4276fc0d8072ecca099c8ec816dbbf0b2b727a2361c839e8a2b76eacee3530881ed8675b5693ba4b1c7bbc0ec2cd10541e7f856a69f932b83d99caa59835bd4fa8f5159bd57f42bac989b6793b288fc8658d5387a95e7fa057f1b82b3225a03d3143dd56e84865ac32518b8a44dd387c50edc1fb6c7bbb8834fa4bc3b",
+        "nofb_hex": "1237d4b4276fc0d8072ecca099c8ec816dbbf0b2b727a2361c839e8a2b76eacee3530881ed8675b5693ba4b1c7bbc0ec2cd10541e7f856a69f932b83d99caa59835bd4fa8f5159bd57f42bac989b6793b288fc8658d5387a95e7fa057f1b82b3225a03d3143dd56e84865ac32518b8a44dd387c50edc1fb6c7bbb8834fa4bc3b",
+        "ofb8_hex": "122ee3a16c55961d48128f1d97bccd3813f96f962ce46dc7b464becdb96526c193e4767ddb76df171e4f2357c427a5239b8699ebd0de29bbaf9220b0de7042ae5770a3c6c28bb5df5f53a71acf2ac0e16ae53306516132445c5b177991a0f8c692435413c3e75070d64dbb75c590a6fa9fe6069af6538a5e85449913f64709b9"
+      },
+      {
+        "case_id": "partial",
+        "cipher": "blowfish",
+        "data_hex": "7599cb0b59b51f971db15303c18d674f45495b7ba9e52f87ed61e37311bd773f15f9ebebf9",
+        "first_diff_nofb_ofb8": 1,
+        "iv_hex": "6185b7f745a10b83",
+        "key_hex": "5d81b3f3419d077f05993beba9754f37",
+        "mode4_equals_nofb": true,
+        "mode4_equals_ofb8": false,
+        "mode4_hex": "f8d697d5ee58e99e6527c84bd113a8306c9739611bd57c28dd8cf50f78fb9738bfeb8fb954",
+        "nofb_hex": "f8d697d5ee58e99e6527c84bd113a8306c9739611bd57c28dd8cf50f78fb9738bfeb8fb954",
+        "ofb8_hex": "f84b93688f0586f85109c99880c4b718c29562660d71e2f0c5f6a93f6917fc2050ee4e2454"
+      },
+      {
+        "case_id": "multiblock",
+        "cipher": "blowfish",
+        "data_hex": "7ea2d41462be28a026ba5c0cca9670584e526484b2ee3890f66aec7c1ac680481e02f4f4021e4880c61a7cec6af69038eeb28464524e587096ca0c5cba26a028be6214d4a27e6860667a9ccc0a56b0188e12a444f2ae7850362a2c3c5a86c0085ec234b442de884006dabcacaab6d0f82e72c424920e9830d68a4c1cfae6e0e8",
+        "first_diff_nofb_ofb8": 1,
+        "iv_hex": "6185b7f745a10b83",
+        "key_hex": "5d81b3f3419d077f05993beba9754f37",
+        "mode4_equals_nofb": true,
+        "mode4_equals_ofb8": false,
+        "mode4_hex": "f3ed88cad553dea95e2cc744da08bf27678c069e00de6b3fc687fa007380604fb41090a6af38a720aee46570a6e9fb5e4b58a89a773f4cdeb31dfef0448cd5a1dac5c30943451202167efec6aa2bc5378a897fe946a5c1429038b4ea294f119515163350b6ad0c83812fb54ab0a6a2e72c1a1b2e358d6b24d687da0f7927e172",
+        "nofb_hex": "f3ed88cad553dea95e2cc744da08bf27678c069e00de6b3fc687fa007380604fb41090a6af38a720aee46570a6e9fb5e4b58a89a773f4cdeb31dfef0448cd5a1dac5c30943451202167efec6aa2bc5378a897fe946a5c1429038b4ea294f119515163350b6ad0c83812fb54ab0a6a2e72c1a1b2e358d6b24d687da0f7927e172",
+        "ofb8_hex": "f3708c77b40eb1cf6a02c6978bdfa00fc98e5d99167af5e7defda630626c0b575b15513bafa8864f9e4937a2751dc64f3d4eb1feebb9e0a364be56356735613f5821b466a9b725eb9e02bb368f8d4360ddb39fff9d93e556bf58623886c6009b04db052170b41bdf04c095f7c915314cebc53ac87bcdb829c4077cdc5f2b14af"
+      }
+    ]
+  },
+  "identity": "ASTRA",
+  "saved_vector_replay": {
+    "archived_mode4_evidence": {
+      "summary": {
+        "mode4_equals_nofb": 60,
+        "mode4_equals_ofb8": 0,
+        "ofb8_identical_count": 0,
+        "trials": 60
+      },
+      "vs_mode4": [
+        {
+          "cipher": "des",
+          "firstDiffVsNofb": -1,
+          "firstDiffVsOfb8": 1
+        },
+        {
+          "cipher": "rijndael-128",
+          "firstDiffVsNofb": -1,
+          "firstDiffVsOfb8": 1
+        },
+        {
+          "cipher": "blowfish",
+          "firstDiffVsNofb": -1,
+          "firstDiffVsOfb8": 1
+        }
+      ],
+      "vs_ofb8": [
+        {
+          "cipher": "des",
+          "firstDiffIndex": 1
+        },
+        {
+          "cipher": "rijndael-128",
+          "firstDiffIndex": 1
+        },
+        {
+          "cipher": "blowfish",
+          "firstDiffIndex": 1
+        }
+      ]
+    },
+    "data_length_max": 200,
+    "data_length_min": 1,
+    "independent_formulations": [
+      "PyCryptodome MODE_OFB",
+      "PyCryptodome ECB recurrence register=E_key(register), whole-block XOR"
+    ],
+    "output_ordered_sha256": "08d55e2224c187772e82ab9bc2a6f05d682578cd49c70cc361696df27308925b",
+    "per_cipher": {
+      "blowfish": 60,
+      "des": 60,
+      "rijndael-128": 60
+    },
+    "vector_count": 180
+  },
+  "scope": "source and controls only; no Rev7 target input or target result loaded",
+  "source_sha256": {
+    "source/old-ciphers/js/mcrypt.js": "8998b6dd50ebc24aede3df84228826951f2143fde393e15f95d1455e074d5061",
+    "source/old-ciphers/js/mcrypt.wasm.base64": "e86b6b95e2fcdf4d813d84d438b525abfe380c7370ee70a6d0a177044a826f46",
+    "source/rev7/nofb/crosscheck.json": "beaf36b7593df1e8df751b004578c5ce7b61a6a78a1897a576038a0fcb7d3a79",
+    "source/rev7/nofb/divergence.json": "3f72080e07cc509e1a5a18deb3cd44e6e61171d2e44b48c9af1eed3ca10a92a8",
+    "source/rev7/nofb/lib.js": "f8ed74f03f5bd3c6d8a49fcc790cd878d81faa6feceac20007405a5ecf0a8948",
+    "source/rev7/nofb/vectors.json": "b7904a820fb1bcf1aeea01f2ad46de7559ebd15ee37584a1fff88e3110c2de9e",
+    "source/rev7/nofb/verify.js": "fe06d3f3290e51d84c66453005a037ddfe8614794139fe2da6ddbfd0bbaa9a8e",
+    "source/rev7/nofb/verify_py.py": "6f5609cf1cf3c32ed7a0355c73805284c940e479f33423324d0a62a6059a3ef5",
+    "source/rev7/ofb8/lib.js": "568eba04cc2bf3595e2929deae18fc585995bbf209bdb1f4105ccc554f64afd1"
+  },
+  "target_evaluated": false
+}

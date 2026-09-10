@@ -1,0 +1,85 @@
+{
+  "decoded_wasm_sha256": "60a8215b8f6f7774511004ec51528b60e781ca8c260d0b1cf1baad0dfc932be7",
+  "files": [
+    {
+      "bytes": 2234,
+      "origin": "/private/tmp/rev7-fable-20260909/nofb/lib.js",
+      "path": "source/rev7/nofb/lib.js",
+      "sha256": "f8ed74f03f5bd3c6d8a49fcc790cd878d81faa6feceac20007405a5ecf0a8948"
+    },
+    {
+      "bytes": 2786,
+      "origin": "/private/tmp/rev7-fable-20260909/nofb/verify.js",
+      "path": "source/rev7/nofb/verify.js",
+      "sha256": "fe06d3f3290e51d84c66453005a037ddfe8614794139fe2da6ddbfd0bbaa9a8e"
+    },
+    {
+      "bytes": 954,
+      "origin": "/private/tmp/rev7-fable-20260909/nofb/verify_py.py",
+      "path": "source/rev7/nofb/verify_py.py",
+      "sha256": "6f5609cf1cf3c32ed7a0355c73805284c940e479f33423324d0a62a6059a3ef5"
+    },
+    {
+      "bytes": 92445,
+      "origin": "/private/tmp/rev7-fable-20260909/nofb/vectors.json",
+      "path": "source/rev7/nofb/vectors.json",
+      "sha256": "b7904a820fb1bcf1aeea01f2ad46de7559ebd15ee37584a1fff88e3110c2de9e"
+    },
+    {
+      "bytes": 137,
+      "origin": "/private/tmp/rev7-fable-20260909/nofb/crosscheck.json",
+      "path": "source/rev7/nofb/crosscheck.json",
+      "sha256": "beaf36b7593df1e8df751b004578c5ce7b61a6a78a1897a576038a0fcb7d3a79"
+    },
+    {
+      "bytes": 656,
+      "origin": "/private/tmp/rev7-fable-20260909/nofb/divergence.json",
+      "path": "source/rev7/nofb/divergence.json",
+      "sha256": "3f72080e07cc509e1a5a18deb3cd44e6e61171d2e44b48c9af1eed3ca10a92a8"
+    },
+    {
+      "bytes": 8065,
+      "origin": "/private/tmp/rev7-fable-20260909/ofb8/lib.js",
+      "path": "source/rev7/ofb8/lib.js",
+      "sha256": "568eba04cc2bf3595e2929deae18fc585995bbf209bdb1f4105ccc554f64afd1"
+    },
+    {
+      "bytes": 10570,
+      "origin": "coverage/fable_bytebag_replay restored pinned runtime",
+      "path": "source/old-ciphers/js/mcrypt.js",
+      "sha256": "8998b6dd50ebc24aede3df84228826951f2143fde393e15f95d1455e074d5061"
+    },
+    {
+      "bytes": 282509,
+      "origin": "coverage/fable_bytebag_replay restored pinned runtime",
+      "path": "source/old-ciphers/js/mcrypt.wasm.base64",
+      "sha256": "e86b6b95e2fcdf4d813d84d438b525abfe380c7370ee70a6d0a177044a826f46"
+    },
+    {
+      "bytes": 5988,
+      "origin": "ASTRA independent audit",
+      "path": "audit.py",
+      "sha256": "405c2e3412e79b501c5dd4be6b838079635c17ae0d080ef60965790fe9e34141"
+    },
+    {
+      "bytes": 1511,
+      "origin": "ASTRA deterministic wrapper control",
+      "path": "mode4_check.js",
+      "sha256": "71ef02c5a821733a985590076f633d20eb85f6c25fc210846a32dcea51f47a15"
+    },
+    {
+      "bytes": 9485,
+      "origin": "ASTRA generated control ledger",
+      "path": "audit.json",
+      "sha256": "ab90174b41474e94ff0a0dd126b7d53a677f04d7007331f2a1baee121d977e58"
+    },
+    {
+      "bytes": 1749,
+      "origin": "ASTRA report",
+      "path": "README.md",
+      "sha256": "56b299afd4be7df65376b88f6f5ab554aec31d3f33e667b34b5aa094c539802c"
+    }
+  ],
+  "identity": "ASTRA",
+  "target_evaluated": false
+}

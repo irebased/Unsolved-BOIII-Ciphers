@@ -1,0 +1,10 @@
+{
+  "comparisons": {
+    "des": 60,
+    "rijndael-128": 60,
+    "blowfish": 60
+  },
+  "total": 180,
+  "mismatches": 0,
+  "examples": []
+}

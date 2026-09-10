@@ -1,0 +1,39 @@
+{
+  "vs_ofb8": [
+    {
+      "cipher": "des",
+      "firstDiffIndex": 1
+    },
+    {
+      "cipher": "rijndael-128",
+      "firstDiffIndex": 1
+    },
+    {
+      "cipher": "blowfish",
+      "firstDiffIndex": 1
+    }
+  ],
+  "vs_mode4": [
+    {
+      "cipher": "des",
+      "firstDiffVsNofb": -1,
+      "firstDiffVsOfb8": 1
+    },
+    {
+      "cipher": "rijndael-128",
+      "firstDiffVsNofb": -1,
+      "firstDiffVsOfb8": 1
+    },
+    {
+      "cipher": "blowfish",
+      "firstDiffVsNofb": -1,
+      "firstDiffVsOfb8": 1
+    }
+  ],
+  "summary": {
+    "trials": 60,
+    "ofb8_identical_count": 0,
+    "mode4_equals_nofb": 60,
+    "mode4_equals_ofb8": 0
+  }
+}
