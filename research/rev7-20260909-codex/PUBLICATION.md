@@ -243,3 +243,17 @@ python3 -B research/rev7-20260909-codex/iv_independent/blowfish_solver/controls.
 ```
 
 This publication is synthetic evidence only and contains no Blowfish every-IV Rev7 target evaluation. The initial incomplete helper and weak controls were rejected and are excluded from publication. Only the accepted native search, independent controls, ledger and report are included.
+
+
+## Frozen column-A native experiment
+
+The [native column-A controls](../byte_columnar/all_iv/column_a/native/REPORT.md) validate the prefix search against complete Python width-nine enumeration for all three backends, preserving 4,223 DES, 4,352 Blowfish and 4,175 compatibility prefixes. Wider bounded controls compare exact prefixes and masks at widths 10, 13 and 14, deliberately including multiple surviving candidate ranks. Ninety-six block vectors and three full CFB8 vectors match independent references. A source-built historical compatibility implementation is checked before its established conjugation is used for larger reference scans. Source and default read-only verification are portable; compilation and full regeneration are explicit.
+
+The [registered target driver](../byte_columnar/all_iv/column_a/target/README.md) freezes 24 cases: the three eight-byte ciphers, widths 13/14, four canonical orientations, fixed Zombies keys, CFB8, every external IV, and the relaxed A105 necessary constraint. Each case will examine all first-eight rank tuples; the total workload is 2,075,673,600 tuples. Completed and unexamined weights must account for every full order, and every retained prefix/mask is independently replayed. A cell closes only if a complete scan retains no prefixes. The gate SHA-256 is `81563be8c6c2c8b87c6afa2ec733d6e476a196bc6c5002dfce6c33cb8902021b`; source, controls, gate builder and driver passed review before freezing.
+
+```sh
+python3 -S -B research/byte_columnar/all_iv/column_a/native/native_controls.py
+python3 -B research/byte_columnar/all_iv/column_a/target/run_target.py --selftest
+```
+
+At this publication stage the target is registered and unrun. No target result or recovered layer is claimed. The gate binds the tested local binary hash; binaries and drafts are excluded from publication, while source and build commands are included.

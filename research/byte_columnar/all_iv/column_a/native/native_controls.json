@@ -1,0 +1,1090 @@
+{
+  "algorithm": {
+    "candidate_mask": "unused ranks intersected across rows for natural column 8",
+    "cap": "prefix budget; examined rejected + examined unresolved + unexamined weights partition width!",
+    "early_stop": "stop tuple when candidate mask becomes empty",
+    "enumeration": "lexicographic distinct observed-rank tuples for natural columns 0..7",
+    "rejected_weight": "(width-8)! complete orders for each empty-mask tuple",
+    "survivor_meaning": "unresolved first-eight tuple plus possible ninth ranks only"
+  },
+  "assertions": {
+    "all_96_block_vectors_match_independent_implementations": true,
+    "all_complete_controls_have_nonzero_survivors": true,
+    "all_passed": true,
+    "all_three_full_cfb8_vectors_match_and_roundtrip": true,
+    "bounded_benchmark_factorial_partitions_exact": true,
+    "candidate_masks_vary": true,
+    "complete_width9_prefix_and_candidate_sets_match_python": true,
+    "invalid_inputs_rejected": true,
+    "no_target_read_or_evaluation": true,
+    "short_bounded_multiple_candidate_masks": true
+  },
+  "benchmark_fixture": {
+    "backend": "des",
+    "generator": "Python random.Random(0xC01A2026), 546 calls to randrange(256)",
+    "observed_hex": "2c603175546608ccaeaf325f959f54a5b9f4894c5008fa39ecd080f9cd9b42bd7078dd3644e128b72dfa1f314996c1fca4bbb1fc9e6a4d98091dcf5aad449e9aa65a3eb20e36067cf1ebdc1a89547d729a81fa272cd2c034f8499a769cdf9b5115161ef26df3fe66c40476f8b6858b68e5bd8fe43a11663d332f4b93b1fe627a0fb3cb4ff5093758a6a4e8de0395febd5a6c12892045980402a5e0e9c56f119e128a9b2c161c9d0bb911fe0696231bdd73d9592e81ba7198c3b17c1431a027121d9703364fd0c58afb7ea91439333e2e0f206fbcb83b277953d73e17154b3b255bd79e9049fdd1801d4ef58ace03a6b568e0298ce23caf0bbcef1d3f3a44d5e7d90af7eaa36e17a779c259e56ffc695a06c8e6e2985afed364f7ed4d3e88de2f591ee09b9c3b1108188df2af2839a823b9e99a04ab7bf465efbe308fb92eb5c512ed29c58ae9a42fb7ae958a7045e5ecbe536669ed4aff3a59bdec9d69978ac7b8e483f9e36ea31062e69475e6be2ad892b49830f864e14ecaaaeb6ba630868d3d0f2b61cad1d9ac6ded8423b80dff27991cfba084033fe9a638e2d4ec35ee13abeb6db793c672c5d71de47d05f49144ad1568bcaeb09112d5f3bf8fadb88f7ddfa5e9744af6c23d3415617771c4904a4801efae3524fad4427a305809be62746512f709b7ff6e7466e2e8010edbc035e49f28f62bd052f8e0f6155239b317d060b5228d406d2c9b88c2f6127a4c59c5b48d98fe7fc6371a6625943c2b7efeb0455e",
+    "prefix_budget_per_width": 1000000,
+    "sha256": "774835c9ed5c5e3de117bb965a9ad2832bbb28c3042306c8267a32c641ea4dda"
+  },
+  "block_vector_count": 96,
+  "block_vectors": [
+    {
+      "backend": "des",
+      "index": 0,
+      "input_hex": "0001020304050607",
+      "match": true,
+      "output_hex": "414a0a3a69353129"
+    },
+    {
+      "backend": "des",
+      "index": 1,
+      "input_hex": "ffffffffffffffff",
+      "match": true,
+      "output_hex": "455b4bc1c6d454de"
+    },
+    {
+      "backend": "des",
+      "index": 2,
+      "input_hex": "3c812753bbb08207",
+      "match": true,
+      "output_hex": "898be184735a7d22"
+    },
+    {
+      "backend": "des",
+      "index": 3,
+      "input_hex": "2e595f42cbba2ff9",
+      "match": true,
+      "output_hex": "ca535e613ee2d8ca"
+    },
+    {
+      "backend": "des",
+      "index": 4,
+      "input_hex": "80488c3a71b4df6c",
+      "match": true,
+      "output_hex": "d76b7e1b8f61694a"
+    },
+    {
+      "backend": "des",
+      "index": 5,
+      "input_hex": "fcf656e38fa5041f",
+      "match": true,
+      "output_hex": "56a266bba497f21b"
+    },
+    {
+      "backend": "des",
+      "index": 6,
+      "input_hex": "c184dc6f4eeb21ab",
+      "match": true,
+      "output_hex": "61e32eb7aaff57b1"
+    },
+    {
+      "backend": "des",
+      "index": 7,
+      "input_hex": "7bf370850fc5dc76",
+      "match": true,
+      "output_hex": "8b2689b364fa7b51"
+    },
+    {
+      "backend": "des",
+      "index": 8,
+      "input_hex": "7aa13de572a79373",
+      "match": true,
+      "output_hex": "a5ce3f431813b041"
+    },
+    {
+      "backend": "des",
+      "index": 9,
+      "input_hex": "5f45468e9042138f",
+      "match": true,
+      "output_hex": "69338ad3aa4991a6"
+    },
+    {
+      "backend": "des",
+      "index": 10,
+      "input_hex": "7e78aa22f9eca0a6",
+      "match": true,
+      "output_hex": "ad6f172c1e1aaaef"
+    },
+    {
+      "backend": "des",
+      "index": 11,
+      "input_hex": "53f91e360fbd18bd",
+      "match": true,
+      "output_hex": "3324d64ccdcdf32b"
+    },
+    {
+      "backend": "des",
+      "index": 12,
+      "input_hex": "6871a7f76537f27d",
+      "match": true,
+      "output_hex": "06b46b308a4fa586"
+    },
+    {
+      "backend": "des",
+      "index": 13,
+      "input_hex": "b4717a44b6b1d44c",
+      "match": true,
+      "output_hex": "5588df968937aa34"
+    },
+    {
+      "backend": "des",
+      "index": 14,
+      "input_hex": "c39d5e9b1705a1d9",
+      "match": true,
+      "output_hex": "e5ff318ec3d11598"
+    },
+    {
+      "backend": "des",
+      "index": 15,
+      "input_hex": "142cf3992053ae72",
+      "match": true,
+      "output_hex": "584e5af173a6b65c"
+    },
+    {
+      "backend": "des",
+      "index": 16,
+      "input_hex": "e6538f368e9bbc8d",
+      "match": true,
+      "output_hex": "d1ad80760f2245ed"
+    },
+    {
+      "backend": "des",
+      "index": 17,
+      "input_hex": "9b289a993d0177a2",
+      "match": true,
+      "output_hex": "7a5e0d83713a3336"
+    },
+    {
+      "backend": "des",
+      "index": 18,
+      "input_hex": "00d8415c04412ad1",
+      "match": true,
+      "output_hex": "89b5666301973920"
+    },
+    {
+      "backend": "des",
+      "index": 19,
+      "input_hex": "ead69b38b47e46b1",
+      "match": true,
+      "output_hex": "2a6e9252dd500e59"
+    },
+    {
+      "backend": "des",
+      "index": 20,
+      "input_hex": "8dab1bfd27d44b4a",
+      "match": true,
+      "output_hex": "45def4fac838cb80"
+    },
+    {
+      "backend": "des",
+      "index": 21,
+      "input_hex": "eabc9dd1b3144087",
+      "match": true,
+      "output_hex": "582a0e8e7af868d6"
+    },
+    {
+      "backend": "des",
+      "index": 22,
+      "input_hex": "a864a25bc2c0561d",
+      "match": true,
+      "output_hex": "0f48f8165b3b258a"
+    },
+    {
+      "backend": "des",
+      "index": 23,
+      "input_hex": "dbe51b5487a57517",
+      "match": true,
+      "output_hex": "32b9cb60b786e089"
+    },
+    {
+      "backend": "des",
+      "index": 24,
+      "input_hex": "dbbe0379bbd1e08c",
+      "match": true,
+      "output_hex": "bf511425cbb6e1bc"
+    },
+    {
+      "backend": "des",
+      "index": 25,
+      "input_hex": "42a98c8d93cd80cc",
+      "match": true,
+      "output_hex": "c8debcb34d7d7d8a"
+    },
+    {
+      "backend": "des",
+      "index": 26,
+      "input_hex": "493a152f8a57425a",
+      "match": true,
+      "output_hex": "39f50f0cc1151817"
+    },
+    {
+      "backend": "des",
+      "index": 27,
+      "input_hex": "a9d403135ff734c2",
+      "match": true,
+      "output_hex": "f8724f295d375b7d"
+    },
+    {
+      "backend": "des",
+      "index": 28,
+      "input_hex": "d1cc71df2c16ab74",
+      "match": true,
+      "output_hex": "b05139f63d052a48"
+    },
+    {
+      "backend": "des",
+      "index": 29,
+      "input_hex": "b41623dc7923838a",
+      "match": true,
+      "output_hex": "97ba3d90de50d385"
+    },
+    {
+      "backend": "des",
+      "index": 30,
+      "input_hex": "718346d39cc12c11",
+      "match": true,
+      "output_hex": "8add99d87dc5d3d7"
+    },
+    {
+      "backend": "des",
+      "index": 31,
+      "input_hex": "ccba8e12f3dfac50",
+      "match": true,
+      "output_hex": "431c17edf20b8009"
+    },
+    {
+      "backend": "blowfish",
+      "index": 0,
+      "input_hex": "0001020304050607",
+      "match": true,
+      "output_hex": "68e187fd5c20fd69"
+    },
+    {
+      "backend": "blowfish",
+      "index": 1,
+      "input_hex": "ffffffffffffffff",
+      "match": true,
+      "output_hex": "9741d880abd0f876"
+    },
+    {
+      "backend": "blowfish",
+      "index": 2,
+      "input_hex": "3c812753bbb08207",
+      "match": true,
+      "output_hex": "aa67d43190303283"
+    },
+    {
+      "backend": "blowfish",
+      "index": 3,
+      "input_hex": "2e595f42cbba2ff9",
+      "match": true,
+      "output_hex": "929540d92e83835f"
+    },
+    {
+      "backend": "blowfish",
+      "index": 4,
+      "input_hex": "80488c3a71b4df6c",
+      "match": true,
+      "output_hex": "a3c91726c04750f5"
+    },
+    {
+      "backend": "blowfish",
+      "index": 5,
+      "input_hex": "fcf656e38fa5041f",
+      "match": true,
+      "output_hex": "918e443b8336c414"
+    },
+    {
+      "backend": "blowfish",
+      "index": 6,
+      "input_hex": "c184dc6f4eeb21ab",
+      "match": true,
+      "output_hex": "7cdc8471801f81c4"
+    },
+    {
+      "backend": "blowfish",
+      "index": 7,
+      "input_hex": "7bf370850fc5dc76",
+      "match": true,
+      "output_hex": "90f88efe59ff4204"
+    },
+    {
+      "backend": "blowfish",
+      "index": 8,
+      "input_hex": "7aa13de572a79373",
+      "match": true,
+      "output_hex": "802b4dffa113f708"
+    },
+    {
+      "backend": "blowfish",
+      "index": 9,
+      "input_hex": "5f45468e9042138f",
+      "match": true,
+      "output_hex": "656b4e6314ed1e2a"
+    },
+    {
+      "backend": "blowfish",
+      "index": 10,
+      "input_hex": "7e78aa22f9eca0a6",
+      "match": true,
+      "output_hex": "d478048bfe452549"
+    },
+    {
+      "backend": "blowfish",
+      "index": 11,
+      "input_hex": "53f91e360fbd18bd",
+      "match": true,
+      "output_hex": "721c494e04bb50ef"
+    },
+    {
+      "backend": "blowfish",
+      "index": 12,
+      "input_hex": "6871a7f76537f27d",
+      "match": true,
+      "output_hex": "2fb5181d89141b57"
+    },
+    {
+      "backend": "blowfish",
+      "index": 13,
+      "input_hex": "b4717a44b6b1d44c",
+      "match": true,
+      "output_hex": "1eddeafe081903e5"
+    },
+    {
+      "backend": "blowfish",
+      "index": 14,
+      "input_hex": "c39d5e9b1705a1d9",
+      "match": true,
+      "output_hex": "337be01f07d444ff"
+    },
+    {
+      "backend": "blowfish",
+      "index": 15,
+      "input_hex": "142cf3992053ae72",
+      "match": true,
+      "output_hex": "9bcfb81bc9897271"
+    },
+    {
+      "backend": "blowfish",
+      "index": 16,
+      "input_hex": "e6538f368e9bbc8d",
+      "match": true,
+      "output_hex": "4dc1d138d1101e7a"
+    },
+    {
+      "backend": "blowfish",
+      "index": 17,
+      "input_hex": "9b289a993d0177a2",
+      "match": true,
+      "output_hex": "2acff1694c4c2a4a"
+    },
+    {
+      "backend": "blowfish",
+      "index": 18,
+      "input_hex": "00d8415c04412ad1",
+      "match": true,
+      "output_hex": "1c926d58bb9301d7"
+    },
+    {
+      "backend": "blowfish",
+      "index": 19,
+      "input_hex": "ead69b38b47e46b1",
+      "match": true,
+      "output_hex": "14139325cc800475"
+    },
+    {
+      "backend": "blowfish",
+      "index": 20,
+      "input_hex": "8dab1bfd27d44b4a",
+      "match": true,
+      "output_hex": "1e45ead2a7221efe"
+    },
+    {
+      "backend": "blowfish",
+      "index": 21,
+      "input_hex": "eabc9dd1b3144087",
+      "match": true,
+      "output_hex": "daed0d489449371a"
+    },
+    {
+      "backend": "blowfish",
+      "index": 22,
+      "input_hex": "a864a25bc2c0561d",
+      "match": true,
+      "output_hex": "09918f6b27e149a2"
+    },
+    {
+      "backend": "blowfish",
+      "index": 23,
+      "input_hex": "dbe51b5487a57517",
+      "match": true,
+      "output_hex": "aa5c6ce38a83a350"
+    },
+    {
+      "backend": "blowfish",
+      "index": 24,
+      "input_hex": "dbbe0379bbd1e08c",
+      "match": true,
+      "output_hex": "8c4d76d92d4ac5ab"
+    },
+    {
+      "backend": "blowfish",
+      "index": 25,
+      "input_hex": "42a98c8d93cd80cc",
+      "match": true,
+      "output_hex": "a0165b026aeeb760"
+    },
+    {
+      "backend": "blowfish",
+      "index": 26,
+      "input_hex": "493a152f8a57425a",
+      "match": true,
+      "output_hex": "aac8176779e18a35"
+    },
+    {
+      "backend": "blowfish",
+      "index": 27,
+      "input_hex": "a9d403135ff734c2",
+      "match": true,
+      "output_hex": "b77c7942ca159d46"
+    },
+    {
+      "backend": "blowfish",
+      "index": 28,
+      "input_hex": "d1cc71df2c16ab74",
+      "match": true,
+      "output_hex": "4436230a3c52c76e"
+    },
+    {
+      "backend": "blowfish",
+      "index": 29,
+      "input_hex": "b41623dc7923838a",
+      "match": true,
+      "output_hex": "26e6cb2363adff75"
+    },
+    {
+      "backend": "blowfish",
+      "index": 30,
+      "input_hex": "718346d39cc12c11",
+      "match": true,
+      "output_hex": "63c5783adf3df733"
+    },
+    {
+      "backend": "blowfish",
+      "index": 31,
+      "input_hex": "ccba8e12f3dfac50",
+      "match": true,
+      "output_hex": "c6506d9afa2fd325"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 0,
+      "input_hex": "0001020304050607",
+      "match": true,
+      "output_hex": "b24067da92018993"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 1,
+      "input_hex": "ffffffffffffffff",
+      "match": true,
+      "output_hex": "80d8419776f8d0ab"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 2,
+      "input_hex": "3c812753bbb08207",
+      "match": true,
+      "output_hex": "7d72d9f97a35716c"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 3,
+      "input_hex": "2e595f42cbba2ff9",
+      "match": true,
+      "output_hex": "b13e84647af196e5"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 4,
+      "input_hex": "80488c3a71b4df6c",
+      "match": true,
+      "output_hex": "40024e9a87d80319"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 5,
+      "input_hex": "fcf656e38fa5041f",
+      "match": true,
+      "output_hex": "7e252d35206a466b"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 6,
+      "input_hex": "c184dc6f4eeb21ab",
+      "match": true,
+      "output_hex": "01dccb962e9dd09d"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 7,
+      "input_hex": "7bf370850fc5dc76",
+      "match": true,
+      "output_hex": "e0eec16f45fdf42d"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 8,
+      "input_hex": "7aa13de572a79373",
+      "match": true,
+      "output_hex": "72f3062056127ea2"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 9,
+      "input_hex": "5f45468e9042138f",
+      "match": true,
+      "output_hex": "725b32667724c634"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 10,
+      "input_hex": "7e78aa22f9eca0a6",
+      "match": true,
+      "output_hex": "01e9f76567d6fc0e"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 11,
+      "input_hex": "53f91e360fbd18bd",
+      "match": true,
+      "output_hex": "adfd610bc8a20ef1"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 12,
+      "input_hex": "6871a7f76537f27d",
+      "match": true,
+      "output_hex": "e70f871d6607e4b8"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 13,
+      "input_hex": "b4717a44b6b1d44c",
+      "match": true,
+      "output_hex": "a1dbbb373da7c469"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 14,
+      "input_hex": "c39d5e9b1705a1d9",
+      "match": true,
+      "output_hex": "30d3218985183253"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 15,
+      "input_hex": "142cf3992053ae72",
+      "match": true,
+      "output_hex": "7db1288684d3e52b"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 16,
+      "input_hex": "e6538f368e9bbc8d",
+      "match": true,
+      "output_hex": "03ee3f87e7829754"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 17,
+      "input_hex": "9b289a993d0177a2",
+      "match": true,
+      "output_hex": "f052766d79c89a52"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 18,
+      "input_hex": "00d8415c04412ad1",
+      "match": true,
+      "output_hex": "86e04ae53f48d17c"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 19,
+      "input_hex": "ead69b38b47e46b1",
+      "match": true,
+      "output_hex": "e388c1681d0c6aa1"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 20,
+      "input_hex": "8dab1bfd27d44b4a",
+      "match": true,
+      "output_hex": "f3dba1229c8af586"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 21,
+      "input_hex": "eabc9dd1b3144087",
+      "match": true,
+      "output_hex": "cc60bb3ec76a2bee"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 22,
+      "input_hex": "a864a25bc2c0561d",
+      "match": true,
+      "output_hex": "7c29a9a2a69b2636"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 23,
+      "input_hex": "dbe51b5487a57517",
+      "match": true,
+      "output_hex": "aac884635e895016"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 24,
+      "input_hex": "dbbe0379bbd1e08c",
+      "match": true,
+      "output_hex": "7e2bc07de0565ee8"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 25,
+      "input_hex": "42a98c8d93cd80cc",
+      "match": true,
+      "output_hex": "46a64e54c94f71ab"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 26,
+      "input_hex": "493a152f8a57425a",
+      "match": true,
+      "output_hex": "069bc5780d84b160"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 27,
+      "input_hex": "a9d403135ff734c2",
+      "match": true,
+      "output_hex": "389553288992e8ed"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 28,
+      "input_hex": "d1cc71df2c16ab74",
+      "match": true,
+      "output_hex": "66a12ca0d85ac3a5"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 29,
+      "input_hex": "b41623dc7923838a",
+      "match": true,
+      "output_hex": "f0e5166e02887188"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 30,
+      "input_hex": "718346d39cc12c11",
+      "match": true,
+      "output_hex": "0a0f06733f18a436"
+    },
+    {
+      "backend": "blowfish_compat",
+      "index": 31,
+      "input_hex": "ccba8e12f3dfac50",
+      "match": true,
+      "output_hex": "d70589c2b78cceba"
+    }
+  ],
+  "bounded_benchmarks": [
+    {
+      "backend": "des",
+      "block_calls": 3136516,
+      "block_calls_per_second": 12965042.307199458,
+      "candidate_tests": 8475734,
+      "complete_scan": false,
+      "completion_weight_per_prefix": 120,
+      "elapsed_seconds": 0.241921,
+      "estimate_limit": "Linear projection from the first lexicographic prefix budget on one synthetic fixture; early-stop distribution and machine performance can differ in a full run.",
+      "expected_completion_weight": 6227020800,
+      "factorial_partition_complete": true,
+      "linear_full_prefix_time_estimate_seconds": 12.55372582464,
+      "prefix_limit": 1000000,
+      "prefixes_examined": 1000000,
+      "prefixes_per_second": 4133580.797037049,
+      "rejected_completion_weight": 120000000,
+      "rejected_prefixes": 1000000,
+      "rows": 42,
+      "rows_checked": 3136516,
+      "survivor_digest_fnv1a64": "cbf29ce484222325",
+      "survivor_prefix_count": 0,
+      "survivors_retained": false,
+      "total_prefixes": 51891840,
+      "unexamined_completion_weight": 6107020800,
+      "unexamined_prefixes": 50891840,
+      "unresolved_examined_completion_weight": 0,
+      "width": 13
+    },
+    {
+      "backend": "des",
+      "block_calls": 3191810,
+      "block_calls_per_second": 12451665.002184633,
+      "candidate_tests": 10175049,
+      "complete_scan": false,
+      "completion_weight_per_prefix": 720,
+      "elapsed_seconds": 0.256336,
+      "estimate_limit": "Linear projection from the first lexicographic prefix budget on one synthetic fixture; early-stop distribution and machine performance can differ in a full run.",
+      "expected_completion_weight": 87178291200,
+      "factorial_partition_complete": true,
+      "linear_full_prefix_time_estimate_seconds": 31.03740896256,
+      "prefix_limit": 1000000,
+      "prefixes_examined": 1000000,
+      "prefixes_per_second": 3901129.7671805755,
+      "rejected_completion_weight": 720000000,
+      "rejected_prefixes": 1000000,
+      "rows": 39,
+      "rows_checked": 3191810,
+      "survivor_digest_fnv1a64": "cbf29ce484222325",
+      "survivor_prefix_count": 0,
+      "survivors_retained": false,
+      "total_prefixes": 121080960,
+      "unexamined_completion_weight": 86458291200,
+      "unexamined_prefixes": 120080960,
+      "unresolved_examined_completion_weight": 0,
+      "width": 14
+    }
+  ],
+  "bounded_multiple_candidate_python_native_parity": [
+    {
+      "backend": "des",
+      "block_calls": 1586,
+      "candidate_tests": 2782,
+      "exact_ordered_python_native_survivors_and_counters": true,
+      "factorial_partition_complete": true,
+      "multiple_candidate_prefix_count": 52,
+      "observed_hex": "da62345eef406f7a2f7d21fba696592a6b7b704e",
+      "observed_sha256": "7fce98b5346604f2319037f29b77d4b1c883f07291fb1988a90ce6583d0eec77",
+      "prefix_budget": 1000,
+      "rejected_prefixes": 718,
+      "rows": 2,
+      "survivor_digest_fnv1a64": "60b01dc581d1bbc5",
+      "survivor_prefix_count": 282,
+      "width": 10
+    },
+    {
+      "backend": "des",
+      "block_calls": 1937,
+      "candidate_tests": 7013,
+      "exact_ordered_python_native_survivors_and_counters": true,
+      "factorial_partition_complete": true,
+      "multiple_candidate_prefix_count": 209,
+      "observed_hex": "93372325b5113be42f72efb7b6e6bdfee7beb85875f21ffaa658",
+      "observed_sha256": "27152e0d3aef8a48bc9d61754324adb8fddce3c8f36cd09b666dc1e416d4b512",
+      "prefix_budget": 1000,
+      "rejected_prefixes": 415,
+      "rows": 2,
+      "survivor_digest_fnv1a64": "137b89991d7c76ad",
+      "survivor_prefix_count": 585,
+      "width": 13
+    },
+    {
+      "backend": "des",
+      "block_calls": 1982,
+      "candidate_tests": 8379,
+      "exact_ordered_python_native_survivors_and_counters": true,
+      "factorial_partition_complete": true,
+      "multiple_candidate_prefix_count": 273,
+      "observed_hex": "42f301ee4c5cf67ac35f50e97eb0634184c12ccff8e496abd5a94bb0",
+      "observed_sha256": "0fc1c01ab8b9324250c23fdcbada13e42b6407108e12f4bbc599f2f9f45c5151",
+      "prefix_budget": 1000,
+      "rejected_prefixes": 403,
+      "rows": 2,
+      "survivor_digest_fnv1a64": "051eb84b4cf07784",
+      "survivor_prefix_count": 597,
+      "width": 14
+    }
+  ],
+  "build": {
+    "command": "clang++ -std=c++17 -O3 -Wno-deprecated-declarations -I/opt/homebrew/Cellar/openssl@3/3.6.3/include research/byte_columnar/all_iv/column_a/native/native.cpp -L/opt/homebrew/Cellar/openssl@3/3.6.3/lib -lcrypto -o research/byte_columnar/all_iv/column_a/native/native_search",
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "local_binary_note": "Machine-specific evidence only; rebuild from native.cpp for portability.",
+    "local_binary_sha256": "4ad339f8f5d88766317ef2b939c51d21628018635246bbaac45df8ed1b0218d4",
+    "native_controls_source_sha256": "a86afa2cb63c42e2304aae9750d8017e14ee558a9d2c1f2f7011c26ec9b69540",
+    "native_source_sha256": "960cdbaf643ca531728e2c6eeb337a5834842de9773c3a256319e9720bef1b07",
+    "openssl": "3.6.3",
+    "portable_command": "clang++ -std=c++17 -O3 -Wno-deprecated-declarations $(pkg-config --cflags openssl) research/byte_columnar/all_iv/column_a/native/native.cpp $(pkg-config --libs openssl) -o research/byte_columnar/all_iv/column_a/native/native_search",
+    "pycryptodome": "3.23.0",
+    "python": "3.9.6"
+  },
+  "compat_temporary_build": {
+    "binary_sha256_machine_evidence": "830f581c8ec460fe071b849cf3e2a20068081b4eb8c269f572bc46d266a69458",
+    "command": [
+      "clang",
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-I",
+      "/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a/compat_source",
+      "/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a/compat_source/blowfish-compat.c",
+      "-o",
+      "/var/folders/n1/s06ddj2x6n399bddw1zsk44m0000gn/T/column-a-native-compat-yk3lgujl/libblowfish_compat.so"
+    ],
+    "temporary_directory": true
+  },
+  "complete_width9_python_native_parity": [
+    {
+      "backend": "des",
+      "block_calls": 608182,
+      "candidate_tests": 608182,
+      "distinct_nonzero_candidate_masks": 9,
+      "elapsed_seconds": 0.0412356,
+      "exact_python_native_prefix_and_candidate_sets": true,
+      "fable_order": [
+        8,
+        1,
+        7,
+        0,
+        5,
+        3,
+        6,
+        2,
+        4
+      ],
+      "factorial_partition_complete": true,
+      "observed_hex": "c8e2ce16921aaebb78bbaadcdb8332027e09d9bcd20e0dce7b1f3e9967ba089970395adf4a38b420445a5399b2",
+      "observed_sha256": "e8ae66e956584eb0c2ee5dd2ad6074ab19a4f665f70ec2df359ea64f6e694cef",
+      "prefixes_examined": 362880,
+      "rejected_prefixes": 358657,
+      "rows": 5,
+      "survivor_digest_fnv1a64": "d8e69cfb1b37beae",
+      "survivor_prefix_count": 4223,
+      "truth_first_slots": [
+        3,
+        1,
+        7,
+        5,
+        8,
+        4,
+        6,
+        2
+      ],
+      "truth_ninth_rank": 0,
+      "truth_retained": true,
+      "width": 9
+    },
+    {
+      "backend": "blowfish",
+      "block_calls": 610935,
+      "candidate_tests": 610935,
+      "distinct_nonzero_candidate_masks": 9,
+      "elapsed_seconds": 0.0284577,
+      "exact_python_native_prefix_and_candidate_sets": true,
+      "fable_order": [
+        8,
+        1,
+        7,
+        0,
+        5,
+        3,
+        6,
+        2,
+        4
+      ],
+      "factorial_partition_complete": true,
+      "observed_hex": "25400aa12462fffc3e32ce0e7dfbf018704b293d0ab6ce748eafb264237f7e216c31a7affc43327c55ca0b7466",
+      "observed_sha256": "80922e12e60425c34e5d49a68858b6667a9cd6a949e9d131ac2d02266afe2811",
+      "prefixes_examined": 362880,
+      "rejected_prefixes": 358528,
+      "rows": 5,
+      "survivor_digest_fnv1a64": "54874d6a27e5bd8d",
+      "survivor_prefix_count": 4352,
+      "truth_first_slots": [
+        3,
+        1,
+        7,
+        5,
+        8,
+        4,
+        6,
+        2
+      ],
+      "truth_ninth_rank": 0,
+      "truth_retained": true,
+      "width": 9
+    },
+    {
+      "backend": "blowfish_compat",
+      "block_calls": 607760,
+      "candidate_tests": 607760,
+      "distinct_nonzero_candidate_masks": 9,
+      "elapsed_seconds": 0.0304894,
+      "exact_python_native_prefix_and_candidate_sets": true,
+      "fable_order": [
+        8,
+        1,
+        7,
+        0,
+        5,
+        3,
+        6,
+        2,
+        4
+      ],
+      "factorial_partition_complete": true,
+      "observed_hex": "8d22adf4af3834068c5e91735738c77563f1c675ea223f2bde4f9a1bf6cb39061fc59910491b81265ea4d94646",
+      "observed_sha256": "fe4450833f8ea2ea3cc5e1097d5acd3dccb88fef6fab8e09a5847c340a6fd878",
+      "prefixes_examined": 362880,
+      "rejected_prefixes": 358705,
+      "rows": 5,
+      "survivor_digest_fnv1a64": "a4b34021acd792ca",
+      "survivor_prefix_count": 4175,
+      "truth_first_slots": [
+        3,
+        1,
+        7,
+        5,
+        8,
+        4,
+        6,
+        2
+      ],
+      "truth_ninth_rank": 0,
+      "truth_retained": true,
+      "width": 9
+    }
+  ],
+  "full_cfb8_vectors": [
+    {
+      "backend": "des",
+      "ciphertext_hex": "43bebc64bff848d9d9e976f95be8cbe001045691bd59631b055e441f83e170aa7a061cec3d5f3afe4773fb15dfa6f586761b235c47b33d0c2878cfd9c3d4c8ce87c5c2d10a6fe9c9ee3e84902e0f62cc82e1e4ac7ef12f46fde6197358d97110aa32f7335abe586d97aa0b3cd659d03ba24442415d906ccb1b8a63d8d04139a00d3d6e8d6b90b6c62effba2792e33317fc91b758fb969f6ec5106040e1ed1ad86bc0a398de426e3c8d30216c6d66db9e773747a9cb41a9da850ec841ef5a3686f037546d50231eaea6c019b109659eb7ba29326166ffd67e863b88b5ef5aa6d9c97fe5a592baab63db6e0ed6a8e9ed84cd54c4a69be9a3f7e93766fbfca06c59",
+      "ciphertext_sha256": "07be3d949eb5e51217104188abbeec7ab90e6c051d6c4d1b977a2538bbfc7903",
+      "compat_actual_c_and_word_conjugation_match": false,
+      "iv_hex": "0011223344556677",
+      "native_decrypt_roundtrip": true,
+      "native_encrypt_matches_independent": true,
+      "plaintext_sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880",
+      "standard_library_mode_match": true
+    },
+    {
+      "backend": "blowfish",
+      "ciphertext_hex": "59a8ed0dd079643f34dc761ae174fd4f65b01a6805db56586e994018a16d675cf3a12c46bf10a0baae9b780b84b66c2fcc54bc84de83a6ce5abf936ccb6530c4cc2a7f04697fa04e6359fca766160b14208b542f77090d3854f019deb74ef1991cec20b449cf9c98b9fd522e4843ffbd88cf552c5429ea98b49df3239c6bb2b355aeadcdc3c449a967bc121c2a8b2418520c65008a7e8d4ac4675c715afaebaed0cc78cc4118e3e34e6828db773536800197d5346c4c83c9d19d7251383d5f49690adf00078b3117138987166fd41ef92f2dd6a0483b50c69e910b31b8ab7b9ba0e2d9f12d09d4cce65ef7bcf820d663f66195114446e4f59051db397f140f32",
+      "ciphertext_sha256": "012c5506e92f295acf59ed1640ba2366ae5ea01ae55d235909469be1da574bff",
+      "compat_actual_c_and_word_conjugation_match": false,
+      "iv_hex": "1020304050607080",
+      "native_decrypt_roundtrip": true,
+      "native_encrypt_matches_independent": true,
+      "plaintext_sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880",
+      "standard_library_mode_match": true
+    },
+    {
+      "backend": "blowfish_compat",
+      "ciphertext_hex": "344dde0982cb26dd4fd3d1f182398c06c12ef169f91129704a024e61cd84a0adf7c796bd67089f04b27ed8b271eec07652955c71bd441cc62345de8ded338a691dbc36be5d3621f348df1d718c8e9179ab304ed99614395d0a2796ba585daa26f1a48d2041ab2eea70725d58e0a8af27a9b2120f3239f7441516f2a844a8c2c0eecf0bd9b941faa261ef3749382f78df25e780effb281221a82b9b5b70e2493da7b3d5429ab9d24c7ebbb9ce5433c72c862ffbe468b466f018157418677039ea490f69967b3d2cdbcb965d8eb7fd1872c1f515e1b033068cecc46ecb95ced254ae49508ccb9ee00fda61e0402012d7d0b71812b378aad02b507827867b6cfe42",
+      "ciphertext_sha256": "d1171aa5b63448b5d8c692e649e0075f1c1f1ffc6247e4bad018ec748336d5d6",
+      "compat_actual_c_and_word_conjugation_match": true,
+      "iv_hex": "13579bdf2468ace0",
+      "native_decrypt_roundtrip": true,
+      "native_encrypt_matches_independent": true,
+      "plaintext_sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880",
+      "standard_library_mode_match": false
+    }
+  ],
+  "identity": "ASTRA",
+  "invalid_input_controls": [
+    {
+      "arguments": [
+        "--block",
+        "unknown",
+        "0000000000000000"
+      ],
+      "returncode": 1,
+      "stderr": "backend must be des, blowfish, or blowfish_compat"
+    },
+    {
+      "arguments": [
+        "--block",
+        "des",
+        "00"
+      ],
+      "returncode": 1,
+      "stderr": "block must be 8 bytes"
+    },
+    {
+      "arguments": [
+        "--cfb-encrypt",
+        "des",
+        "00",
+        "00"
+      ],
+      "returncode": 1,
+      "stderr": "IV must be 8 bytes"
+    },
+    {
+      "arguments": [
+        "--search",
+        "des",
+        "8",
+        "1",
+        "0000000000000000"
+      ],
+      "returncode": 1,
+      "stderr": "width must be 9..20"
+    },
+    {
+      "arguments": [
+        "--search",
+        "des",
+        "0",
+        "1",
+        "00"
+      ],
+      "returncode": 1,
+      "stderr": "width must be 9..20"
+    },
+    {
+      "arguments": [
+        "--search",
+        "des",
+        "9",
+        "0",
+        "000000000000000000"
+      ],
+      "returncode": 1,
+      "stderr": "prefix limit must be positive"
+    },
+    {
+      "arguments": [
+        "--search",
+        "des",
+        "9",
+        "1",
+        "00000000000000000000"
+      ],
+      "returncode": 1,
+      "stderr": "nonempty rectangular observed bytes required"
+    }
+  ],
+  "rev7_read": false,
+  "scope": "Synthetic-only native implementation and controls for rectangular FABLE columnarA, DES/Blowfish/Blowfish-compat fixed Zombies key conventions, A105, first-eight prefix and ninth-rank feasibility. No target, IV/order/plaintext recovery, or new cipher context.",
+  "source_provenance": {
+    "compat_source": {
+      "compat_source/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+      "compat_source/blowfish-compat.c": "3584374a6bae4df8899e82d36255bbac0472904aed2095e3c08c57a5dd5b4cad",
+      "compat_source/blowfish.h": "bb4a14ecbd5dc92105b290d9261ed562a980c6e42b0d9b4b56e62b4b6c39665b",
+      "compat_source/build_compat.py": "6c0ab4888febcf87d45515bd4ad8b34f11a85edb05d0cb99ad1f75b8dd24f0aa",
+      "compat_source/libdefs.h": "cdffb7ef7bc27b6eea90b73174077c377d8260ffd111fb8de3c2bbc938e28a31",
+      "compat_source/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180"
+    },
+    "frozen_python_core": "1deda1788e9d9a49140325c7e0f7ce3eb53aa7d05e8e44590be4076da0bae472",
+    "proof_controls_json": "2fb68eff8b80fb120ca972a29ead64268f03057c10c00156fd49152e0cf62bea",
+    "reviewed_native_sources_adapted": {
+      "native_compat.cpp": "c8527d2bf43494944475a20e0ffc8a99358243c8f188d394335af4ec9b0f8cb7",
+      "native_text5.cpp": "81bd9902f3f5fb0585214c2c93117523426cdc61edb524334d64412d4a5d724f"
+    }
+  },
+  "target_evaluated": false
+}
