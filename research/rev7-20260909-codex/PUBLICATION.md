@@ -483,3 +483,24 @@ python3 -S -B research/byte_amsco/astra/search/target/run_target.py --selftest
 ```
 
 This source/control snapshot has no target gate or evaluation. Gate creation follows FABLE preregistration and execution requires separate root GO. Existing outputs/checkpoints are refused; no cap or resume mode is allowed.
+
+
+## Frozen general byte-AMSCO gate
+
+Following FABLE message 144, the [general byte-AMSCO gate](../byte_amsco/astra/search/target/target_gate.json) freezes the reviewed 64-geometry, 22,910,272-context specification and all driver, engine, proof, control, source, key-convention and canonical-input artifacts. Gate SHA-256 is `61793d92916e57959f2cca9f5df32df8cc1cdcf4e06781eaa3f19193e33a49c2`. Root's MDX-hash-only selftest passed with the gate present. This snapshot precedes target execution and a separate GO.
+
+
+## Native width-13 prefix controls
+
+The [native first-six prefix engine](../byte_amsco/astra/prefix13/native/README.md) implements the accepted byte-AMSCO proof for DES, standard Blowfish, historical Blowfish compatibility and historical RC2, with the fixed eight-byte-block key conventions. Every retained prefix keeps its six ranks and computed ninth-byte tuple; all examined, rejected, survivor and unexamined factorial weights are recorded.
+
+The [control ledger](../byte_amsco/astra/prefix13/native/native_controls.json), SHA-256 `97eb5e5783c8c0aedfe98c27e112da8ffb2a641fa284a6ff3690de867be62766`, records exact native/Python parity for 524,160 complete prefixes, bounded width-13 comparisons and separate true planted assignments, 256 block vectors, eight complete byte-value CFB8 streams and malformed-input checks. Every complete parity grid has positive and rejected prefixes. Eight synthetic timing samples examined one million prefixes each; all retained zero, so count-only timing lost no survivor payload.
+
+Root reviewed the source and independently regenerated all controls. Every nontiming field matched exactly. The executable hash reproduced as `704f5f431b0b92136624eaba960605f2a652e8818a42b86a8a44e14566722b04`, and the RC2 object as `022a0517d79e7dfc9566ca3cf04462a7ffb62aaf9f2d4d0d8edb2ca0a2803b4e`. Both are temporary build evidence; source, provenance and build commands are published, without binaries. The original and root timing samples project about 5.21 and 5.22 native seconds respectively for 39,536,640 prefixes across 32 prospective contexts, excluding orchestration and verification.
+
+```sh
+python3 -S -B research/byte_amsco/astra/prefix13/native/native_controls.py
+python3 -B research/byte_amsco/astra/prefix13/native/native_controls.py --regenerate /tmp/prefix13-native-controls.json
+```
+
+These controls do not read Rev7 or register a width-13 target. The filter remains a necessary A105 condition; surviving prefixes would not be complete orders or recovered plaintexts.
