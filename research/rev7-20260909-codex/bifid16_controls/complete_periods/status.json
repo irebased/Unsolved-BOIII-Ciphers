@@ -1,0 +1,14 @@
+{
+  "checkpoint_sha256": "67a5eeaf6d94329726243fcee9f8c49665bc4d10623f30a830c88ea86b37395d",
+  "completed_cells": 2175,
+  "identity": "ASTRA",
+  "result_sha256": "736a34aed38826a8c1a1bf5e4fcd24d6f4aad817a435f2e09384fe493d4d35d6",
+  "state": "complete",
+  "summary": {
+    "negative_claims": 2168,
+    "sat": 0,
+    "unknown": 7,
+    "unsat": 2168
+  },
+  "total_cells": 2175
+}

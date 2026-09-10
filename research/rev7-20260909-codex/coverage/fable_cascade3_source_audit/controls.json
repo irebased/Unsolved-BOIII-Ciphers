@@ -1,0 +1,93 @@
+{
+  "identity": "ASTRA",
+  "target_evaluated": false,
+  "rev7_read": false,
+  "node_version": "v26.4.0",
+  "score_function": "upstream/cascade/cascade_lib.js scoreTail(buf,0)",
+  "samples": [
+    {
+      "name": "binary",
+      "bytes": 546,
+      "sha256": "1a3c2242c710618c019a4f5b1501e34e131579146f88b9405143196ea42d6c3b",
+      "score": {
+        "longestRun": 546,
+        "validCount": 546,
+        "tailLen": 546
+      }
+    },
+    {
+      "name": "octal",
+      "bytes": 546,
+      "sha256": "7112ac3b281fe961afe8bd80f032dfd695c3a9afc5cf9fbd2a316836954738ec",
+      "score": {
+        "longestRun": 546,
+        "validCount": 546,
+        "tailLen": 546
+      }
+    },
+    {
+      "name": "decimal",
+      "bytes": 546,
+      "sha256": "6bb58ac15901bd2a45136aaec938f6238de4c63cfca93649a488a7c192c96a8c",
+      "score": {
+        "longestRun": 546,
+        "validCount": 546,
+        "tailLen": 546
+      }
+    },
+    {
+      "name": "hex_upper",
+      "bytes": 546,
+      "sha256": "bb80d9773a0c2af45922a0b888f8e1d4af63691174d4790387c6473e7b5a4f7a",
+      "score": {
+        "longestRun": 546,
+        "validCount": 546,
+        "tailLen": 546
+      }
+    },
+    {
+      "name": "hex_lower",
+      "bytes": 546,
+      "sha256": "0441924ff4d2612f53ce9f75604d7704963c25cc08f22d78351315439d974dd6",
+      "score": {
+        "longestRun": 546,
+        "validCount": 546,
+        "tailLen": 546
+      }
+    },
+    {
+      "name": "base32",
+      "bytes": 546,
+      "sha256": "7ade9091eb12a2915f504ac71f53e576cd110fe97a48cf4fcd5cdd026c5c166a",
+      "score": {
+        "longestRun": 546,
+        "validCount": 546,
+        "tailLen": 546
+      }
+    },
+    {
+      "name": "base64",
+      "bytes": 546,
+      "sha256": "0b38cca0796bb4ef7da9d7a408f3d85d3b800edc895cf72fc10b2fea75b69914",
+      "score": {
+        "longestRun": 546,
+        "validCount": 546,
+        "tailLen": 546
+      }
+    },
+    {
+      "name": "german_utf8",
+      "bytes": 546,
+      "sha256": "b136b1b6099ae198205300a468a86552dab188e5a77c9f0c290f19abba7d9482",
+      "score": {
+        "longestRun": 546,
+        "validCount": 546,
+        "tailLen": 546
+      }
+    }
+  ],
+  "assertions": {
+    "all_passed": true,
+    "all_eight_full_tails": true
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "artifact_hashes": {
+    "lavender/src/data/ciphers/revelations.json": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/target_results.json": "736a34aed38826a8c1a1bf5e4fcd24d6f4aad817a435f2e09384fe493d4d35d6",
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/verification.json": "58ddd2f79f9227e288b2982644ba24ea908158745e14b98efddfe7d1d6819b6d",
+    "research/rev7-20260909-codex/bifid16_controls/even_period_invariant.py": "1fa72b75ff59028ed256dbf6853dd44669cd53b07bcce998331e212b65d2a2a2",
+    "research/rev7-20260909-codex/bifid16_controls/even_rectangle_controls/controls.json": "9f443af6c503d7fc377551b2842d5f701a21649d910d9aebdaf30597efe17f57",
+    "research/rev7-20260909-codex/bifid16_controls/even_rectangle_controls/controls.py": "431d315688a2dd4f95b1db874622dd013f3be6bbaa8879f53ceea49164e634f3",
+    "research/rev7-20260909-codex/bifid16_controls/even_rectangle_controls/model.py": "46c1f18e473450aba5dde3675b594d9f0b86f28d4a670514e10a806a92942e84",
+    "research/rev7-20260909-codex/bifid16_controls/even_rectangle_target/driver_controls.json": "17450b8b31040cfc331dad4c3389e538e6008c55186030a553b523fe72fa7d76",
+    "research/rev7-20260909-codex/bifid16_controls/even_rectangle_target/driver_controls.py": "8f6041f0a7240afd6e864ffb89bc17c014b81012ee0c6b0056759695f1d416ec",
+    "research/rev7-20260909-codex/bifid16_controls/even_rectangle_target/run_target.py": "6ff6e2ed30aafdea13102ac5113b051a57705a3ba4cfdfc9f5140d1eb82032aa",
+    "research/rev7-20260909-codex/bifid16_controls/even_target/target_results.json": "acc7df78f141e79b9d3c4e23dba3124ddb7665d5cb5f7450eabd5d9a88ce1dc8"
+  },
+  "canonical_hex_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "cells": [
+    [
+      "forward",
+      562
+    ],
+    [
+      "forward",
+      972
+    ],
+    [
+      "reverse",
+      16
+    ],
+    [
+      "reverse",
+      514
+    ],
+    [
+      "byte_reverse",
+      16
+    ],
+    [
+      "nibble_swap",
+      850
+    ],
+    [
+      "nibble_swap",
+      972
+    ]
+  ],
+  "dataset_sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+  "identity": "ASTRA",
+  "method": "No solver or key search; all1820 four-row missing-neighbor masks per cell, independently checked by direct edge membership.",
+  "required_artifacts": [
+    "lavender/src/data/ciphers/revelations.json",
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/target_results.json",
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/verification.json",
+    "research/rev7-20260909-codex/bifid16_controls/even_period_invariant.py",
+    "research/rev7-20260909-codex/bifid16_controls/even_rectangle_controls/controls.json",
+    "research/rev7-20260909-codex/bifid16_controls/even_rectangle_controls/controls.py",
+    "research/rev7-20260909-codex/bifid16_controls/even_rectangle_controls/model.py",
+    "research/rev7-20260909-codex/bifid16_controls/even_rectangle_target/driver_controls.json",
+    "research/rev7-20260909-codex/bifid16_controls/even_rectangle_target/driver_controls.py",
+    "research/rev7-20260909-codex/bifid16_controls/even_rectangle_target/run_target.py",
+    "research/rev7-20260909-codex/bifid16_controls/even_target/target_results.json"
+  ],
+  "scope": "seven even Bifid16 bag213 residuals; empty arbitrary 4x4 pair rectangle",
+  "target_authorized": true
+}

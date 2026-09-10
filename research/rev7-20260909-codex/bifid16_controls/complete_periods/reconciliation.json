@@ -1,0 +1,91 @@
+{
+  "broad213": {
+    "closure": false,
+    "excluded": 4361,
+    "unresolved_count": 7,
+    "unresolved_even_cells": [
+      {
+        "orientation": "byte_reverse",
+        "period": 16
+      },
+      {
+        "orientation": "forward",
+        "period": 562
+      },
+      {
+        "orientation": "forward",
+        "period": 972
+      },
+      {
+        "orientation": "nibble_swap",
+        "period": 850
+      },
+      {
+        "orientation": "nibble_swap",
+        "period": 972
+      },
+      {
+        "orientation": "reverse",
+        "period": 16
+      },
+      {
+        "orientation": "reverse",
+        "period": 514
+      }
+    ]
+  },
+  "final_narrow_closure_ready": true,
+  "identity": "ASTRA",
+  "limits": "No claim for odd two-square variants, Bifid at another layer, arbitrary binary layers, transforms outside the four orientations, or all classical ciphers.",
+  "new_target_search": false,
+  "partition": {
+    "even_cardinality165": 2184,
+    "fresh_odd_unsat213": 2168,
+    "prior_odd_unsat213": 16,
+    "union": 4368
+  },
+  "period_equivalence": {
+    "all_positive_nominal_periods_at_or_above_1092_same_single_block": true,
+    "message_symbols": 1092,
+    "representative_period": 1092
+  },
+  "receipt": {
+    "complete_cells": 2175,
+    "formulas_reconstructed": 2175,
+    "identity": "ASTRA",
+    "new_target_search": false,
+    "ok": true,
+    "path": "complete_periods/verification.json",
+    "result_sha256": "736a34aed38826a8c1a1bf5e4fcd24d6f4aad817a435f2e09384fe493d4d35d6",
+    "sha256": "58ddd2f79f9227e288b2982644ba24ea908158745e14b98efddfe7d1d6819b6d",
+    "summary": {
+      "sat": 0,
+      "unknown": 7,
+      "unsat": 2168
+    },
+    "verification_only": true
+  },
+  "scope": "one arbitrary fixed 4x4 square, direct oriented 1092 hex symbols to 546 bytes, four canonical orientations, periods1..1092, exact201 endpoint whose byte union has size165",
+  "source_hashes": {
+    "COVERAGE_RECONCILIATION.md": "c092b9994fb04a3a401720fee04a485d35ba89f5c493bb5c306b2d3338f2c8d0",
+    "complete_periods/checkpoint.jsonl": "67a5eeaf6d94329726243fcee9f8c49665bc4d10623f30a830c88ea86b37395d",
+    "complete_periods/run_target.py": "6dd45ffb0d2a5825f9388b363bc2c97bbb799bc16a1a24587884455e95ffce56",
+    "complete_periods/status.json": "8121d83592c85a890e12382d3fe81530dbdcf0dd0409c0cb78542384db7fd20d",
+    "complete_periods/target_gate.json": "dba3f6a962392cd4bdcacb7b81bfd459f9b27387dc36b87d5bdddd0791f43ff2",
+    "complete_periods/target_results.json": "736a34aed38826a8c1a1bf5e4fcd24d6f4aad817a435f2e09384fe493d4d35d6",
+    "complete_periods/verify_results.py": "d070482f30750a9f58eece9d3caaaad294255d0dd8281ca58dda750b28312ef5",
+    "coverage/encoded_endpoint_subset/results.json": "fbef3e7d26b0a6806532c53b0fc22a8ca54625414685fd202daad93abbd5fa35",
+    "even_target/target_results.json": "acc7df78f141e79b9d3c4e23dba3124ddb7665d5cb5f7450eabd5d9a88ce1dc8",
+    "odd_fullbag/target_results.json": "3bbb8ccd756ea29082b2394108544601c79eb0fe19d2259b2c8ba732294225a3",
+    "odd_pilot/target_results.json": "5ffb45b7191689e119bbb4e930f124eda5f78d8ddbb229085e9c522245c5a4a1"
+  },
+  "subset": {
+    "additional_bag213_bytes": 48,
+    "bag165_size": 165,
+    "bag213_size": 213,
+    "strict_165_subset_213": true
+  },
+  "target_evaluated": true,
+  "universe_cells": 4368,
+  "verification_receipt_present": true
+}

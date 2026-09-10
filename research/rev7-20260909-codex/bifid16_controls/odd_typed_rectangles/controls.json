@@ -1,0 +1,2179 @@
+{
+  "all_types_covered": [
+    "CC",
+    "CR",
+    "RC",
+    "RR"
+  ],
+  "assertions": {
+    "RR_CC_mixed_start_fixture_checked": true,
+    "actual_symbol1_coordinate_survives_iff_no_high1": true,
+    "constant_odd_periods_and_short_tails_checked": true,
+    "generic_flatten_typed_edges_equal_concrete_high_nibbles": true,
+    "same_and_distinct_squares_checked": true,
+    "single_typed_graph_can_suffice": true,
+    "typed_candidate_intersection_can_be_stronger": true
+  },
+  "constant_period_cases": [
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        0
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "case": 0,
+      "edge_digest": "2d0117ee36e768fd67ec17d52ad0566be8fd8229474f4a53d50ab7eeb6e644d1",
+      "joint_candidate_count": 9,
+      "period": 3,
+      "same_square": true,
+      "symbols": 16,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        1
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        3
+      ],
+      "case": 1,
+      "edge_digest": "a66465b52060f00a14274881ba7e2cfe3ee7a794eee6c6ad0af5dd5894593b6f",
+      "joint_candidate_count": 8,
+      "period": 5,
+      "same_square": false,
+      "symbols": 18,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        0
+      ],
+      "block_lengths": [
+        7,
+        7,
+        6
+      ],
+      "case": 2,
+      "edge_digest": "fac90479a9c88a2c82ceaced86711c8903ed6042ef5756c4c11fb637f5123aff",
+      "joint_candidate_count": 11,
+      "period": 7,
+      "same_square": true,
+      "symbols": 20,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        3
+      ],
+      "block_lengths": [
+        15,
+        7
+      ],
+      "case": 3,
+      "edge_digest": "e689f6babd4595a0bb53c0785d7685434d3fa6cfb97c5740a96e955fb9c568af",
+      "joint_candidate_count": 8,
+      "period": 15,
+      "same_square": false,
+      "symbols": 22,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        1
+      ],
+      "block_lengths": [
+        24
+      ],
+      "case": 4,
+      "edge_digest": "8350cd2a03f94282b6af22ab9924139f8246b7f965250c6346595122ade35c05",
+      "joint_candidate_count": 9,
+      "period": 31,
+      "same_square": true,
+      "symbols": 24,
+      "types": [
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        3
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "case": 5,
+      "edge_digest": "da3223789152252202778ab85dae1c53afe028c7b2fe67836fe5577dfec0e61f",
+      "joint_candidate_count": 6,
+      "period": 3,
+      "same_square": false,
+      "symbols": 26,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        1
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        3
+      ],
+      "case": 6,
+      "edge_digest": "bf7d85316d0fc97aed0eb5bf358670eb713f2dd32fe5d2843779000f2b6200af",
+      "joint_candidate_count": 6,
+      "period": 5,
+      "same_square": true,
+      "symbols": 28,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        0
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        7,
+        2
+      ],
+      "case": 7,
+      "edge_digest": "63c35d7929e20ce7a74fe3a538f530bb0b6671db968e17717cd1b97da8d5a4fb",
+      "joint_candidate_count": 6,
+      "period": 7,
+      "same_square": false,
+      "symbols": 30,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        0
+      ],
+      "block_lengths": [
+        15,
+        15,
+        2
+      ],
+      "case": 8,
+      "edge_digest": "5b8345304326f05c5f740d3a9924beec2cf6b77c1140a9d3f9ed85765b60e5b3",
+      "joint_candidate_count": 6,
+      "period": 15,
+      "same_square": true,
+      "symbols": 32,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        0
+      ],
+      "block_lengths": [
+        31,
+        3
+      ],
+      "case": 9,
+      "edge_digest": "0567a5c8c59f0dfe5bda3eadf8be87cdb40209afd18ecdae44585cb7f04de9fd",
+      "joint_candidate_count": 4,
+      "period": 31,
+      "same_square": false,
+      "symbols": 34,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        3
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "case": 10,
+      "edge_digest": "3037c2eb3068734a02c940083f46a8ce9406a09d729ad8ec55d3b807202d6409",
+      "joint_candidate_count": 6,
+      "period": 3,
+      "same_square": true,
+      "symbols": 36,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        3
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        3
+      ],
+      "case": 11,
+      "edge_digest": "bad469cf35bddbe964f606d748100c76c526c5e5739a4111d7c1a1730f674baa",
+      "joint_candidate_count": 5,
+      "period": 5,
+      "same_square": false,
+      "symbols": 38,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        0
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        5
+      ],
+      "case": 12,
+      "edge_digest": "cef417fa4364cd5c0736bfc303f7f47f938935deb9e0d63ea08d0ce7b55724f7",
+      "joint_candidate_count": 4,
+      "period": 7,
+      "same_square": true,
+      "symbols": 40,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        1
+      ],
+      "block_lengths": [
+        15,
+        15,
+        12
+      ],
+      "case": 13,
+      "edge_digest": "ad472675aa47c93e1a51641522eb558951c26df7499ad9888ca19df1ede7eebf",
+      "joint_candidate_count": 1,
+      "period": 15,
+      "same_square": false,
+      "symbols": 42,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        2
+      ],
+      "block_lengths": [
+        31,
+        13
+      ],
+      "case": 14,
+      "edge_digest": "54aa02ed48a7db98739278cbbdd6fd8b278ebb239e56b11b76702879ff342465",
+      "joint_candidate_count": 2,
+      "period": 31,
+      "same_square": true,
+      "symbols": 44,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        0
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "case": 15,
+      "edge_digest": "af71be04c3372fe0eb0f834183dd5cfb7a80635092c9d68848e1ab9d2b2f15f0",
+      "joint_candidate_count": 4,
+      "period": 3,
+      "same_square": false,
+      "symbols": 46,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        2
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        3
+      ],
+      "case": 16,
+      "edge_digest": "fb271dcce4670ec5624bebe78138a8ba34d4c1cbb4883b1b2efe0722603ff9d7",
+      "joint_candidate_count": 3,
+      "period": 5,
+      "same_square": true,
+      "symbols": 48,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        0
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        1
+      ],
+      "case": 17,
+      "edge_digest": "4272fb7fec873e6d9680d1e4df9b779133869cafa1d64f88eb63e393a0411f91",
+      "joint_candidate_count": 4,
+      "period": 7,
+      "same_square": false,
+      "symbols": 50,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        1
+      ],
+      "block_lengths": [
+        15,
+        15,
+        15,
+        7
+      ],
+      "case": 18,
+      "edge_digest": "e2b5515ce1b15fbdfb49de94592c04b7751d792aec59ffc008a6f6db9d5de59e",
+      "joint_candidate_count": 3,
+      "period": 15,
+      "same_square": true,
+      "symbols": 52,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        3
+      ],
+      "block_lengths": [
+        16
+      ],
+      "case": 19,
+      "edge_digest": "da70dd133515ccbf43fda06544b83e695ec95e4c74ccf3acfe2c0c0eb7d6ccd3",
+      "joint_candidate_count": 9,
+      "period": 31,
+      "same_square": false,
+      "symbols": 16,
+      "types": [
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        0
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "case": 20,
+      "edge_digest": "9613cf38314776762357d8e07e31e78e1362cd97d3c20bc19d49a71344e3f119",
+      "joint_candidate_count": 7,
+      "period": 3,
+      "same_square": true,
+      "symbols": 18,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        3
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "case": 21,
+      "edge_digest": "f9fd9bf0760505a1615c9e39f820478a561b0a1f68cb34d61dac59377a9ca8f1",
+      "joint_candidate_count": 9,
+      "period": 5,
+      "same_square": false,
+      "symbols": 20,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        0
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "case": 22,
+      "edge_digest": "5c071d5195d2c669f831561674a9dfe71a69dd423ab9ac0d2f6672b95d17da17",
+      "joint_candidate_count": 8,
+      "period": 7,
+      "same_square": true,
+      "symbols": 22,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        1
+      ],
+      "block_lengths": [
+        15,
+        9
+      ],
+      "case": 23,
+      "edge_digest": "416f9802eae66b46d899d3dd298eeefce49582061d443f8b7f14f86ed5500ef7",
+      "joint_candidate_count": 8,
+      "period": 15,
+      "same_square": false,
+      "symbols": 24,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        0
+      ],
+      "block_lengths": [
+        26
+      ],
+      "case": 24,
+      "edge_digest": "691915b977fd5dbf8bf5e0b62498710a3d397bab05d85ca83544eb80495182fd",
+      "joint_candidate_count": 8,
+      "period": 31,
+      "same_square": true,
+      "symbols": 26,
+      "types": [
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        2
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "case": 25,
+      "edge_digest": "388c9db67eefcfbe08a77f042af5c6754295518fdd7d1d798f01c7e0da1ec36f",
+      "joint_candidate_count": 7,
+      "period": 3,
+      "same_square": false,
+      "symbols": 28,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        3
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "case": 26,
+      "edge_digest": "42bcbac09b80290f70e4d7eb2bdc4408085add24dc8f0f524561d46605fb98b5",
+      "joint_candidate_count": 7,
+      "period": 5,
+      "same_square": true,
+      "symbols": 30,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        1
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        7,
+        4
+      ],
+      "case": 27,
+      "edge_digest": "f03c5474d9cbeac2e6a6d9ac9ab77f9c9c938115d55211a671a26b4085568bad",
+      "joint_candidate_count": 5,
+      "period": 7,
+      "same_square": false,
+      "symbols": 32,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        2
+      ],
+      "block_lengths": [
+        15,
+        15,
+        4
+      ],
+      "case": 28,
+      "edge_digest": "a2d6e65be20ab84214901bc3b3cd1fdac989144ca4f1f51ad5ba3e04b7976b24",
+      "joint_candidate_count": 6,
+      "period": 15,
+      "same_square": true,
+      "symbols": 34,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        1
+      ],
+      "block_lengths": [
+        31,
+        5
+      ],
+      "case": 29,
+      "edge_digest": "046ffec185f5475db10ea37294ff9812c23309795a1447ab0a6af2b1b3bf5b72",
+      "joint_candidate_count": 4,
+      "period": 31,
+      "same_square": false,
+      "symbols": 36,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        1
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "case": 30,
+      "edge_digest": "c7977c5fad8a3474c8a6f861f30616e4606b87707851a6754cc9fecc4639aff4",
+      "joint_candidate_count": 4,
+      "period": 3,
+      "same_square": true,
+      "symbols": 38,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        3
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "case": 31,
+      "edge_digest": "3fc7d3a4c208ced5e807e5b72a2849d87be132fa17c4206e2e50a170e924f2e3",
+      "joint_candidate_count": 1,
+      "period": 5,
+      "same_square": false,
+      "symbols": 40,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        1
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "case": 32,
+      "edge_digest": "9ce54fcc970232a95704dfde966730b2c55721d13c2e267ce4019464e4b572a8",
+      "joint_candidate_count": 4,
+      "period": 7,
+      "same_square": true,
+      "symbols": 42,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        1
+      ],
+      "block_lengths": [
+        15,
+        15,
+        14
+      ],
+      "case": 33,
+      "edge_digest": "fd36d1bf18f2418587f3f50392a9346be16b47c95c4dd1802e081683be5799af",
+      "joint_candidate_count": 2,
+      "period": 15,
+      "same_square": false,
+      "symbols": 44,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        0
+      ],
+      "block_lengths": [
+        31,
+        15
+      ],
+      "case": 34,
+      "edge_digest": "7bf7baabebee5b447b024d25d6a53371b32b7876dfc0937f92cfae860b121bcb",
+      "joint_candidate_count": 3,
+      "period": 31,
+      "same_square": true,
+      "symbols": 46,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        1
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "case": 35,
+      "edge_digest": "601770d6d59116f644958aacb433cd715e668363eb111284ddbae8e544f448d8",
+      "joint_candidate_count": 4,
+      "period": 3,
+      "same_square": false,
+      "symbols": 48,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        2
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "case": 36,
+      "edge_digest": "87761e4384e4d908013afd8aecb590f8cdd8691b5ee11ee0903c6eef875a9e8c",
+      "joint_candidate_count": 3,
+      "period": 5,
+      "same_square": true,
+      "symbols": 50,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        3
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        3
+      ],
+      "case": 37,
+      "edge_digest": "9412517833b8cb6440811c7f642195d891df06466e7b0af6d06a3f227f6d5359",
+      "joint_candidate_count": 3,
+      "period": 7,
+      "same_square": false,
+      "symbols": 52,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        2
+      ],
+      "block_lengths": [
+        15,
+        1
+      ],
+      "case": 38,
+      "edge_digest": "25ba61ed9f38c270f18d6d7af0e9b4412011d13b3688fb0176281739f9d08a05",
+      "joint_candidate_count": 8,
+      "period": 15,
+      "same_square": true,
+      "symbols": 16,
+      "types": [
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        3
+      ],
+      "block_lengths": [
+        18
+      ],
+      "case": 39,
+      "edge_digest": "337b841816806da35f50dbb3a32af8ae00dee263e1aab2dec159136765a7e42f",
+      "joint_candidate_count": 9,
+      "period": 31,
+      "same_square": false,
+      "symbols": 18,
+      "types": [
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        3
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "case": 40,
+      "edge_digest": "68f93676d08eed74157f05158c8c3cfc551b779242cd8a37616c22f00df8ea2f",
+      "joint_candidate_count": 10,
+      "period": 3,
+      "same_square": true,
+      "symbols": 20,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        2
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        2
+      ],
+      "case": 41,
+      "edge_digest": "6596ae7c1adf54ba4850bf819d30fcbba7ca30ddfd35a76db9b1e1be1d90d008",
+      "joint_candidate_count": 7,
+      "period": 5,
+      "same_square": false,
+      "symbols": 22,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        1
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        3
+      ],
+      "case": 42,
+      "edge_digest": "29aed1d9afff53cc616e8cfce26bfdc55b58878fcf926ff593aef66caca7f5f0",
+      "joint_candidate_count": 9,
+      "period": 7,
+      "same_square": true,
+      "symbols": 24,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        3
+      ],
+      "block_lengths": [
+        15,
+        11
+      ],
+      "case": 43,
+      "edge_digest": "757cbd68ba81716cc2b5a901dcaec4669d6cfd4ae1b84bdeebd9bcc903f1d6b1",
+      "joint_candidate_count": 6,
+      "period": 15,
+      "same_square": false,
+      "symbols": 26,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        2
+      ],
+      "block_lengths": [
+        28
+      ],
+      "case": 44,
+      "edge_digest": "a0ccc34a9bd79493df9b3a51dbb6fb59618eb8a0dda2365e8bcb2f2bccf1b185",
+      "joint_candidate_count": 7,
+      "period": 31,
+      "same_square": true,
+      "symbols": 28,
+      "types": [
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        0
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "case": 45,
+      "edge_digest": "7df3d3131fff14dfdd0ab58daa1f421c7cb3d0d114a2df5e832965b0d5fda3ba",
+      "joint_candidate_count": 5,
+      "period": 3,
+      "same_square": false,
+      "symbols": 30,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        0
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        2
+      ],
+      "case": 46,
+      "edge_digest": "6b5ac9265e9cdb007e5abf78c321ec7280b0e2d4157d3929841e84c4d0cb0471",
+      "joint_candidate_count": 3,
+      "period": 5,
+      "same_square": true,
+      "symbols": 32,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        0
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        7,
+        6
+      ],
+      "case": 47,
+      "edge_digest": "85c03ab928c7d51811a3d994ab75fa3161959866306708ac27c2aa779619f897",
+      "joint_candidate_count": 6,
+      "period": 7,
+      "same_square": false,
+      "symbols": 34,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        3
+      ],
+      "block_lengths": [
+        15,
+        15,
+        6
+      ],
+      "case": 48,
+      "edge_digest": "55666a51ef197e5fc41ef46a08b654768bbce2940411d62195eee6b07e5784e3",
+      "joint_candidate_count": 4,
+      "period": 15,
+      "same_square": true,
+      "symbols": 36,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        0
+      ],
+      "block_lengths": [
+        31,
+        7
+      ],
+      "case": 49,
+      "edge_digest": "9ca3964ca60de692aaf0a640f2280c1176a55d53c7cbb99a77ae3250a5d2fa95",
+      "joint_candidate_count": 5,
+      "period": 31,
+      "same_square": false,
+      "symbols": 38,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        0
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "case": 50,
+      "edge_digest": "a9e500fec065471c74cb5ee29e85c40f5a5ceef7561cc2783270b83d44995f14",
+      "joint_candidate_count": 3,
+      "period": 3,
+      "same_square": true,
+      "symbols": 40,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        0
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        2
+      ],
+      "case": 51,
+      "edge_digest": "ec3fd0b3492dfd348874e0680ff6c27f1fd3bb8109a7f9a0c56b3706df2ae81e",
+      "joint_candidate_count": 5,
+      "period": 5,
+      "same_square": false,
+      "symbols": 42,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        2
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        2
+      ],
+      "case": 52,
+      "edge_digest": "caad5662104e053c489422d168ec3d1c9520748173e15434eaa7994067957d6c",
+      "joint_candidate_count": 7,
+      "period": 7,
+      "same_square": true,
+      "symbols": 44,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        0
+      ],
+      "block_lengths": [
+        15,
+        15,
+        15,
+        1
+      ],
+      "case": 53,
+      "edge_digest": "4017cdc0db6a86ef01df6fbeacb4fcc138d4a42b3ea55c7f12aa16365f6f7e19",
+      "joint_candidate_count": 3,
+      "period": 15,
+      "same_square": false,
+      "symbols": 46,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        3
+      ],
+      "block_lengths": [
+        31,
+        17
+      ],
+      "case": 54,
+      "edge_digest": "239264d09c653575e897b2d4fa80e1b76ed7ca17f4dd9bfe37120cd49082f4a4",
+      "joint_candidate_count": 5,
+      "period": 31,
+      "same_square": true,
+      "symbols": 48,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        0
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "case": 55,
+      "edge_digest": "ec087e73ee74ec2073d5feb093ab06d9b466a7672d006b440bb3ed866e9c24e0",
+      "joint_candidate_count": 1,
+      "period": 3,
+      "same_square": false,
+      "symbols": 50,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        1
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        2
+      ],
+      "case": 56,
+      "edge_digest": "a0e615bf96db2987513d0b0b343d201cfb2131b5520819346e674fb81d2761a5",
+      "joint_candidate_count": 4,
+      "period": 5,
+      "same_square": true,
+      "symbols": 52,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        1
+      ],
+      "block_lengths": [
+        7,
+        7,
+        2
+      ],
+      "case": 57,
+      "edge_digest": "9a3a2dd6aa66cff8d34b791af7cb40aea0e68217ff9c71a5cafa3393c6f6c90b",
+      "joint_candidate_count": 9,
+      "period": 7,
+      "same_square": false,
+      "symbols": 16,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        1
+      ],
+      "block_lengths": [
+        15,
+        3
+      ],
+      "case": 58,
+      "edge_digest": "751d0dc9c5374a2f30509e816cecf4ce02069df9c2a427c15cc105d90da61128",
+      "joint_candidate_count": 9,
+      "period": 15,
+      "same_square": true,
+      "symbols": 18,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        3
+      ],
+      "block_lengths": [
+        20
+      ],
+      "case": 59,
+      "edge_digest": "a5fc5e4bf35b798a232b4029c06fb062283b3a729f4f930403dea9abbcd1a7c9",
+      "joint_candidate_count": 7,
+      "period": 31,
+      "same_square": false,
+      "symbols": 20,
+      "types": [
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        2
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "case": 60,
+      "edge_digest": "b0cb81b60a10f658736416ffdb9595b50a1681151fe113db3971857db52df9f6",
+      "joint_candidate_count": 7,
+      "period": 3,
+      "same_square": true,
+      "symbols": 22,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        0
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        4
+      ],
+      "case": 61,
+      "edge_digest": "4d51a7e33543f2bb59d8bc4caf1c7898508b992ef130679d1a6610aacfe17ce5",
+      "joint_candidate_count": 8,
+      "period": 5,
+      "same_square": false,
+      "symbols": 24,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        2
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        5
+      ],
+      "case": 62,
+      "edge_digest": "e1491884248f7b45dcd082eed13db9cb0e3d4c1a7f673052403889ae9edc225a",
+      "joint_candidate_count": 6,
+      "period": 7,
+      "same_square": true,
+      "symbols": 26,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        2
+      ],
+      "block_lengths": [
+        15,
+        13
+      ],
+      "case": 63,
+      "edge_digest": "30bab3beb9586a1f113cf04eb60b77b85cf5b5006e493d1a0b47e98bb2827ff9",
+      "joint_candidate_count": 9,
+      "period": 15,
+      "same_square": false,
+      "symbols": 28,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        3
+      ],
+      "block_lengths": [
+        30
+      ],
+      "case": 64,
+      "edge_digest": "eeac1dd78d9c9a2d499ad707f8f5edeaf995eb530461942c26088d111c0609ea",
+      "joint_candidate_count": 6,
+      "period": 31,
+      "same_square": true,
+      "symbols": 30,
+      "types": [
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        2
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "case": 65,
+      "edge_digest": "f961730647f348716d1f5b954fb86536333ce9684b397c0804843f837e52cf66",
+      "joint_candidate_count": 7,
+      "period": 3,
+      "same_square": false,
+      "symbols": 32,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        3
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4
+      ],
+      "case": 66,
+      "edge_digest": "617f1d17ed49d2086619bd50f8eb6d594534f33908ab19949be4752fce7a2d9e",
+      "joint_candidate_count": 5,
+      "period": 5,
+      "same_square": true,
+      "symbols": 34,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        3,
+        0
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        1
+      ],
+      "case": 67,
+      "edge_digest": "ca0f23d73b402515466c25760dea327efb7219c574e533134cfc0824c724bd39",
+      "joint_candidate_count": 7,
+      "period": 7,
+      "same_square": false,
+      "symbols": 36,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        2
+      ],
+      "block_lengths": [
+        15,
+        15,
+        8
+      ],
+      "case": 68,
+      "edge_digest": "25d3fdeacf7c140c6261128e40ebc4deb013489b7e1a31dea54d0ae366f07e88",
+      "joint_candidate_count": 5,
+      "period": 15,
+      "same_square": true,
+      "symbols": 38,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        2
+      ],
+      "block_lengths": [
+        31,
+        9
+      ],
+      "case": 69,
+      "edge_digest": "5d8a3140de6c0202a44641b166721ac813048305c2b0b3529474b4de302c7184",
+      "joint_candidate_count": 6,
+      "period": 31,
+      "same_square": false,
+      "symbols": 40,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        0
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "case": 70,
+      "edge_digest": "edcef1f58231cd88af91779caece76997313c7c3d8627c332d813e5b786dade2",
+      "joint_candidate_count": 4,
+      "period": 3,
+      "same_square": true,
+      "symbols": 42,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        2
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4
+      ],
+      "case": 71,
+      "edge_digest": "6bcee12b16e2ef15f68737fb4aa3ffb159d6b86407957a49bde18ad805e41908",
+      "joint_candidate_count": 5,
+      "period": 5,
+      "same_square": false,
+      "symbols": 44,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        2
+      ],
+      "block_lengths": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        4
+      ],
+      "case": 72,
+      "edge_digest": "cf7934530fdc93a3081f5c737cb3ca9be77b50f08cce63240357d42a81163c76",
+      "joint_candidate_count": 5,
+      "period": 7,
+      "same_square": true,
+      "symbols": 46,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        2
+      ],
+      "block_lengths": [
+        15,
+        15,
+        15,
+        3
+      ],
+      "case": 73,
+      "edge_digest": "b323f293da754103da202577fad1954c1a2df530996cf4d625df0d790070156d",
+      "joint_candidate_count": 3,
+      "period": 15,
+      "same_square": false,
+      "symbols": 48,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        1
+      ],
+      "block_lengths": [
+        31,
+        19
+      ],
+      "case": 74,
+      "edge_digest": "657fcb508a2fc2222eb9737842fb3da36d0c6d4a7afc89cad4d94c96c3d6ecbd",
+      "joint_candidate_count": 4,
+      "period": 31,
+      "same_square": true,
+      "symbols": 50,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        3
+      ],
+      "block_lengths": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "case": 75,
+      "edge_digest": "325302219afa14f6d3b73d51b98ab1926193836e273c3d728ef21c691e5f2e89",
+      "joint_candidate_count": 3,
+      "period": 3,
+      "same_square": false,
+      "symbols": 52,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        2
+      ],
+      "block_lengths": [
+        5,
+        5,
+        5,
+        1
+      ],
+      "case": 76,
+      "edge_digest": "60f19eb94f2d0ac67e52c6cb7b509ee4c3a7853f6a815f85541b0b4c38d8926c",
+      "joint_candidate_count": 10,
+      "period": 5,
+      "same_square": true,
+      "symbols": 16,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        2,
+        2
+      ],
+      "block_lengths": [
+        7,
+        7,
+        4
+      ],
+      "case": 77,
+      "edge_digest": "998bf935e3703b5cf9b7c65320cc110966d81299c8edcfd146a64c8235d366e5",
+      "joint_candidate_count": 8,
+      "period": 7,
+      "same_square": false,
+      "symbols": 18,
+      "types": [
+        "CR",
+        "RC",
+        "RR"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        1,
+        2
+      ],
+      "block_lengths": [
+        15,
+        5
+      ],
+      "case": 78,
+      "edge_digest": "09e4b15d2591d4ce2ddfbb07952a0d865f187bacabff1c1f09bfa5c53903b02c",
+      "joint_candidate_count": 10,
+      "period": 15,
+      "same_square": true,
+      "symbols": 20,
+      "types": [
+        "CR",
+        "RC"
+      ]
+    },
+    {
+      "actual_coordinate_survives_iff_no_high1": true,
+      "actual_symbol1_coordinate": [
+        0,
+        3
+      ],
+      "block_lengths": [
+        22
+      ],
+      "case": 79,
+      "edge_digest": "399035a340cd1a709d3266e1f6ac6fad2e2b20fb011072d56c54f8a74514a44f",
+      "joint_candidate_count": 8,
+      "period": 31,
+      "same_square": false,
+      "symbols": 22,
+      "types": [
+        "RR"
+      ]
+    }
+  ],
+  "coupled_graph_example": {
+    "CR_candidate_coordinates": [
+      [
+        1,
+        1
+      ]
+    ],
+    "RC_candidate_coordinates": [
+      [
+        0,
+        0
+      ]
+    ],
+    "each_alone_unresolved_but_joint_impossible": true,
+    "joint_candidate_coordinates": []
+  },
+  "geometry": {
+    "all_checked": true,
+    "cross_axis_intersections": "exactly 1",
+    "same_axis_intersections": "4 when class labels equal, otherwise 0"
+  },
+  "identity": "ASTRA",
+  "mixed_block_fixture": {
+    "block_lengths": [
+      2,
+      1,
+      2,
+      3
+    ],
+    "cipher_square": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "cipher_symbols": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "edges": [
+      {
+        "a": 0,
+        "b": 1,
+        "block_length": 2,
+        "block_start": 0,
+        "coordinate": [
+          0,
+          0
+        ],
+        "global_nibble": 0,
+        "local_nibble": 0,
+        "type": "RR"
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "block_length": 1,
+        "block_start": 2,
+        "coordinate": [
+          0,
+          2
+        ],
+        "global_nibble": 2,
+        "local_nibble": 0,
+        "type": "RC"
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "block_length": 2,
+        "block_start": 3,
+        "coordinate": [
+          3,
+          0
+        ],
+        "global_nibble": 4,
+        "local_nibble": 1,
+        "type": "CC"
+      },
+      {
+        "a": 5,
+        "b": 7,
+        "block_length": 3,
+        "block_start": 5,
+        "coordinate": [
+          1,
+          1
+        ],
+        "global_nibble": 6,
+        "local_nibble": 1,
+        "type": "CR"
+      }
+    ],
+    "plaintext_square": [
+      15,
+      14,
+      13,
+      12,
+      11,
+      10,
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "plaintext_symbols": [
+      15,
+      14,
+      13,
+      14,
+      3,
+      9,
+      10,
+      8
+    ],
+    "types": [
+      "CC",
+      "CR",
+      "RC",
+      "RR"
+    ]
+  },
+  "rev7_read": false,
+  "seed": 20260911,
+  "single_graph_sufficiency": {
+    "candidate_coordinates": [],
+    "edges": 256,
+    "no_empty_rectangle": true,
+    "type": "RC"
+  },
+  "source_hashes": {
+    "controls.py": "31f9b11bb8849be786548508ad7d5843eff991a0de9ff538cd8d377c430b1426",
+    "even_rectangle_controls/README.md": "dd1e8b44938de3032c656dd76ee9b8f3638d17b3b6be5100b6b883ca5b65c03a",
+    "even_rectangle_controls/controls.json": "9f443af6c503d7fc377551b2842d5f701a21649d910d9aebdaf30597efe17f57",
+    "even_rectangle_controls/model.py": "46c1f18e473450aba5dde3675b594d9f0b86f28d4a670514e10a806a92942e84",
+    "odd_math/DESIGN.md": "3f9e7b85d05d38c5648db553a13c5dc1d586f59b52d778f6efdf19099e3d6d2a",
+    "odd_math/odd_math.py": "d4c60fabfb8335140564f5c15135d16dab484fb57d11867a6ede145748d9b925",
+    "odd_math/odd_math_results.json": "899b368f0cbae05297074982d89390e82271cf65fc699218e95098ec63b36265",
+    "symmetry_probe.py": "8bf072deccafabe1e98db126178207d9cf3c8eccdcab6902a28b0c0d123a26e0"
+  },
+  "target_evaluated": false,
+  "type_counts_constant_period": {
+    "CC": 0,
+    "CR": 412,
+    "RC": 773,
+    "RR": 145
+  }
+}

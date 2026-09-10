@@ -1,0 +1,9 @@
+{
+  "destination": "/private/tmp/astra-bifid-complete-restored-20260910",
+  "identity": "ASTRA",
+  "independent_direct_file_comparison": true,
+  "manifest_sha256": "69858bbc8f1cef2161bcd5f760a364bc7f6312664fb6242a18116f66d594e01e",
+  "original_gzip_bytes": 135693674,
+  "records": 2175,
+  "verified": true
+}

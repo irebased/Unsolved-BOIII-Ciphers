@@ -1,0 +1,40 @@
+{
+  "artifact_hashes": {
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/reconcile.py": "28d37abff88d84c913cb2c13354bcd59e186ae108ceb8b4c2e57cd5ae43bfd1a",
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/reconciliation.json": "781a33597decf6f60dc0f101157dbe478d4f7d4c8f64f31eee1edd0489568b6c",
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/run_target.py": "6dd45ffb0d2a5825f9388b363bc2c97bbb799bc16a1a24587884455e95ffce56",
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/target_gate.json": "dba3f6a962392cd4bdcacb7b81bfd459f9b27387dc36b87d5bdddd0791f43ff2",
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/verify_results.py": "d070482f30750a9f58eece9d3caaaad294255d0dd8281ca58dda750b28312ef5",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/bundle.py": "d02e6814a28a87e332e8b902773b889b00fcb63b672f1852035c03a5bbbe0df7",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/bundle_controls.json": "2bdd23b0e390e0b5b7abd6508c0efb2d4addd4527e5083ea781f52381f0a335b",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/bundle_controls.py": "6e96563b9438c1698cc021a29fa7b521c13327281652910ebc6c16e9ec28aac0",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/codec.py": "2984ce1a8a8053bc7bc7745880da603832a7b8d3708828d75841f6a7b607278a",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/codec_controls.json": "7e11d5c38bfbe1b82a5e28506e7292f13b30183aac227a8a2a66f89a88c367b5",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/codec_controls.py": "6583c7f24fa3ff52f2f30b2cb3b443cd8f6a55f02659d4122fd6bc9052d3dd77",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/sample_codec_replay.json": "7d0627b30fb5f773e437848218eb32d0880da73795f1beb0627ef1e3149a84e5",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/sample_codec_replay.py": "3c5ec3f4ec8c8366c4c6115f92bdba2e795a1d39ef07bb86c3047204a48d758b"
+  },
+  "checkpoint_sha256": "67a5eeaf6d94329726243fcee9f8c49665bc4d10623f30a830c88ea86b37395d",
+  "identity": "ASTRA",
+  "new_target_search": false,
+  "pack_authorized": true,
+  "required_artifacts": [
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/reconcile.py",
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/reconciliation.json",
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/run_target.py",
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/target_gate.json",
+    "research/rev7-20260909-codex/bifid16_controls/complete_periods/verify_results.py",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/bundle.py",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/bundle_controls.json",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/bundle_controls.py",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/codec.py",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/codec_controls.json",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/codec_controls.py",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/sample_codec_replay.json",
+    "research/rev7-20260909-codex/bifid16_controls/complete_transport/sample_codec_replay.py"
+  ],
+  "scope": "Archive exactly2175 verified original SMT gzip records. No solver rerun.",
+  "target_result_sha256": "736a34aed38826a8c1a1bf5e4fcd24d6f4aad817a435f2e09384fe493d4d35d6",
+  "verification_receipt_path": "research/rev7-20260909-codex/bifid16_controls/complete_periods/verification.json",
+  "verification_receipt_sha256": "58ddd2f79f9227e288b2982644ba24ea908158745e14b98efddfe7d1d6819b6d"
+}

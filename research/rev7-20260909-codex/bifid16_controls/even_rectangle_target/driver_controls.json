@@ -1,0 +1,110 @@
+{
+  "assertions": {
+    "all_four_orientations": true,
+    "all_passed": true,
+    "fast_slow_exact": true,
+    "registered_seven_cells": true,
+    "six_parent_plants": true
+  },
+  "identity": "ASTRA",
+  "plants": [
+    {
+      "canonical_input_sha256": "6eeb10e5493f04cd42d1ee0724cfd55109474fb8dc383dd06a9be0e5d603b842",
+      "fast_equals_slow_all_1820": true,
+      "known_positive_unresolved": true,
+      "matches_parent_pair_graph": true,
+      "orientation": "forward",
+      "orientation_involution": true,
+      "period": 16,
+      "plant_index": 0
+    },
+    {
+      "canonical_input_sha256": "14fe62d06b346e94734cf0de383a3c76af750cf04c5deaf23ebc3458fd8f3ea4",
+      "fast_equals_slow_all_1820": true,
+      "known_positive_unresolved": true,
+      "matches_parent_pair_graph": true,
+      "orientation": "reverse",
+      "orientation_involution": true,
+      "period": 562,
+      "plant_index": 1
+    },
+    {
+      "canonical_input_sha256": "a92ae8002889508466f1a1e651bd88311470435136a7e96837275c51ed3d9925",
+      "fast_equals_slow_all_1820": true,
+      "known_positive_unresolved": true,
+      "matches_parent_pair_graph": true,
+      "orientation": "byte_reverse",
+      "orientation_involution": true,
+      "period": 972,
+      "plant_index": 2
+    },
+    {
+      "canonical_input_sha256": "1cfea9a22a74a94d668fadc93476f6f9f149a02d396c6e79d863d63b0af524f2",
+      "fast_equals_slow_all_1820": true,
+      "known_positive_unresolved": true,
+      "matches_parent_pair_graph": true,
+      "orientation": "nibble_swap",
+      "orientation_involution": true,
+      "period": 16,
+      "plant_index": 3
+    },
+    {
+      "canonical_input_sha256": "9a6b26288f34cb173f87ae4715e5d5cf21b822a0c0135de4b5215b76531fc7cd",
+      "fast_equals_slow_all_1820": true,
+      "known_positive_unresolved": true,
+      "matches_parent_pair_graph": true,
+      "orientation": "forward",
+      "orientation_involution": true,
+      "period": 562,
+      "plant_index": 4
+    },
+    {
+      "canonical_input_sha256": "de0c33cd40d650803bccc45fb57b0b49cf23b63b61a4b8108e6008e8d0eee33d",
+      "fast_equals_slow_all_1820": true,
+      "known_positive_unresolved": true,
+      "matches_parent_pair_graph": true,
+      "orientation": "reverse",
+      "orientation_involution": true,
+      "period": 972,
+      "plant_index": 5
+    }
+  ],
+  "registered_cells": [
+    [
+      "forward",
+      562
+    ],
+    [
+      "forward",
+      972
+    ],
+    [
+      "reverse",
+      16
+    ],
+    [
+      "reverse",
+      514
+    ],
+    [
+      "byte_reverse",
+      16
+    ],
+    [
+      "nibble_swap",
+      850
+    ],
+    [
+      "nibble_swap",
+      972
+    ]
+  ],
+  "rev7_read": false,
+  "source_hashes": {
+    "driver_controls.py": "8f6041f0a7240afd6e864ffb89bc17c014b81012ee0c6b0056759695f1d416ec",
+    "parent_controls.json": "9f443af6c503d7fc377551b2842d5f701a21649d910d9aebdaf30597efe17f57",
+    "parent_controls.py": "431d315688a2dd4f95b1db874622dd013f3be6bbaa8879f53ceea49164e634f3",
+    "run_target.py": "6ff6e2ed30aafdea13102ac5113b051a57705a3ba4cfdfc9f5140d1eb82032aa"
+  },
+  "target_evaluated": false
+}

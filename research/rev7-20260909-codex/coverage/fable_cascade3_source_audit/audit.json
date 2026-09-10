@@ -1,0 +1,220 @@
+{
+  "captured_sources": [
+    {
+      "bytes": 6565,
+      "path": "cascade/cascade_lib.js",
+      "sha256": "0318a5b86eb9b93f6cfa848ac9c58a59e6ea05acb469b2d49569a840034c3aff"
+    },
+    {
+      "bytes": 2304,
+      "path": "cascade3/make_plant3.js",
+      "sha256": "f4728dc92deab2024e03b93ec867c137bb798f7188bc6b34e0501c736f914516"
+    },
+    {
+      "bytes": 15639,
+      "path": "cascade3/results.json",
+      "sha256": "4cf0f165d7659135b7b5230a15dedce880b8994a071d4adeab5ce269edfcef70"
+    },
+    {
+      "bytes": 7076,
+      "path": "cascade3/run3.js",
+      "sha256": "e4a9d224da58ccbb8d12c32f512eecb8d1c1e8acc5c2bef9f2d0d87741d2ae66"
+    },
+    {
+      "bytes": 3367,
+      "path": "cascade3/scan3.js",
+      "sha256": "f502c413da81a6ca8d6acd7083c657787c70f67f725d551952296b915003a6ec"
+    },
+    {
+      "bytes": 9413,
+      "path": "dictkey2/lib.js",
+      "sha256": "ffba90a95de78bdeef64c8d2b5602c61d3271e7780914d8322cc5bb9b912ec1d"
+    },
+    {
+      "bytes": 3612,
+      "path": "utf8gate/utf8gate.js",
+      "sha256": "23eaf0741eecf23fedbe1a9c9a241c715f5d5a9d936689d2c70d440cb6121b8d"
+    }
+  ],
+  "declared_model": {
+    "depth": 3,
+    "full_expected": 6229504,
+    "iv": "ASCII 0 repeated to block size",
+    "literal_keys": [
+      "Zombies",
+      "ZOMBIES"
+    ],
+    "loki97_key": "32-byte zero buffer with literal ASCII key copied at start",
+    "mode": "CFB8 reported as integer0",
+    "options_per_layer_reported": 46,
+    "orientations": 4,
+    "per_orientation_expected": 1557376,
+    "reverse_boundaries": 4,
+    "reverse_masks": 16
+  },
+  "identity": "ASTRA",
+  "independent_cipher_replay": false,
+  "limits": "Counts, rankings, maxima, and cipher scope are saved-result/source consistency findings. No cipher output, target maximum, planted rank, or null-band conclusion was independently recomputed.",
+  "missing_for_independent_full_replay": [
+    "cascade/scan.js (defines LAYER_OPTS and blockSizeFor)",
+    "cascade3/plant3_hex.txt and plant3_plaintext.txt",
+    "cascade/negative_seed_hex.txt",
+    "pinned mcrypt.js/WASM runtime and build evidence",
+    "independently pinned exact Rev7 input used by this run"
+  ],
+  "new_target_search": false,
+  "saved_result_accounting": {
+    "full_grid_arithmetic": 6229504,
+    "negative": {
+      "chains": 6229504,
+      "histograms_sum": true,
+      "max_longest_run": 23,
+      "per_orientation_counts": {
+        "bytePairReversed": {
+          "count": 1557376,
+          "elapsedMs": 49427
+        },
+        "displayed": {
+          "count": 1557376,
+          "elapsedMs": 50810
+        },
+        "fullReversed": {
+          "count": 1557376,
+          "elapsedMs": 51421
+        },
+        "nibbleSwap": {
+          "count": 1557376,
+          "elapsedMs": 49938
+        }
+      }
+    },
+    "positive_control": {
+      "chains": 1557376,
+      "reported_max_longest_run": 316,
+      "reported_true_chain_rank": 1,
+      "tie_count": 2
+    },
+    "rev7": {
+      "chains": 6229504,
+      "histograms_sum": true,
+      "max_longest_run": 21,
+      "per_orientation_counts": {
+        "bytePairReversed": {
+          "count": 1557376,
+          "elapsedMs": 50540
+        },
+        "displayed": {
+          "count": 1557376,
+          "elapsedMs": 51893
+        },
+        "fullReversed": {
+          "count": 1557376,
+          "elapsedMs": 51113
+        },
+        "nibbleSwap": {
+          "count": 1557376,
+          "elapsedMs": 50645
+        }
+      }
+    }
+  },
+  "source_hashes": {
+    "audit.py": "547b5d7779395e6679d59983aaaa9e320ecc6d28e1e026bb06bdf20cf4577c8f",
+    "controls.js": "93b26f9bc58bd46eeda5bbd39ce76bdd9e32656ea413a0e203109856a43c68ae",
+    "controls.json": "1316a63367d3c717b85e5ca694d793a2465eb9b33cf84719f073b51039806944"
+  },
+  "synthetic_scoretail_controls": {
+    "assertions": {
+      "all_eight_full_tails": true,
+      "all_passed": true
+    },
+    "identity": "ASTRA",
+    "node_version": "v26.4.0",
+    "rev7_read": false,
+    "samples": [
+      {
+        "bytes": 546,
+        "name": "binary",
+        "score": {
+          "longestRun": 546,
+          "tailLen": 546,
+          "validCount": 546
+        },
+        "sha256": "1a3c2242c710618c019a4f5b1501e34e131579146f88b9405143196ea42d6c3b"
+      },
+      {
+        "bytes": 546,
+        "name": "octal",
+        "score": {
+          "longestRun": 546,
+          "tailLen": 546,
+          "validCount": 546
+        },
+        "sha256": "7112ac3b281fe961afe8bd80f032dfd695c3a9afc5cf9fbd2a316836954738ec"
+      },
+      {
+        "bytes": 546,
+        "name": "decimal",
+        "score": {
+          "longestRun": 546,
+          "tailLen": 546,
+          "validCount": 546
+        },
+        "sha256": "6bb58ac15901bd2a45136aaec938f6238de4c63cfca93649a488a7c192c96a8c"
+      },
+      {
+        "bytes": 546,
+        "name": "hex_upper",
+        "score": {
+          "longestRun": 546,
+          "tailLen": 546,
+          "validCount": 546
+        },
+        "sha256": "bb80d9773a0c2af45922a0b888f8e1d4af63691174d4790387c6473e7b5a4f7a"
+      },
+      {
+        "bytes": 546,
+        "name": "hex_lower",
+        "score": {
+          "longestRun": 546,
+          "tailLen": 546,
+          "validCount": 546
+        },
+        "sha256": "0441924ff4d2612f53ce9f75604d7704963c25cc08f22d78351315439d974dd6"
+      },
+      {
+        "bytes": 546,
+        "name": "base32",
+        "score": {
+          "longestRun": 546,
+          "tailLen": 546,
+          "validCount": 546
+        },
+        "sha256": "7ade9091eb12a2915f504ac71f53e576cd110fe97a48cf4fcd5cdd026c5c166a"
+      },
+      {
+        "bytes": 546,
+        "name": "base64",
+        "score": {
+          "longestRun": 546,
+          "tailLen": 546,
+          "validCount": 546
+        },
+        "sha256": "0b38cca0796bb4ef7da9d7a408f3d85d3b800edc895cf72fc10b2fea75b69914"
+      },
+      {
+        "bytes": 546,
+        "name": "german_utf8",
+        "score": {
+          "longestRun": 546,
+          "tailLen": 546,
+          "validCount": 546
+        },
+        "sha256": "b136b1b6099ae198205300a468a86552dab188e5a77c9f0c290f19abba7d9482"
+      }
+    ],
+    "score_function": "upstream/cascade/cascade_lib.js scoreTail(buf,0)",
+    "target_evaluated": false
+  },
+  "upstream_target_result_inspected": true
+}

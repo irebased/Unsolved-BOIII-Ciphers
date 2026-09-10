@@ -1,0 +1,184 @@
+{
+  "answer": "No such accepted target pipeline was found in the reviewed encoded-endpoint, whole-numeric, or direct-cascade sources.",
+  "assertions": {
+    "all_pins_match": true,
+    "base64_zero_phases": {
+      "16": 0,
+      "32": 0,
+      "8": 0
+    },
+    "decimal3_nonzero_phases": {
+      "16": 1,
+      "32": 2,
+      "8": 2
+    },
+    "reviewed_paths": 8,
+    "vulnerable_accepted_pipeline_found": false
+  },
+  "identity": "ASTRA",
+  "new_target_search": false,
+  "question": "Does accepted ASTRA source skip an IV-dependent CFB8 prefix and then parse fixed-width decimal or Base64 groups at suffix-local offset zero?",
+  "reviewed_inventory": [
+    {
+      "alignment_effect": "No grouping or decoding occurs; a phase cut cannot itself create a false negative. A retained alphabet-only candidate was never claimed to decode.",
+      "classification": "position-independent encoded-alphabet detector",
+      "lines": [
+        36,
+        38,
+        59,
+        80
+      ],
+      "path": "research/rev7-20260909-codex/hex_cfb/encoded/run_encoded.py",
+      "sha256": "b2359b18171523ee4bc37cab4d6bab6a5633dba72e28f76d6fae98898ac22b3c"
+    },
+    {
+      "alignment_effect": "No quartet decoder is called.",
+      "classification": "position-independent Base64-byte detector",
+      "lines": [
+        31,
+        50
+      ],
+      "path": "research/rev7-20260909-codex/hex_cfb/encoded_extend/run_extend.py",
+      "sha256": "255b37a642cc01feec0f4327c809a3be6917ff6cb9a33f50f5eec51bfa397aef"
+    },
+    {
+      "alignment_effect": "No decimal/Base64 grouping occurs; boundary-aware UTF-8 states are enumerated.",
+      "classification": "known-interval A105/UTF-8 detector",
+      "lines": [
+        66,
+        70,
+        72
+      ],
+      "path": "research/rev7-20260909-codex/iv_independent/cascade/target/run_target.py",
+      "sha256": "dea3bceff94993abb7f59993300f71552c3ca84b344e96b22d27479c3dc05d41"
+    },
+    {
+      "alignment_effect": "No grouped decoding occurs.",
+      "classification": "skipped-suffix byte-bag detector",
+      "lines": [
+        22
+      ],
+      "path": "research/rev7-20260909-codex/coverage/fable_bytebag_replay/verify_outputs.py",
+      "sha256": "721b7584c6daa3034ccca56c4e53a1010edff0cc1b940266b304cda6dc3af389"
+    },
+    {
+      "alignment_effect": "The complete oriented ciphertext is converted to a whole integer before parsing; no CFB-derived prefix is sliced.",
+      "classification": "actual grouped decoder on a whole-buffer numeral transform",
+      "lines": [
+        84,
+        455,
+        458,
+        466
+      ],
+      "path": "research/rev7-20260909-codex/whole_numeric/controls.py",
+      "sha256": "937dfea250ca67e6788263db4431d4b324c08d807eade51c034755bbe745408e"
+    },
+    {
+      "alignment_effect": "Every grouped transformation consumes a complete fixed-IV layer output; no unknown-IV prefix is discarded.",
+      "classification": "solved Rev5 full-buffer control",
+      "lines": [
+        70,
+        72,
+        78
+      ],
+      "path": "research/rev7-20260909-codex/hex_cfb/native_siblings/controls.py",
+      "sha256": "bc7ba1a64dbc2a951d9edc126a5ff5c97c181c470d3772b690b9dbdffe517739"
+    },
+    {
+      "alignment_effect": "Three-digit and Base64 decoding use the complete fixed-IV DES output.",
+      "classification": "solved Rev9 full-buffer control",
+      "lines": [
+        43,
+        44,
+        45
+      ],
+      "path": "research/rev7-20260909-codex/sources/rev9_source/controls.py",
+      "sha256": "df6fa534502134f7f50a760064c28f62832dd15d3fe40ec01c2658272e4d611d"
+    },
+    {
+      "alignment_effect": "The theorem excludes grouped interlayers rather than decoding a cut suffix.",
+      "classification": "explicit direct-binary theorem limit",
+      "lines": [
+        107
+      ],
+      "path": "research/rev7-20260909-codex/iv_independent/cascade/proof.py",
+      "sha256": "1152ff62572b5914c1840ddd4af14efdc1ff26c58051a566c62bfb2ed1a1f8c0"
+    }
+  ],
+  "scope_notes": [
+    "Alphabet and byte-bag gates are necessary position-independent filters. They do not perform or certify grouped decoding.",
+    "A detector that runs before a grouped decoder can retain false positives, but group phase does not make that detector reject an otherwise alphabet-valid suffix.",
+    "Whole-buffer numeral and solved-sibling pipelines use complete buffers and fixed IVs; the prefix-cut concern does not apply to them.",
+    "The direct cascade family explicitly excludes interposed Base64, numeric, framing, and length-changing transforms.",
+    "Base64 phase-zero at block-size cuts does not establish decodability of every arbitrary known interval: its right boundary, padding, and any non-block transform still require explicit handling.",
+    "This source audit is not a proof that no unpublished, superseded draft, or FABLE pipeline has the defect. It makes no new claim about Rev7 plaintext."
+  ],
+  "source_hashes": {
+    "comms/astra_cascade_prereg_payload.json": "06e87c76cd7893e5dc13fd91d1e203617b6d21cb2170ee296a1a15df20cbe3f3",
+    "comms/encoded-go-20260910.json": "cc45e8b55823b4cfcc9ba36b7cf6727ef493ea1df6875acdcafb77bbc932ad9e",
+    "comms/whole-numeric-go-20260910.json": "345d53de32bae68853aeecd7917f9995e9cb78a18368323ac9f2f605cb031063",
+    "coverage/encoded_endpoint_subset/analyze.py": "e988916779770abdfe7e23cd542c87e3bed3048572ed30e519da0557df26c78f",
+    "coverage/fable_bytebag_replay/verify_outputs.py": "721b7584c6daa3034ccca56c4e53a1010edff0cc1b940266b304cda6dc3af389",
+    "hex_cfb/encoded/run_encoded.py": "b2359b18171523ee4bc37cab4d6bab6a5633dba72e28f76d6fae98898ac22b3c",
+    "hex_cfb/encoded_extend/run_extend.py": "255b37a642cc01feec0f4327c809a3be6917ff6cb9a33f50f5eec51bfa397aef",
+    "hex_cfb/native_siblings/controls.py": "bc7ba1a64dbc2a951d9edc126a5ff5c97c181c470d3772b690b9dbdffe517739",
+    "iv_independent/cascade/proof.py": "1152ff62572b5914c1840ddd4af14efdc1ff26c58051a566c62bfb2ed1a1f8c0",
+    "iv_independent/cascade/target/run_target.py": "dea3bceff94993abb7f59993300f71552c3ca84b344e96b22d27479c3dc05d41",
+    "sources/rev9_source/controls.py": "df6fa534502134f7f50a760064c28f62832dd15d3fe40ec01c2658272e4d611d",
+    "whole_numeric/controls.py": "937dfea250ca67e6788263db4431d4b324c08d807eade51c034755bbe745408e"
+  },
+  "synthetic_witness": {
+    "base64_quartets": [
+      {
+        "cut": 8,
+        "decoded_raw_offset": 6,
+        "exact": true,
+        "phase": 0
+      },
+      {
+        "cut": 16,
+        "decoded_raw_offset": 12,
+        "exact": true,
+        "phase": 0
+      },
+      {
+        "cut": 32,
+        "decoded_raw_offset": 24,
+        "exact": true,
+        "phase": 0
+      }
+    ],
+    "fixed_decimal3": [
+      {
+        "aligned_decoded_hex": "4445464748494a4b4c4d4e4f505152535455565758595a",
+        "aligned_global_offset": 9,
+        "cut": 8,
+        "leading_trim_to_next_original_boundary": 1,
+        "naive_local_zero_fixed3_accepted": false,
+        "naive_local_zero_length_mod3": 1,
+        "phase": 2
+      },
+      {
+        "aligned_decoded_hex": "4748494a4b4c4d4e4f505152535455565758595a",
+        "aligned_global_offset": 18,
+        "cut": 16,
+        "leading_trim_to_next_original_boundary": 2,
+        "naive_local_zero_fixed3_accepted": false,
+        "naive_local_zero_length_mod3": 2,
+        "phase": 1
+      },
+      {
+        "aligned_decoded_hex": "4c4d4e4f505152535455565758595a",
+        "aligned_global_offset": 33,
+        "cut": 32,
+        "leading_trim_to_next_original_boundary": 1,
+        "naive_local_zero_fixed3_accepted": false,
+        "naive_local_zero_length_mod3": 1,
+        "phase": 2
+      }
+    ],
+    "interpretation": "Cuts 8,16,32 have decimal phases 2,1,2 and therefore cannot be fed directly to a local-zero fixed3 parser. The same cuts all have Base64 phase zero because they are multiples of four."
+  },
+  "target_evaluated": false,
+  "valid_warning": "A future fixed-width decoder over a known suffix must preserve the original stream phase. For width g, begin at the first retained global offset congruent to zero modulo g (and handle an incomplete right edge), or enumerate the justified phase when the origin is unknown."
+}
