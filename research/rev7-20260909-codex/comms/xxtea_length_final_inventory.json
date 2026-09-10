@@ -1,0 +1,100 @@
+{
+  "artifacts": [
+    {
+      "bytes": 7002,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2cefa0ad87966c420d74114cad8f93d68818f111",
+      "path": "research/rev7-20260909-codex/comms/publish_xxtea_length.py",
+      "sha256": "35dfbdcdaa3e0c5ba3231a75301724209e1a82700aec6cb67003c6fd9ebbfcfe"
+    },
+    {
+      "bytes": 2507,
+      "encoding": "utf-8",
+      "git_blob_sha1": "451b71ce2309e4cf634c24d98368338fbaa3f108",
+      "path": "research/rev7-20260909-codex/comms/xxtea-length-result-20260910.json",
+      "sha256": "9aece4b793212bb946544cffddde2bd770781b8d92518d27770e16b1c328686f"
+    },
+    {
+      "bytes": 3185,
+      "encoding": "utf-8",
+      "git_blob_sha1": "710812a03dcbc479b3628dca54901d67816645a6",
+      "path": "research/rev7-20260909-codex/coverage/xxtea_mixed_length_audit/README.md",
+      "sha256": "cb2ad09e3272213e4bf037d683a7eb3dd9aa5ab9b24a7bc3b0f228ff347620c9"
+    },
+    {
+      "bytes": 1412,
+      "encoding": "utf-8",
+      "git_blob_sha1": "4625a159621bfee71f1d8d2701c2be85b4e081a6",
+      "path": "research/rev7-20260909-codex/coverage/xxtea_mixed_length_audit/REPORT.md",
+      "sha256": "75ecd019787abb5d60264e66bc6a98ece1f4d78bd4f898700f1de20d77751856"
+    },
+    {
+      "bytes": 9966,
+      "encoding": "utf-8",
+      "git_blob_sha1": "6888ce2622b1d947dc5cec29ff172ceabb5e7e31",
+      "path": "research/rev7-20260909-codex/coverage/xxtea_mixed_length_audit/audit.py",
+      "sha256": "8026935f1841499f150ec4477a6a29ec794733294a45d1f717d4549baea8404b"
+    },
+    {
+      "bytes": 8786,
+      "encoding": "utf-8",
+      "git_blob_sha1": "b3175af92296c2755d755f37f7d9d2ce237a3c99",
+      "path": "research/rev7-20260909-codex/coverage/xxtea_mixed_length_audit/controls.json",
+      "sha256": "aa0ffdd1574a3523c194a48779faa87be75f58150a390972539e96f2136a56db"
+    },
+    {
+      "bytes": 38043,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ac4a763282c2e08722f2bd087da5ba1961ab2ecc",
+      "path": "research/rev7-20260909-codex/coverage/xxtea_mixed_length_audit/source/app.js",
+      "sha256": "c8aa498de890039bab86af507e49b89d382c67594f463691deda427b04059113"
+    },
+    {
+      "bytes": 759,
+      "encoding": "utf-8",
+      "git_blob_sha1": "170a491c8ce1008c4d23e571a2dd2defa86c694f",
+      "path": "research/rev7-20260909-codex/coverage/xxtea_mixed_length_audit/source/fable_results_xxtea.json",
+      "sha256": "f53430c0cd6e72abe2a0904a6fbe191fd871e863aa8a589fc2f47a5b7160940f"
+    },
+    {
+      "bytes": 8098,
+      "encoding": "utf-8",
+      "git_blob_sha1": "603c01cf2374be4225552353b1018960c3ee8d0e",
+      "path": "research/rev7-20260909-codex/coverage/xxtea_mixed_length_audit/source/fable_scan_xxtea.js",
+      "sha256": "7b86882d277601966533e79f52f745a7aca047d72f7db9059155bc296eb14067"
+    },
+    {
+      "bytes": 2,
+      "encoding": "utf-8",
+      "git_blob_sha1": "0637a088a01e8ddab3bf3fa98dbe804cbde1a0dc",
+      "path": "research/rev7-20260909-codex/coverage/xxtea_mixed_length_audit/source/fable_survivors_xxtea.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "bytes": 5475,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ed672425ba6dad949856095830ce44bb1af28405",
+      "path": "research/rev7-20260909-codex/coverage/xxtea_mixed_length_audit/source/fable_xxtea.js",
+      "sha256": "4f3264f7c9d7715e0c21c7eef615bf053ee0410a989e7b9ae2f49f28dd8bfeea"
+    },
+    {
+      "bytes": 27395,
+      "encoding": "utf-8",
+      "git_blob_sha1": "7f8f04cc35dabf4961e513068d2728845c449786",
+      "path": "research/rev7-20260909-codex/coverage/xxtea_mixed_length_audit/source/mcrypt_wrapper.c",
+      "sha256": "ae134769f33ea4f6f1e42599706d7050670ad33669ce9c8c3fc22d1496f38982"
+    },
+    {
+      "bytes": 4325,
+      "encoding": "utf-8",
+      "git_blob_sha1": "cfe6c0d68fa8b515597a8a2d39d59001635dbf4f",
+      "path": "research/rev7-20260909-codex/coverage/xxtea_mixed_length_audit/source/xxtea.c",
+      "sha256": "1eba7c9a7da40a1030842195a4c5cdafebca6106000b167c00e8c82cce3efb2d"
+    }
+  ],
+  "identity": "ASTRA",
+  "publication_excludes": [
+    "drafts",
+    "__pycache__"
+  ]
+}

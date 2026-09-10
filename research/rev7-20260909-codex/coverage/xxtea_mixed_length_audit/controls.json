@@ -1,0 +1,248 @@
+{
+  "actual_c_vectors": [
+    {
+      "cipher_sha256": "fee754cc8a911a2bdb92e08900747e6040bd22c6ad786274e9ad874102e73801",
+      "input_length": 1,
+      "pecl_cipher_length": 8,
+      "raw_cipher_length": 8,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "7d64413aa5ff845b4c217f23342579f4dd4802046dc909a5ab3b9a940a289d8e",
+      "input_length": 2,
+      "pecl_cipher_length": 8,
+      "raw_cipher_length": 8,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "0fe1bff306ac0ec01051acc38866f73476e0bf40dfedd6bbfaebce23a3f7581d",
+      "input_length": 3,
+      "pecl_cipher_length": 8,
+      "raw_cipher_length": 8,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "43b0f6189c6cd515322d4e555571624605335d3c2621757119e06744ce912317",
+      "input_length": 4,
+      "pecl_cipher_length": 8,
+      "raw_cipher_length": 8,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "63a5b535e9f18532d9640def8fc591c525fa14b6933ef497ec92f919ee49afcc",
+      "input_length": 5,
+      "pecl_cipher_length": 12,
+      "raw_cipher_length": 8,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "bc593cc455720d4fe763c3454d7d1f016968373101e4d19c23faf250003f04aa",
+      "input_length": 7,
+      "pecl_cipher_length": 12,
+      "raw_cipher_length": 8,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "0186e0692c87487512777c491a61a62434b40e05c4f5d976c19e435d3510fd1e",
+      "input_length": 8,
+      "pecl_cipher_length": 12,
+      "raw_cipher_length": 8,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "62df8bd9113263f654148619f67e8c40626bcb3165a408b6326c3aeb5d3430c6",
+      "input_length": 9,
+      "pecl_cipher_length": 16,
+      "raw_cipher_length": 12,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "b0fa21891da0dec8cd17fe0cceb04be5603dcab424bbb174cb5deafb12d00e8a",
+      "input_length": 15,
+      "pecl_cipher_length": 20,
+      "raw_cipher_length": 16,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "2240e77043b3f42785a8e6c254f7c22a945cba9ddd759b2219dfde92dda28223",
+      "input_length": 16,
+      "pecl_cipher_length": 20,
+      "raw_cipher_length": 16,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "a879f641e1d38c334a4ddf46cf29aea44574cbd06f063f576107e55dc4bfc444",
+      "input_length": 17,
+      "pecl_cipher_length": 24,
+      "raw_cipher_length": 20,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "1d715b54543abed6b20854c497ff6fa2f33e0000276d7e0fb76b5d4e17f440e9",
+      "input_length": 31,
+      "pecl_cipher_length": 36,
+      "raw_cipher_length": 32,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "082966cc016a5aa30bfc48eb5a32c00e5d29b262dffb2df2d3c0b19decc8f596",
+      "input_length": 32,
+      "pecl_cipher_length": 36,
+      "raw_cipher_length": 32,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "84112a5338ba74cc4a2192e4e1a74cdf1834dda3be95bfbbe93ce78fbc759ea8",
+      "input_length": 33,
+      "pecl_cipher_length": 40,
+      "raw_cipher_length": 36,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "23f033b29305a665be7c5b00592c58cd7253e2dcc50fcd736f4b715b7eb4b749",
+      "input_length": 545,
+      "pecl_cipher_length": 552,
+      "raw_cipher_length": 548,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "6f1808eafd2fdbcd6c12eea8accd88ac74490697d80b52ddd28af751e9b6744b",
+      "input_length": 546,
+      "pecl_cipher_length": 552,
+      "raw_cipher_length": 548,
+      "roundtrip": true
+    },
+    {
+      "cipher_sha256": "8bcda2f36ebeb4f6b4e3630693f37fb03fff3169709ffe2273d44b185bda6e60",
+      "input_length": 547,
+      "pecl_cipher_length": 552,
+      "raw_cipher_length": 548,
+      "roundtrip": true
+    }
+  ],
+  "canonical_final_binary_length": 546,
+  "canonical_length_mod4": 2,
+  "compiler_evidence": {
+    "command": [
+      "cc",
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "source/xxtea.c",
+      "-o",
+      "TEMP/libxxtea.so"
+    ],
+    "python": "3.9.6",
+    "version": "Apple clang version 21.0.0 (clang-2100.1.1.101)"
+  },
+  "escape_conditions": [
+    "XXTEA used only as an 8-byte feedback primitive rather than whole-buffer serialization",
+    "serialized bytes encoded or expanded and the final 546 bytes are that text encoding rather than the decoded serialization",
+    "truncation, header removal, insertion, or other length-changing framing after XXTEA",
+    "only a prefix/suffix of a serialized value survives",
+    "a different non-word serialization implementation"
+  ],
+  "identity": "ASTRA",
+  "length_preserving_chain_controls": [
+    {
+      "serialized_length": 8,
+      "stage_lengths": [
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "serialized_length": 12,
+      "stage_lengths": [
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "serialized_length": 548,
+      "stage_lengths": [
+        548,
+        548,
+        548,
+        548
+      ]
+    },
+    {
+      "serialized_length": 552,
+      "stage_lengths": [
+        552,
+        552,
+        552,
+        552
+      ]
+    }
+  ],
+  "limits": [
+    "The serialization formulas and compiled C controls cover positive input lengths; the pinned C wrapper rejects empty input.",
+    "The proof does not test keys, modes, plaintext plausibility, or any Rev7 ciphertext.",
+    "A length contradiction identifies an incompatible framing chain; it does not exclude every algorithm called XXTEA.",
+    "Adding a plaintext-length uint32 word changes the number of words but never the modulo-4 invariant.",
+    "The saved raw decryptor zero-fills a partial final input word and strips trailing zero plaintext; this permissive decoder behavior does not make a 546-byte value an output of raw word serialization."
+  ],
+  "prior_fable_saved_scan": {
+    "control_declared_544_but_actual_plaintext_bytes": 313,
+    "evidence_only_not_reexecuted": true,
+    "jobs": 113760,
+    "keys_tested": 1422,
+    "limitations": [
+      "The saved result is checked against its pinned source and ledger, but the target scan is not rerun.",
+      "The scan decrypts selected modulo-4 trims; it is not the impossible direct 546-byte producer framing.",
+      "Its comment calls the plant 544 bytes, but the sliced source string contains only 313 bytes."
+    ],
+    "orientations": 4,
+    "survivor_count": 0,
+    "trim_count": 10,
+    "variants": [
+      "pecl",
+      "raw"
+    ]
+  },
+  "schema": "astra-xxtea-mixed-length-audit-v1",
+  "source": {
+    "commit": "7c43c6ae65f49bd7504494d9ca3c55ce2e2496b6",
+    "commit_date": "2026-09-07T18:32:30Z",
+    "historical_context": {
+      "note": "The executed C is the pinned 2026 old-ciphers port whose header names xxtea-pecl as its source; this audit does not claim byte identity with the 2016 PECL tarball.",
+      "official_description": "String-oriented XXTEA extension, distinct from the original uint32-array interface.",
+      "official_pecl_index_url": "https://pecl.php.net/package/xxtea",
+      "official_pecl_url": "https://pecl.php.net/package/xxtea/1.0.11",
+      "official_release_date": "2016-01-05"
+    },
+    "repository": "https://github.com/irebased/old-ciphers",
+    "sha256": {
+      "app.js": "c8aa498de890039bab86af507e49b89d382c67594f463691deda427b04059113",
+      "fable_results_xxtea.json": "f53430c0cd6e72abe2a0904a6fbe191fd871e863aa8a589fc2f47a5b7160940f",
+      "fable_scan_xxtea.js": "7b86882d277601966533e79f52f745a7aca047d72f7db9059155bc296eb14067",
+      "fable_survivors_xxtea.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "fable_xxtea.js": "4f3264f7c9d7715e0c21c7eef615bf053ee0410a989e7b9ae2f49f28dd8bfeea",
+      "mcrypt_wrapper.c": "ae134769f33ea4f6f1e42599706d7050670ad33669ce9c8c3fc22d1496f38982",
+      "xxtea.c": "1eba7c9a7da40a1030842195a4c5cdafebca6106000b167c00e8c82cce3efb2d"
+    },
+    "urls": {
+      "app.js": "https://github.com/irebased/old-ciphers/blob/7c43c6ae65f49bd7504494d9ca3c55ce2e2496b6/js/app.js",
+      "mcrypt_wrapper.c": "https://github.com/irebased/old-ciphers/blob/7c43c6ae65f49bd7504494d9ca3c55ce2e2496b6/wasm/mcrypt_wrapper.c",
+      "xxtea.c": "https://github.com/irebased/old-ciphers/blob/7c43c6ae65f49bd7504494d9ca3c55ce2e2496b6/wasm/xxtea.c"
+    }
+  },
+  "source_assertions": {
+    "pecl_length_word_and_word_output": true,
+    "raw_minimum_two_words_and_word_output": true,
+    "wrapper_variable_length_no_iv": true
+  },
+  "target_evaluated": false,
+  "theorem": {
+    "conclusion": "The final decoded binary length is divisible by 4, so it cannot be 546 bytes.",
+    "pecl_encryption_length": "4*(ceil(n/4)+1)",
+    "premise": "A complete whole-buffer XXTEA word serialization occurs, and every later binary operation preserves byte length before the final hex is decoded.",
+    "raw_btea_length": "4*max(2,ceil(n/4))"
+  }
+}

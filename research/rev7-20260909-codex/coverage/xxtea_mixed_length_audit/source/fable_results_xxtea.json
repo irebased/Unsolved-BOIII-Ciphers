@@ -1,0 +1,32 @@
+{
+  "gap": "xxtea",
+  "trimCount": 10,
+  "control": {
+    "recovered": true,
+    "detail": {
+      "dFront": 4,
+      "dBack": 0
+    }
+  },
+  "negativeControl": {
+    "falsePositives": 0,
+    "bestPrintableSeen": 0.4722222222222222,
+    "keysTested": 1422
+  },
+  "loreArtifacts": {
+    "keysTested": 1422,
+    "jobs": 113760,
+    "timeMs": 485,
+    "bestPrintable": {
+      "raw": {
+        "pf": 0.4648148148148148,
+        "key": "Widowswine",
+        "orient": "reversed",
+        "dFront": 8,
+        "dBack": 4,
+        "sample": "Eú6q\u00017¦\u001c\\êÇ/3b*ÒëG2\fÔ\u001f©êà'¾\u001b´ä\u0001J\\À@¬±\t` \u001bTy\u0001@Rý?;\"0\u000bsûÊÒÕp\u001c¸n´×\u0017\u0013r·Æ7&\u001cKU"
+      }
+    },
+    "survivorCount": 0
+  }
+}
