@@ -1,0 +1,369 @@
+{
+  "assertions": {
+    "all_decode_call_text_matches_classified": true,
+    "all_pins_match": true,
+    "closest_prior_membership_grid_exactly_12_complete_zero": true,
+    "exact_prior_route_found": false,
+    "lossy_819_is_not_base64_decode": true
+  },
+  "base64_decode_call_inventory": {
+    "call_count": 27,
+    "categories": {
+      "result_or_solver_transport": 10,
+      "solved_sibling_full_buffer": 2,
+      "source_or_binary_packaging": 7,
+      "synthetic_alignment_control": 1
+    },
+    "exact_raw_rev7_glyph_route_calls": 0,
+    "files_with_calls": 20,
+    "roots": "Snapshot of textual Base64 decode-call matches in research/**/*.py and research/**/*.js; excludes dependency, smt, drafts, and this audit directory. Default verification checks only these frozen inventoried paths.",
+    "rows": [
+      {
+        "calls": [
+          {
+            "line": 12,
+            "sha256": "ef4fb848f0efcfb5065687a246bbada6bb947f07d8de2cea91ea7ca2153a5cb2"
+          }
+        ],
+        "category": "source_or_binary_packaging",
+        "file_sha256": "ba66b3c844cf5784749587af960a11163d5e47deddf523a04530bea4f5d9629b",
+        "path": "research/char_amsco/astra/cryptool_bug/analyze.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 31,
+            "sha256": "a59608f76fbc082f0a8fe34855e203edc67b348ec4f3ebc66c38163d9fd87925"
+          }
+        ],
+        "category": "result_or_solver_transport",
+        "file_sha256": "3ae9bddf3698fd9e1ff15a7f8c6427ca7eb196fef6583714d2905277c2f7a3cc",
+        "path": "research/rev7-20260909-codex/bifid16_controls/complete_transport/benchmark.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 64,
+            "sha256": "281d623977ee67755486ec6ec1115303e102f99a2e6f51dc19bdfa093400ded3"
+          },
+          {
+            "line": 77,
+            "sha256": "0e6b0390de5d5935cd4fcfc7bb651de249b426b380ea93dc9ead88aae608caf0"
+          }
+        ],
+        "category": "result_or_solver_transport",
+        "file_sha256": "2984ce1a8a8053bc7bc7745880da603832a7b8d3708828d75841f6a7b607278a",
+        "path": "research/rev7-20260909-codex/bifid16_controls/complete_transport/codec.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 30,
+            "sha256": "39ab60482dd83b3087f99370d1e42a2a4b2e6f20a53bb3855ba7c6d2b65b1a17"
+          }
+        ],
+        "category": "result_or_solver_transport",
+        "file_sha256": "6583c7f24fa3ff52f2f30b2cb3b443cd8f6a55f02659d4122fd6bc9052d3dd77",
+        "path": "research/rev7-20260909-codex/bifid16_controls/complete_transport/codec_controls.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 12,
+            "sha256": "12ef175d62eba264923021f86537fc7aa616e786b8ad4b4a922d257b98559ae3"
+          }
+        ],
+        "category": "result_or_solver_transport",
+        "file_sha256": "112bda64e712d554d9af7fd5462505203c69757df3c829d9405ccd151ae2bc4c",
+        "path": "research/rev7-20260909-codex/bifid16_controls/even_target/pack_results.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 9,
+            "sha256": "3e224fe7d259424ab720f748fda886512fff5945a1559e630a6f0962846dc830"
+          }
+        ],
+        "category": "result_or_solver_transport",
+        "file_sha256": "f9e9b809d8611832220633ca49c8474f7b220d943a64cd1d064c6ea95ea2aaf9",
+        "path": "research/rev7-20260909-codex/bifid16_controls/lossy_amsco_controls/target/pack_results.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 18,
+            "sha256": "d061a42265ceea8047b91be637ff6ec97a2e2019ef8d22bdfd43063ee0fd592f"
+          }
+        ],
+        "category": "result_or_solver_transport",
+        "file_sha256": "8b510c39714d609d28b08bb2265fb31d763addae04c420dd13adb80d2a858d06",
+        "path": "research/rev7-20260909-codex/bifid16_controls/restore_smt.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 18,
+            "sha256": "d061a42265ceea8047b91be637ff6ec97a2e2019ef8d22bdfd43063ee0fd592f"
+          }
+        ],
+        "category": "result_or_solver_transport",
+        "file_sha256": "93fb9c8b1cc020046966f6e330048faa4f6bd52b54ebb485abe6137b1bfc3958",
+        "path": "research/rev7-20260909-codex/bifid16_controls/transport_history/restore_smt.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 12,
+            "sha256": "40a1593ff6f5c7f8c4ef6e776a78a6cb30856985d89bd38f9bd760668883970e"
+          }
+        ],
+        "category": "source_or_binary_packaging",
+        "file_sha256": "721b7584c6daa3034ccca56c4e53a1010edff0cc1b940266b304cda6dc3af389",
+        "path": "research/rev7-20260909-codex/coverage/fable_bytebag_replay/verify_outputs.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 26,
+            "sha256": "512a42541e06be9e64c4affe0f009c7ff2d0b9a99144702813253ca851d58dae"
+          },
+          {
+            "line": 48,
+            "sha256": "6cb94f266aca4d46b6d803463911f3139c404c337553520f87bb873c440a765a"
+          }
+        ],
+        "category": "source_or_binary_packaging",
+        "file_sha256": "405c2e3412e79b501c5dd4be6b838079635c17ae0d080ef60965790fe9e34141",
+        "path": "research/rev7-20260909-codex/coverage/fable_nofb_audit/audit.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 13,
+            "sha256": "0b7b5305514a06c53baffbcf614be0094eb81dfbb228dd86dcf805a8c7b60ebb"
+          }
+        ],
+        "category": "result_or_solver_transport",
+        "file_sha256": "490f0c6865c0eb6f5e66edf32a96b6155442ac5138d3ba647cf4d182b4ece36f",
+        "path": "research/rev7-20260909-codex/coverage/periodic_bytebag_controls/target/pack_results.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 61,
+            "sha256": "0cee8cfb29350994d38cfd5203cebaeed326764f9994da2d8d6b30cf4f2db1ea"
+          },
+          {
+            "line": 70,
+            "sha256": "8162cc37b169d488e2d7e74b2f828a48cac3861d25ef3245d0237c4b88542e04"
+          },
+          {
+            "line": 71,
+            "sha256": "844863a347f81e50ec23d24703d199d9bb849a5c2ae33501f05fe96fcf7538d9"
+          }
+        ],
+        "category": "synthetic_alignment_control",
+        "file_sha256": "2a9ddb87a2856ff1903266ac353c99b910f3561f79fc30a4a6660bd75a4424ba",
+        "path": "research/rev7-20260909-codex/coverage/prefix_group_alignment_audit/audit.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 70,
+            "sha256": "af46ab7bd14273a8eeb4c484fa091edcca374ae31dfb26d4712a0c94edb5e1a8"
+          },
+          {
+            "line": 78,
+            "sha256": "e4e94f9ca145a7d40531ae9d46b2f8f89d1d387a4c2d7b5ff35d4aedc770ecfc"
+          }
+        ],
+        "category": "solved_sibling_full_buffer",
+        "file_sha256": "bc7ba1a64dbc2a951d9edc126a5ff5c97c181c470d3772b690b9dbdffe517739",
+        "path": "research/rev7-20260909-codex/hex_cfb/native_siblings/controls.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 9,
+            "sha256": "9f013c3a919372ef5489054954002f0c9224695951f885502539d8d2f4f3d4e4"
+          }
+        ],
+        "category": "source_or_binary_packaging",
+        "file_sha256": "8bfb58eda454abe62cae7a77ae115e1c8c2faae144a44e50b6a141e2a46ddc3c",
+        "path": "research/rev7-20260909-codex/hex_cfb/native_text5_rijndael256_controls/target/restore_native.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 24,
+            "sha256": "308101ba6d21f00258961d607817d28c7b604396c43fb5f10d14aef84c478b2a"
+          }
+        ],
+        "category": "source_or_binary_packaging",
+        "file_sha256": "1d4bfae906bc01815866298aa9740ab283393dffa5275aed0b3dd2ba1648b567",
+        "path": "research/rev7-20260909-codex/homophonic/cryptool100/controls.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 45,
+            "sha256": "6a651a1281075e1676a1f78479aea690f95f8ab6f0e9077307a74041971a1f3a"
+          }
+        ],
+        "category": "source_or_binary_packaging",
+        "file_sha256": "67d4455153a3d1caead4d6a57686dd29bbbd59ebd57b6eb051a4513272bf4d84",
+        "path": "research/rev7-20260909-codex/homophonic/pollux_source/controls.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 82,
+            "sha256": "86795906e7475927e9273a4a4e46149419fae2248522d2d2803742a0e9c594f3"
+          }
+        ],
+        "category": "source_or_binary_packaging",
+        "file_sha256": "c0153498b25819a1401d7deee2ddd450aa526d6413a47a8bdf5e45aab2a6de3f",
+        "path": "research/rev7-20260909-codex/homophonic/pollux_source/target/verify_results.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 14,
+            "sha256": "cf47d27ebe16f43761d7ebbf2304c205ca6ef8097bfd645926629c70ddb3225d"
+          }
+        ],
+        "category": "result_or_solver_transport",
+        "file_sha256": "3233130afea132824398a84e0ee2d88fe0c89c9ace81f92ee7b68ec63b346d74",
+        "path": "research/rev7-20260909-codex/lossy4_alliv_controls/pack_controls.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 13,
+            "sha256": "e809aa0b80cc589f1d28c166a957cdd83a77b314a632d0f77051d4edc97d1ad3"
+          }
+        ],
+        "category": "result_or_solver_transport",
+        "file_sha256": "b05467c3a0a6bf5642c69dd00b74d88ae4c7d01b1174cca37d488407b748cbe0",
+        "path": "research/rev7-20260909-codex/lossy4_utf8_controls/pack_controls.py"
+      },
+      {
+        "calls": [
+          {
+            "line": 43,
+            "sha256": "c090d66a6360b760a8eebb921cb09d105b48fe02909d0b3d426912eb24dd7bf4"
+          },
+          {
+            "line": 45,
+            "sha256": "a8ab6717017edbb9219c506b3d8f25137045b025094acd03f417a4e0f467d9ec"
+          },
+          {
+            "line": 54,
+            "sha256": "dbadbc0c7eeab4e3027fbf03fa3d9916fc587fd822d3f5c3a10016049113b3d0"
+          }
+        ],
+        "category": "solved_sibling_full_buffer",
+        "file_sha256": "df6fa534502134f7f50a760064c28f62832dd15d3fe40ec01c2658272e4d611d",
+        "path": "research/rev7-20260909-codex/sources/rev9_source/controls.py"
+      }
+    ]
+  },
+  "claim_reviewed": "Literal displayed Rev7 glyph sequence, whitespace removed, interpreted directly as standard Base64 and decoded to 819 bytes.",
+  "closest_prior_experiment": {
+    "counts": {
+      "cells": 12,
+      "ciphers": 3,
+      "complete": 12,
+      "orientations": 4,
+      "survivors": 0
+    },
+    "model": "global displayed-hex-to-nibble bijection, CFB8 decryption, then membership in a permissive 69-byte Base64-plus-whitespace endpoint",
+    "not_same_because": "It first interprets pairs of displayed glyphs as mapped hexadecimal ciphertext bytes and tests decrypted bytes. It never Base64-decodes the literal displayed glyph characters.",
+    "result_sha256": "74ce86bd01c4bbeb1492f61707039d07884ac7c3d9b63ec20bde5ea3d9301644",
+    "source": {
+      "lines": [
+        23,
+        25,
+        26
+      ],
+      "path": "research/rev7-20260909-codex/hex_cfb/native/run_target.py",
+      "sha256": "2cd00b724cc435899a3cdaf853e393343bd9e64bb202c95cdb109ade35ca0ddd"
+    }
+  },
+  "coincidental_819_prior_experiment": {
+    "contexts": 16,
+    "model": "lossy historical character-AMSCO key 2016 reconstructs a natural 819-byte ciphertext from 1092 observed hex characters, then CFB8-searches it",
+    "not_same_because": "819 is the inferred pre-loss ciphertext length. The observed glyphs are constrained as lossy hexadecimal emission, not standard Base64 input.",
+    "source": {
+      "lines": [
+        6,
+        34
+      ],
+      "path": "research/char_amsco/astra/lossy2016/target/run_target.py",
+      "sha256": "036ab0f597906ca90699d63f4ea42033030e21a1fca28476e2746b735144ae4c"
+    }
+  },
+  "finding": "No exact prior execution of that input route was found in the reviewed ASTRA Python/JavaScript source and saved bus records. This is a bounded corpus statement, not a global absence claim.",
+  "identity": "ASTRA",
+  "minimum_controls_for_future_source_review": [
+    "Pin the exact 1092-glyph whitespace-stripped input and its source/image/data hashes before decoding.",
+    "Assert length 1092, length modulo four zero, and every glyph belongs to the chosen standard Base64 alphabet; declare case, padding, and whitespace policy.",
+    "Strict-decode the literal glyph bytes once; require exactly 819 output bytes, retain their full hash/bytes, and require exact standard Base64 re-encoding to the original glyph string.",
+    "Use a synthetic binary fixture with exact encode/decode and corruption/padding rejection controls.",
+    "Treat the decoded 819 bytes as binary. Any subsequent cipher, decompressor, parser, or language claim needs its own preregistered model and full inverse/roundtrip checks."
+  ],
+  "new_target_route_executed": false,
+  "pins": {
+    "research/char_amsco/astra/lossy2016/target/RESULTS.md": "fe7568209609b6a080448ff7384f4e393c03988f373392254c5f34a03504c301",
+    "research/char_amsco/astra/lossy2016/target/run_target.py": "036ab0f597906ca90699d63f4ea42033030e21a1fca28476e2746b735144ae4c",
+    "research/rev7-20260909-codex/comms/base64-result-native-plan-20260910.json": "5b0680658ea81e1cd5615a3abeef7502dd09915192b5d3f7bd711b8f8f6d27a2",
+    "research/rev7-20260909-codex/comms/brainstorm-021.json": "b1d1737e470939aa38ef530fb94af5f9a28a0b40dc05bd3bfa2f948e1f69d181",
+    "research/rev7-20260909-codex/comms/encoded-go-20260910.json": "cc45e8b55823b4cfcc9ba36b7cf6727ef493ea1df6875acdcafb77bbc932ad9e",
+    "research/rev7-20260909-codex/comms/encoded-result-20260910.json": "0eb6e25b14385f9246f5948639b67a8e337f73497166fdbcc831c8313524eec0",
+    "research/rev7-20260909-codex/comms/kasiski_periodic_recursive_tree.json": "2667034f5a4d1b8cd8569737093f2424f4669285cc1a5f51c750ee032ae9eee0",
+    "research/rev7-20260909-codex/hex_cfb/encoded/run_encoded.py": "b2359b18171523ee4bc37cab4d6bab6a5633dba72e28f76d6fae98898ac22b3c",
+    "research/rev7-20260909-codex/hex_cfb/native/RESULTS.md": "1e39a097298d3e7171cd22908bec11e0cb5b69b2f242286d0fb2f1660426be8e",
+    "research/rev7-20260909-codex/hex_cfb/native/run_target.py": "2cd00b724cc435899a3cdaf853e393343bd9e64bb202c95cdb109ade35ca0ddd",
+    "research/rev7-20260909-codex/hex_cfb/native/target_results.json": "74ce86bd01c4bbeb1492f61707039d07884ac7c3d9b63ec20bde5ea3d9301644"
+  },
+  "published_snapshot": {
+    "entries": {
+      "research/char_amsco/astra/lossy2016/target/run_target.py": {
+        "blob_sha1": "3de419c6d367ebae3b481fc9b9fcf07427a8803b",
+        "bytes": 6268
+      },
+      "research/rev7-20260909-codex/hex_cfb/encoded/run_encoded.py": {
+        "blob_sha1": "2c0f4a111c37556f11caec6c6a504492be37b7df",
+        "bytes": 18429
+      },
+      "research/rev7-20260909-codex/hex_cfb/native/RESULTS.md": {
+        "blob_sha1": "4ec4156e6627e2d225e0d5c24bf5d73ca76f9e42",
+        "bytes": 2112
+      },
+      "research/rev7-20260909-codex/hex_cfb/native/run_target.py": {
+        "blob_sha1": "61a1d25966fc3dfa856c23de43434de5dda42236",
+        "bytes": 10046
+      },
+      "research/rev7-20260909-codex/hex_cfb/native/target_results.json": {
+        "blob_sha1": "d2ad9574bcddbb2fe9618572073175bebb13bb77",
+        "bytes": 20378
+      }
+    },
+    "evidence_kind": "cached recursive Git tree response; tree SHA is not represented here as a commit SHA",
+    "tree_sha1": "922d67269571bf13a69c887a933c8edaf321c354"
+  },
+  "route_arithmetic_only": {
+    "calculation": "1092 / 4 * 3",
+    "decoded_bytes_if_unpadded_standard_base64": 819,
+    "displayed_glyphs": 1092,
+    "quartets": 273,
+    "target_bytes_not_decoded_in_this_audit": true
+  },
+  "saved_bus_history": {
+    "brainstorm_note": "discusses an immediate hex-decoded object claimed to be Base64 text; it does not report direct decoding of the displayed 1092 glyphs",
+    "encoded_go": "5 alphabets x 3 ciphers x 4 orientations; Base64 means output-byte membership",
+    "encoded_result": "explicitly calls the 69-byte set permissive alphabet membership, not Base64 grammar",
+    "native_result": "completed the same 12 membership cells"
+  },
+  "target_evaluated": false
+}

@@ -1,0 +1,55 @@
+{
+  "authorized": true,
+  "driver_sha256": "3c7ba1c60150a000018da4a1b14d523a827f8ed6b9f2187be39e169135babe06",
+  "identity": "ASTRA",
+  "review_evidence": {
+    "independent_worker_theorem_review": true,
+    "root_driver_default_replay": "40positive546byteASCIIplants and reachable binaryp1negative PASS",
+    "root_full_source_and_theorem_review": true,
+    "root_parent_default_replay": "262144 exhaustive reduced graph/type cases and168 full4x4fixtures PASS",
+    "target_ciphertext_not_yet_extracted": true
+  },
+  "run_policy": "Run exact2184cells once; preserve all unresolved outcomes; verify completed result through independent source-index arithmetic and frozen graph model. No solver search in this run.",
+  "scope": {
+    "cells": 2184,
+    "ciphertext_symbols": 1092,
+    "endpoint": "bag213 necessary condition via absence of high nibble 1 only",
+    "identity": "ASTRA",
+    "model": "two arbitrary fixed 4x4 Bifid squares; any individually impossible nonempty typed high-nibble graph excludes bag213",
+    "odd_periods": [
+      1,
+      1091,
+      2
+    ],
+    "orientations": [
+      "forward",
+      "reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "period_count": 546,
+    "plaintext_bytes": 546,
+    "retention": "compact edge masks, source-index metadata digest, per-type first-set feasible counts and deterministic all-1820-record digests; feasible means unresolved",
+    "typed_graphs": [
+      "RR",
+      "RC",
+      "CR",
+      "CC"
+    ]
+  },
+  "source_pins": {
+    "lavender/src/content/docs/ciphers/bo3/rev/rev7.mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "lavender/src/data/ciphers/revelations.json": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "research/rev7-20260909-codex/bifid16_controls/odd_single_graph_filter/README.md": "4136e2206426ae8830f0bef7544e6869e1c58380307535e25ba0c384ecbc0882",
+    "research/rev7-20260909-codex/bifid16_controls/odd_single_graph_filter/controls.json": "afb1eb9bafb4221c86feef4f1e32120dde790255a982a458b04365fb3cfbe3a2",
+    "research/rev7-20260909-codex/bifid16_controls/odd_single_graph_filter/controls.py": "637d1aae658dc93e68872b54ce100240bba93c64b91fa91aa8f577ca4f624827",
+    "research/rev7-20260909-codex/bifid16_controls/odd_single_graph_filter/model.py": "924ea3a4acc7618be25b1cbf92952115805fa898448c402727e922d1f4526014",
+    "research/rev7-20260909-codex/bifid16_controls/odd_single_graph_target/README.md": "4a8897df9c778e4ead0d9a5cdea57f973951f227ed1be64aa46f39819558e350",
+    "research/rev7-20260909-codex/bifid16_controls/odd_single_graph_target/driver_controls.json": "01c3f757977c2c97a34398499f5024a4fea8f61999811bc88ab5675a33c79b8f",
+    "research/rev7-20260909-codex/bifid16_controls/odd_single_graph_target/driver_controls.py": "d0f4b76c04de47a5676d6f39ddd22648c5510003b8d33e634e539e47b19035e1",
+    "research/rev7-20260909-codex/bifid16_controls/odd_typed_rectangles/README.md": "df5d2438fdcfb9b57a1ad93bdda72d4db991beea1acc4379f228c5c63d38195a",
+    "research/rev7-20260909-codex/bifid16_controls/odd_typed_rectangles/controls.json": "e931ff2d471d089cb498f8e01733c82c62c2f2400d86fa527ff0d956bf9ecb6a",
+    "research/rev7-20260909-codex/bifid16_controls/odd_typed_rectangles/controls.py": "31f9b11bb8849be786548508ad7d5843eff991a0de9ff538cd8d377c430b1426"
+  },
+  "target_evaluated": false
+}

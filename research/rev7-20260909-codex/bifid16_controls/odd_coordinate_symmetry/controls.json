@@ -1,0 +1,522 @@
+{
+  "accepted_reduced_graphs": [
+    {
+      "edge_count": 0,
+      "edge_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "free": {
+        "existence_equal": true,
+        "raw_exists": true,
+        "raw_solution_count": 96,
+        "restricted_smt2_bytes": 395,
+        "restricted_smt2_sha256": "13a3d8c2197f017f7362ae40b98cf9145b0ffad3cb3071e056470566938b0d29",
+        "restricted_status": "sat"
+      },
+      "name": "empty",
+      "one_square": {
+        "existence_equal": true,
+        "raw_exists": true,
+        "raw_solution_count": 24,
+        "restricted_smt2_bytes": 425,
+        "restricted_smt2_sha256": "df9b8cec4947f99d9691743f0295785b9216bd1fdad55b46c5284966b9821503",
+        "restricted_status": "sat"
+      }
+    },
+    {
+      "edge_count": 16,
+      "edge_sha256": "5e04419dc2416a2920a2304cc7d8efd462af8925eacbb90da868be8b3dedbc91",
+      "free": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 2027,
+        "restricted_smt2_sha256": "a08bb1d0448751ce74e371af0d5b6895b696e315ea727532dbaeaf6fcb5c5947",
+        "restricted_status": "unsat"
+      },
+      "name": "complete_rc",
+      "one_square": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 2057,
+        "restricted_smt2_sha256": "ebc771a3a855de9e41eb67f4a96a369e5d7d14428a9bf7819b3a6323cde5fcf5",
+        "restricted_status": "unsat"
+      }
+    },
+    {
+      "edge_count": 48,
+      "edge_sha256": "49c9c54e535567da5d7cb168482f414bf773b321e4c411656ec829a705708b60",
+      "free": {
+        "existence_equal": true,
+        "raw_exists": true,
+        "raw_solution_count": 2,
+        "restricted_smt2_bytes": 5291,
+        "restricted_smt2_sha256": "6da09ae40de13c9960be03264b6bb3a513caf38a64b326230eb215ba2c78a1a5",
+        "restricted_status": "sat"
+      },
+      "name": "planted_mixed",
+      "one_square": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 5321,
+        "restricted_smt2_sha256": "c1859ee73e106fbd855690f80260ce843ed04033e683882225e7f4e4c001c2fe",
+        "restricted_status": "unsat"
+      }
+    },
+    {
+      "edge_count": 4,
+      "edge_sha256": "f9b42cf111ab74f45f2d01bd28f6762589b6e03c59932b414719e02dbc30339e",
+      "free": {
+        "existence_equal": true,
+        "raw_exists": true,
+        "raw_solution_count": 30,
+        "restricted_smt2_bytes": 803,
+        "restricted_smt2_sha256": "8be668961d3e75db019e465414ddf29729cd748d0fdfc6d60bee46eabfdf3e3b",
+        "restricted_status": "sat"
+      },
+      "name": "same_symbol_mixed",
+      "one_square": {
+        "existence_equal": true,
+        "raw_exists": true,
+        "raw_solution_count": 8,
+        "restricted_smt2_bytes": 833,
+        "restricted_smt2_sha256": "1520f47afe5eeeb2b204dc1b0d85b72379f657f1fd4a34071a539232715ce68b",
+        "restricted_status": "sat"
+      }
+    },
+    {
+      "edge_count": 5,
+      "edge_sha256": "7075ae59fffbe22011d98792379281c5c9744a6ad8602288d2ae9620dd1621e2",
+      "free": {
+        "existence_equal": true,
+        "raw_exists": true,
+        "raw_solution_count": 28,
+        "restricted_smt2_bytes": 905,
+        "restricted_smt2_sha256": "5318bc82825b782368a5617a9dfc1179ad8b8c6950df1923f0f2867e47b13add",
+        "restricted_status": "sat"
+      },
+      "name": "random_0",
+      "one_square": {
+        "existence_equal": true,
+        "raw_exists": true,
+        "raw_solution_count": 8,
+        "restricted_smt2_bytes": 935,
+        "restricted_smt2_sha256": "e6bef9f2f184e5be252b3300e025baba3a111747087eed682a15a0386f42613e",
+        "restricted_status": "sat"
+      }
+    },
+    {
+      "edge_count": 13,
+      "edge_sha256": "3cc87543dbcbd0a9672b53c05b00f1d77a10b36b7b11b14f8affc54e54c282e7",
+      "free": {
+        "existence_equal": true,
+        "raw_exists": true,
+        "raw_solution_count": 8,
+        "restricted_smt2_bytes": 1721,
+        "restricted_smt2_sha256": "dc79e79f25687d5af0d90e5fded3bedf55a9b8d19c603d9fc315a9aff5ba0248",
+        "restricted_status": "sat"
+      },
+      "name": "random_1",
+      "one_square": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 1751,
+        "restricted_smt2_sha256": "ac5cdc0cd3ac6f7ef3d7c1aa5636a70144a86d342dac1e8dde102a80aa0b3ffa",
+        "restricted_status": "unsat"
+      }
+    },
+    {
+      "edge_count": 18,
+      "edge_sha256": "c0f6052e4904817abba9c97dd5127b14644c8f8d9d339aede2a76b659abff36e",
+      "free": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 2231,
+        "restricted_smt2_sha256": "8b15bf6ba6668089eeed410dead33888e7f6aad296e599644bafe595adfb38f4",
+        "restricted_status": "unsat"
+      },
+      "name": "random_2",
+      "one_square": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 2261,
+        "restricted_smt2_sha256": "bc1486a06f3bac5a7e1641a0ea9e9256a8f8da40aabc3d603680acb8cb967476",
+        "restricted_status": "unsat"
+      }
+    },
+    {
+      "edge_count": 30,
+      "edge_sha256": "6c6e3e2088d789ae861fdc0e9b89823249b2759d07e4c3065efc07d5f0dd6423",
+      "free": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 3455,
+        "restricted_smt2_sha256": "b2e8bca0fb5174e5086897380421b518e0748a68a9054e90fa72e92471d943e8",
+        "restricted_status": "unsat"
+      },
+      "name": "random_3",
+      "one_square": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 3485,
+        "restricted_smt2_sha256": "951c96036b36e23114252de87a0348d6af83e1e8c23fb09e737beb1d8e0812a5",
+        "restricted_status": "unsat"
+      }
+    },
+    {
+      "edge_count": 28,
+      "edge_sha256": "2601cc7722367111c7990a301eacc4cb1d6acccb2133d97e401470a0c9bbf5e6",
+      "free": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 3251,
+        "restricted_smt2_sha256": "56843f667fe5be2ffaf7280828f2acf45f08ee180ba662b4b5b56aef249a7a33",
+        "restricted_status": "unsat"
+      },
+      "name": "random_4",
+      "one_square": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 3281,
+        "restricted_smt2_sha256": "2fd760edd8c67447606bb4fea09866ae6d207cc04c3fe5f2ec7f4f9814559846",
+        "restricted_status": "unsat"
+      }
+    },
+    {
+      "edge_count": 40,
+      "edge_sha256": "24642afeba8b3182d07f5372903b523263a6bd48a975da667e2a7f422ac265d2",
+      "free": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 4475,
+        "restricted_smt2_sha256": "0267c1fc97678d5b66dddf30856f81069c9db6514cc3735ff0edb68122d5f84b",
+        "restricted_status": "unsat"
+      },
+      "name": "random_5",
+      "one_square": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 4505,
+        "restricted_smt2_sha256": "508cb599d233332d3e561eff658e20f62b48ce7998c5f92b8226764f971350a7",
+        "restricted_status": "unsat"
+      }
+    },
+    {
+      "edge_count": 43,
+      "edge_sha256": "ab3a16a449bece3b0d40ec7e9b570de40ce058dd3ce07803db203761b51ac60f",
+      "free": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 4921,
+        "restricted_smt2_sha256": "f98e3676187e343242c6a1a96e4d9c5c97f5bb0e51255848d667f808be410a09",
+        "restricted_status": "unsat"
+      },
+      "name": "random_6",
+      "one_square": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 4953,
+        "restricted_smt2_sha256": "3cd6fa1b354aee08ba26e9faa5afcd5452ef5d027c53c973ddf422819b40a0d2",
+        "restricted_status": "unsat"
+      }
+    },
+    {
+      "edge_count": 46,
+      "edge_sha256": "7700e9fa0bf4b4d900b3af13375e06d936745de041fb9715e3c2bddea9039c50",
+      "free": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 5236,
+        "restricted_smt2_sha256": "7ad88f44ea9307526acbe61b0d9fcb91eeb77dd4e2b512b8459c2e796e2920b0",
+        "restricted_status": "unsat"
+      },
+      "name": "random_7",
+      "one_square": {
+        "existence_equal": true,
+        "raw_exists": false,
+        "raw_solution_count": 0,
+        "restricted_smt2_bytes": 5268,
+        "restricted_smt2_sha256": "fd714674afea3433200652988b9f30f401888799eccbc5fb6f6d7878f20eb67d",
+        "restricted_status": "unsat"
+      }
+    }
+  ],
+  "assertions": {
+    "bijection_preserved": true,
+    "every_t_maps_to_correct_orbit_representative": true,
+    "every_typed_inequality_preserved": true,
+    "optional_t_equals_k1_preserved": true,
+    "restricted_existence_equals_raw_on_all_12_graphs": true
+  },
+  "full_deterministic": {
+    "all_passed": true,
+    "coordinates_per_mapping": 16,
+    "label_permutations": 24,
+    "mapping_digests": [
+      "ff053dbcd4a64b5047fd1260448bd262be2873dca5d69ca2cb761cbaae12ccc9",
+      "50530b01afef3111c9b699f25d40e4aaac02d6c2157b5006592285cc9871fffe",
+      "69b105635bb7654f953c283d8d8b5c3423a2ff2ca05dfdabde7304336a4b8125",
+      "6ce4a136434d33469d91c764295df7c0a2c42db7f4fdd4ac7e008f4c5f522466",
+      "4dc08c20ab0c908afcc6b860401c0750bf54b5d2762da4438cd31a6f024f3bd0",
+      "3ab118c3e5674e63f51f38eb8a9fe4a13e976bf1c17cd0c7f362f97a22160127",
+      "55328fb5463bbf6aa1d3001d2351d0b706eb44e55d8a4c85a78f0a398e469b63",
+      "facd014693db00f6fc1d6bb9152d6c969ed39f0eba942589a9db12731e3f1586"
+    ],
+    "mappings": 8,
+    "one_square_equivalence_checks": 3072,
+    "typed_relation_checks": 3145728
+  },
+  "identity": "ASTRA",
+  "limits": [
+    "Only a single common permutation sigma is applied to both coordinate axes.",
+    "No independent row/column relabeling, transpose, arbitrary 16-cell symmetry, target-data result, or solver-speed claim is made.",
+    "The restriction is an equisatisfiable symmetry reduction for the coordinate-avoidance model, not for additional constraints unless their invariance is proved separately."
+  ],
+  "model": "common permutation of row and column labels; t representatives 0 diagonal and 1 off-diagonal",
+  "reduced_exhaustive": {
+    "all_passed": true,
+    "coordinates": 4,
+    "label_permutations": 2,
+    "mappings": 24,
+    "one_square_equivalence_checks": 192,
+    "typed_relation_checks": 12288
+  },
+  "representative_construction": [
+    {
+      "column": 0,
+      "coordinate": 0,
+      "orbit": "diagonal",
+      "representative": 0,
+      "row": 0,
+      "sigma": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "column": 1,
+      "coordinate": 1,
+      "orbit": "off_diagonal",
+      "representative": 1,
+      "row": 0,
+      "sigma": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "column": 2,
+      "coordinate": 2,
+      "orbit": "off_diagonal",
+      "representative": 1,
+      "row": 0,
+      "sigma": [
+        0,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "column": 3,
+      "coordinate": 3,
+      "orbit": "off_diagonal",
+      "representative": 1,
+      "row": 0,
+      "sigma": [
+        0,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "column": 0,
+      "coordinate": 4,
+      "orbit": "off_diagonal",
+      "representative": 1,
+      "row": 1,
+      "sigma": [
+        1,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "column": 1,
+      "coordinate": 5,
+      "orbit": "diagonal",
+      "representative": 0,
+      "row": 1,
+      "sigma": [
+        1,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "column": 2,
+      "coordinate": 6,
+      "orbit": "off_diagonal",
+      "representative": 1,
+      "row": 1,
+      "sigma": [
+        2,
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "column": 3,
+      "coordinate": 7,
+      "orbit": "off_diagonal",
+      "representative": 1,
+      "row": 1,
+      "sigma": [
+        2,
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "column": 0,
+      "coordinate": 8,
+      "orbit": "off_diagonal",
+      "representative": 1,
+      "row": 2,
+      "sigma": [
+        1,
+        2,
+        0,
+        3
+      ]
+    },
+    {
+      "column": 1,
+      "coordinate": 9,
+      "orbit": "off_diagonal",
+      "representative": 1,
+      "row": 2,
+      "sigma": [
+        2,
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "column": 2,
+      "coordinate": 10,
+      "orbit": "diagonal",
+      "representative": 0,
+      "row": 2,
+      "sigma": [
+        1,
+        2,
+        0,
+        3
+      ]
+    },
+    {
+      "column": 3,
+      "coordinate": 11,
+      "orbit": "off_diagonal",
+      "representative": 1,
+      "row": 2,
+      "sigma": [
+        2,
+        3,
+        0,
+        1
+      ]
+    },
+    {
+      "column": 0,
+      "coordinate": 12,
+      "orbit": "off_diagonal",
+      "representative": 1,
+      "row": 3,
+      "sigma": [
+        1,
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "column": 1,
+      "coordinate": 13,
+      "orbit": "off_diagonal",
+      "representative": 1,
+      "row": 3,
+      "sigma": [
+        2,
+        1,
+        3,
+        0
+      ]
+    },
+    {
+      "column": 2,
+      "coordinate": 14,
+      "orbit": "off_diagonal",
+      "representative": 1,
+      "row": 3,
+      "sigma": [
+        2,
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "column": 3,
+      "coordinate": 15,
+      "orbit": "diagonal",
+      "representative": 0,
+      "row": 3,
+      "sigma": [
+        1,
+        2,
+        3,
+        0
+      ]
+    }
+  ],
+  "rev7_read": false,
+  "runtime": {
+    "python": "3.9.6",
+    "z3": "4.15.3"
+  },
+  "source_hashes": {
+    "controls.py": "655194f2be556e94a63c16f30eabe977225e73938c29d8f1f03b1c7912742d95",
+    "dependency/dependency.json": "e88e7bf34243264705ca5fcaa66acb5c9db96f289192a862e0e063a915897e4e",
+    "dependency/runtime/z3/lib/libz3.4.15.dylib": "3164e079c221c23a843396a485a6e912ee423918ee64ea03943e584305439a98",
+    "dependency/runtime/z3/z3.py": "a175fce3e5e6f7cbe7aefb54a5d01d63addc206811a9cbd3e58f87f48c10432b",
+    "dependency/runtime/z3/z3core.py": "c5859f1938aa7b5ce1c35ab52295ccb1405daa1ae224cb4ec292efbe98b1064e",
+    "odd_coordinate_avoidance/controls.json": "ab4219cfcbca6cf13a13a7c8bb1e63f915198be4ac4539bc23074ca3d70bd5bb",
+    "odd_coordinate_avoidance/controls.py": "61b2e271fd0d8329a98e68561f045bf088a2a3a375c98f678da06dfc5a4a2ca3",
+    "odd_coordinate_avoidance/model.py": "145341fe27c8e73ff4c62f009538631acf99d240f8f40fd8d88cbf76df1cca76"
+  },
+  "target_evaluated": false
+}

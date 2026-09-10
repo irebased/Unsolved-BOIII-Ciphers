@@ -1,0 +1,2367 @@
+{
+  "assertions": {
+    "all_40_plants_exact_roundtrip": true,
+    "all_orientations_and_periods": true,
+    "independent_literal_decrypt_high_symbols_all16": true,
+    "known_plain_square_coordinate_survives_every_nonempty_graph": true,
+    "no_target_evaluation": true,
+    "reachable_scan_cell_exclusion_branch": true,
+    "same_and_distinct_squares": true,
+    "target_ciphertext_not_extracted": true,
+    "typed_source_indices_equal_independent_published_oracle": true
+  },
+  "canonical_source_bytes_hashed_only": true,
+  "direct_model_complete_graph_extreme": {
+    "checked_first_sets": 1820,
+    "driver_reachability_claimed": false,
+    "edges": 256,
+    "feasible": false,
+    "kind": "RC",
+    "records_sha256": "a6cc8659a18d2a3006d98b3bb518c0b98f3dda085bb52502431997e7bd96d54e",
+    "surviving_first_sets": 0
+  },
+  "identity": "ASTRA",
+  "orientation_values": {
+    "byte_reverse": "563412",
+    "forward": "123456",
+    "nibble_swap": "214365",
+    "reverse": "654321"
+  },
+  "plant_count": 40,
+  "plants": [
+    {
+      "block_lengths_sha256": "576816f18692575611ed59b306026acca3e79765989ce52dc941e86cc2a1ea8c",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "9485ba6062ee34499d55a1a97b5f4f5952b61ee721ca84bafa43cfefddeb2579",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "f612f223b71245bc90cfb9ce5509a768853e1bc8398153586f50dd8ad5782a02",
+      "distinct_squares": false,
+      "id": "same|p1|forward",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 6,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "c9290e04db577436a134e504a712d251cb2a0b5592d58b10bacac47ef9fa6f00",
+      "orientation": "forward",
+      "period": 1,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "576816f18692575611ed59b306026acca3e79765989ce52dc941e86cc2a1ea8c",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "9485ba6062ee34499d55a1a97b5f4f5952b61ee721ca84bafa43cfefddeb2579",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "bc8d223db1c94cde66d7c4b0347fd0d9027adc4c38e12f13e2000a20fbcbf890",
+      "distinct_squares": false,
+      "id": "same|p1|reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 6,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "c9290e04db577436a134e504a712d251cb2a0b5592d58b10bacac47ef9fa6f00",
+      "orientation": "reverse",
+      "period": 1,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "576816f18692575611ed59b306026acca3e79765989ce52dc941e86cc2a1ea8c",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "9485ba6062ee34499d55a1a97b5f4f5952b61ee721ca84bafa43cfefddeb2579",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "b478c9990583c95de5f1c4dfd957412ee61ac6e462dfc7d1ac59fade3eb61fe3",
+      "distinct_squares": false,
+      "id": "same|p1|byte_reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 6,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "c9290e04db577436a134e504a712d251cb2a0b5592d58b10bacac47ef9fa6f00",
+      "orientation": "byte_reverse",
+      "period": 1,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "576816f18692575611ed59b306026acca3e79765989ce52dc941e86cc2a1ea8c",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "9485ba6062ee34499d55a1a97b5f4f5952b61ee721ca84bafa43cfefddeb2579",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "1754918ceadeed53c4754966a6af2ec0141c497288beee2ad28881cd9e269a09",
+      "distinct_squares": false,
+      "id": "same|p1|nibble_swap",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 6,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "c9290e04db577436a134e504a712d251cb2a0b5592d58b10bacac47ef9fa6f00",
+      "orientation": "nibble_swap",
+      "period": 1,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "aa867296ead0e309c65bb2f372d92d164d06e5cba05a0a3fba7c0bc282d2ed65",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "f201d269a12f20bf23fee78879fc709d7ace636cd2a3f6032a03449e0deba2bc",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "20b5e4173f733910de9944066f8c8096729014195ca7b5ae78a9bd690f52037d",
+      "distinct_squares": false,
+      "id": "same|p3|forward",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 14,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 30,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "9e06dce5d51770af22a8afe6676caef03514ba80745ea55bb83c30cd388eaa81",
+      "orientation": "forward",
+      "period": 3,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "aa867296ead0e309c65bb2f372d92d164d06e5cba05a0a3fba7c0bc282d2ed65",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "f201d269a12f20bf23fee78879fc709d7ace636cd2a3f6032a03449e0deba2bc",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "699e6075e51f2dbc1a65f2bb6f0699df453633b1e9ce8981431d1ad06c3e5840",
+      "distinct_squares": false,
+      "id": "same|p3|reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 14,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 30,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "9e06dce5d51770af22a8afe6676caef03514ba80745ea55bb83c30cd388eaa81",
+      "orientation": "reverse",
+      "period": 3,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "aa867296ead0e309c65bb2f372d92d164d06e5cba05a0a3fba7c0bc282d2ed65",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "f201d269a12f20bf23fee78879fc709d7ace636cd2a3f6032a03449e0deba2bc",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "bc51b541a1d797abff34d21c1f0f13bd5305e350238cb5e1626472c84b7458ae",
+      "distinct_squares": false,
+      "id": "same|p3|byte_reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 14,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 30,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "9e06dce5d51770af22a8afe6676caef03514ba80745ea55bb83c30cd388eaa81",
+      "orientation": "byte_reverse",
+      "period": 3,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "aa867296ead0e309c65bb2f372d92d164d06e5cba05a0a3fba7c0bc282d2ed65",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "f201d269a12f20bf23fee78879fc709d7ace636cd2a3f6032a03449e0deba2bc",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "a06ec469bf8c94fdefa8b75f79faa39c29aa5fa3575dbe6de3d081fd8de92f2e",
+      "distinct_squares": false,
+      "id": "same|p3|nibble_swap",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 14,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 30,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            2,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "9e06dce5d51770af22a8afe6676caef03514ba80745ea55bb83c30cd388eaa81",
+      "orientation": "nibble_swap",
+      "period": 3,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "589f91c5b5d714f07092ff1b28f98afcdfb0ea6e1e41b5f615dcea99b0f44a4d",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "cd7457b65b4392565b1167edfa8c404d0c57044844df6676a1a1abe22834dbb3",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "67a01250bb2d1bc4ddb09ab24bb9d10d7e5052374b93c156b4cbc9be43b662f0",
+      "distinct_squares": false,
+      "id": "same|p31|forward",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        },
+        "CR": {
+          "edge_count": 35,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        },
+        "RC": {
+          "edge_count": 47,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        }
+      },
+      "metadata_sha256": "732fa94e122f07339119666a9234a2566ed915582c779bec1fffdcfcbe5e197c",
+      "orientation": "forward",
+      "period": 31,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "589f91c5b5d714f07092ff1b28f98afcdfb0ea6e1e41b5f615dcea99b0f44a4d",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "cd7457b65b4392565b1167edfa8c404d0c57044844df6676a1a1abe22834dbb3",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "e524d2e7b151a5b3cd725003d28c03404ace20d36f4ff5514aea6c3b9fe72226",
+      "distinct_squares": false,
+      "id": "same|p31|reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        },
+        "CR": {
+          "edge_count": 35,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        },
+        "RC": {
+          "edge_count": 47,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        }
+      },
+      "metadata_sha256": "732fa94e122f07339119666a9234a2566ed915582c779bec1fffdcfcbe5e197c",
+      "orientation": "reverse",
+      "period": 31,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "589f91c5b5d714f07092ff1b28f98afcdfb0ea6e1e41b5f615dcea99b0f44a4d",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "cd7457b65b4392565b1167edfa8c404d0c57044844df6676a1a1abe22834dbb3",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "eea7db65a46a23c9f146627536216aeda3e7b7fad030baf3a4c7a3705249588d",
+      "distinct_squares": false,
+      "id": "same|p31|byte_reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        },
+        "CR": {
+          "edge_count": 35,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        },
+        "RC": {
+          "edge_count": 47,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        }
+      },
+      "metadata_sha256": "732fa94e122f07339119666a9234a2566ed915582c779bec1fffdcfcbe5e197c",
+      "orientation": "byte_reverse",
+      "period": 31,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "589f91c5b5d714f07092ff1b28f98afcdfb0ea6e1e41b5f615dcea99b0f44a4d",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "cd7457b65b4392565b1167edfa8c404d0c57044844df6676a1a1abe22834dbb3",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "3bf252beec14f83bbb757f5aee82035736cc158481bec6e19fb0e91bd454f579",
+      "distinct_squares": false,
+      "id": "same|p31|nibble_swap",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        },
+        "CR": {
+          "edge_count": 35,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        },
+        "RC": {
+          "edge_count": 47,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            3
+          ]
+        }
+      },
+      "metadata_sha256": "732fa94e122f07339119666a9234a2566ed915582c779bec1fffdcfcbe5e197c",
+      "orientation": "nibble_swap",
+      "period": 31,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "b81905e3e0ec5f5fc386b73ab917b85aefd8c8269ee2dcf07241f7d293b72434",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "09c41694598b72904f7c0fd2f91362c1845a1ab2ae743e21ad29f00656b1352a",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "bb106c85e059d673ae9201b0959c7a28492eaf3a2f662c52aa00fad994c8ee98",
+      "distinct_squares": false,
+      "id": "same|p99|forward",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 35,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 38,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "b246a0ed4992fde3143eb65e4f71326cc06b61f2f08f0973bc9bada6401fead3",
+      "orientation": "forward",
+      "period": 99,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "b81905e3e0ec5f5fc386b73ab917b85aefd8c8269ee2dcf07241f7d293b72434",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "09c41694598b72904f7c0fd2f91362c1845a1ab2ae743e21ad29f00656b1352a",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "988a2be5653806eddf16f726b4b259e102c1c1651131c5b96db6fee0694eaae8",
+      "distinct_squares": false,
+      "id": "same|p99|reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 35,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 38,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "b246a0ed4992fde3143eb65e4f71326cc06b61f2f08f0973bc9bada6401fead3",
+      "orientation": "reverse",
+      "period": 99,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "b81905e3e0ec5f5fc386b73ab917b85aefd8c8269ee2dcf07241f7d293b72434",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "09c41694598b72904f7c0fd2f91362c1845a1ab2ae743e21ad29f00656b1352a",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "76d2deaae9a33fd43dab27a7578fcf818835f3d93b349b2443b278aca7f3177d",
+      "distinct_squares": false,
+      "id": "same|p99|byte_reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 35,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 38,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "b246a0ed4992fde3143eb65e4f71326cc06b61f2f08f0973bc9bada6401fead3",
+      "orientation": "byte_reverse",
+      "period": 99,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "b81905e3e0ec5f5fc386b73ab917b85aefd8c8269ee2dcf07241f7d293b72434",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "09c41694598b72904f7c0fd2f91362c1845a1ab2ae743e21ad29f00656b1352a",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "d09853bbfdcbe69e2c85467ffd39b018bde5ea0fa64ec5ad46877335735e62c5",
+      "distinct_squares": false,
+      "id": "same|p99|nibble_swap",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 35,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 38,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "b246a0ed4992fde3143eb65e4f71326cc06b61f2f08f0973bc9bada6401fead3",
+      "orientation": "nibble_swap",
+      "period": 99,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "9596cd0a6b20f87a5bb11b2ff56ea202b382243d1eb061f08da47c49fc23f50b",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "b6457feac70992ca4e5a4efd0e6fc858ddfa3e2ea1e7911aade553075989301b",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "12fd56d4c113f24d35bd1aa1fed3e0471d787c88130167fb05a5a8577264ba56",
+      "distinct_squares": false,
+      "id": "same|p1091|forward",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        },
+        "RC": {
+          "edge_count": 34,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        }
+      },
+      "metadata_sha256": "291f70daffb7d778f28158ecbeb8ecac8995564e132bbd986521d6f0a690eb5f",
+      "orientation": "forward",
+      "period": 1091,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "9596cd0a6b20f87a5bb11b2ff56ea202b382243d1eb061f08da47c49fc23f50b",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "b6457feac70992ca4e5a4efd0e6fc858ddfa3e2ea1e7911aade553075989301b",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "fc3d1585e1c7e6467a8bde96af8d1fa8a695f2c2ba8bdf7cb977fe3065e55881",
+      "distinct_squares": false,
+      "id": "same|p1091|reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        },
+        "RC": {
+          "edge_count": 34,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        }
+      },
+      "metadata_sha256": "291f70daffb7d778f28158ecbeb8ecac8995564e132bbd986521d6f0a690eb5f",
+      "orientation": "reverse",
+      "period": 1091,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "9596cd0a6b20f87a5bb11b2ff56ea202b382243d1eb061f08da47c49fc23f50b",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "b6457feac70992ca4e5a4efd0e6fc858ddfa3e2ea1e7911aade553075989301b",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "4c7e543f4b376f0dfb8dc78bb62739445c2a6fa4227e296099e422a39440f37d",
+      "distinct_squares": false,
+      "id": "same|p1091|byte_reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        },
+        "RC": {
+          "edge_count": 34,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        }
+      },
+      "metadata_sha256": "291f70daffb7d778f28158ecbeb8ecac8995564e132bbd986521d6f0a690eb5f",
+      "orientation": "byte_reverse",
+      "period": 1091,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "9596cd0a6b20f87a5bb11b2ff56ea202b382243d1eb061f08da47c49fc23f50b",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "b6457feac70992ca4e5a4efd0e6fc858ddfa3e2ea1e7911aade553075989301b",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "eedff624b429ddfe9870b8d7036b32989215177b7e416be3e54df506daf3e854",
+      "distinct_squares": false,
+      "id": "same|p1091|nibble_swap",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        },
+        "RC": {
+          "edge_count": 34,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            1
+          ]
+        }
+      },
+      "metadata_sha256": "291f70daffb7d778f28158ecbeb8ecac8995564e132bbd986521d6f0a690eb5f",
+      "orientation": "nibble_swap",
+      "period": 1091,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "576816f18692575611ed59b306026acca3e79765989ce52dc941e86cc2a1ea8c",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "07f26bd9de71bb25308478726e27f018cb0dbc322c27bb0e850014cfdce59694",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "417e0eeb77a1869f4395f35a151225db77ef04ea87dd99d12df1bf634ccc8f7d",
+      "distinct_squares": true,
+      "id": "distinct|p1|forward",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        },
+        "RC": {
+          "edge_count": 6,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        }
+      },
+      "metadata_sha256": "c9290e04db577436a134e504a712d251cb2a0b5592d58b10bacac47ef9fa6f00",
+      "orientation": "forward",
+      "period": 1,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "576816f18692575611ed59b306026acca3e79765989ce52dc941e86cc2a1ea8c",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "07f26bd9de71bb25308478726e27f018cb0dbc322c27bb0e850014cfdce59694",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "f5815e122e0ec9523f80e56bc4bf2915f85eca7b60f9a6ec82c5e6347345aeaa",
+      "distinct_squares": true,
+      "id": "distinct|p1|reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        },
+        "RC": {
+          "edge_count": 6,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        }
+      },
+      "metadata_sha256": "c9290e04db577436a134e504a712d251cb2a0b5592d58b10bacac47ef9fa6f00",
+      "orientation": "reverse",
+      "period": 1,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "576816f18692575611ed59b306026acca3e79765989ce52dc941e86cc2a1ea8c",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "07f26bd9de71bb25308478726e27f018cb0dbc322c27bb0e850014cfdce59694",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "fbc11b2cc46de57f91d5e3a47fa15c209ac51fe025edab2b9dea83121dde936c",
+      "distinct_squares": true,
+      "id": "distinct|p1|byte_reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        },
+        "RC": {
+          "edge_count": 6,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        }
+      },
+      "metadata_sha256": "c9290e04db577436a134e504a712d251cb2a0b5592d58b10bacac47ef9fa6f00",
+      "orientation": "byte_reverse",
+      "period": 1,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "576816f18692575611ed59b306026acca3e79765989ce52dc941e86cc2a1ea8c",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "07f26bd9de71bb25308478726e27f018cb0dbc322c27bb0e850014cfdce59694",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "c1a82d359a653a84d126fce17507d07dad77939c00d155b8b2e88badbce337c3",
+      "distinct_squares": true,
+      "id": "distinct|p1|nibble_swap",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        },
+        "RC": {
+          "edge_count": 6,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            2
+          ]
+        }
+      },
+      "metadata_sha256": "c9290e04db577436a134e504a712d251cb2a0b5592d58b10bacac47ef9fa6f00",
+      "orientation": "nibble_swap",
+      "period": 1,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "aa867296ead0e309c65bb2f372d92d164d06e5cba05a0a3fba7c0bc282d2ed65",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "e15bbf3aeba34086c4c287f6f7f082af3285801815a73f30916190e6c05b5a39",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "e229431274f4e8bb6761eb3c785293a4c6f51fc6a944e9dd6a51290c910a39e7",
+      "distinct_squares": true,
+      "id": "distinct|p3|forward",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 15,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 31,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "9e06dce5d51770af22a8afe6676caef03514ba80745ea55bb83c30cd388eaa81",
+      "orientation": "forward",
+      "period": 3,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "aa867296ead0e309c65bb2f372d92d164d06e5cba05a0a3fba7c0bc282d2ed65",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "e15bbf3aeba34086c4c287f6f7f082af3285801815a73f30916190e6c05b5a39",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "4449e77f404198da7c6c0fa6b6cfdd8b461b0bcae4cb484c403689dbd55d40d1",
+      "distinct_squares": true,
+      "id": "distinct|p3|reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 15,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 31,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "9e06dce5d51770af22a8afe6676caef03514ba80745ea55bb83c30cd388eaa81",
+      "orientation": "reverse",
+      "period": 3,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "aa867296ead0e309c65bb2f372d92d164d06e5cba05a0a3fba7c0bc282d2ed65",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "e15bbf3aeba34086c4c287f6f7f082af3285801815a73f30916190e6c05b5a39",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "68f8c274035e3b7ff2e37c6ed01a2267b2215fcb55208ad1fe0a232db9d744a1",
+      "distinct_squares": true,
+      "id": "distinct|p3|byte_reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 15,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 31,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "9e06dce5d51770af22a8afe6676caef03514ba80745ea55bb83c30cd388eaa81",
+      "orientation": "byte_reverse",
+      "period": 3,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "aa867296ead0e309c65bb2f372d92d164d06e5cba05a0a3fba7c0bc282d2ed65",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "e15bbf3aeba34086c4c287f6f7f082af3285801815a73f30916190e6c05b5a39",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "d159be7b98346d74e56912bd81f35010b8089f940ee610071369a683f78a9b5f",
+      "distinct_squares": true,
+      "id": "distinct|p3|nibble_swap",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 15,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 31,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            3,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "9e06dce5d51770af22a8afe6676caef03514ba80745ea55bb83c30cd388eaa81",
+      "orientation": "nibble_swap",
+      "period": 3,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "589f91c5b5d714f07092ff1b28f98afcdfb0ea6e1e41b5f615dcea99b0f44a4d",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "b185785fb80c8f42a5289d2d786614c54381830ecaa5b6543d79de177ff73a91",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "2df68cab224ad786662eb1c45d9328cfed462342f31fc22b4e399cf8d6f95903",
+      "distinct_squares": true,
+      "id": "distinct|p31|forward",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        },
+        "CR": {
+          "edge_count": 36,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        },
+        "RC": {
+          "edge_count": 47,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        }
+      },
+      "metadata_sha256": "732fa94e122f07339119666a9234a2566ed915582c779bec1fffdcfcbe5e197c",
+      "orientation": "forward",
+      "period": 31,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "589f91c5b5d714f07092ff1b28f98afcdfb0ea6e1e41b5f615dcea99b0f44a4d",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "b185785fb80c8f42a5289d2d786614c54381830ecaa5b6543d79de177ff73a91",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "644c7d4e8c54cfcbda669039940beb3a48941188f86aa365eabcc3fd701761c2",
+      "distinct_squares": true,
+      "id": "distinct|p31|reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        },
+        "CR": {
+          "edge_count": 36,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        },
+        "RC": {
+          "edge_count": 47,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        }
+      },
+      "metadata_sha256": "732fa94e122f07339119666a9234a2566ed915582c779bec1fffdcfcbe5e197c",
+      "orientation": "reverse",
+      "period": 31,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "589f91c5b5d714f07092ff1b28f98afcdfb0ea6e1e41b5f615dcea99b0f44a4d",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "b185785fb80c8f42a5289d2d786614c54381830ecaa5b6543d79de177ff73a91",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "e40ae57b96a18b9e5b6ee0c53ce3c3be29247cfe3319dbdbbd1dc4bb4ffb33e0",
+      "distinct_squares": true,
+      "id": "distinct|p31|byte_reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        },
+        "CR": {
+          "edge_count": 36,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        },
+        "RC": {
+          "edge_count": 47,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        }
+      },
+      "metadata_sha256": "732fa94e122f07339119666a9234a2566ed915582c779bec1fffdcfcbe5e197c",
+      "orientation": "byte_reverse",
+      "period": 31,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "589f91c5b5d714f07092ff1b28f98afcdfb0ea6e1e41b5f615dcea99b0f44a4d",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "b185785fb80c8f42a5289d2d786614c54381830ecaa5b6543d79de177ff73a91",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "59f2f80412fa3725a06048c0b47c7024124b00a227df70ce68a9c4aaf154e9f1",
+      "distinct_squares": true,
+      "id": "distinct|p31|nibble_swap",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        },
+        "CR": {
+          "edge_count": 36,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        },
+        "RC": {
+          "edge_count": 47,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            1
+          ]
+        }
+      },
+      "metadata_sha256": "732fa94e122f07339119666a9234a2566ed915582c779bec1fffdcfcbe5e197c",
+      "orientation": "nibble_swap",
+      "period": 31,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "b81905e3e0ec5f5fc386b73ab917b85aefd8c8269ee2dcf07241f7d293b72434",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "747a166ef0cecadf68f83f91bd8d3e5e70ab2ca0abb89615051c4d5c6a6a5327",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "e0e7b09f01c8782a8b2fabbb59f6509775168ace4dddbec4015073bb358f4dc8",
+      "distinct_squares": true,
+      "id": "distinct|p99|forward",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 36,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 39,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "b246a0ed4992fde3143eb65e4f71326cc06b61f2f08f0973bc9bada6401fead3",
+      "orientation": "forward",
+      "period": 99,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "b81905e3e0ec5f5fc386b73ab917b85aefd8c8269ee2dcf07241f7d293b72434",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "747a166ef0cecadf68f83f91bd8d3e5e70ab2ca0abb89615051c4d5c6a6a5327",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "54d691fb66246a39ee6f257deeb61c75700da33db284804a2043d7e893353631",
+      "distinct_squares": true,
+      "id": "distinct|p99|reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 36,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 39,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "b246a0ed4992fde3143eb65e4f71326cc06b61f2f08f0973bc9bada6401fead3",
+      "orientation": "reverse",
+      "period": 99,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "b81905e3e0ec5f5fc386b73ab917b85aefd8c8269ee2dcf07241f7d293b72434",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "747a166ef0cecadf68f83f91bd8d3e5e70ab2ca0abb89615051c4d5c6a6a5327",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "e5d48cd22223fa527804d91a221558dd0865ad755f61cdf37e7f13925b771e88",
+      "distinct_squares": true,
+      "id": "distinct|p99|byte_reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 36,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 39,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "b246a0ed4992fde3143eb65e4f71326cc06b61f2f08f0973bc9bada6401fead3",
+      "orientation": "byte_reverse",
+      "period": 99,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "b81905e3e0ec5f5fc386b73ab917b85aefd8c8269ee2dcf07241f7d293b72434",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "747a166ef0cecadf68f83f91bd8d3e5e70ab2ca0abb89615051c4d5c6a6a5327",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "d4573b4920e405027f5756fac4d0dfb8eafeb0b5b7f800b07d6e97ba0a594ed1",
+      "distinct_squares": true,
+      "id": "distinct|p99|nibble_swap",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "CR": {
+          "edge_count": 36,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RC": {
+          "edge_count": 39,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            0,
+            0
+          ]
+        }
+      },
+      "metadata_sha256": "b246a0ed4992fde3143eb65e4f71326cc06b61f2f08f0973bc9bada6401fead3",
+      "orientation": "nibble_swap",
+      "period": 99,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "9596cd0a6b20f87a5bb11b2ff56ea202b382243d1eb061f08da47c49fc23f50b",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "e02020dbbf3cbf90f359a87e725a8e178aa6b4a95a492ea44648544fa344e446",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "b749c74178d46f5a6a925444c5fa27e274c7c4b1cba4d9cacc4233671582c4b8",
+      "distinct_squares": true,
+      "id": "distinct|p1091|forward",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        },
+        "RC": {
+          "edge_count": 36,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        }
+      },
+      "metadata_sha256": "291f70daffb7d778f28158ecbeb8ecac8995564e132bbd986521d6f0a690eb5f",
+      "orientation": "forward",
+      "period": 1091,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "9596cd0a6b20f87a5bb11b2ff56ea202b382243d1eb061f08da47c49fc23f50b",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "e02020dbbf3cbf90f359a87e725a8e178aa6b4a95a492ea44648544fa344e446",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "e261535d3aed436ae6bda5c857abac0d3cc78ba00adf8664ad3a87bb43aae3f1",
+      "distinct_squares": true,
+      "id": "distinct|p1091|reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        },
+        "RC": {
+          "edge_count": 36,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        }
+      },
+      "metadata_sha256": "291f70daffb7d778f28158ecbeb8ecac8995564e132bbd986521d6f0a690eb5f",
+      "orientation": "reverse",
+      "period": 1091,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "9596cd0a6b20f87a5bb11b2ff56ea202b382243d1eb061f08da47c49fc23f50b",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "e02020dbbf3cbf90f359a87e725a8e178aa6b4a95a492ea44648544fa344e446",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "6fa847ed1e148acac8880e94e4d471feb7f93e4b7d83c37a348bae55e26f2410",
+      "distinct_squares": true,
+      "id": "distinct|p1091|byte_reverse",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        },
+        "RC": {
+          "edge_count": 36,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        }
+      },
+      "metadata_sha256": "291f70daffb7d778f28158ecbeb8ecac8995564e132bbd986521d6f0a690eb5f",
+      "orientation": "byte_reverse",
+      "period": 1091,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    },
+    {
+      "block_lengths_sha256": "9596cd0a6b20f87a5bb11b2ff56ea202b382243d1eb061f08da47c49fc23f50b",
+      "cell_status": "unresolved",
+      "cipher_symbols_sha256": "e02020dbbf3cbf90f359a87e725a8e178aa6b4a95a492ea44648544fa344e446",
+      "concrete_decrypt_exact": true,
+      "concrete_reencrypt_exact": true,
+      "displayed_sha256": "3d370845be5d0d004aa3e92505994bb2a1948e552cb62caf48f1eb4513b95bae",
+      "distinct_squares": true,
+      "id": "distinct|p1091|nibble_swap",
+      "known_coordinate_checks": {
+        "CC": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        },
+        "CR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        },
+        "RC": {
+          "edge_count": 36,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        },
+        "RR": {
+          "edge_count": 0,
+          "filter_feasible": true,
+          "known_coordinate_survives": true,
+          "known_plain_square_symbol1_coordinate": [
+            1,
+            2
+          ]
+        }
+      },
+      "metadata_sha256": "291f70daffb7d778f28158ecbeb8ecac8995564e132bbd986521d6f0a690eb5f",
+      "orientation": "nibble_swap",
+      "period": 1091,
+      "plaintext_sha256": "a302c201fab6f5603941210b8c66fb1e2a541f0d092a3ad9b7380a9f69bbd481",
+      "typed_oracle_exact": true
+    }
+  ],
+  "reachable_binary_negative": {
+    "cell_status": "excluded",
+    "checked_first_sets": 1820,
+    "cipher_rule": "cipher[i]=(i//2)%16",
+    "exclusion_certificate": {
+      "all_first_set_records_sha256": "53f40a17be55adb717cbed424f8906c8f49ba9c842ff0fec096e4a799693b169",
+      "graph_hex": "8000400020001000080004000200010000800040002000100008000400020001",
+      "method": "all 1820 allowed first classes rejected by exact intersection test"
+    },
+    "impossible_types": [
+      "RC"
+    ],
+    "independent_literal_square_pairs": [
+      {
+        "case": 0,
+        "cipher_square_sha256": "28b7730a5d0ea496dba138db114e1e082bfe0e2cb10872aa172c3ca376c95bf0",
+        "decoded_high_symbol_set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "plaintext_square_sha256": "41c5f2dcaffe1dabea6395390e3f5ab5b07409c7db10f79e213db51d23ef94d7"
+      },
+      {
+        "case": 1,
+        "cipher_square_sha256": "cbde3bc4d0f27abdbacc4faf7fd06bc1fb6e065e041c0816c804a7095a5ddc46",
+        "decoded_high_symbol_set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "plaintext_square_sha256": "f7b110753831924f2b7dd2b9e91dc2cf43485c6fceb26ad3adaf98b72012e881"
+      },
+      {
+        "case": 2,
+        "cipher_square_sha256": "47a538e5aa20119f35ac778e296ddb7dfbb847b7af1cba47623022067b5bea34",
+        "decoded_high_symbol_set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "plaintext_square_sha256": "3aa8e5206ed73c300fc36ad972da301f6cfec17f5c3da5b1e590c1d372dc867c"
+      },
+      {
+        "case": 3,
+        "cipher_square_sha256": "ed80d6b3142f7178fa9d61df5e43e9c83c1ba77f6721958c55447114233a97bc",
+        "decoded_high_symbol_set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "plaintext_square_sha256": "7f21e7063eb56f915efd3e6c2b44001b930c5a64574a26ce50a278a131283f5e"
+      },
+      {
+        "case": 4,
+        "cipher_square_sha256": "37b0f991da68b81a403e7b6dd553db3e8d41eacbe7c871a375e993ad5cc567b1",
+        "decoded_high_symbol_set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "plaintext_square_sha256": "a37d7f74a0427a83e1044db166de0f6c75b39b0da491143fd638c55016cb5c31"
+      },
+      {
+        "case": 5,
+        "cipher_square_sha256": "eec36a02498b09a86eeaf8d966140deac8f83c48d5710af61e78cbeb9578906a",
+        "decoded_high_symbol_set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "plaintext_square_sha256": "43d9f92271b68be45a7935ebbdf63fa6b974fe37dc43db2560e549d5edd5289f"
+      },
+      {
+        "case": 6,
+        "cipher_square_sha256": "00f4b003b346c3625a1ecfda171e705de625a2e25788576496f600b0226c9222",
+        "decoded_high_symbol_set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "plaintext_square_sha256": "c8537d11f8d85b071c213e7270a2e263705822c3628c9d18feec033c1db4ecbc"
+      },
+      {
+        "case": 7,
+        "cipher_square_sha256": "fc10040bcd19333818a7bf0935033f4674b204804f7ac582bc140f827c194422",
+        "decoded_high_symbol_set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "plaintext_square_sha256": "2fdfb51e60b33a2869882929444f4561b39ef24b024e5b604e898a967e50c44d"
+      }
+    ],
+    "not_a_valid_text_plant": true,
+    "period": 1,
+    "rc_edge_count": 16,
+    "rc_graph_hex": "8000400020001000080004000200010000800040002000100008000400020001",
+    "surviving_first_sets": 0
+  },
+  "scope": "Synthetic fixed-546-byte ASCII positive plants plus one reachable binary negative; same/distinct arbitrary 4x4 squares, five odd periods, four orientations.",
+  "seed": 20260912,
+  "source_hashes": {
+    "driver_controls.py": "d0f4b76c04de47a5676d6f39ddd22648c5510003b8d33e634e539e47b19035e1",
+    "run_target.py": "3c7ba1c60150a000018da4a1b14d523a827f8ed6b9f2187be39e169135babe06",
+    "single_graph_model.py": "924ea3a4acc7618be25b1cbf92952115805fa898448c402727e922d1f4526014",
+    "typed_oracle_controls.py": "31f9b11bb8849be786548508ad7d5843eff991a0de9ff538cd8d377c430b1426"
+  },
+  "target_ciphertext_extracted": false,
+  "target_evaluated": false
+}

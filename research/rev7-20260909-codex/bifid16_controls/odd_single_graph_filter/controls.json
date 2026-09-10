@@ -1,0 +1,1961 @@
+{
+  "full_fixtures": [
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "kind": "RR",
+      "name": "empty",
+      "surviving_first_sets": 1820,
+      "witness": {
+        "A": 15,
+        "B": 15
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "kind": "RR",
+      "name": "complete",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "1086340e9088708500952001208182086248d810121c98207000a0b64a67be08",
+      "kind": "RR",
+      "name": "planted_0",
+      "surviving_first_sets": 689,
+      "witness": {
+        "A": 57,
+        "B": 450
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "c792eb829db2ff6e3cfdff9f9bcf6f7cd6eadddbf5a0acff1dd1e36f98d3d7df",
+      "kind": "RR",
+      "name": "planted_1",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 57376,
+        "B": 77
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "fffffdeafdeafffffffffdeafffffffffdeaffffffffffffffffffffffffffff",
+      "kind": "RR",
+      "name": "planted_2",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 25728,
+        "B": 533
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "0902d602e51348020643964e7970180644008d001801090408c606e81264206a",
+      "kind": "RR",
+      "name": "planted_3",
+      "surviving_first_sets": 619,
+      "witness": {
+        "A": 15,
+        "B": 49424
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "fb1f4fdfff39addff6b2ddb9ebd9ffb6ebfb20067f3e9eede3b4ef53d3e3f6a0",
+      "kind": "RR",
+      "name": "planted_4",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 2121,
+        "B": 2121
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffe7e7ffffffffffffe7e7e7e7ffffffffffffffffffffffffe7e7ffffffff",
+      "kind": "RR",
+      "name": "planted_5",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 17924,
+        "B": 6168
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "00200dd8284081454658001001244616e0a63014021e048154b10115fc42102b",
+      "kind": "RR",
+      "name": "planted_6",
+      "surviving_first_sets": 547,
+      "witness": {
+        "A": 9219,
+        "B": 900
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "2fc23dd5fb97d39d955f7bba7bbfdedcfeded70f3e9665df2dc7ddb897efffb6",
+      "kind": "RR",
+      "name": "planted_7",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 49192,
+        "B": 49192
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffffffffffffff6dfd6dfdffffffffffffffff6dfdffff6dfdffffffffffff",
+      "kind": "RR",
+      "name": "planted_8",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 3112,
+        "B": 37378
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "90208009116f21232639c18e88052d4c50e208c7585000841041805423d87003",
+      "kind": "RR",
+      "name": "planted_9",
+      "surviving_first_sets": 407,
+      "witness": {
+        "A": 27,
+        "B": 35872
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "efdd7311d699eff4d9bdefff77bfc719b6b9ef5dd53facd9e59beabd647ae5a9",
+      "kind": "RR",
+      "name": "planted_10",
+      "surviving_first_sets": 6,
+      "witness": {
+        "A": 8577,
+        "B": 2118
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffbef3ffffffffffffffffffffbef3ffffffffffffffffbef3bef3ffffffff",
+      "kind": "RR",
+      "name": "planted_11",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 16652,
+        "B": 16652
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "4004400466e2c202858901041027348c33924445846084054a02111448226702",
+      "kind": "RR",
+      "name": "planted_12",
+      "surviving_first_sets": 769,
+      "witness": {
+        "A": 519,
+        "B": 32968
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "fdcffebbe36fa5976def6f4f1ecefaa9bcd6acc23d27465d8feb3ffdb7bfadd2",
+      "kind": "RR",
+      "name": "planted_13",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 4289,
+        "B": 16936
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "fcbefcbefffffffffffffffffffffffffffffffffffffcbefcbeffffffffffff",
+      "kind": "RR",
+      "name": "planted_14",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 49176,
+        "B": 833
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "c0aa9e5cd2283a4b80322604b30340120a4303201a609092930206811205e084",
+      "kind": "RR",
+      "name": "planted_15",
+      "surviving_first_sets": 430,
+      "witness": {
+        "A": 15,
+        "B": 2160
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "6ae39d379376bef3f5d3a7ffe776feee9f76f7dff06f7aff8c17fc7fd84e7b8e",
+      "kind": "RR",
+      "name": "planted_16",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 24712,
+        "B": 24712
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffdeddffffffffffffdeddffffffffffffdeddffffffffffffdeddffffffff",
+      "kind": "RR",
+      "name": "planted_17",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 17476,
+        "B": 8482
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "21152a2d9100de9034529c40258a0580878583d1158100300b00c023ae928022",
+      "kind": "RR",
+      "name": "planted_18",
+      "surviving_first_sets": 495,
+      "witness": {
+        "A": 23,
+        "B": 4424
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ddd5fc33aed9bf1e7eefffdf5ffa5bfdf75dee7e44f5dcd4dd375cf1cff5bfef",
+      "kind": "RR",
+      "name": "planted_19",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 32820,
+        "B": 8714
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffffffffffffff9d7f9d7fffff9d7fffffffffffff9d7fffffffffffffffff",
+      "kind": "RR",
+      "name": "planted_20",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 3344,
+        "B": 25216
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "1c94318404a4fc88401a18aead84081ec010d8699e02d9a0882628201400c280",
+      "kind": "RR",
+      "name": "planted_21",
+      "surviving_first_sets": 553,
+      "witness": {
+        "A": 23,
+        "B": 23
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "219b85bdc73ffafb0ad8debbba1ae5d3ea0bb1e3dd76913420f9bafef9fbbc63",
+      "kind": "RR",
+      "name": "planted_22",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 32856,
+        "B": 19968
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffffffffffbf8fffffbf8fffffffffbf8fffffffffffffffffbf8fffffffff",
+      "kind": "RR",
+      "name": "planted_23",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 5252,
+        "B": 16496
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "54d1121a708b406811108e40910241bc4092000d1131002d47200a6411800822",
+      "kind": "RR",
+      "name": "random_0",
+      "surviving_first_sets": 807,
+      "witness": {
+        "A": 23,
+        "B": 58368
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "b117560f5c8cc5ffced6b73c9b8d0bca47f5d9c3f10a71f5b9096c29fba91ee6",
+      "kind": "RR",
+      "name": "random_1",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "d1affabfb937fffbbeeed93f9fbebbe7ef3eb9fff7b4f6cb7579fffb76f2dff7",
+      "kind": "RR",
+      "name": "random_2",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "dfdffdfffffffdfffeffffffffffdffff7efffdffffa7fffffffffffffffffff",
+      "kind": "RR",
+      "name": "random_3",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "02652414982261643044288100084030100c10000024d601005009140001024a",
+      "kind": "RR",
+      "name": "random_4",
+      "surviving_first_sets": 1200,
+      "witness": {
+        "A": 15,
+        "B": 5280
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "28babda7657a015ec463c274b95728717946939478e3cdde5b2310ebc7eae7e9",
+      "kind": "RR",
+      "name": "random_5",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "7cfefb0ff272b5fffffec9f27f7acefd75ffef2bffffbfffb97efe97d71f9ed7",
+      "kind": "RR",
+      "name": "random_6",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "fffdefffffffff7fffdfffbffffffffff9fdffffefbfffffff7fffffffffffff",
+      "kind": "RR",
+      "name": "random_7",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "08041810441801906204c1900000444820000d200220b44a0810121705460130",
+      "kind": "RR",
+      "name": "random_8",
+      "surviving_first_sets": 1270,
+      "witness": {
+        "A": 15,
+        "B": 57472
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "202cd57f15ba1ebee3a90e48d5473358008f7d234bc3d7e20d64525df0cfc8f8",
+      "kind": "RR",
+      "name": "random_9",
+      "surviving_first_sets": 2,
+      "witness": {
+        "A": 1192,
+        "B": 45072
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "eeb93b7fffdfeef2fbceebcfb7d7c7dfb5177b5dff7fee97ebff9b7fcff6fdde",
+      "kind": "RR",
+      "name": "random_10",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "ffbfffffffffffffffefffffdfffffffffffffbffffcfffffffffff7ffbfffff",
+      "kind": "RR",
+      "name": "random_11",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "1480401884a000d001403684401a838b050047500843002e4a0600027c020ec0",
+      "kind": "RR",
+      "name": "random_12",
+      "surviving_first_sets": 952,
+      "witness": {
+        "A": 15,
+        "B": 33072
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "71db7aa366e738da0c69b766bb0a7adda0ad9cce3229ca07283ec9245e049f50",
+      "kind": "RR",
+      "name": "random_13",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "3f6afffeffe57eff79fadc8bf9f9f6f3d9fee29dfcde77b7af5beffdfafb97f6",
+      "kind": "RR",
+      "name": "random_14",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "fffffffffffbff7fffffe7f7fdffefbffffef2ffffefffffffffffffffefffff",
+      "kind": "RR",
+      "name": "random_15",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "kind": "RC",
+      "name": "empty",
+      "surviving_first_sets": 1820,
+      "witness": {
+        "A": 15,
+        "B": 113
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "kind": "RC",
+      "name": "complete",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "040408809010654198850119210412232100823380443054d44209069504120c",
+      "kind": "RC",
+      "name": "planted_0",
+      "surviving_first_sets": 1116,
+      "witness": {
+        "A": 15,
+        "B": 177
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "f99fb97bade7f32f7ffdc68f9fff8c3bf73af5896eb77feffd3ef60d968f6ffa",
+      "kind": "RC",
+      "name": "planted_1",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 1094,
+        "B": 2160
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "fffffdc7fffffdc7fffffdc7fdc7ffffffffffffffffffffffffffffffffffff",
+      "kind": "RC",
+      "name": "planted_2",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 22016,
+        "B": 568
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "a02040100560acc6199233c081c0002c60204e210500400160d8921404449c58",
+      "kind": "RC",
+      "name": "planted_3",
+      "surviving_first_sets": 741,
+      "witness": {
+        "A": 23,
+        "B": 418
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "1f43ffefeeafd573bf4989b574e3b787db71fdac7afbfbfdf874803fb9d2d743",
+      "kind": "RC",
+      "name": "planted_4",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 36993,
+        "B": 8332
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "fffffffff2fbf2fbf2fbfffffffffffff2fbffffffffffffffffffffffffffff",
+      "kind": "RC",
+      "name": "planted_5",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 14464,
+        "B": 3332
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "3042a0d080880010a6d48009410104040c524684c817055310900a0a38000098",
+      "kind": "RC",
+      "name": "planted_6",
+      "surviving_first_sets": 1121,
+      "witness": {
+        "A": 15,
+        "B": 353
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "e9ec267b7d7d6bdd5ff5fec9cff3dbffe96ce9c47d4851ecdefeeedff8b555ec",
+      "kind": "RC",
+      "name": "planted_7",
+      "surviving_first_sets": 8,
+      "witness": {
+        "A": 225,
+        "B": 531
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffffffee3fee3fee3fffffffffffffffffffffffffee3fffffffffffffffff",
+      "kind": "RC",
+      "name": "planted_8",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 14352,
+        "B": 4544
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "080020a404106450c1282138990a800ac0a14248040400200c00408000162461",
+      "kind": "RC",
+      "name": "planted_9",
+      "surviving_first_sets": 1282,
+      "witness": {
+        "A": 15,
+        "B": 4872
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ea0ee3f37bdff5423f1f9db6744942e665bfb17bddf7bb77efe788fe657394f3",
+      "kind": "RC",
+      "name": "planted_10",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 4674,
+        "B": 2692
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "7b6fffff7b6fffffffffffffffffffffffffffff7b6fffffffffffff7b6fffff",
+      "kind": "RC",
+      "name": "planted_11",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 40994,
+        "B": 33936
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "a10c25a2101306888e00008386bc00440010330000001a0ab1419e5a40020004",
+      "kind": "RC",
+      "name": "planted_12",
+      "surviving_first_sets": 1035,
+      "witness": {
+        "A": 23,
+        "B": 417
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "fffd1533f3b6be3effaf7fabb4db3df777d665387d77390b7e0ff6ef70b3efff",
+      "kind": "RC",
+      "name": "planted_13",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 16466,
+        "B": 33348
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffff5affffffffffffff5affffffffffffffffffffff5aff5affffffffffffff",
+      "kind": "RC",
+      "name": "planted_14",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 17432,
+        "B": 42240
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "3071009a04404408a26810408008d99a901d4c152000021600a9a022a004025b",
+      "kind": "RC",
+      "name": "planted_15",
+      "surviving_first_sets": 1022,
+      "witness": {
+        "A": 135,
+        "B": 3456
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "e03bbbbc5be2f77efbfefffb4eebd37ce29662a7de6d733cfdfdf7bd3ff8e8b9",
+      "kind": "RC",
+      "name": "planted_16",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 32961,
+        "B": 5440
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "fdb9fdb9fdb9fffffffffffffffffffffffffffffffffffffffffffffdb9ffff",
+      "kind": "RC",
+      "name": "planted_17",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 57346,
+        "B": 582
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "a0880809e801c2014c966405456a020201084244048023410a99ca180cf64875",
+      "kind": "RC",
+      "name": "planted_18",
+      "surviving_first_sets": 691,
+      "witness": {
+        "A": 267,
+        "B": 45312
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "bfdffbc21fbef7ffe7affbf9f9af1f72528e5d7e16fedbf309be59fe79bdc51f",
+      "kind": "RC",
+      "name": "planted_19",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 8488,
+        "B": 57345
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "7b77ffffffffffff7b77ffff7b77ffffffffffff7b77ffffffffffffffffffff",
+      "kind": "RC",
+      "name": "planted_20",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 35360,
+        "B": 33928
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "528b50cd44d4600205800638204195400ac0000927f283f02905202026008000",
+      "kind": "RC",
+      "name": "planted_21",
+      "surviving_first_sets": 787,
+      "witness": {
+        "A": 15,
+        "B": 210
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "bfcd2fff085466dffd6eda166f7debd77bfd28b1fd7ff23c44b3c7ffffefec73",
+      "kind": "RC",
+      "name": "planted_22",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 8265,
+        "B": 4872
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "fffffffff5f6f5f6fffffffffffffffff5f6fffffffffffffffffffffffff5f6",
+      "kind": "RC",
+      "name": "planted_23",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 12417,
+        "B": 2569
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "1086e00250001498ea04410d01c01aa98011010b42408001121501429c82a611",
+      "kind": "RC",
+      "name": "random_0",
+      "surviving_first_sets": 954,
+      "witness": {
+        "A": 23,
+        "B": 16428
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ede912631675f0b3db953238533e41323acd116bb72e1ffed51d65f02ea14b8b",
+      "kind": "RC",
+      "name": "random_1",
+      "surviving_first_sets": 10,
+      "witness": {
+        "A": 9346,
+        "B": 49410
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "27ffdfffcd7b7fb5dafbff97adb8877fef5f6fdd7cfbe67e77eb39ffdf9f6f3f",
+      "kind": "RC",
+      "name": "random_2",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "cffffdffbfebffdfffbfffffffffffff7ffffffdbfff7f77fffffffffefbf7fb",
+      "kind": "RC",
+      "name": "random_3",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "46103969201524000224085b980808a49f989002008411140881100203281c00",
+      "kind": "RC",
+      "name": "random_4",
+      "surviving_first_sets": 1096,
+      "witness": {
+        "A": 15,
+        "B": 8276
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "453a895a97e2e2f1afdd361d1bd75a411edb5a6a7038fc22bd042554b6dfa406",
+      "kind": "RC",
+      "name": "random_5",
+      "surviving_first_sets": 7,
+      "witness": {
+        "A": 16397,
+        "B": 673
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "7d37fbfd7e3f7fabcebffefff757ffd5b7f53b6afdeeddbffefffc37d65f6bfd",
+      "kind": "RC",
+      "name": "random_6",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "ffdffffffefffffffdffbfff9ffffffffcfffffffffffdff1fffeefdfffffff9",
+      "kind": "RC",
+      "name": "random_7",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "021b004003121218104410304a210042280647308032ae006002c006c8940d89",
+      "kind": "RC",
+      "name": "random_8",
+      "surviving_first_sets": 983,
+      "witness": {
+        "A": 8199,
+        "B": 12384
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "5c5a7bb7dc22aaa4eba66631468774bb50cd03d838abcc4c20b755890af000b6",
+      "kind": "RC",
+      "name": "random_9",
+      "surviving_first_sets": 12,
+      "witness": {
+        "A": 523,
+        "B": 37128
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "fdebfefefbbf62af5fefb5597efa6bf959787735e6ff3eaf1f9dfef3d6f2fdfb",
+      "kind": "RC",
+      "name": "random_10",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "ffdffffffffefffbfffffffffdfffffffffffffffffffffeffffefffffffffbf",
+      "kind": "RC",
+      "name": "random_11",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "9180a0c14411084522129044025094502000001744310f28001142c800021014",
+      "kind": "RC",
+      "name": "random_12",
+      "surviving_first_sets": 1178,
+      "witness": {
+        "A": 135,
+        "B": 1313
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "aa828fa343e5f333d78530081fbfd1f0937feb7c36a1fd621f6e45ebeda9210b",
+      "kind": "RC",
+      "name": "random_13",
+      "surviving_first_sets": 5,
+      "witness": {
+        "A": 1061,
+        "B": 34836
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "fd2afd27f0147d7ffbf2febf7eb6eff7fbdc6e3ffdfff774cffe7e68e7fd67fc",
+      "kind": "RC",
+      "name": "random_14",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "debfffffffffffffffef7fffffff7fffffff7dffbffffffffffdffffffffffff",
+      "kind": "RC",
+      "name": "random_15",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "kind": "CR",
+      "name": "empty",
+      "surviving_first_sets": 1820,
+      "witness": {
+        "A": 15,
+        "B": 113
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "kind": "CR",
+      "name": "complete",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "09bc158008040a410ec6a241a348a948402c290004914b55a90244a41c242823",
+      "kind": "CR",
+      "name": "planted_0",
+      "surviving_first_sets": 552,
+      "witness": {
+        "A": 15,
+        "B": 600
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "d15dff79bd5e979feb10bbd71debfdffe133c5563d7d9b1cce9ffd7ffe23fc12",
+      "kind": "CR",
+      "name": "planted_1",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 2179,
+        "B": 204
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "7f577f57ffff7f57ffff7f57ffffffffffffffffffffffffffffffffffffffff",
+      "kind": "CR",
+      "name": "planted_2",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 54272,
+        "B": 32936
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "12188be1ac4492211b008d8b084a882318a12089400082222000000a40452414",
+      "kind": "CR",
+      "name": "planted_3",
+      "surviving_first_sets": 920,
+      "witness": {
+        "A": 39,
+        "B": 928
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ae17effe9fefc5f6f9eeb5959ef2f4d72bd69df7a9d5496efed5117fb3d70b97",
+      "kind": "CR",
+      "name": "planted_4",
+      "surviving_first_sets": 2,
+      "witness": {
+        "A": 163,
+        "B": 17448
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffffffffffffffccffccffffffccffccffffffffffffffffffffffffffffff",
+      "kind": "CR",
+      "name": "planted_5",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 3456,
+        "B": 13056
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "01431201202200085544c05aa011510024d040830090c4822681048a20b0c026",
+      "kind": "CR",
+      "name": "planted_6",
+      "surviving_first_sets": 1246,
+      "witness": {
+        "A": 23,
+        "B": 833
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "7fff4a8de9ddd5dbea7dffeca80f9cbf22176febdfffe69aa3b8ea6cb2a3fbf7",
+      "kind": "CR",
+      "name": "planted_7",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 2692,
+        "B": 5504
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffffffff93ffffff93ffffffffffffffffffffffffff93ffffff93ffffffff",
+      "kind": "CR",
+      "name": "planted_8",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 10260,
+        "B": 108
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "601453024070580411022211002008138a48a5e24b12070345840208a8c14002",
+      "kind": "CR",
+      "name": "planted_9",
+      "surviving_first_sets": 894,
+      "witness": {
+        "A": 135,
+        "B": 308
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "c1d287aba2bd5f8ffa196ce2dff671f9e3f7fdbedd3bf7f9d1fda2aedffda39a",
+      "kind": "CR",
+      "name": "planted_10",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 24581,
+        "B": 22592
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffffffffffffffeeddffffffffeeddffffffffffffeeddeeddffffffffffff",
+      "kind": "CR",
+      "name": "planted_11",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 2328,
+        "B": 4386
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "010d1104409090250158844a00b0802313a5fc30620a47402008c428c0892226",
+      "kind": "CR",
+      "name": "planted_12",
+      "surviving_first_sets": 720,
+      "witness": {
+        "A": 263,
+        "B": 2384
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "bfa7f4d2f0c7f5f1ef7eec7efb7bdcf0d6d63dbec4c2fb6b7abbff9fd37e24bf",
+      "kind": "CR",
+      "name": "planted_13",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 24736,
+        "B": 2344
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffffffffffffff7bcfffffffffffffffffffffffff7bcfffff7bcfffff7bcf",
+      "kind": "CR",
+      "name": "planted_14",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 2069,
+        "B": 33840
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "20080059f3e0022800408c08140ac410088c892d088d050d8302910085445087",
+      "kind": "CR",
+      "name": "planted_15",
+      "surviving_first_sets": 955,
+      "witness": {
+        "A": 15,
+        "B": 2104
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "17929553df7697fee39b94c659fcc76fed6e1506ce91fe3bfcac6ade6d7fdbd6",
+      "kind": "CR",
+      "name": "planted_16",
+      "surviving_first_sets": 2,
+      "witness": {
+        "A": 33857,
+        "B": 8233
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "fffffd76fffffffffd76fffffd76fffffffffffffffffffffffffffffd76ffff",
+      "kind": "CR",
+      "name": "planted_17",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 18946,
+        "B": 649
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "00219c81026224c2c7c12048017b1d81a080b900984614e88e71326405810200",
+      "kind": "CR",
+      "name": "planted_18",
+      "surviving_first_sets": 659,
+      "witness": {
+        "A": 23,
+        "B": 51202
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "c3df97ededbfbcf3bd7967de20e75ffaac73b77b24f737c7fbf67bedd8bdfbb1",
+      "kind": "CR",
+      "name": "planted_19",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 4768,
+        "B": 17160
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "71ffffffffffffffffffffffffffffff71ffffff71ffffffffffffffffff71ff",
+      "kind": "CR",
+      "name": "planted_20",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 32929,
+        "B": 36352
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "e89c00605103335cd02d8348208141410820a42360004cf0a842e12024404142",
+      "kind": "CR",
+      "name": "planted_21",
+      "surviving_first_sets": 734,
+      "witness": {
+        "A": 15,
+        "B": 657
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ceff4df2faf97f7d6a9e45f9c1f7bdf9844ffdffeef77e78cbdb29e94ddb9d6b",
+      "kind": "CR",
+      "name": "planted_22",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 17414,
+        "B": 37380
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "cf3fcf3fffffffffffffffffffffffffffffcf3fffffcf3fffffffffffffffff",
+      "kind": "CR",
+      "name": "planted_23",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 49232,
+        "B": 12480
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "10013003024d80329190860a0500413080628085a0c89000bc31480200002058",
+      "kind": "CR",
+      "name": "random_0",
+      "surviving_first_sets": 1155,
+      "witness": {
+        "A": 15,
+        "B": 900
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "794ee3dec79161b5452936d0c7a5a92767ff1d68da7a24714dc183a318e6449d",
+      "kind": "CR",
+      "name": "random_1",
+      "surviving_first_sets": 10,
+      "witness": {
+        "A": 2565,
+        "B": 14400
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "87f3eeb3fcb6fff3f5fcfbfdae7efbfce67f6b3d3fbef5fffef7f6cffbfbdaff",
+      "kind": "CR",
+      "name": "random_2",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "ffffffffdfff7ffffffde7ffffdfffeffffbfffffffffffbbffffff7ffffcfff",
+      "kind": "CR",
+      "name": "random_3",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "43612186c04002114c0340c618716108c00008690305081010c4048008041100",
+      "kind": "CR",
+      "name": "random_4",
+      "surviving_first_sets": 1230,
+      "witness": {
+        "A": 15,
+        "B": 561
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "60c551d61563f6daf3ab019cec8a9d5c2b2e5d93ed60c8423f564e89270e0e7c",
+      "kind": "CR",
+      "name": "random_5",
+      "surviving_first_sets": 2,
+      "witness": {
+        "A": 1155,
+        "B": 53249
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "9dbf7fe8e176fdbe7ff15defeb7dfedffa9ff9ffd7faee7fdcee7dedfbbfe6ff",
+      "kind": "CR",
+      "name": "random_6",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "fff77ff7ffffffffffeffffffb7ffbfbdffffefffbffffef7ffdfffffffffdbf",
+      "kind": "CR",
+      "name": "random_7",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "802600a10700120832846452261410600104248ea8808108802c80019805aa80",
+      "kind": "CR",
+      "name": "random_8",
+      "surviving_first_sets": 1195,
+      "witness": {
+        "A": 15,
+        "B": 338
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "df3d2061b2350917782c45cfae32f0a612abb112e37daebbc6d0bb4f20041131",
+      "kind": "CR",
+      "name": "random_9",
+      "surviving_first_sets": 48,
+      "witness": {
+        "A": 8227,
+        "B": 3202
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "7f7fbf5ea65ffd6dfd7ffffefeffefff59f57fbfbeaf77f7bb3fbadecdbefdff",
+      "kind": "CR",
+      "name": "random_10",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "fdffffffbffffffdffffdffffffffffffffdf3fffdfffffffff7fbffdfffffff",
+      "kind": "CR",
+      "name": "random_11",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "888256380060f880a4a2900de1004202908200163070529100d4c41063824001",
+      "kind": "CR",
+      "name": "random_12",
+      "surviving_first_sets": 925,
+      "witness": {
+        "A": 15,
+        "B": 6184
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "9fc246fac6904f5de3bfe2de821df67b3148e0502ae5f99fbe6435d0b6a4ee94",
+      "kind": "CR",
+      "name": "random_13",
+      "surviving_first_sets": 5,
+      "witness": {
+        "A": 8261,
+        "B": 43
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "9ff5fe5ffafdfb7fa2fb3adef7bafb46d7b77e6dcfe77acd39f3fcbff7b6ffdb",
+      "kind": "CR",
+      "name": "random_14",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "ffd7ff7ffffffffffffffffe7fffffbfffffffff7fffff77fffffffdfdffffff",
+      "kind": "CR",
+      "name": "random_15",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "kind": "CC",
+      "name": "empty",
+      "surviving_first_sets": 1820,
+      "witness": {
+        "A": 15,
+        "B": 15
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "kind": "CC",
+      "name": "complete",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "402501d00800a78823a800f48202a00308520a300315d0a42080478011880884",
+      "kind": "CC",
+      "name": "planted_0",
+      "surviving_first_sets": 763,
+      "witness": {
+        "A": 15,
+        "B": 32880
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "a6ef67bb3f3cf7d7abbdf6bbaf1bfffeeddfcfa4f7aeab85c4a5aafd5721f33f",
+      "kind": "CC",
+      "name": "planted_1",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 90,
+        "B": 90
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffffffffffffffef3bef3bffffef3bffffffffef3bffffffffffffffffffff",
+      "kind": "CC",
+      "name": "planted_2",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 3360,
+        "B": 4292
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "bb1211248093456586010c430dd082c1c720ce6b1386181081850624d02b0415",
+      "kind": "CC",
+      "name": "planted_3",
+      "surviving_first_sets": 331,
+      "witness": {
+        "A": 23,
+        "B": 8640
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "e5a5dfef2fee19f0fbf4fdecdab799e95e7d1ff9ff6be7b183d9ba1fdee7d7be",
+      "kind": "CC",
+      "name": "planted_4",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 4424,
+        "B": 24582
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffff7dafffff7dafffffffffffffffff7dafffffffffffff7dafffffffffffff",
+      "kind": "CC",
+      "name": "planted_5",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 20616,
+        "B": 33360
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "81361203cd4c392220201112c05a3801b082001c481104e00980403602208220",
+      "kind": "CC",
+      "name": "planted_6",
+      "surviving_first_sets": 778,
+      "witness": {
+        "A": 15,
+        "B": 13376
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "9ae4f3ffd765972f929c8464d6fc7bd6bdef9fbf877fe1efaf6cf6dcf3ffed5a",
+      "kind": "CC",
+      "name": "planted_7",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 36352,
+        "B": 8451
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "fffffffffffffffffffffaddfffffaddfffffffffaddfffffffffffffaddffff",
+      "kind": "CC",
+      "name": "planted_8",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 1314,
+        "B": 1314
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "2022108b92b0497000206015a00190931090900c0049974c5850c29688190fc3",
+      "kind": "CC",
+      "name": "planted_9",
+      "surviving_first_sets": 472,
+      "witness": {
+        "A": 2083,
+        "B": 28676
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "e962d90edcb5fb4e8b66fefd5d3ab3759e566fe8ee873fddfbf2b4e5c1fed5f5",
+      "kind": "CC",
+      "name": "planted_10",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 55296,
+        "B": 1169
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "97efffffffffffffffffffffffff97efffffffffffffffffffffffff97ef97ef",
+      "kind": "CC",
+      "name": "planted_11",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 33027,
+        "B": 26640
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "00211a43019cc3714748415d1810217005041401261201918304393a1a422050",
+      "kind": "CC",
+      "name": "planted_12",
+      "surviving_first_sets": 517,
+      "witness": {
+        "A": 263,
+        "B": 50304
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "73fbfad6c7dcefdf337353dbfe2bf77dfbfe5fd3efbfea9b9cf743d97f15edb1",
+      "kind": "CC",
+      "name": "planted_13",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 35844,
+        "B": 35844
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffffffffffffffffffffffffffffffffff3b7f3b7fffff3b7fffffffff3b7f",
+      "kind": "CC",
+      "name": "planted_14",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 105,
+        "B": 50304
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "08020613c826a40ca79825251116328c560040020840c110ae87180021045f10",
+      "kind": "CC",
+      "name": "planted_15",
+      "surviving_first_sets": 489,
+      "witness": {
+        "A": 23,
+        "B": 232
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ed6c790fb3dab79edecfda5eb85bb48c71ffd4fffd7ebf797ffba7d6e9afef79",
+      "kind": "CC",
+      "name": "planted_16",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 12548,
+        "B": 18465
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "fe2ffffffe2ffffffffffffffffffffffffffffffffffffffffffffffe2ffe2f",
+      "kind": "CC",
+      "name": "planted_17",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 40963,
+        "B": 464
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "280560daa0c1c0459a0128000c3cc4c100d44805ba806106c804802821324420",
+      "kind": "CC",
+      "name": "planted_18",
+      "surviving_first_sets": 730,
+      "witness": {
+        "A": 15,
+        "B": 4800
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "99f3a2a9c04acdddee2ffdcfbebffde6cefd6e4c3bfe571f7dbb3fb2e62f73a7",
+      "kind": "CC",
+      "name": "planted_19",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 10306,
+        "B": 4496
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "eeb7ffffffffffffffffeeb7ffffffffffffffffeeb7ffffffffffffeeb7ffff",
+      "kind": "CC",
+      "name": "planted_20",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 33826,
+        "B": 4424
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "e4094c4c2825c14a4024290c880800c403814800491e300e80082d28254e2002",
+      "kind": "CC",
+      "name": "planted_21",
+      "surviving_first_sets": 1118,
+      "witness": {
+        "A": 15,
+        "B": 4752
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "bbaed5ffff5fdf6edb6ef77bbef9cf6ee3e47cfbcf6feffa546ef9c577fdeffd",
+      "kind": "CC",
+      "name": "planted_22",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 6408,
+        "B": 8337
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "ffffbeebffffffffffffffffffffbeebffffffffffffbeebffffbeebffffffff",
+      "kind": "CC",
+      "name": "planted_23",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 16660,
+        "B": 16660
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "015414628069180310702d8041010528428a401801600140081084c24004c601",
+      "kind": "CC",
+      "name": "random_0",
+      "surviving_first_sets": 1195,
+      "witness": {
+        "A": 15,
+        "B": 12576
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "27262fbbc123dc3ceba7843d976b35e11afc3686ffd886d678b9c887592e45e5",
+      "kind": "CC",
+      "name": "random_1",
+      "surviving_first_sets": 1,
+      "witness": {
+        "A": 43012,
+        "B": 4184
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "f66ff7eefbf37fe31fcfead8dfe0d37f66fffcfacfffffef77bf4c7fef9bfdfb",
+      "kind": "CC",
+      "name": "random_2",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "7ffffbbffffeffffffff7ffffffcfffffffefffffffffffefdffffdfffffffff",
+      "kind": "CC",
+      "name": "random_3",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "6124090f482200e640480401454a150620e48271b81a92840000000912000428",
+      "kind": "CC",
+      "name": "random_4",
+      "surviving_first_sets": 824,
+      "witness": {
+        "A": 15,
+        "B": 464
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "4508c8e92bf0335524541caa614846ca96a24556c141ba712ee421b21804c5fb",
+      "kind": "CC",
+      "name": "random_5",
+      "surviving_first_sets": 28,
+      "witness": {
+        "A": 32865,
+        "B": 14848
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "d9fd773b715fbedfb34efdfebdebbeeff7febfb2ddfa537fdeedee2fcfe9afdf",
+      "kind": "CC",
+      "name": "random_6",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "77ffff7fffffffffeffbfbffefdfbffffffeffffffffffff7ffbfbffffffefff",
+      "kind": "CC",
+      "name": "random_7",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "36918c00089440274c81202549d10050000000000000411c20830600b0500204",
+      "kind": "CC",
+      "name": "random_8",
+      "surviving_first_sets": 1184,
+      "witness": {
+        "A": 15,
+        "B": 18720
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "3268d05eafecab9950da3cc280b129448c9a0728f4655c9b911b119d085ffeef",
+      "kind": "CC",
+      "name": "random_9",
+      "surviving_first_sets": 22,
+      "witness": {
+        "A": 142,
+        "B": 25120
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "feff375cfffbebbdfbffdf84da95dfd6dd4b773ff333bfa5f7f5f86b5fe6cff7",
+      "kind": "CC",
+      "name": "random_10",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "fdedfffffff7ffb7fffffffffe7bffffff7ffffffffffffffbfffffbffffffff",
+      "kind": "CC",
+      "name": "random_11",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "00183c84002840c000084e60445081946002a060089020345701020041310240",
+      "kind": "CC",
+      "name": "random_12",
+      "surviving_first_sets": 1240,
+      "witness": {
+        "A": 15,
+        "B": 43136
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": true,
+      "graph_hex": "69188cc0888dc833072c4c0906f4e38225f54c16f43152c7b8f1adc1b6cb4052",
+      "kind": "CC",
+      "name": "random_13",
+      "surviving_first_sets": 27,
+      "witness": {
+        "A": 16453,
+        "B": 4648
+      }
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "efcffff8bbffeb7ffbdadabf3fd6fae9be57f7f77e97be0ffbfbf27bf7fbf74f",
+      "kind": "CC",
+      "name": "random_14",
+      "surviving_first_sets": 0,
+      "witness": null
+    },
+    {
+      "all_1820_direct_intersections_checked": true,
+      "feasible": false,
+      "graph_hex": "ffffffdfffffffffffeeffffbffffffffdfffffeffffffbffffbfffaffffffff",
+      "kind": "CC",
+      "name": "random_15",
+      "surviving_first_sets": 0,
+      "witness": null
+    }
+  ],
+  "identity": "ASTRA",
+  "reduced_exhaustive": [
+    {
+      "all_graphs": 65536,
+      "all_squares": 24,
+      "coordinates_per_square": 4,
+      "counts": {
+        "feasible": 30539,
+        "impossible": 34997
+      },
+      "feasibility_digest": "06d76394a8f69bb4c5e5a4c0366e9693d9249e0e587cb9f3c5f532e3002320f5",
+      "kind": "RR",
+      "unique_coordinate_fibers": 12
+    },
+    {
+      "all_graphs": 65536,
+      "all_squares": 24,
+      "coordinates_per_square": 4,
+      "counts": {
+        "feasible": 39617,
+        "impossible": 25919
+      },
+      "feasibility_digest": "5a165903749d9a222228e929f55cfd7f6da5ee7f183ac907f98bd7b80c39d933",
+      "kind": "RC",
+      "unique_coordinate_fibers": 24
+    },
+    {
+      "all_graphs": 65536,
+      "all_squares": 24,
+      "coordinates_per_square": 4,
+      "counts": {
+        "feasible": 39617,
+        "impossible": 25919
+      },
+      "feasibility_digest": "5a165903749d9a222228e929f55cfd7f6da5ee7f183ac907f98bd7b80c39d933",
+      "kind": "CR",
+      "unique_coordinate_fibers": 24
+    },
+    {
+      "all_graphs": 65536,
+      "all_squares": 24,
+      "coordinates_per_square": 4,
+      "counts": {
+        "feasible": 30539,
+        "impossible": 34997
+      },
+      "feasibility_digest": "06d76394a8f69bb4c5e5a4c0366e9693d9249e0e587cb9f3c5f532e3002320f5",
+      "kind": "CC",
+      "unique_coordinate_fibers": 12
+    }
+  ],
+  "rev7_read": false,
+  "scope": "Exact existence of an absent coordinate for ONE typed graph; independent surviving witnesses across types cannot be combined without coupled-square consistency.",
+  "source_hashes": {
+    "controls.py": "637d1aae658dc93e68872b54ce100240bba93c64b91fa91aa8f577ca4f624827",
+    "model.py": "924ea3a4acc7618be25b1cbf92952115805fa898448c402727e922d1f4526014"
+  },
+  "target_evaluated": false
+}
