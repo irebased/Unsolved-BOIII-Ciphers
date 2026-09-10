@@ -1,0 +1,777 @@
+{
+  "assertions": {
+    "binary_p1_negative_exhaustive_unsat": true,
+    "dense_full4x4_graph_exercises_sat_branch": true,
+    "four_reduced_cases_match_independent_full_mapping_oracle": true,
+    "join_cap_is_incomplete_without_witness": true,
+    "six_full_plants_preserve_independently_known_coordinate_witness": true
+  },
+  "binary_p1_negative": {
+    "analysis": {
+      "all_pairs_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidate_counts": {
+        "CR": 1601600,
+        "RC": 0,
+        "join_space": 0,
+        "joins_examined": 0
+      },
+      "complete": true,
+      "limit": {
+        "cross_candidates": 10000,
+        "join_pairs": 1000000
+      },
+      "obstruction_counts": {},
+      "side": 4,
+      "status": "unsat",
+      "witness": null
+    },
+    "edge_counts": {
+      "CC": 0,
+      "CR": 0,
+      "RC": 16,
+      "RR": 0
+    },
+    "elapsed_seconds": 0.9033374590000001,
+    "graph_hex": {
+      "CC": "0000000000000000000000000000000000000000000000000000000000000000",
+      "CR": "0000000000000000000000000000000000000000000000000000000000000000",
+      "RC": "8000400020001000080004000200010000800040002000100008000400020001",
+      "RR": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "id": "binary_p1_negative"
+  },
+  "canonical_ciphertext_extracted": false,
+  "dense_graph_sat_same_path": {
+    "analysis": {
+      "candidate_counts": {
+        "CR": 1,
+        "RC": 1,
+        "join_space": 1,
+        "joins_examined": 1
+      },
+      "complete": false,
+      "limit": {
+        "cross_candidates": 10000,
+        "join_pairs": 1000000
+      },
+      "obstruction_counts": {},
+      "partial_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "selected": {
+        "A": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "B": [
+          1,
+          5,
+          9,
+          13
+        ],
+        "C": [
+          0,
+          4,
+          8,
+          12
+        ],
+        "D": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "side": 4,
+      "status": "sat",
+      "witness": {
+        "columns": [
+          [
+            0,
+            4,
+            8,
+            12
+          ],
+          [
+            1,
+            5,
+            9,
+            13
+          ],
+          [
+            2,
+            6,
+            10,
+            14
+          ],
+          [
+            3,
+            7,
+            11,
+            15
+          ]
+        ],
+        "forbidden_coordinate": 1,
+        "mapping": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "orbit": "off_diagonal",
+        "rows": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            8,
+            9,
+            10,
+            11
+          ],
+          [
+            12,
+            13,
+            14,
+            15
+          ]
+        ]
+      }
+    },
+    "edge_counts": {
+      "CC": 240,
+      "CR": 240,
+      "RC": 240,
+      "RR": 240
+    },
+    "elapsed_seconds": 0.002847125000000006,
+    "graph_hex": {
+      "CC": "ffffffffffffddddffffffffffffddddffffffffffffddddffffffffffffdddd",
+      "CR": "ffffffffffffff0fffffffffffffff0fffffffffffffff0fffffffffffffff0f",
+      "RC": "ffffffffffffffffffffffffffffffffffffffffffffffffdddddddddddddddd",
+      "RR": "ffffffffffffffffffffffffffffffffffffffffffffffffff0fff0fff0fff0f"
+    },
+    "id": "dense_graph_sat"
+  },
+  "full_plants_same_path": [
+    {
+      "actual_witness_valid": true,
+      "case": 0,
+      "cipher_sha256": "5e482c92801105c4a4d436949335e9a43bce2ff490e8f0117acc8eab2620b781",
+      "period": 3,
+      "row": {
+        "analysis": {
+          "candidate_counts": {
+            "CR": null,
+            "RC_lower_bound": 10001,
+            "join_space": null,
+            "joins_examined": 0
+          },
+          "complete": false,
+          "limit": {
+            "cross_candidates": 10000,
+            "join_pairs": 1000000
+          },
+          "phase": "RC_candidate_generation",
+          "side": 4,
+          "status": "incomplete",
+          "witness": null
+        },
+        "edge_counts": {
+          "CC": 0,
+          "CR": 41,
+          "RC": 42,
+          "RR": 0
+        },
+        "elapsed_seconds": 0.005628583999999999,
+        "graph_hex": {
+          "CC": "0000000000000000000000000000000000000000000000000000000000000000",
+          "CR": "81000000c880c2104880408020620000006220620000c8802022000083008311",
+          "RC": "00000000412400080000412c00102c100000012401242c1003ec410c01242410",
+          "RR": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "id": "plant_0"
+      }
+    },
+    {
+      "actual_witness_valid": true,
+      "case": 1,
+      "cipher_sha256": "738041e8b9664f08a03f313856cffde281eb89379ec2ea0dd5f267a5e51187c2",
+      "period": 5,
+      "row": {
+        "analysis": {
+          "candidate_counts": {
+            "CR": null,
+            "RC_lower_bound": 10001,
+            "join_space": null,
+            "joins_examined": 0
+          },
+          "complete": false,
+          "limit": {
+            "cross_candidates": 10000,
+            "join_pairs": 1000000
+          },
+          "phase": "RC_candidate_generation",
+          "side": 4,
+          "status": "incomplete",
+          "witness": null
+        },
+        "edge_counts": {
+          "CC": 0,
+          "CR": 36,
+          "RC": 50,
+          "RR": 1
+        },
+        "elapsed_seconds": 0.006043917000000003,
+        "graph_hex": {
+          "CC": "0000000000000000000000000000000000000000000000000000000000000000",
+          "CR": "140200000000144014420420146200220000002000001c6220080008a018a008",
+          "RC": "202e000d000f1a10000012100006000d000000001a1060af20af000f12100000",
+          "RR": "0000000000000000000000000000000000000000000000400000000000000000"
+        },
+        "id": "plant_1"
+      }
+    },
+    {
+      "actual_witness_valid": true,
+      "case": 2,
+      "cipher_sha256": "16d9d50bc7e2e13b64144341291d81ebf94989b1d454ba743997c017b1fa9f75",
+      "period": 31,
+      "row": {
+        "analysis": {
+          "candidate_counts": {
+            "CR": null,
+            "RC_lower_bound": 10001,
+            "join_space": null,
+            "joins_examined": 0
+          },
+          "complete": false,
+          "limit": {
+            "cross_candidates": 10000,
+            "join_pairs": 1000000
+          },
+          "phase": "RC_candidate_generation",
+          "side": 4,
+          "status": "incomplete",
+          "witness": null
+        },
+        "edge_counts": {
+          "CC": 0,
+          "CR": 40,
+          "RC": 44,
+          "RR": 0
+        },
+        "elapsed_seconds": 0.005958249999999998,
+        "graph_hex": {
+          "CC": "0000000000000000000000000000000000000000000000000000000000000000",
+          "CR": "50001410202a202a0a000a04002a202801000880541001010100140002840100",
+          "RC": "4024009900000099130000993200c0043300c000000000990c4232000000c004",
+          "RR": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "id": "plant_2"
+      }
+    },
+    {
+      "actual_witness_valid": true,
+      "case": 3,
+      "cipher_sha256": "34f1a691fc8284f252f9686849a8181567991196f12f73109f6be1ea6e8acc77",
+      "period": 99,
+      "row": {
+        "analysis": {
+          "candidate_counts": {
+            "CR": null,
+            "RC_lower_bound": 10001,
+            "join_space": null,
+            "joins_examined": 0
+          },
+          "complete": false,
+          "limit": {
+            "cross_candidates": 10000,
+            "join_pairs": 1000000
+          },
+          "phase": "RC_candidate_generation",
+          "side": 4,
+          "status": "incomplete",
+          "witness": null
+        },
+        "edge_counts": {
+          "CC": 0,
+          "CR": 39,
+          "RC": 43,
+          "RR": 0
+        },
+        "elapsed_seconds": 0.005486083000000003,
+        "graph_hex": {
+          "CC": "0000000000000000000000000000000000000000000000000000000000000000",
+          "CR": "00241c011c0001001c0100000000020921241c01210400000001000002c90a89",
+          "RC": "061406148220000000000000010990a0010b010010a00604010986b406140000",
+          "RR": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "id": "plant_3"
+      }
+    },
+    {
+      "actual_witness_valid": true,
+      "case": 4,
+      "cipher_sha256": "3ef164a1a77c958873147e3f60f0eee6db7d5acdeaa3d6f4358d82145cdcd877",
+      "period": 1091,
+      "row": {
+        "analysis": {
+          "candidate_counts": {
+            "CR": null,
+            "RC_lower_bound": 10001,
+            "join_space": null,
+            "joins_examined": 0
+          },
+          "complete": false,
+          "limit": {
+            "cross_candidates": 10000,
+            "join_pairs": 1000000
+          },
+          "phase": "RC_candidate_generation",
+          "side": 4,
+          "status": "incomplete",
+          "witness": null
+        },
+        "edge_counts": {
+          "CC": 0,
+          "CR": 0,
+          "RC": 36,
+          "RR": 0
+        },
+        "elapsed_seconds": 0.006179625000000001,
+        "graph_hex": {
+          "CC": "0000000000000000000000000000000000000000000000000000000000000000",
+          "CR": "0000000000000000000000000000000000000000000000000000000000000000",
+          "RC": "041225500a2034400a28b410a540000000000000100000000000000002280a20",
+          "RR": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "id": "plant_4"
+      }
+    },
+    {
+      "actual_witness_valid": true,
+      "case": 5,
+      "cipher_sha256": "5bbb6832c2808b66aa4d267cebb05195a9484d0351610329ef583bd33c3e7baf",
+      "period": 1091,
+      "row": {
+        "analysis": {
+          "candidate_counts": {
+            "CR": null,
+            "RC_lower_bound": 10001,
+            "join_space": null,
+            "joins_examined": 0
+          },
+          "complete": false,
+          "limit": {
+            "cross_candidates": 10000,
+            "join_pairs": 1000000
+          },
+          "phase": "RC_candidate_generation",
+          "side": 4,
+          "status": "incomplete",
+          "witness": null
+        },
+        "edge_counts": {
+          "CC": 0,
+          "CR": 0,
+          "RC": 37,
+          "RR": 0
+        },
+        "elapsed_seconds": 0.006207125000000001,
+        "graph_hex": {
+          "CC": "0000000000000000000000000000000000000000000000000000000000000000",
+          "CR": "0000000000000000000000000000000000000000000000000000000000000000",
+          "RC": "000004000000a68100000200000026850000220000000401e78100000000ff15",
+          "RR": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "id": "plant_5"
+      }
+    }
+  ],
+  "identity": "ASTRA",
+  "join_cap_same_path": {
+    "analysis": {
+      "candidate_counts": {
+        "CR": 24,
+        "RC": 24,
+        "join_space": 576,
+        "joins_examined": 0
+      },
+      "complete": false,
+      "limit": {
+        "cross_candidates": 1000,
+        "join_pairs": 0
+      },
+      "obstruction_counts": {},
+      "partial_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "side": 2,
+      "status": "incomplete",
+      "witness": null
+    },
+    "edge_counts": {
+      "CC": 0,
+      "CR": 0,
+      "RC": 0,
+      "RR": 0
+    },
+    "elapsed_seconds": 4.112499999997521e-05,
+    "graph_hex": {
+      "CC": "0000000000000000000000000000000000000000000000000000000000000000",
+      "CR": "0000000000000000000000000000000000000000000000000000000000000000",
+      "RC": "0000000000000000000000000000000000000000000000000000000000000000",
+      "RR": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "id": "side2_join_cap"
+  },
+  "limits": [
+    "The six full plants reaching a cap test non-exclusion semantics; they do not claim the registered cap usually finds a SAT witness.",
+    "The binary p=1 negative is not a text plant.",
+    "No Rev7 ciphertext was extracted or joined; only the accepted prior 80-row selection ledger was read."
+  ],
+  "new_target_search": false,
+  "prior_target_ledger_read": true,
+  "reduced_same_path": [
+    {
+      "name": "empty",
+      "oracle_sat": true,
+      "row": {
+        "analysis": {
+          "candidate_counts": {
+            "CR": 24,
+            "RC": 24,
+            "join_space": 576,
+            "joins_examined": 5
+          },
+          "complete": false,
+          "limit": {
+            "cross_candidates": 1000000,
+            "join_pairs": 1000000
+          },
+          "obstruction_counts": {
+            "geometry": 4
+          },
+          "partial_obstruction_digest": "d5b8e064caf5d32a5eb8624f06e5d2501f78c385c59360c95c19adad47a3d34a",
+          "selected": {
+            "A": [
+              0,
+              1
+            ],
+            "B": [
+              0,
+              2
+            ],
+            "C": [
+              0,
+              2
+            ],
+            "D": [
+              0,
+              1
+            ]
+          },
+          "side": 2,
+          "status": "sat",
+          "witness": {
+            "columns": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ],
+            "forbidden_coordinate": 0,
+            "mapping": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "orbit": "diagonal",
+            "rows": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        },
+        "edge_counts": {
+          "CC": 0,
+          "CR": 0,
+          "RC": 0,
+          "RR": 0
+        },
+        "elapsed_seconds": 7.76250000000013e-05,
+        "graph_hex": {
+          "CC": "0000000000000000000000000000000000000000000000000000000000000000",
+          "CR": "0000000000000000000000000000000000000000000000000000000000000000",
+          "RC": "0000000000000000000000000000000000000000000000000000000000000000",
+          "RR": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "id": "empty"
+      }
+    },
+    {
+      "name": "complete_rc",
+      "oracle_sat": false,
+      "row": {
+        "analysis": {
+          "all_pairs_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "candidate_counts": {
+            "CR": 24,
+            "RC": 0,
+            "join_space": 0,
+            "joins_examined": 0
+          },
+          "complete": true,
+          "limit": {
+            "cross_candidates": 1000000,
+            "join_pairs": 1000000
+          },
+          "obstruction_counts": {},
+          "side": 2,
+          "status": "unsat",
+          "witness": null
+        },
+        "edge_counts": {
+          "CC": 0,
+          "CR": 0,
+          "RC": 16,
+          "RR": 0
+        },
+        "elapsed_seconds": 2.3249999999998966e-05,
+        "graph_hex": {
+          "CC": "0000000000000000000000000000000000000000000000000000000000000000",
+          "CR": "0000000000000000000000000000000000000000000000000000000000000000",
+          "RC": "000000000000000000000000000000000000000000000000000f000f000f000f",
+          "RR": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "id": "complete_rc"
+      }
+    },
+    {
+      "name": "planted_mixed",
+      "oracle_sat": true,
+      "row": {
+        "analysis": {
+          "candidate_counts": {
+            "CR": 1,
+            "RC": 1,
+            "join_space": 1,
+            "joins_examined": 1
+          },
+          "complete": false,
+          "limit": {
+            "cross_candidates": 1000000,
+            "join_pairs": 1000000
+          },
+          "obstruction_counts": {},
+          "partial_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "selected": {
+            "A": [
+              0,
+              2
+            ],
+            "B": [
+              2,
+              3
+            ],
+            "C": [
+              2,
+              3
+            ],
+            "D": [
+              0,
+              2
+            ]
+          },
+          "side": 2,
+          "status": "sat",
+          "witness": {
+            "columns": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "forbidden_coordinate": 0,
+            "mapping": [
+              1,
+              3,
+              0,
+              2
+            ],
+            "orbit": "diagonal",
+            "rows": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          }
+        },
+        "edge_counts": {
+          "CC": 12,
+          "CR": 12,
+          "RC": 12,
+          "RR": 12
+        },
+        "elapsed_seconds": 3.570799999999888e-05,
+        "graph_hex": {
+          "CC": "00000000000000000000000000000000000000000000000000030003000f000f",
+          "CR": "000000000000000000000000000000000000000000000000000a000a000f000f",
+          "RC": "000000000000000000000000000000000000000000000000000f0003000f0003",
+          "RR": "000000000000000000000000000000000000000000000000000f000a000f000a"
+        },
+        "id": "planted_mixed"
+      }
+    },
+    {
+      "name": "same_symbol_mixed",
+      "oracle_sat": true,
+      "row": {
+        "analysis": {
+          "candidate_counts": {
+            "CR": 18,
+            "RC": 18,
+            "join_space": 324,
+            "joins_examined": 6
+          },
+          "complete": false,
+          "limit": {
+            "cross_candidates": 1000000,
+            "join_pairs": 1000000
+          },
+          "obstruction_counts": {
+            "geometry": 5
+          },
+          "partial_obstruction_digest": "5986b36b99ee3d748222cd40ff61910a76d97d60a91ec6bb35f71244350a72cd",
+          "selected": {
+            "A": [
+              0,
+              1
+            ],
+            "B": [
+              1,
+              2
+            ],
+            "C": [
+              0,
+              3
+            ],
+            "D": [
+              2,
+              3
+            ]
+          },
+          "side": 2,
+          "status": "sat",
+          "witness": {
+            "columns": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "forbidden_coordinate": 1,
+            "mapping": [
+              0,
+              1,
+              3,
+              2
+            ],
+            "orbit": "off_diagonal",
+            "rows": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        },
+        "edge_counts": {
+          "CC": 1,
+          "CR": 1,
+          "RC": 1,
+          "RR": 1
+        },
+        "elapsed_seconds": 5.51670000000018e-05,
+        "graph_hex": {
+          "CC": "0000000000000000000000000000000000000000000000000000000400000000",
+          "CR": "0000000000000000000000000000000000000000000000000000000000000001",
+          "RC": "0000000000000000000000000000000000000000000000000000000000000001",
+          "RR": "0000000000000000000000000000000000000000000000000000000000020000"
+        },
+        "id": "same_symbol_mixed"
+      }
+    }
+  ],
+  "registered_caps": {
+    "max_cross_candidates": 10000,
+    "max_join_pairs": 1000000
+  },
+  "seed": 20260911,
+  "selection": {
+    "count": 80,
+    "first_id": "forward:p229",
+    "last_id": "nibble_swap:p463",
+    "selection_sha256": "6d6f5d1125713e8378f32ae987c3a91d8454122d83089c05c8152a3c3fa12e7a"
+  },
+  "source_hashes": {
+    "../odd_rectangle_join/cap_semantics.json": "f2defd85271236da7928c1ab1156fc66c7b41523dae417e4502b922053f89bbe",
+    "../odd_rectangle_join/cap_semantics.py": "747c504148e5bd502c89bbbd57c918b24da5900593bb52cb05503b7ebd6ac249",
+    "../odd_rectangle_join/controls.json": "62c78645ffd10d892e54225a88917a63ad7e8fee99f80f1b1feae3788440dc23",
+    "../odd_rectangle_join/controls.py": "ba95fb05db8608dfeada0fd953f4d7d53b9c860c35922553a0b215faf21d7f8d",
+    "../odd_rectangle_join/model.py": "221ea25d48f80a26476e1fe4abea0e89e099bf35f4325ed8e8f7aef6bd00be45",
+    "driver_controls.py": "d64811a0017a18ef5b5b1f02746f8f95194d257953faf11ee6021962320213ee",
+    "run_target.py": "0520c0f710b281735e594f29a3375c922ad4eb5acba7aa83d7872ea4832b3d8d",
+    "selection_controls.json": "c303e6fa80a8346b1868e202bc3f3e8dcf309ca5fcfa204cc77c9b00aaf8f085",
+    "selection_controls.py": "2fc849e4b26abc9eb54c7f99ff7b85e605aac25a0f00ede2df2e96d4d24d746e"
+  },
+  "target_evaluated": false
+}

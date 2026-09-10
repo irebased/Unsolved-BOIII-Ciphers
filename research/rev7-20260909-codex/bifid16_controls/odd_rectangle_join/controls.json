@@ -1,0 +1,1741 @@
+{
+  "assertions": {
+    "accepted_12_plus_8_extra_reduced_exact_oracle": true,
+    "capped_join_never_excludes": true,
+    "complete_RC_and_CR_immediate_exhaustive_unsat": true,
+    "diagonal_and_offdiagonal_geometry_sufficient_side2": true,
+    "six_full_ascii_plants_retain_actual_and_constructed_witnesses": true
+  },
+  "cap_control": {
+    "candidate_counts": {
+      "CR": null,
+      "RC_lower_bound": 2,
+      "join_space": null,
+      "joins_examined": 0
+    },
+    "complete": false,
+    "limit": {
+      "cross_candidates": 1,
+      "join_pairs": 1
+    },
+    "phase": "RC_candidate_generation",
+    "side": 4,
+    "status": "incomplete",
+    "witness": null
+  },
+  "full_plants": [
+    {
+      "accepted_coordinate_control_metadata_exact": true,
+      "actual_distinct_square_witness_valid": true,
+      "case": 0,
+      "cipher_sha256": "5e482c92801105c4a4d436949335e9a43bce2ff490e8f0117acc8eab2620b781",
+      "edge_sha256": "e17197c272595024a1da798f032dddbf1fff61a107cbfbb730b625206d1bb90d",
+      "elapsed_seconds": 0.213588375,
+      "join": {
+        "candidate_counts": {
+          "CR": 126491,
+          "RC": 160499,
+          "join_space": 20301679009,
+          "joins_examined": 22724
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "geometry": 22723
+        },
+        "partial_obstruction_digest": "504d3a3351998548affa622c5f71f5dab0b3ff62e770da6e9b10c319ae89180f",
+        "selected": {
+          "A": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "B": [
+            0,
+            11,
+            12,
+            15
+          ],
+          "C": [
+            1,
+            4,
+            5,
+            7
+          ],
+          "D": [
+            4,
+            10,
+            12,
+            13
+          ]
+        },
+        "side": 4,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              1,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              11,
+              12,
+              15
+            ],
+            [
+              2,
+              6,
+              9,
+              10
+            ],
+            [
+              3,
+              8,
+              13,
+              14
+            ]
+          ],
+          "forbidden_coordinate": 1,
+          "mapping": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            8,
+            10,
+            12,
+            11,
+            14,
+            6,
+            9,
+            5,
+            7,
+            15,
+            13
+          ],
+          "orbit": "off_diagonal",
+          "rows": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              4,
+              10,
+              12,
+              13
+            ],
+            [
+              5,
+              6,
+              8,
+              11
+            ],
+            [
+              7,
+              9,
+              14,
+              15
+            ]
+          ]
+        }
+      },
+      "period": 3,
+      "same_square": true
+    },
+    {
+      "accepted_coordinate_control_metadata_exact": true,
+      "actual_distinct_square_witness_valid": true,
+      "case": 1,
+      "cipher_sha256": "738041e8b9664f08a03f313856cffde281eb89379ec2ea0dd5f267a5e51187c2",
+      "edge_sha256": "a3f8c1ba1510d8f30f9e81a955c8f9f218f8d34c75b97aef2fbb76c6d74b3cd3",
+      "elapsed_seconds": 0.224415875,
+      "join": {
+        "candidate_counts": {
+          "CR": 209600,
+          "RC": 108359,
+          "join_space": 22712046400,
+          "joins_examined": 16944
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "geometry": 16943
+        },
+        "partial_obstruction_digest": "23bde29be7fac82235dacbea99a33323b16b8e8a6f4e26890d01068a70684c26",
+        "selected": {
+          "A": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "B": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "C": [
+            0,
+            3,
+            4,
+            10
+          ],
+          "D": [
+            4,
+            7,
+            9,
+            14
+          ]
+        },
+        "side": 4,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              0,
+              3,
+              4,
+              10
+            ],
+            [
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              1,
+              9,
+              11,
+              13
+            ],
+            [
+              2,
+              12,
+              14,
+              15
+            ]
+          ],
+          "forbidden_coordinate": 1,
+          "mapping": [
+            0,
+            2,
+            3,
+            8,
+            4,
+            1,
+            9,
+            5,
+            13,
+            6,
+            12,
+            10,
+            11,
+            14,
+            7,
+            15
+          ],
+          "orbit": "off_diagonal",
+          "rows": [
+            [
+              0,
+              1,
+              2,
+              5
+            ],
+            [
+              4,
+              7,
+              9,
+              14
+            ],
+            [
+              3,
+              6,
+              11,
+              12
+            ],
+            [
+              8,
+              10,
+              13,
+              15
+            ]
+          ]
+        }
+      },
+      "period": 5,
+      "same_square": false
+    },
+    {
+      "accepted_coordinate_control_metadata_exact": true,
+      "actual_distinct_square_witness_valid": true,
+      "case": 2,
+      "cipher_sha256": "16d9d50bc7e2e13b64144341291d81ebf94989b1d454ba743997c017b1fa9f75",
+      "edge_sha256": "7bd3e8b98f7941b182f43cbf00c17df08378cc76b70808f40c708597ef40db18",
+      "elapsed_seconds": 0.18069637500000008,
+      "join": {
+        "candidate_counts": {
+          "CR": 90965,
+          "RC": 84624,
+          "join_space": 7697822160,
+          "joins_examined": 42184
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "geometry": 42183
+        },
+        "partial_obstruction_digest": "fb15fd1516f24e67391cf6f266a2ba7846ade300e28a505fefab12bda376620b",
+        "selected": {
+          "A": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "B": [
+            0,
+            4,
+            5,
+            7
+          ],
+          "C": [
+            1,
+            6,
+            8,
+            9
+          ],
+          "D": [
+            4,
+            6,
+            10,
+            12
+          ]
+        },
+        "side": 4,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              1,
+              6,
+              8,
+              9
+            ],
+            [
+              0,
+              4,
+              5,
+              7
+            ],
+            [
+              2,
+              10,
+              11,
+              14
+            ],
+            [
+              3,
+              12,
+              13,
+              15
+            ]
+          ],
+          "forbidden_coordinate": 1,
+          "mapping": [
+            1,
+            0,
+            2,
+            3,
+            5,
+            9,
+            4,
+            13,
+            8,
+            12,
+            6,
+            10,
+            7,
+            11,
+            14,
+            15
+          ],
+          "orbit": "off_diagonal",
+          "rows": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              4,
+              6,
+              10,
+              12
+            ],
+            [
+              5,
+              8,
+              11,
+              13
+            ],
+            [
+              7,
+              9,
+              14,
+              15
+            ]
+          ]
+        }
+      },
+      "period": 31,
+      "same_square": false
+    },
+    {
+      "accepted_coordinate_control_metadata_exact": true,
+      "actual_distinct_square_witness_valid": true,
+      "case": 3,
+      "cipher_sha256": "34f1a691fc8284f252f9686849a8181567991196f12f73109f6be1ea6e8acc77",
+      "edge_sha256": "460353303b55b763751271a6761ffacad869d2cd298ff6ebe6fa19c7a6d06d03",
+      "elapsed_seconds": 0.18509766699999997,
+      "join": {
+        "candidate_counts": {
+          "CR": 155726,
+          "RC": 120069,
+          "join_space": 18697865094,
+          "joins_examined": 11808
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "geometry": 11807
+        },
+        "partial_obstruction_digest": "da844d32ddd79337dfcc05cb4be11478da13f375072b699d20bffd3ec57c7477",
+        "selected": {
+          "A": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "B": [
+            1,
+            6,
+            11,
+            12
+          ],
+          "C": [
+            0,
+            4,
+            5,
+            7
+          ],
+          "D": [
+            4,
+            6,
+            10,
+            14
+          ]
+        },
+        "side": 4,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              0,
+              4,
+              5,
+              7
+            ],
+            [
+              1,
+              6,
+              11,
+              12
+            ],
+            [
+              2,
+              8,
+              10,
+              13
+            ],
+            [
+              3,
+              9,
+              14,
+              15
+            ]
+          ],
+          "forbidden_coordinate": 1,
+          "mapping": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            8,
+            5,
+            12,
+            10,
+            11,
+            6,
+            9,
+            13,
+            14,
+            7,
+            15
+          ],
+          "orbit": "off_diagonal",
+          "rows": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              4,
+              6,
+              10,
+              14
+            ],
+            [
+              5,
+              8,
+              9,
+              11
+            ],
+            [
+              7,
+              12,
+              13,
+              15
+            ]
+          ]
+        }
+      },
+      "period": 99,
+      "same_square": true
+    },
+    {
+      "accepted_coordinate_control_metadata_exact": true,
+      "actual_distinct_square_witness_valid": true,
+      "case": 4,
+      "cipher_sha256": "3ef164a1a77c958873147e3f60f0eee6db7d5acdeaa3d6f4358d82145cdcd877",
+      "edge_sha256": "4f2c19418f21c5113729ae3d2d1f2bb5d8ab458d65274effde6d98959ee3b272",
+      "elapsed_seconds": 1.5996225000000002,
+      "join": {
+        "candidate_counts": {
+          "CR": 1601600,
+          "RC": 187983,
+          "join_space": 301073572800,
+          "joins_examined": 215601
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "geometry": 215600
+        },
+        "partial_obstruction_digest": "355886214db235c07f47de85e9b0253bb2940d776bade39d193338ddb5763652",
+        "selected": {
+          "A": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "B": [
+            0,
+            4,
+            6,
+            7
+          ],
+          "C": [
+            0,
+            4,
+            6,
+            7
+          ],
+          "D": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "side": 4,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              0,
+              4,
+              6,
+              7
+            ],
+            [
+              1,
+              5,
+              10,
+              13
+            ],
+            [
+              2,
+              8,
+              11,
+              14
+            ],
+            [
+              3,
+              9,
+              12,
+              15
+            ]
+          ],
+          "forbidden_coordinate": 0,
+          "mapping": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            12,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15
+          ],
+          "orbit": "diagonal",
+          "rows": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              4,
+              5,
+              8,
+              9
+            ],
+            [
+              6,
+              10,
+              11,
+              12
+            ],
+            [
+              7,
+              13,
+              14,
+              15
+            ]
+          ]
+        }
+      },
+      "period": 1091,
+      "same_square": false
+    },
+    {
+      "accepted_coordinate_control_metadata_exact": true,
+      "actual_distinct_square_witness_valid": true,
+      "case": 5,
+      "cipher_sha256": "5bbb6832c2808b66aa4d267cebb05195a9484d0351610329ef583bd33c3e7baf",
+      "edge_sha256": "b24e1133df20876a5cdd61ba01b826a6e55613c3639134294701e07c6b62389c",
+      "elapsed_seconds": 1.8872835829999999,
+      "join": {
+        "candidate_counts": {
+          "CR": 1601600,
+          "RC": 326087,
+          "join_space": 522260939200,
+          "joins_examined": 327064
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "geometry": 327063
+        },
+        "partial_obstruction_digest": "7840f35842d3d9264faffaab937f1fb27ef1bef0e1a3d204b77b974b1db6100d",
+        "selected": {
+          "A": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "B": [
+            1,
+            3,
+            5,
+            6
+          ],
+          "C": [
+            0,
+            7,
+            8,
+            9
+          ],
+          "D": [
+            3,
+            7,
+            10,
+            11
+          ]
+        },
+        "side": 4,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              0,
+              7,
+              8,
+              9
+            ],
+            [
+              1,
+              3,
+              5,
+              6
+            ],
+            [
+              2,
+              10,
+              12,
+              14
+            ],
+            [
+              4,
+              11,
+              13,
+              15
+            ]
+          ],
+          "forbidden_coordinate": 1,
+          "mapping": [
+            0,
+            1,
+            2,
+            5,
+            3,
+            9,
+            13,
+            4,
+            8,
+            12,
+            6,
+            7,
+            10,
+            11,
+            14,
+            15
+          ],
+          "orbit": "off_diagonal",
+          "rows": [
+            [
+              0,
+              1,
+              2,
+              4
+            ],
+            [
+              3,
+              7,
+              10,
+              11
+            ],
+            [
+              5,
+              8,
+              12,
+              13
+            ],
+            [
+              6,
+              9,
+              14,
+              15
+            ]
+          ]
+        }
+      },
+      "period": 1091,
+      "same_square": false
+    }
+  ],
+  "full_unsat": [
+    {
+      "complete_type": "RC",
+      "edges": 256,
+      "elapsed_seconds": 0.7280163750000002,
+      "independent_reason": "a complete typed graph realizes every coordinate for every square",
+      "join": {
+        "all_pairs_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidate_counts": {
+          "CR": 1601600,
+          "RC": 0,
+          "join_space": 0,
+          "joins_examined": 0
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {},
+        "side": 4,
+        "status": "unsat",
+        "witness": null
+      }
+    },
+    {
+      "complete_type": "CR",
+      "edges": 256,
+      "elapsed_seconds": 1.1467061249999997,
+      "independent_reason": "a complete typed graph realizes every coordinate for every square",
+      "join": {
+        "all_pairs_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidate_counts": {
+          "CR": 0,
+          "RC": 1601600,
+          "join_space": 0,
+          "joins_examined": 0
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {},
+        "side": 4,
+        "status": "unsat",
+        "witness": null
+      }
+    }
+  ],
+  "identity": "ASTRA",
+  "limits": [
+    "SAT witnesses establish only absence of one coordinate, not text or UTF-8.",
+    "An UNSAT result is emitted only after all feasible RC x CR candidates are obstructed; capped joins are incomplete.",
+    "Worst-case RC and CR candidate lists can each be large and their Cartesian join can be impractical; empty graphs deliberately use early SAT exit.",
+    "No target graph was read or profiled."
+  ],
+  "reduced_cases": [
+    {
+      "edge_count": 0,
+      "edge_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "elapsed_seconds": 8.808299999999922e-05,
+      "join": {
+        "candidate_counts": {
+          "CR": 24,
+          "RC": 24,
+          "join_space": 576,
+          "joins_examined": 5
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "geometry": 4
+        },
+        "partial_obstruction_digest": "d5b8e064caf5d32a5eb8624f06e5d2501f78c385c59360c95c19adad47a3d34a",
+        "selected": {
+          "A": [
+            0,
+            1
+          ],
+          "B": [
+            0,
+            2
+          ],
+          "C": [
+            0,
+            2
+          ],
+          "D": [
+            0,
+            1
+          ]
+        },
+        "side": 2,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "forbidden_coordinate": 0,
+          "mapping": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "orbit": "diagonal",
+          "rows": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      },
+      "name": "empty",
+      "oracle_sat": true
+    },
+    {
+      "edge_count": 16,
+      "edge_sha256": "5e04419dc2416a2920a2304cc7d8efd462af8925eacbb90da868be8b3dedbc91",
+      "elapsed_seconds": 2.5500000000001216e-05,
+      "join": {
+        "all_pairs_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidate_counts": {
+          "CR": 24,
+          "RC": 0,
+          "join_space": 0,
+          "joins_examined": 0
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {},
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "complete_rc",
+      "oracle_sat": false
+    },
+    {
+      "edge_count": 48,
+      "edge_sha256": "49c9c54e535567da5d7cb168482f414bf773b321e4c411656ec829a705708b60",
+      "elapsed_seconds": 4.2916999999999955e-05,
+      "join": {
+        "candidate_counts": {
+          "CR": 1,
+          "RC": 1,
+          "join_space": 1,
+          "joins_examined": 1
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {},
+        "partial_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "selected": {
+          "A": [
+            0,
+            2
+          ],
+          "B": [
+            2,
+            3
+          ],
+          "C": [
+            2,
+            3
+          ],
+          "D": [
+            0,
+            2
+          ]
+        },
+        "side": 2,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "forbidden_coordinate": 0,
+          "mapping": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "orbit": "diagonal",
+          "rows": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        }
+      },
+      "name": "planted_mixed",
+      "oracle_sat": true
+    },
+    {
+      "edge_count": 4,
+      "edge_sha256": "f9b42cf111ab74f45f2d01bd28f6762589b6e03c59932b414719e02dbc30339e",
+      "elapsed_seconds": 5.88749999999999e-05,
+      "join": {
+        "candidate_counts": {
+          "CR": 18,
+          "RC": 18,
+          "join_space": 324,
+          "joins_examined": 6
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "geometry": 5
+        },
+        "partial_obstruction_digest": "5986b36b99ee3d748222cd40ff61910a76d97d60a91ec6bb35f71244350a72cd",
+        "selected": {
+          "A": [
+            0,
+            1
+          ],
+          "B": [
+            1,
+            2
+          ],
+          "C": [
+            0,
+            3
+          ],
+          "D": [
+            2,
+            3
+          ]
+        },
+        "side": 2,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "forbidden_coordinate": 1,
+          "mapping": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "orbit": "off_diagonal",
+          "rows": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      },
+      "name": "same_symbol_mixed",
+      "oracle_sat": true
+    },
+    {
+      "edge_count": 5,
+      "edge_sha256": "7075ae59fffbe22011d98792379281c5c9744a6ad8602288d2ae9620dd1621e2",
+      "elapsed_seconds": 8.28330000000009e-05,
+      "join": {
+        "candidate_counts": {
+          "CR": 24,
+          "RC": 18,
+          "join_space": 432,
+          "joins_examined": 20
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "CC_edge": 1,
+          "geometry": 18
+        },
+        "partial_obstruction_digest": "73c49c7c12989c064777fad4469f9b332b7447f8f32eabffd817c04494214ea3",
+        "selected": {
+          "A": [
+            0,
+            1
+          ],
+          "B": [
+            0,
+            2
+          ],
+          "C": [
+            1,
+            3
+          ],
+          "D": [
+            2,
+            3
+          ]
+        },
+        "side": 2,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "forbidden_coordinate": 1,
+          "mapping": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "orbit": "off_diagonal",
+          "rows": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      },
+      "name": "random_0",
+      "oracle_sat": true
+    },
+    {
+      "edge_count": 13,
+      "edge_sha256": "3cc87543dbcbd0a9672b53c05b00f1d77a10b36b7b11b14f8affc54e54c282e7",
+      "elapsed_seconds": 0.00012262499999999774,
+      "join": {
+        "candidate_counts": {
+          "CR": 18,
+          "RC": 8,
+          "join_space": 144,
+          "joins_examined": 45
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "RR_edge": 4,
+          "geometry": 40
+        },
+        "partial_obstruction_digest": "7b7f450736a64cf6be3a8276cca96db563917dda4f12400acb8f105cb58b0884",
+        "selected": {
+          "A": [
+            0,
+            2
+          ],
+          "B": [
+            0,
+            3
+          ],
+          "C": [
+            0,
+            3
+          ],
+          "D": [
+            0,
+            2
+          ]
+        },
+        "side": 2,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "forbidden_coordinate": 0,
+          "mapping": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "orbit": "diagonal",
+          "rows": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        }
+      },
+      "name": "random_1",
+      "oracle_sat": true
+    },
+    {
+      "edge_count": 18,
+      "edge_sha256": "c0f6052e4904817abba9c97dd5127b14644c8f8d9d339aede2a76b659abff36e",
+      "elapsed_seconds": 0.00016483299999999965,
+      "join": {
+        "all_pairs_obstruction_digest": "0c8d6b7c3aaa6b7f347119a395fe9c0c72d17d2718222b65fa3d6b1e634b39d8",
+        "candidate_counts": {
+          "CR": 8,
+          "RC": 10,
+          "join_space": 80,
+          "joins_examined": 80
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "RR_edge": 6,
+          "geometry": 74
+        },
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "random_2",
+      "oracle_sat": false
+    },
+    {
+      "edge_count": 30,
+      "edge_sha256": "6c6e3e2088d789ae861fdc0e9b89823249b2759d07e4c3065efc07d5f0dd6423",
+      "elapsed_seconds": 4.345799999999969e-05,
+      "join": {
+        "all_pairs_obstruction_digest": "51af43f14a8027ad9ed7b2db658a0ddba25c6aab5a754c53bd00e41dfade1a32",
+        "candidate_counts": {
+          "CR": 4,
+          "RC": 3,
+          "join_space": 12,
+          "joins_examined": 12
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "geometry": 12
+        },
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "random_3",
+      "oracle_sat": false
+    },
+    {
+      "edge_count": 28,
+      "edge_sha256": "2601cc7722367111c7990a301eacc4cb1d6acccb2133d97e401470a0c9bbf5e6",
+      "elapsed_seconds": 3.0291999999997737e-05,
+      "join": {
+        "all_pairs_obstruction_digest": "5986b36b99ee3d748222cd40ff61910a76d97d60a91ec6bb35f71244350a72cd",
+        "candidate_counts": {
+          "CR": 5,
+          "RC": 1,
+          "join_space": 5,
+          "joins_examined": 5
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "geometry": 5
+        },
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "random_4",
+      "oracle_sat": false
+    },
+    {
+      "edge_count": 40,
+      "edge_sha256": "24642afeba8b3182d07f5372903b523263a6bd48a975da667e2a7f422ac265d2",
+      "elapsed_seconds": 1.920900000000267e-05,
+      "join": {
+        "all_pairs_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidate_counts": {
+          "CR": 0,
+          "RC": 0,
+          "join_space": 0,
+          "joins_examined": 0
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {},
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "random_5",
+      "oracle_sat": false
+    },
+    {
+      "edge_count": 43,
+      "edge_sha256": "ab3a16a449bece3b0d40ec7e9b570de40ce058dd3ce07803db203761b51ac60f",
+      "elapsed_seconds": 1.912500000000178e-05,
+      "join": {
+        "all_pairs_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidate_counts": {
+          "CR": 1,
+          "RC": 0,
+          "join_space": 0,
+          "joins_examined": 0
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {},
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "random_6",
+      "oracle_sat": false
+    },
+    {
+      "edge_count": 46,
+      "edge_sha256": "7700e9fa0bf4b4d900b3af13375e06d936745de041fb9715e3c2bddea9039c50",
+      "elapsed_seconds": 1.991700000000124e-05,
+      "join": {
+        "all_pairs_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidate_counts": {
+          "CR": 0,
+          "RC": 1,
+          "join_space": 0,
+          "joins_examined": 0
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {},
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "random_7",
+      "oracle_sat": false
+    },
+    {
+      "edge_count": 5,
+      "edge_sha256": "7075ae59fffbe22011d98792379281c5c9744a6ad8602288d2ae9620dd1621e2",
+      "elapsed_seconds": 8.220899999999975e-05,
+      "join": {
+        "candidate_counts": {
+          "CR": 24,
+          "RC": 18,
+          "join_space": 432,
+          "joins_examined": 20
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "CC_edge": 1,
+          "geometry": 18
+        },
+        "partial_obstruction_digest": "73c49c7c12989c064777fad4469f9b332b7447f8f32eabffd817c04494214ea3",
+        "selected": {
+          "A": [
+            0,
+            1
+          ],
+          "B": [
+            0,
+            2
+          ],
+          "C": [
+            1,
+            3
+          ],
+          "D": [
+            2,
+            3
+          ]
+        },
+        "side": 2,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "forbidden_coordinate": 1,
+          "mapping": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "orbit": "off_diagonal",
+          "rows": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      },
+      "name": "extra_random_0",
+      "oracle_sat": true
+    },
+    {
+      "edge_count": 14,
+      "edge_sha256": "1ba5cb60a5c2789260b76bc5b74964ebfcd53601a8a8fc70f05bfcbd1af70a0e",
+      "elapsed_seconds": 0.00011954099999999732,
+      "join": {
+        "candidate_counts": {
+          "CR": 18,
+          "RC": 8,
+          "join_space": 144,
+          "joins_examined": 45
+        },
+        "complete": false,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "RR_edge": 4,
+          "geometry": 40
+        },
+        "partial_obstruction_digest": "7b7f450736a64cf6be3a8276cca96db563917dda4f12400acb8f105cb58b0884",
+        "selected": {
+          "A": [
+            0,
+            2
+          ],
+          "B": [
+            0,
+            3
+          ],
+          "C": [
+            0,
+            3
+          ],
+          "D": [
+            0,
+            2
+          ]
+        },
+        "side": 2,
+        "status": "sat",
+        "witness": {
+          "columns": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "forbidden_coordinate": 0,
+          "mapping": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "orbit": "diagonal",
+          "rows": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        }
+      },
+      "name": "extra_random_1",
+      "oracle_sat": true
+    },
+    {
+      "edge_count": 22,
+      "edge_sha256": "9d9702c7340a476a381418caf62f38c594b5acc1ba95a64df7228e9e5e7288a2",
+      "elapsed_seconds": 7.995799999999803e-05,
+      "join": {
+        "all_pairs_obstruction_digest": "6c3380f0fee04d466e51f96b67b19e51131072e124dd98d2719b2b7a8ad77e55",
+        "candidate_counts": {
+          "CR": 4,
+          "RC": 8,
+          "join_space": 32,
+          "joins_examined": 32
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "RR_edge": 1,
+          "geometry": 31
+        },
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "extra_random_2",
+      "oracle_sat": false
+    },
+    {
+      "edge_count": 34,
+      "edge_sha256": "94e86d7570f0ca64778c3660c94bf557f6347f52f9d30f6e7a26b79be80c1dd9",
+      "elapsed_seconds": 2.6790999999998233e-05,
+      "join": {
+        "all_pairs_obstruction_digest": "0444dccc31be9c6fd7f679a01286af447341be43219ced132cfb4937448e6d2f",
+        "candidate_counts": {
+          "CR": 1,
+          "RC": 3,
+          "join_space": 3,
+          "joins_examined": 3
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "geometry": 3
+        },
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "extra_random_3",
+      "oracle_sat": false
+    },
+    {
+      "edge_count": 30,
+      "edge_sha256": "fdecc4ef064b63c0bda01e0e4d94927f986a7cfe9f8f9ca45dafcbccee842573",
+      "elapsed_seconds": 2.9292000000000207e-05,
+      "join": {
+        "all_pairs_obstruction_digest": "5986b36b99ee3d748222cd40ff61910a76d97d60a91ec6bb35f71244350a72cd",
+        "candidate_counts": {
+          "CR": 5,
+          "RC": 1,
+          "join_space": 5,
+          "joins_examined": 5
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {
+          "geometry": 5
+        },
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "extra_random_4",
+      "oracle_sat": false
+    },
+    {
+      "edge_count": 45,
+      "edge_sha256": "3ae42cf8774a060a4924aeab575fa87627fc7f4001e2290d7d21b3eb503a1d3e",
+      "elapsed_seconds": 1.941699999999727e-05,
+      "join": {
+        "all_pairs_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidate_counts": {
+          "CR": 0,
+          "RC": 0,
+          "join_space": 0,
+          "joins_examined": 0
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {},
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "extra_random_5",
+      "oracle_sat": false
+    },
+    {
+      "edge_count": 49,
+      "edge_sha256": "b85baf1d2d58ca0936d9e7ea9bccc96e6e4650b2d9631abb921ebf4c5d0e064d",
+      "elapsed_seconds": 1.933299999999985e-05,
+      "join": {
+        "all_pairs_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidate_counts": {
+          "CR": 0,
+          "RC": 0,
+          "join_space": 0,
+          "joins_examined": 0
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {},
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "extra_random_6",
+      "oracle_sat": false
+    },
+    {
+      "edge_count": 52,
+      "edge_sha256": "38cc1302854bd6bf83dbc918de36f3a4ed7c1e15edcdceb628ea89385825b6b2",
+      "elapsed_seconds": 1.9749999999998935e-05,
+      "join": {
+        "all_pairs_obstruction_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidate_counts": {
+          "CR": 0,
+          "RC": 0,
+          "join_space": 0,
+          "joins_examined": 0
+        },
+        "complete": true,
+        "limit": {
+          "cross_candidates": null,
+          "join_pairs": null
+        },
+        "obstruction_counts": {},
+        "side": 2,
+        "status": "unsat",
+        "witness": null
+      },
+      "name": "extra_random_7",
+      "oracle_sat": false
+    }
+  ],
+  "rev7_read": false,
+  "runtime": {
+    "python": "3.9.6"
+  },
+  "seed": 20260911,
+  "side2_geometry": {
+    "abstract_quadruples": 48,
+    "every_completion_valid": true,
+    "induced_quadruples": 48,
+    "sets_equal": true
+  },
+  "source_hashes": {
+    "controls.py": "ba95fb05db8608dfeada0fd953f4d7d53b9c860c35922553a0b215faf21d7f8d",
+    "model.py": "221ea25d48f80a26476e1fe4abea0e89e099bf35f4325ed8e8f7aef6bd00be45",
+    "odd_coordinate_avoidance/controls.json": "ab4219cfcbca6cf13a13a7c8bb1e63f915198be4ac4539bc23074ca3d70bd5bb",
+    "odd_coordinate_avoidance/controls.py": "61b2e271fd0d8329a98e68561f045bf088a2a3a375c98f678da06dfc5a4a2ca3",
+    "odd_coordinate_avoidance/model.py": "145341fe27c8e73ff4c62f009538631acf99d240f8f40fd8d88cbf76df1cca76",
+    "odd_typed_rectangles/controls.json": "e931ff2d471d089cb498f8e01733c82c62c2f2400d86fa527ff0d956bf9ecb6a",
+    "odd_typed_rectangles/controls.py": "31f9b11bb8849be786548508ad7d5843eff991a0de9ff538cd8d377c430b1426"
+  },
+  "target_evaluated": false
+}

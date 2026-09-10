@@ -1,0 +1,52 @@
+{
+  "authorization_reference": "ASTRA root review; FABLE plan444 and forthcoming frozen-source GO payload odd-join-go-20260910.json",
+  "authorized": true,
+  "driver_sha256": "0520c0f710b281735e594f29a3375c922ad4eb5acba7aa83d7872ea4832b3d8d",
+  "identity": "ASTRA",
+  "review_evidence": [
+    "Root full model, theorem, source and wrapper review complete; all requested independence and cap-control fixes accepted.",
+    "Root actual join controls replay PASS: ledger62c78645ffd10d892e54225a88917a63ad7e8fee99f80f1b1feae3788440dc23; independent CR and join cap assertions PASS.",
+    "Root actual preflight exit0: exact80 selection, four reduced oracle cases, six full plants preserving known witnesses, full4x4 SAT branch, reachable p1 UNSAT branch, actual join-cap incomplete branch."
+  ],
+  "scope": {
+    "cells": 80,
+    "identity": "ASTRA",
+    "input": "exact 80 unresolved cells selected from the accepted odd single-graph result",
+    "max_cross_candidates_per_type_per_cell": 10000,
+    "max_join_pairs_per_cell": 1000000,
+    "maximum_join_pairs_examined": 80000000,
+    "model": "joint typed-rectangle coordinate avoidance for two arbitrary fixed 4x4 Bifid squares under bag213",
+    "side": 4,
+    "status_meaning": {
+      "incomplete": "cap reached; unresolved",
+      "sat": "coordinate witness only; unresolved",
+      "unsat": "exhaustive coordinate-avoidance exclusion"
+    },
+    "typed_graphs": [
+      "RR",
+      "RC",
+      "CR",
+      "CC"
+    ]
+  },
+  "source_pins": {
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join/README.md": "61c9586e8fd2573b3db12bdee54479c8a9281975950fd13021524a264d9a4ddc",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join/cap_semantics.json": "f2defd85271236da7928c1ab1156fc66c7b41523dae417e4502b922053f89bbe",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join/cap_semantics.py": "747c504148e5bd502c89bbbd57c918b24da5900593bb52cb05503b7ebd6ac249",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join/controls.json": "62c78645ffd10d892e54225a88917a63ad7e8fee99f80f1b1feae3788440dc23",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join/controls.py": "ba95fb05db8608dfeada0fd953f4d7d53b9c860c35922553a0b215faf21d7f8d",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join/model.py": "221ea25d48f80a26476e1fe4abea0e89e099bf35f4325ed8e8f7aef6bd00be45",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join_target/README.md": "e932ef481434f3ba2aed1246f53db157803261a1e88ef766ba5fc2bf414d4d9a",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join_target/build_gate.py": "5d27b7a969ec7364a6e46426d0e857e9a3328b5641ece95ba2a926c2c741d895",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join_target/driver_controls.json": "4a0709c485bcfba792800d8032bc4efc7794b8fb37533ff4da8218742b6fea4a",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join_target/driver_controls.py": "d64811a0017a18ef5b5b1f02746f8f95194d257953faf11ee6021962320213ee",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join_target/preflight.py": "2fcb7da1faf4d73251de9bc2bdadbf9dfb7c387cf728593b8f29b8a609f006bb",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join_target/selection_controls.json": "c303e6fa80a8346b1868e202bc3f3e8dcf309ca5fcfa204cc77c9b00aaf8f085",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join_target/selection_controls.py": "2fc849e4b26abc9eb54c7f99ff7b85e605aac25a0f00ede2df2e96d4d24d746e",
+    "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join_target/target_gate.template.json": "19edb83cf3ef546c5a129621076a4563aa344dcc641f58941eb2b0e2edfd64c4",
+    "research/rev7-20260909-codex/bifid16_controls/odd_single_graph_target/run_target.py": "3c7ba1c60150a000018da4a1b14d523a827f8ed6b9f2187be39e169135babe06",
+    "research/rev7-20260909-codex/bifid16_controls/odd_single_graph_target/target_results.json": "1c90eaaf17af19b51d20ee29e720e4ee14fb7cd3c15ea9b919ff2ada28b1443d",
+    "research/rev7-20260909-codex/bifid16_controls/odd_single_graph_target/verification.json": "5552bcbad04d7019c13bd22f32bde1d1f1bba8036262b69a6688fc5784142952"
+  },
+  "target_evaluated": false
+}

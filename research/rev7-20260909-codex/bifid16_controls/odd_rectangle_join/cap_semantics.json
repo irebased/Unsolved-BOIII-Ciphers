@@ -1,0 +1,110 @@
+{
+  "CR_candidate_cap": {
+    "candidate_counts": {
+      "CR_lower_bound": 2,
+      "RC": 1,
+      "join_space": null,
+      "joins_examined": 0
+    },
+    "complete": false,
+    "limit": {
+      "cross_candidates": 1,
+      "join_pairs": 1
+    },
+    "phase": "CR_candidate_generation",
+    "side": 2,
+    "status": "incomplete",
+    "witness": null
+  },
+  "identity": "ASTRA",
+  "join_cap": {
+    "candidate_counts": {
+      "CR": 24,
+      "RC": 1,
+      "join_space": 24,
+      "joins_examined": 1
+    },
+    "complete": false,
+    "limit": {
+      "cross_candidates": 24,
+      "join_pairs": 1
+    },
+    "obstruction_counts": {
+      "geometry": 1
+    },
+    "partial_obstruction_digest": "b73875099ab28f31518e040466f232aa8e5474ef91558bcfe1a79468dcd03fdc",
+    "side": 2,
+    "status": "incomplete",
+    "witness": null
+  },
+  "ok": true,
+  "source_sha256": "747c504148e5bd502c89bbbd57c918b24da5900593bb52cb05503b7ebd6ac249",
+  "target_evaluated": false,
+  "uncapped": {
+    "candidate_counts": {
+      "CR": 24,
+      "RC": 1,
+      "join_space": 24,
+      "joins_examined": 5
+    },
+    "complete": false,
+    "limit": {
+      "cross_candidates": null,
+      "join_pairs": null
+    },
+    "obstruction_counts": {
+      "geometry": 4
+    },
+    "partial_obstruction_digest": "d5b8e064caf5d32a5eb8624f06e5d2501f78c385c59360c95c19adad47a3d34a",
+    "selected": {
+      "A": [
+        0,
+        1
+      ],
+      "B": [
+        0,
+        2
+      ],
+      "C": [
+        0,
+        2
+      ],
+      "D": [
+        0,
+        1
+      ]
+    },
+    "side": 2,
+    "status": "sat",
+    "witness": {
+      "columns": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "forbidden_coordinate": 0,
+      "mapping": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "orbit": "diagonal",
+      "rows": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    }
+  }
+}

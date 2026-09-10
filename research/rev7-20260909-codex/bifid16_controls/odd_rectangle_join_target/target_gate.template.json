@@ -1,0 +1,11 @@
+{
+  "authorized": false,
+  "identity": "ASTRA",
+  "note": "Template only. Root must create a fresh authorized target_gate.json after reviewing frozen hashes and public preregistration.",
+  "planned_caps": {
+    "max_cross_candidates": 10000,
+    "max_join_pairs": 1000000
+  },
+  "planned_cells": 80,
+  "target_evaluated": false
+}
