@@ -440,3 +440,17 @@ python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/target/pack_re
 ```
 
 This verifies lossless reconstruction, integrity and accounting of the controlled run; it is not a second target cryptographic replay. No candidates existed for the driver's independent candidate replay. The driver did not record elapsed time, so no timing is inferred. No plaintext or outside-interval bytes were recovered, and interposed encodings, transpositions, other modes, keys or depths remain outside scope.
+
+
+## Width-13 six-column byte-AMSCO proof
+
+The [width-13 proof](../byte_amsco/astra/prefix13/README.md) adds a necessary filter for inverse byte-AMSCO followed by eight-byte CFB8 decryption. At length 546, width 13 produces 28 complete rows. Alternating one/two-byte cells give every observed column exactly 42 bytes. Assigning six observed chunk ranks to the first six natural columns fixes the first nine ciphertext bytes in every row, including a complete CFB8 window and its next byte. Any computed ninth plaintext byte outside A105 rejects all 7! completions of that prefix, independent of the external IV. Thus 1,235,520 six-rank assignments partition all 13! column orders in each fixed start/orientation/backend context.
+
+Exhaustive width-7 and width-9 controls compare classifications and factorial partitions against a materialized full inverse, using a deterministic synthetic block function. Historical DES, Blowfish, Blowfish compatibility and RC2 are separately exercised in bounded width-13 plants: 1,025 assignments, both starts and two IVs, with exact computed-byte tuple comparisons and the same 28 true plaintext ninth bytes. These controls distinguish geometric accounting from historical primitive evidence.
+
+Root reviewed the proof and independently regenerated the complete [ledger](../byte_amsco/astra/prefix13/controls.json), SHA-256 `7729b861b73e2326bffb33caf1ba2951278bc8d1d0accee2b61973bed3c10de7`. Every deterministic field matched; only six temporary source-build path/hash fields differed. No target was read or evaluated, and a retained prefix would remain only a necessary-condition candidate.
+
+```sh
+python3 -S -B research/byte_amsco/astra/prefix13/controls.py
+python3 -B research/byte_amsco/astra/prefix13/controls.py --regenerate /tmp/prefix13-controls.json
+```

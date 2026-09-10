@@ -1,0 +1,566 @@
+{
+  "artifact_hashes": {
+    "controls.py": "4a0b02045783d88ae1979afd197176ff36a405802bdf5310519fa5f9a91ea2b9",
+    "proof.py": "2b349a27f9bed45c3e114fc1210fa5ecfac377c51e616f25ef8abfa3ab71efb2"
+  },
+  "assertions": {
+    "all_passed": true,
+    "bounded_width13_formula_matches_materialized_oracle": true,
+    "factorial_partition_exact": true,
+    "manual_cfb_matches_accepted_runtime": true,
+    "no_target": true,
+    "prefix_and_materialized_full_order_classification_equal": true,
+    "two_arbitrary_ivs_same_true_ninth_plaintext": true,
+    "width13_four_backends_both_starts": true,
+    "width7_both_starts_all_orders": true,
+    "width9_both_starts_all_orders": true
+  },
+  "dependencies": {
+    "parent_controls.json": "767d651729055d1d6fa202e8983635d3afafd46d06729924569db7260ed21175",
+    "parent_controls.py": "b187ab27bbde490399333c19ddf62f8cb13f514b90fb50614cb231b4a5f65ad0",
+    "parent_core.py": "2e7b413cb01396c8c6c97f21ad4a1e46939c3c1488c27e1c48bed8e24a48b990",
+    "runtime.py": "8b7899fc7aedb2de04cb900876987e6b3385922d4e2e53c913562659913818f4",
+    "runtime_controls.json": "483fa566e1030e489f5bb2958bcada9f1f95762f83104b7b9e8437c360787ee5"
+  },
+  "environment": {
+    "platform": "macOS-26.4-arm64-arm-64bit",
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "exhaustive_full_order_controls": [
+    {
+      "completion_weight": 1,
+      "factorial_partition": true,
+      "full_order_digest": "75218b902fb07369e2748144005a736802169db16ed01ea13b65dc93cbd3357b",
+      "full_orders": 5040,
+      "full_survivor_orders": 33,
+      "n": 42,
+      "prefix_digest": "eba94690fdb8e9992f25b0d601a979a7ab78658dfa04643369b0fda4de88052f",
+      "prefixes": 5040,
+      "rejected_prefixes": 5007,
+      "rows": 4,
+      "start": 1,
+      "survivor_orders_digest": "213abef2721b392b1bc044ad811de6c624da549fe6ff0494fdaa3da39c2a74aa",
+      "survivor_prefixes": 33,
+      "width": 7
+    },
+    {
+      "completion_weight": 1,
+      "factorial_partition": true,
+      "full_order_digest": "8ea0a5bfa1b94a8cd3b53e7d7f47647e19b4ad3914cdb0f29a286c87abea4c52",
+      "full_orders": 5040,
+      "full_survivor_orders": 89,
+      "n": 42,
+      "prefix_digest": "1d33c5e4f68c76b961094cbf034f62485b50d2d4c45cee24af0c6cb1381d175a",
+      "prefixes": 5040,
+      "rejected_prefixes": 4951,
+      "rows": 4,
+      "start": 2,
+      "survivor_orders_digest": "c36826dda7f4dd8a3bcd04754525ea60dffdf3d9136d855c4641736717977fae",
+      "survivor_prefixes": 89,
+      "width": 7
+    },
+    {
+      "completion_weight": 6,
+      "factorial_partition": true,
+      "full_order_digest": "3e9073b1d0e64877f0a5a5d832008a078663862ef787955731986f94af0ae862",
+      "full_orders": 362880,
+      "full_survivor_orders": 60168,
+      "n": 27,
+      "prefix_digest": "8feca1c2f96ec88af950f69f03a0bdd4a490f2366277c9413dab01fa2d04fa5f",
+      "prefixes": 60480,
+      "rejected_prefixes": 50452,
+      "rows": 2,
+      "start": 1,
+      "survivor_orders_digest": "3e7552a3cc63bdf170d6402727c1e63a689e82d819c5623fc5dd4ccc56bf0030",
+      "survivor_prefixes": 10028,
+      "width": 9
+    },
+    {
+      "completion_weight": 6,
+      "factorial_partition": true,
+      "full_order_digest": "c8bf81f3414dbdc447996f738dc8df290a757a7f9193313c1cb947b5ee964001",
+      "full_orders": 362880,
+      "full_survivor_orders": 60444,
+      "n": 27,
+      "prefix_digest": "c8c110d153faea4ee083fab70cff4ad762eb87305cae0948d824772cb2887724",
+      "prefixes": 60480,
+      "rejected_prefixes": 50406,
+      "rows": 2,
+      "start": 2,
+      "survivor_orders_digest": "214024ffd9324c6fe53d8ea9449c873c93eccb5ddcaac776b24b24281e94de68",
+      "survivor_prefixes": 10074,
+      "width": 9
+    }
+  ],
+  "identity": "ASTRA",
+  "rev7_file_read": false,
+  "row_geometry": {
+    "1": {
+      "chunk_bytes": 42,
+      "first_six_bytes_each_row": [
+        9
+      ],
+      "offset_digest": "05a7552095e1d72ba9a39956e477cdd935c15197599418c7eccd1c13ba770f93",
+      "rows": 28,
+      "size_digest": "b1bddaf05f39b51283cc4c144fe113f142844d694f90a805442138c72f47de81"
+    },
+    "2": {
+      "chunk_bytes": 42,
+      "first_six_bytes_each_row": [
+        9
+      ],
+      "offset_digest": "84a045ad86bf3c94a48c1eb00fce6920b5cce5b7315b98325e78873e60eb1a1a",
+      "rows": 28,
+      "size_digest": "2e4c3c01ce0c50c1a83fdedd7a05ec013b2a5a77ad1e4a65c9c7298534507f39"
+    }
+  },
+  "runtime_source_hashes": {
+    "bfcompat/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+    "bfcompat/blowfish-compat.c": "3584374a6bae4df8899e82d36255bbac0472904aed2095e3c08c57a5dd5b4cad",
+    "bfcompat/blowfish.h": "bb4a14ecbd5dc92105b290d9261ed562a980c6e42b0d9b4b56e62b4b6c39665b",
+    "bfcompat/libdefs.h": "cdffb7ef7bc27b6eea90b73174077c377d8260ffd111fb8de3c2bbc938e28a31",
+    "bfcompat/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "loki97/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+    "loki97/libdefs.h": "556ec4fcebae614cd90d05a2fead50d9355ff39f65b44c8f4044c7f209074c6e",
+    "loki97/loki97.c": "4e18d184ec55776edab065cee35ac44a9269b4160d7d35ad4ea277da55ae3308",
+    "loki97/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "twofish/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+    "twofish/libdefs.h": "59fea1cda69837c7e4c016b36ebcc7172107491370670d3fce7dc55ed38b4ea9",
+    "twofish/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "twofish/twofish.c": "20e72e38b445868fe71a0274e0b9bd658c6f30cb1ad731eb3364d82e319af598",
+    "twofish/twofish.h": "c233e43572b5837f9eddc3b6c3f495d91eaa858ade2f9eaf3bc2f959fe721a6b"
+  },
+  "scope": "Synthetic-only first-six natural-column necessary filter for rectangular odd-width byte AMSCO and 8-byte CFB8.",
+  "target_evaluated": false,
+  "theorem": {
+    "completion_weight": 5040,
+    "first_natural_columns_assigned": 6,
+    "first_six_bytes_per_row": 9,
+    "full_orders": 6227020800,
+    "meaning": "If any row's computed ninth plaintext byte is outside A105, all 7! full column orders extending that six-rank assignment are rejected.",
+    "n": 546,
+    "necessary_output_alphabet_size": 105,
+    "observed_chunk_bytes": 42,
+    "prefix_assignments_per_start_orientation_backend": 1235520,
+    "rows": 28,
+    "width": 13
+  },
+  "width13_bounded_plants": {
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "order": [
+      7,
+      0,
+      12,
+      4,
+      9,
+      2,
+      11,
+      5,
+      1,
+      8,
+      3,
+      10,
+      6
+    ],
+    "plaintext_bytes": 546,
+    "plaintext_sha256": "d92f2e8f72ecb65013ad362b41670792fb389bdcb2bc1e2382189c217a6e3bf9",
+    "records": [
+      {
+        "backend": "des",
+        "chunk_bytes": 42,
+        "rows": 28,
+        "start": 1,
+        "suites": [
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "4b11b52a6f00129768f7171ce2e46150a83f045e10e91cfdb8745e1ea76726df",
+            "iv_hex": "05182b3e5164778a",
+            "observed_sha256": "98f3bb148f1dacbfdc49f2734138e81586ee1971119a47d0db19b77f4539b2fc",
+            "suite": 0,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204350203454524620374d2033200a4f335954454c36414c31562e43",
+            "true_retained": true
+          },
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "9701cea1a1eec8ad3ddb899cc67b9596c9d7dd7bd150e59293b9bde1bf42e608",
+            "iv_hex": "586b7e91a4b7cadd",
+            "observed_sha256": "9afad72d5c88d285e8b9d07194a169e25a768e298604213cbdfa93f0acaf823d",
+            "suite": 1,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204350203454524620374d2033200a4f335954454c36414c31562e43",
+            "true_retained": true
+          }
+        ],
+        "two_iv_suites_same_true_ninth_bytes": true,
+        "width": 13
+      },
+      {
+        "backend": "des",
+        "chunk_bytes": 42,
+        "rows": 28,
+        "start": 2,
+        "suites": [
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "7a298969efde43fdae5f9f0bf9b02e2994821c52359e5ae9901a3bf141b10dd0",
+            "iv_hex": "05182b3e5164778a",
+            "observed_sha256": "8ccf3278426190451141ac5ca0cca1f18c77a51b94a2cb82f1da4574037d0c63",
+            "suite": 0,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204f50413445524920384d3033430a20335454464c37412031202e4f",
+            "true_retained": true
+          },
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "640494fedfbaae84db4048ed76627d37e906d54a0a85f2a0b3b8e8aee5751240",
+            "iv_hex": "586b7e91a4b7cadd",
+            "observed_sha256": "b7e10f0c1378168a7cf7fc880158fa6b66c627a464eadb8815bc7bede8f49a52",
+            "suite": 1,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204f50413445524920384d3033430a20335454464c37412031202e4f",
+            "true_retained": true
+          }
+        ],
+        "two_iv_suites_same_true_ninth_bytes": true,
+        "width": 13
+      },
+      {
+        "backend": "blowfish",
+        "chunk_bytes": 42,
+        "rows": 28,
+        "start": 1,
+        "suites": [
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "683135b380e6cd8b9150f9a8fc73820d26277682bc8a757e13e4a30285d93543",
+            "iv_hex": "2a3d506376899caf",
+            "observed_sha256": "6741a0ed0cfa9988dab18d6ff2cb683fcd636cb6a4dc6caa7363c3c2340bae14",
+            "suite": 0,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204350203454524620374d2033200a4f335954454c36414c31562e43",
+            "true_retained": true
+          },
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "135050a2752c3a6818eaf3ab4ff573e3a86558f1b43a460b91135c6c92af8f7c",
+            "iv_hex": "7d90a3b6c9dcef02",
+            "observed_sha256": "9e5e77ab77270eeed5ef7ab92c783f5a0faa3b8aecf77e781c56388498bc1e7a",
+            "suite": 1,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204350203454524620374d2033200a4f335954454c36414c31562e43",
+            "true_retained": true
+          }
+        ],
+        "two_iv_suites_same_true_ninth_bytes": true,
+        "width": 13
+      },
+      {
+        "backend": "blowfish",
+        "chunk_bytes": 42,
+        "rows": 28,
+        "start": 2,
+        "suites": [
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "55f2348b88e88322957fb926d2672aa492fa810b5a999ce1760460b77c461620",
+            "iv_hex": "2a3d506376899caf",
+            "observed_sha256": "f48b764526bb04fe098f78cc737fd33d08e3dc6f0935ae8aa5f8db0bfe5cf026",
+            "suite": 0,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204f50413445524920384d3033430a20335454464c37412031202e4f",
+            "true_retained": true
+          },
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "d8fb2c7b7c3e46195856df366479bb6bd1e58f2b057e7f6792bf86c237139d33",
+            "iv_hex": "7d90a3b6c9dcef02",
+            "observed_sha256": "e0dee13c7abded5dbd3ab6b7c1f8b979faa81c94ddb194d5d929f215b0edc15f",
+            "suite": 1,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204f50413445524920384d3033430a20335454464c37412031202e4f",
+            "true_retained": true
+          }
+        ],
+        "two_iv_suites_same_true_ninth_bytes": true,
+        "width": 13
+      },
+      {
+        "backend": "bfcompat",
+        "chunk_bytes": 42,
+        "rows": 28,
+        "start": 1,
+        "suites": [
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "384a6593b936ae965c254029cc31166abe97e3f651201ea13d09df72145296c2",
+            "iv_hex": "4f6275889baec1d4",
+            "observed_sha256": "d93fb808abd3500cec33936f55930dff9196cdb06584391a29ebb50824469dec",
+            "suite": 0,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204350203454524620374d2033200a4f335954454c36414c31562e43",
+            "true_retained": true
+          },
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "8cfd14532120eab7d255e073484359775c872de17e7a49bdd917a7c7c2004030",
+            "iv_hex": "a2b5c8dbee011427",
+            "observed_sha256": "3b56b13d090a1f3f6cf3b8e8f0715df6679606a5d8c0ae2157e16de7d230acfc",
+            "suite": 1,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204350203454524620374d2033200a4f335954454c36414c31562e43",
+            "true_retained": true
+          }
+        ],
+        "two_iv_suites_same_true_ninth_bytes": true,
+        "width": 13
+      },
+      {
+        "backend": "bfcompat",
+        "chunk_bytes": 42,
+        "rows": 28,
+        "start": 2,
+        "suites": [
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "4ea56a19a05f79d86fae74919fc298f0dfed7a53a668f420eb3eafe04e594b16",
+            "iv_hex": "4f6275889baec1d4",
+            "observed_sha256": "711fd57d6b3ac5641b17b39ed6f9be3ee2999ba14cfff9c3107c07d1a3d3b82a",
+            "suite": 0,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204f50413445524920384d3033430a20335454464c37412031202e4f",
+            "true_retained": true
+          },
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "dc2415f6e6e87fd32f08f6b8734add39d9da1d74a5b8ea6e805b62a04f6137fd",
+            "iv_hex": "a2b5c8dbee011427",
+            "observed_sha256": "6f2f0b790baca96848aa82a1a1aae4759ca6964232094f0cd2527d2fba74262f",
+            "suite": 1,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204f50413445524920384d3033430a20335454464c37412031202e4f",
+            "true_retained": true
+          }
+        ],
+        "two_iv_suites_same_true_ninth_bytes": true,
+        "width": 13
+      },
+      {
+        "backend": "rc2",
+        "chunk_bytes": 42,
+        "rows": 28,
+        "start": 1,
+        "suites": [
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "6147446e99faa9fbbe1e48c84a5b582984f7ce0518bbe4d10378939f70477739",
+            "iv_hex": "74879aadc0d3e6f9",
+            "observed_sha256": "d08fdb12603a9b77d1b4fe22d714c24fca4b8036a46ec627f3b1b9535599c5d8",
+            "suite": 0,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204350203454524620374d2033200a4f335954454c36414c31562e43",
+            "true_retained": true
+          },
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "91646e1c06d26394d8f48769b7073b2f300a7740b66caff16082a4eab9170f20",
+            "iv_hex": "c7daed001326394c",
+            "observed_sha256": "dbdacd8e720d5d0e88a2231442ac7457165540edc76ce1299439b81918f31020",
+            "suite": 1,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204350203454524620374d2033200a4f335954454c36414c31562e43",
+            "true_retained": true
+          }
+        ],
+        "two_iv_suites_same_true_ninth_bytes": true,
+        "width": 13
+      },
+      {
+        "backend": "rc2",
+        "chunk_bytes": 42,
+        "rows": 28,
+        "start": 2,
+        "suites": [
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "7325434c9185f3482e7eb6972fde69785be4d5a96c811c2db994423b759a0c8c",
+            "iv_hex": "74879aadc0d3e6f9",
+            "observed_sha256": "7611f9a343a5f0d1b8a116aa05db1218d5052e748d68ee2a581820f5c1979118",
+            "suite": 0,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204f50413445524920384d3033430a20335454464c37412031202e4f",
+            "true_retained": true
+          },
+          {
+            "bounded_assignments": 1025,
+            "bounded_formula_oracle_digest": "4de5c5ac4e285370f0d10ec1b05766d9ac8553311cf48af79b8d7936042ba46d",
+            "iv_hex": "c7daed001326394c",
+            "observed_sha256": "0803a37f86266b4f72fc588a201bde6019f90c89f13a55246cc76e03858dbe3e",
+            "suite": 1,
+            "true_assignment": [
+              1,
+              8,
+              5,
+              10,
+              3,
+              7
+            ],
+            "true_plaintext_ninth_hex": "204f50413445524920384d3033430a20335454464c37412031202e4f",
+            "true_retained": true
+          }
+        ],
+        "two_iv_suites_same_true_ninth_bytes": true,
+        "width": 13
+      }
+    ],
+    "temporary_build_evidence": {
+      "bfcompat": {
+        "command": [
+          "clang",
+          "-shared",
+          "-fPIC",
+          "-O2",
+          "-I",
+          "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/bfcompat",
+          "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/bfcompat/blowfish-compat.c",
+          "-o",
+          "/var/folders/n1/s06ddj2x6n399bddw1zsk44m0000gn/T/astra-prefix13-j2cl832m/libbfcompat.so"
+        ],
+        "sha256": "50c5d0e3329e60f2bb1be118269c9335e58722b3631cc4382267a64c3429635f"
+      },
+      "loki97": {
+        "command": [
+          "clang",
+          "-shared",
+          "-fPIC",
+          "-O2",
+          "-I",
+          "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/loki97",
+          "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/loki97/loki97.c",
+          "-o",
+          "/var/folders/n1/s06ddj2x6n399bddw1zsk44m0000gn/T/astra-prefix13-j2cl832m/libloki97.so"
+        ],
+        "sha256": "1c53ec94eff31d82a355b26515f4b7e2ae1527bcbacfac4ad20f262b8a6b2c8c"
+      },
+      "twofish": {
+        "command": [
+          "clang",
+          "-shared",
+          "-fPIC",
+          "-O2",
+          "-I",
+          "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/twofish",
+          "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/iv_independent/cascade/runtime/source/twofish/twofish.c",
+          "-o",
+          "/var/folders/n1/s06ddj2x6n399bddw1zsk44m0000gn/T/astra-prefix13-j2cl832m/libtwofish.so"
+        ],
+        "sha256": "d87bda087df1972347800926a168d55404233d004a435d23c324600eda1939e4"
+      }
+    }
+  }
+}
