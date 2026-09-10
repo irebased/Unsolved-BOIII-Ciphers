@@ -1,0 +1,20 @@
+{
+  "byte_dihedral": {
+    "aliases": 80,
+    "flags": 0,
+    "independently_rebuilt_inputs": 48,
+    "new_input_contexts": 13416,
+    "old_direct_outputs_matched": 1560,
+    "result_sha256": "7bf457c5e36a5b30e12b9161b1fc7396cd227fb5ed543f475149ae15faf68cd4",
+    "row_count": 14976,
+    "windows": 29568
+  },
+  "identity": "ASTRA",
+  "limb32": {
+    "candidates_reconstructed": 80,
+    "independent_full_score_max_error": 3.3651303965598345e-10,
+    "result_sha256": "cdd5dfde536cbd48048e2f367b9088d62f76e5070db2fe8deab162064652cba5"
+  },
+  "script_sha256": "fe383375c0bca19271708ebc257dea88c0b891fe0ec3e71c980adfb88ea27e0a",
+  "target_reexecuted": false
+}

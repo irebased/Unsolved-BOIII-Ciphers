@@ -1,0 +1,623 @@
+{
+  "identity": "ASTRA",
+  "target_evaluated": true,
+  "status": "complete",
+  "scope": {
+    "orientations": [
+      "forward",
+      "full_hex_reverse"
+    ],
+    "columns": 7,
+    "rows": 39,
+    "cut_hex_symbols": 4,
+    "orders": 5040,
+    "contexts": [
+      {
+        "cipher": "3-way",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 12
+      },
+      {
+        "cipher": "3-way",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 12
+      },
+      {
+        "cipher": "blowfish",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "blowfish",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "blowfish-compat",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "blowfish-compat",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "cast-128",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "cast-128",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "cast-256",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 16
+      },
+      {
+        "cipher": "cast-256",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 16
+      },
+      {
+        "cipher": "des",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "des",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "tripledes",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "tripledes",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "gost",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "gost",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "loki97",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 16
+      },
+      {
+        "cipher": "loki97",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 16
+      },
+      {
+        "cipher": "rc2",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "rc2",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "rijndael-128",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 16
+      },
+      {
+        "cipher": "rijndael-128",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 16
+      },
+      {
+        "cipher": "rijndael-192",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 24
+      },
+      {
+        "cipher": "rijndael-192",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 24
+      },
+      {
+        "cipher": "rijndael-256",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 32
+      },
+      {
+        "cipher": "rijndael-256",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 32
+      },
+      {
+        "cipher": "safer-64",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "safer-64",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "safer-128",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "safer-128",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "saferplus",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 16
+      },
+      {
+        "cipher": "saferplus",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 16
+      },
+      {
+        "cipher": "serpent",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 16
+      },
+      {
+        "cipher": "serpent",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 16
+      },
+      {
+        "cipher": "twofish",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 16
+      },
+      {
+        "cipher": "twofish",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 16
+      },
+      {
+        "cipher": "xtea",
+        "key": "Zombies",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "xtea",
+        "key": "ZOMBIES",
+        "iv": "ascii0",
+        "mode": "cfb8",
+        "skip": 8
+      },
+      {
+        "cipher": "enigma",
+        "key": "Zombies",
+        "iv": null,
+        "mode": null,
+        "skip": 0
+      },
+      {
+        "cipher": "enigma",
+        "key": "ZOMBIES",
+        "iv": null,
+        "mode": null,
+        "skip": 0
+      },
+      {
+        "cipher": "panama",
+        "key": "Zombies",
+        "iv": null,
+        "mode": null,
+        "skip": 0
+      },
+      {
+        "cipher": "panama",
+        "key": "ZOMBIES",
+        "iv": null,
+        "mode": null,
+        "skip": 0
+      },
+      {
+        "cipher": "arcfour",
+        "key": "Zombies",
+        "iv": null,
+        "mode": null,
+        "skip": 0
+      },
+      {
+        "cipher": "arcfour",
+        "key": "ZOMBIES",
+        "iv": null,
+        "mode": null,
+        "skip": 0
+      },
+      {
+        "cipher": "wake",
+        "key": "Zombies",
+        "iv": null,
+        "mode": null,
+        "skip": 0
+      },
+      {
+        "cipher": "wake",
+        "key": "ZOMBIES",
+        "iv": null,
+        "mode": null,
+        "skip": 0
+      }
+    ],
+    "iv_scope": "For CFB8, skip one native block; the next128 plaintext bytes are independent of the initial IV. Stream ciphers use their recorded fixed initialization.",
+    "scoring": "Exactly128 bytes after skipped native block; retain if distinct-byte count<=69 OR ASCII-printable count>=96. This is a lead screen, not a universal language exclusion.",
+    "direction": "Undo conventional equal-cut4 column transposition; no other cuts, row layouts, modern modes or unknown keys."
+  },
+  "script_sha256": "eec7380b2ab22db4db523490a75f66a8e0ffa054ac3a95de61b05e5b9a2a4d04",
+  "controls_sha256": "df09cff8f0db95c405c5583bb593136bd6d736f56b50abf4c27c38d12b1973e5",
+  "canonical_hex_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "count": 463680,
+  "output_digest": "ab3fd40c1ae9811f6a74368cad321402951173f19ad7388add656c349289a955",
+  "histD": {
+    "83": 2,
+    "84": 6,
+    "85": 7,
+    "86": 14,
+    "87": 76,
+    "88": 186,
+    "89": 389,
+    "90": 815,
+    "91": 1729,
+    "92": 3150,
+    "93": 5626,
+    "94": 9359,
+    "95": 14680,
+    "96": 21159,
+    "97": 28667,
+    "98": 36588,
+    "99": 42554,
+    "100": 48344,
+    "101": 49094,
+    "102": 47710,
+    "103": 42515,
+    "104": 35499,
+    "105": 27139,
+    "106": 19188,
+    "107": 12853,
+    "108": 7864,
+    "109": 4386,
+    "110": 2232,
+    "111": 1089,
+    "112": 493,
+    "113": 181,
+    "114": 62,
+    "115": 22,
+    "116": 1,
+    "117": 1
+  },
+  "histPrint": {
+    "25": 2,
+    "26": 2,
+    "27": 3,
+    "28": 6,
+    "29": 26,
+    "30": 56,
+    "31": 122,
+    "32": 238,
+    "33": 439,
+    "34": 734,
+    "35": 1189,
+    "36": 1940,
+    "37": 2986,
+    "38": 4512,
+    "39": 6424,
+    "40": 8948,
+    "41": 11741,
+    "42": 15067,
+    "43": 18807,
+    "44": 22663,
+    "45": 25927,
+    "46": 29268,
+    "47": 31601,
+    "48": 33492,
+    "49": 33639,
+    "50": 32910,
+    "51": 31378,
+    "52": 28385,
+    "53": 25465,
+    "54": 21937,
+    "55": 18236,
+    "56": 15077,
+    "57": 11490,
+    "58": 8996,
+    "59": 6482,
+    "60": 4675,
+    "61": 3142,
+    "62": 2187,
+    "63": 1425,
+    "64": 871,
+    "65": 526,
+    "66": 294,
+    "67": 165,
+    "68": 97,
+    "69": 56,
+    "70": 28,
+    "71": 13,
+    "72": 8,
+    "73": 2,
+    "74": 1,
+    "75": 2
+  },
+  "minD": 83,
+  "maxPrintable": 75,
+  "hits": [],
+  "best_printable": [
+    {
+      "id": "forward|1046523|cast-128|Zombies",
+      "score": {
+        "D": 99,
+        "printable": 75,
+        "flagged": false
+      },
+      "output_hex": "8a2cef98547917a0bd802c43711a2d1955dd71c84e7c02cf5c5f6521ee076a72ff30d6ddaf4f440de9b6b262456a24561f9b31153e4456296f685786656969872e5a22d7ec657d815737369e3d35c67432de0f9b4ca46e28697c4b713b632d07fba56a28fd3ae45e5bf57dee0ad94a56f613808c70f8ab70e474ff6b63d3396792748804076e8376"
+    },
+    {
+      "id": "forward|3146025|safer-64|Zombies",
+      "score": {
+        "D": 100,
+        "printable": 75,
+        "flagged": false
+      },
+      "output_hex": "21eccfaf785f1c8c586173146e4b5014323348066c074eaf3cf9dc8c43e5e22a2e1365213e2df86c4052a4ce819cc5f80fa1e73aed51932acb6acf0f6f2560de36e96ffb13ff7542342639b20d46da255e46641c52f362785757064c5e566da3c862e8dc2d382f9a2a5c7e0c4b670642246cee41ed3435a9d62e5f995d4d73871a4dbd73674fc6c4"
+    },
+    {
+      "id": "forward|6413025|twofish|ZOMBIES",
+      "score": {
+        "D": 94,
+        "printable": 74,
+        "flagged": false
+      },
+      "output_hex": "0e0e759e4e760ac19b3df3642a507a90da461594bde75652ef6b8c5bb1938cce3b52725fc60a526f14dcf1815c3d306425b84c4607201e8bb578114e64463c31c55c947fefcdc33a425b3eb86222866f5af3d1723ac1404e25584b70a81a437f64f6cc4621158f4acf88da525d3f8a247620e60c61204776b848e062322429963836c40a404159d84060c34a79a34ca0"
+    },
+    {
+      "id": "full_hex_reverse|4521360|cast-128|Zombies",
+      "score": {
+        "D": 97,
+        "printable": 73,
+        "flagged": false
+      },
+      "output_hex": "56e745561d9a41fc61cc7ad774e52947037afa244aeb5469e1862ca9ee440b903b724555eb640a7db3c7c03370cb5b2c793dd12c4e79fb98e6ed1ab93f012e3bff42c735ca27116ae5e8cd5c6f3e7204994f6d4f483a7df643ef727843de4c51c023677b12694c7e0d4f611140f6097797fde255fd289898fb1b6322980863dd5f3b5b56a25c9887"
+    },
+    {
+      "id": "full_hex_reverse|2401365|twofish|Zombies",
+      "score": {
+        "D": 102,
+        "printable": 73,
+        "flagged": false
+      },
+      "output_hex": "cd72fc0b27a0c39959dda37409adc18250b72d489be58f11f3e0b59bac991e09f228590b1e2972eb940968c414d373e191458578591c3164884a95583a4fd6912e18b44f3cf0c51377d5367e6d2b5686ce215c6789a1f651580a3b6867a20df1356c343bed5f443546432c7933794a43109e4e827e64806b1a704f6d79302f9d290a266cf969cff2e051a3bc56716f9c"
+    },
+    {
+      "id": "forward|5613024|gost|Zombies",
+      "score": {
+        "D": 96,
+        "printable": 72,
+        "flagged": false
+      },
+      "output_hex": "1efaa15d5149093e677e6bbe15c3b0c21343a3ce5a33b2345f82d51bad5b55c2ee749040483658223d0221e74529a62a4f1f74e52d4c7829e2d2f65e0c2cb64e687b5d43ff349d0e77f44d424a8f9ce06f6aea6fb63b2a3661b3626f2c4021edb466b360134f4621bd3a8c5e62069c71ffd657517bcaa54f7d5f53bf68ac8fffcaa85a5e1e5f0625"
+    },
+    {
+      "id": "full_hex_reverse|0263514|safer-128|Zombies",
+      "score": {
+        "D": 98,
+        "printable": 72,
+        "flagged": false
+      },
+      "output_hex": "83f6225989191514de629fb220eb242b093478463d725f45772be2ac93798237fb94a454c367304c5004392d8385619363ee9c60aa22dca296bd8e3326b3aa7d6eebb2dd1b666ba04ec223689b753e56e5f77a208cee4f9459bd4c110155f34833d94120489c4237d81ace7e726542a1fa370a56232f477a92d6e05e7a0a77acd77665adce56206e"
+    },
+    {
+      "id": "full_hex_reverse|6320514|des|ZOMBIES",
+      "score": {
+        "D": 98,
+        "printable": 72,
+        "flagged": false
+      },
+      "output_hex": "9fac1873358a0735d7b0673e3fdf9ac669cea24fd676450d9d86d9378b78dcce3b683ca763cbdc1e484f051ac844a82f2af120ebb7a54dcec348b01e027c7489237e3f107b576a53b2505a2d6f495b097d442f275ce957be40656ab3185b3ddc46d46d98126776275948368a86270d0d8587916666577cac534e5b339345c8c1e35227f2970375f4"
+    },
+    {
+      "id": "full_hex_reverse|6320514|tripledes|ZOMBIES",
+      "score": {
+        "D": 98,
+        "printable": 72,
+        "flagged": false
+      },
+      "output_hex": "9fac1873358a0735d7b0673e3fdf9ac669cea24fd676450d9d86d9378b78dcce3b683ca763cbdc1e484f051ac844a82f2af120ebb7a54dcec348b01e027c7489237e3f107b576a53b2505a2d6f495b097d442f275ce957be40656ab3185b3ddc46d46d98126776275948368a86270d0d8587916666577cac534e5b339345c8c1e35227f2970375f4"
+    },
+    {
+      "id": "full_hex_reverse|5240361|rijndael-128|Zombies",
+      "score": {
+        "D": 100,
+        "printable": 72,
+        "flagged": false
+      },
+      "output_hex": "84166a228e2f18f153b452c6d569a050e7bb313c6b6b71e545d1dd3f3afc7b70f59a9cfdd3f254084d43ee3e863db2a1b148d464547d64dd94bd052ed535307831681a745e53da48bdc24a3b252d7f7fbbf97bf15e822b56acfc67f721483a76631b2b0141516ef12d0b00217c2e46255bb822bdba4c5f3894c3553d74237779b6b4cd6f99ff8579707d2366091702e8"
+    },
+    {
+      "id": "forward|0265431|blowfish|Zombies",
+      "score": {
+        "D": 101,
+        "printable": 72,
+        "flagged": false
+      },
+      "output_hex": "c551f927fa48d03c32f83c5d77221c0dc3437563ee6bf97128542c3e75c520f75143f83458e8ca21b9960849972b8a5525b673c69f33ca9d2f7b7293090cf0c874e0125a205e5369ba5bfbe9f56031593e709e153ee8514c7b6fc37c5842f7fe1f131f74aa3163610607f623b93672a72ad9bb3e9d3a3bd23451326fcb67db8dcc43679c86410ac4"
+    },
+    {
+      "id": "forward|6502143|loki97|ZOMBIES",
+      "score": {
+        "D": 101,
+        "printable": 72,
+        "flagged": false
+      },
+      "output_hex": "305d159e85da167c0771c6a794815e194e6b4a884373504d378b26967b8bc07b2cb9535e7e338f80696ffc490f8865b130224738e21ba6de26f1cb4e14784d383f5378ab37edb69d4966156bc2e26fbc486f745ded2b6e9440697ccfd21949a297323dd1abcf5bc89235f33e4b093a4ee9316a928355efea2dc12a9e12565be86aadbe64116c6e17988d7d763a43a84f"
+    },
+    {
+      "id": "forward|5203146|serpent|ZOMBIES",
+      "score": {
+        "D": 104,
+        "printable": 72,
+        "flagged": false
+      },
+      "output_hex": "896db3fb79480ca34ef5a68e2c37c7b66a46984bad3a227507feb959474c3f6669d9cb5a735635ce5bb88d660b93e66d49696f37fd412ea20df17123def11f0990f092ac6da6c5557d3902b8380a737bd33685e5014ee77c8e2c6b246866ae7f454dade62d72eebb2c193174b4093587cf268305b9f9512aab2a2f3630b4558d30a60ab5c26b43814f3c966533920d53"
+    },
+    {
+      "id": "full_hex_reverse|0543612|saferplus|Zombies",
+      "score": {
+        "D": 95,
+        "printable": 71,
+        "flagged": false
+      },
+      "output_hex": "b05070139e6f6eabbf3f8d0bdd237f8809ab574ceb233fee3ef7fd513d97901be20fce2c56363a4acc5b2896897c46db6b191fbd15431c6178df6530736628a82962da828da0d7b18c4a3ab168e4533af5a50a1bfcea30266b8167443c799f233b205d230a682962e9331c3c52a9d84368062ed823443d14aae4352c0b6ecc3d5588be261d3233a7c9e2702e28469caa"
+    },
+    {
+      "id": "forward|6025134|rijndael-128|ZOMBIES",
+      "score": {
+        "D": 96,
+        "printable": 71,
+        "flagged": false
+      },
+      "output_hex": "8237e25d1f84b0eab16b61feb41460dc50141c9f638a745c7e0e67df196345c3aa23ad8f816d03f82e035fd2b347ce2055c9c9a1180edb933a503bfd1d432e6349c178e1481f72a9293b79715f5422468b6a37882443e6d40a6ee5c0c1350eaa40760163eb0a5b56752506b0424c5ee97455cb683c94245fe43a3be135e363f055f14082c031663753b2e1fc5f777522"
+    },
+    {
+      "id": "forward|5042316|cast-256|ZOMBIES",
+      "score": {
+        "D": 97,
+        "printable": 71,
+        "flagged": false
+      },
+      "output_hex": "cb5623be1af195bd3187eac31442718e0d6ce0d73901a2b45bc3256c029776c72445283b856a173d504e2b236b4353f344cb293cb3d8174f456529e72331184ccc9cb44dd20b28b379a93092a53768dbe158572aec584a903b62122e385d776ebd897fa960cb1b6052507e65f4a28e6ce1cb4128b6363bf10673807f92598c7a1b0e8c73eb330a895324d78242492123"
+    },
+    {
+      "id": "forward|6342051|cast-128|ZOMBIES",
+      "score": {
+        "D": 97,
+        "printable": 71,
+        "flagged": false
+      },
+      "output_hex": "620ee9d17f42c1eeb46829f17031ef0f27586d8d642e2bf633264e3a254cdb7d2f553c5ef2a494870879c339b467241cd587ad43233705e32ef077c104c10fd9491b48f92e0043974f374c30ddadc4ed47ed766659603240e8d961a996c4c20d10c2457021532b90947264e73468eb8bb1bc616a8d65663896a245614651618679cd0dde57907677"
+    },
+    {
+      "id": "forward|0163524|3-way|Zombies",
+      "score": {
+        "D": 98,
+        "printable": 71,
+        "flagged": false
+      },
+      "output_hex": "2cd02f1cadd62ddd00c78f316a09e0f8492a4430b49b789e9430407cf3cd5a6d7e3066d8591853707732196bc46e9c6245855e31fc3bcfcabbe5785a7f4976eeac940941e9f66150d73598278096f516af68245dc64862b56a63532ac0e65d396649b87bef2b0f27ec4f1968e2349e450f52d85aa12120516a250e593f65e3baeaf239618999984b1d49c0d8"
+    },
+    {
+      "id": "full_hex_reverse|3421506|arcfour|Zombies",
+      "score": {
+        "D": 98,
+        "printable": 71,
+        "flagged": false
+      },
+      "output_hex": "8fe93715ab04c109225c613fcc352b5b2382994297f43f9abcf10dee227661cc79145b3b79fc45714e36e4a722d08942f113ab347c7927db9571bd524134115aed72f57044832a06cf4233a95b8a61d0da62292559fbf0fdcec62a658a739509301c5476620d4d10805c184519141b7e003b772b6348f85fb827389e2cde466a"
+    },
+    {
+      "id": "full_hex_reverse|3260514|rc2|Zombies",
+      "score": {
+        "D": 99,
+        "printable": 71,
+        "flagged": false
+      },
+      "output_hex": "560fec91c0deb1e1c1895e70161e4e445256dc0e679cfe3a00dbd233e7767efbbc8836be7b3b78562569c4b2ff17196652005a54350950eb5f365ccf2c375ef92ce680b664a110e34ba08a6e21893029245d2bcb2afad976525698bfcf3855238955c413700b854d5223eb3b6e2e69629a8b4c3c1c0d3805dc5d89d36856bd4dc0925b5c7a76e572"
+    }
+  ],
+  "seconds": 12.711
+}

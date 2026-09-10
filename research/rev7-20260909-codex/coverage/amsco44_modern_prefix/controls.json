@@ -1,0 +1,1208 @@
+{
+  "identity": "ASTRA",
+  "target_evaluated": false,
+  "orders": 5040,
+  "geometry_digest": "3e79b51f5765f5f1f465b619128122c24bd1adf0488e8c452162bcb5ddae2777",
+  "plants": 92,
+  "calls": 138,
+  "plant_records": [
+    {
+      "orientation": "forward",
+      "cipher": "3-way",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 12,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "3-way",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 12,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "3-way",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 12,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "3-way",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 12,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "blowfish",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "blowfish",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "blowfish",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "blowfish",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "blowfish-compat",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "blowfish-compat",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "blowfish-compat",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "blowfish-compat",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "cast-128",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "cast-128",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "cast-128",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "cast-128",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "cast-256",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "cast-256",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "cast-256",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "cast-256",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "des",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "des",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "des",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "des",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "tripledes",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "tripledes",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "tripledes",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "tripledes",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "gost",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "gost",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "gost",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "gost",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "loki97",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "loki97",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "loki97",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "loki97",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "rc2",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "rc2",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "rc2",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "rc2",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "rijndael-128",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "rijndael-128",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "rijndael-128",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "rijndael-128",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "rijndael-192",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 24,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "rijndael-192",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 24,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "rijndael-192",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 24,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "rijndael-192",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 24,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "rijndael-256",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 32,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "rijndael-256",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 32,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "rijndael-256",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 32,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "rijndael-256",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 32,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "safer-64",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "safer-64",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "safer-64",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "safer-64",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "safer-128",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "safer-128",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "safer-128",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "safer-128",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "saferplus",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "saferplus",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "saferplus",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "saferplus",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "serpent",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "serpent",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "serpent",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "serpent",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "twofish",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "twofish",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "twofish",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "twofish",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 16,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "xtea",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "xtea",
+      "key": "Zombies",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "xtea",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "xtea",
+      "key": "ZOMBIES",
+      "iv": "ascii0",
+      "mode": "cfb8",
+      "skip": 8,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "enigma",
+      "key": "Zombies",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "enigma",
+      "key": "Zombies",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "enigma",
+      "key": "ZOMBIES",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "enigma",
+      "key": "ZOMBIES",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "panama",
+      "key": "Zombies",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "panama",
+      "key": "Zombies",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "panama",
+      "key": "ZOMBIES",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "panama",
+      "key": "ZOMBIES",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "arcfour",
+      "key": "Zombies",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "arcfour",
+      "key": "Zombies",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "arcfour",
+      "key": "ZOMBIES",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "arcfour",
+      "key": "ZOMBIES",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "wake",
+      "key": "Zombies",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "wake",
+      "key": "Zombies",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "forward",
+      "cipher": "wake",
+      "key": "ZOMBIES",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    },
+    {
+      "orientation": "full_hex_reverse",
+      "cipher": "wake",
+      "key": "ZOMBIES",
+      "iv": null,
+      "mode": null,
+      "skip": 0,
+      "score": {
+        "D": 40,
+        "printable": 128,
+        "flagged": true
+      }
+    }
+  ],
+  "runtime_sha256": "fd9d62dd20105757ec41c9affca23375b7276e4bda306feed05eeb0782fd3e30",
+  "script_sha256": "eec7380b2ab22db4db523490a75f66a8e0ffa054ac3a95de61b05e5b9a2a4d04"
+}

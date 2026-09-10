@@ -1,0 +1,43 @@
+{
+  "assertions": {
+    "exact_grid_1440": true,
+    "fixed_rev3_full_chain": true,
+    "independent_ioc_all_patterns": true,
+    "same_scan_path": true,
+    "stable_selection_order": true
+  },
+  "canonical_ciphertext_extracted": false,
+  "control_source_sha256": "c6645018f20ce1aba82c925d5505504319725d3a8cde78e495382664bbe7e008",
+  "driver_source_sha256": "104a42e6543603fb8a1076c686182ed8ee8b13cbfbbca4a67d05f7f081adc64e",
+  "fixture": {
+    "canonical_hex": "B70166890BD6",
+    "cells": 1440,
+    "digits": "307032231303030",
+    "fixed_rev3_row": {
+      "capacity_28_compatible": true,
+      "complete": true,
+      "distinct_tokens": 5,
+      "fixed_rev3_complete": true,
+      "fixed_rev3_plaintext": "HLIMBHHH",
+      "headers": [
+        3,
+        7
+      ],
+      "id": "ori=forward|endian=big|limbs=forward|digits=forward|headers=3,7",
+      "serializer_id": "ori=forward|endian=big|limbs=forward|digits=forward",
+      "token_count": 8,
+      "token_ioc": 0.21428571428571427,
+      "token_sequence_sha256": "9129cf811b4d7f4352ed4bb271d0c337a226b92953f1bb4006d6e9d5829a519f"
+    },
+    "plaintext": "HLIMBHHH",
+    "serializers": 32,
+    "unique_complete_patterns": 818
+  },
+  "identity": "ASTRA",
+  "source_pins": {
+    "anneal.py": "6937961a714e4ec0e26b5d1c5584f001d8b6a381155f76b0e79c8477246c6d79",
+    "model.py": "1f479f1697d84ee16a2cd9f89568756b9d30878418fe810206da9c683bc14725",
+    "sibling_char4.json": "7752ce6f93d12079cf9e567d9f0dddf37178f8b40f7907ee6d7c733383969b01"
+  },
+  "target_evaluated": false
+}

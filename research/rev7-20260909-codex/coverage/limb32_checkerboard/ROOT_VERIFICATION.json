@@ -1,0 +1,10 @@
+{
+  "identity": "ASTRA",
+  "target_reexecuted": false,
+  "source_result_sha256": "cdd5dfde536cbd48048e2f367b9088d62f76e5070db2fe8deab162064652cba5",
+  "retained_candidates_checked": 80,
+  "mapping_reconstruction_and_hashes": true,
+  "independent_math_fsum_tetragram_scores": true,
+  "max_absolute_score_difference": 3.3651303965598345e-10,
+  "selected_pattern_ioc_recomputed": true
+}

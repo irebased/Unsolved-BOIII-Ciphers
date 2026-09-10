@@ -1,0 +1,96 @@
+{
+  "anneal_seed": 9182,
+  "best_mapping": {
+    "0": "W",
+    "1": "M",
+    "21": "B",
+    "22": "L",
+    "23": "F",
+    "24": "V",
+    "25": "C",
+    "26": "U",
+    "27": "E",
+    "28": "S",
+    "29": "Y",
+    "3": " ",
+    "5": "O",
+    "6": "A",
+    "7": "K",
+    "80": "P",
+    "81": "H",
+    "82": "D",
+    "83": "R",
+    "85": ".",
+    "86": "N",
+    "87": "Z",
+    "88": "G",
+    "89": "T",
+    "9": "I"
+  },
+  "best_plaintext": "I AM THE LAST OF US BUT I WILL BE ZOINING YOU SOON MY FRIENDS COUGH COUGH DEATH IS NEAR. I HOPE WHAT WE HAVE DONE DOESN T COME BACK TO BITE THIS UNIVERSE IN THE ASS. THANK GOD WE WILL ALL BE GONE BECAUSE IF MONTY EVER FOUND THIS PLACE WE WOULD HAVE BEEN IN A WORLD OF SHIT. MAYBE NOW WITH US ALL GONE THE CHILDREN WILL TRULY BE SAFE. D",
+  "best_plaintext_sha256": "d48a252f990b0487001975efd3dfc392141b5c65c85defecab99d51cbf821dc6",
+  "best_score": -4121.156092358683,
+  "code_assignment_seed": 731,
+  "distinct_codes_used": 25,
+  "elapsed_seconds": 1.033252125,
+  "exact_recovery": false,
+  "fixture": "held-out Rev13 plaintext",
+  "headers": [
+    2,
+    8
+  ],
+  "identity": "ASTRA",
+  "independent_full_score": -4121.156092358666,
+  "limits": [
+    "One preregistered budget and seed; no tuning or rerun on failure.",
+    "This measures heuristic recovery on one held-out solved sibling and is not an exclusion theorem."
+  ],
+  "matching_fraction": 0.9970149253731343,
+  "matching_positions": 334,
+  "model_excludes_rev13": true,
+  "normalization": "uppercase A-Z; period preserved; every other run becomes one space; trim",
+  "plaintext_length": 335,
+  "plaintext_sha256": "8ec512614ef89181ae924e8196840af5d504927b8b3c34fc53cfa69956069b2c",
+  "restart_summaries": [
+    {
+      "plaintext": "I AM THE LAST OF US BUT I WILL BE ZOINING YOU SOON MY FRIENDS COUGH COUGH DEATH IS NEAR. I HOPE WHAT WE HAVE DONE DOESN T COME BACK TO BITE THIS UNIVERSE IN THE ASS. THANK GOD WE WILL ALL BE GONE BECAUSE IF MONTY EVER FOUND THIS PLACE WE WOULD HAVE BEEN IN A WORLD OF SHIT. MAYBE NOW WITH US ALL GONE THE CHILDREN WILL TRULY BE SAFE. D",
+      "plaintext_sha256": "d48a252f990b0487001975efd3dfc392141b5c65c85defecab99d51cbf821dc6",
+      "restart": 0,
+      "score": -4121.156092358683,
+      "seed": 9182
+    },
+    {
+      "plaintext": "I TU ONE LTKO AS CK BCO I WILL BE ZAIRIRJ PAC KAAR UP SDIERMK FACJN FACJN METON IK RETD. I NAVE WNTO WE NTHE MARE MAEKR O FAUE BTFY OA BIOE ONIK CRIHEDKE IR ONE TKK. ONTRY JAM WE WILL TLL BE JARE BEFTCKE IS UAROP EHED SACRM ONIK VLTFE WE WACLM NTHE BEER IR T WADLM AS KNIO. UTPBE RAW WION CK TLL JARE ONE FNILMDER WILL ODCLP BE KTSE. M",
+      "plaintext_sha256": "868a4da5951f12b65abf7408bbc906e982e704110fe8064656a76c7076846d0e",
+      "restart": 1,
+      "score": -4294.115610417226,
+      "seed": 9183
+    },
+    {
+      "plaintext": "IEAKENGHELAONE BEFOEMFNEIEWILLEMHE. ITITDEZ FEO  TEKZEBUIHTROES FDGES FDGERHANGEIOETHAUQEIEG PHEWGANEWHEGAJHER THER HOTENES KHEMASVEN EMINHENGIOEFTIJHUOHEITENGHEAOOQENGATVED REWHEWILLEALLEMHED THEMHSAFOHEIBEK TNZEHJHUEB FTRENGIOEPLASHEWHEW FLREGAJHEMHHTEITEAEW ULRE BEOGINQEKAZMHET WEWINGEFOEALLED THENGHESGILRUHTEWILLENUFLZEMHEOABHQER",
+      "plaintext_sha256": "c01af120f707da3dff71c21dd17c833d34e027d972dec2ef9cb14d336f08c5f9",
+      "restart": 2,
+      "score": -4349.662777182522,
+      "seed": 9184
+    },
+    {
+      "plaintext": "I UM ONE LUKO AS CK BCO I WILL BE JAIVIVH YAC KAAV MY SDIEVTK FACHN FACHN TEUON IK VEUD. I NAGE WNUO WE NURE TAVE TAEKV O FAME BUFQ OA BIOE ONIK CVIREDKE IV ONE UKK. ONUVQ HAT WE WILL ULL BE HAVE BEFUCKE IS MAVOY ERED SACVT ONIK GLUFE WE WACLT NURE BEEV IV U WADLT AS KNIO. MUYBE VAW WION CK ULL HAVE ONE FNILTDEV WILL ODCLY BE KUSE. T",
+      "plaintext_sha256": "85e76cfe96ae5225f8faa1be702b044e48d94ba264824eed57869bb1b3489b4c",
+      "restart": 3,
+      "score": -4290.583563590179,
+      "seed": 9185
+    }
+  ],
+  "restarts": 4,
+  "score_gap_best_minus_truth": -1.7280399333685637e-11,
+  "source_hashes": {
+    "anneal.py": "6937961a714e4ec0e26b5d1c5584f001d8b6a381155f76b0e79c8477246c6d79",
+    "heldout_rev13.py": "9aba04a4fb20aa398aaa8b300c52484cf3bbc06ef4bd0d4ef38929fc96c140db",
+    "model.py": "1f479f1697d84ee16a2cd9f89568756b9d30878418fe810206da9c683bc14725",
+    "revelations.json": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "sibling_char4.json": "7752ce6f93d12079cf9e567d9f0dddf37178f8b40f7907ee6d7c733383969b01"
+  },
+  "steps_per_restart": 6000,
+  "target_evaluated": false,
+  "truth_score": -4121.156092358666
+}

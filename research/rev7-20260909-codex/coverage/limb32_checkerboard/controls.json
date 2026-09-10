@@ -1,0 +1,6892 @@
+{
+  "assertions": {
+    "all_32_orientation_serializer_plants": true,
+    "capacity_28_explicit": true,
+    "dangling_header_rejected": true,
+    "independent_parser_cases": 450,
+    "independent_serializer_cases": 88,
+    "source_pins_match": true,
+    "u32_u16_plant_exact": true
+  },
+  "capacity_control": {
+    "digits": "012456893031323334353637383970717273747576777879",
+    "distinct_tokens": 28,
+    "fixed_rev3_rejects_blank_cells": true
+  },
+  "controls_source_sha256": "f771d92d014a02a423585d6d27adf79ae89702ba57d634770bee0560d80cb632",
+  "full_chain_plants": [
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "B70166890BD6",
+      "endian": "big",
+      "limb_order": "forward",
+      "orientation": "forward",
+      "oriented_bytes_sha256": "15ae966cf96138c85742ce7bba9dffba98ec1cc75a4fffcad6b441f080b1a77c",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "6DB09866107B",
+      "endian": "big",
+      "limb_order": "forward",
+      "orientation": "full_hex_reverse",
+      "oriented_bytes_sha256": "15ae966cf96138c85742ce7bba9dffba98ec1cc75a4fffcad6b441f080b1a77c",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "D60B896601B7",
+      "endian": "big",
+      "limb_order": "forward",
+      "orientation": "byte_reverse",
+      "oriented_bytes_sha256": "15ae966cf96138c85742ce7bba9dffba98ec1cc75a4fffcad6b441f080b1a77c",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "7B106698B06D",
+      "endian": "big",
+      "limb_order": "forward",
+      "orientation": "nibble_swap",
+      "oriented_bytes_sha256": "15ae966cf96138c85742ce7bba9dffba98ec1cc75a4fffcad6b441f080b1a77c",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "120FE41A77EF",
+      "endian": "big",
+      "limb_order": "forward",
+      "orientation": "forward",
+      "oriented_bytes_sha256": "231021c6bd625621d4d8342037f8270ab26160b87eb8b641fd096fa9ceb2580b",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "FE77A14EF021",
+      "endian": "big",
+      "limb_order": "forward",
+      "orientation": "full_hex_reverse",
+      "oriented_bytes_sha256": "231021c6bd625621d4d8342037f8270ab26160b87eb8b641fd096fa9ceb2580b",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "EF771AE40F12",
+      "endian": "big",
+      "limb_order": "forward",
+      "orientation": "byte_reverse",
+      "oriented_bytes_sha256": "231021c6bd625621d4d8342037f8270ab26160b87eb8b641fd096fa9ceb2580b",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "21F04EA177FE",
+      "endian": "big",
+      "limb_order": "forward",
+      "orientation": "nibble_swap",
+      "oriented_bytes_sha256": "231021c6bd625621d4d8342037f8270ab26160b87eb8b641fd096fa9ceb2580b",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "84FEFB7677EF",
+      "endian": "big",
+      "limb_order": "reverse",
+      "orientation": "forward",
+      "oriented_bytes_sha256": "6373ca01c5e12f1e794f06f6fec830604f4cb80e9620bac10ae4212c3a8e1689",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "FE7767BFEF48",
+      "endian": "big",
+      "limb_order": "reverse",
+      "orientation": "full_hex_reverse",
+      "oriented_bytes_sha256": "6373ca01c5e12f1e794f06f6fec830604f4cb80e9620bac10ae4212c3a8e1689",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "EF7776FBFE84",
+      "endian": "big",
+      "limb_order": "reverse",
+      "orientation": "byte_reverse",
+      "oriented_bytes_sha256": "6373ca01c5e12f1e794f06f6fec830604f4cb80e9620bac10ae4212c3a8e1689",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "48EFBF6777FE",
+      "endian": "big",
+      "limb_order": "reverse",
+      "orientation": "nibble_swap",
+      "oriented_bytes_sha256": "6373ca01c5e12f1e794f06f6fec830604f4cb80e9620bac10ae4212c3a8e1689",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "BAB20C2F0BD6",
+      "endian": "big",
+      "limb_order": "reverse",
+      "orientation": "forward",
+      "oriented_bytes_sha256": "3ac7d739b5290afb4c372743e40d741567683cde1acdb7e9ab9cdc0288519260",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "6DB0F2C02BAB",
+      "endian": "big",
+      "limb_order": "reverse",
+      "orientation": "full_hex_reverse",
+      "oriented_bytes_sha256": "3ac7d739b5290afb4c372743e40d741567683cde1acdb7e9ab9cdc0288519260",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "D60B2F0CB2BA",
+      "endian": "big",
+      "limb_order": "reverse",
+      "orientation": "byte_reverse",
+      "oriented_bytes_sha256": "3ac7d739b5290afb4c372743e40d741567683cde1acdb7e9ab9cdc0288519260",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "AB2BC0F2B06D",
+      "endian": "big",
+      "limb_order": "reverse",
+      "orientation": "nibble_swap",
+      "oriented_bytes_sha256": "3ac7d739b5290afb4c372743e40d741567683cde1acdb7e9ab9cdc0288519260",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "896601B7D60B",
+      "endian": "little",
+      "limb_order": "forward",
+      "orientation": "forward",
+      "oriented_bytes_sha256": "e17d769a754f67f0ba680d51149528fffec416686eb060993083dd9a067a6d7a",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "B06D7B106698",
+      "endian": "little",
+      "limb_order": "forward",
+      "orientation": "full_hex_reverse",
+      "oriented_bytes_sha256": "e17d769a754f67f0ba680d51149528fffec416686eb060993083dd9a067a6d7a",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "0BD6B7016689",
+      "endian": "little",
+      "limb_order": "forward",
+      "orientation": "byte_reverse",
+      "oriented_bytes_sha256": "e17d769a754f67f0ba680d51149528fffec416686eb060993083dd9a067a6d7a",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "9866107B6DB0",
+      "endian": "little",
+      "limb_order": "forward",
+      "orientation": "nibble_swap",
+      "oriented_bytes_sha256": "e17d769a754f67f0ba680d51149528fffec416686eb060993083dd9a067a6d7a",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "1AE40F12EF77",
+      "endian": "little",
+      "limb_order": "forward",
+      "orientation": "forward",
+      "oriented_bytes_sha256": "0c713d45b16652feda86a53e4eef27e1028f5fd0aae4877980fa7f77b3ce42b8",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "77FE21F04EA1",
+      "endian": "little",
+      "limb_order": "forward",
+      "orientation": "full_hex_reverse",
+      "oriented_bytes_sha256": "0c713d45b16652feda86a53e4eef27e1028f5fd0aae4877980fa7f77b3ce42b8",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "77EF120FE41A",
+      "endian": "little",
+      "limb_order": "forward",
+      "orientation": "byte_reverse",
+      "oriented_bytes_sha256": "0c713d45b16652feda86a53e4eef27e1028f5fd0aae4877980fa7f77b3ce42b8",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "A14EF021FE77",
+      "endian": "little",
+      "limb_order": "forward",
+      "orientation": "nibble_swap",
+      "oriented_bytes_sha256": "0c713d45b16652feda86a53e4eef27e1028f5fd0aae4877980fa7f77b3ce42b8",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "76FBFE84EF77",
+      "endian": "little",
+      "limb_order": "reverse",
+      "orientation": "forward",
+      "oriented_bytes_sha256": "a18bb4b29281ce3057c289fa1d93cb2d0831f19eb5cb80b1c864322ce71d3cf2",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "77FE48EFBF67",
+      "endian": "little",
+      "limb_order": "reverse",
+      "orientation": "full_hex_reverse",
+      "oriented_bytes_sha256": "a18bb4b29281ce3057c289fa1d93cb2d0831f19eb5cb80b1c864322ce71d3cf2",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "77EF84FEFB76",
+      "endian": "little",
+      "limb_order": "reverse",
+      "orientation": "byte_reverse",
+      "oriented_bytes_sha256": "a18bb4b29281ce3057c289fa1d93cb2d0831f19eb5cb80b1c864322ce71d3cf2",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "forward",
+      "displayed_hex": "67BFEF48FE77",
+      "endian": "little",
+      "limb_order": "reverse",
+      "orientation": "nibble_swap",
+      "oriented_bytes_sha256": "a18bb4b29281ce3057c289fa1d93cb2d0831f19eb5cb80b1c864322ce71d3cf2",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "2F0CB2BAD60B",
+      "endian": "little",
+      "limb_order": "reverse",
+      "orientation": "forward",
+      "oriented_bytes_sha256": "21673cd77e1bb423ad1a7400d31279d29d315e8780f98d25b7ec3fdb969ecc1f",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "B06DAB2BC0F2",
+      "endian": "little",
+      "limb_order": "reverse",
+      "orientation": "full_hex_reverse",
+      "oriented_bytes_sha256": "21673cd77e1bb423ad1a7400d31279d29d315e8780f98d25b7ec3fdb969ecc1f",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "0BD6BAB20C2F",
+      "endian": "little",
+      "limb_order": "reverse",
+      "orientation": "byte_reverse",
+      "oriented_bytes_sha256": "21673cd77e1bb423ad1a7400d31279d29d315e8780f98d25b7ec3fdb969ecc1f",
+      "recovered_plaintext": "HLIMBHHH"
+    },
+    {
+      "digit_direction": "reverse",
+      "displayed_hex": "F2C02BAB6DB0",
+      "endian": "little",
+      "limb_order": "reverse",
+      "orientation": "nibble_swap",
+      "oriented_bytes_sha256": "21673cd77e1bb423ad1a7400d31279d29d315e8780f98d25b7ec3fdb969ecc1f",
+      "recovered_plaintext": "HLIMBHHH"
+    }
+  ],
+  "identity": "ASTRA",
+  "limitations": [
+    "The 32-bit limb framing and 16-bit final tail are a bounded representation hypothesis, not a recovered historical wrapper.",
+    "A complete parse with <=28 cells is structural compatibility only.",
+    "A fixed Rev3-board output or language score cannot exclude an unknown symbol assignment.",
+    "No Rev7 bytes are read or evaluated by these controls."
+  ],
+  "model": "fixed-width independent unsigned limbs -> ordinary two-header straddling checkerboard",
+  "model_sha256": "1f479f1697d84ee16a2cd9f89568756b9d30878418fe810206da9c683bc14725",
+  "parser_cases": [
+    {
+      "digits": "",
+      "headers": [
+        0,
+        1
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        0,
+        1
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "3",
+      "headers": [
+        0,
+        1
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        0,
+        1
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        0,
+        1
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        0,
+        1
+      ],
+      "tokens": [
+        "01",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        0,
+        1
+      ],
+      "tokens": [
+        "3",
+        "03",
+        "13",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "6",
+        "3",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        0,
+        1
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        0,
+        1
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        0,
+        1
+      ],
+      "tokens": [
+        "12",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "01",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        0,
+        2
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        0,
+        2
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "3",
+      "headers": [
+        0,
+        2
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        0,
+        2
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        0,
+        2
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        0,
+        2
+      ],
+      "tokens": [
+        "01",
+        "23",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        0,
+        2
+      ],
+      "tokens": [
+        "3",
+        "03",
+        "1",
+        "3",
+        "23",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "6",
+        "3",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        0,
+        2
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        0,
+        2
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        0,
+        2
+      ],
+      "tokens": [
+        "1",
+        "23",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "01",
+        "23",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        0,
+        3
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        0,
+        3
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "3",
+      "headers": [
+        0,
+        3
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "37",
+      "headers": [
+        0,
+        3
+      ],
+      "tokens": [
+        "37"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        0,
+        3
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        0,
+        3
+      ],
+      "tokens": [
+        "01",
+        "2",
+        "34",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        0,
+        3
+      ],
+      "tokens": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        0,
+        3
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        0,
+        3
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        0,
+        3
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "34",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "01",
+        "2",
+        "34",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        0,
+        4
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        0,
+        4
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "3",
+      "headers": [
+        0,
+        4
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        0,
+        4
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        0,
+        4
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        0,
+        4
+      ],
+      "tokens": [
+        "01",
+        "2",
+        "3",
+        "45",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        0,
+        4
+      ],
+      "tokens": [
+        "3",
+        "03",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "43",
+        "5",
+        "3",
+        "6",
+        "3",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        0,
+        4
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        0,
+        4
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        0,
+        4
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "45",
+        "6",
+        "7",
+        "8",
+        "9",
+        "01",
+        "2",
+        "3",
+        "45"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        0,
+        5
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        0,
+        5
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "3",
+      "headers": [
+        0,
+        5
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        0,
+        5
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        0,
+        5
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        0,
+        5
+      ],
+      "tokens": [
+        "01",
+        "2",
+        "3",
+        "4",
+        "56",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        0,
+        5
+      ],
+      "tokens": [
+        "3",
+        "03",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "53",
+        "6",
+        "3",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        0,
+        5
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        0,
+        5
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        0,
+        5
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "",
+      "headers": [
+        0,
+        6
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        0,
+        6
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "3",
+      "headers": [
+        0,
+        6
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        0,
+        6
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        0,
+        6
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        0,
+        6
+      ],
+      "tokens": [
+        "01",
+        "2",
+        "3",
+        "4",
+        "5",
+        "67",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        0,
+        6
+      ],
+      "tokens": [
+        "3",
+        "03",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "63",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        0,
+        6
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        0,
+        6
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        0,
+        6
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "67",
+        "8",
+        "9",
+        "01",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        0,
+        7
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        0,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "3",
+      "headers": [
+        0,
+        7
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        0,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "370",
+      "headers": [
+        0,
+        7
+      ],
+      "tokens": [
+        "3",
+        "70"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        0,
+        7
+      ],
+      "tokens": [
+        "01",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "78",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        0,
+        7
+      ],
+      "tokens": [
+        "3",
+        "03",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "6",
+        "3",
+        "73",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        0,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        0,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        0,
+        7
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "78",
+        "9",
+        "01",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        0,
+        8
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        0,
+        8
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "3",
+      "headers": [
+        0,
+        8
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        0,
+        8
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        0,
+        8
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        0,
+        8
+      ],
+      "tokens": [
+        "01",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "89"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        0,
+        8
+      ],
+      "tokens": [
+        "3",
+        "03",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "6",
+        "3",
+        "7",
+        "3",
+        "83",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        0,
+        8
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        0,
+        8
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        0,
+        8
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "89",
+        "01",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        0,
+        9
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        0,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "3",
+      "headers": [
+        0,
+        9
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        0,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        0,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        0,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        0,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "777",
+      "headers": [
+        0,
+        9
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        0,
+        9
+      ],
+      "tokens": [
+        "90",
+        "90",
+        "90"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        0,
+        9
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "90",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        1,
+        2
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        1,
+        2
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        1,
+        2
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        1,
+        2
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        1,
+        2
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        1,
+        2
+      ],
+      "tokens": [
+        "0",
+        "12",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        1,
+        2
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "13",
+        "23",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "6",
+        "3",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        1,
+        2
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        1,
+        2
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        1,
+        2
+      ],
+      "tokens": [
+        "12",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0",
+        "12",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        1,
+        3
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        1,
+        3
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        1,
+        3
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "37",
+      "headers": [
+        1,
+        3
+      ],
+      "tokens": [
+        "37"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        1,
+        3
+      ],
+      "tokens": [
+        "37",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        1,
+        3
+      ],
+      "tokens": [
+        "0",
+        "12",
+        "34",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        1,
+        3
+      ],
+      "tokens": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        1,
+        3
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        1,
+        3
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        1,
+        3
+      ],
+      "tokens": [
+        "12",
+        "34",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0",
+        "12",
+        "34",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        1,
+        4
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        1,
+        4
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        1,
+        4
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        1,
+        4
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        1,
+        4
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        1,
+        4
+      ],
+      "tokens": [
+        "0",
+        "12",
+        "3",
+        "45",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        1,
+        4
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "13",
+        "2",
+        "3",
+        "3",
+        "3",
+        "43",
+        "5",
+        "3",
+        "6",
+        "3",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        1,
+        4
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        1,
+        4
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        1,
+        4
+      ],
+      "tokens": [
+        "12",
+        "3",
+        "45",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0",
+        "12",
+        "3",
+        "45"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        1,
+        5
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        1,
+        5
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        1,
+        5
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        1,
+        5
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        1,
+        5
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        1,
+        5
+      ],
+      "tokens": [
+        "0",
+        "12",
+        "3",
+        "4",
+        "56",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        1,
+        5
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "13",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "53",
+        "6",
+        "3",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        1,
+        5
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        1,
+        5
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        1,
+        5
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "",
+      "headers": [
+        1,
+        6
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        1,
+        6
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        1,
+        6
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        1,
+        6
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        1,
+        6
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        1,
+        6
+      ],
+      "tokens": [
+        "0",
+        "12",
+        "3",
+        "4",
+        "5",
+        "67",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        1,
+        6
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "13",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "63",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        1,
+        6
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        1,
+        6
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        1,
+        6
+      ],
+      "tokens": [
+        "12",
+        "3",
+        "4",
+        "5",
+        "67",
+        "8",
+        "9",
+        "0",
+        "12",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        1,
+        7
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        1,
+        7
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        1,
+        7
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        1,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "370",
+      "headers": [
+        1,
+        7
+      ],
+      "tokens": [
+        "3",
+        "70"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        1,
+        7
+      ],
+      "tokens": [
+        "0",
+        "12",
+        "3",
+        "4",
+        "5",
+        "6",
+        "78",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        1,
+        7
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "13",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "6",
+        "3",
+        "73",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        1,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        1,
+        7
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        1,
+        7
+      ],
+      "tokens": [
+        "12",
+        "3",
+        "4",
+        "5",
+        "6",
+        "78",
+        "9",
+        "0",
+        "12",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        1,
+        8
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        1,
+        8
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        1,
+        8
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        1,
+        8
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        1,
+        8
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        1,
+        8
+      ],
+      "tokens": [
+        "0",
+        "12",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "89"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        1,
+        8
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "13",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "6",
+        "3",
+        "7",
+        "3",
+        "83",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        1,
+        8
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        1,
+        8
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        1,
+        8
+      ],
+      "tokens": [
+        "12",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "89",
+        "0",
+        "12",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        1,
+        9
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        1,
+        9
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        1,
+        9
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        1,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        1,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        1,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        1,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "777",
+      "headers": [
+        1,
+        9
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        1,
+        9
+      ],
+      "tokens": [
+        "90",
+        "90",
+        "90"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        1,
+        9
+      ],
+      "tokens": [
+        "12",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "90",
+        "12",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        2,
+        3
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        2,
+        3
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        2,
+        3
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "37",
+      "headers": [
+        2,
+        3
+      ],
+      "tokens": [
+        "37"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        2,
+        3
+      ],
+      "tokens": [
+        "37",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        2,
+        3
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "23",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        2,
+        3
+      ],
+      "tokens": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        2,
+        3
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        2,
+        3
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        2,
+        3
+      ],
+      "tokens": [
+        "1",
+        "23",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0",
+        "1",
+        "23",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        2,
+        4
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        2,
+        4
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        2,
+        4
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        2,
+        4
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        2,
+        4
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        2,
+        4
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "23",
+        "45",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        2,
+        4
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "23",
+        "3",
+        "3",
+        "43",
+        "5",
+        "3",
+        "6",
+        "3",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        2,
+        4
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        2,
+        4
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        2,
+        4
+      ],
+      "tokens": [
+        "1",
+        "23",
+        "45",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0",
+        "1",
+        "23",
+        "45"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        2,
+        5
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        2,
+        5
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        2,
+        5
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        2,
+        5
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        2,
+        5
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        2,
+        5
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "23",
+        "4",
+        "56",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        2,
+        5
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "23",
+        "3",
+        "3",
+        "4",
+        "3",
+        "53",
+        "6",
+        "3",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        2,
+        5
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        2,
+        5
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        2,
+        5
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "",
+      "headers": [
+        2,
+        6
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        2,
+        6
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        2,
+        6
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        2,
+        6
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        2,
+        6
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        2,
+        6
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "23",
+        "4",
+        "5",
+        "67",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        2,
+        6
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "23",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "63",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        2,
+        6
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        2,
+        6
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        2,
+        6
+      ],
+      "tokens": [
+        "1",
+        "23",
+        "4",
+        "5",
+        "67",
+        "8",
+        "9",
+        "0",
+        "1",
+        "23",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        2,
+        7
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        2,
+        7
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        2,
+        7
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        2,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "370",
+      "headers": [
+        2,
+        7
+      ],
+      "tokens": [
+        "3",
+        "70"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        2,
+        7
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "23",
+        "4",
+        "5",
+        "6",
+        "78",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        2,
+        7
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "23",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "6",
+        "3",
+        "73",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        2,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        2,
+        7
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        2,
+        7
+      ],
+      "tokens": [
+        "1",
+        "23",
+        "4",
+        "5",
+        "6",
+        "78",
+        "9",
+        "0",
+        "1",
+        "23",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        2,
+        8
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        2,
+        8
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        2,
+        8
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        2,
+        8
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        2,
+        8
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        2,
+        8
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "23",
+        "4",
+        "5",
+        "6",
+        "7",
+        "89"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        2,
+        8
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "23",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "6",
+        "3",
+        "7",
+        "3",
+        "83",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        2,
+        8
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        2,
+        8
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        2,
+        8
+      ],
+      "tokens": [
+        "1",
+        "23",
+        "4",
+        "5",
+        "6",
+        "7",
+        "89",
+        "0",
+        "1",
+        "23",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        2,
+        9
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        2,
+        9
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        2,
+        9
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        2,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        2,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        2,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        2,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "777",
+      "headers": [
+        2,
+        9
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        2,
+        9
+      ],
+      "tokens": [
+        "90",
+        "90",
+        "90"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        2,
+        9
+      ],
+      "tokens": [
+        "1",
+        "23",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "90",
+        "1",
+        "23",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        3,
+        4
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        3,
+        4
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        3,
+        4
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "37",
+      "headers": [
+        3,
+        4
+      ],
+      "tokens": [
+        "37"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        3,
+        4
+      ],
+      "tokens": [
+        "37",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        3,
+        4
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "34",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        3,
+        4
+      ],
+      "tokens": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        3,
+        4
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        3,
+        4
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        3,
+        4
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "34",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0",
+        "1",
+        "2",
+        "34",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        3,
+        5
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        3,
+        5
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        3,
+        5
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "37",
+      "headers": [
+        3,
+        5
+      ],
+      "tokens": [
+        "37"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        3,
+        5
+      ],
+      "tokens": [
+        "37",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        3,
+        5
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "34",
+        "56",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        3,
+        5
+      ],
+      "tokens": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        3,
+        5
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        3,
+        5
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        3,
+        5
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "",
+      "headers": [
+        3,
+        6
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        3,
+        6
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        3,
+        6
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "37",
+      "headers": [
+        3,
+        6
+      ],
+      "tokens": [
+        "37"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        3,
+        6
+      ],
+      "tokens": [
+        "37",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        3,
+        6
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "34",
+        "5",
+        "67",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        3,
+        6
+      ],
+      "tokens": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        3,
+        6
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        3,
+        6
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        3,
+        6
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "34",
+        "5",
+        "67",
+        "8",
+        "9",
+        "0",
+        "1",
+        "2",
+        "34",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        3,
+        7
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        3,
+        7
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        3,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "37",
+      "headers": [
+        3,
+        7
+      ],
+      "tokens": [
+        "37"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        3,
+        7
+      ],
+      "tokens": [
+        "37",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        3,
+        7
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "34",
+        "5",
+        "6",
+        "78",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        3,
+        7
+      ],
+      "tokens": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        3,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        3,
+        7
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        3,
+        7
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "34",
+        "5",
+        "6",
+        "78",
+        "9",
+        "0",
+        "1",
+        "2",
+        "34",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        3,
+        8
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        3,
+        8
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        3,
+        8
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "37",
+      "headers": [
+        3,
+        8
+      ],
+      "tokens": [
+        "37"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        3,
+        8
+      ],
+      "tokens": [
+        "37",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        3,
+        8
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "34",
+        "5",
+        "6",
+        "7",
+        "89"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        3,
+        8
+      ],
+      "tokens": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        3,
+        8
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        3,
+        8
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        3,
+        8
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "34",
+        "5",
+        "6",
+        "7",
+        "89",
+        "0",
+        "1",
+        "2",
+        "34",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        3,
+        9
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        3,
+        9
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        3,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "37",
+      "headers": [
+        3,
+        9
+      ],
+      "tokens": [
+        "37"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        3,
+        9
+      ],
+      "tokens": [
+        "37",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        3,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        3,
+        9
+      ],
+      "tokens": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        3,
+        9
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        3,
+        9
+      ],
+      "tokens": [
+        "90",
+        "90",
+        "90"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        3,
+        9
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "34",
+        "5",
+        "6",
+        "7",
+        "8",
+        "90",
+        "1",
+        "2",
+        "34",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        4,
+        5
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        4,
+        5
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        4,
+        5
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        4,
+        5
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        4,
+        5
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        4,
+        5
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "45",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        4,
+        5
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "43",
+        "53",
+        "6",
+        "3",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        4,
+        5
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        4,
+        5
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        4,
+        5
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "45",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0",
+        "1",
+        "2",
+        "3",
+        "45"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        4,
+        6
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        4,
+        6
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        4,
+        6
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        4,
+        6
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        4,
+        6
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        4,
+        6
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "45",
+        "67",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        4,
+        6
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "43",
+        "5",
+        "3",
+        "63",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        4,
+        6
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        4,
+        6
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        4,
+        6
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "45",
+        "67",
+        "8",
+        "9",
+        "0",
+        "1",
+        "2",
+        "3",
+        "45"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        4,
+        7
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        4,
+        7
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        4,
+        7
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        4,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "370",
+      "headers": [
+        4,
+        7
+      ],
+      "tokens": [
+        "3",
+        "70"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        4,
+        7
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "45",
+        "6",
+        "78",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        4,
+        7
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "43",
+        "5",
+        "3",
+        "6",
+        "3",
+        "73",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        4,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        4,
+        7
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        4,
+        7
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "45",
+        "6",
+        "78",
+        "9",
+        "0",
+        "1",
+        "2",
+        "3",
+        "45"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        4,
+        8
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        4,
+        8
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        4,
+        8
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        4,
+        8
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        4,
+        8
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        4,
+        8
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "45",
+        "6",
+        "7",
+        "89"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        4,
+        8
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "43",
+        "5",
+        "3",
+        "6",
+        "3",
+        "7",
+        "3",
+        "83",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        4,
+        8
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        4,
+        8
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        4,
+        8
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "45",
+        "6",
+        "7",
+        "89",
+        "0",
+        "1",
+        "2",
+        "3",
+        "45"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        4,
+        9
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        4,
+        9
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        4,
+        9
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        4,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        4,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        4,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        4,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "777",
+      "headers": [
+        4,
+        9
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        4,
+        9
+      ],
+      "tokens": [
+        "90",
+        "90",
+        "90"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        4,
+        9
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "45",
+        "6",
+        "7",
+        "8",
+        "90",
+        "1",
+        "2",
+        "3",
+        "45"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        5,
+        6
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        5,
+        6
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        5,
+        6
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        5,
+        6
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        5,
+        6
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        5,
+        6
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "56",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        5,
+        6
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "53",
+        "63",
+        "7",
+        "3",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        5,
+        6
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        5,
+        6
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        5,
+        6
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "",
+      "headers": [
+        5,
+        7
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        5,
+        7
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        5,
+        7
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        5,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "370",
+      "headers": [
+        5,
+        7
+      ],
+      "tokens": [
+        "3",
+        "70"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        5,
+        7
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "56",
+        "78",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        5,
+        7
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "53",
+        "6",
+        "3",
+        "73",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        5,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        5,
+        7
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        5,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "",
+      "headers": [
+        5,
+        8
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        5,
+        8
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        5,
+        8
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        5,
+        8
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        5,
+        8
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        5,
+        8
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "56",
+        "7",
+        "89"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        5,
+        8
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "53",
+        "6",
+        "3",
+        "7",
+        "3",
+        "83",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        5,
+        8
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        5,
+        8
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        5,
+        8
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "",
+      "headers": [
+        5,
+        9
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        5,
+        9
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        5,
+        9
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        5,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        5,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        5,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        5,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "777",
+      "headers": [
+        5,
+        9
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        5,
+        9
+      ],
+      "tokens": [
+        "90",
+        "90",
+        "90"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        5,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "",
+      "headers": [
+        6,
+        7
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        6,
+        7
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        6,
+        7
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        6,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "370",
+      "headers": [
+        6,
+        7
+      ],
+      "tokens": [
+        "3",
+        "70"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        6,
+        7
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "67",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        6,
+        7
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "63",
+        "73",
+        "8",
+        "3",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        6,
+        7
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        6,
+        7
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        6,
+        7
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "67",
+        "8",
+        "9",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        6,
+        8
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        6,
+        8
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        6,
+        8
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        6,
+        8
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        6,
+        8
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        6,
+        8
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "67",
+        "89"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        6,
+        8
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "63",
+        "7",
+        "3",
+        "83",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        6,
+        8
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        6,
+        8
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        6,
+        8
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "67",
+        "89",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        6,
+        9
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        6,
+        9
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        6,
+        9
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        6,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        6,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        6,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        6,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "777",
+      "headers": [
+        6,
+        9
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        6,
+        9
+      ],
+      "tokens": [
+        "90",
+        "90",
+        "90"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        6,
+        9
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "67",
+        "8",
+        "90",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        7,
+        8
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        7,
+        8
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        7,
+        8
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        7,
+        8
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "370",
+      "headers": [
+        7,
+        8
+      ],
+      "tokens": [
+        "3",
+        "70"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        7,
+        8
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "78",
+        "9"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        7,
+        8
+      ],
+      "tokens": [
+        "3",
+        "0",
+        "3",
+        "1",
+        "3",
+        "2",
+        "3",
+        "3",
+        "3",
+        "4",
+        "3",
+        "5",
+        "3",
+        "6",
+        "3",
+        "73",
+        "83",
+        "9"
+      ]
+    },
+    {
+      "digits": "777",
+      "headers": [
+        7,
+        8
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        7,
+        8
+      ],
+      "tokens": [
+        "9",
+        "0",
+        "9",
+        "0",
+        "9",
+        "0"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        7,
+        8
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "78",
+        "9",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        7,
+        9
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        7,
+        9
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        7,
+        9
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        7,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "370",
+      "headers": [
+        7,
+        9
+      ],
+      "tokens": [
+        "3",
+        "70"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        7,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        7,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "777",
+      "headers": [
+        7,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        7,
+        9
+      ],
+      "tokens": [
+        "90",
+        "90",
+        "90"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        7,
+        9
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "78",
+        "90",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "digits": "",
+      "headers": [
+        8,
+        9
+      ],
+      "tokens": []
+    },
+    {
+      "digits": "0",
+      "headers": [
+        8,
+        9
+      ],
+      "tokens": [
+        "0"
+      ]
+    },
+    {
+      "digits": "3",
+      "headers": [
+        8,
+        9
+      ],
+      "tokens": [
+        "3"
+      ]
+    },
+    {
+      "digits": "37",
+      "headers": [
+        8,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7"
+      ]
+    },
+    {
+      "digits": "370",
+      "headers": [
+        8,
+        9
+      ],
+      "tokens": [
+        "3",
+        "7",
+        "0"
+      ]
+    },
+    {
+      "digits": "0123456789",
+      "headers": [
+        8,
+        9
+      ],
+      "tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "89"
+      ]
+    },
+    {
+      "digits": "30313233343536373839",
+      "headers": [
+        8,
+        9
+      ],
+      "tokens": null
+    },
+    {
+      "digits": "777",
+      "headers": [
+        8,
+        9
+      ],
+      "tokens": [
+        "7",
+        "7",
+        "7"
+      ]
+    },
+    {
+      "digits": "909090",
+      "headers": [
+        8,
+        9
+      ],
+      "tokens": [
+        "90",
+        "90",
+        "90"
+      ]
+    },
+    {
+      "digits": "123456789012345",
+      "headers": [
+        8,
+        9
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "89",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    }
+  ],
+  "rev7_read": false,
+  "serializer_cases": [
+    {
+      "digit_direction": "forward",
+      "digits": "060",
+      "digits_sha256": "b301d8e98abdfad61a7e62e29bc0022ac55cb3b6d00b5b51d5223a4618c3bab5",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 1
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "060",
+      "digits_sha256": "b301d8e98abdfad61a7e62e29bc0022ac55cb3b6d00b5b51d5223a4618c3bab5",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 1
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "060",
+      "digits_sha256": "b301d8e98abdfad61a7e62e29bc0022ac55cb3b6d00b5b51d5223a4618c3bab5",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 1
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "060",
+      "digits_sha256": "b301d8e98abdfad61a7e62e29bc0022ac55cb3b6d00b5b51d5223a4618c3bab5",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 1
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "060",
+      "digits_sha256": "b301d8e98abdfad61a7e62e29bc0022ac55cb3b6d00b5b51d5223a4618c3bab5",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 1
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "060",
+      "digits_sha256": "b301d8e98abdfad61a7e62e29bc0022ac55cb3b6d00b5b51d5223a4618c3bab5",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 1
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "060",
+      "digits_sha256": "b301d8e98abdfad61a7e62e29bc0022ac55cb3b6d00b5b51d5223a4618c3bab5",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 1
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "060",
+      "digits_sha256": "b301d8e98abdfad61a7e62e29bc0022ac55cb3b6d00b5b51d5223a4618c3bab5",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 1
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "33063",
+      "digits_sha256": "1509c02db702054f96acba88e5a59e1bc04b5b45008d45ae4896d0f28a6585f5",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 2
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "36033",
+      "digits_sha256": "ba0edc00bd4864518d5c1a963b72708718edaf47f7e3a6020ecf91f4925f9417",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 2
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "33063",
+      "digits_sha256": "1509c02db702054f96acba88e5a59e1bc04b5b45008d45ae4896d0f28a6585f5",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 2
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "36033",
+      "digits_sha256": "ba0edc00bd4864518d5c1a963b72708718edaf47f7e3a6020ecf91f4925f9417",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 2
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "10113",
+      "digits_sha256": "0158e5183a2335d3ab87a9e44db0d65f42712f2a53c770692ab11e4d0efa464c",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 2
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "31101",
+      "digits_sha256": "a46ad4a7d43655b0a8944e6bd30b64880727f8d046b5b5278c9b62bae84c51ce",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 2
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "10113",
+      "digits_sha256": "0158e5183a2335d3ab87a9e44db0d65f42712f2a53c770692ab11e4d0efa464c",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 2
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "31101",
+      "digits_sha256": "a46ad4a7d43655b0a8944e6bd30b64880727f8d046b5b5278c9b62bae84c51ce",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 2
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "05487536",
+      "digits_sha256": "54cb83f5c0243995493f5cd1be3f6b43ceeae9fc1e9c8bbe85214b6c93dda964",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 3
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "63578450",
+      "digits_sha256": "d77525a3544fa5d7001d9d611160a4d9f5acd2915e39eb42208bf8cf5342d1a2",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 3
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "05487536",
+      "digits_sha256": "54cb83f5c0243995493f5cd1be3f6b43ceeae9fc1e9c8bbe85214b6c93dda964",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 3
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "63578450",
+      "digits_sha256": "d77525a3544fa5d7001d9d611160a4d9f5acd2915e39eb42208bf8cf5342d1a2",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 3
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "11582291",
+      "digits_sha256": "aaa872a2708aad304f6dda01a86712c97afb6fd0d84c298813fa1284825f201c",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 3
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "19228511",
+      "digits_sha256": "4027ea8d6abc69124438200739fcfbde4786fa0cce7f70bdc69d8607d4802b4b",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 3
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "11582291",
+      "digits_sha256": "aaa872a2708aad304f6dda01a86712c97afb6fd0d84c298813fa1284825f201c",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 3
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "19228511",
+      "digits_sha256": "4027ea8d6abc69124438200739fcfbde4786fa0cce7f70bdc69d8607d4802b4b",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 3
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "2181508697",
+      "digits_sha256": "44f62c22988954002b82c5270b8c4899ba4b84f1a4946c4a95ac3e430916b03c",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 4
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "7968051812",
+      "digits_sha256": "9d413f5d73d0db92f5ce3af7edc8679c6dd23841fc4abdb5872ee9abd71db6c6",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 4
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "2181508697",
+      "digits_sha256": "44f62c22988954002b82c5270b8c4899ba4b84f1a4946c4a95ac3e430916b03c",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 4
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "7968051812",
+      "digits_sha256": "9d413f5d73d0db92f5ce3af7edc8679c6dd23841fc4abdb5872ee9abd71db6c6",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 4
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "1496188802",
+      "digits_sha256": "56be4bceacb3e53da25272025293cb13b6fe7945ef746b936acaad20edec4a9e",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 4
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "2088816941",
+      "digits_sha256": "d4407e297c48e55d3b1ee55ab5b3eff5bf2f1adbd181be92cd6e255af3975a3c",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 4
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "1496188802",
+      "digits_sha256": "56be4bceacb3e53da25272025293cb13b6fe7945ef746b936acaad20edec4a9e",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 4
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "2088816941",
+      "digits_sha256": "d4407e297c48e55d3b1ee55ab5b3eff5bf2f1adbd181be92cd6e255af3975a3c",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 4
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "1598213050047",
+      "digits_sha256": "b7222a6ae58d40d28530aa7cbb2ca35fe2d51b2b25389cf6e05408826fcd6f88",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 5
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "7400503128951",
+      "digits_sha256": "0805a7236a39ef577ab49f62f3b3dd279f8a3bc31a17f1f817f85b91239f7618",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 5
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "0471598213050",
+      "digits_sha256": "ce20eac99b17a8d29896cb3cc8e8bab98d2ef474532ff6ab6c953229762b1aad",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 5
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "0503128951740",
+      "digits_sha256": "7dfb70e6f51bb8ff7179f06bea7609123c63244b5c6e21261871d0701ce8c349",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 5
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "3133882975047",
+      "digits_sha256": "bcf31257e674b2519a483f6e7997c8c29b0d62c39fdac256b21b3a63f82d3ff8",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 5
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "7405792883313",
+      "digits_sha256": "5a2938ea1382b62eee2042188a216f62c5d78255b14c088f9616474dc9bbc0e5",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 5
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "0473133882975",
+      "digits_sha256": "6bd6532f6d2a5cd6889f0951ad3bebce5e2814e4a53381b16abc43f4fb42ac74",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 5
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "5792883313740",
+      "digits_sha256": "8276e1e7c67ea085437064d0acbe612339773fd4f231ac80f1401be0c9276658",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 5
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "418593396414961",
+      "digits_sha256": "ac05aa4d97b0bdfd345759033a58cd9f8e8f7679c0bb577929fe2704aeb40001",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 6
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "169414693395814",
+      "digits_sha256": "a9f9c079d208379a756706a826c3ddb2f0fab0c6315c96c054c7f75a5e037cf0",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 6
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "149614185933964",
+      "digits_sha256": "ce18865897443926d85c0496779eff6d334f77a9738ed1ab57086d8332b266bf",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 6
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "469339581416941",
+      "digits_sha256": "c830dd11f69b785ddf10e07366507fe37c2f6d63055f94634925aa173245e7a4",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 6
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "235356184928986",
+      "digits_sha256": "1ccc46df2cec5d24dbd5a3faa9e057cf98c26f42f666587adb6738e00b4cde75",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 6
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "689829481653532",
+      "digits_sha256": "ad001b921c7eb90ce888551311c3682771620d3413a26093f7a1649e32d6c995",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 6
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "289862353561849",
+      "digits_sha256": "781c14b165848a5fb02fbcb46ce3f2b7ce23d580baae8cbe188fb4ad6e3e665a",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 6
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "948165353268982",
+      "digits_sha256": "7f968505f25044b206b73ce005bcd14f74789928dba1dafec1a99c2c9a8ad3df",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 6
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "303454130816144099",
+      "digits_sha256": "52adb7277586470eae3dc46486d29d7725dfcf3beb5bca6c110e1169f09e5d0b",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 7
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "990441618031454303",
+      "digits_sha256": "a89b0d67cf1400588c838956bb33942c0849980ae238d49d66b63dd8e915635b",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 7
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "161440993034541308",
+      "digits_sha256": "0a580c029c50a02fdcd3dfac6d414ba98038add1d63f66ce05918eb582ee209b",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 7
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "803145430399044161",
+      "digits_sha256": "81493b244656b5836b5b2cea977c946b0d77b8d7dd8b9bab06ab89d9f50ec1c8",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 7
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "423499358814898934",
+      "digits_sha256": "358182f3bca89586e146a10abb7e11f1fa1fc1c529dec832adc3ef1e89407df5",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 7
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "439898418853994324",
+      "digits_sha256": "06fc95e04257a1ef37505ab0819290f3252c7e705c0b077a0a4f119ce1c23fc7",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 7
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "148989344234993588",
+      "digits_sha256": "db0394483dcd7bdea97d8bd4f6326447de483aae926086f8bc11e81610ed4b17",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 7
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "885399432443989841",
+      "digits_sha256": "10903a85e440cf901822a232a75e426997bd5edc82cc8abacc50272afc44de2a",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 7
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "24099563833246709871",
+      "digits_sha256": "216b803afe5a3ec2d238089f8e78bfd14d6bd346c65af95b95fbf5cc82402d60",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 8
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "17890764233836599042",
+      "digits_sha256": "212496ff85ad9ddd5c46102f8c8e060e24f2efe9703bf66feed6d20d29f08c85",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 8
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "32467098712409956383",
+      "digits_sha256": "335812a2d7a2163b19c1da4121df8f6ff77474097cc095e01f14b1096a187705",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 8
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "38365990421789076423",
+      "digits_sha256": "4ade58718fd6c1a08b5d78d2db46523b0d5ff7ee43d995ceb87b76a77527dc72",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 8
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "05203982231876722881",
+      "digits_sha256": "866b9c4e141bd5ed99b8d3809903d3bebc65dde02529ba14ddb15cebff5de1d4",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 8
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "18822767813228930250",
+      "digits_sha256": "327c676b06d90eaad16c914458235cd7e86c57c640023c1bbb6069d9d23a2e0d",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 8
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "18767228810520398223",
+      "digits_sha256": "1cc6e7adde6e063a8d1eed9d20f161bda9fdfd7dd94ced02d83ef51c510aebd2",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 8
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "32289302501882276781",
+      "digits_sha256": "95bd270cdf6743e5ffa4e6fda4ccd1c444c1bb6df8877d42cc6734d1fd546002",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 8
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "1324032427207955162104037",
+      "digits_sha256": "7bbec4cabb9aa883c0e7ef04a7a74ff2ebcdb7aea0534fcf1a425b73163709e6",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 10
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "7304012615597027242304231",
+      "digits_sha256": "2d6492660945349903ea4ba5faa1ca96d7534c0ec0be6254c4ab0ee36e0ba062",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 10
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "0403720795516211324032427",
+      "digits_sha256": "072fa2ba0c9ead2718966f6457e7cdf71827b87fcfba1d3f812526003d06549d",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 10
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "7242304231126155970273040",
+      "digits_sha256": "d914d13ac5be08109ad2bfde6d1cb9b8f14bed4c2ff1de9fbbe9bfdad8db805a",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 10
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "2871126862223877209150447",
+      "digits_sha256": "88aeb01ea1e5be21a26a01fdcfb0bb7953bdcc4b6eb5b5a2987562929efc4efd",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 10
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "7440519027783222686211782",
+      "digits_sha256": "4817491f8f9c052b5737868ed51b6b721c6961482e16ad94fd89e4b0f866e1f2",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 10
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "5044722387720912871126862",
+      "digits_sha256": "04f59439ce26c622d6bf052df17957ddaffc5b58526ee08706742d60333776a7",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 10
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "2686211782190277832274405",
+      "digits_sha256": "54dfeb1bf83f539c075380620d47cb61a570f64cd31657d81e29c606ba750feb",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 10
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "36987521611038447271247381178118062",
+      "digits_sha256": "be75ca90cd69dd1dd1d4516215a4808b0efa7dc6f6d33418843442807fcf6f02",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 14
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "26081187118374217274483011612578963",
+      "digits_sha256": "9a2a2bcc954b5136ff4c38fb2384d0f1a499faf3991601ba2ffb81b7c4516340",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 14
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "18062247381178110384472713698752161",
+      "digits_sha256": "68a03da003158f378f76fd4c87b253eebe4499727f8afd4601b63b47fe6eacb8",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 14
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "16125789631727448301187118374226081",
+      "digits_sha256": "c030978ec6fb65738fc8cc78e41643ed310bf157135f758d5fad772e03b49d66",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 14
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "27091575962809324861116388341136422",
+      "digits_sha256": "eaf23ef652800878390a081e2e920f91bc4b9372dcefe3207c2dc82ca136c810",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 14
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "22463114388361116842390826957519072",
+      "digits_sha256": "26e7a59570b2969341a7019d517d2fef3baf8b22cfa850cb5d6db0fed2d51d4c",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 14
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "36422116388341128093248612709157596",
+      "digits_sha256": "72afa54801acd247a7e447bef0928ea24fc8e3486b5a71a8ad441914ba216a62",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 14
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "69575190721684239082114388361122463",
+      "digits_sha256": "a7ae0b681a433e15c18b146ef39a3abfa1314efdc61a6f0132a4f1d18e29929f",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 14
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "242024948721218370904193034406140883512602640508771752279031169816537311825530",
+      "digits_sha256": "8a53fc98ed09ad1c66d9815acb967f9b9745f97028ce751cecce47c364e2ab3e",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 31
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "035528113735618961130972257177805046206215388041604430391409073812127849420242",
+      "digits_sha256": "a24d6abe90e79362103be5d22cab74bc2cadea20427d9c96a5152cb0dc40b3c9",
+      "endian": "big",
+      "limb_order": "forward",
+      "n": 31
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "118255301698165373175227903102640508771408835126419303440621218370902420249487",
+      "digits_sha256": "4e24f81cecd0f7d86b516ab55a0377abda8838b0d2e9fc6691c8064195bff9d2",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 31
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "784942024209073812126044303914621538804177805046201309722571373561896103552811",
+      "digits_sha256": "5f9326e194edb86045c0c44bdef01264b51cecab8d05d71b017c92a26ad1da12",
+      "endian": "big",
+      "limb_order": "reverse",
+      "n": 31
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "240040411205815973102795564281090799957131725150874154945896211302589308024500",
+      "digits_sha256": "846681bddd38a053feac6c44ca8bc26bb01c4e87e05ee375d952f39c54851bc0",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 31
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "005420803985203112698549451478051527131759997090182465597201379518502114040042",
+      "digits_sha256": "e54e1fba4d97d05534b4938afe927d0395bc224316c9dcae4f49dd42d99b96a9",
+      "endian": "little",
+      "limb_order": "forward",
+      "n": 31
+    },
+    {
+      "digit_direction": "forward",
+      "digits": "080245002113025893415494589631725150870907999571279556428105815973102400404112",
+      "digits_sha256": "25f599d1157f8fe909e3b9ac6af6a12f7695fdfc7346a98c5144d28dc8b63044",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 31
+    },
+    {
+      "digit_direction": "reverse",
+      "digits": "211404004201379518501824655972175999709078051527136985494514398520311200542080",
+      "digits_sha256": "eab1f149456306f1c6441f105ae2fe87e77fdead801cae02067dda0394ca1875",
+      "endian": "little",
+      "limb_order": "reverse",
+      "n": 31
+    }
+  ],
+  "source_pins": {
+    "coverage_REPORT.md": "2a5d20ae6eee4d2ddf2a8ba9ef7bd208e43f0f372fac29e5305f3bdf6918c57e",
+    "rev3_mdx": "0185f674db09dfe542de8ecf2880cf83690cc8331001ebfefa65ddc4f965a243",
+    "rev3_replay.py": "f756922e180899de43dfbde5eef12fc45a3d8db32ccb9eec71806626fd370414"
+  },
+  "target_evaluated": false,
+  "target_proposal": {
+    "capacity_alphabet": "up to 28 injective output symbols; fixed Rev3 uses 26 and leaves two cells blank",
+    "cells": 1440,
+    "decimal_length": 1365,
+    "digit_directions": [
+      "forward",
+      "reverse"
+    ],
+    "endianness": [
+      "big",
+      "little"
+    ],
+    "fixed_rev3_board": {
+      "alphabet": "FKMCPDYEHBIGQROSAZLUTJNWVX",
+      "headers": [
+        3,
+        7
+      ]
+    },
+    "full_limb_decimal_width": 10,
+    "full_limbs": 136,
+    "header_pairs": 45,
+    "input_bytes": 546,
+    "limb_orders": [
+      "forward",
+      "reverse"
+    ],
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "serializers": 32,
+    "tail_bytes": 2,
+    "tail_decimal_width": 5
+  }
+}

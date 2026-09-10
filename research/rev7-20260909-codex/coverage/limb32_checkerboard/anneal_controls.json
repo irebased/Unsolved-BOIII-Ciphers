@@ -1,0 +1,127 @@
+{
+  "anneal_source_sha256": "6937961a714e4ec0e26b5d1c5584f001d8b6a381155f76b0e79c8477246c6d79",
+  "assertions": {
+    "all_pins_match": true,
+    "benchmark_completed": true,
+    "independent_full_score_matches": true,
+    "long_control_exact": true,
+    "mapping_injective_for_every_restart": true
+  },
+  "bounded_benchmark": {
+    "benchmark_best_score": -11260.077515713518,
+    "elapsed_seconds": 2.7422700409999994,
+    "fixture": "850 tokens drawn uniformly from the same fixed 28 checkerboard codes",
+    "fixture_seed": 8801,
+    "fixture_token_sha256": "d725240c14417c8ab03726fef9ab21610304f52710e712ef81b3782794a5e9f6",
+    "projected_seconds_linear": 54.84540081999999,
+    "prospective_selected_streams": 20,
+    "restarts": 4,
+    "steps_per_restart": 6000
+  },
+  "control_source_sha256": "e2b4befefd0ecd6c3338063976c73a63bf516c4a9c1ae499f02cd2118976d072",
+  "identity": "ASTRA",
+  "long_encrypted_english_control": {
+    "anneal_seed": 9182,
+    "best_mapping": {
+      "0": "W",
+      "1": "M",
+      "21": "B",
+      "22": "L",
+      "23": "F",
+      "24": "V",
+      "25": "C",
+      "26": "U",
+      "27": "E",
+      "28": "S",
+      "29": "Y",
+      "3": " ",
+      "5": "O",
+      "6": "A",
+      "80": "P",
+      "81": "H",
+      "82": "D",
+      "83": "R",
+      "85": ".",
+      "86": "N",
+      "88": "G",
+      "89": "T",
+      "9": "I"
+    },
+    "best_score": -6848.791991232453,
+    "code_assignment_seed": 731,
+    "elapsed_seconds": 7.343492584,
+    "exact_recovery": true,
+    "headers": [
+      2,
+      8
+    ],
+    "in_sample_for_language_model": true,
+    "plaintext_length": 568,
+    "plaintext_sha256": "d76480a77d7da5c8e6b32f4f0053b47d7c0d84d05b92b073f74512bbd4f724af",
+    "restarts": 8,
+    "source_sibling": "rev11",
+    "steps_per_restart": 12000,
+    "token_classes": 23
+  },
+  "model": {
+    "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ .",
+    "excluded_ids": [
+      "rev7",
+      "rev13"
+    ],
+    "ids": [
+      "rev1",
+      "rev2",
+      "rev3",
+      "rev4",
+      "rev5",
+      "rev6",
+      "rev8",
+      "rev9",
+      "rev10",
+      "rev11",
+      "rev12",
+      "rev14"
+    ],
+    "normalization": "uppercase A-Z; period preserved; every other run becomes one space; trim",
+    "record_lengths": [
+      28,
+      525,
+      61,
+      205,
+      583,
+      126,
+      864,
+      144,
+      222,
+      568,
+      196,
+      159
+    ],
+    "smoothing": "add-one over 28^4",
+    "tetragrams": 3645
+  },
+  "proposed_target_heuristic": {
+    "anneal_each": {
+      "restarts": 4,
+      "seed": "20260910 + selected rank * 100",
+      "steps_per_restart": 6000
+    },
+    "exact_capacity_cells": 1440,
+    "interpretation": "heuristic lead finding only; failure does not exclude an unknown assignment",
+    "output_alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ .",
+    "retain": "all restart candidates, mappings, full plaintext, scores and hashes",
+    "selection": "deduplicate exact token sequences, sort by descending token IoC then stable recipe id, retain first 20"
+  },
+  "rev7_read": false,
+  "source_pins": {
+    "anneal.py": "6937961a714e4ec0e26b5d1c5584f001d8b6a381155f76b0e79c8477246c6d79",
+    "build_char_model.py": "2a97582daab4507f1fed524568ad3ceccdc73b2c581383590402ee1e1af7434b",
+    "controls.json": "51ae541d6f08c62521630d4ac4bb19c786e0348170567abb1986dae005778a96",
+    "controls.py": "f771d92d014a02a423585d6d27adf79ae89702ba57d634770bee0560d80cb632",
+    "model.py": "1f479f1697d84ee16a2cd9f89568756b9d30878418fe810206da9c683bc14725",
+    "revelations.json": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "sibling_char4.json": "7752ce6f93d12079cf9e567d9f0dddf37178f8b40f7907ee6d7c733383969b01"
+  },
+  "target_evaluated": false
+}

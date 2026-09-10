@@ -1,0 +1,606 @@
+{
+  "identity": "ASTRA",
+  "status": "synthetic driver dispatch complete",
+  "target_evaluated": false,
+  "scope": {
+    "identity": "ASTRA",
+    "experiment": "byte-dihedral preprocessing before one modern layer",
+    "transforms": [
+      "rotate:0",
+      "rotate:1",
+      "rotate:2",
+      "rotate:3",
+      "rotate:4",
+      "rotate:5",
+      "rotate:6",
+      "rotate:7",
+      "reflect:0",
+      "reflect:1",
+      "reflect:2",
+      "reflect:3",
+      "reflect:4",
+      "reflect:5",
+      "reflect:6",
+      "reflect:7"
+    ],
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_pair_reverse",
+      "nibble_swap",
+      "visible_token_reverse"
+    ],
+    "logical_inputs": 80,
+    "contexts_per_input": 312,
+    "logical_contexts": 24960,
+    "deduplication": "exact SHA-256 and byte equality of transformed 546-byte inputs before crypto",
+    "occupancy_windows": "full plus one-block-skipped tail for block ciphers",
+    "ascii_windows": "same windows, TAB/LF/CR/ASCII32..126 ratio >= 0.75"
+  },
+  "fixture_sha256": "dea3d9526e2f9a18493c35970ae97ddad613c62599c24ce5072acf09e9868936",
+  "unique_inputs": 48,
+  "logical_inputs": 80,
+  "expected_decryptions": 14976,
+  "groups": [
+    {
+      "input_sha256": "018eab25cde3e270473f20a08732d1950a29ea6f48b0b6b378e361c0e3a7ece0",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "reflect:5"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "reflect:1"
+        }
+      ]
+    },
+    {
+      "input_sha256": "02cb6494b51f24acc7da778ea7905e1a80687b1652272455ac916046fb1ab879",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "rotate:4"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "rotate:0"
+        }
+      ]
+    },
+    {
+      "input_sha256": "064d324d68a5ff50ca387b499777207f3667166d5a87bd97b4991df89367c8dd",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "reflect:2"
+        }
+      ]
+    },
+    {
+      "input_sha256": "07ca5875dedc5204421d4bc288ec1b3d1086b3eb1e104f4779b95115de25be71",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "reflect:5"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "reflect:1"
+        }
+      ]
+    },
+    {
+      "input_sha256": "0b90050d2c4b32006c19d3681996cc48f31a18eb0ff0d994b362a9216312e18b",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "rotate:1"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "rotate:5"
+        }
+      ]
+    },
+    {
+      "input_sha256": "0bd26ded97cfb9dc3efec30943dfe166696dd5cf654ecb27dbc64da68a3415ff",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "reflect:1"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "reflect:5"
+        }
+      ]
+    },
+    {
+      "input_sha256": "0fcd89a800b9cc3207e326880f4fa91785fbb3ed16a1fa69442201d0ba65aa0d",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "rotate:7"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "rotate:3"
+        }
+      ]
+    },
+    {
+      "input_sha256": "112f416a80efa2217d825deae0cb1382eaca3fda791a9d84b541f8080462c4cf",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "reflect:0"
+        }
+      ]
+    },
+    {
+      "input_sha256": "189de8a43824ae6f87c258421593eb7c84dfdb3007892a5a308daaed9e2511fc",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "rotate:4"
+        }
+      ]
+    },
+    {
+      "input_sha256": "1b75120bde309d7bda871bcaaffb9d2379c09ee508f9220fbdf8e310bdbf3c13",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "rotate:6"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "rotate:2"
+        }
+      ]
+    },
+    {
+      "input_sha256": "22f5ba49bd45d079ae5e4767f6118d77717d613ef78f6533ab33c265f20305e9",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "rotate:7"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "rotate:3"
+        }
+      ]
+    },
+    {
+      "input_sha256": "23eece344fc4dca72cc7203dfd8cc2cd05132c1aae32921f0f197697cb918b3a",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "rotate:1"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "rotate:5"
+        }
+      ]
+    },
+    {
+      "input_sha256": "287471611eefa9bee094f62f240ec2dc601eb687d758946908b4755ced26d424",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "reflect:1"
+        }
+      ]
+    },
+    {
+      "input_sha256": "3100f2a2ef0a665ca52151a9eccf6ee3dec289a710a3ad571bafa82caebccc20",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "reflect:4"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "reflect:0"
+        }
+      ]
+    },
+    {
+      "input_sha256": "3de9beb9d9cd134875085893b22091d4a7bcb15c0581df83d5691a60035dd095",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "rotate:3"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "rotate:7"
+        }
+      ]
+    },
+    {
+      "input_sha256": "435feadc157d77e79090d2b04c9639a7d7de6a72dc12a5e1b27a758c01835f8e",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "rotate:1"
+        }
+      ]
+    },
+    {
+      "input_sha256": "4397a2ab19ccbe1011998acfbb84e8cdbf3165d6a549110776af40969c777e89",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "reflect:6"
+        }
+      ]
+    },
+    {
+      "input_sha256": "4ad906d2d0c801c64c092db2000bc2083d9ac287f67eecaace96f1a6263cfefa",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "reflect:6"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "reflect:2"
+        }
+      ]
+    },
+    {
+      "input_sha256": "4af8a1cb45f415a5c28b676516b9ad73531e35433839060f9841d4b60b368255",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "rotate:2"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "rotate:6"
+        }
+      ]
+    },
+    {
+      "input_sha256": "4b2c73e0ec3ccfa040072dae5774ae302a67aabc3d887fd335a7cc58b6c519c9",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "rotate:0"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "rotate:4"
+        }
+      ]
+    },
+    {
+      "input_sha256": "4f06fa2364536b3ab79018b2108b6e7aed9a92713be2513c62b6c04f732f4851",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "reflect:3"
+        }
+      ]
+    },
+    {
+      "input_sha256": "571656deb567521059646c1923908bd75d94ede6dc383eb07622cd7e38ea15a9",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "rotate:2"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "rotate:6"
+        }
+      ]
+    },
+    {
+      "input_sha256": "5fe2a612fabd2bf2afcbdf08ff9da7ae6c3064ac3b5848fdce81bf6d789fb173",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "rotate:0"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "rotate:4"
+        }
+      ]
+    },
+    {
+      "input_sha256": "640bf275a7353ee3d3953ee7a4986f8faab44db12f989b813e27fbbbe1d3532b",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "rotate:3"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "rotate:7"
+        }
+      ]
+    },
+    {
+      "input_sha256": "66795eec151925c02df124356e9be3aabd02ab97c897f060f0f2df0bb02c1b3b",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "reflect:0"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "reflect:4"
+        }
+      ]
+    },
+    {
+      "input_sha256": "6c3bca69ca1f5b7f1e289cc8780e5a578b6a53d68c7e98d5fd7028d2f83f795d",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "rotate:6"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "rotate:2"
+        }
+      ]
+    },
+    {
+      "input_sha256": "7292e1d7b60827bb20c6c2cc9f3dbc3db870ce719cd99adddd8dece930e340ee",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "reflect:7"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "reflect:3"
+        }
+      ]
+    },
+    {
+      "input_sha256": "72af6c42cbfc062a170325481e285e5d569d975afa8a55a4d87998c6a23b9968",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "reflect:0"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "reflect:4"
+        }
+      ]
+    },
+    {
+      "input_sha256": "7f1b25d88c925e2aaf00e7e9a13edd913448b11ff4e9785de8d44285adde984e",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "reflect:3"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "reflect:7"
+        }
+      ]
+    },
+    {
+      "input_sha256": "87fcaf4aea37feafbbd64ca554ba0742f8fb080b8080fcda3c97a9cbe0e4111f",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "rotate:4"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "rotate:0"
+        }
+      ]
+    },
+    {
+      "input_sha256": "894245bb9f75a667d7a5ac0625969b27d9c7e79f755d380acb1a1a930e54dfe3",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "reflect:2"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "reflect:6"
+        }
+      ]
+    },
+    {
+      "input_sha256": "97feecb4cab61dc8d4d9098d23bdd79c44b6b6400420f3197009328f1255c634",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "rotate:2"
+        }
+      ]
+    },
+    {
+      "input_sha256": "9987e4cad5956f5bdb29bad060e26410299d20ad091aa3c1cd24aa6bc7c7070c",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "reflect:2"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "reflect:6"
+        }
+      ]
+    },
+    {
+      "input_sha256": "a36b1e56dd2d0798a484b0d0906bbc14b992d556f2b84a84129c1b0769aba483",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "reflect:1"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "reflect:5"
+        }
+      ]
+    },
+    {
+      "input_sha256": "ab040330ee5ce0ce9a2cbc6f4534782f268eae8a1ccd4769c73cd93c7c2f87c5",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "rotate:7"
+        }
+      ]
+    },
+    {
+      "input_sha256": "b2ee1ebec23eb0fbee38dfb99df5b77078276d4b4f5af4557452db3948e13c91",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "reflect:7"
+        }
+      ]
+    },
+    {
+      "input_sha256": "b32c7279659843f7a2959f6d8be6141337c26e97efc368f7f6ace681fbbb1889",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "reflect:5"
+        }
+      ]
+    },
+    {
+      "input_sha256": "b9d69499b6ad59f8dc7cedb2b52eb8f56d63f906db367ba0c444fbfefba84616",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "rotate:5"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "rotate:1"
+        }
+      ]
+    },
+    {
+      "input_sha256": "c88e41812155837049f2b63bd6a78b80f7cfa2f5e5b1d4329940629337f4a554",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "reflect:7"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "reflect:3"
+        }
+      ]
+    },
+    {
+      "input_sha256": "ca701bff212c7c6265c70acc25669fa429e20ce0bc5df316ef87c190b99a37df",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "rotate:3"
+        }
+      ]
+    },
+    {
+      "input_sha256": "d45038cdde8d5cd943ed904501688fb8074edd0b5426737f2d15eda0c83cf80f",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "reflect:6"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "reflect:2"
+        }
+      ]
+    },
+    {
+      "input_sha256": "df6c3851e3cfeac82d35172625350e8ebb7faef5be3762498be9b3fbbb516ede",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "rotate:6"
+        }
+      ]
+    },
+    {
+      "input_sha256": "e0c5014fa8590b6318e3370eb0c0f6fad6dfe153cd3d2cb7ee2727c79d576ce6",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "rotate:5"
+        }
+      ]
+    },
+    {
+      "input_sha256": "e483e09c4a9ac21d40fa6c3e42a08ac0c2cd8405e3044bf5619e7f38d49c9f2e",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "rotate:0"
+        }
+      ]
+    },
+    {
+      "input_sha256": "e81e9eea9c7d792ddc3f752781755d2e065dc765e7b16c5c8990fe2b77c4757b",
+      "aliases": [
+        {
+          "orientation": "visible_token_reverse",
+          "transform": "reflect:4"
+        }
+      ]
+    },
+    {
+      "input_sha256": "eaabeb66961c9ed52e5b439bf4dee0cd7cf96bebfd6addc60d3ddd9eaa0f9e85",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "rotate:5"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "rotate:1"
+        }
+      ]
+    },
+    {
+      "input_sha256": "ee85f73714969f2e4ea5bdab0007bf4a34ce657112cd948393b0f9b6e7e9a5bf",
+      "aliases": [
+        {
+          "orientation": "forward",
+          "transform": "reflect:3"
+        },
+        {
+          "orientation": "nibble_swap",
+          "transform": "reflect:7"
+        }
+      ]
+    },
+    {
+      "input_sha256": "fd48af070e7bcb3c014d68c792770e3a01d2b60ba67ebe010d41a501815df830",
+      "aliases": [
+        {
+          "orientation": "full_hex_reverse",
+          "transform": "reflect:4"
+        },
+        {
+          "orientation": "byte_pair_reverse",
+          "transform": "reflect:0"
+        }
+      ]
+    }
+  ]
+}

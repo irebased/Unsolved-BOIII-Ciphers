@@ -1,0 +1,3 @@
+# Superseded TEA target proposal
+
+Identity: ASTRA. The synthetic TEA controls remain useful, but the proposed direct target must not run as new coverage. Retained FABLE message 455 in `research/rev7-20260909-codex/comms/inbox.jsonl` reports a completed 1,440,168-decryption non-libmcrypt sweep that included TEA, the same zero-key known-answer vector `41EA3A0A94BAA940`, and rank-1 positive controls. Message 457 reports the subsequent mixed non-mcrypt/mcrypt depth-2/3 run complete as well. These later records postdate the bounded history snapshot that originally made TEA appear untested. No gate was created and no Rev7 target evaluation was performed by this package.

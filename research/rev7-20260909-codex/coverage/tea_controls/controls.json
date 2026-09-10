@@ -1,0 +1,431 @@
+{
+  "assertions": {
+    "all_roundtrip": true,
+    "four_modes": true,
+    "mode_rows": 32,
+    "two_ivs": true,
+    "two_keys": true,
+    "two_packings": true
+  },
+  "block_controls": [
+    {
+      "endian": "be",
+      "random_block_roundtrips": 256
+    },
+    {
+      "endian": "le",
+      "random_block_roundtrips": 256
+    }
+  ],
+  "identity": "ASTRA",
+  "limits": [
+    "Synthetic only; no Rev7 bytes were read.",
+    "The duplicate Python block equation is control-flow parity, not a distinct primitive implementation.",
+    "The zero-key KAT is a published/common TEA known-answer vector; source provenance must be pinned before target authorization."
+  ],
+  "mode_controls": [
+    {
+      "ciphertext_sha256": "1410ccf721df3b9aa8b596271b8e321105427cee71e8d216df3495c2b0342d0a",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "cfb8",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "899a6c2a551f21b474ef914a666f31c873f07e1fdf94586f4bafa60a0986e2eb",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "ncfb",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "88123d33d040720b6958851204cd659e12924a0338bed9ae6e8ee33c3df82766",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "ofb",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "532d0609d9cca330ca209cc1d353270a26cd8366573a0dd524445cb558a38fac",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "ctr",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "017f0d0ed55b55bf17e41942b9f177039af329fba9e3c33839816e485ce7f593",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "cfb8",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "76cfa21d6697bf9036c1d2f96c97d1ea0b3dcb58ae5c12d5f1ce73e7301cf85e",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "ncfb",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "0f0f4de07636b059a115714963e7f4d24b078b137e1d281f4fb30b051f23c7d6",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "ofb",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "342bef5a33bc0606b86866036c5a5bd1a02bda46beb5c743363a4018e5aa7930",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "ctr",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "93e33cf510be2ca9295bb2d792e8994d52f7fd24340ca1be29cb5214158688e8",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "cfb8",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "18ea777bc82fa4317bd647bf032bb2dfa6e9e07336fd45b472d462a68f25394f",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "ncfb",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "83b00d57798f07fc410a33188f0124f561a1400f54f8f85d10406542726dbbd2",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "ofb",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "ed1380c1f541f357d8a3b22ad3c4738044c08c20cff27cb055ae53084872739e",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "ctr",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "e3f166990244586ddca18d7f78551db277c9686825d3fab45609b288f2354b38",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "cfb8",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "9f5d11c406514937c730c6e7517214af9e64a67452199eba358e1f321ddbfce9",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "ncfb",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "b790add05fe25c6a6901c42ac088e1c7882d1689b6a5a23fbd47c435c31d282d",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "ofb",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "d1266c74e9a2fe12fba33a394c60d22b3ce12d4d006875ac019d3a23e1466a8a",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "Zombies",
+      "key_hex": "5a6f6d62696573000000000000000000",
+      "length": 546,
+      "mode": "ctr",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "aef31af6098504c18264c3399576dfe0ed99ada2af3f4210f08887e525bcc5f8",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "cfb8",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "67c9c31de93c07d95fe6b433db386326decb39b352b44764c1618f9c1d70dc89",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "ncfb",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "ce0465eb6201950f5b3fa027364ef4194e43cf4dc02704dfa3d7e8be03293866",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "ofb",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "8c08d1741723aa5d9856dcf144ac1c8307ecb744fa582806607dcac1a6bea208",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "ctr",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "be1a823ef3c81a9be8465d7719990b362a10b6fbd138a5833b827c43a05b4e91",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "cfb8",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "4eeffba1c2882db54b513c9f5c797a3ee6160e178360ae9f5ca6004ec611d02f",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "ncfb",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "31e59d4c9f3dfdf60a03a1182b467f003d01a47f4284c1857906c4cbe941a59e",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "ofb",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "47bc9893c730ac3aca034d806ed9fee11d60f2a50c3c40cf8887712abdc5ee48",
+      "iv": "null",
+      "iv_hex": "0000000000000000",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "ctr",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "259d615a6d050fddaf584d2eb4b57f3eb8aeb948715b5428c9515c1a8ebefc6b",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "cfb8",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "5ec756a0be4123ee90718ca47eb81282a4edf406b3de4de70e34d608e768398b",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "ncfb",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "3609382e8b0ab8a59cc177f202e29911919145eb107dc1f73b0206ec626ac055",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "ofb",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "83e50cbe5bc5e1b9192c101370f3788bbb6d3da961ac27da2532e97014154263",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "ctr",
+      "packing": "be",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "b1d60116f8161d057788e543fc03026291e8f8a53d6030139393a588c16fb7dc",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "cfb8",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "e19bc9aa8f68a39756d6a50d06134bbb82280ba2f29ee05f7322ec9f11c4a00f",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "ncfb",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "c4d897d358011d01846bb9c2b528b9e891ebe798301d3740e02f4237ada6c3dd",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "ofb",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    },
+    {
+      "ciphertext_sha256": "aca2d9c76257ed11d9467753ae1350e6b58341e6cfd9e654306ba8cf354a3639",
+      "iv": "ascii0",
+      "iv_hex": "3030303030303030",
+      "key": "ZOMBIES",
+      "key_hex": "5a4f4d42494553000000000000000000",
+      "length": 546,
+      "mode": "ctr",
+      "packing": "le",
+      "plaintext_sha256": "db4afa1d3b3a80a875ff2b3c3869d5ad877c9bd8ba0d05c767d5934fa7713865",
+      "roundtrip": true
+    }
+  ],
+  "primitive": {
+    "block_bytes": 8,
+    "delta": "9e3779b9",
+    "kat": {
+      "ciphertext_hex": "41ea3a0a94baa940",
+      "key_hex": "00000000000000000000000000000000",
+      "packing": "be",
+      "passed": true,
+      "plaintext_hex": "0000000000000000"
+    },
+    "key_bytes": 16,
+    "name": "TEA",
+    "rounds": 32
+  },
+  "source_hashes": {
+    "controls.py": "b7beaf16cb5dfec29cc8be2d16d98f1320aefe7c589835efb2c4af78cbacc7e6",
+    "model.py": "372cc6b1e175811aa63b8ec9e74ee7c6c0ea36b73ac88a29f41bce0041b54aa0"
+  },
+  "target_evaluated": false
+}

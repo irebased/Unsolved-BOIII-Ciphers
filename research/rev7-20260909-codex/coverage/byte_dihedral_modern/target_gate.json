@@ -1,0 +1,60 @@
+{
+  "identity": "ASTRA",
+  "authorized": true,
+  "fable_reference": "FABLE-bus-652",
+  "scope": {
+    "identity": "ASTRA",
+    "experiment": "byte-dihedral preprocessing before one modern layer",
+    "transforms": [
+      "rotate:0",
+      "rotate:1",
+      "rotate:2",
+      "rotate:3",
+      "rotate:4",
+      "rotate:5",
+      "rotate:6",
+      "rotate:7",
+      "reflect:0",
+      "reflect:1",
+      "reflect:2",
+      "reflect:3",
+      "reflect:4",
+      "reflect:5",
+      "reflect:6",
+      "reflect:7"
+    ],
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_pair_reverse",
+      "nibble_swap",
+      "visible_token_reverse"
+    ],
+    "logical_inputs": 80,
+    "contexts_per_input": 312,
+    "logical_contexts": 24960,
+    "deduplication": "exact SHA-256 and byte equality of transformed 546-byte inputs before crypto",
+    "occupancy_windows": "full plus one-block-skipped tail for block ciphers",
+    "ascii_windows": "same windows, TAB/LF/CR/ASCII32..126 ratio >= 0.75"
+  },
+  "mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "dataset_sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+  "canonical_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "artifact_hashes": {
+    "model.js": "97ff2ca1280bd5cc852f1e76dff9fe1ac25094222af94c32a487eaf642063d0f",
+    "controls.js": "9213ba342f8fb6c8cf4bae6e278bc6263606857e575adedc548504694d99fb51",
+    "controls.json": "b0cc66b1348068a2386019eb7083394eb5f4dc932d9770c398fd94bb775f05a7",
+    "driver_controls.js": "13b3b25f75c440c55a1a2b7964c1c47c44768d5791ef1b46fc1f25f8f67c2608",
+    "driver_controls.json": "36d8d9da2210716188e7863123cdcb77f91b3b6d66d2e71b66eace205ac73275",
+    "run_target.js": "3aa2cb48be11784b6266ef5f9f9b97a650978246dccff55dad51b390e3069c45",
+    "prepare_gate.js": "404ff01d3bc1465be07a11c98fee65bc814263b0c8abc10abafd736539cfaf7d",
+    "README.md": "08c7c2f8620775e51aa1d1ff181279a2aa97cbd722cd2f640081ab77765f0586",
+    "../first_layer_occupancy/runtime.js": "fd9d62dd20105757ec41c9affca23375b7276e4bda306feed05eeb0782fd3e30",
+    "../first_layer_occupancy/model.js": "412a1ed6c42cc8fa1ac625d5f19848e39fff1fb9967ff2587d59250776d29425",
+    "../first_layer_occupancy/controls.js": "b38fe2cbdad6421726e463a3cd5231b18baa1b28ab704bb7898be2c838b5208b",
+    "../first_layer_occupancy/controls.json": "185d1b1d15ca4b04d03cf0bc2d576f2d45875bdf7ff005ef57e9ded8d26e0178",
+    "../fable_b64read_source_audit/upstream/dictkey2/lib.js": "ffba90a95de78bdeef64c8d2b5602c61d3271e7780914d8322cc5bb9b912ec1d",
+    "../fable_b64read_source_audit/old-ciphers/js/mcrypt.js": "8998b6dd50ebc24aede3df84228826951f2143fde393e15f95d1455e074d5061",
+    "../fable_b64read_source_audit/old-ciphers/js/mcrypt.wasm": "60a8215b8f6f7774511004ec51528b60e781ca8c260d0b1cf1baad0dfc932be7"
+  }
+}

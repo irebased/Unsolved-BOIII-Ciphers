@@ -1,0 +1,50 @@
+{
+  "authorization": {
+    "go_granted": true,
+    "reason": "User authorized solving; root reviewed frozen source, replayed controls and posted FABLE preregistration.",
+    "root_go_required": true
+  },
+  "driver_sha256": "104a42e6543603fb8a1076c686182ed8ee8b13cbfbbca4a67d05f7f081adc64e",
+  "identity": "ASTRA",
+  "scope": {
+    "canonical_bytes": 546,
+    "digit_directions": [
+      "forward",
+      "reverse"
+    ],
+    "endianness": [
+      "big",
+      "little"
+    ],
+    "exact_cells": 1440,
+    "fixed_rev3": {
+      "alphabet": "FKMCPDYEHBIGQROSAZLUTJNWVX",
+      "headers": [
+        3,
+        7
+      ]
+    },
+    "header_pairs": "all 45 unordered pairs in lexicographic order",
+    "heuristic": {
+      "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ .",
+      "base_seed": 20260910,
+      "deduplicate": "exact token tuples",
+      "restarts": 4,
+      "selection": "top 20 by descending token IoC, then stable first recipe id",
+      "steps_per_restart": 6000
+    },
+    "limb_framing": "136 unsigned 4-byte limbs width10 plus exact unsigned 2-byte tail width5",
+    "limb_orders": [
+      "forward",
+      "reverse"
+    ],
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "serializers": 32,
+    "unknown_board_capacity": 28
+  }
+}
