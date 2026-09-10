@@ -1,0 +1,50 @@
+{
+  "alphabetical_read_letters": [
+    "B",
+    "E",
+    "I",
+    "M",
+    "O",
+    "S",
+    "Z"
+  ],
+  "assertions": {
+    "both_inverse_directions": true,
+    "column_order_B_E_I_M_O_S_Z": true,
+    "directions_distinct_on_control": true,
+    "exact_rectangle_39x7": true,
+    "indices_are_permutations": true,
+    "no_target_read": true
+  },
+  "cell_symbols": 4,
+  "cells_at_1092": 273,
+  "column_read_indices_zero_based": [
+    3,
+    5,
+    4,
+    2,
+    1,
+    6,
+    0
+  ],
+  "columns": 7,
+  "controls_source_sha256": "b1e930ddd36b2e3e23dcec86f8d7951dbdb964ae6b7a6a8f68ab56bf34f48c33",
+  "geometry_source_sha256": "cad6c29e75cc1d43ba9f43d172767c081bed8b0394ce5ae7c8adee3e22427e61",
+  "identity": "ASTRA",
+  "key": "ZOMBIES",
+  "rows_at_1092": 39,
+  "scope": "Synthetic-only 4-symbol equal-cell rectangular column geometry, key ZOMBIES.",
+  "synthetic": {
+    "decode_encode_roundtrip": true,
+    "decode_index_permutation_sha256": "ab18dd518238729d8fae976fac586dda76bdb97acf533eb375d7cc2009c34b45",
+    "decoded_direction_sha256": "9d2c8fc7c0ba68a6025ae32ce576177f4ac287ced4f1afdc0536d76a3a5b41b1",
+    "encode_decode_roundtrip": true,
+    "encode_index_permutation_sha256": "c8afbbbc91c8b8757dc925c8aedc4415dd2e85d8ac0ad68dd9e4a2ae6a68077c",
+    "encoded_sha256": "e5f903c453880c33309ac614184caf5c3f6e77abddfcb4429110095cd70fecf1",
+    "length": 1092,
+    "plaintext_sha256": "a6ba986c6dbcd65520d40fce91117f6b0cd65e4bed69f4a5e5ba8d243175143f",
+    "small_labelled_encoded": "0003000A0005000C0004000B00020009000100080006000D00000007",
+    "small_labelled_plain": "0000000100020003000400050006000700080009000A000B000C000D"
+  },
+  "target_evaluated": false
+}

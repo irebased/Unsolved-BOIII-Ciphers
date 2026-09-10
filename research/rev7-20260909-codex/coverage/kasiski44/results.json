@@ -1,0 +1,4899 @@
+{
+  "configuration": {
+    "analysis_source_sha256": "38f1125465d9620f3f9b589ccb825cc6b0f102c663091b55e0fdfafeb649ebe8",
+    "canonical_text_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+    "controls_sha256": "17cc743f29378bc938698b7bb83d55d0b3db5800db0116a3fbbe7407b6d1da00",
+    "controls_source_sha256": "b1e930ddd36b2e3e23dcec86f8d7951dbdb964ae6b7a6a8f68ab56bf34f48c33",
+    "dataset_sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "geometry_sha256": "cad6c29e75cc1d43ba9f43d172767c081bed8b0394ce5ae7c8adee3e22427e61",
+    "mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "preregistration": "ASTRA message400 on FABLE channel"
+  },
+  "contexts": [
+    {
+      "all_three_periods_common_pair_count": 1,
+      "all_three_periods_common_pairs": [
+        {
+          "gap": 684,
+          "n": 3,
+          "ngram": "F83",
+          "start_a": 251,
+          "start_b": 935
+        }
+      ],
+      "direction": "encode",
+      "id": "encode:forward",
+      "input_orientation": "forward",
+      "input_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+      "ngrams": {
+        "3": {
+          "gap_histogram": {
+            "1003": 1,
+            "103": 1,
+            "106": 1,
+            "11": 1,
+            "111": 2,
+            "119": 1,
+            "121": 1,
+            "128": 1,
+            "131": 1,
+            "133": 1,
+            "145": 1,
+            "146": 2,
+            "15": 1,
+            "154": 1,
+            "157": 1,
+            "158": 1,
+            "163": 2,
+            "175": 1,
+            "181": 2,
+            "182": 1,
+            "188": 2,
+            "208": 1,
+            "213": 1,
+            "217": 1,
+            "22": 1,
+            "223": 1,
+            "227": 1,
+            "23": 3,
+            "231": 1,
+            "232": 3,
+            "248": 1,
+            "258": 1,
+            "264": 1,
+            "273": 1,
+            "274": 1,
+            "289": 2,
+            "296": 2,
+            "3": 1,
+            "312": 1,
+            "314": 1,
+            "32": 1,
+            "320": 1,
+            "343": 1,
+            "346": 2,
+            "357": 1,
+            "358": 1,
+            "363": 1,
+            "37": 1,
+            "372": 1,
+            "376": 1,
+            "381": 1,
+            "392": 1,
+            "406": 2,
+            "41": 1,
+            "428": 1,
+            "434": 2,
+            "439": 1,
+            "441": 1,
+            "444": 1,
+            "47": 2,
+            "485": 1,
+            "486": 1,
+            "490": 1,
+            "502": 1,
+            "507": 1,
+            "517": 1,
+            "52": 1,
+            "527": 1,
+            "537": 1,
+            "563": 1,
+            "57": 1,
+            "588": 1,
+            "598": 1,
+            "602": 1,
+            "608": 1,
+            "624": 1,
+            "633": 1,
+            "643": 1,
+            "65": 2,
+            "661": 1,
+            "664": 2,
+            "684": 1,
+            "69": 1,
+            "708": 1,
+            "709": 1,
+            "71": 1,
+            "713": 2,
+            "717": 1,
+            "718": 1,
+            "721": 1,
+            "754": 1,
+            "799": 1,
+            "8": 1,
+            "808": 1,
+            "813": 1,
+            "82": 1,
+            "827": 1,
+            "83": 1,
+            "862": 1,
+            "865": 1,
+            "886": 1,
+            "896": 2,
+            "948": 2,
+            "96": 1,
+            "99": 1
+          },
+          "repeat_pair_count": 125,
+          "repeat_pairs": [
+            {
+              "gap": 208,
+              "ngram": "004",
+              "start_a": 472,
+              "start_b": 680,
+              "supports_periods": []
+            },
+            {
+              "gap": 314,
+              "ngram": "030",
+              "start_a": 528,
+              "start_b": 842,
+              "supports_periods": []
+            },
+            {
+              "gap": 376,
+              "ngram": "06A",
+              "start_a": 446,
+              "start_b": 822,
+              "supports_periods": []
+            },
+            {
+              "gap": 111,
+              "ngram": "06C",
+              "start_a": 649,
+              "start_b": 760,
+              "supports_periods": []
+            },
+            {
+              "gap": 346,
+              "ngram": "0DE",
+              "start_a": 296,
+              "start_b": 642,
+              "supports_periods": []
+            },
+            {
+              "gap": 47,
+              "ngram": "0EA",
+              "start_a": 530,
+              "start_b": 577,
+              "supports_periods": []
+            },
+            {
+              "gap": 181,
+              "ngram": "116",
+              "start_a": 129,
+              "start_b": 310,
+              "supports_periods": []
+            },
+            {
+              "gap": 664,
+              "ngram": "131",
+              "start_a": 392,
+              "start_b": 1056,
+              "supports_periods": []
+            },
+            {
+              "gap": 23,
+              "ngram": "140",
+              "start_a": 24,
+              "start_b": 47,
+              "supports_periods": []
+            },
+            {
+              "gap": 434,
+              "ngram": "149",
+              "start_a": 458,
+              "start_b": 892,
+              "supports_periods": []
+            },
+            {
+              "gap": 188,
+              "ngram": "154",
+              "start_a": 475,
+              "start_b": 663,
+              "supports_periods": []
+            },
+            {
+              "gap": 181,
+              "ngram": "16F",
+              "start_a": 130,
+              "start_b": 311,
+              "supports_periods": []
+            },
+            {
+              "gap": 602,
+              "ngram": "1C2",
+              "start_a": 196,
+              "start_b": 798,
+              "supports_periods": []
+            },
+            {
+              "gap": 392,
+              "ngram": "1EA",
+              "start_a": 386,
+              "start_b": 778,
+              "supports_periods": []
+            },
+            {
+              "gap": 490,
+              "ngram": "227",
+              "start_a": 141,
+              "start_b": 631,
+              "supports_periods": []
+            },
+            {
+              "gap": 57,
+              "ngram": "291",
+              "start_a": 45,
+              "start_b": 102,
+              "supports_periods": [
+                19,
+                57
+              ]
+            },
+            {
+              "gap": 273,
+              "ngram": "29C",
+              "start_a": 695,
+              "start_b": 968,
+              "supports_periods": []
+            },
+            {
+              "gap": 721,
+              "ngram": "2F9",
+              "start_a": 255,
+              "start_b": 976,
+              "supports_periods": []
+            },
+            {
+              "gap": 22,
+              "ngram": "30E",
+              "start_a": 507,
+              "start_b": 529,
+              "supports_periods": []
+            },
+            {
+              "gap": 69,
+              "ngram": "30E",
+              "start_a": 507,
+              "start_b": 576,
+              "supports_periods": []
+            },
+            {
+              "gap": 47,
+              "ngram": "30E",
+              "start_a": 529,
+              "start_b": 576,
+              "supports_periods": []
+            },
+            {
+              "gap": 664,
+              "ngram": "313",
+              "start_a": 391,
+              "start_b": 1055,
+              "supports_periods": []
+            },
+            {
+              "gap": 661,
+              "ngram": "388",
+              "start_a": 374,
+              "start_b": 1035,
+              "supports_periods": []
+            },
+            {
+              "gap": 827,
+              "ngram": "3FA",
+              "start_a": 52,
+              "start_b": 879,
+              "supports_periods": []
+            },
+            {
+              "gap": 23,
+              "ngram": "404",
+              "start_a": 25,
+              "start_b": 48,
+              "supports_periods": []
+            },
+            {
+              "gap": 434,
+              "ngram": "414",
+              "start_a": 23,
+              "start_b": 457,
+              "supports_periods": []
+            },
+            {
+              "gap": 799,
+              "ngram": "42A",
+              "start_a": 15,
+              "start_b": 814,
+              "supports_periods": []
+            },
+            {
+              "gap": 96,
+              "ngram": "42B",
+              "start_a": 942,
+              "start_b": 1038,
+              "supports_periods": []
+            },
+            {
+              "gap": 248,
+              "ngram": "434",
+              "start_a": 221,
+              "start_b": 469,
+              "supports_periods": []
+            },
+            {
+              "gap": 813,
+              "ngram": "447",
+              "start_a": 152,
+              "start_b": 965,
+              "supports_periods": []
+            },
+            {
+              "gap": 948,
+              "ngram": "456",
+              "start_a": 138,
+              "start_b": 1086,
+              "supports_periods": []
+            },
+            {
+              "gap": 133,
+              "ngram": "4AE",
+              "start_a": 27,
+              "start_b": 160,
+              "supports_periods": [
+                19
+              ]
+            },
+            {
+              "gap": 258,
+              "ngram": "4FB",
+              "start_a": 748,
+              "start_b": 1006,
+              "supports_periods": []
+            },
+            {
+              "gap": 83,
+              "ngram": "54F",
+              "start_a": 664,
+              "start_b": 747,
+              "supports_periods": []
+            },
+            {
+              "gap": 52,
+              "ngram": "562",
+              "start_a": 139,
+              "start_b": 191,
+              "supports_periods": []
+            },
+            {
+              "gap": 948,
+              "ngram": "562",
+              "start_a": 139,
+              "start_b": 1087,
+              "supports_periods": []
+            },
+            {
+              "gap": 896,
+              "ngram": "562",
+              "start_a": 191,
+              "start_b": 1087,
+              "supports_periods": []
+            },
+            {
+              "gap": 865,
+              "ngram": "5B3",
+              "start_a": 168,
+              "start_b": 1033,
+              "supports_periods": []
+            },
+            {
+              "gap": 37,
+              "ngram": "5DD",
+              "start_a": 242,
+              "start_b": 279,
+              "supports_periods": []
+            },
+            {
+              "gap": 896,
+              "ngram": "5E2",
+              "start_a": 30,
+              "start_b": 926,
+              "supports_periods": []
+            },
+            {
+              "gap": 358,
+              "ngram": "624",
+              "start_a": 288,
+              "start_b": 646,
+              "supports_periods": []
+            },
+            {
+              "gap": 103,
+              "ngram": "630",
+              "start_a": 575,
+              "start_b": 678,
+              "supports_periods": []
+            },
+            {
+              "gap": 346,
+              "ngram": "642",
+              "start_a": 616,
+              "start_b": 962,
+              "supports_periods": []
+            },
+            {
+              "gap": 163,
+              "ngram": "66B",
+              "start_a": 707,
+              "start_b": 870,
+              "supports_periods": []
+            },
+            {
+              "gap": 82,
+              "ngram": "685",
+              "start_a": 84,
+              "start_b": 166,
+              "supports_periods": []
+            },
+            {
+              "gap": 217,
+              "ngram": "69C",
+              "start_a": 323,
+              "start_b": 540,
+              "supports_periods": []
+            },
+            {
+              "gap": 633,
+              "ngram": "745",
+              "start_a": 137,
+              "start_b": 770,
+              "supports_periods": []
+            },
+            {
+              "gap": 718,
+              "ngram": "756",
+              "start_a": 190,
+              "start_b": 908,
+              "supports_periods": []
+            },
+            {
+              "gap": 274,
+              "ngram": "75D",
+              "start_a": 282,
+              "start_b": 556,
+              "supports_periods": []
+            },
+            {
+              "gap": 439,
+              "ngram": "773",
+              "start_a": 66,
+              "start_b": 505,
+              "supports_periods": []
+            },
+            {
+              "gap": 537,
+              "ngram": "7C1",
+              "start_a": 239,
+              "start_b": 776,
+              "supports_periods": []
+            },
+            {
+              "gap": 624,
+              "ngram": "7CC",
+              "start_a": 88,
+              "start_b": 712,
+              "supports_periods": []
+            },
+            {
+              "gap": 444,
+              "ngram": "7CF",
+              "start_a": 639,
+              "start_b": 1083,
+              "supports_periods": []
+            },
+            {
+              "gap": 158,
+              "ngram": "7E3",
+              "start_a": 214,
+              "start_b": 372,
+              "supports_periods": []
+            },
+            {
+              "gap": 441,
+              "ngram": "7F1",
+              "start_a": 384,
+              "start_b": 825,
+              "supports_periods": []
+            },
+            {
+              "gap": 223,
+              "ngram": "7FB",
+              "start_a": 2,
+              "start_b": 225,
+              "supports_periods": []
+            },
+            {
+              "gap": 507,
+              "ngram": "7FF",
+              "start_a": 126,
+              "start_b": 633,
+              "supports_periods": []
+            },
+            {
+              "gap": 343,
+              "ngram": "833",
+              "start_a": 252,
+              "start_b": 595,
+              "supports_periods": []
+            },
+            {
+              "gap": 886,
+              "ngram": "884",
+              "start_a": 150,
+              "start_b": 1036,
+              "supports_periods": []
+            },
+            {
+              "gap": 227,
+              "ngram": "89D",
+              "start_a": 340,
+              "start_b": 567,
+              "supports_periods": []
+            },
+            {
+              "gap": 11,
+              "ngram": "8FE",
+              "start_a": 863,
+              "start_b": 874,
+              "supports_periods": []
+            },
+            {
+              "gap": 363,
+              "ngram": "907",
+              "start_a": 336,
+              "start_b": 699,
+              "supports_periods": []
+            },
+            {
+              "gap": 608,
+              "ngram": "914",
+              "start_a": 46,
+              "start_b": 654,
+              "supports_periods": [
+                19,
+                38
+              ]
+            },
+            {
+              "gap": 486,
+              "ngram": "934",
+              "start_a": 467,
+              "start_b": 953,
+              "supports_periods": []
+            },
+            {
+              "gap": 106,
+              "ngram": "947",
+              "start_a": 78,
+              "start_b": 184,
+              "supports_periods": []
+            },
+            {
+              "gap": 598,
+              "ngram": "963",
+              "start_a": 415,
+              "start_b": 1013,
+              "supports_periods": []
+            },
+            {
+              "gap": 289,
+              "ngram": "9A7",
+              "start_a": 421,
+              "start_b": 710,
+              "supports_periods": []
+            },
+            {
+              "gap": 182,
+              "ngram": "9B1",
+              "start_a": 890,
+              "start_b": 1072,
+              "supports_periods": []
+            },
+            {
+              "gap": 428,
+              "ngram": "9C5",
+              "start_a": 541,
+              "start_b": 969,
+              "supports_periods": []
+            },
+            {
+              "gap": 372,
+              "ngram": "9CD",
+              "start_a": 324,
+              "start_b": 696,
+              "supports_periods": []
+            },
+            {
+              "gap": 119,
+              "ngram": "9D9",
+              "start_a": 182,
+              "start_b": 301,
+              "supports_periods": []
+            },
+            {
+              "gap": 357,
+              "ngram": "A5F",
+              "start_a": 448,
+              "start_b": 805,
+              "supports_periods": []
+            },
+            {
+              "gap": 41,
+              "ngram": "A61",
+              "start_a": 491,
+              "start_b": 532,
+              "supports_periods": []
+            },
+            {
+              "gap": 175,
+              "ngram": "A75",
+              "start_a": 189,
+              "start_b": 364,
+              "supports_periods": []
+            },
+            {
+              "gap": 485,
+              "ngram": "A8F",
+              "start_a": 388,
+              "start_b": 873,
+              "supports_periods": []
+            },
+            {
+              "gap": 517,
+              "ngram": "A8F",
+              "start_a": 388,
+              "start_b": 905,
+              "supports_periods": []
+            },
+            {
+              "gap": 32,
+              "ngram": "A8F",
+              "start_a": 873,
+              "start_b": 905,
+              "supports_periods": []
+            },
+            {
+              "gap": 296,
+              "ngram": "A90",
+              "start_a": 728,
+              "start_b": 1024,
+              "supports_periods": []
+            },
+            {
+              "gap": 231,
+              "ngram": "AA9",
+              "start_a": 727,
+              "start_b": 958,
+              "supports_periods": []
+            },
+            {
+              "gap": 296,
+              "ngram": "AA9",
+              "start_a": 727,
+              "start_b": 1023,
+              "supports_periods": []
+            },
+            {
+              "gap": 65,
+              "ngram": "AA9",
+              "start_a": 958,
+              "start_b": 1023,
+              "supports_periods": []
+            },
+            {
+              "gap": 154,
+              "ngram": "AC1",
+              "start_a": 582,
+              "start_b": 736,
+              "supports_periods": []
+            },
+            {
+              "gap": 15,
+              "ngram": "AE0",
+              "start_a": 146,
+              "start_b": 161,
+              "supports_periods": []
+            },
+            {
+              "gap": 3,
+              "ngram": "B19",
+              "start_a": 1070,
+              "start_b": 1073,
+              "supports_periods": []
+            },
+            {
+              "gap": 754,
+              "ngram": "B2B",
+              "start_a": 55,
+              "start_b": 809,
+              "supports_periods": []
+            },
+            {
+              "gap": 1003,
+              "ngram": "B3A",
+              "start_a": 37,
+              "start_b": 1040,
+              "supports_periods": []
+            },
+            {
+              "gap": 709,
+              "ngram": "B3F",
+              "start_a": 169,
+              "start_b": 878,
+              "supports_periods": []
+            },
+            {
+              "gap": 381,
+              "ngram": "B93",
+              "start_a": 563,
+              "start_b": 944,
+              "supports_periods": []
+            },
+            {
+              "gap": 289,
+              "ngram": "B9A",
+              "start_a": 420,
+              "start_b": 709,
+              "supports_periods": []
+            },
+            {
+              "gap": 111,
+              "ngram": "BBD",
+              "start_a": 436,
+              "start_b": 547,
+              "supports_periods": []
+            },
+            {
+              "gap": 527,
+              "ngram": "BD1",
+              "start_a": 134,
+              "start_b": 661,
+              "supports_periods": []
+            },
+            {
+              "gap": 146,
+              "ngram": "C32",
+              "start_a": 266,
+              "start_b": 412,
+              "supports_periods": []
+            },
+            {
+              "gap": 128,
+              "ngram": "C42",
+              "start_a": 813,
+              "start_b": 941,
+              "supports_periods": []
+            },
+            {
+              "gap": 71,
+              "ngram": "C69",
+              "start_a": 539,
+              "start_b": 610,
+              "supports_periods": []
+            },
+            {
+              "gap": 312,
+              "ngram": "C6C",
+              "start_a": 478,
+              "start_b": 790,
+              "supports_periods": []
+            },
+            {
+              "gap": 406,
+              "ngram": "C91",
+              "start_a": 90,
+              "start_b": 496,
+              "supports_periods": []
+            },
+            {
+              "gap": 563,
+              "ngram": "C91",
+              "start_a": 90,
+              "start_b": 653,
+              "supports_periods": []
+            },
+            {
+              "gap": 157,
+              "ngram": "C91",
+              "start_a": 496,
+              "start_b": 653,
+              "supports_periods": []
+            },
+            {
+              "gap": 643,
+              "ngram": "CAA",
+              "start_a": 314,
+              "start_b": 957,
+              "supports_periods": []
+            },
+            {
+              "gap": 708,
+              "ngram": "CAA",
+              "start_a": 314,
+              "start_b": 1022,
+              "supports_periods": []
+            },
+            {
+              "gap": 65,
+              "ngram": "CAA",
+              "start_a": 957,
+              "start_b": 1022,
+              "supports_periods": []
+            },
+            {
+              "gap": 406,
+              "ngram": "CC9",
+              "start_a": 89,
+              "start_b": 495,
+              "supports_periods": []
+            },
+            {
+              "gap": 588,
+              "ngram": "D3F",
+              "start_a": 155,
+              "start_b": 743,
+              "supports_periods": []
+            },
+            {
+              "gap": 131,
+              "ngram": "D57",
+              "start_a": 438,
+              "start_b": 569,
+              "supports_periods": []
+            },
+            {
+              "gap": 99,
+              "ngram": "D7F",
+              "start_a": 125,
+              "start_b": 224,
+              "supports_periods": []
+            },
+            {
+              "gap": 232,
+              "ngram": "DA6",
+              "start_a": 490,
+              "start_b": 722,
+              "supports_periods": []
+            },
+            {
+              "gap": 146,
+              "ngram": "DC3",
+              "start_a": 265,
+              "start_b": 411,
+              "supports_periods": []
+            },
+            {
+              "gap": 713,
+              "ngram": "DEE",
+              "start_a": 297,
+              "start_b": 1010,
+              "supports_periods": []
+            },
+            {
+              "gap": 808,
+              "ngram": "E23",
+              "start_a": 119,
+              "start_b": 927,
+              "supports_periods": []
+            },
+            {
+              "gap": 8,
+              "ngram": "E2A",
+              "start_a": 433,
+              "start_b": 441,
+              "supports_periods": []
+            },
+            {
+              "gap": 213,
+              "ngram": "E3D",
+              "start_a": 687,
+              "start_b": 900,
+              "supports_periods": []
+            },
+            {
+              "gap": 121,
+              "ngram": "E58",
+              "start_a": 865,
+              "start_b": 986,
+              "supports_periods": []
+            },
+            {
+              "gap": 502,
+              "ngram": "E66",
+              "start_a": 367,
+              "start_b": 869,
+              "supports_periods": []
+            },
+            {
+              "gap": 264,
+              "ngram": "ED6",
+              "start_a": 380,
+              "start_b": 644,
+              "supports_periods": []
+            },
+            {
+              "gap": 713,
+              "ngram": "EE9",
+              "start_a": 298,
+              "start_b": 1011,
+              "supports_periods": []
+            },
+            {
+              "gap": 188,
+              "ngram": "F26",
+              "start_a": 171,
+              "start_b": 359,
+              "supports_periods": []
+            },
+            {
+              "gap": 163,
+              "ngram": "F31",
+              "start_a": 390,
+              "start_b": 553,
+              "supports_periods": []
+            },
+            {
+              "gap": 232,
+              "ngram": "F42",
+              "start_a": 602,
+              "start_b": 834,
+              "supports_periods": []
+            },
+            {
+              "gap": 23,
+              "ngram": "F45",
+              "start_a": 1062,
+              "start_b": 1085,
+              "supports_periods": []
+            },
+            {
+              "gap": 684,
+              "ngram": "F83",
+              "start_a": 251,
+              "start_b": 935,
+              "supports_periods": [
+                19,
+                38,
+                57
+              ]
+            },
+            {
+              "gap": 232,
+              "ngram": "F95",
+              "start_a": 745,
+              "start_b": 977,
+              "supports_periods": []
+            },
+            {
+              "gap": 717,
+              "ngram": "FAC",
+              "start_a": 18,
+              "start_b": 735,
+              "supports_periods": []
+            },
+            {
+              "gap": 862,
+              "ngram": "FAC",
+              "start_a": 18,
+              "start_b": 880,
+              "supports_periods": []
+            },
+            {
+              "gap": 145,
+              "ngram": "FAC",
+              "start_a": 735,
+              "start_b": 880,
+              "supports_periods": []
+            },
+            {
+              "gap": 320,
+              "ngram": "FE2",
+              "start_a": 432,
+              "start_b": 752,
+              "supports_periods": []
+            }
+          ],
+          "start_positions_examined": 1090
+        },
+        "4": {
+          "gap_histogram": {
+            "146": 1,
+            "181": 1,
+            "23": 1,
+            "289": 1,
+            "296": 1,
+            "406": 1,
+            "47": 1,
+            "65": 1,
+            "664": 1,
+            "713": 1,
+            "948": 1
+          },
+          "repeat_pair_count": 11,
+          "repeat_pairs": [
+            {
+              "gap": 181,
+              "ngram": "116F",
+              "start_a": 129,
+              "start_b": 310,
+              "supports_periods": []
+            },
+            {
+              "gap": 23,
+              "ngram": "1404",
+              "start_a": 24,
+              "start_b": 47,
+              "supports_periods": []
+            },
+            {
+              "gap": 47,
+              "ngram": "30EA",
+              "start_a": 529,
+              "start_b": 576,
+              "supports_periods": []
+            },
+            {
+              "gap": 664,
+              "ngram": "3131",
+              "start_a": 391,
+              "start_b": 1055,
+              "supports_periods": []
+            },
+            {
+              "gap": 948,
+              "ngram": "4562",
+              "start_a": 138,
+              "start_b": 1086,
+              "supports_periods": []
+            },
+            {
+              "gap": 296,
+              "ngram": "AA90",
+              "start_a": 727,
+              "start_b": 1023,
+              "supports_periods": []
+            },
+            {
+              "gap": 289,
+              "ngram": "B9A7",
+              "start_a": 420,
+              "start_b": 709,
+              "supports_periods": []
+            },
+            {
+              "gap": 65,
+              "ngram": "CAA9",
+              "start_a": 957,
+              "start_b": 1022,
+              "supports_periods": []
+            },
+            {
+              "gap": 406,
+              "ngram": "CC91",
+              "start_a": 89,
+              "start_b": 495,
+              "supports_periods": []
+            },
+            {
+              "gap": 146,
+              "ngram": "DC32",
+              "start_a": 265,
+              "start_b": 411,
+              "supports_periods": []
+            },
+            {
+              "gap": 713,
+              "ngram": "DEE9",
+              "start_a": 297,
+              "start_b": 1010,
+              "supports_periods": []
+            }
+          ],
+          "start_positions_examined": 1089
+        },
+        "5": {
+          "gap_histogram": {},
+          "repeat_pair_count": 0,
+          "repeat_pairs": [],
+          "start_positions_examined": 1088
+        }
+      },
+      "period_set_intersections": {
+        "19_and_38": 2,
+        "19_and_38_and_57": 1,
+        "19_and_57": 2,
+        "38_and_57": 1
+      },
+      "support_pair_counts": {
+        "19": 4,
+        "38": 2,
+        "57": 2
+      },
+      "transformed_length": 1092,
+      "transformed_sha256": "3f44a5a11942b7558cb1a68984d38700152e20cfdee3031ad2d147fb15cd6f86"
+    },
+    {
+      "all_three_periods_common_pair_count": 1,
+      "all_three_periods_common_pairs": [
+        {
+          "gap": 228,
+          "n": 3,
+          "ngram": "AAC",
+          "start_a": 619,
+          "start_b": 847
+        }
+      ],
+      "direction": "encode",
+      "id": "encode:full_hex_reverse",
+      "input_orientation": "full_hex_reverse",
+      "input_sha256": "1e5c94f36483c784b10d14beba26c515efc18d4fad0f126dd18291d541192dd0",
+      "ngrams": {
+        "3": {
+          "gap_histogram": {
+            "103": 1,
+            "11": 1,
+            "111": 2,
+            "119": 1,
+            "121": 1,
+            "128": 1,
+            "131": 1,
+            "146": 2,
+            "147": 1,
+            "154": 1,
+            "156": 1,
+            "157": 1,
+            "158": 1,
+            "163": 1,
+            "172": 1,
+            "175": 1,
+            "182": 1,
+            "188": 2,
+            "208": 1,
+            "215": 1,
+            "217": 2,
+            "218": 1,
+            "22": 1,
+            "223": 2,
+            "227": 2,
+            "228": 1,
+            "23": 3,
+            "232": 1,
+            "248": 1,
+            "252": 1,
+            "253": 1,
+            "264": 1,
+            "272": 2,
+            "273": 1,
+            "274": 1,
+            "275": 1,
+            "289": 2,
+            "290": 1,
+            "293": 1,
+            "3": 1,
+            "32": 1,
+            "320": 1,
+            "334": 1,
+            "338": 1,
+            "341": 1,
+            "343": 1,
+            "346": 2,
+            "358": 1,
+            "363": 1,
+            "37": 1,
+            "372": 1,
+            "374": 2,
+            "40": 1,
+            "41": 1,
+            "419": 1,
+            "434": 1,
+            "449": 1,
+            "450": 1,
+            "451": 1,
+            "47": 2,
+            "492": 1,
+            "495": 1,
+            "502": 1,
+            "508": 1,
+            "537": 1,
+            "555": 1,
+            "557": 1,
+            "560": 1,
+            "57": 1,
+            "579": 1,
+            "590": 1,
+            "599": 2,
+            "622": 1,
+            "624": 1,
+            "63": 1,
+            "640": 2,
+            "647": 1,
+            "65": 2,
+            "663": 1,
+            "674": 1,
+            "678": 1,
+            "681": 1,
+            "69": 1,
+            "698": 1,
+            "704": 2,
+            "705": 1,
+            "71": 2,
+            "713": 1,
+            "723": 1,
+            "728": 1,
+            "765": 1,
+            "768": 2,
+            "773": 1,
+            "791": 1,
+            "8": 1,
+            "820": 1,
+            "83": 1,
+            "830": 1,
+            "846": 1,
+            "854": 1,
+            "889": 1,
+            "903": 1,
+            "908": 1,
+            "917": 1,
+            "96": 1,
+            "962": 1
+          },
+          "repeat_pair_count": 125,
+          "repeat_pairs": [
+            {
+              "gap": 622,
+              "ngram": "030",
+              "start_a": 405,
+              "start_b": 1027,
+              "supports_periods": []
+            },
+            {
+              "gap": 103,
+              "ngram": "036",
+              "start_a": 255,
+              "start_b": 358,
+              "supports_periods": []
+            },
+            {
+              "gap": 23,
+              "ngram": "041",
+              "start_a": 106,
+              "start_b": 129,
+              "supports_periods": []
+            },
+            {
+              "gap": 640,
+              "ngram": "09A",
+              "start_a": 205,
+              "start_b": 845,
+              "supports_periods": []
+            },
+            {
+              "gap": 765,
+              "ngram": "0EA",
+              "start_a": 7,
+              "start_b": 772,
+              "supports_periods": []
+            },
+            {
+              "gap": 272,
+              "ngram": "131",
+              "start_a": 541,
+              "start_b": 813,
+              "supports_periods": []
+            },
+            {
+              "gap": 163,
+              "ngram": "13F",
+              "start_a": 380,
+              "start_b": 543,
+              "supports_periods": []
+            },
+            {
+              "gap": 41,
+              "ngram": "16A",
+              "start_a": 401,
+              "start_b": 442,
+              "supports_periods": []
+            },
+            {
+              "gap": 57,
+              "ngram": "192",
+              "start_a": 51,
+              "start_b": 108,
+              "supports_periods": [
+                19,
+                57
+              ]
+            },
+            {
+              "gap": 217,
+              "ngram": "19C",
+              "start_a": 63,
+              "start_b": 280,
+              "supports_periods": []
+            },
+            {
+              "gap": 374,
+              "ngram": "19C",
+              "start_a": 63,
+              "start_b": 437,
+              "supports_periods": []
+            },
+            {
+              "gap": 157,
+              "ngram": "19C",
+              "start_a": 280,
+              "start_b": 437,
+              "supports_periods": []
+            },
+            {
+              "gap": 182,
+              "ngram": "1B9",
+              "start_a": 797,
+              "start_b": 979,
+              "supports_periods": []
+            },
+            {
+              "gap": 537,
+              "ngram": "1C7",
+              "start_a": 157,
+              "start_b": 694,
+              "supports_periods": []
+            },
+            {
+              "gap": 154,
+              "ngram": "1CA",
+              "start_a": 197,
+              "start_b": 351,
+              "supports_periods": []
+            },
+            {
+              "gap": 253,
+              "ngram": "1DB",
+              "start_a": 19,
+              "start_b": 272,
+              "supports_periods": []
+            },
+            {
+              "gap": 495,
+              "ngram": "1F7",
+              "start_a": 549,
+              "start_b": 1044,
+              "supports_periods": []
+            },
+            {
+              "gap": 146,
+              "ngram": "23C",
+              "start_a": 521,
+              "start_b": 667,
+              "supports_periods": []
+            },
+            {
+              "gap": 590,
+              "ngram": "246",
+              "start_a": 317,
+              "start_b": 907,
+              "supports_periods": []
+            },
+            {
+              "gap": 128,
+              "ngram": "24C",
+              "start_a": 928,
+              "start_b": 1056,
+              "supports_periods": []
+            },
+            {
+              "gap": 704,
+              "ngram": "24F",
+              "start_a": 331,
+              "start_b": 1035,
+              "supports_periods": []
+            },
+            {
+              "gap": 728,
+              "ngram": "265",
+              "start_a": 14,
+              "start_b": 742,
+              "supports_periods": []
+            },
+            {
+              "gap": 768,
+              "ngram": "265",
+              "start_a": 14,
+              "start_b": 782,
+              "supports_periods": []
+            },
+            {
+              "gap": 40,
+              "ngram": "265",
+              "start_a": 742,
+              "start_b": 782,
+              "supports_periods": []
+            },
+            {
+              "gap": 334,
+              "ngram": "2C1",
+              "start_a": 737,
+              "start_b": 1071,
+              "supports_periods": []
+            },
+            {
+              "gap": 820,
+              "ngram": "2E5",
+              "start_a": 123,
+              "start_b": 943,
+              "supports_periods": []
+            },
+            {
+              "gap": 320,
+              "ngram": "2EF",
+              "start_a": 181,
+              "start_b": 501,
+              "supports_periods": []
+            },
+            {
+              "gap": 272,
+              "ngram": "313",
+              "start_a": 542,
+              "start_b": 814,
+              "supports_periods": []
+            },
+            {
+              "gap": 908,
+              "ngram": "32E",
+              "start_a": 34,
+              "start_b": 942,
+              "supports_periods": []
+            },
+            {
+              "gap": 343,
+              "ngram": "338",
+              "start_a": 338,
+              "start_b": 681,
+              "supports_periods": []
+            },
+            {
+              "gap": 338,
+              "ngram": "369",
+              "start_a": 518,
+              "start_b": 856,
+              "supports_periods": []
+            },
+            {
+              "gap": 341,
+              "ngram": "377",
+              "start_a": 87,
+              "start_b": 428,
+              "supports_periods": []
+            },
+            {
+              "gap": 252,
+              "ngram": "38F",
+              "start_a": 682,
+              "start_b": 934,
+              "supports_periods": []
+            },
+            {
+              "gap": 555,
+              "ngram": "39B",
+              "start_a": 370,
+              "start_b": 925,
+              "supports_periods": []
+            },
+            {
+              "gap": 71,
+              "ngram": "3B5",
+              "start_a": 765,
+              "start_b": 836,
+              "supports_periods": []
+            },
+            {
+              "gap": 146,
+              "ngram": "3CD",
+              "start_a": 522,
+              "start_b": 668,
+              "supports_periods": []
+            },
+            {
+              "gap": 158,
+              "ngram": "3E7",
+              "start_a": 561,
+              "start_b": 719,
+              "supports_periods": []
+            },
+            {
+              "gap": 208,
+              "ngram": "400",
+              "start_a": 253,
+              "start_b": 461,
+              "supports_periods": []
+            },
+            {
+              "gap": 23,
+              "ngram": "404",
+              "start_a": 105,
+              "start_b": 128,
+              "supports_periods": []
+            },
+            {
+              "gap": 346,
+              "ngram": "414",
+              "start_a": 130,
+              "start_b": 476,
+              "supports_periods": []
+            },
+            {
+              "gap": 172,
+              "ngram": "419",
+              "start_a": 107,
+              "start_b": 279,
+              "supports_periods": []
+            },
+            {
+              "gap": 358,
+              "ngram": "426",
+              "start_a": 287,
+              "start_b": 645,
+              "supports_periods": []
+            },
+            {
+              "gap": 248,
+              "ngram": "434",
+              "start_a": 464,
+              "start_b": 712,
+              "supports_periods": []
+            },
+            {
+              "gap": 450,
+              "ngram": "439",
+              "start_a": 466,
+              "start_b": 916,
+              "supports_periods": []
+            },
+            {
+              "gap": 188,
+              "ngram": "451",
+              "start_a": 270,
+              "start_b": 458,
+              "supports_periods": []
+            },
+            {
+              "gap": 830,
+              "ngram": "488",
+              "start_a": 3,
+              "start_b": 833,
+              "supports_periods": []
+            },
+            {
+              "gap": 147,
+              "ngram": "547",
+              "start_a": 16,
+              "start_b": 163,
+              "supports_periods": []
+            },
+            {
+              "gap": 23,
+              "ngram": "54F",
+              "start_a": 784,
+              "start_b": 807,
+              "supports_periods": []
+            },
+            {
+              "gap": 175,
+              "ngram": "57A",
+              "start_a": 569,
+              "start_b": 744,
+              "supports_periods": []
+            },
+            {
+              "gap": 698,
+              "ngram": "586",
+              "start_a": 69,
+              "start_b": 767,
+              "supports_periods": []
+            },
+            {
+              "gap": 704,
+              "ngram": "59F",
+              "start_a": 188,
+              "start_b": 892,
+              "supports_periods": []
+            },
+            {
+              "gap": 508,
+              "ngram": "5C9",
+              "start_a": 392,
+              "start_b": 900,
+              "supports_periods": []
+            },
+            {
+              "gap": 599,
+              "ngram": "611",
+              "start_a": 24,
+              "start_b": 623,
+              "supports_periods": []
+            },
+            {
+              "gap": 188,
+              "ngram": "62F",
+              "start_a": 574,
+              "start_b": 762,
+              "supports_periods": []
+            },
+            {
+              "gap": 768,
+              "ngram": "654",
+              "start_a": 15,
+              "start_b": 783,
+              "supports_periods": []
+            },
+            {
+              "gap": 218,
+              "ngram": "657",
+              "start_a": 743,
+              "start_b": 961,
+              "supports_periods": []
+            },
+            {
+              "gap": 434,
+              "ngram": "66E",
+              "start_a": 566,
+              "start_b": 1000,
+              "supports_periods": []
+            },
+            {
+              "gap": 232,
+              "ngram": "6AD",
+              "start_a": 211,
+              "start_b": 443,
+              "supports_periods": []
+            },
+            {
+              "gap": 264,
+              "ngram": "6DE",
+              "start_a": 289,
+              "start_b": 553,
+              "supports_periods": []
+            },
+            {
+              "gap": 846,
+              "ngram": "6E1",
+              "start_a": 155,
+              "start_b": 1001,
+              "supports_periods": []
+            },
+            {
+              "gap": 363,
+              "ngram": "709",
+              "start_a": 234,
+              "start_b": 597,
+              "supports_periods": []
+            },
+            {
+              "gap": 290,
+              "ngram": "722",
+              "start_a": 12,
+              "start_b": 302,
+              "supports_periods": []
+            },
+            {
+              "gap": 903,
+              "ngram": "744",
+              "start_a": 1,
+              "start_b": 904,
+              "supports_periods": []
+            },
+            {
+              "gap": 674,
+              "ngram": "749",
+              "start_a": 75,
+              "start_b": 749,
+              "supports_periods": []
+            },
+            {
+              "gap": 131,
+              "ngram": "75D",
+              "start_a": 364,
+              "start_b": 495,
+              "supports_periods": []
+            },
+            {
+              "gap": 289,
+              "ngram": "7A9",
+              "start_a": 223,
+              "start_b": 512,
+              "supports_periods": []
+            },
+            {
+              "gap": 121,
+              "ngram": "85E",
+              "start_a": 883,
+              "start_b": 1004,
+              "supports_periods": []
+            },
+            {
+              "gap": 275,
+              "ngram": "883",
+              "start_a": 559,
+              "start_b": 834,
+              "supports_periods": []
+            },
+            {
+              "gap": 3,
+              "ngram": "91B",
+              "start_a": 796,
+              "start_b": 799,
+              "supports_periods": []
+            },
+            {
+              "gap": 502,
+              "ngram": "941",
+              "start_a": 475,
+              "start_b": 977,
+              "supports_periods": []
+            },
+            {
+              "gap": 71,
+              "ngram": "96C",
+              "start_a": 323,
+              "start_b": 394,
+              "supports_periods": []
+            },
+            {
+              "gap": 449,
+              "ngram": "96E",
+              "start_a": 154,
+              "start_b": 603,
+              "supports_periods": []
+            },
+            {
+              "gap": 640,
+              "ngram": "9AA",
+              "start_a": 206,
+              "start_b": 846,
+              "supports_periods": []
+            },
+            {
+              "gap": 705,
+              "ngram": "9AA",
+              "start_a": 206,
+              "start_b": 911,
+              "supports_periods": []
+            },
+            {
+              "gap": 65,
+              "ngram": "9AA",
+              "start_a": 846,
+              "start_b": 911,
+              "supports_periods": []
+            },
+            {
+              "gap": 374,
+              "ngram": "9CC",
+              "start_a": 64,
+              "start_b": 438,
+              "supports_periods": []
+            },
+            {
+              "gap": 119,
+              "ngram": "9D9",
+              "start_a": 632,
+              "start_b": 751,
+              "supports_periods": []
+            },
+            {
+              "gap": 223,
+              "ngram": "9EE",
+              "start_a": 635,
+              "start_b": 858,
+              "supports_periods": []
+            },
+            {
+              "gap": 215,
+              "ngram": "9F2",
+              "start_a": 678,
+              "start_b": 893,
+              "supports_periods": []
+            },
+            {
+              "gap": 917,
+              "ngram": "A24",
+              "start_a": 138,
+              "start_b": 1055,
+              "supports_periods": []
+            },
+            {
+              "gap": 8,
+              "ngram": "A2E",
+              "start_a": 492,
+              "start_b": 500,
+              "supports_periods": []
+            },
+            {
+              "gap": 713,
+              "ngram": "A3B",
+              "start_a": 116,
+              "start_b": 829,
+              "supports_periods": []
+            },
+            {
+              "gap": 560,
+              "ngram": "A60",
+              "start_a": 487,
+              "start_b": 1047,
+              "supports_periods": []
+            },
+            {
+              "gap": 289,
+              "ngram": "A9B",
+              "start_a": 224,
+              "start_b": 513,
+              "supports_periods": []
+            },
+            {
+              "gap": 228,
+              "ngram": "AAC",
+              "start_a": 619,
+              "start_b": 847,
+              "supports_periods": [
+                19,
+                38,
+                57
+              ]
+            },
+            {
+              "gap": 293,
+              "ngram": "AAC",
+              "start_a": 619,
+              "start_b": 912,
+              "supports_periods": []
+            },
+            {
+              "gap": 65,
+              "ngram": "AAC",
+              "start_a": 847,
+              "start_b": 912,
+              "supports_periods": []
+            },
+            {
+              "gap": 47,
+              "ngram": "AE0",
+              "start_a": 356,
+              "start_b": 403,
+              "supports_periods": []
+            },
+            {
+              "gap": 889,
+              "ngram": "AF3",
+              "start_a": 101,
+              "start_b": 990,
+              "supports_periods": []
+            },
+            {
+              "gap": 96,
+              "ngram": "B24",
+              "start_a": 831,
+              "start_b": 927,
+              "supports_periods": []
+            },
+            {
+              "gap": 962,
+              "ngram": "B2B",
+              "start_a": 98,
+              "start_b": 1060,
+              "supports_periods": []
+            },
+            {
+              "gap": 773,
+              "ngram": "B66",
+              "start_a": 226,
+              "start_b": 999,
+              "supports_periods": []
+            },
+            {
+              "gap": 678,
+              "ngram": "BF4",
+              "start_a": 185,
+              "start_b": 863,
+              "supports_periods": []
+            },
+            {
+              "gap": 557,
+              "ngram": "BF7",
+              "start_a": 151,
+              "start_b": 708,
+              "supports_periods": []
+            },
+            {
+              "gap": 111,
+              "ngram": "C60",
+              "start_a": 173,
+              "start_b": 284,
+              "supports_periods": []
+            },
+            {
+              "gap": 624,
+              "ngram": "C6C",
+              "start_a": 455,
+              "start_b": 1079,
+              "supports_periods": []
+            },
+            {
+              "gap": 663,
+              "ngram": "C92",
+              "start_a": 238,
+              "start_b": 901,
+              "supports_periods": []
+            },
+            {
+              "gap": 217,
+              "ngram": "C96",
+              "start_a": 393,
+              "start_b": 610,
+              "supports_periods": []
+            },
+            {
+              "gap": 63,
+              "ngram": "CAF",
+              "start_a": 135,
+              "start_b": 198,
+              "supports_periods": []
+            },
+            {
+              "gap": 854,
+              "ngram": "CAF",
+              "start_a": 135,
+              "start_b": 989,
+              "supports_periods": []
+            },
+            {
+              "gap": 791,
+              "ngram": "CAF",
+              "start_a": 198,
+              "start_b": 989,
+              "supports_periods": []
+            },
+            {
+              "gap": 156,
+              "ngram": "CC7",
+              "start_a": 65,
+              "start_b": 221,
+              "supports_periods": []
+            },
+            {
+              "gap": 723,
+              "ngram": "D3E",
+              "start_a": 246,
+              "start_b": 969,
+              "supports_periods": []
+            },
+            {
+              "gap": 274,
+              "ngram": "D57",
+              "start_a": 377,
+              "start_b": 651,
+              "supports_periods": []
+            },
+            {
+              "gap": 227,
+              "ngram": "D98",
+              "start_a": 366,
+              "start_b": 593,
+              "supports_periods": []
+            },
+            {
+              "gap": 111,
+              "ngram": "DBB",
+              "start_a": 386,
+              "start_b": 497,
+              "supports_periods": []
+            },
+            {
+              "gap": 372,
+              "ngram": "DC9",
+              "start_a": 237,
+              "start_b": 609,
+              "supports_periods": []
+            },
+            {
+              "gap": 37,
+              "ngram": "DD5",
+              "start_a": 654,
+              "start_b": 691,
+              "supports_periods": []
+            },
+            {
+              "gap": 47,
+              "ngram": "E03",
+              "start_a": 357,
+              "start_b": 404,
+              "supports_periods": []
+            },
+            {
+              "gap": 69,
+              "ngram": "E03",
+              "start_a": 357,
+              "start_b": 426,
+              "supports_periods": []
+            },
+            {
+              "gap": 22,
+              "ngram": "E03",
+              "start_a": 404,
+              "start_b": 426,
+              "supports_periods": []
+            },
+            {
+              "gap": 647,
+              "ngram": "EA4",
+              "start_a": 126,
+              "start_b": 773,
+              "supports_periods": []
+            },
+            {
+              "gap": 346,
+              "ngram": "ED0",
+              "start_a": 291,
+              "start_b": 637,
+              "supports_periods": []
+            },
+            {
+              "gap": 223,
+              "ngram": "EED",
+              "start_a": 636,
+              "start_b": 859,
+              "supports_periods": []
+            },
+            {
+              "gap": 11,
+              "ngram": "EF8",
+              "start_a": 995,
+              "start_b": 1006,
+              "supports_periods": []
+            },
+            {
+              "gap": 227,
+              "ngram": "F3B",
+              "start_a": 764,
+              "start_b": 991,
+              "supports_periods": []
+            },
+            {
+              "gap": 83,
+              "ngram": "F45",
+              "start_a": 186,
+              "start_b": 269,
+              "supports_periods": []
+            },
+            {
+              "gap": 579,
+              "ngram": "F5A",
+              "start_a": 485,
+              "start_b": 1064,
+              "supports_periods": []
+            },
+            {
+              "gap": 599,
+              "ngram": "F61",
+              "start_a": 23,
+              "start_b": 622,
+              "supports_periods": []
+            },
+            {
+              "gap": 681,
+              "ngram": "F7D",
+              "start_a": 28,
+              "start_b": 709,
+              "supports_periods": []
+            },
+            {
+              "gap": 419,
+              "ngram": "F8A",
+              "start_a": 545,
+              "start_b": 964,
+              "supports_periods": []
+            },
+            {
+              "gap": 451,
+              "ngram": "F8A",
+              "start_a": 545,
+              "start_b": 996,
+              "supports_periods": []
+            },
+            {
+              "gap": 32,
+              "ngram": "F8A",
+              "start_a": 964,
+              "start_b": 996,
+              "supports_periods": []
+            },
+            {
+              "gap": 492,
+              "ngram": "FC7",
+              "start_a": 294,
+              "start_b": 786,
+              "supports_periods": []
+            },
+            {
+              "gap": 273,
+              "ngram": "FF7",
+              "start_a": 27,
+              "start_b": 300,
+              "supports_periods": []
+            }
+          ],
+          "start_positions_examined": 1090
+        },
+        "4": {
+          "gap_histogram": {
+            "146": 1,
+            "223": 1,
+            "23": 1,
+            "272": 1,
+            "289": 1,
+            "374": 1,
+            "47": 1,
+            "599": 1,
+            "640": 1,
+            "65": 1,
+            "768": 1
+          },
+          "repeat_pair_count": 11,
+          "repeat_pairs": [
+            {
+              "gap": 640,
+              "ngram": "09AA",
+              "start_a": 205,
+              "start_b": 845,
+              "supports_periods": []
+            },
+            {
+              "gap": 272,
+              "ngram": "1313",
+              "start_a": 541,
+              "start_b": 813,
+              "supports_periods": []
+            },
+            {
+              "gap": 374,
+              "ngram": "19CC",
+              "start_a": 63,
+              "start_b": 437,
+              "supports_periods": []
+            },
+            {
+              "gap": 146,
+              "ngram": "23CD",
+              "start_a": 521,
+              "start_b": 667,
+              "supports_periods": []
+            },
+            {
+              "gap": 768,
+              "ngram": "2654",
+              "start_a": 14,
+              "start_b": 782,
+              "supports_periods": []
+            },
+            {
+              "gap": 23,
+              "ngram": "4041",
+              "start_a": 105,
+              "start_b": 128,
+              "supports_periods": []
+            },
+            {
+              "gap": 289,
+              "ngram": "7A9B",
+              "start_a": 223,
+              "start_b": 512,
+              "supports_periods": []
+            },
+            {
+              "gap": 65,
+              "ngram": "9AAC",
+              "start_a": 846,
+              "start_b": 911,
+              "supports_periods": []
+            },
+            {
+              "gap": 223,
+              "ngram": "9EED",
+              "start_a": 635,
+              "start_b": 858,
+              "supports_periods": []
+            },
+            {
+              "gap": 47,
+              "ngram": "AE03",
+              "start_a": 356,
+              "start_b": 403,
+              "supports_periods": []
+            },
+            {
+              "gap": 599,
+              "ngram": "F611",
+              "start_a": 23,
+              "start_b": 622,
+              "supports_periods": []
+            }
+          ],
+          "start_positions_examined": 1089
+        },
+        "5": {
+          "gap_histogram": {},
+          "repeat_pair_count": 0,
+          "repeat_pairs": [],
+          "start_positions_examined": 1088
+        }
+      },
+      "period_set_intersections": {
+        "19_and_38": 1,
+        "19_and_38_and_57": 1,
+        "19_and_57": 2,
+        "38_and_57": 1
+      },
+      "support_pair_counts": {
+        "19": 2,
+        "38": 1,
+        "57": 2
+      },
+      "transformed_length": 1092,
+      "transformed_sha256": "948fdf874f4f2253ff2dbdcd70df0bd8a4adfb0d3733cf03fea0cb3541632cc9"
+    },
+    {
+      "all_three_periods_common_pair_count": 8,
+      "all_three_periods_common_pairs": [
+        {
+          "gap": 114,
+          "n": 3,
+          "ngram": "030",
+          "start_a": 828,
+          "start_b": 942
+        },
+        {
+          "gap": 114,
+          "n": 3,
+          "ngram": "0E6",
+          "start_a": 830,
+          "start_b": 944
+        },
+        {
+          "gap": 114,
+          "n": 3,
+          "ngram": "267",
+          "start_a": 168,
+          "start_b": 282
+        },
+        {
+          "gap": 114,
+          "n": 3,
+          "ngram": "30E",
+          "start_a": 829,
+          "start_b": 943
+        },
+        {
+          "gap": 456,
+          "n": 3,
+          "ngram": "C42",
+          "start_a": 209,
+          "start_b": 665
+        },
+        {
+          "gap": 114,
+          "n": 4,
+          "ngram": "030E",
+          "start_a": 828,
+          "start_b": 942
+        },
+        {
+          "gap": 114,
+          "n": 4,
+          "ngram": "30E6",
+          "start_a": 829,
+          "start_b": 943
+        },
+        {
+          "gap": 114,
+          "n": 5,
+          "ngram": "030E6",
+          "start_a": 828,
+          "start_b": 942
+        }
+      ],
+      "direction": "decode",
+      "id": "decode:forward",
+      "input_orientation": "forward",
+      "input_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+      "ngrams": {
+        "3": {
+          "gap_histogram": {
+            "1040": 1,
+            "106": 1,
+            "108": 1,
+            "114": 4,
+            "122": 1,
+            "124": 1,
+            "126": 1,
+            "127": 1,
+            "13": 1,
+            "133": 1,
+            "139": 1,
+            "140": 1,
+            "143": 1,
+            "145": 1,
+            "149": 2,
+            "155": 1,
+            "16": 1,
+            "162": 1,
+            "163": 1,
+            "173": 1,
+            "180": 1,
+            "184": 1,
+            "189": 1,
+            "193": 1,
+            "201": 2,
+            "205": 1,
+            "211": 2,
+            "215": 2,
+            "219": 1,
+            "230": 1,
+            "238": 1,
+            "241": 1,
+            "249": 1,
+            "250": 1,
+            "255": 1,
+            "26": 1,
+            "27": 1,
+            "270": 1,
+            "280": 1,
+            "284": 1,
+            "286": 2,
+            "302": 1,
+            "306": 1,
+            "308": 1,
+            "31": 1,
+            "310": 1,
+            "317": 1,
+            "32": 1,
+            "320": 1,
+            "340": 2,
+            "343": 1,
+            "345": 1,
+            "346": 1,
+            "351": 1,
+            "355": 1,
+            "37": 1,
+            "371": 1,
+            "379": 1,
+            "381": 1,
+            "386": 1,
+            "387": 1,
+            "391": 1,
+            "392": 1,
+            "399": 1,
+            "409": 1,
+            "41": 1,
+            "414": 1,
+            "416": 1,
+            "42": 1,
+            "420": 1,
+            "424": 1,
+            "428": 1,
+            "440": 1,
+            "442": 1,
+            "45": 2,
+            "454": 1,
+            "456": 1,
+            "458": 1,
+            "474": 1,
+            "49": 1,
+            "495": 1,
+            "496": 1,
+            "497": 1,
+            "501": 1,
+            "504": 1,
+            "514": 1,
+            "521": 2,
+            "524": 1,
+            "525": 1,
+            "53": 1,
+            "534": 1,
+            "535": 1,
+            "554": 1,
+            "6": 1,
+            "60": 1,
+            "602": 1,
+            "603": 1,
+            "604": 1,
+            "61": 1,
+            "619": 1,
+            "630": 1,
+            "64": 1,
+            "651": 1,
+            "667": 1,
+            "669": 1,
+            "679": 1,
+            "68": 1,
+            "688": 1,
+            "7": 1,
+            "700": 1,
+            "722": 1,
+            "734": 2,
+            "750": 1,
+            "754": 1,
+            "756": 1,
+            "77": 2,
+            "778": 1,
+            "79": 2,
+            "81": 1,
+            "815": 1,
+            "838": 1,
+            "844": 2,
+            "892": 1,
+            "90": 1,
+            "907": 1,
+            "91": 1,
+            "918": 1,
+            "925": 1,
+            "968": 1
+          },
+          "repeat_pair_count": 144,
+          "repeat_pairs": [
+            {
+              "gap": 340,
+              "ngram": "004",
+              "start_a": 264,
+              "start_b": 604,
+              "supports_periods": []
+            },
+            {
+              "gap": 114,
+              "ngram": "030",
+              "start_a": 828,
+              "start_b": 942,
+              "supports_periods": [
+                19,
+                38,
+                57
+              ]
+            },
+            {
+              "gap": 497,
+              "ngram": "041",
+              "start_a": 265,
+              "start_b": 762,
+              "supports_periods": []
+            },
+            {
+              "gap": 7,
+              "ngram": "06C",
+              "start_a": 133,
+              "start_b": 140,
+              "supports_periods": []
+            },
+            {
+              "gap": 925,
+              "ngram": "06C",
+              "start_a": 133,
+              "start_b": 1058,
+              "supports_periods": []
+            },
+            {
+              "gap": 918,
+              "ngram": "06C",
+              "start_a": 140,
+              "start_b": 1058,
+              "supports_periods": []
+            },
+            {
+              "gap": 42,
+              "ngram": "0BA",
+              "start_a": 36,
+              "start_b": 78,
+              "supports_periods": []
+            },
+            {
+              "gap": 535,
+              "ngram": "0C8",
+              "start_a": 162,
+              "start_b": 697,
+              "supports_periods": []
+            },
+            {
+              "gap": 688,
+              "ngram": "0D0",
+              "start_a": 138,
+              "start_b": 826,
+              "supports_periods": []
+            },
+            {
+              "gap": 114,
+              "ngram": "0E6",
+              "start_a": 830,
+              "start_b": 944,
+              "supports_periods": [
+                19,
+                38,
+                57
+              ]
+            },
+            {
+              "gap": 320,
+              "ngram": "131",
+              "start_a": 444,
+              "start_b": 764,
+              "supports_periods": []
+            },
+            {
+              "gap": 79,
+              "ngram": "140",
+              "start_a": 188,
+              "start_b": 267,
+              "supports_periods": []
+            },
+            {
+              "gap": 143,
+              "ngram": "140",
+              "start_a": 188,
+              "start_b": 331,
+              "supports_periods": []
+            },
+            {
+              "gap": 64,
+              "ngram": "140",
+              "start_a": 267,
+              "start_b": 331,
+              "supports_periods": []
+            },
+            {
+              "gap": 306,
+              "ngram": "177",
+              "start_a": 747,
+              "start_b": 1053,
+              "supports_periods": []
+            },
+            {
+              "gap": 651,
+              "ngram": "1B9",
+              "start_a": 388,
+              "start_b": 1039,
+              "supports_periods": []
+            },
+            {
+              "gap": 495,
+              "ngram": "1BD",
+              "start_a": 228,
+              "start_b": 723,
+              "supports_periods": []
+            },
+            {
+              "gap": 386,
+              "ngram": "22D",
+              "start_a": 453,
+              "start_b": 839,
+              "supports_periods": []
+            },
+            {
+              "gap": 602,
+              "ngram": "24F",
+              "start_a": 65,
+              "start_b": 667,
+              "supports_periods": []
+            },
+            {
+              "gap": 77,
+              "ngram": "25A",
+              "start_a": 758,
+              "start_b": 835,
+              "supports_periods": []
+            },
+            {
+              "gap": 114,
+              "ngram": "267",
+              "start_a": 168,
+              "start_b": 282,
+              "supports_periods": [
+                19,
+                38,
+                57
+              ]
+            },
+            {
+              "gap": 504,
+              "ngram": "26C",
+              "start_a": 211,
+              "start_b": 715,
+              "supports_periods": []
+            },
+            {
+              "gap": 122,
+              "ngram": "2E2",
+              "start_a": 744,
+              "start_b": 866,
+              "supports_periods": []
+            },
+            {
+              "gap": 619,
+              "ngram": "2FD",
+              "start_a": 59,
+              "start_b": 678,
+              "supports_periods": []
+            },
+            {
+              "gap": 114,
+              "ngram": "30E",
+              "start_a": 829,
+              "start_b": 943,
+              "supports_periods": [
+                19,
+                38,
+                57
+              ]
+            },
+            {
+              "gap": 155,
+              "ngram": "30E",
+              "start_a": 829,
+              "start_b": 984,
+              "supports_periods": []
+            },
+            {
+              "gap": 41,
+              "ngram": "30E",
+              "start_a": 943,
+              "start_b": 984,
+              "supports_periods": []
+            },
+            {
+              "gap": 667,
+              "ngram": "340",
+              "start_a": 131,
+              "start_b": 798,
+              "supports_periods": []
+            },
+            {
+              "gap": 53,
+              "ngram": "360",
+              "start_a": 518,
+              "start_b": 571,
+              "supports_periods": []
+            },
+            {
+              "gap": 534,
+              "ngram": "36F",
+              "start_a": 554,
+              "start_b": 1088,
+              "supports_periods": []
+            },
+            {
+              "gap": 391,
+              "ngram": "383",
+              "start_a": 479,
+              "start_b": 870,
+              "supports_periods": []
+            },
+            {
+              "gap": 280,
+              "ngram": "388",
+              "start_a": 251,
+              "start_b": 531,
+              "supports_periods": []
+            },
+            {
+              "gap": 345,
+              "ngram": "3BB",
+              "start_a": 406,
+              "start_b": 751,
+              "supports_periods": []
+            },
+            {
+              "gap": 79,
+              "ngram": "404",
+              "start_a": 189,
+              "start_b": 268,
+              "supports_periods": []
+            },
+            {
+              "gap": 351,
+              "ngram": "414",
+              "start_a": 266,
+              "start_b": 617,
+              "supports_periods": []
+            },
+            {
+              "gap": 219,
+              "ngram": "425",
+              "start_a": 538,
+              "start_b": 757,
+              "supports_periods": []
+            },
+            {
+              "gap": 60,
+              "ngram": "434",
+              "start_a": 9,
+              "start_b": 69,
+              "supports_periods": []
+            },
+            {
+              "gap": 679,
+              "ngram": "447",
+              "start_a": 301,
+              "start_b": 980,
+              "supports_periods": []
+            },
+            {
+              "gap": 286,
+              "ngram": "448",
+              "start_a": 792,
+              "start_b": 1078,
+              "supports_periods": []
+            },
+            {
+              "gap": 815,
+              "ngram": "45E",
+              "start_a": 198,
+              "start_b": 1013,
+              "supports_periods": []
+            },
+            {
+              "gap": 149,
+              "ngram": "464",
+              "start_a": 270,
+              "start_b": 419,
+              "supports_periods": []
+            },
+            {
+              "gap": 230,
+              "ngram": "464",
+              "start_a": 270,
+              "start_b": 500,
+              "supports_periods": []
+            },
+            {
+              "gap": 81,
+              "ngram": "464",
+              "start_a": 419,
+              "start_b": 500,
+              "supports_periods": []
+            },
+            {
+              "gap": 414,
+              "ngram": "487",
+              "start_a": 379,
+              "start_b": 793,
+              "supports_periods": []
+            },
+            {
+              "gap": 250,
+              "ngram": "488",
+              "start_a": 535,
+              "start_b": 785,
+              "supports_periods": []
+            },
+            {
+              "gap": 127,
+              "ngram": "497",
+              "start_a": 502,
+              "start_b": 629,
+              "supports_periods": []
+            },
+            {
+              "gap": 37,
+              "ngram": "499",
+              "start_a": 606,
+              "start_b": 643,
+              "supports_periods": []
+            },
+            {
+              "gap": 108,
+              "ngram": "49C",
+              "start_a": 711,
+              "start_b": 819,
+              "supports_periods": []
+            },
+            {
+              "gap": 454,
+              "ngram": "4E1",
+              "start_a": 582,
+              "start_b": 1036,
+              "supports_periods": []
+            },
+            {
+              "gap": 838,
+              "ngram": "4F3",
+              "start_a": 66,
+              "start_b": 904,
+              "supports_periods": []
+            },
+            {
+              "gap": 189,
+              "ngram": "504",
+              "start_a": 783,
+              "start_b": 972,
+              "supports_periods": []
+            },
+            {
+              "gap": 32,
+              "ngram": "514",
+              "start_a": 187,
+              "start_b": 219,
+              "supports_periods": []
+            },
+            {
+              "gap": 31,
+              "ngram": "51B",
+              "start_a": 227,
+              "start_b": 258,
+              "supports_periods": []
+            },
+            {
+              "gap": 106,
+              "ngram": "54E",
+              "start_a": 475,
+              "start_b": 581,
+              "supports_periods": []
+            },
+            {
+              "gap": 13,
+              "ngram": "54F",
+              "start_a": 903,
+              "start_b": 916,
+              "supports_periods": []
+            },
+            {
+              "gap": 409,
+              "ngram": "575",
+              "start_a": 594,
+              "start_b": 1003,
+              "supports_periods": []
+            },
+            {
+              "gap": 379,
+              "ngram": "58E",
+              "start_a": 639,
+              "start_b": 1018,
+              "supports_periods": []
+            },
+            {
+              "gap": 77,
+              "ngram": "5A9",
+              "start_a": 759,
+              "start_b": 836,
+              "supports_periods": []
+            },
+            {
+              "gap": 399,
+              "ngram": "5B3",
+              "start_a": 341,
+              "start_b": 740,
+              "supports_periods": [
+                19,
+                57
+              ]
+            },
+            {
+              "gap": 162,
+              "ngram": "5EC",
+              "start_a": 199,
+              "start_b": 361,
+              "supports_periods": []
+            },
+            {
+              "gap": 340,
+              "ngram": "5EF",
+              "start_a": 674,
+              "start_b": 1014,
+              "supports_periods": []
+            },
+            {
+              "gap": 133,
+              "ngram": "600",
+              "start_a": 519,
+              "start_b": 652,
+              "supports_periods": [
+                19
+              ]
+            },
+            {
+              "gap": 474,
+              "ngram": "623",
+              "start_a": 297,
+              "start_b": 771,
+              "supports_periods": []
+            },
+            {
+              "gap": 458,
+              "ngram": "62A",
+              "start_a": 564,
+              "start_b": 1022,
+              "supports_periods": []
+            },
+            {
+              "gap": 371,
+              "ngram": "644",
+              "start_a": 420,
+              "start_b": 791,
+              "supports_periods": []
+            },
+            {
+              "gap": 317,
+              "ngram": "649",
+              "start_a": 501,
+              "start_b": 818,
+              "supports_periods": []
+            },
+            {
+              "gap": 442,
+              "ngram": "64F",
+              "start_a": 106,
+              "start_b": 548,
+              "supports_periods": []
+            },
+            {
+              "gap": 249,
+              "ngram": "661",
+              "start_a": 118,
+              "start_b": 367,
+              "supports_periods": []
+            },
+            {
+              "gap": 514,
+              "ngram": "668",
+              "start_a": 47,
+              "start_b": 561,
+              "supports_periods": []
+            },
+            {
+              "gap": 892,
+              "ngram": "67C",
+              "start_a": 31,
+              "start_b": 923,
+              "supports_periods": []
+            },
+            {
+              "gap": 16,
+              "ngram": "686",
+              "start_a": 546,
+              "start_b": 562,
+              "supports_periods": []
+            },
+            {
+              "gap": 603,
+              "ngram": "6CA",
+              "start_a": 134,
+              "start_b": 737,
+              "supports_periods": []
+            },
+            {
+              "gap": 139,
+              "ngram": "6FE",
+              "start_a": 555,
+              "start_b": 694,
+              "supports_periods": []
+            },
+            {
+              "gap": 140,
+              "ngram": "713",
+              "start_a": 303,
+              "start_b": 443,
+              "supports_periods": []
+            },
+            {
+              "gap": 91,
+              "ngram": "752",
+              "start_a": 504,
+              "start_b": 595,
+              "supports_periods": []
+            },
+            {
+              "gap": 428,
+              "ngram": "77D",
+              "start_a": 626,
+              "start_b": 1054,
+              "supports_periods": []
+            },
+            {
+              "gap": 734,
+              "ngram": "78E",
+              "start_a": 174,
+              "start_b": 908,
+              "supports_periods": []
+            },
+            {
+              "gap": 1040,
+              "ngram": "7CC",
+              "start_a": 32,
+              "start_b": 1072,
+              "supports_periods": []
+            },
+            {
+              "gap": 211,
+              "ngram": "7EE",
+              "start_a": 507,
+              "start_b": 718,
+              "supports_periods": []
+            },
+            {
+              "gap": 215,
+              "ngram": "7F1",
+              "start_a": 157,
+              "start_b": 372,
+              "supports_periods": []
+            },
+            {
+              "gap": 968,
+              "ngram": "7F4",
+              "start_a": 98,
+              "start_b": 1066,
+              "supports_periods": []
+            },
+            {
+              "gap": 387,
+              "ngram": "83B",
+              "start_a": 12,
+              "start_b": 399,
+              "supports_periods": []
+            },
+            {
+              "gap": 734,
+              "ngram": "85C",
+              "start_a": 327,
+              "start_b": 1061,
+              "supports_periods": []
+            },
+            {
+              "gap": 124,
+              "ngram": "8CF",
+              "start_a": 699,
+              "start_b": 823,
+              "supports_periods": []
+            },
+            {
+              "gap": 844,
+              "ngram": "8ED",
+              "start_a": 175,
+              "start_b": 1019,
+              "supports_periods": []
+            },
+            {
+              "gap": 524,
+              "ngram": "8F9",
+              "start_a": 286,
+              "start_b": 810,
+              "supports_periods": []
+            },
+            {
+              "gap": 193,
+              "ngram": "91E",
+              "start_a": 115,
+              "start_b": 308,
+              "supports_periods": []
+            },
+            {
+              "gap": 201,
+              "ngram": "9BD",
+              "start_a": 1,
+              "start_b": 202,
+              "supports_periods": []
+            },
+            {
+              "gap": 173,
+              "ngram": "9C3",
+              "start_a": 647,
+              "start_b": 820,
+              "supports_periods": []
+            },
+            {
+              "gap": 180,
+              "ngram": "9C5",
+              "start_a": 317,
+              "start_b": 497,
+              "supports_periods": []
+            },
+            {
+              "gap": 424,
+              "ngram": "9CD",
+              "start_a": 288,
+              "start_b": 712,
+              "supports_periods": []
+            },
+            {
+              "gap": 346,
+              "ngram": "9D5",
+              "start_a": 246,
+              "start_b": 592,
+              "supports_periods": []
+            },
+            {
+              "gap": 286,
+              "ngram": "9E6",
+              "start_a": 104,
+              "start_b": 390,
+              "supports_periods": []
+            },
+            {
+              "gap": 49,
+              "ngram": "A5F",
+              "start_a": 224,
+              "start_b": 273,
+              "supports_periods": []
+            },
+            {
+              "gap": 145,
+              "ngram": "A75",
+              "start_a": 492,
+              "start_b": 637,
+              "supports_periods": []
+            },
+            {
+              "gap": 756,
+              "ngram": "A7E",
+              "start_a": 127,
+              "start_b": 883,
+              "supports_periods": []
+            },
+            {
+              "gap": 215,
+              "ngram": "A7F",
+              "start_a": 156,
+              "start_b": 371,
+              "supports_periods": []
+            },
+            {
+              "gap": 255,
+              "ngram": "A8F",
+              "start_a": 313,
+              "start_b": 568,
+              "supports_periods": []
+            },
+            {
+              "gap": 496,
+              "ngram": "A8F",
+              "start_a": 313,
+              "start_b": 809,
+              "supports_periods": []
+            },
+            {
+              "gap": 241,
+              "ngram": "A8F",
+              "start_a": 568,
+              "start_b": 809,
+              "supports_periods": []
+            },
+            {
+              "gap": 284,
+              "ngram": "A90",
+              "start_a": 760,
+              "start_b": 1044,
+              "supports_periods": []
+            },
+            {
+              "gap": 184,
+              "ngram": "AAA",
+              "start_a": 382,
+              "start_b": 566,
+              "supports_periods": []
+            },
+            {
+              "gap": 907,
+              "ngram": "AC1",
+              "start_a": 80,
+              "start_b": 987,
+              "supports_periods": []
+            },
+            {
+              "gap": 45,
+              "ngram": "B3A",
+              "start_a": 732,
+              "start_b": 777,
+              "supports_periods": []
+            },
+            {
+              "gap": 270,
+              "ngram": "B3F",
+              "start_a": 471,
+              "start_b": 741,
+              "supports_periods": []
+            },
+            {
+              "gap": 163,
+              "ngram": "B9A",
+              "start_a": 877,
+              "start_b": 1040,
+              "supports_periods": []
+            },
+            {
+              "gap": 750,
+              "ngram": "B9B",
+              "start_a": 25,
+              "start_b": 775,
+              "supports_periods": []
+            },
+            {
+              "gap": 45,
+              "ngram": "BBD",
+              "start_a": 707,
+              "start_b": 752,
+              "supports_periods": []
+            },
+            {
+              "gap": 201,
+              "ngram": "BD7",
+              "start_a": 2,
+              "start_b": 203,
+              "supports_periods": []
+            },
+            {
+              "gap": 722,
+              "ngram": "BD7",
+              "start_a": 2,
+              "start_b": 724,
+              "supports_periods": [
+                19,
+                38
+              ]
+            },
+            {
+              "gap": 521,
+              "ngram": "BD7",
+              "start_a": 203,
+              "start_b": 724,
+              "supports_periods": []
+            },
+            {
+              "gap": 238,
+              "ngram": "BDB",
+              "start_a": 229,
+              "start_b": 467,
+              "supports_periods": []
+            },
+            {
+              "gap": 381,
+              "ngram": "BE6",
+              "start_a": 27,
+              "start_b": 408,
+              "supports_periods": []
+            },
+            {
+              "gap": 310,
+              "ngram": "C0D",
+              "start_a": 137,
+              "start_b": 447,
+              "supports_periods": []
+            },
+            {
+              "gap": 343,
+              "ngram": "C38",
+              "start_a": 478,
+              "start_b": 821,
+              "supports_periods": []
+            },
+            {
+              "gap": 456,
+              "ngram": "C42",
+              "start_a": 209,
+              "start_b": 665,
+              "supports_periods": [
+                19,
+                38,
+                57
+              ]
+            },
+            {
+              "gap": 604,
+              "ngram": "C59",
+              "start_a": 363,
+              "start_b": 967,
+              "supports_periods": []
+            },
+            {
+              "gap": 27,
+              "ngram": "C91",
+              "start_a": 329,
+              "start_b": 356,
+              "supports_periods": []
+            },
+            {
+              "gap": 90,
+              "ngram": "C9B",
+              "start_a": 111,
+              "start_b": 201,
+              "supports_periods": []
+            },
+            {
+              "gap": 149,
+              "ngram": "D03",
+              "start_a": 827,
+              "start_b": 976,
+              "supports_periods": []
+            },
+            {
+              "gap": 554,
+              "ngram": "D44",
+              "start_a": 523,
+              "start_b": 1077,
+              "supports_periods": []
+            },
+            {
+              "gap": 700,
+              "ngram": "D56",
+              "start_a": 54,
+              "start_b": 754,
+              "supports_periods": []
+            },
+            {
+              "gap": 126,
+              "ngram": "D62",
+              "start_a": 895,
+              "start_b": 1021,
+              "supports_periods": []
+            },
+            {
+              "gap": 754,
+              "ngram": "D68",
+              "start_a": 177,
+              "start_b": 931,
+              "supports_periods": []
+            },
+            {
+              "gap": 778,
+              "ngram": "D75",
+              "start_a": 3,
+              "start_b": 781,
+              "supports_periods": []
+            },
+            {
+              "gap": 521,
+              "ngram": "D7F",
+              "start_a": 204,
+              "start_b": 725,
+              "supports_periods": []
+            },
+            {
+              "gap": 669,
+              "ngram": "DAC",
+              "start_a": 322,
+              "start_b": 991,
+              "supports_periods": []
+            },
+            {
+              "gap": 302,
+              "ngram": "DC9",
+              "start_a": 355,
+              "start_b": 657,
+              "supports_periods": []
+            },
+            {
+              "gap": 6,
+              "ngram": "DF5",
+              "start_a": 339,
+              "start_b": 345,
+              "supports_periods": []
+            },
+            {
+              "gap": 392,
+              "ngram": "E2A",
+              "start_a": 557,
+              "start_b": 949,
+              "supports_periods": []
+            },
+            {
+              "gap": 355,
+              "ngram": "E58",
+              "start_a": 662,
+              "start_b": 1017,
+              "supports_periods": []
+            },
+            {
+              "gap": 440,
+              "ngram": "E62",
+              "start_a": 391,
+              "start_b": 831,
+              "supports_periods": []
+            },
+            {
+              "gap": 501,
+              "ngram": "E63",
+              "start_a": 409,
+              "start_b": 910,
+              "supports_periods": []
+            },
+            {
+              "gap": 420,
+              "ngram": "ECD",
+              "start_a": 655,
+              "start_b": 1075,
+              "supports_periods": []
+            },
+            {
+              "gap": 844,
+              "ngram": "ED6",
+              "start_a": 176,
+              "start_b": 1020,
+              "supports_periods": []
+            },
+            {
+              "gap": 205,
+              "ngram": "EE4",
+              "start_a": 802,
+              "start_b": 1007,
+              "supports_periods": []
+            },
+            {
+              "gap": 211,
+              "ngram": "EEB",
+              "start_a": 508,
+              "start_b": 719,
+              "supports_periods": []
+            },
+            {
+              "gap": 26,
+              "ngram": "EF4",
+              "start_a": 615,
+              "start_b": 641,
+              "supports_periods": []
+            },
+            {
+              "gap": 68,
+              "ngram": "F49",
+              "start_a": 642,
+              "start_b": 710,
+              "supports_periods": []
+            },
+            {
+              "gap": 630,
+              "ngram": "F4D",
+              "start_a": 437,
+              "start_b": 1067,
+              "supports_periods": []
+            },
+            {
+              "gap": 61,
+              "ngram": "F6B",
+              "start_a": 899,
+              "start_b": 960,
+              "supports_periods": []
+            },
+            {
+              "gap": 416,
+              "ngram": "F95",
+              "start_a": 473,
+              "start_b": 889,
+              "supports_periods": []
+            },
+            {
+              "gap": 525,
+              "ngram": "FB3",
+              "start_a": 206,
+              "start_b": 731,
+              "supports_periods": []
+            },
+            {
+              "gap": 308,
+              "ngram": "FE2",
+              "start_a": 556,
+              "start_b": 864,
+              "supports_periods": []
+            }
+          ],
+          "start_positions_examined": 1090
+        },
+        "4": {
+          "gap_histogram": {
+            "114": 2,
+            "201": 1,
+            "211": 1,
+            "215": 1,
+            "521": 1,
+            "77": 1,
+            "79": 1,
+            "844": 1
+          },
+          "repeat_pair_count": 9,
+          "repeat_pairs": [
+            {
+              "gap": 114,
+              "ngram": "030E",
+              "start_a": 828,
+              "start_b": 942,
+              "supports_periods": [
+                19,
+                38,
+                57
+              ]
+            },
+            {
+              "gap": 79,
+              "ngram": "1404",
+              "start_a": 188,
+              "start_b": 267,
+              "supports_periods": []
+            },
+            {
+              "gap": 77,
+              "ngram": "25A9",
+              "start_a": 758,
+              "start_b": 835,
+              "supports_periods": []
+            },
+            {
+              "gap": 114,
+              "ngram": "30E6",
+              "start_a": 829,
+              "start_b": 943,
+              "supports_periods": [
+                19,
+                38,
+                57
+              ]
+            },
+            {
+              "gap": 211,
+              "ngram": "7EEB",
+              "start_a": 507,
+              "start_b": 718,
+              "supports_periods": []
+            },
+            {
+              "gap": 844,
+              "ngram": "8ED6",
+              "start_a": 175,
+              "start_b": 1019,
+              "supports_periods": []
+            },
+            {
+              "gap": 201,
+              "ngram": "9BD7",
+              "start_a": 1,
+              "start_b": 202,
+              "supports_periods": []
+            },
+            {
+              "gap": 215,
+              "ngram": "A7F1",
+              "start_a": 156,
+              "start_b": 371,
+              "supports_periods": []
+            },
+            {
+              "gap": 521,
+              "ngram": "BD7F",
+              "start_a": 203,
+              "start_b": 724,
+              "supports_periods": []
+            }
+          ],
+          "start_positions_examined": 1089
+        },
+        "5": {
+          "gap_histogram": {
+            "114": 1
+          },
+          "repeat_pair_count": 1,
+          "repeat_pairs": [
+            {
+              "gap": 114,
+              "ngram": "030E6",
+              "start_a": 828,
+              "start_b": 942,
+              "supports_periods": [
+                19,
+                38,
+                57
+              ]
+            }
+          ],
+          "start_positions_examined": 1088
+        }
+      },
+      "period_set_intersections": {
+        "19_and_38": 9,
+        "19_and_38_and_57": 8,
+        "19_and_57": 9,
+        "38_and_57": 8
+      },
+      "support_pair_counts": {
+        "19": 11,
+        "38": 9,
+        "57": 9
+      },
+      "transformed_length": 1092,
+      "transformed_sha256": "1cb32555f497309352adec7f5757bc3e9f5fb02fe077995ae0b83ff3a052d1be"
+    },
+    {
+      "all_three_periods_common_pair_count": 1,
+      "all_three_periods_common_pairs": [
+        {
+          "gap": 456,
+          "n": 3,
+          "ngram": "67F",
+          "start_a": 346,
+          "start_b": 802
+        }
+      ],
+      "direction": "decode",
+      "id": "decode:full_hex_reverse",
+      "input_orientation": "full_hex_reverse",
+      "input_sha256": "1e5c94f36483c784b10d14beba26c515efc18d4fad0f126dd18291d541192dd0",
+      "ngrams": {
+        "3": {
+          "gap_histogram": {
+            "103": 1,
+            "1044": 1,
+            "11": 1,
+            "110": 1,
+            "121": 2,
+            "136": 1,
+            "139": 1,
+            "14": 2,
+            "140": 1,
+            "142": 1,
+            "143": 1,
+            "146": 1,
+            "147": 1,
+            "152": 1,
+            "155": 1,
+            "159": 2,
+            "162": 1,
+            "165": 1,
+            "17": 2,
+            "174": 1,
+            "175": 1,
+            "195": 1,
+            "206": 1,
+            "21": 1,
+            "212": 1,
+            "213": 1,
+            "216": 1,
+            "219": 1,
+            "238": 2,
+            "244": 1,
+            "258": 1,
+            "259": 1,
+            "261": 1,
+            "265": 1,
+            "27": 1,
+            "278": 1,
+            "283": 1,
+            "286": 1,
+            "287": 1,
+            "288": 1,
+            "289": 1,
+            "29": 1,
+            "3": 1,
+            "302": 2,
+            "308": 2,
+            "323": 1,
+            "328": 1,
+            "331": 1,
+            "332": 1,
+            "337": 1,
+            "339": 2,
+            "340": 1,
+            "341": 1,
+            "343": 1,
+            "344": 2,
+            "348": 1,
+            "361": 1,
+            "364": 1,
+            "370": 1,
+            "372": 1,
+            "374": 1,
+            "38": 1,
+            "385": 1,
+            "39": 1,
+            "390": 1,
+            "392": 1,
+            "396": 1,
+            "399": 1,
+            "407": 1,
+            "416": 1,
+            "42": 1,
+            "424": 1,
+            "428": 1,
+            "434": 1,
+            "449": 2,
+            "45": 1,
+            "456": 1,
+            "466": 1,
+            "467": 1,
+            "471": 1,
+            "472": 1,
+            "486": 1,
+            "488": 1,
+            "49": 1,
+            "493": 3,
+            "505": 1,
+            "517": 1,
+            "520": 1,
+            "53": 1,
+            "534": 1,
+            "535": 1,
+            "541": 1,
+            "563": 1,
+            "566": 1,
+            "574": 1,
+            "577": 1,
+            "590": 1,
+            "6": 1,
+            "626": 1,
+            "631": 1,
+            "64": 2,
+            "676": 1,
+            "68": 1,
+            "680": 1,
+            "71": 1,
+            "711": 1,
+            "72": 1,
+            "743": 2,
+            "744": 1,
+            "81": 1,
+            "818": 1,
+            "82": 1,
+            "821": 1,
+            "827": 1,
+            "848": 1,
+            "849": 1,
+            "882": 1,
+            "886": 1,
+            "889": 1,
+            "906": 1,
+            "925": 1,
+            "933": 1
+          },
+          "repeat_pair_count": 136,
+          "repeat_pairs": [
+            {
+              "gap": 385,
+              "ngram": "006",
+              "start_a": 429,
+              "start_b": 814,
+              "supports_periods": []
+            },
+            {
+              "gap": 143,
+              "ngram": "041",
+              "start_a": 778,
+              "start_b": 921,
+              "supports_periods": []
+            },
+            {
+              "gap": 344,
+              "ngram": "065",
+              "start_a": 506,
+              "start_b": 850,
+              "supports_periods": []
+            },
+            {
+              "gap": 449,
+              "ngram": "067",
+              "start_a": 490,
+              "start_b": 939,
+              "supports_periods": []
+            },
+            {
+              "gap": 882,
+              "ngram": "06E",
+              "start_a": 167,
+              "start_b": 1049,
+              "supports_periods": []
+            },
+            {
+              "gap": 288,
+              "ngram": "09A",
+              "start_a": 37,
+              "start_b": 325,
+              "supports_periods": []
+            },
+            {
+              "gap": 577,
+              "ngram": "0D2",
+              "start_a": 54,
+              "start_b": 631,
+              "supports_periods": []
+            },
+            {
+              "gap": 348,
+              "ngram": "131",
+              "start_a": 317,
+              "start_b": 665,
+              "supports_periods": []
+            },
+            {
+              "gap": 889,
+              "ngram": "16A",
+              "start_a": 61,
+              "start_b": 950,
+              "supports_periods": []
+            },
+            {
+              "gap": 212,
+              "ngram": "177",
+              "start_a": 455,
+              "start_b": 667,
+              "supports_periods": []
+            },
+            {
+              "gap": 27,
+              "ngram": "19C",
+              "start_a": 753,
+              "start_b": 780,
+              "supports_periods": []
+            },
+            {
+              "gap": 82,
+              "ngram": "1B9",
+              "start_a": 883,
+              "start_b": 965,
+              "supports_periods": []
+            },
+            {
+              "gap": 328,
+              "ngram": "1D3",
+              "start_a": 235,
+              "start_b": 563,
+              "supports_periods": []
+            },
+            {
+              "gap": 486,
+              "ngram": "1E4",
+              "start_a": 41,
+              "start_b": 527,
+              "supports_periods": []
+            },
+            {
+              "gap": 219,
+              "ngram": "1F7",
+              "start_a": 709,
+              "start_b": 928,
+              "supports_periods": []
+            },
+            {
+              "gap": 424,
+              "ngram": "24C",
+              "start_a": 444,
+              "start_b": 868,
+              "supports_periods": []
+            },
+            {
+              "gap": 744,
+              "ngram": "264",
+              "start_a": 278,
+              "start_b": 1022,
+              "supports_periods": []
+            },
+            {
+              "gap": 340,
+              "ngram": "265",
+              "start_a": 182,
+              "start_b": 522,
+              "supports_periods": []
+            },
+            {
+              "gap": 372,
+              "ngram": "286",
+              "start_a": 531,
+              "start_b": 903,
+              "supports_periods": []
+            },
+            {
+              "gap": 467,
+              "ngram": "2B7",
+              "start_a": 570,
+              "start_b": 1037,
+              "supports_periods": []
+            },
+            {
+              "gap": 64,
+              "ngram": "2D4",
+              "start_a": 583,
+              "start_b": 647,
+              "supports_periods": []
+            },
+            {
+              "gap": 308,
+              "ngram": "2EF",
+              "start_a": 245,
+              "start_b": 553,
+              "supports_periods": []
+            },
+            {
+              "gap": 140,
+              "ngram": "317",
+              "start_a": 666,
+              "start_b": 806,
+              "supports_periods": []
+            },
+            {
+              "gap": 49,
+              "ngram": "319",
+              "start_a": 962,
+              "start_b": 1011,
+              "supports_periods": []
+            },
+            {
+              "gap": 434,
+              "ngram": "36E",
+              "start_a": 242,
+              "start_b": 676,
+              "supports_periods": []
+            },
+            {
+              "gap": 17,
+              "ngram": "3B5",
+              "start_a": 337,
+              "start_b": 354,
+              "supports_periods": []
+            },
+            {
+              "gap": 407,
+              "ngram": "3B5",
+              "start_a": 337,
+              "start_b": 744,
+              "supports_periods": []
+            },
+            {
+              "gap": 390,
+              "ngram": "3B5",
+              "start_a": 354,
+              "start_b": 744,
+              "supports_periods": []
+            },
+            {
+              "gap": 332,
+              "ngram": "400",
+              "start_a": 481,
+              "start_b": 813,
+              "supports_periods": []
+            },
+            {
+              "gap": 162,
+              "ngram": "404",
+              "start_a": 655,
+              "start_b": 817,
+              "supports_periods": []
+            },
+            {
+              "gap": 265,
+              "ngram": "404",
+              "start_a": 655,
+              "start_b": 920,
+              "supports_periods": []
+            },
+            {
+              "gap": 103,
+              "ngram": "404",
+              "start_a": 817,
+              "start_b": 920,
+              "supports_periods": []
+            },
+            {
+              "gap": 147,
+              "ngram": "42F",
+              "start_a": 692,
+              "start_b": 839,
+              "supports_periods": []
+            },
+            {
+              "gap": 64,
+              "ngram": "434",
+              "start_a": 1008,
+              "start_b": 1072,
+              "supports_periods": []
+            },
+            {
+              "gap": 488,
+              "ngram": "44A",
+              "start_a": 98,
+              "start_b": 586,
+              "supports_periods": []
+            },
+            {
+              "gap": 216,
+              "ngram": "464",
+              "start_a": 322,
+              "start_b": 538,
+              "supports_periods": []
+            },
+            {
+              "gap": 287,
+              "ngram": "464",
+              "start_a": 322,
+              "start_b": 609,
+              "supports_periods": []
+            },
+            {
+              "gap": 71,
+              "ngram": "464",
+              "start_a": 538,
+              "start_b": 609,
+              "supports_periods": []
+            },
+            {
+              "gap": 258,
+              "ngram": "488",
+              "start_a": 291,
+              "start_b": 549,
+              "supports_periods": []
+            },
+            {
+              "gap": 339,
+              "ngram": "4D2",
+              "start_a": 392,
+              "start_b": 731,
+              "supports_periods": []
+            },
+            {
+              "gap": 244,
+              "ngram": "4DD",
+              "start_a": 830,
+              "start_b": 1074,
+              "supports_periods": []
+            },
+            {
+              "gap": 289,
+              "ngram": "4FE",
+              "start_a": 179,
+              "start_b": 468,
+              "supports_periods": []
+            },
+            {
+              "gap": 337,
+              "ngram": "547",
+              "start_a": 543,
+              "start_b": 880,
+              "supports_periods": []
+            },
+            {
+              "gap": 121,
+              "ngram": "57A",
+              "start_a": 472,
+              "start_b": 593,
+              "supports_periods": []
+            },
+            {
+              "gap": 416,
+              "ngram": "59F",
+              "start_a": 220,
+              "start_b": 636,
+              "supports_periods": []
+            },
+            {
+              "gap": 278,
+              "ngram": "5B3",
+              "start_a": 786,
+              "start_b": 1064,
+              "supports_periods": []
+            },
+            {
+              "gap": 152,
+              "ngram": "5C9",
+              "start_a": 612,
+              "start_b": 764,
+              "supports_periods": [
+                19,
+                38
+              ]
+            },
+            {
+              "gap": 370,
+              "ngram": "5D9",
+              "start_a": 493,
+              "start_b": 863,
+              "supports_periods": []
+            },
+            {
+              "gap": 136,
+              "ngram": "5EA",
+              "start_a": 351,
+              "start_b": 487,
+              "supports_periods": []
+            },
+            {
+              "gap": 374,
+              "ngram": "5EA",
+              "start_a": 351,
+              "start_b": 725,
+              "supports_periods": []
+            },
+            {
+              "gap": 238,
+              "ngram": "5EA",
+              "start_a": 487,
+              "start_b": 725,
+              "supports_periods": []
+            },
+            {
+              "gap": 517,
+              "ngram": "5FC",
+              "start_a": 229,
+              "start_b": 746,
+              "supports_periods": []
+            },
+            {
+              "gap": 110,
+              "ngram": "606",
+              "start_a": 938,
+              "start_b": 1048,
+              "supports_periods": []
+            },
+            {
+              "gap": 6,
+              "ngram": "629",
+              "start_a": 790,
+              "start_b": 796,
+              "supports_periods": []
+            },
+            {
+              "gap": 493,
+              "ngram": "640",
+              "start_a": 323,
+              "start_b": 816,
+              "supports_periods": []
+            },
+            {
+              "gap": 344,
+              "ngram": "65F",
+              "start_a": 507,
+              "start_b": 851,
+              "supports_periods": []
+            },
+            {
+              "gap": 449,
+              "ngram": "675",
+              "start_a": 491,
+              "start_b": 940,
+              "supports_periods": []
+            },
+            {
+              "gap": 456,
+              "ngram": "67F",
+              "start_a": 346,
+              "start_b": 802,
+              "supports_periods": [
+                19,
+                38,
+                57
+              ]
+            },
+            {
+              "gap": 142,
+              "ngram": "69E",
+              "start_a": 625,
+              "start_b": 767,
+              "supports_periods": []
+            },
+            {
+              "gap": 165,
+              "ngram": "6BF",
+              "start_a": 875,
+              "start_b": 1040,
+              "supports_periods": []
+            },
+            {
+              "gap": 848,
+              "ngram": "6DE",
+              "start_a": 57,
+              "start_b": 905,
+              "supports_periods": []
+            },
+            {
+              "gap": 818,
+              "ngram": "6E1",
+              "start_a": 151,
+              "start_b": 969,
+              "supports_periods": []
+            },
+            {
+              "gap": 286,
+              "ngram": "6E9",
+              "start_a": 719,
+              "start_b": 1005,
+              "supports_periods": []
+            },
+            {
+              "gap": 331,
+              "ngram": "6E9",
+              "start_a": 719,
+              "start_b": 1050,
+              "supports_periods": []
+            },
+            {
+              "gap": 45,
+              "ngram": "6E9",
+              "start_a": 1005,
+              "start_b": 1050,
+              "supports_periods": []
+            },
+            {
+              "gap": 849,
+              "ngram": "71B",
+              "start_a": 33,
+              "start_b": 882,
+              "supports_periods": []
+            },
+            {
+              "gap": 283,
+              "ngram": "72D",
+              "start_a": 363,
+              "start_b": 646,
+              "supports_periods": []
+            },
+            {
+              "gap": 711,
+              "ngram": "744",
+              "start_a": 97,
+              "start_b": 808,
+              "supports_periods": []
+            },
+            {
+              "gap": 563,
+              "ngram": "75D",
+              "start_a": 492,
+              "start_b": 1055,
+              "supports_periods": []
+            },
+            {
+              "gap": 159,
+              "ngram": "7A9",
+              "start_a": 44,
+              "start_b": 203,
+              "supports_periods": []
+            },
+            {
+              "gap": 174,
+              "ngram": "7DD",
+              "start_a": 155,
+              "start_b": 329,
+              "supports_periods": []
+            },
+            {
+              "gap": 676,
+              "ngram": "7FF",
+              "start_a": 127,
+              "start_b": 803,
+              "supports_periods": []
+            },
+            {
+              "gap": 14,
+              "ngram": "86E",
+              "start_a": 150,
+              "start_b": 164,
+              "supports_periods": []
+            },
+            {
+              "gap": 535,
+              "ngram": "8C0",
+              "start_a": 412,
+              "start_b": 947,
+              "supports_periods": []
+            },
+            {
+              "gap": 341,
+              "ngram": "946",
+              "start_a": 267,
+              "start_b": 608,
+              "supports_periods": []
+            },
+            {
+              "gap": 72,
+              "ngram": "966",
+              "start_a": 895,
+              "start_b": 967,
+              "supports_periods": []
+            },
+            {
+              "gap": 827,
+              "ngram": "9A1",
+              "start_a": 38,
+              "start_b": 865,
+              "supports_periods": []
+            },
+            {
+              "gap": 53,
+              "ngram": "9A5",
+              "start_a": 273,
+              "start_b": 326,
+              "supports_periods": []
+            },
+            {
+              "gap": 3,
+              "ngram": "9B3",
+              "start_a": 671,
+              "start_b": 674,
+              "supports_periods": []
+            },
+            {
+              "gap": 206,
+              "ngram": "9DC",
+              "start_a": 792,
+              "start_b": 998,
+              "supports_periods": []
+            },
+            {
+              "gap": 42,
+              "ngram": "9F2",
+              "start_a": 221,
+              "start_b": 263,
+              "supports_periods": []
+            },
+            {
+              "gap": 302,
+              "ngram": "9F3",
+              "start_a": 335,
+              "start_b": 637,
+              "supports_periods": []
+            },
+            {
+              "gap": 361,
+              "ngram": "9F8",
+              "start_a": 410,
+              "start_b": 771,
+              "supports_periods": [
+                19
+              ]
+            },
+            {
+              "gap": 392,
+              "ngram": "A2E",
+              "start_a": 160,
+              "start_b": 552,
+              "supports_periods": []
+            },
+            {
+              "gap": 21,
+              "ngram": "A3B",
+              "start_a": 332,
+              "start_b": 353,
+              "supports_periods": []
+            },
+            {
+              "gap": 364,
+              "ngram": "A42",
+              "start_a": 474,
+              "start_b": 838,
+              "supports_periods": []
+            },
+            {
+              "gap": 159,
+              "ngram": "A9B",
+              "start_a": 45,
+              "start_b": 204,
+              "supports_periods": []
+            },
+            {
+              "gap": 14,
+              "ngram": "AB0",
+              "start_a": 1031,
+              "start_b": 1045,
+              "supports_periods": []
+            },
+            {
+              "gap": 631,
+              "ngram": "AC6",
+              "start_a": 344,
+              "start_b": 975,
+              "supports_periods": []
+            },
+            {
+              "gap": 505,
+              "ngram": "AD0",
+              "start_a": 251,
+              "start_b": 756,
+              "supports_periods": []
+            },
+            {
+              "gap": 680,
+              "ngram": "AD0",
+              "start_a": 251,
+              "start_b": 931,
+              "supports_periods": []
+            },
+            {
+              "gap": 175,
+              "ngram": "AD0",
+              "start_a": 756,
+              "start_b": 931,
+              "supports_periods": []
+            },
+            {
+              "gap": 626,
+              "ngram": "B00",
+              "start_a": 35,
+              "start_b": 661,
+              "supports_periods": []
+            },
+            {
+              "gap": 323,
+              "ngram": "B37",
+              "start_a": 359,
+              "start_b": 682,
+              "supports_periods": [
+                19
+              ]
+            },
+            {
+              "gap": 339,
+              "ngram": "B5F",
+              "start_a": 406,
+              "start_b": 745,
+              "supports_periods": []
+            },
+            {
+              "gap": 195,
+              "ngram": "B76",
+              "start_a": 843,
+              "start_b": 1038,
+              "supports_periods": []
+            },
+            {
+              "gap": 743,
+              "ngram": "B9F",
+              "start_a": 334,
+              "start_b": 1077,
+              "supports_periods": []
+            },
+            {
+              "gap": 68,
+              "ngram": "BE4",
+              "start_a": 390,
+              "start_b": 458,
+              "supports_periods": []
+            },
+            {
+              "gap": 886,
+              "ngram": "C60",
+              "start_a": 51,
+              "start_b": 937,
+              "supports_periods": []
+            },
+            {
+              "gap": 925,
+              "ngram": "C60",
+              "start_a": 51,
+              "start_b": 976,
+              "supports_periods": []
+            },
+            {
+              "gap": 39,
+              "ngram": "C60",
+              "start_a": 937,
+              "start_b": 976,
+              "supports_periods": []
+            },
+            {
+              "gap": 541,
+              "ngram": "C7D",
+              "start_a": 154,
+              "start_b": 695,
+              "supports_periods": []
+            },
+            {
+              "gap": 29,
+              "ngram": "C96",
+              "start_a": 765,
+              "start_b": 794,
+              "supports_periods": []
+            },
+            {
+              "gap": 743,
+              "ngram": "CAC",
+              "start_a": 231,
+              "start_b": 974,
+              "supports_periods": []
+            },
+            {
+              "gap": 308,
+              "ngram": "CB7",
+              "start_a": 3,
+              "start_b": 311,
+              "supports_periods": []
+            },
+            {
+              "gap": 1044,
+              "ngram": "CC7",
+              "start_a": 9,
+              "start_b": 1053,
+              "supports_periods": []
+            },
+            {
+              "gap": 81,
+              "ngram": "D2F",
+              "start_a": 157,
+              "start_b": 238,
+              "supports_periods": []
+            },
+            {
+              "gap": 146,
+              "ngram": "D3D",
+              "start_a": 90,
+              "start_b": 236,
+              "supports_periods": []
+            },
+            {
+              "gap": 566,
+              "ngram": "D44",
+              "start_a": 18,
+              "start_b": 584,
+              "supports_periods": []
+            },
+            {
+              "gap": 471,
+              "ngram": "DB1",
+              "start_a": 386,
+              "start_b": 857,
+              "supports_periods": []
+            },
+            {
+              "gap": 428,
+              "ngram": "DC9",
+              "start_a": 365,
+              "start_b": 793,
+              "supports_periods": []
+            },
+            {
+              "gap": 11,
+              "ngram": "DE2",
+              "start_a": 906,
+              "start_b": 917,
+              "supports_periods": []
+            },
+            {
+              "gap": 155,
+              "ngram": "E03",
+              "start_a": 101,
+              "start_b": 256,
+              "supports_periods": []
+            },
+            {
+              "gap": 590,
+              "ngram": "E7C",
+              "start_a": 368,
+              "start_b": 958,
+              "supports_periods": []
+            },
+            {
+              "gap": 238,
+              "ngram": "EA0",
+              "start_a": 488,
+              "start_b": 726,
+              "supports_periods": []
+            },
+            {
+              "gap": 906,
+              "ngram": "ECC",
+              "start_a": 8,
+              "start_b": 914,
+              "supports_periods": []
+            },
+            {
+              "gap": 520,
+              "ngram": "EE5",
+              "start_a": 71,
+              "start_b": 591,
+              "supports_periods": []
+            },
+            {
+              "gap": 343,
+              "ngram": "EEE",
+              "start_a": 284,
+              "start_b": 627,
+              "supports_periods": []
+            },
+            {
+              "gap": 139,
+              "ngram": "EF6",
+              "start_a": 415,
+              "start_b": 554,
+              "supports_periods": []
+            },
+            {
+              "gap": 821,
+              "ngram": "EF9",
+              "start_a": 66,
+              "start_b": 887,
+              "supports_periods": []
+            },
+            {
+              "gap": 121,
+              "ngram": "F31",
+              "start_a": 805,
+              "start_b": 926,
+              "supports_periods": []
+            },
+            {
+              "gap": 302,
+              "ngram": "F3B",
+              "start_a": 336,
+              "start_b": 638,
+              "supports_periods": []
+            },
+            {
+              "gap": 574,
+              "ngram": "F42",
+              "start_a": 442,
+              "start_b": 1016,
+              "supports_periods": []
+            },
+            {
+              "gap": 466,
+              "ngram": "F46",
+              "start_a": 537,
+              "start_b": 1003,
+              "supports_periods": []
+            },
+            {
+              "gap": 17,
+              "ngram": "F5A",
+              "start_a": 836,
+              "start_b": 853,
+              "supports_periods": []
+            },
+            {
+              "gap": 534,
+              "ngram": "F63",
+              "start_a": 21,
+              "start_b": 555,
+              "supports_periods": []
+            },
+            {
+              "gap": 933,
+              "ngram": "F63",
+              "start_a": 21,
+              "start_b": 954,
+              "supports_periods": []
+            },
+            {
+              "gap": 399,
+              "ngram": "F63",
+              "start_a": 555,
+              "start_b": 954,
+              "supports_periods": [
+                19,
+                57
+              ]
+            },
+            {
+              "gap": 493,
+              "ngram": "F7D",
+              "start_a": 384,
+              "start_b": 877,
+              "supports_periods": []
+            },
+            {
+              "gap": 213,
+              "ngram": "F8A",
+              "start_a": 300,
+              "start_b": 513,
+              "supports_periods": []
+            },
+            {
+              "gap": 472,
+              "ngram": "F8A",
+              "start_a": 300,
+              "start_b": 772,
+              "supports_periods": []
+            },
+            {
+              "gap": 259,
+              "ngram": "F8A",
+              "start_a": 513,
+              "start_b": 772,
+              "supports_periods": []
+            },
+            {
+              "gap": 396,
+              "ngram": "F92",
+              "start_a": 67,
+              "start_b": 463,
+              "supports_periods": []
+            },
+            {
+              "gap": 38,
+              "ngram": "FA2",
+              "start_a": 159,
+              "start_b": 197,
+              "supports_periods": [
+                19,
+                38
+              ]
+            },
+            {
+              "gap": 493,
+              "ngram": "FCE",
+              "start_a": 254,
+              "start_b": 747,
+              "supports_periods": []
+            },
+            {
+              "gap": 261,
+              "ngram": "FF7",
+              "start_a": 383,
+              "start_b": 644,
+              "supports_periods": []
+            }
+          ],
+          "start_positions_examined": 1090
+        },
+        "4": {
+          "gap_histogram": {
+            "159": 1,
+            "238": 1,
+            "302": 1,
+            "344": 1,
+            "449": 1
+          },
+          "repeat_pair_count": 5,
+          "repeat_pairs": [
+            {
+              "gap": 344,
+              "ngram": "065F",
+              "start_a": 506,
+              "start_b": 850,
+              "supports_periods": []
+            },
+            {
+              "gap": 449,
+              "ngram": "0675",
+              "start_a": 490,
+              "start_b": 939,
+              "supports_periods": []
+            },
+            {
+              "gap": 238,
+              "ngram": "5EA0",
+              "start_a": 487,
+              "start_b": 725,
+              "supports_periods": []
+            },
+            {
+              "gap": 159,
+              "ngram": "7A9B",
+              "start_a": 44,
+              "start_b": 203,
+              "supports_periods": []
+            },
+            {
+              "gap": 302,
+              "ngram": "9F3B",
+              "start_a": 335,
+              "start_b": 637,
+              "supports_periods": []
+            }
+          ],
+          "start_positions_examined": 1089
+        },
+        "5": {
+          "gap_histogram": {},
+          "repeat_pair_count": 0,
+          "repeat_pairs": [],
+          "start_positions_examined": 1088
+        }
+      },
+      "period_set_intersections": {
+        "19_and_38": 3,
+        "19_and_38_and_57": 1,
+        "19_and_57": 2,
+        "38_and_57": 1
+      },
+      "support_pair_counts": {
+        "19": 6,
+        "38": 3,
+        "57": 2
+      },
+      "transformed_length": 1092,
+      "transformed_sha256": "8de8f735aa5e5873772892feaa7defd0b9330a8311dc751cf02be2f8d7081b8e"
+    }
+  ],
+  "identity": "ASTRA",
+  "limits": "Exact conventional repeat-pair divisibility only. No external program Z statistic, null model, language score, or generic negative conclusion is reproduced.",
+  "scope": {
+    "candidate_periods": [
+      19,
+      38,
+      57
+    ],
+    "cell_symbols": 4,
+    "column_read_indices_zero_based": [
+      3,
+      5,
+      4,
+      2,
+      1,
+      6,
+      0
+    ],
+    "contexts": [
+      "encode:forward",
+      "encode:full_hex_reverse",
+      "decode:forward",
+      "decode:full_hex_reverse"
+    ],
+    "key": "ZOMBIES",
+    "ngram_lengths": [
+      3,
+      4,
+      5
+    ],
+    "rectangle": "273 cells = 39 rows x 7 columns",
+    "support_rule": "one repeat pair supports p iff p divides its position gap; all start positions and all occurrence pairs retained"
+  },
+  "status": "complete",
+  "synthetic_common_multiple_example": {
+    "meaning": "three occurrence pairs with gaps114,228,114 each support19,38,57; the periods are nested divisibility observations, not independent peaks",
+    "ngram": "ABC",
+    "pairs": [
+      {
+        "gap": 114,
+        "ngram": "ABC",
+        "start_a": 0,
+        "start_b": 114,
+        "supports_periods": [
+          19,
+          38,
+          57
+        ]
+      },
+      {
+        "gap": 228,
+        "ngram": "ABC",
+        "start_a": 0,
+        "start_b": 228,
+        "supports_periods": [
+          19,
+          38,
+          57
+        ]
+      },
+      {
+        "gap": 114,
+        "ngram": "ABC",
+        "start_a": 114,
+        "start_b": 228,
+        "supports_periods": [
+          19,
+          38,
+          57
+        ]
+      }
+    ],
+    "starts": [
+      0,
+      114,
+      228
+    ]
+  },
+  "target_evaluated": true
+}

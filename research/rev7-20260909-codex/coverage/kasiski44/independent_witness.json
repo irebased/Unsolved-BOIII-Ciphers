@@ -1,0 +1,68 @@
+{
+  "all_repeat_pairs": 10,
+  "geometry": "rectangularequal4cells,ZOMBIES,standarddecode,forwardinput",
+  "identity": "ASTRA",
+  "maximal_common_repetition": {
+    "gap": 114,
+    "not_left_or_right_extendible": true,
+    "starts_zero_based": [
+      828,
+      942
+    ],
+    "text": "030E6"
+  },
+  "n_range": [
+    4,
+    8
+  ],
+  "new_transform_search": false,
+  "outside_Z_formula_known": false,
+  "outside_program_confirmed": false,
+  "source_sha256": "ffb0b0677fbd681ed24a6c671d1816e1f5931b5f53ce98029216a5dfd200611e",
+  "support_counts": {
+    "19": 3,
+    "38": 3,
+    "57": 3
+  },
+  "target_evaluated": true,
+  "transformed_sha256": "1cb32555f497309352adec7f5757bc3e9f5fb02fe077995ae0b83ff3a052d1be",
+  "verification_only": true,
+  "witnesses": [
+    {
+      "gap": 114,
+      "n": 4,
+      "ngram": "030E",
+      "start_a_zero_based": 828,
+      "start_b_zero_based": 942,
+      "supports": [
+        19,
+        38,
+        57
+      ]
+    },
+    {
+      "gap": 114,
+      "n": 4,
+      "ngram": "30E6",
+      "start_a_zero_based": 829,
+      "start_b_zero_based": 943,
+      "supports": [
+        19,
+        38,
+        57
+      ]
+    },
+    {
+      "gap": 114,
+      "n": 5,
+      "ngram": "030E6",
+      "start_a_zero_based": 828,
+      "start_b_zero_based": 942,
+      "supports": [
+        19,
+        38,
+        57
+      ]
+    }
+  ]
+}
