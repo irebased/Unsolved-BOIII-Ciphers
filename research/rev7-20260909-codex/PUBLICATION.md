@@ -215,3 +215,17 @@ python3 -B research/byte_columnar/all_iv/adjacency/pack_results.py --verify
 python3 -B research/byte_columnar/all_iv/adjacency/verify_results.py
 python3 -B research/byte_columnar/all_iv/adjacency/verify_results.py --full-pairs
 ```
+
+
+## Column-A every-IV proof and synthetic controls
+
+The [column-A proof package](../byte_columnar/all_iv/column_a/README.md) establishes a separate necessary constraint for rectangular column permutations. FABLE's `order[rank]` identifies the natural column, so reconstruction uses its inverse `slots`: `C[row*w+j] = observed[slots[j]*q+row]`. With an eight-byte CFB block and width greater than eight, ciphertext columns zero through seven determine the plaintext byte at column eight independently of the IV. For each distinct first-eight rank tuple, the reference intersects all possible ninth-column ranks across rows using the relaxed 105-byte alphabet. An empty mask excludes all `(w-8)!` completions; surviving prefixes remain unresolved.
+
+The controls compare the exact vendored FABLE transform, twenty small full-permutation cases including explicit positive and negative controls, and six DES, Blowfish and historical Blowfish-compat plants under two IVs each. Every true ninth rank is uniquely retained in the real-cipher plants. Historical C compatibility source, build shims, LGPL license and provenance are included; regeneration compiles in a temporary directory and compares that source against a separate PyCryptodome word-reversal implementation. The default command checks the frozen ledger and source identity without writing; explicit regeneration requires a new output path.
+
+```sh
+python3 -B research/byte_columnar/all_iv/column_a/controls.py
+python3 -B research/byte_columnar/all_iv/column_a/controls.py --regenerate /tmp/column-a-controls.json
+```
+
+This is a proof and synthetic-control package only. It contains no Rev7 target evaluation and recovers no order, IV or plaintext. The alphabet is a relaxed necessary byte filter, not a strict UTF-8 parser. Native implementation and any later target evaluation are separate artifacts.

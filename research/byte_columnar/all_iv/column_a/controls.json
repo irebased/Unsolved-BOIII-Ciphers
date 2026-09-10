@@ -1,0 +1,702 @@
+{
+  "actual_plant_count": 6,
+  "actual_plants": [
+    {
+      "all_rows_checked": true,
+      "backend": "des",
+      "ciphertext_sha256": "675590a89ebcc1cf5bb1ae9ea0bc2533f38cafe14c9ff56d9c25bf560ffdb371",
+      "fable_order": [
+        9,
+        1,
+        7,
+        0,
+        5,
+        8,
+        3,
+        6,
+        2,
+        4
+      ],
+      "fixed_first_eight_slots": [
+        3,
+        1,
+        8,
+        6,
+        9,
+        4,
+        7,
+        2
+      ],
+      "iv_hex": "0011223344556677",
+      "observed_sha256": "7f74a2e12649eef46e53c1d50685ac201190c70f527560dd6119cda30a6d34af",
+      "plaintext_sha256": "ee42564b1ec09c6ef7f54e71090a6c03616dfd47c5359cad76e180f2143e5484",
+      "rows": 16,
+      "surviving_ninth_ranks": [
+        5
+      ],
+      "true_ninth_rank": 5,
+      "true_ninth_uniquely_retained": true,
+      "width": 10
+    },
+    {
+      "all_rows_checked": true,
+      "backend": "des",
+      "ciphertext_sha256": "840648a3f188575f68c0a6d9b3e9c84f0e11f55797474754080404c2e14b5f61",
+      "fable_order": [
+        9,
+        1,
+        7,
+        0,
+        5,
+        8,
+        3,
+        6,
+        2,
+        4
+      ],
+      "fixed_first_eight_slots": [
+        3,
+        1,
+        8,
+        6,
+        9,
+        4,
+        7,
+        2
+      ],
+      "iv_hex": "fedcba9876543210",
+      "observed_sha256": "969f9181a29c37d2a8a9a8ef14cfb4727dfa18c43b038ca44272063141448e9f",
+      "plaintext_sha256": "ee42564b1ec09c6ef7f54e71090a6c03616dfd47c5359cad76e180f2143e5484",
+      "rows": 16,
+      "surviving_ninth_ranks": [
+        5
+      ],
+      "true_ninth_rank": 5,
+      "true_ninth_uniquely_retained": true,
+      "width": 10
+    },
+    {
+      "all_rows_checked": true,
+      "backend": "blowfish",
+      "ciphertext_sha256": "efef1f476ed14ae92a02c83bf3d51ad43b3230604b1f4945da0bd928e8ec1343",
+      "fable_order": [
+        9,
+        1,
+        7,
+        0,
+        5,
+        8,
+        3,
+        6,
+        2,
+        4
+      ],
+      "fixed_first_eight_slots": [
+        3,
+        1,
+        8,
+        6,
+        9,
+        4,
+        7,
+        2
+      ],
+      "iv_hex": "1020304050607080",
+      "observed_sha256": "c5dd73608bfb67974dd1f1a553755f9103bc957339e71a7efeabda51d6258887",
+      "plaintext_sha256": "ee42564b1ec09c6ef7f54e71090a6c03616dfd47c5359cad76e180f2143e5484",
+      "rows": 16,
+      "surviving_ninth_ranks": [
+        5
+      ],
+      "true_ninth_rank": 5,
+      "true_ninth_uniquely_retained": true,
+      "width": 10
+    },
+    {
+      "all_rows_checked": true,
+      "backend": "blowfish",
+      "ciphertext_sha256": "84a788907d67b4c352dd5c13dc3f8ca0b059f45e928f4c5a5b84d8903cdfd195",
+      "fable_order": [
+        9,
+        1,
+        7,
+        0,
+        5,
+        8,
+        3,
+        6,
+        2,
+        4
+      ],
+      "fixed_first_eight_slots": [
+        3,
+        1,
+        8,
+        6,
+        9,
+        4,
+        7,
+        2
+      ],
+      "iv_hex": "8877665544332211",
+      "observed_sha256": "e65abc77eabbdd9968f2c1823e5f7b54e1bc4205d2eec295f7dcb986c8abdbb6",
+      "plaintext_sha256": "ee42564b1ec09c6ef7f54e71090a6c03616dfd47c5359cad76e180f2143e5484",
+      "rows": 16,
+      "surviving_ninth_ranks": [
+        5
+      ],
+      "true_ninth_rank": 5,
+      "true_ninth_uniquely_retained": true,
+      "width": 10
+    },
+    {
+      "all_rows_checked": true,
+      "backend": "blowfish_compat",
+      "ciphertext_sha256": "ebb1ee837a101507f4c6f946679560de90b2784d8fbecb685a684967bfc1e820",
+      "fable_order": [
+        9,
+        1,
+        7,
+        0,
+        5,
+        8,
+        3,
+        6,
+        2,
+        4
+      ],
+      "fixed_first_eight_slots": [
+        3,
+        1,
+        8,
+        6,
+        9,
+        4,
+        7,
+        2
+      ],
+      "iv_hex": "13579bdf2468ace0",
+      "observed_sha256": "b2a96237f804760cf85234051b023732a61aa9de2a4f9b08cac5fe9505ef9537",
+      "plaintext_sha256": "ee42564b1ec09c6ef7f54e71090a6c03616dfd47c5359cad76e180f2143e5484",
+      "rows": 16,
+      "surviving_ninth_ranks": [
+        5
+      ],
+      "true_ninth_rank": 5,
+      "true_ninth_uniquely_retained": true,
+      "width": 10
+    },
+    {
+      "all_rows_checked": true,
+      "backend": "blowfish_compat",
+      "ciphertext_sha256": "1a352035e7c2c8cc12b4e370d224fee29eafc916ff0728e5389d08742f038028",
+      "fable_order": [
+        9,
+        1,
+        7,
+        0,
+        5,
+        8,
+        3,
+        6,
+        2,
+        4
+      ],
+      "fixed_first_eight_slots": [
+        3,
+        1,
+        8,
+        6,
+        9,
+        4,
+        7,
+        2
+      ],
+      "iv_hex": "0123456789abcdef",
+      "observed_sha256": "00a6074bd868ad1bb6a72f6d0e515be47dbf099482a424001d3281baa1c679ce",
+      "plaintext_sha256": "ee42564b1ec09c6ef7f54e71090a6c03616dfd47c5359cad76e180f2143e5484",
+      "rows": 16,
+      "surviving_ninth_ranks": [
+        5
+      ],
+      "true_ninth_rank": 5,
+      "true_ninth_uniquely_retained": true,
+      "width": 10
+    }
+  ],
+  "allowed_bytes": {
+    "count": 105,
+    "model": "necessary relaxed byte set, not strict UTF-8 FSA"
+  },
+  "assertions": {
+    "all_passed": true,
+    "explicit_positive_nonvacuous": true,
+    "no_target_read": true,
+    "six_true_ninth_plants_unique": true,
+    "source_built_compat_distinct_conjugation": true,
+    "toy_oracle_exact": true,
+    "vendored_fable_exact": true
+  },
+  "compat_regeneration": {
+    "command": [
+      "clang",
+      "-shared",
+      "-fPIC",
+      "-O2",
+      "-I",
+      "compat_source",
+      "compat_source/blowfish-compat.c",
+      "-o",
+      "<temporary>/libblowfish_compat.so"
+    ],
+    "compiler_version": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "distinct_c_vs_conjugation_blocks": 3,
+    "temporary_binary_sha256": "8d5b9646f2efae36b7c5e57c637249ba9937ec3c9d95e78acdfa81efaf1ae73a"
+  },
+  "definition_audit": {
+    "fable_order": [
+      2,
+      0,
+      1
+    ],
+    "inverse_hex": "040800050901060a02070b03",
+    "mapping": [
+      4,
+      8,
+      0,
+      5,
+      9,
+      1,
+      6,
+      10,
+      2,
+      7,
+      11,
+      3
+    ],
+    "matched": true,
+    "slots": [
+      1,
+      2,
+      0
+    ]
+  },
+  "explicit_positive_toy_count": 1,
+  "identity": "ASTRA",
+  "proof": {
+    "all_iv": "For w>8, position row*w+8 uses preceding natural ciphertext columns 0..7 and contains no IV bytes.",
+    "empty_mask": "Rejects exactly (w-8)! completions; first-eight tuples partition w!.",
+    "equation": "C[row*w+j] = observed[slots[j]*q+row], slots=inverse(FABLE order)"
+  },
+  "rev7_read": false,
+  "runtime": {
+    "node": "v26.4.0",
+    "pycryptodome": "3.23.0",
+    "python": "3.9.6"
+  },
+  "scope": "Synthetic rectangular FABLE columnarA 8-byte CFB first-block prefix certificate.",
+  "source_hashes": {
+    "build_compat.py": "6c0ab4888febcf87d45515bd4ad8b34f11a85edb05d0cb99ad1f75b8dd24f0aa",
+    "compat_PROVENANCE.md": "ffb5e443fa77844a31dbe84440c9cc452f2139a766e61b570602cbc4cfcaea3a",
+    "compat_source/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+    "compat_source/blowfish-compat.c": "3584374a6bae4df8899e82d36255bbac0472904aed2095e3c08c57a5dd5b4cad",
+    "compat_source/blowfish.h": "bb4a14ecbd5dc92105b290d9261ed562a980c6e42b0d9b4b56e62b4b6c39665b",
+    "compat_source/libdefs.h": "cdffb7ef7bc27b6eea90b73174077c377d8260ffd111fb8de3c2bbc938e28a31",
+    "compat_source/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "controls.py": "7887aef9fe4d82d762543575856cf3d2245700c9a0a64efa6bd21301ceefab18",
+    "core.py": "1deda1788e9d9a49140325c7e0f7ce3eb53aa7d05e8e44590be4076da0bae472",
+    "fable/byteTranspositions.js": "c9c09bd405bbe43b853a5efb0e25f58ae67136a5f83653e7c45c3a2f3879b7f0",
+    "fable/transpositions.js": "89f2b3c8fa5cd5144d3c2baf2e2d25edb1dcb2f3b0f7a056a506841e6438ccc6",
+    "fable_PROVENANCE.md": "642862f0aa612ac4996d4b35c4ad1e18563a411c356b46c74308feee2a70e49e"
+  },
+  "structural_counts": {
+    "13": {
+      "prefixes": 51891840,
+      "weight": 120
+    },
+    "14": {
+      "prefixes": 121080960,
+      "weight": 720
+    }
+  },
+  "target_evaluated": false,
+  "toy_control_count": 20,
+  "toy_controls": [
+    {
+      "accepted_full_permutations_at_ninth_constraint": 2,
+      "allowed": [
+        0
+      ],
+      "block_size": 1,
+      "factorial_partition_complete": true,
+      "label": "explicit_all_prefixes_survive_positive",
+      "observed_hex": "00000000",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 2,
+      "rejected_prefixes": 0,
+      "rows": 2,
+      "survivor_prefix_count": 2,
+      "width": 2
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        255
+      ],
+      "block_size": 1,
+      "factorial_partition_complete": true,
+      "label": "explicit_all_prefixes_reject_negative",
+      "observed_hex": "000102030405",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 3,
+      "rejected_prefixes": 3,
+      "rows": 2,
+      "survivor_prefix_count": 0,
+      "width": 3
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        2,
+        3,
+        4
+      ],
+      "block_size": 1,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "0104",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 2,
+      "rejected_prefixes": 2,
+      "rows": 1,
+      "survivor_prefix_count": 0,
+      "width": 2
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "block_size": 1,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "02020605",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 2,
+      "rejected_prefixes": 2,
+      "rows": 2,
+      "survivor_prefix_count": 0,
+      "width": 2
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        0,
+        1,
+        4,
+        5,
+        6
+      ],
+      "block_size": 1,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "060307070207",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 2,
+      "rejected_prefixes": 2,
+      "rows": 3,
+      "survivor_prefix_count": 0,
+      "width": 2
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        0,
+        2,
+        4,
+        6,
+        7
+      ],
+      "block_size": 1,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "020701",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 3,
+      "rejected_prefixes": 3,
+      "rows": 1,
+      "survivor_prefix_count": 0,
+      "width": 3
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "block_size": 1,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "030305010703",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 3,
+      "rejected_prefixes": 3,
+      "rows": 2,
+      "survivor_prefix_count": 0,
+      "width": 3
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        0,
+        1,
+        3,
+        7
+      ],
+      "block_size": 1,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "020004030305010707",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 3,
+      "rejected_prefixes": 3,
+      "rows": 3,
+      "survivor_prefix_count": 0,
+      "width": 3
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "block_size": 2,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "000503",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 6,
+      "rejected_prefixes": 6,
+      "rows": 1,
+      "survivor_prefix_count": 0,
+      "width": 3
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "block_size": 2,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "030302050506",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 6,
+      "rejected_prefixes": 6,
+      "rows": 2,
+      "survivor_prefix_count": 0,
+      "width": 3
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "block_size": 2,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "060001070401020503",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 6,
+      "rejected_prefixes": 6,
+      "rows": 3,
+      "survivor_prefix_count": 0,
+      "width": 3
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        3,
+        5
+      ],
+      "block_size": 2,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "04010404",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 12,
+      "rejected_prefixes": 12,
+      "rows": 1,
+      "survivor_prefix_count": 0,
+      "width": 4
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        0,
+        3,
+        4,
+        5,
+        7
+      ],
+      "block_size": 2,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "0002010607060401",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 12,
+      "rejected_prefixes": 12,
+      "rows": 2,
+      "survivor_prefix_count": 0,
+      "width": 4
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "block_size": 2,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "010602020705040605000204",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 12,
+      "rejected_prefixes": 12,
+      "rows": 3,
+      "survivor_prefix_count": 0,
+      "width": 4
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "block_size": 3,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "06070002",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 24,
+      "rejected_prefixes": 24,
+      "rows": 1,
+      "survivor_prefix_count": 0,
+      "width": 4
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "block_size": 3,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "0506070402050404",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 24,
+      "rejected_prefixes": 24,
+      "rows": 2,
+      "survivor_prefix_count": 0,
+      "width": 4
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "block_size": 3,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "040202020506000002070106",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 24,
+      "rejected_prefixes": 24,
+      "rows": 3,
+      "survivor_prefix_count": 0,
+      "width": 4
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 3,
+      "allowed": [
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "block_size": 3,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "0500010603",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 60,
+      "rejected_prefixes": 58,
+      "rows": 1,
+      "survivor_prefix_count": 2,
+      "width": 5
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        1,
+        2
+      ],
+      "block_size": 3,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "06010006050400070605",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 60,
+      "rejected_prefixes": 60,
+      "rows": 2,
+      "survivor_prefix_count": 0,
+      "width": 5
+    },
+    {
+      "accepted_full_permutations_at_ninth_constraint": 0,
+      "allowed": [
+        1,
+        2,
+        5,
+        6,
+        7
+      ],
+      "block_size": 3,
+      "factorial_partition_complete": true,
+      "label": "deterministic_random",
+      "observed_hex": "070004030606030401010206010401",
+      "prefix_sets_exact": true,
+      "prefixes_examined": 60,
+      "rejected_prefixes": 60,
+      "rows": 3,
+      "survivor_prefix_count": 0,
+      "width": 5
+    }
+  ]
+}
