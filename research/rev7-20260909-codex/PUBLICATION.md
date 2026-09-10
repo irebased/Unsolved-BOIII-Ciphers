@@ -284,3 +284,16 @@ The [45,574-byte result ledger](../byte_columnar/all_iv/column_a/target/target_r
 ```sh
 python3 -S -B research/byte_columnar/all_iv/column_a/target/verify_results.py
 ```
+
+
+## Completed every-IV Blowfish mapping search
+
+The [completed Blowfish result](iv_independent/blowfish_solver/target/RESULTS.md) closes all eight registered cases: standard Blowfish and historical Blowfish-compat, raw seven-byte Zombies, CFB8, four canonical orientations, and every external eight-byte IV under a fixed global bijection of the 16 displayed hex symbols. Each cell exhausts its full `16! = 20,922,789,888,000` mapping weight, with zero survivors and no uncovered remainder. None reached its fresh one-billion-node cap. The IV-independent suffix uses the necessary A105 filter and the registered strict five-sequence FSA endpoint. Other keys, modes, mappings, transforms and endpoint assumptions remain outside this result.
+
+The single uninterrupted invocation entered 2,365,440,332 DFS nodes and made 21,643,489,230 block calls in 1,130.035 native seconds. The [17,208-byte ledger](iv_independent/blowfish_solver/target/target_results.json), SHA-256 `dffebff216727736c2b21b58a3dfc75576b7798375603a0d6bc8ee67338d83fc`, retains every cell and its exact certificate accounting. Source-backed synthetic controls and the frozen preregistration were published before execution.
+
+Root checked all local frozen sources and result invariants. The published standard-library verifier checks source provenance, canonical orientation hashes, deterministic search geometry and stored accounting without requiring the excluded executable. It compares the recorded binary hash to frozen build provenance; `--check-local-binary` optionally checks an available local executable. This is integrity and accounting verification, not a second independent 2.365-billion-node search.
+
+```sh
+python3 -S -B research/rev7-20260909-codex/iv_independent/blowfish_solver/target/verify_results.py
+```
