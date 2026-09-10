@@ -1,0 +1,1127 @@
+{
+  "algorithm": {
+    "candidate_mask": "unused ninth ranks intersected across all rows",
+    "cap_accounting": "rejected examined + unresolved examined + unexamined weights partition width!",
+    "enumeration": "lexicographic first-eight observed-rank tuples",
+    "rejected_weight": "(width-8)! per empty-mask tuple",
+    "survivor_meaning": "unresolved first-eight tuple plus possible ninth ranks only"
+  },
+  "assertions": {
+    "all_passed": true,
+    "bounded_wider_multiple_candidate_sets_and_accounting": true,
+    "complete_width9_exact_sets_counters_and_plants": true,
+    "fixed_raw7_native_blocks_match": true,
+    "invalid_inputs_rejected": true,
+    "no_target_read_or_evaluation": true,
+    "source_hashes_pinned": true,
+    "source_kat_passed": true,
+    "two_full_cfb8_streams_match_and_roundtrip": true,
+    "varied_keys_blocks_match_arc2_1024": true
+  },
+  "benchmark_fixture": {
+    "generator": "Python random.Random(0xC01A2C2), 546 calls to randrange(256)",
+    "observed_hex": "1acef6fa74990b093736aeb4bcdebc62079098855f375fec218dff48295f380457bdfdad6959fb0f31c034f2cfca8164b3892c59e8983ec7284a9df08099a493451be8e299acd7895882be305bb461cdcf52862d7baaa6323a995bf403dad5e0303dff23277389ab3c979561912b3f2d472a693a0d1f9437494c54debf7cbeacaa94e176d9ec9a46c5d65bac074128af487ead7eb5980d0ade8d0979cd1384d28644367f59b1241c7e1e06ad5d700f2537cef8bafafc48c76416cf76ec4864264bc736acfbb3d5da81a5c8a284f9169e26de18a9e317dd698a0f2e5d11d0bcb8d0e074bb16adaccaec6a639b8d78a437d3373b26123a2d7c4a94568d80b64acfb66242f5b3acad5cd2d77ba5e5e727f4224788214c5f987d05a0f253a1d6052e8eba533fdc9725a000d959ea40162376229d687a6118c17d0b5d8c7e74e7bf7d983b817ccc6356837c5a6b7cb17955f29d5af6d7959bd9e42d468739492e55d752d42c3003f9c987aa2d7f76a5ae21072decc9cadffa98af4fabd475cd84710f4ff5ab448f651a55b19b9b0c49dec69e630a373891f134241762d2f0e2fd804f1d12e439a74df7897688bdc61fc7323767b888bd39fe96d7d5b8b085c1e277b2e4d02c9d338e1f1bc57be6f2740fa6a54de36afa68eb2f3c983a9da2d49523b862e0227bacca0e374f5729bced8dba3bc9802821f267f6caaeddf4c514b5789b625b7bc4d38573f39d2f9c60e3342370c50df08a32046edf332fc46fd47a8aa8ba8c",
+    "prefix_budget_per_width": 1000000,
+    "sha256": "ca035e2e995fd4e11548ec3f06775aee301a2395b042a8cdf43b0f03a5b760f4"
+  },
+  "bounded_benchmarks": [
+    {
+      "block_calls": 3080398,
+      "candidate_tests": 8480330,
+      "complete_scan": false,
+      "completion_weight_per_prefix": 120,
+      "elapsed_seconds": 0.304018,
+      "estimate_limit": "Linear projection from the first lexicographic million on one synthetic fixture; target early-stop distribution and host performance can differ.",
+      "expected_completion_weight": 6227020800,
+      "factorial_partition_complete": true,
+      "linear_full_prefix_time_estimate_seconds": 15.77605341312,
+      "native_output": {
+        "backend": "rc2",
+        "block_calls": 3080398,
+        "candidate_tests": 8480330,
+        "complete_scan": false,
+        "completion_weight_per_prefix": 120,
+        "elapsed_seconds": 0.304018,
+        "expected_completion_weight": 6227020800,
+        "factorial_partition_complete": true,
+        "identity": "ASTRA",
+        "prefix_limit": 1000000,
+        "prefixes_examined": 1000000,
+        "rejected_completion_weight": 120000000,
+        "rejected_prefixes": 1000000,
+        "rows": 42,
+        "rows_checked": 3080398,
+        "survivor_digest_fnv1a64": "cbf29ce484222325",
+        "survivor_prefix_count": 0,
+        "survivor_prefixes": [],
+        "survivors_retained": false,
+        "total_prefixes": 51891840,
+        "unexamined_completion_weight": 6107020800,
+        "unexamined_prefixes": 50891840,
+        "unresolved_examined_completion_weight": 0,
+        "width": 13
+      },
+      "prefix_limit": 1000000,
+      "prefixes_examined": 1000000,
+      "prefixes_per_second": 3289278.9242742206,
+      "rejected_completion_weight": 120000000,
+      "rejected_prefixes": 1000000,
+      "rows": 42,
+      "rows_checked": 3080398,
+      "survivor_digest_fnv1a64": "cbf29ce484222325",
+      "survivor_prefix_count": 0,
+      "survivors_retained": false,
+      "total_prefixes": 51891840,
+      "unexamined_completion_weight": 6107020800,
+      "unexamined_prefixes": 50891840,
+      "unresolved_examined_completion_weight": 0,
+      "width": 13
+    },
+    {
+      "block_calls": 3178823,
+      "candidate_tests": 10169572,
+      "complete_scan": false,
+      "completion_weight_per_prefix": 720,
+      "elapsed_seconds": 0.321994,
+      "estimate_limit": "Linear projection from the first lexicographic million on one synthetic fixture; target early-stop distribution and host performance can differ.",
+      "expected_completion_weight": 87178291200,
+      "factorial_partition_complete": true,
+      "linear_full_prefix_time_estimate_seconds": 38.98734263424,
+      "native_output": {
+        "backend": "rc2",
+        "block_calls": 3178823,
+        "candidate_tests": 10169572,
+        "complete_scan": false,
+        "completion_weight_per_prefix": 720,
+        "elapsed_seconds": 0.321994,
+        "expected_completion_weight": 87178291200,
+        "factorial_partition_complete": true,
+        "identity": "ASTRA",
+        "prefix_limit": 1000000,
+        "prefixes_examined": 1000000,
+        "rejected_completion_weight": 720000000,
+        "rejected_prefixes": 1000000,
+        "rows": 39,
+        "rows_checked": 3178823,
+        "survivor_digest_fnv1a64": "cbf29ce484222325",
+        "survivor_prefix_count": 0,
+        "survivor_prefixes": [],
+        "survivors_retained": false,
+        "total_prefixes": 121080960,
+        "unexamined_completion_weight": 86458291200,
+        "unexamined_prefixes": 120080960,
+        "unresolved_examined_completion_weight": 0,
+        "width": 14
+      },
+      "prefix_limit": 1000000,
+      "prefixes_examined": 1000000,
+      "prefixes_per_second": 3105647.931327913,
+      "rejected_completion_weight": 720000000,
+      "rejected_prefixes": 1000000,
+      "rows": 39,
+      "rows_checked": 3178823,
+      "survivor_digest_fnv1a64": "cbf29ce484222325",
+      "survivor_prefix_count": 0,
+      "survivors_retained": false,
+      "total_prefixes": 121080960,
+      "unexamined_completion_weight": 86458291200,
+      "unexamined_prefixes": 120080960,
+      "unresolved_examined_completion_weight": 0,
+      "width": 14
+    }
+  ],
+  "bounded_wider_multiple_candidate_parity": [
+    {
+      "block_calls": 1640,
+      "candidate_tests": 2805,
+      "exact_ordered_sets_and_counters": true,
+      "factorial_partition_complete": true,
+      "multiple_candidate_prefix_count": 29,
+      "observed_hex": "8ede73cee0a81a149f26c4e0e6c58059940b6432",
+      "observed_sha256": "94ee6fd38c25ef791f9ebe17be1a8d6d7891197c09563b17935f4ec16e4c9704",
+      "prefix_budget": 1000,
+      "rejected_prefixes": 693,
+      "rows": 2,
+      "survivor_digest_fnv1a64": "d5011a7dfe219455",
+      "survivor_prefix_count": 307,
+      "unexamined_prefixes": 1813400,
+      "width": 10
+    },
+    {
+      "block_calls": 1898,
+      "candidate_tests": 7028,
+      "exact_ordered_sets_and_counters": true,
+      "factorial_partition_complete": true,
+      "multiple_candidate_prefix_count": 187,
+      "observed_hex": "47d46a60d2abaa5f3f95027e7a21d385d167215a5b0b523bd6f4",
+      "observed_sha256": "76bcd1b0f85362c7061d246f17c8142d236f7bc624f426d946a3a69013ae9a45",
+      "prefix_budget": 1000,
+      "rejected_prefixes": 416,
+      "rows": 2,
+      "survivor_digest_fnv1a64": "fa37a8c915af524c",
+      "survivor_prefix_count": 584,
+      "unexamined_prefixes": 51890840,
+      "width": 13
+    },
+    {
+      "block_calls": 1922,
+      "candidate_tests": 8437,
+      "exact_ordered_sets_and_counters": true,
+      "factorial_partition_complete": true,
+      "multiple_candidate_prefix_count": 261,
+      "observed_hex": "0a346888cdbd3db06b1f70de56d8ae56fa9f90ad9cb0b83d9f61dc6d",
+      "observed_sha256": "a240217546945bc6941bea1a4c69120222bd844ac17feadbdcd31fc7a11de6d7",
+      "prefix_budget": 1000,
+      "rejected_prefixes": 359,
+      "rows": 2,
+      "survivor_digest_fnv1a64": "762e108af19dd8cf",
+      "survivor_prefix_count": 641,
+      "unexamined_prefixes": 121079960,
+      "width": 14
+    }
+  ],
+  "build": {
+    "commands": [
+      {
+        "command": [
+          "clang",
+          "-O2",
+          "-I/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source_build",
+          "-I/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source",
+          "-c",
+          "/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source/rc2.c",
+          "-o",
+          "<TMP>/rc2.o"
+        ],
+        "stderr": "/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source/rc2.c:303:13: warning: passing 'unsigned char[16]' to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]\n  303 |         if (strcmp(ciphertext, plaintext) != 0) {\n      |                    ^~~~~~~~~~\n/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:89:25: note: passing argument to parameter '__s1' here\n   89 | int      strcmp(const char *__s1, const char *__s2);\n      |                             ^\n/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source/rc2.c:303:25: warning: passing 'unsigned char[16]' to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]\n  303 |         if (strcmp(ciphertext, plaintext) != 0) {\n      |                                ^~~~~~~~~\n/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:89:43: note: passing argument to parameter '__s2' here\n   89 | int      strcmp(const char *__s1, const char *__s2);\n      |                                               ^\n2 warnings generated.\n",
+        "stdout": ""
+      },
+      {
+        "command": [
+          "clang",
+          "-shared",
+          "-fPIC",
+          "-O2",
+          "-I/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source_build",
+          "-I/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source",
+          "/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source/rc2.c",
+          "-o",
+          "<TMP>/librc2.so"
+        ],
+        "stderr": "/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source/rc2.c:303:13: warning: passing 'unsigned char[16]' to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]\n  303 |         if (strcmp(ciphertext, plaintext) != 0) {\n      |                    ^~~~~~~~~~\n/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:89:25: note: passing argument to parameter '__s1' here\n   89 | int      strcmp(const char *__s1, const char *__s2);\n      |                             ^\n/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/source/rc2.c:303:25: warning: passing 'unsigned char[16]' to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]\n  303 |         if (strcmp(ciphertext, plaintext) != 0) {\n      |                                ^~~~~~~~~\n/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:89:43: note: passing argument to parameter '__s2' here\n   89 | int      strcmp(const char *__s1, const char *__s2);\n      |                                               ^\n2 warnings generated.\n",
+        "stdout": ""
+      },
+      {
+        "command": [
+          "clang++",
+          "-std=c++17",
+          "-O3",
+          "/private/tmp/rev7-astra-20260909/research/byte_columnar/all_iv/column_a_rc2/native.cpp",
+          "<TMP>/rc2.o",
+          "-o",
+          "<TMP>/native_search"
+        ],
+        "stderr": "",
+        "stdout": ""
+      }
+    ],
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "controls_source_sha256": "c9c32b8a3e95699e42c6edd961928b85a51098a42e966639d85826b4650d4006",
+    "portable_commands": [
+      "clang -O2 -Isource_build -Isource -c source/rc2.c -o /tmp/rc2.o",
+      "clang -shared -fPIC -O2 -Isource_build -Isource source/rc2.c -o /tmp/librc2.so",
+      "clang++ -std=c++17 -O3 native.cpp /tmp/rc2.o -o /tmp/native_search"
+    ],
+    "pycryptodome": "3.23.0",
+    "python": "3.9.6",
+    "temporary": true,
+    "temporary_binary_sha256_machine_evidence": "679844dc071cce779d86667f1b8e55c5175045840d7b47044312f28dfdfd4b3b",
+    "temporary_object_sha256_machine_evidence": "022a0517d79e7dfc9566ca3cf04462a7ffb62aaf9f2d4d0d8edb2ca0a2803b4e",
+    "temporary_shared_sha256_machine_evidence": "8f312e53b0e8cd53fd6a23acb6a93c83ef26d84cd5b007649273f23a2b0078cd"
+  },
+  "complete_width9_planted_python_native_parity": [
+    {
+      "block_calls": 608959,
+      "candidate_tests": 608959,
+      "elapsed_seconds": 0.0556489,
+      "exact_ordered_sets_and_counters": true,
+      "fable_order": [
+        8,
+        1,
+        7,
+        0,
+        5,
+        3,
+        6,
+        2,
+        4
+      ],
+      "factorial_partition_complete": true,
+      "iv_hex": "3030303030303030",
+      "observed_hex": "d55d646644828bd72468828554a505fb1344ddd1c745b228570552267568942cb7c44ba9a8cf9b85ad112fe367",
+      "observed_sha256": "b9583e722dbb29703b88d0144253df110cf207859174daec53d5c1bee848beb5",
+      "prefixes_examined": 362880,
+      "rejected_prefixes": 358726,
+      "rows": 5,
+      "survivor_digest_fnv1a64": "8064702f7555009f",
+      "survivor_prefix_count": 4154,
+      "truth_first_slots": [
+        3,
+        1,
+        7,
+        5,
+        8,
+        4,
+        6,
+        2
+      ],
+      "truth_ninth_rank": 0,
+      "truth_retained": true,
+      "width": 9
+    },
+    {
+      "block_calls": 607973,
+      "candidate_tests": 607973,
+      "elapsed_seconds": 0.0551608,
+      "exact_ordered_sets_and_counters": true,
+      "fable_order": [
+        8,
+        1,
+        7,
+        0,
+        5,
+        3,
+        6,
+        2,
+        4
+      ],
+      "factorial_partition_complete": true,
+      "iv_hex": "0011223344556677",
+      "observed_hex": "7aff66ae8e076a7f541f24647f4c25ca0c954371cfbaca3d950018423e2512a0a4111775b7f08d1892606e9d15",
+      "observed_sha256": "ff9af2692b80a71647eda81b8c3e6ba4650ef57a5326ac1e6e4d04dc8d8f2fed",
+      "prefixes_examined": 362880,
+      "rejected_prefixes": 358601,
+      "rows": 5,
+      "survivor_digest_fnv1a64": "cf684e4a19e5ba1e",
+      "survivor_prefix_count": 4279,
+      "truth_first_slots": [
+        3,
+        1,
+        7,
+        5,
+        8,
+        4,
+        6,
+        2
+      ],
+      "truth_ninth_rank": 0,
+      "truth_retained": true,
+      "width": 9
+    }
+  ],
+  "fixed_raw7_native_block_vectors": [
+    {
+      "block_hex": "0001020304050607",
+      "ciphertext_hex": "d11aa3a6de64add6"
+    },
+    {
+      "block_hex": "ffffffffffffffff",
+      "ciphertext_hex": "9474e3532b03d8a9"
+    },
+    {
+      "block_hex": "136e270935692857",
+      "ciphertext_hex": "c694f98de31c775f"
+    },
+    {
+      "block_hex": "19c35cab2e4dd5c5",
+      "ciphertext_hex": "ac6fc38892b7a977"
+    },
+    {
+      "block_hex": "b9d644c9ed38fc68",
+      "ciphertext_hex": "b7591add03fd4df4"
+    },
+    {
+      "block_hex": "b68efcf217e012bf",
+      "ciphertext_hex": "de45e87b303f18bc"
+    },
+    {
+      "block_hex": "375f45f12038916a",
+      "ciphertext_hex": "b1daf888e79e27cc"
+    },
+    {
+      "block_hex": "547fd1a85a11d056",
+      "ciphertext_hex": "1e8e9f736d38436c"
+    },
+    {
+      "block_hex": "023b8ac03fce4ccb",
+      "ciphertext_hex": "0f5a098bf5e15f41"
+    },
+    {
+      "block_hex": "03f0bbf65b134c65",
+      "ciphertext_hex": "dd442b70b48c84be"
+    },
+    {
+      "block_hex": "b2ac848413e633b1",
+      "ciphertext_hex": "2d3b44e462a2ffc6"
+    },
+    {
+      "block_hex": "6c9107f8f34296cc",
+      "ciphertext_hex": "48efc74853904ce7"
+    },
+    {
+      "block_hex": "b1fb1f6561dd4fee",
+      "ciphertext_hex": "eda9b5a91ab23836"
+    },
+    {
+      "block_hex": "753816f8a556d04d",
+      "ciphertext_hex": "71ff8aea7b02593f"
+    },
+    {
+      "block_hex": "39b51a1fe454d0ac",
+      "ciphertext_hex": "e31a55c2a22e5ea8"
+    },
+    {
+      "block_hex": "41f570fe69bee9b2",
+      "ciphertext_hex": "b3ec0e9b6c25457b"
+    },
+    {
+      "block_hex": "f8c4be8d04d55eb9",
+      "ciphertext_hex": "34862d47ec6c7a33"
+    },
+    {
+      "block_hex": "e918ddc76a3ef211",
+      "ciphertext_hex": "8cc35671a028a962"
+    },
+    {
+      "block_hex": "cd4eafc358ab4de4",
+      "ciphertext_hex": "decdd2079473cba5"
+    },
+    {
+      "block_hex": "3761a89e8fa2c6c0",
+      "ciphertext_hex": "83a6cdd3a4c44dce"
+    },
+    {
+      "block_hex": "c17c89ad6554e1dc",
+      "ciphertext_hex": "044c086a1ae01813"
+    },
+    {
+      "block_hex": "c916b3fe939dff5a",
+      "ciphertext_hex": "991bb75d59f19fe7"
+    },
+    {
+      "block_hex": "604c0e1709d65405",
+      "ciphertext_hex": "2b251c7e5f4136bf"
+    },
+    {
+      "block_hex": "2f034d33ea6938e7",
+      "ciphertext_hex": "8cbbe38a6644fc05"
+    },
+    {
+      "block_hex": "353800ccbc589ff4",
+      "ciphertext_hex": "86eed0c3d9d97c01"
+    },
+    {
+      "block_hex": "03011c734977e789",
+      "ciphertext_hex": "44b7285f6116712b"
+    },
+    {
+      "block_hex": "277c6483e792be97",
+      "ciphertext_hex": "8648e7e2ff6623e6"
+    },
+    {
+      "block_hex": "fa456bab5b1d06ff",
+      "ciphertext_hex": "1ab9d2e1a3ebaa8e"
+    },
+    {
+      "block_hex": "b0ff718797ad137b",
+      "ciphertext_hex": "0db11dc008473b84"
+    },
+    {
+      "block_hex": "ab3c07ab336af844",
+      "ciphertext_hex": "b8c33deffb74dc7d"
+    },
+    {
+      "block_hex": "0b3c93d7120f9dbf",
+      "ciphertext_hex": "707b637a1f658727"
+    },
+    {
+      "block_hex": "185b029e7f98a013",
+      "ciphertext_hex": "41fc4d49b3be141e"
+    }
+  ],
+  "full_256_byte_cfb8_two_iv": [
+    {
+      "ciphertext_hex": "ba70dca29d0283c24385265ba9e935e02933199eebde1c5b9f8fd2fc8a268325afd32aaa113ae93ee501000c20bb9ecd0863fbec64559ce78301927b9a5d050733854e61ca82b0bfcf3377c184d4c8e2a332907763fd915339057016e1f374f126c094ccb612fb13672b9de8e6f4e5f8d303f3cf408c4fbb3d52c7436795da9bac45ed1f0fe9b22f936853e58b222d7b2047ba6d8350be63a9431c2b2d1e346e7709d0872b7eb374809e3f9e71a27c7ab5edc3d294d76dc74992917c62a7312f446154ffe19bcfdedfd7f6a6356945ed4d8bbd9619bcf5592e706a97d8764e76110632f5c6b8ccef64e63dec3855b9935d9c3e504ec7ce57d3b66ba999239994",
+      "ciphertext_sha256": "911de11496ccec276cbee4fbe607499db64acea9059490484ee265c8a91dfd54",
+      "iv_hex": "3030303030303030",
+      "native_roundtrip": true,
+      "plaintext_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+      "source_manual_independent_mode_native_match": true
+    },
+    {
+      "ciphertext_hex": "8bc4d5126e37d0f22a1ad441e911e5ffbb3176b62ae7d8fdac2a8abbdce919f19305355455196513e5ca33cd03de277481b103e1b374f263bc8e19bc16be121f636c706f192ddfbbad6a3c1265a645871a532dd9c58474f24f16c1c5ba8a854d16e568d9012567ecfb08cfad990d69655fc70fa0a02bd35721e58f66301086c81807dc8a6ac64b40038a039f8a1f545bde8f5b16841b2b17dfc00a653ce62afacbec6e1669d8042ec0e8310ebc9913d212493c2c3ebac2cc90021db5b88bed26832d0ac19963d4375755b7918c9edd9bfbba99e272e72858677eec3243ffc33d891def0a44a5d124d38515d787bef8e77b031408349ea23202efd5b852519d91",
+      "ciphertext_sha256": "689aa97de5508d52e59d1dbe900df946d2628b855a94754a5a40f11f9a951172",
+      "iv_hex": "0011223344556677",
+      "native_roundtrip": true,
+      "plaintext_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff",
+      "source_manual_independent_mode_native_match": true
+    }
+  ],
+  "identity": "ASTRA",
+  "invalid_input_controls": [
+    {
+      "arguments": [
+        "--block",
+        "unknown",
+        "0000000000000000"
+      ],
+      "returncode": 1,
+      "stderr": "backend must be rc2"
+    },
+    {
+      "arguments": [
+        "--block",
+        "rc2",
+        "00"
+      ],
+      "returncode": 1,
+      "stderr": "block must be 8 bytes"
+    },
+    {
+      "arguments": [
+        "--cfb-encrypt",
+        "rc2",
+        "00",
+        "00"
+      ],
+      "returncode": 1,
+      "stderr": "IV must be 8 bytes"
+    },
+    {
+      "arguments": [
+        "--search",
+        "rc2",
+        "8",
+        "1",
+        "0000000000000000"
+      ],
+      "returncode": 1,
+      "stderr": "width must be 9..20"
+    },
+    {
+      "arguments": [
+        "--search",
+        "rc2",
+        "0",
+        "1",
+        "00"
+      ],
+      "returncode": 1,
+      "stderr": "width must be 9..20"
+    },
+    {
+      "arguments": [
+        "--search",
+        "rc2",
+        "9",
+        "0",
+        "000000000000000000"
+      ],
+      "returncode": 1,
+      "stderr": "prefix limit must be positive"
+    },
+    {
+      "arguments": [
+        "--search",
+        "rc2",
+        "9",
+        "1",
+        "00000000000000000000"
+      ],
+      "returncode": 1,
+      "stderr": "nonempty rectangular observed bytes required"
+    }
+  ],
+  "key_convention": {
+    "effective_bits": 1024,
+    "evidence": "libmcrypt passes raw length 7; rc2.c expands raw seed to 128 bytes and has effective-size reduction stripped",
+    "input_key_hex": "5a6f6d62696573",
+    "input_length": 7,
+    "source_metadata_max_bytes": 128,
+    "source_metadata_supported_count": 0
+  },
+  "rev7_read": false,
+  "scope": "Synthetic-only source-backed RC2 column-A prefix engine; raw seven-byte Zombies, effective 1024-bit schedule, A105; no target, IV/order/plaintext recovery, or other context.",
+  "source_kat": {
+    "ciphertext_hex": "becbe4c8e6237a14",
+    "key_formula": "(j*2+10)%256 for 128 bytes",
+    "matches_source_embedded_kat": true,
+    "plaintext_hex": "0001020304050607"
+  },
+  "source_provenance": {
+    "commit": "3bd338e2f808e985f5b229a7642d48c26615993f",
+    "compiled_historical_source_unmodified": true,
+    "frozen_column_a_core": "1deda1788e9d9a49140325c7e0f7ce3eb53aa7d05e8e44590be4076da0bae472",
+    "frozen_column_a_proof_ledger": "2fb68eff8b80fb120ca972a29ead64268f03057c10c00156fd49152e0cf62bea",
+    "hashes": {
+      "native.cpp": "3c634ea5fa32caa146c2a078f85abdbc98984675744e7ffcf1977355e455a1cd",
+      "source/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+      "source/rc2.c": "37c9398507cea1685255da9550f5a3a55b529b66e1bbc9a35e1996fecae7dc19",
+      "source/rc2.h": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_build/libdefs.h": "556ec4fcebae614cd90d05a2fead50d9355ff39f65b44c8f4044c7f209074c6e",
+      "source_build/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180"
+    },
+    "repository": "https://github.com/Distrotech/libmcrypt"
+  },
+  "target_evaluated": false,
+  "varied_key_block_vectors": [
+    {
+      "all_match": true,
+      "effective_keylen": 1024,
+      "key_hex": "6162636465",
+      "key_length": 5,
+      "vector_count": 32,
+      "vectors": [
+        {
+          "block_hex": "0001020304050607",
+          "ciphertext_hex": "825a57b15d3bc23f"
+        },
+        {
+          "block_hex": "ffffffffffffffff",
+          "ciphertext_hex": "dcd63a116d40d8ab"
+        },
+        {
+          "block_hex": "136e270935692857",
+          "ciphertext_hex": "d5ba599553d02912"
+        },
+        {
+          "block_hex": "19c35cab2e4dd5c5",
+          "ciphertext_hex": "43da14208c485f00"
+        },
+        {
+          "block_hex": "b9d644c9ed38fc68",
+          "ciphertext_hex": "3d93444cfd3ac213"
+        },
+        {
+          "block_hex": "b68efcf217e012bf",
+          "ciphertext_hex": "9876497de65211ad"
+        },
+        {
+          "block_hex": "375f45f12038916a",
+          "ciphertext_hex": "6f6aca29c98258db"
+        },
+        {
+          "block_hex": "547fd1a85a11d056",
+          "ciphertext_hex": "0e8fff8c89fe2ae2"
+        },
+        {
+          "block_hex": "023b8ac03fce4ccb",
+          "ciphertext_hex": "ebce72eefe35ce78"
+        },
+        {
+          "block_hex": "03f0bbf65b134c65",
+          "ciphertext_hex": "f349f767de121b69"
+        },
+        {
+          "block_hex": "b2ac848413e633b1",
+          "ciphertext_hex": "f87589419b902fb1"
+        },
+        {
+          "block_hex": "6c9107f8f34296cc",
+          "ciphertext_hex": "826aefa9fc61dd9e"
+        },
+        {
+          "block_hex": "b1fb1f6561dd4fee",
+          "ciphertext_hex": "e99350874e246ec2"
+        },
+        {
+          "block_hex": "753816f8a556d04d",
+          "ciphertext_hex": "9ec4be2ffbf2f9be"
+        },
+        {
+          "block_hex": "39b51a1fe454d0ac",
+          "ciphertext_hex": "3adf70eb9f3bcc58"
+        },
+        {
+          "block_hex": "41f570fe69bee9b2",
+          "ciphertext_hex": "7615314bde1c06c0"
+        },
+        {
+          "block_hex": "f8c4be8d04d55eb9",
+          "ciphertext_hex": "fa59720976e77de5"
+        },
+        {
+          "block_hex": "e918ddc76a3ef211",
+          "ciphertext_hex": "f5ebdf759bafa0c2"
+        },
+        {
+          "block_hex": "cd4eafc358ab4de4",
+          "ciphertext_hex": "d3f8b0c46457011e"
+        },
+        {
+          "block_hex": "3761a89e8fa2c6c0",
+          "ciphertext_hex": "b891f7e9d8570fdb"
+        },
+        {
+          "block_hex": "c17c89ad6554e1dc",
+          "ciphertext_hex": "338cd93b0c00061e"
+        },
+        {
+          "block_hex": "c916b3fe939dff5a",
+          "ciphertext_hex": "0759babd3d25bf40"
+        },
+        {
+          "block_hex": "604c0e1709d65405",
+          "ciphertext_hex": "24d00b1db0b5fb21"
+        },
+        {
+          "block_hex": "2f034d33ea6938e7",
+          "ciphertext_hex": "139eb000dd465793"
+        },
+        {
+          "block_hex": "353800ccbc589ff4",
+          "ciphertext_hex": "427b2ee90df4662d"
+        },
+        {
+          "block_hex": "03011c734977e789",
+          "ciphertext_hex": "cc0d0f29f55d2246"
+        },
+        {
+          "block_hex": "277c6483e792be97",
+          "ciphertext_hex": "67f894268ad88441"
+        },
+        {
+          "block_hex": "fa456bab5b1d06ff",
+          "ciphertext_hex": "8e3a07799edfb262"
+        },
+        {
+          "block_hex": "b0ff718797ad137b",
+          "ciphertext_hex": "049dcfe7b499fcbd"
+        },
+        {
+          "block_hex": "ab3c07ab336af844",
+          "ciphertext_hex": "12c3970918129eed"
+        },
+        {
+          "block_hex": "0b3c93d7120f9dbf",
+          "ciphertext_hex": "4f650a269c4d308a"
+        },
+        {
+          "block_hex": "185b029e7f98a013",
+          "ciphertext_hex": "af913eb0b7097fee"
+        }
+      ]
+    },
+    {
+      "all_match": true,
+      "effective_keylen": 1024,
+      "key_hex": "5a6f6d62696573",
+      "key_length": 7,
+      "vector_count": 32,
+      "vectors": [
+        {
+          "block_hex": "0001020304050607",
+          "ciphertext_hex": "d11aa3a6de64add6"
+        },
+        {
+          "block_hex": "ffffffffffffffff",
+          "ciphertext_hex": "9474e3532b03d8a9"
+        },
+        {
+          "block_hex": "136e270935692857",
+          "ciphertext_hex": "c694f98de31c775f"
+        },
+        {
+          "block_hex": "19c35cab2e4dd5c5",
+          "ciphertext_hex": "ac6fc38892b7a977"
+        },
+        {
+          "block_hex": "b9d644c9ed38fc68",
+          "ciphertext_hex": "b7591add03fd4df4"
+        },
+        {
+          "block_hex": "b68efcf217e012bf",
+          "ciphertext_hex": "de45e87b303f18bc"
+        },
+        {
+          "block_hex": "375f45f12038916a",
+          "ciphertext_hex": "b1daf888e79e27cc"
+        },
+        {
+          "block_hex": "547fd1a85a11d056",
+          "ciphertext_hex": "1e8e9f736d38436c"
+        },
+        {
+          "block_hex": "023b8ac03fce4ccb",
+          "ciphertext_hex": "0f5a098bf5e15f41"
+        },
+        {
+          "block_hex": "03f0bbf65b134c65",
+          "ciphertext_hex": "dd442b70b48c84be"
+        },
+        {
+          "block_hex": "b2ac848413e633b1",
+          "ciphertext_hex": "2d3b44e462a2ffc6"
+        },
+        {
+          "block_hex": "6c9107f8f34296cc",
+          "ciphertext_hex": "48efc74853904ce7"
+        },
+        {
+          "block_hex": "b1fb1f6561dd4fee",
+          "ciphertext_hex": "eda9b5a91ab23836"
+        },
+        {
+          "block_hex": "753816f8a556d04d",
+          "ciphertext_hex": "71ff8aea7b02593f"
+        },
+        {
+          "block_hex": "39b51a1fe454d0ac",
+          "ciphertext_hex": "e31a55c2a22e5ea8"
+        },
+        {
+          "block_hex": "41f570fe69bee9b2",
+          "ciphertext_hex": "b3ec0e9b6c25457b"
+        },
+        {
+          "block_hex": "f8c4be8d04d55eb9",
+          "ciphertext_hex": "34862d47ec6c7a33"
+        },
+        {
+          "block_hex": "e918ddc76a3ef211",
+          "ciphertext_hex": "8cc35671a028a962"
+        },
+        {
+          "block_hex": "cd4eafc358ab4de4",
+          "ciphertext_hex": "decdd2079473cba5"
+        },
+        {
+          "block_hex": "3761a89e8fa2c6c0",
+          "ciphertext_hex": "83a6cdd3a4c44dce"
+        },
+        {
+          "block_hex": "c17c89ad6554e1dc",
+          "ciphertext_hex": "044c086a1ae01813"
+        },
+        {
+          "block_hex": "c916b3fe939dff5a",
+          "ciphertext_hex": "991bb75d59f19fe7"
+        },
+        {
+          "block_hex": "604c0e1709d65405",
+          "ciphertext_hex": "2b251c7e5f4136bf"
+        },
+        {
+          "block_hex": "2f034d33ea6938e7",
+          "ciphertext_hex": "8cbbe38a6644fc05"
+        },
+        {
+          "block_hex": "353800ccbc589ff4",
+          "ciphertext_hex": "86eed0c3d9d97c01"
+        },
+        {
+          "block_hex": "03011c734977e789",
+          "ciphertext_hex": "44b7285f6116712b"
+        },
+        {
+          "block_hex": "277c6483e792be97",
+          "ciphertext_hex": "8648e7e2ff6623e6"
+        },
+        {
+          "block_hex": "fa456bab5b1d06ff",
+          "ciphertext_hex": "1ab9d2e1a3ebaa8e"
+        },
+        {
+          "block_hex": "b0ff718797ad137b",
+          "ciphertext_hex": "0db11dc008473b84"
+        },
+        {
+          "block_hex": "ab3c07ab336af844",
+          "ciphertext_hex": "b8c33deffb74dc7d"
+        },
+        {
+          "block_hex": "0b3c93d7120f9dbf",
+          "ciphertext_hex": "707b637a1f658727"
+        },
+        {
+          "block_hex": "185b029e7f98a013",
+          "ciphertext_hex": "41fc4d49b3be141e"
+        }
+      ]
+    },
+    {
+      "all_match": true,
+      "effective_keylen": 1024,
+      "key_hex": "000102030405060708090a0b0c0d0e0f",
+      "key_length": 16,
+      "vector_count": 32,
+      "vectors": [
+        {
+          "block_hex": "0001020304050607",
+          "ciphertext_hex": "5418055e092698b3"
+        },
+        {
+          "block_hex": "ffffffffffffffff",
+          "ciphertext_hex": "ce2de373d1980db0"
+        },
+        {
+          "block_hex": "136e270935692857",
+          "ciphertext_hex": "0c5582cd3c4db483"
+        },
+        {
+          "block_hex": "19c35cab2e4dd5c5",
+          "ciphertext_hex": "60b9ddb8610aed27"
+        },
+        {
+          "block_hex": "b9d644c9ed38fc68",
+          "ciphertext_hex": "baf752e56a1e7666"
+        },
+        {
+          "block_hex": "b68efcf217e012bf",
+          "ciphertext_hex": "8c02ca4ab34c0953"
+        },
+        {
+          "block_hex": "375f45f12038916a",
+          "ciphertext_hex": "cc1d4d2c11d3cdb5"
+        },
+        {
+          "block_hex": "547fd1a85a11d056",
+          "ciphertext_hex": "c386e008c63faadf"
+        },
+        {
+          "block_hex": "023b8ac03fce4ccb",
+          "ciphertext_hex": "969df2fd5836882b"
+        },
+        {
+          "block_hex": "03f0bbf65b134c65",
+          "ciphertext_hex": "4922847e1f366db5"
+        },
+        {
+          "block_hex": "b2ac848413e633b1",
+          "ciphertext_hex": "1ad27d4deb455b46"
+        },
+        {
+          "block_hex": "6c9107f8f34296cc",
+          "ciphertext_hex": "0570bd3ef78a910b"
+        },
+        {
+          "block_hex": "b1fb1f6561dd4fee",
+          "ciphertext_hex": "2308d90873da00d4"
+        },
+        {
+          "block_hex": "753816f8a556d04d",
+          "ciphertext_hex": "f0c6432744dc312b"
+        },
+        {
+          "block_hex": "39b51a1fe454d0ac",
+          "ciphertext_hex": "c54b52399fedae7b"
+        },
+        {
+          "block_hex": "41f570fe69bee9b2",
+          "ciphertext_hex": "3f47874cb302cb67"
+        },
+        {
+          "block_hex": "f8c4be8d04d55eb9",
+          "ciphertext_hex": "be406ad5f6b375a3"
+        },
+        {
+          "block_hex": "e918ddc76a3ef211",
+          "ciphertext_hex": "b4e1c03e5c1b16de"
+        },
+        {
+          "block_hex": "cd4eafc358ab4de4",
+          "ciphertext_hex": "c1cb48bd65fea749"
+        },
+        {
+          "block_hex": "3761a89e8fa2c6c0",
+          "ciphertext_hex": "e5610f3c90ecd8d2"
+        },
+        {
+          "block_hex": "c17c89ad6554e1dc",
+          "ciphertext_hex": "a7335573a45c1820"
+        },
+        {
+          "block_hex": "c916b3fe939dff5a",
+          "ciphertext_hex": "09e213de5016d56a"
+        },
+        {
+          "block_hex": "604c0e1709d65405",
+          "ciphertext_hex": "b8b779a9106eab19"
+        },
+        {
+          "block_hex": "2f034d33ea6938e7",
+          "ciphertext_hex": "ffdd90fd1d8b2ba2"
+        },
+        {
+          "block_hex": "353800ccbc589ff4",
+          "ciphertext_hex": "bb6dc3afffc6ef5a"
+        },
+        {
+          "block_hex": "03011c734977e789",
+          "ciphertext_hex": "cd9285d7f9847f97"
+        },
+        {
+          "block_hex": "277c6483e792be97",
+          "ciphertext_hex": "7f2efeb2ffba6f6a"
+        },
+        {
+          "block_hex": "fa456bab5b1d06ff",
+          "ciphertext_hex": "38e282d977aa34fc"
+        },
+        {
+          "block_hex": "b0ff718797ad137b",
+          "ciphertext_hex": "af93e8361a1b3fba"
+        },
+        {
+          "block_hex": "ab3c07ab336af844",
+          "ciphertext_hex": "b2a076a4e1743d17"
+        },
+        {
+          "block_hex": "0b3c93d7120f9dbf",
+          "ciphertext_hex": "5bdd5b7f3b79e08c"
+        },
+        {
+          "block_hex": "185b029e7f98a013",
+          "ciphertext_hex": "02bc82cba77102f9"
+        }
+      ]
+    },
+    {
+      "all_match": true,
+      "effective_keylen": 1024,
+      "key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f",
+      "key_length": 128,
+      "vector_count": 32,
+      "vectors": [
+        {
+          "block_hex": "0001020304050607",
+          "ciphertext_hex": "8a8f8e5c5a04c73b"
+        },
+        {
+          "block_hex": "ffffffffffffffff",
+          "ciphertext_hex": "a1b4ae65aad9f09c"
+        },
+        {
+          "block_hex": "136e270935692857",
+          "ciphertext_hex": "b1a48f7853ebc916"
+        },
+        {
+          "block_hex": "19c35cab2e4dd5c5",
+          "ciphertext_hex": "42af6f1928ebb28d"
+        },
+        {
+          "block_hex": "b9d644c9ed38fc68",
+          "ciphertext_hex": "3f7879339f5c78f3"
+        },
+        {
+          "block_hex": "b68efcf217e012bf",
+          "ciphertext_hex": "2588f7a77c08706c"
+        },
+        {
+          "block_hex": "375f45f12038916a",
+          "ciphertext_hex": "e25d8255f41d3805"
+        },
+        {
+          "block_hex": "547fd1a85a11d056",
+          "ciphertext_hex": "38bb6909a32cb280"
+        },
+        {
+          "block_hex": "023b8ac03fce4ccb",
+          "ciphertext_hex": "0c283b40be86de67"
+        },
+        {
+          "block_hex": "03f0bbf65b134c65",
+          "ciphertext_hex": "c1d2221f1492a626"
+        },
+        {
+          "block_hex": "b2ac848413e633b1",
+          "ciphertext_hex": "68e08bc1b1e6600e"
+        },
+        {
+          "block_hex": "6c9107f8f34296cc",
+          "ciphertext_hex": "17509155b207b3da"
+        },
+        {
+          "block_hex": "b1fb1f6561dd4fee",
+          "ciphertext_hex": "5fb4df198f123d0d"
+        },
+        {
+          "block_hex": "753816f8a556d04d",
+          "ciphertext_hex": "00bbdff3106732b7"
+        },
+        {
+          "block_hex": "39b51a1fe454d0ac",
+          "ciphertext_hex": "07f2fb8198ca78da"
+        },
+        {
+          "block_hex": "41f570fe69bee9b2",
+          "ciphertext_hex": "427e5ef7449d00ca"
+        },
+        {
+          "block_hex": "f8c4be8d04d55eb9",
+          "ciphertext_hex": "94958ed5e4a6d972"
+        },
+        {
+          "block_hex": "e918ddc76a3ef211",
+          "ciphertext_hex": "6a82a19860ed309a"
+        },
+        {
+          "block_hex": "cd4eafc358ab4de4",
+          "ciphertext_hex": "90875bfe5bb03359"
+        },
+        {
+          "block_hex": "3761a89e8fa2c6c0",
+          "ciphertext_hex": "932e55e7a8213d7d"
+        },
+        {
+          "block_hex": "c17c89ad6554e1dc",
+          "ciphertext_hex": "98a5e6ddc4270273"
+        },
+        {
+          "block_hex": "c916b3fe939dff5a",
+          "ciphertext_hex": "f9b491f5a0d2ddd2"
+        },
+        {
+          "block_hex": "604c0e1709d65405",
+          "ciphertext_hex": "11c47f1fe42f99e4"
+        },
+        {
+          "block_hex": "2f034d33ea6938e7",
+          "ciphertext_hex": "73922f1dbf530fc5"
+        },
+        {
+          "block_hex": "353800ccbc589ff4",
+          "ciphertext_hex": "81de7e66a08b4313"
+        },
+        {
+          "block_hex": "03011c734977e789",
+          "ciphertext_hex": "7fae2a07a071eb09"
+        },
+        {
+          "block_hex": "277c6483e792be97",
+          "ciphertext_hex": "bde218d090d45a5a"
+        },
+        {
+          "block_hex": "fa456bab5b1d06ff",
+          "ciphertext_hex": "ee4c880668789229"
+        },
+        {
+          "block_hex": "b0ff718797ad137b",
+          "ciphertext_hex": "2af3b027a94e445c"
+        },
+        {
+          "block_hex": "ab3c07ab336af844",
+          "ciphertext_hex": "1d80506f31c146c8"
+        },
+        {
+          "block_hex": "0b3c93d7120f9dbf",
+          "ciphertext_hex": "1bc4b73aed7847ae"
+        },
+        {
+          "block_hex": "185b029e7f98a013",
+          "ciphertext_hex": "88d477710cf45e1c"
+        }
+      ]
+    }
+  ]
+}

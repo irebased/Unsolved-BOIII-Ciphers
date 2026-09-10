@@ -314,3 +314,28 @@ python3 -B research/rev7-20260909-codex/iv_independent/cascade/interval_extensio
 ```
 
 This package contains no Rev7 target search. It covers aligned same-length binary layers and the stated involutions; encodings, transpositions, framing and padding changes require separate reasoning. It does not recover bytes outside the proved interval. The underlying CFB recurrence is specified in [NIST SP 800-38A, section 6.3](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a.pdf); the cascade/interval consequences here follow by composition of those dependencies.
+
+
+## Source-backed RC2 column-A controls
+
+The [RC2 control package](../byte_columnar/all_iv/column_a_rc2/REPORT.md) adapts the accepted rectangular variant-A prefix engine to unchanged historical RC2 C source, raw seven-byte Zombies and the effective 1024-bit schedule. The search logic is unchanged; the wrapper uses aligned 16-bit block storage. The historical KAT, 128 independent PyCryptodome block comparisons and two complete 256-byte CFB8 streams pass. Two complete width-nine planted scans retain 4,154 and 4,279 prefixes and match every Python prefix/mask and counter. Bounded width-10/13/14 controls include multiple ninth-rank candidates and preserve exact unexamined factorial weights.
+
+Root regenerated the entire synthetic package in a separate temporary directory. All deterministic result fields matched; only timing-derived fields and the temporary shared-library machine hash differed. The native executable hash reproduced exactly as `679844dc071cce779d86667f1b8e55c5175045840d7b47044312f28dfdfd4b3b`. The accepted ledger SHA-256 is `7330bad3670745ef659dd597a3385ee06b7225b17eadb997a0e80519ac3abb9f`. One-million-prefix synthetic benchmarks project approximately 15.78 seconds for width 13 and 38.99 seconds for width 14 per orientation, about 219 seconds for a prospective eight-case grid. Those are fixture/host estimates, not target coverage.
+
+```sh
+python3 -S -B research/byte_columnar/all_iv/column_a_rc2/controls.py
+python3 -B research/byte_columnar/all_iv/column_a_rc2/controls.py --regenerate /tmp/rc2-column-a-controls.json
+```
+
+This publication contains source, license, shims, controls and reports only. No RC2 column-A target driver, gate, evaluation or recovered layer is included.
+
+
+## Saved texture transcription check
+
+The [texture audit](texture_audit/README.md) compares all 16 rows of the saved Rev7 image against the canonical 1,092-symbol transcript. Raw Apple Vision OCR and the exact Swift/Python source are included. After explicit non-hex OCR normalization, three valid-hex machine differences remain at zero-based offsets 276, 366 and 595: OCR reads 4 where the transcript records A. Visual review supports the existing A in groups 6272A, 2D87A and 6B9A4. The raw differences remain preserved for independent inspection. No discrepancy was found in this saved texture, and the canonical MDX and target bytes are unchanged.
+
+The comparison uses the saved repository image, SHA-256 `36a1883ede6abadcf4d4420f26484ca81134f3b62fe0ac7521352c682bf0b3b7`, rather than a newly acquired game asset. Replaying the comparison requires only Python's standard library; fresh OCR requires macOS Swift and Apple Vision. No external OCR service or image modification was used.
+
+```sh
+python3 -S -B research/rev7-20260909-codex/texture_audit/compare.py
+```
