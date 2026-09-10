@@ -166,7 +166,7 @@ The [DES solver controls](iv_independent/solver/NATIVE_README.md) validate a new
 
 The [ragged AES report](../byte_columnar/all_iv/ragged/RESULTS.md) extends the variant-B proof to widths 2 through 32 under both first-long and last-long column conventions. For `546 = q*w + r`, the first `q` complete observed rows expose the guaranteed contiguous prefix `observed[rank:q*w:w]` of each natural ciphertext chunk. The compressed ragged tail is ignored. Every width/orientation case has at least one prefix whose IV-independent CFB8 suffix fails the endpoint from all possible boundary states. All 124 cells close; eight repeat the earlier width13/14 result exactly and 116 are new. The source and full ledger retain all 132 examined prefixes, suffixes, first failures, two-IV library checks and per-convention factorial certificates. Convention weights are not added, and are aliases in the rectangular cases.
 
-The fixed cipher is AES-128 with `Zombies` plus nine NUL bytes and the same five-punctuation endpoint. The proof covers every external 16-byte IV and every order in each registered column convention. It does not cover variant A, widths above 32, other keys, modes, IV framing or broader endpoints. The registered driver and synthetic controls are included; this result is a finite exclusion and does not recover a Rev7 layer.
+The fixed cipher is AES-128 with `Zombies` plus nine NUL bytes and the same five-punctuation endpoint. The proof covers every external 16-byte IV and every order in each registered column convention. It does not cover variant A, widths above 32, other keys, modes, framing beyond the raw-IV-prefix corollary below, or broader endpoints. The registered driver and synthetic controls are included; this result is a finite exclusion and does not recover a Rev7 layer.
 
 
 ## Minimum byte corrections under fixed OFB streams
@@ -174,3 +174,29 @@ The fixed cipher is AES-128 with `Zombies` plus nine NUL bytes and the same five
 The [stream robustness audit](stream_robustness/REPORT.md) computes a necessary lower bound on same-length ciphertext-byte corrections after selecting a fixed mapping for displayed byte pairs. For each pair class, it tests all 256 mapped bytes and sums the minimum number of outputs outside the relaxed 105-byte endpoint. The 92 nonzero-stream contexts require 14 through 26 corrections even when the mapping may be nonbijective. In the four zero-keystream contexts, arbitrary maps can collapse every class to one allowed byte; requiring an injective byte map instead gives an exact relaxed-alphabet bound of 179 invalid positions, because only 105 of the 226 observed classes can map to allowed bytes. These are separate mapping models and their bounds are not added.
 
 All 96 streams match their frozen prior hashes. The arithmetic verifier independently rebuilds canonical orientations and pair positions, matches exact context identities and stream hashes, recomputes histogram optima and constructive maps, and checks the compact summary. It does not reimplement the block ciphers. Source, computed controls and the compact context ledger are included; the full pair ledger is regenerated locally using the documented commands. This audit adds no keys, IVs or modes, and does not cover insertions, deletions or CFB.
+
+
+## Eight-byte-block ragged column completion
+
+The [DES and Blowfish column result](../byte_columnar/all_iv/ragged8/RESULTS.md) closes all 708 registered cases: DES, standard Blowfish and historical Blowfish-compat, each with its stated `Zombies` key convention, widths 2 through 60, four canonical orientations, both ragged conventions and every external eight-byte IV. All use CFB8 and the five-punctuation endpoint. The 767 examined prefixes include a rejecting unavoidable chunk in every case; each case certifies all `w!` orders separately per convention. These certificates overlap and their weights are not added. The result leaves zero unresolved cases within the registered scope and recovers no plaintext.
+
+The published compact JSON retains every field from the full ledger. A [portable read-only verifier](../byte_columnar/all_iv/ragged8/verify_results.py) checks all 708 cases and 767 chunks using PyCryptodome, including the independently established Blowfish-compat word-reversal relation; it requires no compiled binary. It also reconstructs the pretty JSON in memory and verifies the original full-ledger SHA-256. The original README and gate describe the earlier unrun control stage; RESULTS records the completed target. Local drafts and binaries are excluded from publication.
+
+```sh
+python3 -B research/byte_columnar/all_iv/ragged8/verify_results.py
+```
+
+## Exact raw-IV-prefix framing corollary
+
+The [raw-IV-prefix proof](iv_independent/raw_iv_prefix/README.md) applies when the same 546-byte decoded stream is interpreted as `S = IV || C`, with exactly one raw block IV at its start and the tested mapping or column transform acting on the entire frame. No bytes are added. For each frame index `i >= b`, actual payload plaintext is `P[i-b] = S[i] XOR E_key(S[i-b:i])[0]`. A guaranteed natural chunk beginning at frame offset `a` therefore has exactly payload slice `P[a:a+q-b]` as its local IV-independent suffix. The existing necessary suffix contradictions transfer unchanged, including the DES global-hex result; no target rerun is required.
+
+This covers payload lengths 530 for AES and 538 for eight-byte primitives within the corresponding already-tested keys, orientations, widths and representation models. The payload must satisfy the registered endpoint. It does not generalize to extra headers, encoded IV strings, an IV outside the transformed region or trailing framing. The accompanying synthetic controls check mode encryption/decryption, whole-frame recurrence, exact chunk-to-payload indexing and UTF-8 boundaries. This is an interpretation of existing certificates, not additive target coverage.
+
+
+## Minimum span of one OFB corruption region
+
+The [interval result](stream_robustness/interval/RESULTS.md) finds the shortest contiguous decoded-byte region that can be ignored while the remaining positions fit an arbitrary fixed displayed-pair map under each of the same 96 OFB streams. The 92 nonzero-stream cases have minimum spans of 163 through 292 bytes, with exactly one minimizing interval per case. The four zero streams allow span zero under arbitrary maps; this does not imply an injective solution. These are spans, not counts of changed bytes.
+
+A two-pointer solver is checked by a separate per-class prefix/suffix-mask certificate: every interval at length `L-1` is infeasible, every interval at `L` is enumerated, and a representative fixed map is validated at every outside position. Monotonicity rules out all shorter lengths. The full ledger preserves every minimizing interval and all check counts; the scripts and synthetic exhaustive controls are included. These positive lower bounds remain necessary under bijective mapping restrictions, while the exact stricter optima were not computed.
+
+For the 92 nonzero contexts, the lower bound also excludes corruption confined to any 128 consecutive displayed hex symbols, which can touch at most 65 decoded-byte positions. The four zero streams are excluded under an injective map by the separate 179-position correction-count bound. This conclusion stays within the registered keys, IVs, OFB modes, byte-pair mappings and unchanged alignment; it does not extend to CFB, other streams or multiple separated damage regions.

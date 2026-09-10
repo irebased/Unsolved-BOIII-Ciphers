@@ -21,7 +21,13 @@ The generator hash-pins both imported helpers before import:
 
 Standard AES, DES, and Blowfish streams are reconstructed with PyCryptodome. Compatibility streams use the hash-pinned helper that was independently validated in its source package. The standalone verifier has no NumPy dependency and does not reconstruct cryptography. It independently extracts the canonical text and four orientations from the pinned MDX, rebuilds exact pair-position lists, checks the exact ordered set of 96 cell identifiers, verifies every stored keystream hash against its frozen source cell, recomputes support histograms, argmins, minimizer counts, constructive totals, the zero-stream weighted bound of 179, and compact-ledger agreement.
 
-Reproduce and verify from the repository root:
+Reproduce and verify from the repository root with Python 3.9 or newer, PyCryptodome 3.23.0 and the compiled compatibility primitive. If that shared library is absent, compile the hash-pinned sources and bundled ABI headers first (a C compiler is required):
+
+```sh
+python3 -B -c "import sys; sys.path.insert(0, 'research/rev7-20260909-codex/hex_cfb/native_compat'); import source_check; source_check.compile_sources()"
+```
+
+Then run:
 
 ```text
 python3 -B research/rev7-20260909-codex/stream_robustness/robustness.py

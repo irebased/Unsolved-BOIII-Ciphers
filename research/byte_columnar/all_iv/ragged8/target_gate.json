@@ -1,0 +1,131 @@
+{
+  "artifact_hashes": {
+    "compat_c_source": "3584374a6bae4df8899e82d36255bbac0472904aed2095e3c08c57a5dd5b4cad",
+    "compat_library": "62ba2b2d1d104aa16c8a855b8bd29af3f6ed987c0008b3a8ba20c22f12e0a319",
+    "compat_source_check.py": "3945fbebcc7ae8c8bd8df0b450590e149e7cbd86443bd9d92ddbae90ab91e69d",
+    "compat_source_check_reproduction.json": "123724d5575fa7c2be2868d8218f774f775a395eae693e2049caa703eee47295",
+    "controls.json": "526ebeb27636c559d972f5e4bf29805f8962f8d54e70385da7956d396a644afa",
+    "controls.py": "d3d198a2cceed5110f9885317ae03b0dae3098c2a8b4359fcf04d11359f22c9c",
+    "core.py": "b9b10cc98fb1b74d2724837d9cfd6dc6163e452ddea2afb9df986eb5e68ff4fc",
+    "run_target.py": "6e1ec59968e2f14e19dd4ebbefc468ab3efe59e4df27e2c763f0213278a178bd"
+  },
+  "claim": "For each 8-byte-block cipher, one unavoidable ragged-B chunk suffix invalid from every FSA boundary state excludes every order and every external 8-byte IV for each convention.",
+  "control_gate": {
+    "all_assertions_passed": true,
+    "arbitrary_iv_plants_tail_invariance_and_small_exhaustive": true,
+    "block_adapter_consistency_and_independent_cfb_modes": true,
+    "compat_original_source_reproduction_sha256": "123724d5575fa7c2be2868d8218f774f775a395eae693e2049caa703eee47295",
+    "controls_sha256": "526ebeb27636c559d972f5e4bf29805f8962f8d54e70385da7956d396a644afa",
+    "fable_first_last_exact": true,
+    "width60_supported_width61_unsupported": true
+  },
+  "expected_ciphertext_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "expected_mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "identity": "ASTRA",
+  "limits": "No target has run. A cell with all inspected chunks retained remains unresolved. Convention weights are parallel, never added. Other modes, keys, ciphers, variants, widths and endpoints are outside scope.",
+  "mdx_bytes_hashed_only": true,
+  "rev7_ciphertext_parsed": false,
+  "scope": {
+    "block_size": 8,
+    "cell_count": 708,
+    "ciphers": [
+      {
+        "id": "des",
+        "key_hex": "5a6f6d6269657300",
+        "name": "DES"
+      },
+      {
+        "id": "blowfish",
+        "key_hex": "5a6f6d62696573",
+        "name": "Blowfish"
+      },
+      {
+        "id": "blowfish_compat",
+        "key_hex": "5a6f6d62696573",
+        "name": "Blowfish-compat"
+      }
+    ],
+    "endpoint_utf8_sequences": [
+      "e28093",
+      "e28094",
+      "e28098",
+      "e28099",
+      "e280a6"
+    ],
+    "iv_scope": "every external 8-byte IV",
+    "mode": "CFB8",
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "ragged_conventions": [
+      "first",
+      "last"
+    ],
+    "variant": "B",
+    "widths": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60
+    ]
+  },
+  "target_evaluated": false
+}

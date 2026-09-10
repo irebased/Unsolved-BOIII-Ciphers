@@ -35,4 +35,4 @@ cd /private/tmp/rev7-astra-20260909
 python3 -B research/byte_columnar/all_iv/ragged/run_target.py --run-target
 ```
 
-Finite limits: this excludes the registered variant-B mappings for the fixed AES key and endpoint for every external IV. It does not cover variant A, widths 33 or greater, other keys, ciphers, modes, IV framing, transpositions, or broader plaintext endpoints.
+Finite limits: this excludes the registered variant-B mappings for the fixed AES key and endpoint for every external IV. It does not cover variant A, widths 33 or greater, other keys, ciphers, modes, arbitrary framing, transpositions, or broader plaintext endpoints. The specific whole-frame raw-IV-prefix interpretation is covered by the [framing corollary](../../../rev7-20260909-codex/iv_independent/raw_iv_prefix/README.md), without adding bytes or rerunning this target.

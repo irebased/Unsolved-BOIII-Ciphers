@@ -1,0 +1,266 @@
+{
+  "algorithm": "monotone two-pointer window with per-class per-candidate outside-invalid counters",
+  "complexity": {
+    "counter_space": "O(k*q), where k is the number of displayed-pair classes",
+    "feasibility_core_time": "O(n*q), where q is candidate-domain size (256 for byte mappings)",
+    "retained_witness_space": "O(m*k), where m is the number of minimizing intervals",
+    "witness_materialization_time_upper_bound": "O(n*k*q)"
+  },
+  "coordinates": "half-open [start,end) intervals in the supplied oriented decoded-byte sequence",
+  "crypto_evaluated": false,
+  "exhaustive_cases": 70215,
+  "fixtures": [
+    {
+      "allowed": [
+        0
+      ],
+      "candidate_domain": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "feasible_interval_count": 1,
+      "keystream": [],
+      "minimizing_intervals": [
+        [
+          0,
+          0
+        ]
+      ],
+      "name": "zero_length_sequence",
+      "pairs": [],
+      "shortest_length": 0
+    },
+    {
+      "allowed": [
+        0,
+        1
+      ],
+      "candidate_domain": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "feasible_interval_count": 6,
+      "keystream": [
+        0,
+        1
+      ],
+      "minimizing_intervals": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "name": "already_feasible_zero_erasure",
+      "pairs": [
+        "A",
+        "B"
+      ],
+      "shortest_length": 0
+    },
+    {
+      "allowed": [
+        0
+      ],
+      "candidate_domain": [
+        0
+      ],
+      "feasible_interval_count": 1,
+      "keystream": [
+        1,
+        1
+      ],
+      "minimizing_intervals": [
+        [
+          0,
+          2
+        ]
+      ],
+      "name": "full_erasure_required",
+      "pairs": [
+        "A",
+        "B"
+      ],
+      "shortest_length": 2
+    },
+    {
+      "allowed": [
+        0
+      ],
+      "candidate_domain": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "feasible_interval_count": 4,
+      "keystream": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "minimizing_intervals": [
+        [
+          2,
+          4
+        ]
+      ],
+      "name": "repeated_class_constraints",
+      "pairs": [
+        "A",
+        "B",
+        "A",
+        "A"
+      ],
+      "shortest_length": 2
+    },
+    {
+      "allowed": [
+        0
+      ],
+      "candidate_domain": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "feasible_interval_count": 10,
+      "keystream": [
+        0,
+        1,
+        2
+      ],
+      "minimizing_intervals": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "name": "singleton_classes",
+      "pairs": [
+        "A",
+        "B",
+        "C"
+      ],
+      "shortest_length": 0
+    },
+    {
+      "allowed": [
+        0
+      ],
+      "candidate_domain": [
+        0
+      ],
+      "feasible_interval_count": 3,
+      "keystream": [
+        1,
+        0,
+        0
+      ],
+      "minimizing_intervals": [
+        [
+          0,
+          1
+        ]
+      ],
+      "name": "left_boundary_minimum",
+      "pairs": [
+        "A",
+        "A",
+        "B"
+      ],
+      "shortest_length": 1
+    },
+    {
+      "allowed": [
+        0
+      ],
+      "candidate_domain": [
+        0
+      ],
+      "feasible_interval_count": 3,
+      "keystream": [
+        0,
+        0,
+        1
+      ],
+      "minimizing_intervals": [
+        [
+          2,
+          3
+        ]
+      ],
+      "name": "right_boundary_minimum",
+      "pairs": [
+        "B",
+        "A",
+        "A"
+      ],
+      "shortest_length": 1
+    },
+    {
+      "allowed": [
+        0,
+        1
+      ],
+      "candidate_domain": [
+        0,
+        1,
+        2
+      ],
+      "feasible_interval_count": 5,
+      "keystream": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "minimizing_intervals": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "name": "multiple_minima",
+      "pairs": [
+        "A",
+        "A",
+        "A",
+        "A"
+      ],
+      "shortest_length": 2
+    }
+  ],
+  "identity": "ASTRA",
+  "scope": "Synthetic-only controls for the shortest span of one contiguous ignored/corrupt byte region needed to make an arbitrary fixed pair-to-byte mapping feasible outside it; no injectivity.",
+  "seeded_cases": 500,
+  "target_evaluated": false
+}

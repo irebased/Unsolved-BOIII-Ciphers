@@ -1,0 +1,53 @@
+{
+  "artifacts": {
+    "lavender/src/content/docs/ciphers/bo3/rev/rev7.mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "research/rev7-20260909-codex/hex_cfb/prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b",
+    "research/rev7-20260909-codex/stream_csp/target_results.json": "f1d9024065f82e75479c4e03f1c871f9c2e0c661e63c6a42cb6da6594addde87",
+    "research/rev7-20260909-codex/stream_csp/witness_verification.json": "07e61bdfbc777e43a36902720ef70b295a117953707653dc97060df372bf2c1c",
+    "research/rev7-20260909-codex/stream_csp_compat/compat_stream.py": "f0f5eab61e2940aada5ee92828d2fc8474b99e4d68ec10b63053190d0bddd38c",
+    "research/rev7-20260909-codex/stream_csp_compat/target_results.json": "598dfa8ec497321f62f1b4f445de4f642f755ef0fb51c9d2164c708145aad7f2",
+    "research/rev7-20260909-codex/stream_csp_compat/verification.json": "1937e53cdbb0487e8ff95326f3a1a131d7402eb3374d0556030f2508ef2d35d6",
+    "research/rev7-20260909-codex/stream_robustness/interval/README.md": "fe1ae69bcd38e9b6ca612690a4b4dc9a1f8c216d39ed4e6e06ff5d4853593fab",
+    "research/rev7-20260909-codex/stream_robustness/interval/controls.json": "98a6fc705f39b68c3322aa9b82b5a227ca12684165c54b136a31f1df6a56d5fd",
+    "research/rev7-20260909-codex/stream_robustness/interval/controls.py": "9489457179cc7cf447f6f798221fd65b525e672ababd3f64e248b83ae5b93628",
+    "research/rev7-20260909-codex/stream_robustness/interval/interval.py": "03fd7e3fb18c94e721e6e648f84fa315d8e491b306d53b2dffef6a8245061919",
+    "research/rev7-20260909-codex/stream_robustness/robustness.json": "22e4297ab94da5ebd530e5b7ec0be2299678edf8ac2ea2c1b1b82bfc4e0b2c3a",
+    "research/rev7-20260909-codex/stream_robustness/robustness.py": "09b0ae3d288c1aa390a2ca817a0511abf419cf3bd2208b03911cb0598b8ff0d5",
+    "research/rev7-20260909-codex/stream_robustness/robustness_summary.json": "7c10d4d79049f640180a9c759e3eae1bd2fc17437654dbbd6ff93088852fe2c6",
+    "research/rev7-20260909-codex/stream_robustness/verifier.py": "5f9ca599b3a35cab0f5d5c37d37f3fa88f57c602cd32a4c7050101c1981c9e83",
+    "run_target.py": "42b1429579dd6b8647f956981a6a5a0031eca6999900860d3b0d991f2b54b6bb"
+  },
+  "certificate": {
+    "minimality": "if L>0, prove every interval of length L-1 infeasible; monotonic containment excludes all shorter intervals",
+    "minimum_length": "enumerate all intervals at solver length L using independent prefix/suffix 256-bit masks",
+    "representative": "one arbitrary noninjective mapping validated at every outside position",
+    "zero_length": "feasible empty interval is minimal by definition"
+  },
+  "checkpoint": "research/rev7-20260909-codex/stream_robustness/interval/target_checkpoint.json",
+  "command": "python3 -B research/rev7-20260909-codex/stream_robustness/interval/run_target.py --run-target",
+  "frozen_source_hashes": {
+    "canonical_text_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+    "compat_ledger": "1937e53cdbb0487e8ff95326f3a1a131d7402eb3374d0556030f2508ef2d35d6",
+    "compat_stream.py": "f0f5eab61e2940aada5ee92828d2fc8474b99e4d68ec10b63053190d0bddd38c",
+    "compat_target": "598dfa8ec497321f62f1b4f445de4f642f755ef0fb51c9d2164c708145aad7f2",
+    "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b",
+    "rev7_mdx": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+    "stream_ledger": "07e61bdfbc777e43a36902720ef70b295a117953707653dc97060df372bf2c1c",
+    "stream_target": "f1d9024065f82e75479c4e03f1c871f9c2e0c661e63c6a42cb6da6594addde87"
+  },
+  "identity": "ASTRA",
+  "output": "research/rev7-20260909-codex/stream_robustness/interval/target_results.json",
+  "scope": {
+    "allowed_output_byte_count": 105,
+    "candidate_domain_size": 256,
+    "cell_count": 96,
+    "coordinates": "half-open intervals in each oriented decoded-byte sequence",
+    "mapping": "arbitrary fixed noninjective displayed-pair-to-byte map",
+    "result": "minimum necessary span, not number of altered bytes",
+    "single_contiguous_region": true,
+    "source": "the 96 contexts in the hash-pinned stream_robustness/robustness.json ledger",
+    "zero_stream_expectation": "four explicit arbitrary-map zero-span cells; no injectivity claim"
+  },
+  "status": "prepared_awaiting_preregistration_and_go",
+  "target_evaluated": false
+}

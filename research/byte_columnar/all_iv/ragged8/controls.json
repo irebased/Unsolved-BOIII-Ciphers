@@ -1,0 +1,1973 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "block_adapter_consistency_and_independent_cfb_modes": true,
+    "original_compat_source_adapter_checked": true,
+    "small_all_orders_two_ivs_fail": true,
+    "tail_invariance": true,
+    "utf8_crosses_block_boundary": true,
+    "width60_supported_width61_unsupported": true
+  },
+  "block_vectors": [
+    {
+      "adapter_expected_match": true,
+      "block_hex": "0001020304050607",
+      "cipher": "des",
+      "comparison_kind": "same PyCryptodome primitive adapter consistency",
+      "encrypted_hex": "414a0a3a69353129"
+    },
+    {
+      "adapter_expected_match": true,
+      "block_hex": "3030303030303030",
+      "cipher": "des",
+      "comparison_kind": "same PyCryptodome primitive adapter consistency",
+      "encrypted_hex": "ad53d41666038538"
+    },
+    {
+      "adapter_expected_match": true,
+      "block_hex": "a1b2c3d4e5f60718",
+      "cipher": "des",
+      "comparison_kind": "same PyCryptodome primitive adapter consistency",
+      "encrypted_hex": "5b0afbb4e1ef510a"
+    },
+    {
+      "adapter_expected_match": true,
+      "block_hex": "0001020304050607",
+      "cipher": "blowfish",
+      "comparison_kind": "same PyCryptodome primitive adapter consistency",
+      "encrypted_hex": "68e187fd5c20fd69"
+    },
+    {
+      "adapter_expected_match": true,
+      "block_hex": "3030303030303030",
+      "cipher": "blowfish",
+      "comparison_kind": "same PyCryptodome primitive adapter consistency",
+      "encrypted_hex": "464c4ebac0bd6f58"
+    },
+    {
+      "adapter_expected_match": true,
+      "block_hex": "a1b2c3d4e5f60718",
+      "cipher": "blowfish",
+      "comparison_kind": "same PyCryptodome primitive adapter consistency",
+      "encrypted_hex": "ab63798721e33cab"
+    },
+    {
+      "adapter_expected_match": true,
+      "block_hex": "0001020304050607",
+      "cipher": "blowfish_compat",
+      "comparison_kind": "distinct pinned libmcrypt C versus PyCryptodome word-reversal conjugation",
+      "encrypted_hex": "b24067da92018993"
+    },
+    {
+      "adapter_expected_match": true,
+      "block_hex": "3030303030303030",
+      "cipher": "blowfish_compat",
+      "comparison_kind": "distinct pinned libmcrypt C versus PyCryptodome word-reversal conjugation",
+      "encrypted_hex": "ba4e4c46586fbdc0"
+    },
+    {
+      "adapter_expected_match": true,
+      "block_hex": "a1b2c3d4e5f60718",
+      "cipher": "blowfish_compat",
+      "comparison_kind": "distinct pinned libmcrypt C versus PyCryptodome word-reversal conjugation",
+      "encrypted_hex": "7a429b5a224fd5e2"
+    }
+  ],
+  "cfb8_vectors": [
+    {
+      "cipher": "des",
+      "ciphertext_sha256": "e2ece0faa3536ef47b4f828de0ef31b308b1e98e8754b2cd62e329363e40922b",
+      "independent_full_cfb8_match": true,
+      "plaintext_sha256": "bede0cc1e336bb49a2495da2d8a3c07f8e9483835b5a007fb660fee852c14928",
+      "roundtrip": true
+    },
+    {
+      "cipher": "blowfish",
+      "ciphertext_sha256": "33712806b11999b959b3eb151555e3168d27a33fd66859974ce1a61efde18c65",
+      "independent_full_cfb8_match": true,
+      "plaintext_sha256": "bede0cc1e336bb49a2495da2d8a3c07f8e9483835b5a007fb660fee852c14928",
+      "roundtrip": true
+    },
+    {
+      "cipher": "blowfish_compat",
+      "ciphertext_sha256": "c7b6277c7228c1a2c638e58ddea6fe350f3efb14966c468274338d3808d1d1cd",
+      "independent_full_cfb8_match": true,
+      "plaintext_sha256": "bede0cc1e336bb49a2495da2d8a3c07f8e9483835b5a007fb660fee852c14928",
+      "roundtrip": true
+    }
+  ],
+  "endpoint": {
+    "states_at_chunk_byte_8": [
+      0,
+      1,
+      2
+    ],
+    "terminal_zero_required": false,
+    "utf8_sequences": [
+      "e28093",
+      "e28094",
+      "e28098",
+      "e28099",
+      "e280a6"
+    ]
+  },
+  "fable_live_fixture": [
+    {
+      "c": "first",
+      "h": "0105090c03070b0d00040802060a",
+      "m": [
+        1,
+        5,
+        9,
+        12,
+        3,
+        7,
+        11,
+        13,
+        0,
+        4,
+        8,
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "c": "last",
+      "h": "01050903070b0004080c02060a0d",
+      "m": [
+        1,
+        5,
+        9,
+        3,
+        7,
+        11,
+        0,
+        4,
+        8,
+        12,
+        2,
+        6,
+        10,
+        13
+      ]
+    }
+  ],
+  "forced_offset8": [
+    {
+      "bad_exact_offset": 8,
+      "cipher": "des",
+      "convention": "first",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 1,
+      "width": 3
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "des",
+      "convention": "last",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 1,
+      "width": 3
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "des",
+      "convention": "first",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 5,
+      "width": 10
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "des",
+      "convention": "last",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 5,
+      "width": 10
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "des",
+      "convention": "first",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 8,
+      "width": 17
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "des",
+      "convention": "last",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 8,
+      "width": 17
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "des",
+      "convention": "first",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 30,
+      "width": 60
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "des",
+      "convention": "last",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 30,
+      "width": 60
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish",
+      "convention": "first",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 1,
+      "width": 3
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish",
+      "convention": "last",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 1,
+      "width": 3
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish",
+      "convention": "first",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 5,
+      "width": 10
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish",
+      "convention": "last",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 5,
+      "width": 10
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish",
+      "convention": "first",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 8,
+      "width": 17
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish",
+      "convention": "last",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 8,
+      "width": 17
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish",
+      "convention": "first",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 30,
+      "width": 60
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish",
+      "convention": "last",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 30,
+      "width": 60
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 1,
+      "width": 3
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 1,
+      "width": 3
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 5,
+      "width": 10
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 5,
+      "width": 10
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 8,
+      "width": 17
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 8,
+      "width": 17
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 30,
+      "width": 60
+    },
+    {
+      "bad_exact_offset": 8,
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "first_failure": {
+        "chunk_plaintext_offset": 8,
+        "plaintext_byte": 0,
+        "states_after": [],
+        "states_before": [
+          0,
+          1,
+          2
+        ],
+        "suffix_offset": 0
+      },
+      "other_ranks_unchanged": true,
+      "rank": 30,
+      "width": 60
+    }
+  ],
+  "identity": "ASTRA",
+  "rev7_file_read": false,
+  "runtime": {
+    "node": "v26.4.0",
+    "pycryptodome": "3.23.0",
+    "python": "3.9.6"
+  },
+  "scope": "Synthetic-only ragged-B 8-byte-block predicates: DES Zombies+NUL, standard Blowfish raw Zombies, historical Blowfish-compat raw Zombies; CFB8; every external 8-byte IV; n546 widths2..60; first/last conventions.",
+  "small_exhaustive": [
+    {
+      "cipher": "des",
+      "convention": "first",
+      "n": 61,
+      "orders_times_ivs": 12,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 3
+    },
+    {
+      "cipher": "des",
+      "convention": "last",
+      "n": 61,
+      "orders_times_ivs": 12,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 3
+    },
+    {
+      "cipher": "des",
+      "convention": "first",
+      "n": 81,
+      "orders_times_ivs": 48,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 4
+    },
+    {
+      "cipher": "des",
+      "convention": "last",
+      "n": 81,
+      "orders_times_ivs": 48,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 4
+    },
+    {
+      "cipher": "des",
+      "convention": "first",
+      "n": 101,
+      "orders_times_ivs": 240,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 5
+    },
+    {
+      "cipher": "des",
+      "convention": "last",
+      "n": 101,
+      "orders_times_ivs": 240,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 5
+    },
+    {
+      "cipher": "des",
+      "convention": "first",
+      "n": 121,
+      "orders_times_ivs": 1440,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 6
+    },
+    {
+      "cipher": "des",
+      "convention": "last",
+      "n": 121,
+      "orders_times_ivs": 1440,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 6
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "first",
+      "n": 61,
+      "orders_times_ivs": 12,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 3
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "last",
+      "n": 61,
+      "orders_times_ivs": 12,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 3
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "first",
+      "n": 81,
+      "orders_times_ivs": 48,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 4
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "last",
+      "n": 81,
+      "orders_times_ivs": 48,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 4
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "first",
+      "n": 101,
+      "orders_times_ivs": 240,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 5
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "last",
+      "n": 101,
+      "orders_times_ivs": 240,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 5
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "first",
+      "n": 121,
+      "orders_times_ivs": 1440,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 6
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "last",
+      "n": 121,
+      "orders_times_ivs": 1440,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 6
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "n": 61,
+      "orders_times_ivs": 12,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 3
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "n": 61,
+      "orders_times_ivs": 12,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 3
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "n": 81,
+      "orders_times_ivs": 48,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 4
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "n": 81,
+      "orders_times_ivs": 48,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 4
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "n": 101,
+      "orders_times_ivs": 240,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 5
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "n": 101,
+      "orders_times_ivs": 240,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 5
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "n": 121,
+      "orders_times_ivs": 1440,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 6
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "n": 121,
+      "orders_times_ivs": 1440,
+      "r": 1,
+      "valid_full_plaintexts": 0,
+      "width": 6
+    }
+  ],
+  "source_hashes": {
+    "compat_c_source": "3584374a6bae4df8899e82d36255bbac0472904aed2095e3c08c57a5dd5b4cad",
+    "compat_library": "62ba2b2d1d104aa16c8a855b8bd29af3f6ed987c0008b3a8ba20c22f12e0a319",
+    "compat_native": "f19874f064bbe3b37dec359554932d2a30b2f4f7abd889228152f4e194d56201",
+    "compat_source_check.py": "3945fbebcc7ae8c8bd8df0b450590e149e7cbd86443bd9d92ddbae90ab91e69d",
+    "compat_source_check_reproduction.json": "123724d5575fa7c2be2868d8218f774f775a395eae693e2049caa703eee47295",
+    "controls.py": "d3d198a2cceed5110f9885317ae03b0dae3098c2a8b4359fcf04d11359f22c9c",
+    "core.py": "b9b10cc98fb1b74d2724837d9cfd6dc6163e452ddea2afb9df986eb5e68ff4fc",
+    "fable_byteTranspositions.js": "c9c09bd405bbe43b853a5efb0e25f58ae67136a5f83653e7c45c3a2f3879b7f0",
+    "fable_transpositions.js": "89f2b3c8fa5cd5144d3c2baf2e2d25edb1dcb2f3b0f7a056a506841e6438ccc6"
+  },
+  "tail_mutation": [
+    {
+      "cipher": "des",
+      "convention": "first",
+      "invariant": true,
+      "tail_bytes": 6,
+      "width": 10
+    },
+    {
+      "cipher": "des",
+      "convention": "last",
+      "invariant": true,
+      "tail_bytes": 6,
+      "width": 10
+    },
+    {
+      "cipher": "des",
+      "convention": "first",
+      "invariant": true,
+      "tail_bytes": 2,
+      "width": 17
+    },
+    {
+      "cipher": "des",
+      "convention": "last",
+      "invariant": true,
+      "tail_bytes": 2,
+      "width": 17
+    },
+    {
+      "cipher": "des",
+      "convention": "first",
+      "invariant": true,
+      "tail_bytes": 6,
+      "width": 60
+    },
+    {
+      "cipher": "des",
+      "convention": "last",
+      "invariant": true,
+      "tail_bytes": 6,
+      "width": 60
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "first",
+      "invariant": true,
+      "tail_bytes": 6,
+      "width": 10
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "last",
+      "invariant": true,
+      "tail_bytes": 6,
+      "width": 10
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "first",
+      "invariant": true,
+      "tail_bytes": 2,
+      "width": 17
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "last",
+      "invariant": true,
+      "tail_bytes": 2,
+      "width": 17
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "first",
+      "invariant": true,
+      "tail_bytes": 6,
+      "width": 60
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "last",
+      "invariant": true,
+      "tail_bytes": 6,
+      "width": 60
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "invariant": true,
+      "tail_bytes": 6,
+      "width": 10
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "invariant": true,
+      "tail_bytes": 6,
+      "width": 10
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "invariant": true,
+      "tail_bytes": 2,
+      "width": 17
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "invariant": true,
+      "tail_bytes": 2,
+      "width": 17
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "invariant": true,
+      "tail_bytes": 6,
+      "width": 60
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "invariant": true,
+      "tail_bytes": 6,
+      "width": 60
+    }
+  ],
+  "target_evaluated": false,
+  "valid_plants": [
+    {
+      "all_ranks_retained": true,
+      "cipher": "des",
+      "convention": "first",
+      "iv_hex": "3608c85291003bc1",
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "q": 182,
+      "r": 0,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 2,
+      "width": 3
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "des",
+      "convention": "last",
+      "iv_hex": "6253b4659b65d1ea",
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "q": 182,
+      "r": 0,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 2,
+      "width": 3
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "des",
+      "convention": "first",
+      "iv_hex": "3608c85291003bc1",
+      "order": [
+        9,
+        3,
+        0,
+        6,
+        4,
+        8,
+        7,
+        5,
+        2,
+        1
+      ],
+      "q": 54,
+      "r": 6,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 2,
+      "width": 10
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "des",
+      "convention": "last",
+      "iv_hex": "6253b4659b65d1ea",
+      "order": [
+        9,
+        3,
+        0,
+        6,
+        4,
+        8,
+        7,
+        5,
+        2,
+        1
+      ],
+      "q": 54,
+      "r": 6,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 2,
+      "width": 10
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "des",
+      "convention": "first",
+      "iv_hex": "3608c85291003bc1",
+      "order": [
+        0,
+        12,
+        4,
+        7,
+        13,
+        3,
+        9,
+        1,
+        15,
+        8,
+        10,
+        14,
+        6,
+        2,
+        11,
+        16,
+        5
+      ],
+      "q": 32,
+      "r": 2,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 0,
+      "width": 17
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "des",
+      "convention": "last",
+      "iv_hex": "6253b4659b65d1ea",
+      "order": [
+        0,
+        12,
+        4,
+        7,
+        13,
+        3,
+        9,
+        1,
+        15,
+        8,
+        10,
+        14,
+        6,
+        2,
+        11,
+        16,
+        5
+      ],
+      "q": 32,
+      "r": 2,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 0,
+      "width": 17
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "des",
+      "convention": "first",
+      "iv_hex": "3608c85291003bc1",
+      "order": [
+        23,
+        5,
+        53,
+        52,
+        2,
+        1,
+        6,
+        42,
+        44,
+        11,
+        18,
+        33,
+        25,
+        58,
+        57,
+        34,
+        12,
+        49,
+        8,
+        48,
+        37,
+        51,
+        19,
+        21,
+        41,
+        15,
+        54,
+        59,
+        45,
+        26,
+        47,
+        4,
+        29,
+        9,
+        55,
+        56,
+        16,
+        24,
+        3,
+        0,
+        20,
+        17,
+        38,
+        46,
+        28,
+        10,
+        40,
+        36,
+        32,
+        39,
+        30,
+        35,
+        43,
+        31,
+        50,
+        13,
+        27,
+        22,
+        14,
+        7
+      ],
+      "q": 9,
+      "r": 6,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 39,
+      "width": 60
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "des",
+      "convention": "last",
+      "iv_hex": "6253b4659b65d1ea",
+      "order": [
+        23,
+        5,
+        53,
+        52,
+        2,
+        1,
+        6,
+        42,
+        44,
+        11,
+        18,
+        33,
+        25,
+        58,
+        57,
+        34,
+        12,
+        49,
+        8,
+        48,
+        37,
+        51,
+        19,
+        21,
+        41,
+        15,
+        54,
+        59,
+        45,
+        26,
+        47,
+        4,
+        29,
+        9,
+        55,
+        56,
+        16,
+        24,
+        3,
+        0,
+        20,
+        17,
+        38,
+        46,
+        28,
+        10,
+        40,
+        36,
+        32,
+        39,
+        30,
+        35,
+        43,
+        31,
+        50,
+        13,
+        27,
+        22,
+        14,
+        7
+      ],
+      "q": 9,
+      "r": 6,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 39,
+      "width": 60
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish",
+      "convention": "first",
+      "iv_hex": "3608c85291003bc1",
+      "order": [
+        1,
+        0,
+        2
+      ],
+      "q": 182,
+      "r": 0,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 1,
+      "width": 3
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish",
+      "convention": "last",
+      "iv_hex": "6253b4659b65d1ea",
+      "order": [
+        1,
+        0,
+        2
+      ],
+      "q": 182,
+      "r": 0,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 1,
+      "width": 3
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish",
+      "convention": "first",
+      "iv_hex": "3608c85291003bc1",
+      "order": [
+        7,
+        0,
+        8,
+        2,
+        9,
+        6,
+        1,
+        3,
+        4,
+        5
+      ],
+      "q": 54,
+      "r": 6,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 1,
+      "width": 10
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish",
+      "convention": "last",
+      "iv_hex": "6253b4659b65d1ea",
+      "order": [
+        7,
+        0,
+        8,
+        2,
+        9,
+        6,
+        1,
+        3,
+        4,
+        5
+      ],
+      "q": 54,
+      "r": 6,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 1,
+      "width": 10
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish",
+      "convention": "first",
+      "iv_hex": "3608c85291003bc1",
+      "order": [
+        4,
+        0,
+        13,
+        11,
+        6,
+        2,
+        12,
+        9,
+        15,
+        7,
+        10,
+        16,
+        5,
+        14,
+        3,
+        8,
+        1
+      ],
+      "q": 32,
+      "r": 2,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 1,
+      "width": 17
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish",
+      "convention": "last",
+      "iv_hex": "6253b4659b65d1ea",
+      "order": [
+        4,
+        0,
+        13,
+        11,
+        6,
+        2,
+        12,
+        9,
+        15,
+        7,
+        10,
+        16,
+        5,
+        14,
+        3,
+        8,
+        1
+      ],
+      "q": 32,
+      "r": 2,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 1,
+      "width": 17
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish",
+      "convention": "first",
+      "iv_hex": "3608c85291003bc1",
+      "order": [
+        39,
+        17,
+        54,
+        25,
+        29,
+        24,
+        35,
+        48,
+        31,
+        21,
+        56,
+        11,
+        16,
+        27,
+        7,
+        2,
+        42,
+        28,
+        10,
+        0,
+        51,
+        38,
+        5,
+        9,
+        40,
+        19,
+        45,
+        4,
+        44,
+        18,
+        26,
+        58,
+        36,
+        8,
+        37,
+        43,
+        22,
+        15,
+        47,
+        52,
+        12,
+        30,
+        20,
+        14,
+        13,
+        49,
+        50,
+        55,
+        3,
+        23,
+        41,
+        1,
+        6,
+        53,
+        57,
+        46,
+        34,
+        59,
+        32,
+        33
+      ],
+      "q": 9,
+      "r": 6,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 19,
+      "width": 60
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish",
+      "convention": "last",
+      "iv_hex": "6253b4659b65d1ea",
+      "order": [
+        39,
+        17,
+        54,
+        25,
+        29,
+        24,
+        35,
+        48,
+        31,
+        21,
+        56,
+        11,
+        16,
+        27,
+        7,
+        2,
+        42,
+        28,
+        10,
+        0,
+        51,
+        38,
+        5,
+        9,
+        40,
+        19,
+        45,
+        4,
+        44,
+        18,
+        26,
+        58,
+        36,
+        8,
+        37,
+        43,
+        22,
+        15,
+        47,
+        52,
+        12,
+        30,
+        20,
+        14,
+        13,
+        49,
+        50,
+        55,
+        3,
+        23,
+        41,
+        1,
+        6,
+        53,
+        57,
+        46,
+        34,
+        59,
+        32,
+        33
+      ],
+      "q": 9,
+      "r": 6,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 19,
+      "width": 60
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "iv_hex": "3608c85291003bc1",
+      "order": [
+        0,
+        2,
+        1
+      ],
+      "q": 182,
+      "r": 0,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 0,
+      "width": 3
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "iv_hex": "6253b4659b65d1ea",
+      "order": [
+        0,
+        2,
+        1
+      ],
+      "q": 182,
+      "r": 0,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 0,
+      "width": 3
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "iv_hex": "3608c85291003bc1",
+      "order": [
+        7,
+        3,
+        8,
+        0,
+        6,
+        2,
+        5,
+        1,
+        4,
+        9
+      ],
+      "q": 54,
+      "r": 6,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 3,
+      "width": 10
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "iv_hex": "6253b4659b65d1ea",
+      "order": [
+        7,
+        3,
+        8,
+        0,
+        6,
+        2,
+        5,
+        1,
+        4,
+        9
+      ],
+      "q": 54,
+      "r": 6,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 3,
+      "width": 10
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "iv_hex": "3608c85291003bc1",
+      "order": [
+        4,
+        8,
+        15,
+        3,
+        16,
+        5,
+        1,
+        11,
+        9,
+        2,
+        6,
+        0,
+        14,
+        12,
+        13,
+        10,
+        7
+      ],
+      "q": 32,
+      "r": 2,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 11,
+      "width": 17
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "iv_hex": "6253b4659b65d1ea",
+      "order": [
+        4,
+        8,
+        15,
+        3,
+        16,
+        5,
+        1,
+        11,
+        9,
+        2,
+        6,
+        0,
+        14,
+        12,
+        13,
+        10,
+        7
+      ],
+      "q": 32,
+      "r": 2,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 11,
+      "width": 17
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "iv_hex": "3608c85291003bc1",
+      "order": [
+        11,
+        13,
+        47,
+        48,
+        40,
+        53,
+        54,
+        46,
+        33,
+        0,
+        57,
+        24,
+        38,
+        28,
+        14,
+        1,
+        45,
+        25,
+        12,
+        20,
+        30,
+        50,
+        5,
+        39,
+        6,
+        37,
+        35,
+        49,
+        27,
+        10,
+        18,
+        16,
+        52,
+        2,
+        51,
+        43,
+        44,
+        59,
+        23,
+        29,
+        58,
+        55,
+        9,
+        34,
+        26,
+        36,
+        4,
+        31,
+        3,
+        21,
+        17,
+        56,
+        8,
+        15,
+        32,
+        41,
+        22,
+        7,
+        42,
+        19
+      ],
+      "q": 9,
+      "r": 6,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 9,
+      "width": 60
+    },
+    {
+      "all_ranks_retained": true,
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "iv_hex": "6253b4659b65d1ea",
+      "order": [
+        11,
+        13,
+        47,
+        48,
+        40,
+        53,
+        54,
+        46,
+        33,
+        0,
+        57,
+        24,
+        38,
+        28,
+        14,
+        1,
+        45,
+        25,
+        12,
+        20,
+        30,
+        50,
+        5,
+        39,
+        6,
+        37,
+        35,
+        49,
+        27,
+        10,
+        18,
+        16,
+        52,
+        2,
+        51,
+        43,
+        44,
+        59,
+        23,
+        29,
+        58,
+        55,
+        9,
+        34,
+        26,
+        36,
+        4,
+        31,
+        3,
+        21,
+        17,
+        56,
+        8,
+        15,
+        32,
+        41,
+        22,
+        7,
+        42,
+        19
+      ],
+      "q": 9,
+      "r": 6,
+      "suffix_starts_80": true,
+      "utf8_crosses_block_boundary_rank": 9,
+      "width": 60
+    }
+  ],
+  "width60_boundary": [
+    {
+      "cipher": "des",
+      "convention": "first",
+      "corrupted_rank": 7,
+      "corrupted_suffix_hex": "00",
+      "positive_all_60_retained": true,
+      "q": 9,
+      "r": 6,
+      "width": 60
+    },
+    {
+      "cipher": "des",
+      "convention": "last",
+      "corrupted_rank": 7,
+      "corrupted_suffix_hex": "00",
+      "positive_all_60_retained": true,
+      "q": 9,
+      "r": 6,
+      "width": 60
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "first",
+      "corrupted_rank": 7,
+      "corrupted_suffix_hex": "00",
+      "positive_all_60_retained": true,
+      "q": 9,
+      "r": 6,
+      "width": 60
+    },
+    {
+      "cipher": "blowfish",
+      "convention": "last",
+      "corrupted_rank": 7,
+      "corrupted_suffix_hex": "00",
+      "positive_all_60_retained": true,
+      "q": 9,
+      "r": 6,
+      "width": 60
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "first",
+      "corrupted_rank": 7,
+      "corrupted_suffix_hex": "00",
+      "positive_all_60_retained": true,
+      "q": 9,
+      "r": 6,
+      "width": 60
+    },
+    {
+      "cipher": "blowfish_compat",
+      "convention": "last",
+      "corrupted_rank": 7,
+      "corrupted_suffix_hex": "00",
+      "positive_all_60_retained": true,
+      "q": 9,
+      "r": 6,
+      "width": 60
+    }
+  ],
+  "width61_unsupported": [
+    {
+      "chunk_start_states": [
+        0,
+        1,
+        2
+      ],
+      "cipher": "des",
+      "complete_every_iv_every_order_exclusion": false,
+      "conventions": [
+        "first",
+        "last"
+      ],
+      "conventions_alias": false,
+      "identity": "ASTRA",
+      "n": 546,
+      "q": 8,
+      "r": 58,
+      "ranks_examined": 0,
+      "reason": "no guaranteed IV-independent suffix",
+      "rejected_rank": null,
+      "supported": false,
+      "terminal_zero_required": false,
+      "unresolved": true,
+      "width": 61
+    },
+    {
+      "chunk_start_states": [
+        0,
+        1,
+        2
+      ],
+      "cipher": "blowfish",
+      "complete_every_iv_every_order_exclusion": false,
+      "conventions": [
+        "first",
+        "last"
+      ],
+      "conventions_alias": false,
+      "identity": "ASTRA",
+      "n": 546,
+      "q": 8,
+      "r": 58,
+      "ranks_examined": 0,
+      "reason": "no guaranteed IV-independent suffix",
+      "rejected_rank": null,
+      "supported": false,
+      "terminal_zero_required": false,
+      "unresolved": true,
+      "width": 61
+    },
+    {
+      "chunk_start_states": [
+        0,
+        1,
+        2
+      ],
+      "cipher": "blowfish_compat",
+      "complete_every_iv_every_order_exclusion": false,
+      "conventions": [
+        "first",
+        "last"
+      ],
+      "conventions_alias": false,
+      "identity": "ASTRA",
+      "n": 546,
+      "q": 8,
+      "r": 58,
+      "ranks_examined": 0,
+      "reason": "no guaranteed IV-independent suffix",
+      "rejected_rank": null,
+      "supported": false,
+      "terminal_zero_required": false,
+      "unresolved": true,
+      "width": 61
+    }
+  ]
+}

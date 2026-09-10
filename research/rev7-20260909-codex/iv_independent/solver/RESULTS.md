@@ -44,3 +44,5 @@ Frozen target files:
 - `native_controls.json`: `9eb64df3639e671f2371ccd274306ee0c0af0bfed5bc1c416c6ecd996c5d211d`
 - `controls.json`: `8656075b2f0495444b82439d582f075e28030189d9985489301b9c030159926b`
 - canonical target text: `5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c`
+
+The same certificate also excludes interpreting the same 546 mapped bytes as an eight-byte raw IV followed by 538 CFB8 ciphertext bytes, with the mapping acting on the entire frame. The recurrence then gives the actual payload at every tested suffix position. This [raw-IV-prefix corollary](../raw_iv_prefix/README.md) changes no geometry and requires no new target run; arbitrary framing is outside this deduction.
