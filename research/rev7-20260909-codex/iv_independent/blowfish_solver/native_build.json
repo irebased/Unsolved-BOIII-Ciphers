@@ -1,0 +1,23 @@
+{
+  "binary_sha256": "23063a1f86329572d0b10a507804210f0743b60f78f65a8366afd9b4ef44583f",
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-O3",
+    "-Wno-deprecated-declarations",
+    "native.cpp",
+    "-I/opt/homebrew/Cellar/openssl@3/3.6.3/include",
+    "-L/opt/homebrew/Cellar/openssl@3/3.6.3/lib",
+    "-lssl",
+    "-lcrypto",
+    "-o",
+    "native"
+  ],
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "identity": "ASTRA",
+  "note": "The binary hash is local build evidence; source and command are portable provenance.",
+  "openssl": "3.6.3",
+  "platform": "macOS-26.4-arm64-arm-64bit",
+  "source_sha256": "b7f3a187f29705fc21f7a529b7722f9f9d936a4f66715e107ff52acfb11ca433",
+  "target_evaluated": false
+}

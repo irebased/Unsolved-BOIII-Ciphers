@@ -1,0 +1,74 @@
+{
+  "assertions": {
+    "all_passed": true,
+    "both_backends_exactly_one_million_nodes": true,
+    "both_factorial_partitions_exact": true,
+    "both_incomplete": true,
+    "no_target_read_or_evaluation": true
+  },
+  "fixture": {
+    "all_16_display_symbols": true,
+    "bytes": 546,
+    "ciphertext_sha256": "c60b157be10690544389b9c272a6948410d44c7f2f9df1c572575ceca690d68b",
+    "display_sha256": "3ec6bd72414c96f58790b29bf278fd9eb0a56d71bf5b1e31794ce28ecbe3b93f",
+    "generator": "random.Random(0xBF7A2026) mapping; valid five-sequence UTF-8 plaintext; standard Blowfish CFB8; IV 0011223344556677",
+    "mapping_display_to_nibble": [
+      15,
+      5,
+      13,
+      2,
+      1,
+      7,
+      14,
+      11,
+      4,
+      8,
+      6,
+      10,
+      12,
+      9,
+      3,
+      0
+    ],
+    "plaintext_sha256": "6597d7a6c8a4514f6a013bdd4275399723b99a58b3c80d2fb26eaedb0dabecf8"
+  },
+  "identity": "ASTRA",
+  "interpretation": "Bounded synthetic host timing only. Both prefixes are deliberately capped and establish neither exhaustive search nor target behavior.",
+  "rev7_read": false,
+  "rows": [
+    {
+      "capped_incomplete": true,
+      "certificate_weight": 6066264960,
+      "cipher": "blowfish",
+      "ecb_calls": 7882701,
+      "ecb_calls_per_second": 18430314.961550422,
+      "native_elapsed_seconds": 0.427703,
+      "nodes": 1000000,
+      "nodes_per_second": 2338071.044626762,
+      "process_wall_seconds": 0.8746792499999999,
+      "survivors_at_terminals": 0,
+      "unaccounted_mapping_weight": 20916723623040
+    },
+    {
+      "capped_incomplete": true,
+      "certificate_weight": 6081331560,
+      "cipher": "blowfish_compat",
+      "ecb_calls": 7883946,
+      "ecb_calls_per_second": 18145078.769606095,
+      "native_elapsed_seconds": 0.434495,
+      "nodes": 1000000,
+      "nodes_per_second": 2301522.457105375,
+      "process_wall_seconds": 0.4378530420000001,
+      "survivors_at_terminals": 0,
+      "unaccounted_mapping_weight": 20916708556440
+    }
+  ],
+  "scope": "One deterministic 546-byte full-unseeded displayed-hex fixture, evaluated under both native Blowfish backends for exactly 1,000,000 accepted DFS entries each.",
+  "source_hashes": {
+    "benchmark.py": "489d62c8401879b417ec54785ee0ee184388ad45a2aae46d37f64187e9e47b92",
+    "native": "23063a1f86329572d0b10a507804210f0743b60f78f65a8366afd9b4ef44583f",
+    "native.cpp": "b7f3a187f29705fc21f7a529b7722f9f9d936a4f66715e107ff52acfb11ca433",
+    "native_build.json": "ec211891fda2871ef9a27505728d53960aa51ffb4aaad4f7be972e07abd979c0"
+  },
+  "target_evaluated": false
+}

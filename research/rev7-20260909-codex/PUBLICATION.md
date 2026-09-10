@@ -257,3 +257,17 @@ python3 -B research/byte_columnar/all_iv/column_a/target/run_target.py --selftes
 ```
 
 At this publication stage the target is registered and unrun. No target result or recovered layer is claimed. The gate binds the tested local binary hash; binaries and drafts are excluded from publication, while source and build commands are included.
+
+
+## Frozen every-IV Blowfish mapping experiment
+
+The [registered Blowfish target](iv_independent/blowfish_solver/target/README.md) adds an eight-case specification for standard Blowfish and historical compatibility Blowfish under four canonical orientations, raw seven-byte Zombies keys, CFB8, every external eight-byte IV, and global hexadecimal-symbol bijections. Each case starts from an unseeded root with a one-billion-node cap. Complete coverage accounts for all `16!` mappings; capped cases retain their explicit uncovered remainder. Exact surviving maps and suffix bytes receive independent reconstruction, strict FSA validation and two-IV re-encryption checks.
+
+A bounded synthetic benchmark completed one million nodes per backend at roughly 2.3 million nodes per second. A linear projection gives about seven minutes per full cap, or roughly 58 minutes for all eight sequential caps; actual target traversal and host contention can differ. This is a runtime estimate and does not establish target coverage. Source, build provenance, independent controls, benchmark, gate builder and driver are published. The final gate SHA-256 is `507f5c9d3f0a489ca612bfaf1600c9c3de91f844208540962b8a087274204a2b`.
+
+```sh
+python3 -B research/rev7-20260909-codex/iv_independent/blowfish_solver/target/benchmark.py
+python3 -B research/rev7-20260909-codex/iv_independent/blowfish_solver/target/run_target.py --selftest
+```
+
+At this publication stage the Blowfish target is registered and unrun. Its controls and preparation code read no target ciphertext beyond hashing the canonical MDX during gate checks. The deliberately unusable draft gate and superseded documentation gate are excluded from publication.
