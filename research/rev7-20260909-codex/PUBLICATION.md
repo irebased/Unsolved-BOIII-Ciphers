@@ -715,3 +715,27 @@ The output length 1,092 forces 218 complete rows. Exact partial-row source check
 ```sh
 python3 -B research/char_amsco/astra/lossy4_onechar_inventory/inventory.py
 ```
+
+
+## Generic controls for the twelve lossy four-digit maps
+
+The [generic all-IV controls](lossy4_alliv_controls/REPORT.md) cover every one of the 12 source-derived one-character-loss maps and all 48 orientation wirings. Six maps admit 4,096 initial eight-byte ciphertext registers and six admit 256. The search retains complete ciphertexts and printable-ASCII suffixes, with exact root accounting when a cap is reached. It leaves the first eight plaintext bytes and original IV unknown.
+
+All twelve short plants and both full-length shape plants recover the true path. All twelve deterministic nulls complete with zero candidates; both cap fixtures remain explicitly incomplete. Root reviewed the source and independently checked all 20,622 saved terminal candidates through library CFB8, manual recurrence, exact source emission, hashes and lengths. The [lossless pack](lossy4_alliv_controls/controls.pack.json), 2,866,236 bytes, reconstructs the 44,489,987-byte ledger exactly (SHA-256 `7ac6af27db0ef3a30cf77b410f58be335f54f3ec3ddb26000ac24ecf1636d241`). This package is synthetic; it adds no Rev7 target coverage.
+
+```sh
+python3 -B research/rev7-20260909-codex/lossy4_alliv_controls/pack_controls.py
+```
+
+## Plaintext byte permutations and one CFB8 edit
+
+The [byte-set proof](coverage/transposition_byte_bag/REPORT.md) derives exactly 165 possible byte values from the declared 201-codepoint endpoint. Every byte permutation of such text preserves membership in this set, even when UTF-8 parsing or allowed-codeword runs are destroyed. The proof supplies an arbitrary-length counterexample that remains valid UTF-8 while its longest allowed-codeword run becomes zero.
+
+For CFB8 with block size b, one ciphertext substitution or insertion can create at most b+1 present bytes outside that set; deletion permits at most b. The first b decoded bytes are discarded to remove dependence on the external IV. This permits arbitrary byte permutation before CFB8 encryption, but does not treat ciphertext permutations as one edit or cover stream-cipher damage. The synthetic controls verify every single-edit position in a 311-byte DES message, manual/library recurrences, and wrong-IV flushing.
+
+The [FABLE replay](coverage/fable_bytebag_replay/README.md) reproduces all 184 previously saved output hashes and counts using its supplied WASM. The actual modes are 152 CFB8 and 32 stream invocations; the original report mislabeled the stream rows. All complete output bytes are retained with corrected mode annotations. The minimum outside-set count is 153, and every CFB8 row exceeds its single-edit allowance by at least 136. Stream rows reject only the undamaged endpoint for their fixed invocations. This is verification of existing FABLE contexts using the same primitive runtime and an independent byte-set/count implementation; it is not new target coverage or an independent primitive implementation.
+
+```sh
+python3 -B research/rev7-20260909-codex/coverage/transposition_byte_bag/proof.py
+python3 -B research/rev7-20260909-codex/coverage/fable_bytebag_replay/verify_outputs.py
+```

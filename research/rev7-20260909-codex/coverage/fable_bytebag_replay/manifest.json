@@ -1,0 +1,55 @@
+{
+  "identity": "ASTRA",
+  "source_reporter": "FABLE",
+  "files": [
+    {
+      "original_path": "/private/tmp/rev7-fable-20260909/longrun/bytebag_184rows.json",
+      "local_path": "source/record/bytebag_184rows.json",
+      "bytes": 125441,
+      "sha256": "a0fbfcadd35321131aba511410b4c269fbfe4fe42637b4396658610ec51cf752"
+    },
+    {
+      "original_path": "/private/tmp/rev7-fable-20260909/longrun/bytebag_package.js",
+      "local_path": "source/record/bytebag_package.js",
+      "bytes": 3797,
+      "sha256": "6b3c1926917397b4aafd7b0f3d49f13771970fb9c7e234185dca241f63044b93"
+    },
+    {
+      "original_path": "/private/tmp/rev7-fable-20260909/cascade/cascade_lib.js",
+      "local_path": "source/rev7/cascade/cascade_lib.js",
+      "bytes": 6565,
+      "sha256": "0318a5b86eb9b93f6cfa848ac9c58a59e6ea05acb469b2d49569a840034c3aff"
+    },
+    {
+      "original_path": "/private/tmp/rev7-fable-20260909/dictkey2/lib.js",
+      "local_path": "source/rev7/dictkey2/lib.js",
+      "bytes": 9413,
+      "sha256": "ffba90a95de78bdeef64c8d2b5602c61d3271e7780914d8322cc5bb9b912ec1d"
+    },
+    {
+      "original_path": "/private/tmp/rev7-fable-20260909/utf8gate/utf8gate.js",
+      "local_path": "source/rev7/utf8gate/utf8gate.js",
+      "bytes": 3612,
+      "sha256": "23eaf0741eecf23fedbe1a9c9a241c715f5d5a9d936689d2c70d440cb6121b8d"
+    },
+    {
+      "original_path": "/private/tmp/rev7-fable-20260909/old-ciphers/js/mcrypt.js",
+      "local_path": "source/old-ciphers/js/mcrypt.js",
+      "bytes": 10570,
+      "sha256": "8998b6dd50ebc24aede3df84228826951f2143fde393e15f95d1455e074d5061"
+    },
+    {
+      "original_path": "/private/tmp/rev7-fable-20260909/old-ciphers/js/mcrypt.wasm",
+      "local_path": "source/old-ciphers/js/mcrypt.wasm",
+      "bytes": 211879,
+      "sha256": "60a8215b8f6f7774511004ec51528b60e781ca8c260d0b1cf1baad0dfc932be7"
+    },
+    {
+      "original_path": "/private/tmp/rev7-fable-20260909/rev7_hex.txt",
+      "local_path": "source/record/rev7_hex.txt",
+      "bytes": 1093,
+      "sha256": "1b1d340ff7de53776c737d0d34ba7438d591679fe0f27efc56856f28c8648827"
+    }
+  ],
+  "layout_note": "Unchanged source bytes restored to source/rev7 and source/old-ciphers to satisfy the literal ../../old-ciphers import. FABLE mirror flattened these siblings and left a missing /private/tmp/old-ciphers path."
+}
