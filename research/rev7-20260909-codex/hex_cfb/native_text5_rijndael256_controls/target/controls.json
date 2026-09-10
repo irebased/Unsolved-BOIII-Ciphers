@@ -1,0 +1,159 @@
+{
+  "assertions": {
+    "all_orientation_inverses_exact": true,
+    "all_seeded_24_certificates_complete": true,
+    "all_survivors_independent_js_decrypt_reencrypt": true,
+    "exact_four_orientation_ids": true,
+    "no_target_read_or_evaluation": true,
+    "tiny_cap_incomplete_without_solution": true,
+    "truth_mapping_plaintext_retained_once_each": true
+  },
+  "crypto_evaluated": true,
+  "driver_sha256": "27fe449a575826c871ae619a39e74f4394c5de6e349b4f0a756d6d5ff5a63277",
+  "identity": "ASTRA",
+  "native_binary_sha256": "24b323b9eac28b438bac3760baad4683704884e12288407719390daed2db923c",
+  "native_build_sha256": "71f0a7746e11db988cfe83dd5aa543d3daad5b568faacafdf300ee92db82212c",
+  "orientation_rows": [
+    {
+      "canonical_sha256": "472909fa4c26ca5414082bf7f7a0617425bdd6820529141fa39ecddfe8ff16c3",
+      "certificate_weight": 24,
+      "complete": 1,
+      "expected_completion_weight": 24,
+      "id": "forward",
+      "inverse_exact": true,
+      "nodes": 183,
+      "rejected_plaintext": 15,
+      "solution_count": 1,
+      "source_display_sha256": "472909fa4c26ca5414082bf7f7a0617425bdd6820529141fa39ecddfe8ff16c3",
+      "truth_retained_once": true,
+      "validation": {
+        "all_display_reconstructions_exact": true,
+        "all_endpoint_terminal0": true,
+        "all_independent_js_decryptions_exact": true,
+        "all_independent_js_reencryptions_exact": true,
+        "all_mapping_permutations": true,
+        "solution_material_sha256": "6d843da983f52fb81ab815377ce444e07fc2c25c664b0d8a275cb8ef84acb5b4"
+      }
+    },
+    {
+      "canonical_sha256": "a732de86a88eed54d2dd1c1ff712e19c0b1c84243e80cd7aa0d1124e06bb37aa",
+      "certificate_weight": 24,
+      "complete": 1,
+      "expected_completion_weight": 24,
+      "id": "full_hex_reverse",
+      "inverse_exact": true,
+      "nodes": 183,
+      "rejected_plaintext": 15,
+      "solution_count": 1,
+      "source_display_sha256": "472909fa4c26ca5414082bf7f7a0617425bdd6820529141fa39ecddfe8ff16c3",
+      "truth_retained_once": true,
+      "validation": {
+        "all_display_reconstructions_exact": true,
+        "all_endpoint_terminal0": true,
+        "all_independent_js_decryptions_exact": true,
+        "all_independent_js_reencryptions_exact": true,
+        "all_mapping_permutations": true,
+        "solution_material_sha256": "6d843da983f52fb81ab815377ce444e07fc2c25c664b0d8a275cb8ef84acb5b4"
+      }
+    },
+    {
+      "canonical_sha256": "2506e374bfc804f36e1e8d3a7718894c1a7d2e61ed10e0dcb6940b157a45362e",
+      "certificate_weight": 24,
+      "complete": 1,
+      "expected_completion_weight": 24,
+      "id": "byte_reverse",
+      "inverse_exact": true,
+      "nodes": 183,
+      "rejected_plaintext": 15,
+      "solution_count": 1,
+      "source_display_sha256": "472909fa4c26ca5414082bf7f7a0617425bdd6820529141fa39ecddfe8ff16c3",
+      "truth_retained_once": true,
+      "validation": {
+        "all_display_reconstructions_exact": true,
+        "all_endpoint_terminal0": true,
+        "all_independent_js_decryptions_exact": true,
+        "all_independent_js_reencryptions_exact": true,
+        "all_mapping_permutations": true,
+        "solution_material_sha256": "6d843da983f52fb81ab815377ce444e07fc2c25c664b0d8a275cb8ef84acb5b4"
+      }
+    },
+    {
+      "canonical_sha256": "0c0784dd31106d96a38c25ce44bc09d0cd0a3b251b0f12e516495cc2111be4fe",
+      "certificate_weight": 24,
+      "complete": 1,
+      "expected_completion_weight": 24,
+      "id": "nibble_swap",
+      "inverse_exact": true,
+      "nodes": 183,
+      "rejected_plaintext": 15,
+      "solution_count": 1,
+      "source_display_sha256": "472909fa4c26ca5414082bf7f7a0617425bdd6820529141fa39ecddfe8ff16c3",
+      "truth_retained_once": true,
+      "validation": {
+        "all_display_reconstructions_exact": true,
+        "all_endpoint_terminal0": true,
+        "all_independent_js_decryptions_exact": true,
+        "all_independent_js_reencryptions_exact": true,
+        "all_mapping_permutations": true,
+        "solution_material_sha256": "6d843da983f52fb81ab815377ce444e07fc2c25c664b0d8a275cb8ef84acb5b4"
+      }
+    }
+  ],
+  "parent_controls_sha256": "097fe51f0ade0b430684cd7555d5d3dcfdc76b4dbac27177fac967473f882b56",
+  "parent_controls_source_sha256": "eef73fc1b4abec92fc86158054bc22dc6b428328f4028eda7f894508df28b17f",
+  "plant": {
+    "ciphertext_sha256": "6ce57cba2f67c0c6c378050c632c0acf66b10b0c9d91ebc606f8a125a353e1f2",
+    "display_sha256": "472909fa4c26ca5414082bf7f7a0617425bdd6820529141fa39ecddfe8ff16c3",
+    "mapping": [
+      6,
+      12,
+      15,
+      8,
+      9,
+      13,
+      7,
+      0,
+      14,
+      11,
+      5,
+      10,
+      2,
+      1,
+      4,
+      3
+    ],
+    "plaintext_hex": "4f5249454e544154494f4e20434f4e54524f4c204153434949094c494e450d0ae28093e28094e28098e28099e280a620454e442e204f5249454e544154494f4e20434f4e54524f4c204153434949094c494e450d0ae28093e28094e28098e28099e280a620454e442e204f5249454e544154494f4e20434f4e54524f4c204153434949094c494e450d0ae28093e28094e28098e28099e280a620454e442e20",
+    "plaintext_sha256": "4f38249dcc97a82d879e37bd272fe2d6109584273bd8c9a4ec2a9d60c415b8d3",
+    "seed_mapping": {
+      "0": 6,
+      "1": 12,
+      "10": 5,
+      "11": 10,
+      "2": 15,
+      "3": 8,
+      "4": 9,
+      "5": 13,
+      "6": 7,
+      "7": 0,
+      "8": 14,
+      "9": 11
+    },
+    "unknown_symbols": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "scope": "Synthetic exact production-wrapper wiring for four orientations with a seeded four-unknown map; no target extraction.",
+  "target_evaluated": false,
+  "tiny_cap": {
+    "aborted": true,
+    "certificate_weight": 0,
+    "expected_completion_weight": 24,
+    "node_limit": 1,
+    "nodes": 1,
+    "orientation": "forward",
+    "solution_count": 0
+  }
+}

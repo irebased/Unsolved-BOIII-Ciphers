@@ -1,0 +1,36 @@
+{
+  "binary_sha256": "24b323b9eac28b438bac3760baad4683704884e12288407719390daed2db923c",
+  "binary_size": 60136,
+  "build_source_sha256": "e1b2ec8e48ae8024efeef6eb4a6d930b49c5fb1779fde76bff899f99143941f9",
+  "commands": [
+    [
+      "clang",
+      "-std=c99",
+      "-O2",
+      "-I",
+      "<worktree>/research/rev7-20260909-codex/rijndael256_controls/source",
+      "-c",
+      "<worktree>/research/rev7-20260909-codex/rijndael256_controls/source/rijndael-256.c",
+      "-o",
+      "research/rev7-20260909-codex/hex_cfb/native_text5_rijndael256_controls/target/native_r256.o"
+    ],
+    [
+      "clang++",
+      "-std=c++17",
+      "-O3",
+      "<worktree>/research/rev7-20260909-codex/hex_cfb/native_text5_rijndael256_controls/native.cpp",
+      "research/rev7-20260909-codex/hex_cfb/native_text5_rijndael256_controls/target/native_r256.o",
+      "-o",
+      "research/rev7-20260909-codex/hex_cfb/native_text5_rijndael256_controls/target/native_r256"
+    ]
+  ],
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "identity": "ASTRA",
+  "source_pins": {
+    "libdefs.h": "556ec4fcebae614cd90d05a2fead50d9355ff39f65b44c8f4044c7f209074c6e",
+    "mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "native.cpp": "da036a3e55a1f771bc31bb4795be85e1acc2ed58b6f744085e6c01525b3abf2a",
+    "rijndael-256.c": "fa16b72832a4cda8fd9909d88c8a7b779d352bbfb13acf76d57391dfe9219821",
+    "rijndael.h": "57142416d7b11f6788a10ded626ad426aca430ed5bff34d60b87868feb3fe0e2"
+  }
+}

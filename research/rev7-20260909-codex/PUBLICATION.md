@@ -807,3 +807,30 @@ The raw transcription, source image and crop hashes, visual rationale, adjudicat
 ```sh
 python3 -B research/rev7-20260909-codex/coverage/rev7_image_transcription/verify_reconciliation.py
 ```
+
+
+## Rijndael-256 global hexadecimal mappings
+
+The [Rijndael-256 extension](hex_cfb/native_text5_rijndael256_controls/target/RESULTS.md) completes four additional orientations under a global 16-symbol hexadecimal bijection. The primitive has a 32-byte block, a 16-byte `Zombies` plus nine-NUL key, and an ASCII-zero 32-byte IV. The endpoint remains TAB/LF/CR, printable ASCII and the five specified UTF-8 punctuation codewords. Every cell completes its full `16!` accounting with zero survivors, below the one-billion-node limit. Total work is 752,784,570 DFS nodes. The accepted matrix now totals seven fixed conventions and 28 cells.
+
+Root reviewed the native-source diff, reproduced synthetic controls and verified the saved result's source hashes, orientations, checkpoints and factorial accounting. Primitive controls compare the original libmcrypt C source with independently pinned JavaScrypt; Python/native search agreement uses the same C primitive and is labeled separately. The result verifier is an integrity/accounting replay, not a second full DFS. Result SHA-256: `85dc54daab3f08440820e1d22c10abb771320aea0e81f6706f3d9a03adc756cc`. The exact platform-specific binary is included as a verified Base64 transport alongside all build sources and provenance.
+
+```sh
+python3 -B research/rev7-20260909-codex/hex_cfb/native_text5_rijndael256_controls/target/restore_native.py --restore
+python3 -B research/rev7-20260909-codex/hex_cfb/native_text5_rijndael256_controls/target/verify_results.py
+```
+
+## Exact repeating-key byte constraints through period 64
+
+The [periodic-key result](coverage/periodic_bytebag_controls/target/README.md) considers XOR and modular-add/subtract keys of every period from 1 through 64. Each residue retains all 256 possible key bytes that map its observations into the 165-byte union derived from the 201-codeword endpoint. Every tested period has at least one empty residue mask, excluding all keys for that exact context. The 512 labeled cells reduce to 256 unique existence contexts because reversal only permutes residue classes.
+
+Every mask, candidate list and empty-residue witness is retained. Root read and ran a separately written slow per-key verifier that recomputes all masks; synthetic controls preserve the planted key bytes and test empty, vacuous and reordered observations. This is a necessary-condition exclusion, not a language score. Periods above 64, other operations, extra framing/transforms and broader endpoints remain outside scope. Result SHA-256: `008966a182ee38ff9ffac569e715d91bab8c05cf37ae5c2c6043dc0d6b1c9acc`. A lossless pack transports the full 8,583,401-byte result.
+
+A fixed substitution applied identically at every position preserves distinct-byte count; repeating keys generally do not. The residue-mask argument supplies the correct finite-period replacement for that invalid generalization. None of these results determines whether Rev7 is modern or classical. Rev3's ten displayed symbols disguise decimal digits before a straddling checkerboard, so an encoding layer must be considered explicitly.
+
+```sh
+python3 -B research/rev7-20260909-codex/coverage/periodic_bytebag_controls/target/pack_results.py --restore research/rev7-20260909-codex/coverage/periodic_bytebag_controls/target/target_results.json
+python3 -B research/rev7-20260909-codex/coverage/periodic_bytebag_controls/target/verify_results.py
+```
+
+The restoration command refuses an existing raw result. If that file is already present, use the helper without `--restore` to verify it.

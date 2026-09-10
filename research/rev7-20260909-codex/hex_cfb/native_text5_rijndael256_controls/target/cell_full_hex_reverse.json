@@ -1,0 +1,40 @@
+{
+  "cell": {
+    "aborted_at_node_limit": false,
+    "certificate_weight": 20922789888000,
+    "cipher": "rijndael256_key16",
+    "complete": 0,
+    "display_length": 1092,
+    "display_sha256": "1e5c94f36483c784b10d14beba26c515efc18d4fad0f126dd18291d541192dd0",
+    "elapsed_seconds": 7.51176,
+    "expected_completion_weight": 20922789888000,
+    "id": "full_hex_reverse",
+    "identity": "ASTRA",
+    "inverse_orientation_exact": true,
+    "maximum_depth": 32,
+    "node_limit": 1000000000,
+    "nodes": 34758212,
+    "orientation": "full_hex_reverse",
+    "rejected_completion_weight": 20922789888000,
+    "rejected_plaintext": 56020692,
+    "rejected_unterminated_endpoint": 0,
+    "seed_mapping": {},
+    "solutions": [],
+    "terminal_completion_weight": 0,
+    "validation": {
+      "all_display_reconstructions_exact": true,
+      "all_endpoint_terminal0": true,
+      "all_independent_js_decryptions_exact": true,
+      "all_independent_js_reencryptions_exact": true,
+      "all_mapping_permutations": true,
+      "solution_material_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "configuration": {
+    "driver_sha256": "27fe449a575826c871ae619a39e74f4394c5de6e349b4f0a756d6d5ff5a63277",
+    "gate_sha256": "902e5db5430987f3e30a6b0b03f588b7ede226caeaaba0c620ffdbed6d749bb7",
+    "native_binary_sha256": "24b323b9eac28b438bac3760baad4683704884e12288407719390daed2db923c"
+  },
+  "identity": "ASTRA",
+  "target_evaluated": true
+}

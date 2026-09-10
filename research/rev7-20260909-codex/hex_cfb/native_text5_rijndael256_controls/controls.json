@@ -1,0 +1,211 @@
+{
+  "all_256_byte_cfb8": {
+    "ciphertext_hex": "4c482d80cba2132d77d95650ecfe61245b812a5ed7b88691cb0a8bcc5067e6e0439bf7bf392961c9244145bac9a4b0da39b7e5bc8082e22ef137e3924cb8e989b71552ddc77b326bb478624ec0f15263bd960c1c4af13027de0f59848d633111325bbd91ea80b092a9177764852571bf47ad85a8f45716af96a54e633fdea62c3be1a82f00c4e135341c61a1e86776fd797da2b88bc62060c2f4b9d83262fa7e5cf7932fade05d8121b561d06e8a51ef1bdc3f349fd38768104a70dbcbd38d3ed1f152837d854807c5f1664a33e2e60c59d3bfc19d0bc5a57f6f0b4d0f998ee9fa80a242b4ebd3ce334a70c5c918bdf245fadf2d2ea3e33fd147d9e31973f9bc378c170422098da0af3abcdac34a0b87bc5d0d",
+    "ciphertext_sha256": "009c9e3e7233e1638d25ba80c79eaf6b2e54cc1cb78aa08f7d1e45a95f76f454",
+    "native_decrypt_roundtrip": true,
+    "native_equals_python_same_c_recurrence": true,
+    "plaintext_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff205232353620414c4c20425954452043464238",
+    "plaintext_sha256": "8ebe78e3b84f273c503503431cc761e216736dbb0d6d778e0de33d8a79adce04",
+    "python_same_c_decrypt_roundtrip": true,
+    "untouched_js_cfb8_independent_equal": true,
+    "untouched_js_roundtrip": true
+  },
+  "assertions": {
+    "all_byte_native_python_and_js_cfb8_exact": true,
+    "all_source_pins_verified_before_build": true,
+    "caps_not_completeness_claims": true,
+    "four_c_blocks_equal_independent_js": true,
+    "full16_250k_then_1m_native_python_prefixes_exact": true,
+    "no_target": true,
+    "seeded_exact24_native_python_naive": true
+  },
+  "crypto_evaluated": true,
+  "full16_fresh_prefixes": [
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12780640035672,
+      "expected_completion_weight": 20922789888000,
+      "native_python_exact": true,
+      "node_limit": 250000,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 23,
+        "nodes": 250000,
+        "rejected_completion_weight": 12780640035672,
+        "rejected_plaintext": 403415,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12788678643120,
+      "expected_completion_weight": 20922789888000,
+      "native_python_exact": true,
+      "node_limit": 1000000,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 24,
+        "nodes": 1000000,
+        "rejected_completion_weight": 12788678643120,
+        "rejected_plaintext": 1612483,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    }
+  ],
+  "identity": "ASTRA",
+  "native_source_sha256": "da036a3e55a1f771bc31bb4795be85e1acc2ed58b6f744085e6c01525b3abf2a",
+  "primitive_independence": [
+    {
+      "c_output_hex": "25f179f7ee6262294fcd927e43a0dbbb9151d3b368be4f2895917f8ba28005f4",
+      "independent_equal": true,
+      "input_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "untouched_js_output_hex": "25f179f7ee6262294fcd927e43a0dbbb9151d3b368be4f2895917f8ba28005f4"
+    },
+    {
+      "c_output_hex": "0cf93bba85879cdfc0bf4f66159d0155326b47ebc97abcabaae096ff72f77ca6",
+      "independent_equal": true,
+      "input_hex": "1f1e1d1c1b1a191817161514131211100f0e0d0c0b0a09080706050403020100",
+      "untouched_js_output_hex": "0cf93bba85879cdfc0bf4f66159d0155326b47ebc97abcabaae096ff72f77ca6"
+    },
+    {
+      "c_output_hex": "25a4ae13293308f35b58d4ade1eb4983a1683bbee97d9d79588c33542cc0e771",
+      "independent_equal": true,
+      "input_hex": "8a6810964a1291aa1364de10371a0716f0f31f5fd554f78920315beaa2471910",
+      "untouched_js_output_hex": "25a4ae13293308f35b58d4ade1eb4983a1683bbee97d9d79588c33542cc0e771"
+    },
+    {
+      "c_output_hex": "10b4df6048c4a7ab0f2f5b2f3ac727984696e1cfd843200e564df517ac7c6cb8",
+      "independent_equal": true,
+      "input_hex": "e1f7c589e5ca0be8fe18d2d0e17ff214c01ab9f09d2548ecb95e7fd37bd1360d",
+      "untouched_js_output_hex": "10b4df6048c4a7ab0f2f5b2f3ac727984696e1cfd843200e564df517ac7c6cb8"
+    }
+  ],
+  "provenance": {
+    "build_commands": {
+      "dylib_command": [
+        "clang",
+        "-std=c99",
+        "-O2",
+        "-dynamiclib",
+        "-I",
+        "<worktree>/research/rev7-20260909-codex/rijndael256_controls/source",
+        "<worktree>/research/rev7-20260909-codex/rijndael256_controls/source/rijndael-256.c",
+        "-o",
+        "<temporary-build>/rijndael256.dylib"
+      ],
+      "native_command": [
+        "clang++",
+        "-std=c++17",
+        "-O3",
+        "<worktree>/research/rev7-20260909-codex/hex_cfb/native_text5_rijndael256_controls/native.cpp",
+        "<temporary-build>/rijndael.o",
+        "-o",
+        "<temporary-build>/native"
+      ],
+      "object_command": [
+        "clang",
+        "-std=c99",
+        "-O2",
+        "-I",
+        "<worktree>/research/rev7-20260909-codex/rijndael256_controls/source",
+        "-c",
+        "<worktree>/research/rev7-20260909-codex/rijndael256_controls/source/rijndael-256.c",
+        "-o",
+        "<temporary-build>/rijndael.o"
+      ]
+    },
+    "c_source": "Distrotech/libmcrypt commit 3bd338e2f808e985f5b229a7642d48c26615993f",
+    "independent_js": "untouched JavaScrypt aes.js",
+    "parent_native_diff_sha256": "03d85b57dc96c99ec853922168a76a5feba049ce5b4fefcaffa660d1c25062e5",
+    "pins": {
+      "hex_cfb/native_text5/endpoint5.py": "64516c9730f7d4381d166888b19eda612873e9edee3a2f02f8a1091e50d2529e",
+      "hex_cfb/native_text5/native_text5.cpp": "81bd9902f3f5fb0585214c2c93117523426cdc61edb524334d64412d4a5d724f",
+      "hex_cfb/prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b",
+      "rijndael256_cfb/controls.json": "511aad6d309c05b16a8b2281f69bc748f180af499988016659554324b7f135d3",
+      "rijndael256_cfb/js_cfb8.js": "024eecdebb48bb17c925caf42fb47e90eb8371479ff315cceee1d936edfa9c0b",
+      "rijndael256_cfb/runtime.py": "115ea9b644a8fa3f62d2ea17afb85434966cea5c76ebdeb3582697d2d176bae0",
+      "rijndael256_controls/build_source.py": "d32cac36412340865b2fd28d8b6437f9c2f508cd229c58881c3285d3e3039961",
+      "rijndael256_controls/controls.json": "2e164a7b6091f5a1c76a1863cd45ddb2c919597350ff20e3ce52c131ed9c804c",
+      "rijndael256_controls/controls.py": "c35dde4e66b4a5633c0b0d14086bb1011ae313448d4e460ef405dd53d29f6cb2",
+      "rijndael256_controls/js_blocks.js": "ceefc2c2c15b7cb60b07ba14539c1ec99bda682409a728bc2fa04ee4df292f52",
+      "rijndael256_controls/source/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+      "rijndael256_controls/source/aes.js": "c8d6903ff7d6b090b2050f1c59dcf63ee08ac0c084caa11f9912bf5b20f90a8a",
+      "rijndael256_controls/source/libdefs.h": "556ec4fcebae614cd90d05a2fead50d9355ff39f65b44c8f4044c7f209074c6e",
+      "rijndael256_controls/source/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+      "rijndael256_controls/source/rijndael-256.c": "fa16b72832a4cda8fd9909d88c8a7b779d352bbfb13acf76d57391dfe9219821",
+      "rijndael256_controls/source/rijndael.h": "57142416d7b11f6788a10ded626ad426aca430ed5bff34d60b87868feb3fe0e2"
+    },
+    "python_parity": "accepted Rijndael256Backend uses the same pinned C primitive; it independently exercises Python search/CFB control flow but is not a second primitive"
+  },
+  "rev7_read": false,
+  "scope": {
+    "block_size": 32,
+    "cap_runs": "fresh roots; nonadditive",
+    "cipher": "Rijndael-256 block primitive",
+    "endpoint": "TAB/LF/CR, ASCII32..126, and UTF-8 E280 93/94/98/99/A6 with terminal state0",
+    "full16_caps": [
+      250000,
+      1000000
+    ],
+    "iv": "ASCII 0 repeated 32 bytes",
+    "key": "Zombies+9NUL (16 bytes only)",
+    "mapping": "global bijection of 16 displayed hex symbols to nibble values"
+  },
+  "seeded_four_unknown": {
+    "certificate_complete": true,
+    "certificate_weight": 24,
+    "expected_completion_weight": 24,
+    "naive_exact": true,
+    "naive_permutations": 24,
+    "native_python_exact": true,
+    "node_limit": 100000,
+    "plant_mapping_and_plaintext_recovered": true,
+    "solutions": [
+      {
+        "mapping": [
+          6,
+          12,
+          15,
+          8,
+          9,
+          13,
+          7,
+          0,
+          14,
+          11,
+          5,
+          10,
+          2,
+          1,
+          4,
+          3
+        ],
+        "plaintext_hex": "52323536204153434949094c494e450d0ae28093e28094e28098e28099e280a620454e442052323536204153434949094c494e450d0ae28093e28094e28098e28099e280a620454e442052323536204153434949094c494e450d0ae28093e28094e28098e28099e280a620454e4420"
+      }
+    ],
+    "stats": {
+      "aborted_at_node_limit": false,
+      "complete": 1,
+      "maximum_depth": 111,
+      "nodes": 122,
+      "rejected_completion_weight": 23,
+      "rejected_plaintext": 10,
+      "rejected_unterminated_endpoint": 0,
+      "terminal_completion_weight": 1
+    },
+    "unknown_symbols": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "source_sha256": "eef73fc1b4abec92fc86158054bc22dc6b428328f4028eda7f894508df28b17f",
+  "target_evaluated": false
+}
