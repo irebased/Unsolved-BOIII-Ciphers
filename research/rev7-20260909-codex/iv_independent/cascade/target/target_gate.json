@@ -1,0 +1,83 @@
+{
+  "artifact_hashes": {
+    "research/rev7-20260909-codex/hex_cfb/native_siblings/controls.json": "731f874d9bf66ec55160b10a0663627609cd2b4c55930f870b314c503cc20043",
+    "research/rev7-20260909-codex/iv_independent/cascade/controls.json": "2b0b75c096da6e3333dfe3d7390cb1d8a458d551d895ab215401c32155408b87",
+    "research/rev7-20260909-codex/iv_independent/cascade/interval_extension.json": "43b7f352f14cc87b1c0452338334f9dbde3db74abdfd16dab2ff726adb269037",
+    "research/rev7-20260909-codex/iv_independent/cascade/interval_extension.py": "b704413c6fddd24128fe1d2185de2aff780a6d8b7c5924f9dfebb35fcf561dae",
+    "research/rev7-20260909-codex/iv_independent/cascade/proof.py": "1152ff62572b5914c1840ddd4af14efdc1ff26c58051a566c62bfb2ed1a1f8c0",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/README.md": "59afa51e9d90831dcdd9b3f3017c6f8a669638c73a045d20801c98ec28a72213",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/controls.json": "483fa566e1030e489f5bb2958bcada9f1f95762f83104b7b9e8437c360787ee5",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/controls.py": "fc06c5cb6287f84f2f0c4f2d1ceaa1428e7a1fd94f25d090b9536ad4be2c5c82",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/runtime.py": "8b7899fc7aedb2de04cb900876987e6b3385922d4e2e53c913562659913818f4",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/PROVENANCE.md": "6c074c6480ab322861042e7ea70677aebc97839995aa6f58715becf7100be28c",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/bfcompat/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/bfcompat/blowfish-compat.c": "3584374a6bae4df8899e82d36255bbac0472904aed2095e3c08c57a5dd5b4cad",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/bfcompat/blowfish.h": "bb4a14ecbd5dc92105b290d9261ed562a980c6e42b0d9b4b56e62b4b6c39665b",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/bfcompat/libdefs.h": "cdffb7ef7bc27b6eea90b73174077c377d8260ffd111fb8de3c2bbc938e28a31",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/bfcompat/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/loki97/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/loki97/libdefs.h": "556ec4fcebae614cd90d05a2fead50d9355ff39f65b44c8f4044c7f209074c6e",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/loki97/loki97.c": "4e18d184ec55776edab065cee35ac44a9269b4160d7d35ad4ea277da55ae3308",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/loki97/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/twofish/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/twofish/libdefs.h": "59fea1cda69837c7e4c016b36ebcc7172107491370670d3fce7dc55ed38b4ea9",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/twofish/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/twofish/twofish.c": "20e72e38b445868fe71a0274e0b9bd658c6f30cb1ad731eb3364d82e319af598",
+    "research/rev7-20260909-codex/iv_independent/cascade/runtime/source/twofish/twofish.h": "c233e43572b5837f9eddc3b6c3f495d91eaa858ade2f9eaf3bc2f959fe721a6b",
+    "research/rev7-20260909-codex/iv_independent/cascade/target/README.md": "6818c511fddacb729d446a40ff07ac36d24cb050d0a16293c647c4db7024b021",
+    "research/rev7-20260909-codex/iv_independent/cascade/target/controls.json": "0cdf349df9657818394991daf9e0c753b1e4b7c8a1aaa52a1dd43bb6f4ecd0c4",
+    "research/rev7-20260909-codex/iv_independent/cascade/target/controls.py": "306e6c3aa1e4785a1ad919194189d47092d8f98a5463adeeb43f64915bac6f2d",
+    "research/rev7-20260909-codex/iv_independent/cascade/target/prepare_gate.py": "8dd6cee30882d6ac704cb7e913c2bff3988daf5380993855f22d640002ca008c",
+    "research/rev7-20260909-codex/sources/rev9_source/controls.json": "8c21ea6e275cf5989616ea9d77a19d910e55431626a83339641421ca59947f10"
+  },
+  "authorization": "FABLE preregistered; root GO required",
+  "canonical_text_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "driver_sha256": "dea3bceff94993abb7f59993300f71552c3ca84b344e96b22d27479c3dc05d41",
+  "fable_reference": "http://127.0.0.1:7422/messages?since=138#message-139",
+  "identity": "ASTRA",
+  "mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "scope": {
+    "backends": [
+      "aes128",
+      "des",
+      "blowfish",
+      "bfcompat",
+      "rc2",
+      "twofish",
+      "loki97"
+    ],
+    "depths": [
+      1,
+      2,
+      3
+    ],
+    "empty_interval": "inconclusive and still expanded",
+    "endpoint": "A105 necessary byte filter followed by boundary-aware five-sequence UTF-8 FSA",
+    "endpoint_counts_by_depth": {
+      "1": 28,
+      "2": 784,
+      "3": 21952
+    },
+    "external_iv": "every independent IV at every layer; unknown and not searched",
+    "identity": "ASTRA",
+    "input_bytes": 546,
+    "interlayer_involutions": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "intermediate_policy": "record endpoint classification but always expand through depth 3, including rejected or empty intermediate endpoints",
+    "key_family": "fixed Zombies conventions pinned by cascade/runtime controls",
+    "mode": "CFB8",
+    "outer_orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "survivors": "retain complete known interval bytes/states and independently replay full chains under two IV suites",
+    "total_path_endpoints": 22764
+  },
+  "target_evaluated": false
+}

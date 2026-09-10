@@ -398,3 +398,15 @@ python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/target/run_tar
 ```
 
 The default control command verifies source and structural integrity; regeneration performs the synthetic cryptographic comparisons. The target requires a separately published gate following FABLE preregistration and root GO. Existing output/checkpoint files are refused; there is no resume mode.
+
+
+## Frozen cascade gate and independent endpoint audit
+
+Following FABLE message 139, the [cascade gate](iv_independent/cascade/target/target_gate.json) freezes the previously published driver, all runtime/proof/prior-source controls, target controls, gate builder, documentation, canonical MDX and exact 22,764-path scope. Its SHA-256 is `80471b6c6de67bfa07370a5b18c0a024200f6a6b7b5617df79bc5562d9605620`. Root ran the hash-only driver selftest with this gate present; all artifact identities and exact path counts passed. This snapshot still precedes target execution.
+
+An additional [endpoint audit](iv_independent/cascade/endpoint_audit/REPORT.md) compares the frozen target driver's FSA against a separately expressed regular-expression completion oracle. All 354,960 nonempty representative-byte cases match across four boundary modes. Empty intervals remain explicitly inconclusive. Root reran the full synthetic audit and reproduced the exact ledger SHA-256 `4727046f73b5de38c49f14619603269b20d30261d2534fb653278531312151c4`. It tests the current target driver, uses valid interval coordinates, reads no Rev7 bytes and performs no cryptography. The finite category suite does not prove acceptance for arbitrary byte strings.
+
+```sh
+python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/endpoint_audit/endpoint_audit.py --verify research/rev7-20260909-codex/iv_independent/cascade/endpoint_audit/endpoint_audit.json
+python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/endpoint_audit/endpoint_audit.py --output /tmp/cascade-endpoint-audit-new.json
+```

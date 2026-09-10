@@ -1,0 +1,120 @@
+{
+  "assertions": {
+    "all_nonempty_boolean_results_equal": true,
+    "empty_interval_separate_inconclusive": true,
+    "no_counterexample": true
+  },
+  "boundary_modes": [
+    "real_real",
+    "internal_internal",
+    "internal_realright",
+    "realleft_internalright"
+  ],
+  "cases": 354960,
+  "categories": [
+    "41",
+    "09",
+    "0a",
+    "0d",
+    "20",
+    "7e",
+    "00",
+    "ff",
+    "e2",
+    "80",
+    "93",
+    "94",
+    "98",
+    "99",
+    "a6",
+    "81",
+    "c2"
+  ],
+  "category_count": 17,
+  "crypto_evaluated": false,
+  "distribution": {
+    "internal_internal/fsa=False/regex=False": 84988,
+    "internal_internal/fsa=True/regex=True": 3752,
+    "internal_realright/fsa=False/regex=False": 85586,
+    "internal_realright/fsa=True/regex=True": 3154,
+    "real_real/fsa=False/regex=False": 87121,
+    "real_real/fsa=True/regex=True": 1619,
+    "realleft_internalright/fsa=False/regex=False": 86814,
+    "realleft_internalright/fsa=True/regex=True": 1926
+  },
+  "empty_interval": [
+    {
+      "coordinates": [
+        0,
+        0,
+        0
+      ],
+      "fsa_accepted": null,
+      "fsa_classification": "inconclusive_empty",
+      "mode": "real_real",
+      "regex_would_match": true
+    },
+    {
+      "coordinates": [
+        3,
+        3,
+        6
+      ],
+      "fsa_accepted": null,
+      "fsa_classification": "inconclusive_empty",
+      "mode": "internal_internal",
+      "regex_would_match": true
+    },
+    {
+      "coordinates": [
+        3,
+        3,
+        3
+      ],
+      "fsa_accepted": null,
+      "fsa_classification": "inconclusive_empty",
+      "mode": "internal_realright",
+      "regex_would_match": true
+    },
+    {
+      "coordinates": [
+        0,
+        0,
+        3
+      ],
+      "fsa_accepted": null,
+      "fsa_classification": "inconclusive_empty",
+      "mode": "realleft_internalright",
+      "regex_would_match": true
+    }
+  ],
+  "identity": "ASTRA",
+  "mismatches": [],
+  "oracle": {
+    "engine": "Python re.fullmatch compiled once",
+    "internal_left_completions": [
+      "",
+      "e2",
+      "e280"
+    ],
+    "internal_right_completions": [
+      "",
+      "8093",
+      "93"
+    ],
+    "language": "TAB/LF/CR, ASCII 32..126, and exact UTF-8 E2 80 (93|94|98|99|A6)",
+    "real_boundary_completion": "empty only"
+  },
+  "rev7_read": false,
+  "scope": "Synthetic endpoint audit only; category-product byte strings of lengths 1..4.",
+  "source_hashes": {
+    "run_target.py": "dea3bceff94993abb7f59993300f71552c3ca84b344e96b22d27479c3dc05d41"
+  },
+  "target_evaluated": false,
+  "tested_lengths": [
+    1,
+    2,
+    3,
+    4
+  ]
+}
