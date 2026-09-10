@@ -1,0 +1,42 @@
+{
+  "identity": "ASTRA",
+  "status": "PASS",
+  "target_result_sha256": "313899571bc5e9ca5152b245d6e94238891d8bcdf6081569a55fff80b0ad2d3c",
+  "verifier_sha256": "12cb2170e641eee6dcbf52431f5127fd5a928c23585551902356acc4431d5870",
+  "controls": 19,
+  "replayed_decryptions": 1560,
+  "verified_windows": 3080,
+  "output_hashes_verified": 1560,
+  "flags": 0,
+  "runtime_metrics": {
+    "calls": 1560,
+    "key_clears": 1560,
+    "iv_clears": 1520
+  },
+  "global_minima": {
+    "full": {
+      "D": 211,
+      "tied_context_ids": [
+        "byte_pair_reverse|blowfish|ncfb|ZOMBIES|ascii0",
+        "visible_token_reverse|3-way|ctr|ZOMBIES|ascii0"
+      ]
+    },
+    "tail": {
+      "D": 208,
+      "tied_context_ids": [
+        "visible_token_reverse|3-way|ctr|ZOMBIES|ascii0"
+      ]
+    }
+  },
+  "ranges": {
+    "full": {
+      "min": 211,
+      "max": 240
+    },
+    "tail": {
+      "min": 208,
+      "max": 239
+    }
+  },
+  "scope": "Independent orientation reconstruction and histogram scoring; same pinned cipher runtime. Verifies recorded hashes and scoring, not independent cryptographic conformance."
+}

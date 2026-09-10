@@ -1,0 +1,10 @@
+{
+  "identity": "ASTRA",
+  "status": "PASS",
+  "actual_ra_controls_sha256": "8f52808d036e3b1243370e7db76583f1ec355d7bf30e767e0b0cb0234be67a4c",
+  "raw_canonical_sha256": "1256ed980e4f4c3ade5fc681bdec6002650716898ef2d00f2d69e938e9420059",
+  "unchanged_upstream_files": 242,
+  "upstream_archive_sha256": "864c6f37bdd6759ab6d16ec38652acb682f9c8e19ef17595ea4ed7793a11c280",
+  "target_decrypted": false,
+  "note": "First control invocation omitted --data and exited before running; corrected --data invocation passed. Canonical raw data compared for identity only; no target decrypt."
+}

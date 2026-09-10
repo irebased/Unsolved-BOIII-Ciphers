@@ -1,0 +1,75 @@
+{
+  "corruptions_rejected": [
+    "bytes_without_hash",
+    "histogram",
+    "alias_membership",
+    "duplicate_id",
+    "occupancy"
+  ],
+  "identity": "ASTRA",
+  "positive_summary": {
+    "flagged_count": 2,
+    "flags": [
+      {
+        "D": 69,
+        "id": "pre=identity|prim=P|mode=m|key=K|kd=d|iv=a",
+        "n": 128,
+        "threshold_d": 69
+      },
+      {
+        "D": 69,
+        "id": "pre=identity|prim=P|mode=m|key=K|kd=d|iv=b",
+        "n": 128,
+        "threshold_d": 69
+      }
+    ],
+    "minimum_distinct": {
+      "D": 0,
+      "rows": [
+        {
+          "D": 0,
+          "id": "pre=reverse|prim=P|mode=m|key=K|kd=d|iv=b",
+          "n": 0
+        }
+      ]
+    },
+    "minimum_threshold_margin": {
+      "margin": 0,
+      "rows": [
+        {
+          "D": 69,
+          "id": "pre=identity|prim=P|mode=m|key=K|kd=d|iv=a",
+          "margin": 0,
+          "n": 128,
+          "threshold_d": 69
+        },
+        {
+          "D": 69,
+          "id": "pre=identity|prim=P|mode=m|key=K|kd=d|iv=b",
+          "margin": 0,
+          "n": 128,
+          "threshold_d": 69
+        }
+      ]
+    },
+    "ready_length_counts": {
+      "0": 1,
+      "128": 3
+    },
+    "rows": 4,
+    "status_counts": {
+      "ready": 3,
+      "ready_empty": 1
+    },
+    "unique_exact_outputs": 3
+  },
+  "source_pins": {
+    "occupancy_screen_controls/threshold_table.json": "2d084a536141c8e51045b1fa1052ddfc713e0e5f7a869fd62676cf788dfbb447",
+    "ra_prefix_inventory/provenance.json": "80f5a7286af043b7eff683cdd0c538af777d8d5dbcfc21fcfaffd7c1f1478378",
+    "ra_prefix_inventory/score_inventory.js": "ba580bdfee52cc401618759894812bfa87e6d703eb71c308d2f7bca70ff11a86",
+    "ra_prefix_inventory/source/ra/crates/ra-cli/src/prefix_inventory.rs": "a5670a8caf27d415e1c451ad7bc231c02674829da7cfbb0009bae8c30abfff1c"
+  },
+  "status": "synthetic controls complete",
+  "target_evaluated": false,
+  "verifier_sha256": "d09ae5af24616ecf59de2c2b0acf06b6f702e74b759f4e7fe94fe5a0b212bd6e"
+}
