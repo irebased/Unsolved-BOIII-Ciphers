@@ -1,0 +1,296 @@
+{
+  "capture_kind": "Full immutable Git source and claim bytes plus mechanically checked excerpts",
+  "claim_count": 25,
+  "claim_term_totals": {
+    "reverse_words": 0,
+    "toolfmt": 0
+  },
+  "claims": [
+    {
+      "capture": "source/ra/claims/rev7-cto2016-pre-t1.json",
+      "path": "claims/rev7-cto2016-pre-t1.json",
+      "reverse_words_matches": 0,
+      "sha256": "08b6199d0e583b669737036ffc6e39f9ecd14e842fd2b89f5eae2e94ce072ee9",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/rev7-english-v1.json",
+      "path": "claims/rev7-english-v1.json",
+      "reverse_words_matches": 0,
+      "sha256": "4dc7b52374608ac24652d0a2ffc285bc3625135b3a77a16d611e4981b7fdb871",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/rev7-hashkd-t1-2026-07-31.json",
+      "path": "claims/rev7-hashkd-t1-2026-07-31.json",
+      "reverse_words_matches": 0,
+      "sha256": "9851b6088d8243df9b5cc4eec06f6508c0cdbb8f1295f433d53bc9a388b9766a",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/rev7-post-ioc-t1.json",
+      "path": "claims/rev7-post-ioc-t1.json",
+      "reverse_words_matches": 0,
+      "sha256": "1d09e373ce229ddce44fc387f53a626b65764b6860427499563eb97d3a086bd5",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/rev7-post-t1.json",
+      "path": "claims/rev7-post-t1.json",
+      "reverse_words_matches": 0,
+      "sha256": "c8384433bef4776d179f359bfcf5caa3bda73a5159accd94688d98871545c2ca",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/rev7-salsa20-t1.json",
+      "path": "claims/rev7-salsa20-t1.json",
+      "reverse_words_matches": 0,
+      "sha256": "66901088e6d5bdc8388e3e7e28578e31184042671e7a715eff1ea7291b0f5468",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/rev7-t1t2.json",
+      "path": "claims/rev7-t1t2.json",
+      "reverse_words_matches": 0,
+      "sha256": "fb8f4618eda3f85bf79a805892e0f476e68672d985138caaf0f181af42291b8b",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/rev7-t3-retriage-encoding-valid.json",
+      "path": "claims/rev7-t3-retriage-encoding-valid.json",
+      "reverse_words_matches": 0,
+      "sha256": "e3197385cc89f5b7be76f25ca3a245fa09a054c2bf7a598cc27151fdcbcdd85d",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/rev7-t3-retriage-ioc-english.json",
+      "path": "claims/rev7-t3-retriage-ioc-english.json",
+      "reverse_words_matches": 0,
+      "sha256": "7cc712d378c8acd6a6c7b1b051045967458adf9054c56a965103debde146d06d",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/rev7-t3-retriage-printable-and-english.json",
+      "path": "claims/rev7-t3-retriage-printable-and-english.json",
+      "reverse_words_matches": 0,
+      "sha256": "47f9254f151f78e3e3c8caa1c60677613d7102b400623953738feefaf6686055",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/rev7-t3.json",
+      "path": "claims/rev7-t3.json",
+      "reverse_words_matches": 0,
+      "sha256": "f1972e9e7df7f49087a29fceeb6a4b0392e46b4faf4ad5f8de25487453b692ba",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-candidate-v2c-t1.json",
+      "path": "claims/tg4-candidate-v2c-t1.json",
+      "reverse_words_matches": 0,
+      "sha256": "0b71600b84b333bcf0be92f72982d9a621baa712b73f02d90db5e86ca506e430",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-canon-v2c-t1-2026-08-02.json",
+      "path": "claims/tg4-canon-v2c-t1-2026-08-02.json",
+      "reverse_words_matches": 0,
+      "sha256": "e5f91b783a2797e9fb4646632315aab64a410076a0a952166af4d0564391562c",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-canonical-2026-07-30.json",
+      "path": "claims/tg4-canonical-2026-07-30.json",
+      "reverse_words_matches": 0,
+      "sha256": "b7f52b228b19298f15d7c315e84053746ebe4c1334c5219c922e91dbfe818824",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-cto2016-pre-t1.json",
+      "path": "claims/tg4-cto2016-pre-t1.json",
+      "reverse_words_matches": 0,
+      "sha256": "3620e4b54e5ebba05ffd6bae4fb37484891115f58f3814421181861f66153067",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-hashkd-t1-2026-07-31.json",
+      "path": "claims/tg4-hashkd-t1-2026-07-31.json",
+      "reverse_words_matches": 0,
+      "sha256": "a96591bdbdff4d42fc8c73fe8590dfa785390241cdfbc458779fd8e619c8955f",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-official-v10-keyvariants.json",
+      "path": "claims/tg4-official-v10-keyvariants.json",
+      "reverse_words_matches": 0,
+      "sha256": "be3d324074e3b905c2c6bdf79ceab3313d0ebad5920c1c959e1b87092717f6be",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-official-v10.json",
+      "path": "claims/tg4-official-v10.json",
+      "reverse_words_matches": 0,
+      "sha256": "d9b6a56b5dfaecc52afbf12a0e3becf3c380f701c38afb44069c101446e47704",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-post-ioc-t1.json",
+      "path": "claims/tg4-post-ioc-t1.json",
+      "reverse_words_matches": 0,
+      "sha256": "81cecdc70b1a61b79a36dbeb068d0dad6952ccf67470b8680125410d17e9cfeb",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-post-t1.json",
+      "path": "claims/tg4-post-t1.json",
+      "reverse_words_matches": 0,
+      "sha256": "e96c3ebf2f8c998b5fa99408dc51810095f18857b47f64fe98721cc627798eab",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-salsa20-t1.json",
+      "path": "claims/tg4-salsa20-t1.json",
+      "reverse_words_matches": 0,
+      "sha256": "78ab8d02ce89d03125b0a3167184698033ae168645100902e22f7203b87947c9",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-t1t2-all-variants.json",
+      "path": "claims/tg4-t1t2-all-variants.json",
+      "reverse_words_matches": 0,
+      "sha256": "028c83f1db3210a986f236b0dcdd741aaff2af38fce6f5ea7aa5da3420eeb767",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-t1t2.json",
+      "path": "claims/tg4-t1t2.json",
+      "reverse_words_matches": 0,
+      "sha256": "7091ce6bc6ba3a906d2e4b93c5d44dd5bc6fd7b5db5e206d7dd61b8d63897e8b",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-t3.json",
+      "path": "claims/tg4-t3.json",
+      "reverse_words_matches": 0,
+      "sha256": "85668860c1087987b1f250436975b4c52c3539d276fb3682e326af3935804529",
+      "toolfmt_matches": 0
+    },
+    {
+      "capture": "source/ra/claims/tg4-v10-keys-english.json",
+      "path": "claims/tg4-v10-keys-english.json",
+      "reverse_words_matches": 0,
+      "sha256": "70debc7d49b076aac29011f8f4e585c48034f373ed4c86564f303173a29e1ada",
+      "toolfmt_matches": 0
+    }
+  ],
+  "identity": "ASTRA",
+  "limits": [
+    "The RA checkout had an unrelated deleted .claude/scheduled_tasks.lock entry; the four captured source files were read and hash-pinned individually.",
+    "A zero raw-text match in stored claims is not proof that no private or unpersisted run exists."
+  ],
+  "ra_head": "e6c282187cc8a555580349d819210b544e5417b1",
+  "sources": [
+    {
+      "capture": "source/ra/crates/ra-core/src/nodes.rs",
+      "line_ranges": [
+        {
+          "end": 59,
+          "start": 52,
+          "text": "simple_node!(Reverse, REVERSE, \"reverse\", \"1.0.0\", Family::Xf, schema = &[], |input, _p| {\n    let mut d = input.data.clone();\n    d.reverse();\n    Ok(Repr::new(d, input.display))\n});\n\nsimple_node!(\n/// \"Reverse words\": word order reversed, each word's own characters intact --"
+        },
+        {
+          "end": 78,
+          "start": 61,
+          "text": "/// `https://www.unit-conversion.info/texttools/` (see\n/// `docs/layering-pattern-analysis.md` \u00a78sexies). Tokens are split on ASCII\n/// whitespace runs and rejoined with a single space, matching the site's\n/// tool-page description; every solved corpus chain that records a `reverse`\n/// step is confirmed (`ra-cli`'s `corpus::reverse_fidelity` tests) to\n/// reproduce only under full character reversal, never under this node, so\n/// this exists purely to extend the search space for the two unsolved\n/// ciphers rather than to correct any existing chain.\nReverseWords, REVERSE_WORDS, \"reverse_words\", \"1.0.0\", Family::Xf, schema = &[], |input, _p| {\n    let text = String::from_utf8_lossy(&input.data);\n    let out = text\n        .split_ascii_whitespace()\n        .rev()\n        .collect::<Vec<_>>()\n        .join(\" \");\n    Ok(Repr::new(out.into_bytes(), input.display))\n});\n"
+        },
+        {
+          "end": 94,
+          "start": 87,
+          "text": "simple_node!(StripWs, STRIPWS, \"stripws\", \"1.0.0\", Family::Xf, schema = &[], |input, _p| {\n    let d: Vec<u8> = input\n        .data\n        .iter()\n        .copied()\n        .filter(|c| !c.is_ascii_whitespace())\n        .collect();\n    Ok(Repr::new(d, input.display))"
+        },
+        {
+          "end": 490,
+          "start": 467,
+          "text": "    fn reverse_words_reverses_token_order_not_characters() {\n        let n = registry().get(\"reverse_words\").unwrap();\n        let out = n.apply(&Repr::bytes(b\"one two three\".to_vec()), &Params::new()).unwrap();\n        assert_eq!(out.data, b\"three two one\");\n\n        // Genuinely distinct from full character reversal on the same input.\n        let rev = registry().get(\"reverse\").unwrap();\n        let reversed = rev.apply(&Repr::bytes(b\"one two three\".to_vec()), &Params::new()).unwrap();\n        assert_ne!(out.data, reversed.data);\n    }\n\n    #[test]\n    fn reverse_words_collapses_whitespace_runs() {\n        let n = registry().get(\"reverse_words\").unwrap();\n        let out = n.apply(&Repr::bytes(b\"  one   two  three \".to_vec()), &Params::new()).unwrap();\n        assert_eq!(out.data, b\"three two one\");\n    }\n\n    #[test]\n    fn reverse_words_is_xf_family_and_not_layer_forming() {\n        let n = registry().get(\"reverse_words\").unwrap();\n        assert_eq!(n.family(), Family::Xf);\n        assert!(!n.layer_forming());\n        assert!(!n.terminal());"
+        }
+      ],
+      "path": "crates/ra-core/src/nodes.rs",
+      "sha256": "ea93e1b0e235f691d7814eec0eef2b2a2b0c7f7c0fc1a76ffbebbc218796c43c"
+    },
+    {
+      "capture": "source/ra/crates/ra-cli/src/corpus.rs",
+      "line_ranges": [
+        {
+          "end": 51,
+          "start": 43,
+          "text": "pub struct Target {\n    pub id: String,\n    pub raw: String,\n    pub display: Display,\n    pub display_hint: &'static str,\n    pub solved: bool,\n    pub plaintext: Option<String>,\n    pub steps: Vec<serde_json::Value>,\n    /// A project-supplied re-reading that resolves some or all of `raw`'s open glyph"
+        },
+        {
+          "end": 119,
+          "start": 82,
+          "text": "pub fn load_target(data: &Path, id: &str) -> Result<Target> {\n    for map in MAPS {\n        let path = data.join(map);\n        if !path.is_file() {\n            continue;\n        }\n        let v = read_json(&path)?;\n        let Some(arr) = v.as_array() else { continue };\n        for rec in arr {\n            if rec[\"id\"].as_str() != Some(id) {\n                continue;\n            }\n            let raw = rec[\"ciphertext\"]\n                .as_str()\n                .ok_or_else(|| anyhow!(\"cipher {id} has no ciphertext in the corpus\"))?\n                .to_string();\n            let compact: String = raw.chars().filter(|c| !c.is_whitespace()).collect();\n            // infer the display from the character set actually present\n            let (display, hint) = if compact.chars().all(|c| c.is_ascii_hexdigit()) {\n                (Display::Hex, \"hex\")\n            } else if compact.chars().all(|c| c.is_ascii_digit()) {\n                (Display::Decimal, \"decimal\")\n            } else {\n                (Display::Base64, \"base64\")\n            };\n            return Ok(Target {\n                id: id.to_string(),\n                raw,\n                display,\n                display_hint: hint,\n                solved: rec[\"solved\"].as_bool().unwrap_or(false),\n                plaintext: rec[\"plaintext\"].as_str().map(str::to_string),\n                steps: rec[\"solution\"][\"steps\"]\n                    .as_array()\n                    .cloned()\n                    .unwrap_or_default(),\n                ciphertext_canonical: rec[\"ciphertext_canonical\"].as_str().map(str::to_string),\n            });"
+        }
+      ],
+      "path": "crates/ra-cli/src/corpus.rs",
+      "sha256": "964793ef1019be613b28bcfb68cf177285e88562b34be7acd90cf4b31d703e01"
+    },
+    {
+      "capture": "source/ra/crates/ra-cli/src/sweep.rs",
+      "line_ranges": [
+        {
+          "end": 251,
+          "start": 229,
+          "text": "    /// Transform applied to the **raw ciphertext text**, before the initial\n    /// decode. Unlike `--xf`, which sits at a tier-specific position after the\n    /// initial decode, this is the genuine top of the stack in every tier \u2014 the\n    /// only place a `bwt` sentinel (e.g. `|`) survives to be seen, since the\n    /// initial decode (e.g. `b64decode`) would otherwise consume it first.\n    ///\n    /// Values: `identity`, `bwt`, `reverse`, `reverse_words` (word order\n    /// reversed, each word intact -- the distinct sibling of `reverse` on\n    /// `unit-conversion.info/texttools`), `stripws`, `group` (group-of-5),\n    /// `rot:n=<1..25>`, `beaufort:key=<K>` (default 52-character alphabet),\n    /// `cto_caesar:key=<n>`, `cto_beaufort:key=<K>`, `cto_trithemius` (no\n    /// parameter -- the site itself has no key field), `cto_gronsfeld:key=<digits>`,\n    /// `cto_rotation:n=<blocksize>[,deg=<90|180|270>]` (deg defaults to 90) --\n    /// the last five are 2016 CrypTool Online tools, ported against their\n    /// literal JS (`ra_core::classical::cto2016`) -- or a `+`-joined sequence\n    /// of any of these applied left to right, e.g. `stripws+reverse` or\n    /// `stripws+cto_beaufort:key=ZOMBIES`. A rejecting step (only `bwt` can\n    /// reject today) skips the candidate, same as `--xf`.\n    #[arg(long, value_delimiter = ',', default_value = \"identity\")]\n    pub pre: Vec<String>,\n\n    /// Transform applied to the **terminal decrypted output** \u2014 after the tier's\n    /// last modern layer, in every tier. Closes the \"trailing classical layer\""
+        },
+        {
+          "end": 510,
+          "start": 482,
+          "text": "enum Pre {\n    Identity,\n    /// Inverse Burrows-Wheeler transform, default sentinel `|`.\n    Bwt,\n    Reverse,\n    /// `reverse_words`: word order reversed, each word's own characters\n    /// intact \u2014 the distinct sibling `reverse` (full character reversal)\n    /// exposed here so the sweep can cover both of\n    /// `unit-conversion.info/texttools`'s \"Reverse text\"/\"Reverse words\"\n    /// tools (see `docs/layering-pattern-analysis.md` \u00a78sexies and\n    /// `ra_core::nodes::ReverseWords`).\n    ReverseWords,\n    StripWs,\n    /// `group` with the node's own default width (5), matching the node's\n    /// `group:size=5` default and rev7's observed group-of-5 hex formatting.\n    Group,\n    /// `rot:n=<1..25>`, the classical Caesar-family shift over A-Z/a-z.\n    Rot(u8),\n    /// `beaufort:key=<K>`, over the node's own default 52-character mixed-case\n    /// alphabet \u2014 the same alphabet rev1's recorded chain needs. `K` is drawn\n    /// from the sweep's own `--keys` vocabulary rather than invented.\n    Beaufort(String),\n    /// `cto_caesar:key=<n>` \u2014 CrypTool Online 2016's Caesar app (`cto_caesar`\n    /// node), a keyed shift over its own flat 52-character default alphabet.\n    /// Unlike [`Pre::Rot`], a shift here can cross the upper/lowercase\n    /// boundary (see `cto_caesar`'s own module docs) \u2014 this is a genuinely\n    /// different cipher from `rot`, not an alias.\n    CtoCaesar(i64),\n    /// `cto_beaufort:key=<K>` \u2014 the alphabet-authoritative 2016 CrypTool"
+        },
+        {
+          "end": 731,
+          "start": 698,
+          "text": "    /// prepend directly to the initial-decode step. Empty for `Identity`.\n    fn chain_prefix(&self) -> String {\n        let steps = self.chain_steps();\n        if steps.is_empty() {\n            String::new()\n        } else {\n            format!(\"{} | \", steps.join(\" | \"))\n        }\n    }\n\n    /// `None` means this transform rejected the raw ciphertext text (`Bwt`,\n    /// `Rot`, `Group` and `Beaufort` are all no-fail; only `Bwt` can reject\n    /// today, same as before, but a `Composite` step can fail partway through\n    /// and the whole value then rejects, same as any other inapplicable step).\n    fn apply(&self, data: &[u8]) -> Option<Vec<u8>> {\n        match self {\n            Pre::Identity => Some(data.to_vec()),\n            Pre::Bwt => ra_core::classical::bwt::inverse_bwt(data, b'|').ok(),\n            Pre::Reverse => apply_node(\"reverse\", ra_core::Params::new(), data),\n            Pre::ReverseWords => apply_node(\"reverse_words\", ra_core::Params::new(), data),\n            Pre::StripWs => apply_node(\"stripws\", ra_core::Params::new(), data),\n            Pre::Group => apply_node(\"group\", ra_core::Params::new(), data),\n            Pre::Rot(n) => apply_node(\"rot\", ra_core::Params::new().set(\"n\", *n as i64), data),\n            Pre::Beaufort(key) => {\n                apply_node(\"beaufort\", ra_core::Params::new().set(\"key\", key.as_str()), data)\n            }\n            Pre::CtoCaesar(n) => apply_node(\"cto_caesar\", ra_core::Params::new().set(\"key\", *n), data),\n            Pre::CtoBeaufort(key) => {\n                apply_node(\"cto_beaufort\", ra_core::Params::new().set(\"key\", key.as_str()), data)\n            }\n            Pre::CtoTrithemius => apply_node(\"cto_trithemius\", ra_core::Params::new(), data),\n            Pre::CtoGronsfeld(key) => {\n                apply_node(\"cto_gronsfeld\", ra_core::Params::new().set(\"key\", key.as_str()), data)\n            }"
+        },
+        {
+          "end": 1966,
+          "start": 1938,
+          "text": "    fn stage(&self, digit: usize, pre_digit: usize) -> VariantStage {\n        let mask = self.axes.variant_masks[digit];\n        let mut text = Vec::new();\n        self.axes.vspace.apply(mask, self.compact, &mut text);\n        // `--pre` runs against the raw ciphertext text, before the display's\n        // initial decode -- the genuine top of the stack. Only once it accepts\n        // the text does the display get normalised into `canonical`.\n        let pre = &self.axes.pres[pre_digit];\n        // A `--pre` transform can change the text so the display no longer decodes\n        // (e.g. ubchi turns 192 base64 chars into 191). `canonical_bytes` would\n        // silently return the UNDECODED text, which the layers below then score as\n        // though it were a decryption \u2014 16 phantom hits at score 1.0000. The strict\n        // form reports the failure so the candidate is skipped, exactly as a\n        // rejecting `bwt` is.\n        let canonical = pre\n            .apply(&text)\n            .and_then(|t| Repr::new(t, self.display).canonical_bytes_strict());\n        let staged = match (self.plan.tier, &canonical) {\n            (Tier::T2, Some(c)) => self.axes.xfs.iter().map(|x| x.apply(c)).collect(),\n            _ => Vec::new(),\n        };\n        VariantStage {\n            digit,\n            pre_digit,\n            canonical,\n            staged,\n        }\n    }\n}"
+        },
+        {
+          "end": 2416,
+          "start": 2392,
+          "text": "// Driver\n// ---------------------------------------------------------------------------\n\npub fn run(data: &Path, args: SweepArgs) -> Result<()> {\n    let target = crate::corpus::load_target(data, &args.target)?;\n    let input = Repr::new(target.raw.clone().into_bytes(), target.display);\n    let canonical = input.canonical_bytes();\n\n    let oracle = ra_oracle::oracle(&args.oracle)\n        .with_context(|| format!(\"unknown oracle {:?}\", args.oracle))?;\n    let axes = resolve_axes(&args, &target)?;\n    let compact: Vec<u8> = target\n        .raw\n        .bytes()\n        .filter(|c| !c.is_ascii_whitespace())\n        .collect();\n\n    let tiers = resolve_tiers(&args.tier, &axes)?;\n    let plans: Vec<Plan> = tiers.iter().map(|&t| Plan::new(t, &axes)).collect();\n    for p in &plans {\n        // The index is a u64, and the bijection depends on it. Refuse rather than\n        // wrap, because a wrapped index would enumerate some candidates twice while\n        // the claim asserted the full product.\n        anyhow::ensure!(\n            u64::try_from(p.total()).is_ok(),"
+        },
+        {
+          "end": 2568,
+          "start": 2559,
+          "text": "    for p in &plans {\n        let bound = bound_for(p, args.max_candidates);\n        let ctx = Ctx {\n            plan: p,\n            axes: &axes,\n            compact: &compact,\n            display: target.display,\n            oracle,\n            initial_decode,\n        };"
+        },
+        {
+          "end": 3177,
+          "start": 3167,
+          "text": "    let doc: serde_json::Value = serde_json::from_str(&raw)?;\n    let target_id = doc[\"target\"]\n        .as_str()\n        .with_context(|| format!(\"{} names no target\", path.display()))?;\n    let target = crate::corpus::load_target(data, target_id)?;\n    let compact: Vec<u8> = target\n        .raw\n        .bytes()\n        .filter(|c| !c.is_ascii_whitespace())\n        .collect();\n    let oracle_id = doc[\"oracle\"].as_str().unwrap_or(\"printable-0.75\");"
+        },
+        {
+          "end": 3239,
+          "start": 3230,
+          "text": "\n        if recompute {\n            let ctx = Ctx {\n                plan: &plan,\n                axes: &axes,\n                compact: &compact,\n                display: target.display,\n                oracle,\n                initial_decode,\n            };"
+        }
+      ],
+      "path": "crates/ra-cli/src/sweep.rs",
+      "sha256": "cac270638d68a4c828b9aeaeee5fa3aa4f13513b0a5138916f87fe301a13c1af"
+    },
+    {
+      "capture": "source/ra/crates/ra-core/src/classical/toolfmt.rs",
+      "line_ranges": [
+        {
+          "end": 30,
+          "start": 1,
+          "text": "//! Tool-artifact modelling shared by every classical-cipher node in this module.\n//!\n//! We reimplement specific *websites'* cipher tools, not the abstract cipher, so\n//! that a chain reproduces exactly what a puzzle-maker did in a browser. Beyond\n//! the algorithm itself, the tool's page imposes artifacts on the text that\n//! actually reaches the next layer:\n//!\n//! - a forced case (many tools uppercase or lowercase the result unconditionally),\n//! - grouping into blocks of `N` separated by some string (\"blocks of 5\" is\n//!   near-universal on these sites),\n//! - a trailing CRLF (and per-block newlines) left over from a select-all copy\n//!   out of a `<div>`/`<pre>` that was filled via `.innerHTML` in a Chromium\n//!   browser \u2014 a tool that instead writes into an `<input>` via `.value =`\n//!   copies cleanly, so this is per tool, not universal,\n//! - input normalisation the tool applies before transforming at all (strip\n//!   whitespace, strip characters outside its alphabet, force case, trim).\n//!\n//! [`InputNorm`] models the last of these; [`OutputFmt`] models the first three.\n//! Both are meant to be run BOTH on and off for a given chain, since a sweep is\n//! how we discover empirically which the puzzle-maker actually triggered (an\n//! `innerHTML`-backed tool's CRLF is invisible in the page but present in a copy\n//! buffer, so nothing about the page tells us which the maker pasted).\n//!\n//! # Per-node defaults\n//!\n//! Whether a given artifact is even *plausible* is a property of the specific\n//! tool being emulated, not a global fact about \"classical cipher tools\" \u2014 one\n//! geocachingtoolbox tool writes via `.value =` (clean), another writes via\n//! `.innerHTML` (CRLF risk). [`read_input_norm`] and [`read_output_fmt`]\n//! therefore both take the emulating node's defaults as an explicit argument;"
+        }
+      ],
+      "path": "crates/ra-core/src/classical/toolfmt.rs",
+      "sha256": "c4717437e85ac583cca4e412784b8665f2b2b1ee1e83e6eef5d8fcd2e2f9c303"
+    }
+  ]
+}

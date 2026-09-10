@@ -1,0 +1,103 @@
+{
+  "actual_module_tests": {
+    "all_named_tests_ok": false,
+    "passed": 3
+  },
+  "claim_accounting": {
+    "candidates_evaluated": 346816512,
+    "expected_false_positives_reported": 2998.4411437619196,
+    "hit_samples_present": false,
+    "hits": 513,
+    "longest_scored_region": 546,
+    "longest_scored_region_among_passes": 546,
+    "scored_length_histogram_present": false
+  },
+  "findings": [
+    "A pass with scored_len 546 establishes a 546-byte tail and at least 90 ASCII letters, not 546 letters, printability, or full-message prose.",
+    "The synthetic 90-A plus 456-nonletter witness passes with IoC 1.0 and reports scored_len 546, proving the field cannot be interpreted as the amount of textual signal.",
+    "The claim retains 513 aggregate hits but no hit rows, letter counts, or scored-length histogram, so the 546-byte passing candidate and the reported expected-false-positive total cannot be independently diagnosed from the claim file.",
+    "The fixed-seed random fixture is one mechanics control only and carries no significance claim."
+  ],
+  "identity": "ASTRA",
+  "limits": [
+    "No Rev7 candidate is decrypted or rescored by this audit.",
+    "The false-positive formula is a model-based estimate combining an analytic binomial letter gate with an empirical conditional IoC factor; it is not a guaranteed p-value or coverage theorem."
+  ],
+  "runtime": {
+    "python": "3.9.6",
+    "rustc": "rustc 1.96.1 (31fca3adb 2026-06-26) (Homebrew)"
+  },
+  "score_semantics": {
+    "letter_filter": "ASCII alphabetic only, case folded",
+    "minimum_letters": 90,
+    "printability_gate": false,
+    "scored_len": "tail byte length before ASCII-letter filter",
+    "threshold": 0.055
+  },
+  "source_commit": "e6c282187cc8a555580349d819210b544e5417b1",
+  "source_hashes": {
+    "audit.py": "3837379ef4969d5de04553904a9e5aceacf8eff65c455d2f2c59323b2c56b1bb",
+    "harness.rs": "51e88d14d9a0aae4da9505dd48ea80bc4eefafd360e9f82e26951ee495af5b2a",
+    "source/claims/rev7-t3-retriage-ioc-english.json": "7cc712d378c8acd6a6c7b1b051045967458adf9054c56a965103debde146d06d",
+    "source/ra-cli/src/sweep.rs": "cac270638d68a4c828b9aeaeee5fa3aa4f13513b0a5138916f87fe301a13c1af",
+    "source/ra-oracle/src/ioc.rs": "4f9e0e692877c4541353f21cbaa90196921be77fd21ff16801b52bfdc9e3107a",
+    "source/ra-oracle/src/lib.rs": "982aab255f334b1fc3ed22f46e039a095ef3cddf70a48b2bb615ce4a91e1b02f"
+  },
+  "sweep_replayed": false,
+  "synthetic": {
+    "fixed_seed_uniform_bytes": {
+      "actual_rust": {
+        "ioc": 0.03850333799099519,
+        "letter_count": 114,
+        "passed": false,
+        "scored_len": 546
+      },
+      "independent_reference": {
+        "ioc": 0.03850333799099519,
+        "letter_count": 114,
+        "passed": false,
+        "scored_len": 546,
+        "sha256": "75e6e1904ae8fbddd79d9b971eda4e7feb1c8c8bbe1660497a1c8d0c165f75e0"
+      }
+    },
+    "known_prose_plus_nonletters": {
+      "actual_rust": {
+        "ioc": 0.0710016420361248,
+        "letter_count": 175,
+        "passed": true,
+        "scored_len": 546
+      },
+      "independent_reference": {
+        "ioc": 0.0710016420361248,
+        "letter_count": 175,
+        "passed": true,
+        "scored_len": 546,
+        "sha256": "192cc8cfd4c7c4da2622fe764d24e0881796774d99b6e2b17502324aa334fb5a"
+      }
+    },
+    "ninety_A_plus_nonletters": {
+      "actual_rust": {
+        "ioc": 1.0,
+        "letter_count": 90,
+        "passed": true,
+        "scored_len": 546
+      },
+      "independent_reference": {
+        "ioc": 1.0,
+        "letter_count": 90,
+        "passed": true,
+        "scored_len": 546,
+        "sha256": "3e686faf8cd1853a7da9647598279cc6b5bb779e88411c8134ab8d3734de5a0a"
+      }
+    }
+  },
+  "target_evaluated": false,
+  "uniform_byte_model_at_546": {
+    "ascii_letter_probability": 0.203125,
+    "code_estimated_pass_probability_upper": 9.899929721018351e-05,
+    "conditional_ioc_factor": 0.0001,
+    "expected_if_all_346816512_candidates_had_scored_len_546": 34334.59094888718,
+    "factor_basis": "empirical conservative factor from documented 20,000,000-trial-per-letter-length calibration; not a mathematical guarantee",
+    "probability_at_least_90_letters": 0.989992972101835
+  }
+}

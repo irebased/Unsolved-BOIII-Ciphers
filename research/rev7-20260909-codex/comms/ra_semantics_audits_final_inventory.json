@@ -1,0 +1,359 @@
+{
+  "artifacts": [
+    {
+      "bytes": 6395,
+      "encoding": "utf-8",
+      "git_blob_sha1": "7b2ed77e9f150a3659a1a3865aaef4773a135587",
+      "path": "research/rev7-20260909-codex/audit/octal_audit.py",
+      "sha256": "e25cfe75323e941a0fc951b518b43f6dfc5c4473c0bb125048d227c8e40e05a0"
+    },
+    {
+      "bytes": 9142,
+      "encoding": "utf-8",
+      "git_blob_sha1": "6b0ca306ce401c15a92b7015401bf73f84988041",
+      "path": "research/rev7-20260909-codex/audit/octal_audit_results.json",
+      "sha256": "8b6f059370dc9e6cdbe427f76e7fedd5cdbb3df4e3d5eff93c8b27122637fddd"
+    },
+    {
+      "bytes": 4871,
+      "encoding": "utf-8",
+      "git_blob_sha1": "96dcda5d7164c1ca77e24b80daa2b655b6408792",
+      "path": "research/rev7-20260909-codex/bifid16_controls/odd_rectangle_join_target/COVERAGE_FINAL.md",
+      "sha256": "10e0b6e84df820d401454d92f2f6cb3dc4869fb42fb365bc1ab9bcd0950633c4"
+    },
+    {
+      "bytes": 7079,
+      "encoding": "utf-8",
+      "git_blob_sha1": "30ba0f17a321052798300aac25bd061d3b468238",
+      "path": "research/rev7-20260909-codex/comms/publish_ra_semantics_audits.py",
+      "sha256": "aaff220e8a4e9cf8fd188ad610b260113db8aa0693c4b4f963435bbc45afb919"
+    },
+    {
+      "bytes": 3447,
+      "encoding": "utf-8",
+      "git_blob_sha1": "925d972dc2e87a367423923793f617ed8d61ecd6",
+      "path": "research/rev7-20260909-codex/coverage/prefix_group_alignment_audit/README.md",
+      "sha256": "7f1942c4d4179b47bb06480c938141bca3a767133f8c7ddfd4ca1256c30dea5a"
+    },
+    {
+      "bytes": 8726,
+      "encoding": "utf-8",
+      "git_blob_sha1": "fd5d1702f90c4019e78c57420a9d20dad0b05d94",
+      "path": "research/rev7-20260909-codex/coverage/prefix_group_alignment_audit/audit.py",
+      "sha256": "2a9ddb87a2856ff1903266ac353c99b910f3561f79fc30a4a6660bd75a4424ba"
+    },
+    {
+      "bytes": 4576,
+      "encoding": "utf-8",
+      "git_blob_sha1": "0a285e55f2b1579ed8820ce7c4b3c23fe910e93c",
+      "path": "research/rev7-20260909-codex/coverage/ra_ioc_semantics_audit/REPORT.md",
+      "sha256": "4bf2fd072c98aaf72e65ec97d9af00a8a379fb1cd552eeab46ff10a64c53eb97"
+    },
+    {
+      "bytes": 4211,
+      "encoding": "utf-8",
+      "git_blob_sha1": "7e9ce52941592904123abfecc6c169ee854cf766",
+      "path": "research/rev7-20260909-codex/coverage/ra_ioc_semantics_audit/audit.json",
+      "sha256": "1b301c230ff53899a73ff1a1fda944e2711a29e381978335ba675442c809daba"
+    },
+    {
+      "bytes": 6974,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a6fe0d1b52c36f7ae332ab85a0da641c615d5359",
+      "path": "research/rev7-20260909-codex/coverage/ra_ioc_semantics_audit/audit.py",
+      "sha256": "3837379ef4969d5de04553904a9e5aceacf8eff65c455d2f2c59323b2c56b1bb"
+    },
+    {
+      "bytes": 1286,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e846149439a5a6a3eeffa0ee833d50ae88fa28cb",
+      "path": "research/rev7-20260909-codex/coverage/ra_ioc_semantics_audit/harness.rs",
+      "sha256": "51e88d14d9a0aae4da9505dd48ea80bc4eefafd360e9f82e26951ee495af5b2a"
+    },
+    {
+      "bytes": 7693,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d4a972e9234a886a9a0fe913d94eb56ef9d3933b",
+      "path": "research/rev7-20260909-codex/coverage/ra_ioc_semantics_audit/source/claims/rev7-t3-retriage-ioc-english.json",
+      "sha256": "7cc712d378c8acd6a6c7b1b051045967458adf9054c56a965103debde146d06d"
+    },
+    {
+      "bytes": 235693,
+      "encoding": "utf-8",
+      "git_blob_sha1": "952a675a6d217e6615925afdc3b997fabc6f2c99",
+      "path": "research/rev7-20260909-codex/coverage/ra_ioc_semantics_audit/source/ra-cli/src/sweep.rs",
+      "sha256": "cac270638d68a4c828b9aeaeee5fa3aa4f13513b0a5138916f87fe301a13c1af"
+    },
+    {
+      "bytes": 9349,
+      "encoding": "utf-8",
+      "git_blob_sha1": "28a858b9875143d9393bdca26eea52b21e4f6516",
+      "path": "research/rev7-20260909-codex/coverage/ra_ioc_semantics_audit/source/ra-oracle/src/ioc.rs",
+      "sha256": "4f9e0e692877c4541353f21cbaa90196921be77fd21ff16801b52bfdc9e3107a"
+    },
+    {
+      "bytes": 41536,
+      "encoding": "utf-8",
+      "git_blob_sha1": "6709f817307c145c6ac990aee8c2637d1e145d02",
+      "path": "research/rev7-20260909-codex/coverage/ra_ioc_semantics_audit/source/ra-oracle/src/lib.rs",
+      "sha256": "982aab255f334b1fc3ed22f46e039a095ef3cddf70a48b2bb615ce4a91e1b02f"
+    },
+    {
+      "bytes": 1843,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ff1d746d5f28b6e01d83d74df31d4ddc52a1baed",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/README.md",
+      "sha256": "8ab4c073cb6e6a49fbff9621c5e4096f2f6b0843958575205ace33f6e8946295"
+    },
+    {
+      "bytes": 2332,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d0050bc204f9ffe096067a9d46a27c59faba2723",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/REPORT.md",
+      "sha256": "3828d70b95d3945d31910835e3f14058196cac9f9cf088d46bb7c998ac151eed"
+    },
+    {
+      "bytes": 415,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c56a24294efa7d373291cf8a9486ae6415b6e683",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/ascii_whitespace.rs",
+      "sha256": "e9c0e688bfcd348dce90ff9bafb37a0949d11b9860884f9310d0eb6ee57d87f7"
+    },
+    {
+      "bytes": 6967,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a2c2dc3ae5dc0b64f0a41f5824a80d15977e6285",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/audit.json",
+      "sha256": "771cffd84df4a592c3848c6e792a24254a08ee7371d41655156128668f9f12b5"
+    },
+    {
+      "bytes": 9816,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ca853f81982187e3181ecf84045977036668e03b",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/audit.py",
+      "sha256": "2970b394970bdaea9071eac940fe8bc0e7539bebac26dc800b57bb00d20b3056"
+    },
+    {
+      "bytes": 5414,
+      "encoding": "utf-8",
+      "git_blob_sha1": "96117e8f0a8ecc06e6849a17d27f3ddc5f618ff5",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/rev7-cto2016-pre-t1.json",
+      "sha256": "08b6199d0e583b669737036ffc6e39f9ecd14e842fd2b89f5eae2e94ce072ee9"
+    },
+    {
+      "bytes": 13160,
+      "encoding": "utf-8",
+      "git_blob_sha1": "b49f9356b7040e280318a801976dcc993a01b96c",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/rev7-english-v1.json",
+      "sha256": "4dc7b52374608ac24652d0a2ffc285bc3625135b3a77a16d611e4981b7fdb871"
+    },
+    {
+      "bytes": 4991,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ba439ca8a4e68ebf3150576b3d23d3ac152cec90",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/rev7-hashkd-t1-2026-07-31.json",
+      "sha256": "9851b6088d8243df9b5cc4eec06f6508c0cdbb8f1295f433d53bc9a388b9766a"
+    },
+    {
+      "bytes": 5115,
+      "encoding": "utf-8",
+      "git_blob_sha1": "cfe4a840fb6fc94bba7de7d08b1b473a42bcc5f4",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/rev7-post-ioc-t1.json",
+      "sha256": "1d09e373ce229ddce44fc387f53a626b65764b6860427499563eb97d3a086bd5"
+    },
+    {
+      "bytes": 5089,
+      "encoding": "utf-8",
+      "git_blob_sha1": "07922806b4d3f2a2355c502245512f4f997475e2",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/rev7-post-t1.json",
+      "sha256": "c8384433bef4776d179f359bfcf5caa3bda73a5159accd94688d98871545c2ca"
+    },
+    {
+      "bytes": 4116,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e20b91a443630125e6cfc2f69ab0ed5dc47b6eaf",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/rev7-salsa20-t1.json",
+      "sha256": "66901088e6d5bdc8388e3e7e28578e31184042671e7a715eff1ea7291b0f5468"
+    },
+    {
+      "bytes": 6828,
+      "encoding": "utf-8",
+      "git_blob_sha1": "624020dccc9b709646c7e0ba9ea9063c01a38bf2",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/rev7-t1t2.json",
+      "sha256": "fb8f4618eda3f85bf79a805892e0f476e68672d985138caaf0f181af42291b8b"
+    },
+    {
+      "bytes": 7697,
+      "encoding": "utf-8",
+      "git_blob_sha1": "45e41dc75949a0fbaedb9a9a55b97b2b0a7b9fee",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/rev7-t3-retriage-encoding-valid.json",
+      "sha256": "e3197385cc89f5b7be76f25ca3a245fa09a054c2bf7a598cc27151fdcbcdd85d"
+    },
+    {
+      "bytes": 7693,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d4a972e9234a886a9a0fe913d94eb56ef9d3933b",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/rev7-t3-retriage-ioc-english.json",
+      "sha256": "7cc712d378c8acd6a6c7b1b051045967458adf9054c56a965103debde146d06d"
+    },
+    {
+      "bytes": 7703,
+      "encoding": "utf-8",
+      "git_blob_sha1": "46e62676aa48c0b56b7e348f4a651e979deceb19",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/rev7-t3-retriage-printable-and-english.json",
+      "sha256": "47f9254f151f78e3e3c8caa1c60677613d7102b400623953738feefaf6686055"
+    },
+    {
+      "bytes": 6510,
+      "encoding": "utf-8",
+      "git_blob_sha1": "bb78733f268200b7a52d1d62044a99ea502037ae",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/rev7-t3.json",
+      "sha256": "f1972e9e7df7f49087a29fceeb6a4b0392e46b4faf4ad5f8de25487453b692ba"
+    },
+    {
+      "bytes": 5400,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c2c10a294e4b94da5aad07e0ef7a018d11d4d486",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-candidate-v2c-t1.json",
+      "sha256": "0b71600b84b333bcf0be92f72982d9a621baa712b73f02d90db5e86ca506e430"
+    },
+    {
+      "bytes": 5400,
+      "encoding": "utf-8",
+      "git_blob_sha1": "0380d62bcdc4d5a9121a6d8600f76d8868a484de",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-canon-v2c-t1-2026-08-02.json",
+      "sha256": "e5f91b783a2797e9fb4646632315aab64a410076a0a952166af4d0564391562c"
+    },
+    {
+      "bytes": 13475,
+      "encoding": "utf-8",
+      "git_blob_sha1": "32cbe45631f451f067581b3d98e79c8d02f967e4",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-canonical-2026-07-30.json",
+      "sha256": "b7f52b228b19298f15d7c315e84053746ebe4c1334c5219c922e91dbfe818824"
+    },
+    {
+      "bytes": 5653,
+      "encoding": "utf-8",
+      "git_blob_sha1": "623722fa7a2295820604eded44d197113f2ffe70",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-cto2016-pre-t1.json",
+      "sha256": "3620e4b54e5ebba05ffd6bae4fb37484891115f58f3814421181861f66153067"
+    },
+    {
+      "bytes": 5256,
+      "encoding": "utf-8",
+      "git_blob_sha1": "757d794bca323d28e9099796526e915ad21bd4b2",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-hashkd-t1-2026-07-31.json",
+      "sha256": "a96591bdbdff4d42fc8c73fe8590dfa785390241cdfbc458779fd8e619c8955f"
+    },
+    {
+      "bytes": 14255,
+      "encoding": "utf-8",
+      "git_blob_sha1": "feead56f5c1c36c29ff9f42ba94187646f8c7ea0",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-official-v10-keyvariants.json",
+      "sha256": "be3d324074e3b905c2c6bdf79ceab3313d0ebad5920c1c959e1b87092717f6be"
+    },
+    {
+      "bytes": 13273,
+      "encoding": "utf-8",
+      "git_blob_sha1": "6670f38846160289dc4d52bbf8a19b72f501c8dc",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-official-v10.json",
+      "sha256": "d9b6a56b5dfaecc52afbf12a0e3becf3c380f701c38afb44069c101446e47704"
+    },
+    {
+      "bytes": 5272,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ab68a15a738926afceb12d8144b4e9b1230dde50",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-post-ioc-t1.json",
+      "sha256": "81cecdc70b1a61b79a36dbeb068d0dad6952ccf67470b8680125410d17e9cfeb"
+    },
+    {
+      "bytes": 5245,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2d320ba061c2ce3d1b978284bffb358150c28dfe",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-post-t1.json",
+      "sha256": "e96c3ebf2f8c998b5fa99408dc51810095f18857b47f64fe98721cc627798eab"
+    },
+    {
+      "bytes": 4383,
+      "encoding": "utf-8",
+      "git_blob_sha1": "4d7c643e18531a034782f26f676aebfe34950ee0",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-salsa20-t1.json",
+      "sha256": "78ab8d02ce89d03125b0a3167184698033ae168645100902e22f7203b87947c9"
+    },
+    {
+      "bytes": 17127,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d953200bc0ce470377b529cf0ec7a12bc2009b3f",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-t1t2-all-variants.json",
+      "sha256": "028c83f1db3210a986f236b0dcdd741aaff2af38fce6f5ea7aa5da3420eeb767"
+    },
+    {
+      "bytes": 6944,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ccdfd0ef1cb755d61f6cd09aa15caf6d07187d19",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-t1t2.json",
+      "sha256": "7091ce6bc6ba3a906d2e4b93c5d44dd5bc6fd7b5db5e206d7dd61b8d63897e8b"
+    },
+    {
+      "bytes": 6642,
+      "encoding": "utf-8",
+      "git_blob_sha1": "1eb1ede29c60443cda7c3df7d2da595b38c3a9bd",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-t3.json",
+      "sha256": "85668860c1087987b1f250436975b4c52c3539d276fb3682e326af3935804529"
+    },
+    {
+      "bytes": 14248,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2b9232172fb73bac8a308377c88027cc6cb4f43d",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/claims/tg4-v10-keys-english.json",
+      "sha256": "70debc7d49b076aac29011f8f4e585c48034f373ed4c86564f303173a29e1ada"
+    },
+    {
+      "bytes": 54670,
+      "encoding": "utf-8",
+      "git_blob_sha1": "f918192c9d676d6dd15eb92c674708532322fae8",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/crates/ra-cli/src/corpus.rs",
+      "sha256": "964793ef1019be613b28bcfb68cf177285e88562b34be7acd90cf4b31d703e01"
+    },
+    {
+      "bytes": 235693,
+      "encoding": "utf-8",
+      "git_blob_sha1": "952a675a6d217e6615925afdc3b997fabc6f2c99",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/crates/ra-cli/src/sweep.rs",
+      "sha256": "cac270638d68a4c828b9aeaeee5fa3aa4f13513b0a5138916f87fe301a13c1af"
+    },
+    {
+      "bytes": 35948,
+      "encoding": "utf-8",
+      "git_blob_sha1": "55f9d99a75522f840b0ff4ad31297042e57e828e",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/crates/ra-core/src/classical/toolfmt.rs",
+      "sha256": "c4717437e85ac583cca4e412784b8665f2b2b1ee1e83e6eef5d8fcd2e2f9c303"
+    },
+    {
+      "bytes": 29922,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c543306e34031b28249b9890e7fb8180a4c5659f",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source/ra/crates/ra-core/src/nodes.rs",
+      "sha256": "ea93e1b0e235f691d7814eec0eef2b2a2b0c7f7c0fc1a76ffbebbc218796c43c"
+    },
+    {
+      "bytes": 24586,
+      "encoding": "utf-8",
+      "git_blob_sha1": "59a0e59b497fc9579de47ce3aa8b4770a8653f9b",
+      "path": "research/rev7-20260909-codex/coverage/reverse_words_scope_audit/source_snapshot.json",
+      "sha256": "aa19836fb6b64728b8df976734348edd99ea4f871089429688e283a6e4118c82"
+    },
+    {
+      "bytes": 15663,
+      "encoding": "utf-8",
+      "git_blob_sha1": "9a7fb89f053a4c206b06d7b586e54fecbeb25d9f",
+      "path": "research/rev7-20260909-codex/hex_cfb/prototype.py",
+      "sha256": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b"
+    }
+  ],
+  "identity": "ASTRA",
+  "publication_excludes": [
+    "drafts",
+    "__pycache__"
+  ]
+}

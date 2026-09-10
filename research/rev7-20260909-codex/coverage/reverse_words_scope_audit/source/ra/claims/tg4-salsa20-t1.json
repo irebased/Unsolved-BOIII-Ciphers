@@ -1,0 +1,203 @@
+{
+  "candidates_evaluated": 1470,
+  "conformance": {
+    "all_swept_primitives_proven": false,
+    "proven_primitives": [
+      "Blowfish",
+      "Blowfish-compat",
+      "DES",
+      "Loki97",
+      "RC2",
+      "RC4",
+      "Rijndael-256",
+      "Saferplus",
+      "Serpent",
+      "Twofish",
+      "XTEA"
+    ],
+    "suite_digest": "sha256:fe40287140400be525f259e89ae8b6583584b954c3b44464f7ccb3f7e409b91c",
+    "swept_primitives": [
+      "Salsa20"
+    ],
+    "unproven_primitives": [
+      "AES",
+      "3DES",
+      "CAST-128",
+      "IDEA",
+      "Salsa20"
+    ]
+  },
+  "coverage_claimed": {
+    "size_exact_total": "1470",
+    "skeletons": [
+      {
+        "products": [
+          {
+            "0.variant": [
+              "v10"
+            ],
+            "1.iv": [
+              "ascii0",
+              "null"
+            ],
+            "1.kd": [
+              "evp-md5",
+              "evp-sha256",
+              "md5",
+              "md5-hex",
+              "md5-hex-upper",
+              "natural",
+              "null-pad-max",
+              "null-pad-next-supported",
+              "repeat-pad-max",
+              "sha1",
+              "sha1-hex",
+              "sha1-hex-upper",
+              "sha256",
+              "sha256-hex",
+              "sha256-hex-upper"
+            ],
+            "1.key": [
+              "THEGIANT",
+              "TheGiant",
+              "TheGiant_b64",
+              "ZOMBIES",
+              "Zombies",
+              "thegiant",
+              "zombies"
+            ],
+            "1.mode": [
+              "cbc",
+              "cfb",
+              "ecb",
+              "ncfb",
+              "nofb",
+              "ofb",
+              "stream"
+            ],
+            "1.prim": [
+              "Salsa20"
+            ]
+          }
+        ],
+        "size_exact": "1470",
+        "skeleton": [
+          "b64d",
+          "dec"
+        ]
+      }
+    ]
+  },
+  "coverage_claimed_digest": "sha256:9ef596832136f717312227c6ac8fb0d93b3447a6c825d7e78df2795f7bb84510",
+  "hits": 0,
+  "merkle_root": "0f5db766a2082e58a41052bb4083aeebde2e1f6fec40470b9f10a72b7bc9a2ad",
+  "oracle": "encoding-valid",
+  "target": "tg4",
+  "tiers": [
+    {
+      "bounded": false,
+      "candidates_evaluated": 1470,
+      "coverage_size_exact": "1470",
+      "elapsed_secs": 0.006799834,
+      "enumeration_order": [
+        {
+          "dim": "1.iv",
+          "values": [
+            "ascii0",
+            "null"
+          ]
+        },
+        {
+          "dim": "1.kd",
+          "values": [
+            "natural",
+            "null-pad-max",
+            "null-pad-next-supported",
+            "repeat-pad-max",
+            "md5",
+            "sha1",
+            "sha256",
+            "md5-hex",
+            "sha1-hex",
+            "sha256-hex",
+            "md5-hex-upper",
+            "sha1-hex-upper",
+            "sha256-hex-upper",
+            "evp-md5",
+            "evp-sha256"
+          ]
+        },
+        {
+          "dim": "1.key",
+          "values": [
+            "Zombies",
+            "ZOMBIES",
+            "zombies",
+            "TheGiant",
+            "thegiant",
+            "THEGIANT",
+            "TheGiant_b64"
+          ]
+        },
+        {
+          "dim": "1.mode",
+          "values": [
+            "stream",
+            "cfb",
+            "ecb",
+            "cbc",
+            "ncfb",
+            "ofb",
+            "nofb"
+          ]
+        },
+        {
+          "dim": "1.prim",
+          "values": [
+            "Salsa20"
+          ]
+        },
+        {
+          "dim": "0.variant",
+          "values": [
+            "v10"
+          ]
+        }
+      ],
+      "expected_false_positives": 2.399487604845854e-59,
+      "hits": 0,
+      "longest_scored_region": 144,
+      "longest_scored_region_among_passes": null,
+      "merkle_root": "0f5db766a2082e58a41052bb4083aeebde2e1f6fec40470b9f10a72b7bc9a2ad",
+      "planned_candidates": "1470",
+      "skeleton": [
+        "b64d",
+        "dec"
+      ],
+      "tier": "t1"
+    }
+  ],
+  "transcription": {
+    "admissible_readings": 1,
+    "open_glyph_pairs": [
+      "I/l"
+    ],
+    "open_positions": [],
+    "recorded_reading": "v00",
+    "resolved_glyph_pairs": [
+      "0/O"
+    ],
+    "resolved_positions": [
+      37,
+      64,
+      86,
+      94,
+      105,
+      112,
+      114
+    ],
+    "variant_space_complete": true,
+    "variants_covered": 1
+  },
+  "variant": "v00"
+}

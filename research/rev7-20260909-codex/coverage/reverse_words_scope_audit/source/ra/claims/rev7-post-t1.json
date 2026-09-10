@@ -1,0 +1,235 @@
+{
+  "candidates_evaluated": 35280,
+  "conformance": {
+    "all_swept_primitives_proven": false,
+    "proven_primitives": [
+      "Blowfish",
+      "Blowfish-compat",
+      "DES",
+      "Loki97",
+      "RC2",
+      "RC4",
+      "Rijndael-256",
+      "Saferplus",
+      "Serpent",
+      "Twofish",
+      "XTEA"
+    ],
+    "suite_digest": "sha256:fe40287140400be525f259e89ae8b6583584b954c3b44464f7ccb3f7e409b91c",
+    "swept_primitives": [
+      "DES",
+      "RC2",
+      "RC4",
+      "Blowfish",
+      "Blowfish-compat",
+      "Twofish",
+      "Serpent",
+      "Rijndael-256",
+      "AES",
+      "XTEA",
+      "Loki97",
+      "Saferplus",
+      "3DES",
+      "CAST-128",
+      "IDEA"
+    ],
+    "unproven_primitives": [
+      "AES",
+      "3DES",
+      "CAST-128",
+      "IDEA"
+    ]
+  },
+  "coverage_claimed": {
+    "size_exact_total": "35280",
+    "skeletons": [
+      {
+        "products": [
+          {
+            "0.post": [
+              "bacon",
+              "identity",
+              "reverse",
+              "reverse|rot:n=20",
+              "rot:n=13",
+              "rot:n=20",
+              "rot:n=6"
+            ],
+            "0.variant": [
+              "hex-exact"
+            ],
+            "1.iv": [
+              "ascii0",
+              "null"
+            ],
+            "1.kd": [
+              "evp-md5",
+              "md5",
+              "natural",
+              "null-pad-max",
+              "null-pad-next-supported",
+              "repeat-pad-max",
+              "sha256",
+              "sha256-hex"
+            ],
+            "1.key": [
+              "ZOMBIES",
+              "Zombies",
+              "zombies"
+            ],
+            "1.mode": [
+              "cbc",
+              "cfb",
+              "ecb",
+              "ncfb",
+              "nofb",
+              "ofb",
+              "stream"
+            ],
+            "1.prim": [
+              "3DES",
+              "AES",
+              "Blowfish",
+              "Blowfish-compat",
+              "CAST-128",
+              "DES",
+              "IDEA",
+              "Loki97",
+              "RC2",
+              "RC4",
+              "Rijndael-256",
+              "Saferplus",
+              "Serpent",
+              "Twofish",
+              "XTEA"
+            ]
+          }
+        ],
+        "size_exact": "35280",
+        "skeleton": [
+          "b64d",
+          "dec"
+        ]
+      }
+    ]
+  },
+  "coverage_claimed_digest": "sha256:45ea80acec963678d47052f942e6ae29f4472099b3d59bdfa2ccb8d223c2f412",
+  "hits": 0,
+  "merkle_root": "0851b3e4c1f4fb6de93de08f3872ca7ab0b4da241f25b7289c2cd0419e42b0da",
+  "oracle": "printable-and-english",
+  "target": "rev7",
+  "tiers": [
+    {
+      "bounded": false,
+      "candidates_evaluated": 35280,
+      "coverage_size_exact": "35280",
+      "elapsed_secs": 0.799396,
+      "enumeration_order": [
+        {
+          "dim": "1.iv",
+          "values": [
+            "ascii0",
+            "null"
+          ]
+        },
+        {
+          "dim": "1.kd",
+          "values": [
+            "natural",
+            "null-pad-max",
+            "null-pad-next-supported",
+            "repeat-pad-max",
+            "md5",
+            "sha256",
+            "sha256-hex",
+            "evp-md5"
+          ]
+        },
+        {
+          "dim": "1.key",
+          "values": [
+            "Zombies",
+            "ZOMBIES",
+            "zombies"
+          ]
+        },
+        {
+          "dim": "1.mode",
+          "values": [
+            "cfb",
+            "ecb",
+            "cbc",
+            "ncfb",
+            "ofb",
+            "nofb",
+            "stream"
+          ]
+        },
+        {
+          "dim": "1.prim",
+          "values": [
+            "DES",
+            "RC2",
+            "RC4",
+            "Blowfish",
+            "Blowfish-compat",
+            "Twofish",
+            "Serpent",
+            "Rijndael-256",
+            "AES",
+            "XTEA",
+            "Loki97",
+            "Saferplus",
+            "3DES",
+            "CAST-128",
+            "IDEA"
+          ]
+        },
+        {
+          "dim": "0.post",
+          "values": [
+            "identity",
+            "reverse",
+            "bacon",
+            "rot:n=13",
+            "rot:n=20",
+            "rot:n=6",
+            "reverse|rot:n=20"
+          ]
+        },
+        {
+          "dim": "0.variant",
+          "values": [
+            "hex-exact"
+          ]
+        }
+      ],
+      "expected_false_positives": 28055.999999998927,
+      "hits": 0,
+      "longest_scored_region": 546,
+      "longest_scored_region_among_passes": null,
+      "merkle_root": "0851b3e4c1f4fb6de93de08f3872ca7ab0b4da241f25b7289c2cd0419e42b0da",
+      "planned_candidates": "35280",
+      "skeleton": [
+        "b64d",
+        "dec"
+      ],
+      "tier": "t1"
+    }
+  ],
+  "transcription": {
+    "admissible_readings": 1,
+    "open_glyph_pairs": [
+      "I/l"
+    ],
+    "open_positions": [],
+    "recorded_reading": "hex-exact",
+    "resolved_glyph_pairs": [
+      "0/O"
+    ],
+    "resolved_positions": [],
+    "variant_space_complete": true,
+    "variants_covered": 1
+  },
+  "variant": "hex-exact"
+}
