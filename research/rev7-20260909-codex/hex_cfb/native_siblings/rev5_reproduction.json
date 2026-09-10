@@ -1,0 +1,46 @@
+{
+  "controls_json": "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/hex_cfb/native_siblings/controls.json",
+  "controls_json_sha256": "731f874d9bf66ec55160b10a0663627609cd2b4c55930f870b314c503cc20043",
+  "controls_sha256": "bc7ba1a64dbc2a951d9edc126a5ff5c97c181c470d3772b690b9dbdffe517739",
+  "controls_source": "/private/tmp/rev7-astra-20260909/research/rev7-20260909-codex/hex_cfb/native_siblings/controls.py",
+  "identity": "ASTRA",
+  "input_sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+  "input_source": "/private/tmp/rev7-astra-20260909/lavender/src/data/ciphers/revelations.json",
+  "replay": "rev5_control() only; frozen source implementation, not an independent cipher implementation",
+  "returned_result": {
+    "blowfish_input_bytes": 825,
+    "blowfish_output_bytes": 825,
+    "complete_chain_reencryptions": {
+      "blowfish": true,
+      "loki97": true,
+      "rc2": true
+    },
+    "final_bytes": 615,
+    "full_match_after_explicit_apostrophe_normalization": true,
+    "hashes": {
+      "blowfish_input": "d672751b7b59a2970c7a5c4a66dcf0f25da8aea70bd8940d72b25b3a72b50f6b",
+      "blowfish_output": "2f79ad4e253897342a66ae39aa446cec836d26ecd25b18b966a3cbbede1b553a",
+      "final": "0ee2667cc86cbbe2ac535855ef00ee43b0b7b9dcc2aef3fca7239271bdb9635a",
+      "loki97_input": "bb50de29c523ff967a95adabfcfbee97a00480fd177cd6e97a8d74c1c85c860e",
+      "outer": "8b2198d06b40c18c1418f55d0efc7e0b9ba02fc0d9389c3942263018c28b00de",
+      "rc2_output": "7d021f785f148dfaf6b803c8ad159d2da79ab05a2db59348470e1045f99f1d71"
+    },
+    "input_source": "lavender/src/data/ciphers/revelations.json rev5",
+    "loki97_input_bytes": 615,
+    "normalized_lengths": {
+      "recorded": 609,
+      "recovered": 609
+    },
+    "only_record_difference": {
+      "index": 384,
+      "recorded": "U+0027",
+      "recovered": "U+2019"
+    },
+    "outer_bytes": 1656,
+    "rc2_output_bytes": 1656,
+    "rc2_trailing_lf_bytes": 6,
+    "reverse_operation": "strip trailing LF bytes, reverse all hex characters, then bytes.fromhex",
+    "strict_utf8": true
+  },
+  "target_evaluated": false
+}

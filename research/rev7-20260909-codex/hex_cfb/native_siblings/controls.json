@@ -1,0 +1,375 @@
+{
+  "artifact_hashes": {
+    "controls.py": "bc7ba1a64dbc2a951d9edc126a5ff5c97c181c470d3772b690b9dbdffe517739",
+    "native_siblings": "5c5e7c84ef29fb153cee337d2c6f93f29f3263509697db7e2307fe86b8722bec",
+    "native_siblings.cpp": "2c58836180e218e65c0591fb687ff2cf136c7200535e7d5b5a26dc8fa27456ca",
+    "prototype.py": "416e25dea93945f3634a77a41ebebb22906a58e97fdcbbbb7f44d27f7f2a511b"
+  },
+  "assertions": {
+    "all_passed": true,
+    "caps_are_incomplete_prefixes_only": true,
+    "native_cfb8_matches_python_recurrence": true,
+    "native_stats_weights_maps_plaintexts_equal_python": true,
+    "rc2_matches_independent_pycryptodome": true,
+    "rev5_chain_full_except_documented_record_glyph": true,
+    "seeded_survivors_equal_naive_24": true,
+    "source_kats": true
+  },
+  "build": {
+    "commands": [
+      "clang -shared -fPIC -O2 -Isource_build -Isource source/rc2.c -o source_build/librc2.so",
+      "clang -shared -fPIC -O2 -Isource_build -Isource source/loki97.c -o source_build/libloki97.so",
+      "clang -O2 -Isource_build -Isource -c source/rc2.c -o source_build/rc2.o",
+      "clang -O2 -Isource_build -Isource -c source/loki97.c -o source_build/loki97.o",
+      "clang++ -std=c++17 -O3 native_siblings.cpp source_build/rc2.o source_build/loki97.o -o native_siblings"
+    ],
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "platform": "macOS-26.4-arm64-arm-64bit",
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "full16_capped_exact_prefix": [
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12951562695618,
+      "cipher": "rc2",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.02983,
+      "node_limit": 250000,
+      "python_plus_native_wall_seconds": 0.809437208,
+      "solution_count": 0,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 21,
+        "nodes": 250000,
+        "rejected_completion_weight": 12951562695618,
+        "rejected_plaintext": 403251,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12952037586642,
+      "cipher": "rc2",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.118631,
+      "node_limit": 1000000,
+      "python_plus_native_wall_seconds": 3.234933458,
+      "solution_count": 0,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 22,
+        "nodes": 1000000,
+        "rejected_completion_weight": 12952037586642,
+        "rejected_plaintext": 1614493,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 12981239544360,
+      "cipher": "loki97",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.0605909,
+      "node_limit": 250000,
+      "python_plus_native_wall_seconds": 0.8672369160000004,
+      "solution_count": 0,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 24,
+        "nodes": 250000,
+        "rejected_completion_weight": 12981239544360,
+        "rejected_plaintext": 402510,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    },
+    {
+      "certificate_complete": false,
+      "certificate_weight": 13149054659520,
+      "cipher": "loki97",
+      "expected_completion_weight": 20922789888000,
+      "native_seconds": 0.242767,
+      "node_limit": 1000000,
+      "python_plus_native_wall_seconds": 3.507123375,
+      "solution_count": 0,
+      "solutions": [],
+      "stats": {
+        "aborted_at_node_limit": true,
+        "complete": 0,
+        "maximum_depth": 27,
+        "nodes": 1000000,
+        "rejected_completion_weight": 13149054659520,
+        "rejected_plaintext": 1608949,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 0
+      }
+    }
+  ],
+  "full_byte_cfb8": [
+    {
+      "block_size": 8,
+      "cipher": "rc2",
+      "ciphertext_hex": "ba70dca29d0283c24385265ba9e935e02933199eebde1c5b9f8fd2fc8a268325afd32aaa113ae93ee501000c20bb9ecd0863fbec64559ce78301927b9a5d050733854e61ca82b0bfcf3377c184d4c8e2a332907763fd915339057016e1f374f126c094ccb612fb13672b9de8e6f4e5f8d303f3cf408c4fbb3d52c7436795da9bac45ed1f0fe9b22f936853e58b222d7b2047ba6d8350be63a9431c2b2d1e346e7709d0872b7eb374809e3f9e71a27c7ab5edc3d294d76dc74992917c62a7312f446154ffe19bcfdedfd7f6a6356945ed4d8bbd9619bcf5592e706a97d8764e76110632f5c6b8ccef64e63dec3855b9935d9c3e504ec7ce57d3b66ba999239994d8f868d2047354e5203a52f8f22fcd1b471b64c37de8ac14445601",
+      "ciphertext_sha256": "7a8148d712dffd359edd66c4f039128d6d20b6c8a552f3dcb6ed14ecc7355dfa",
+      "declared_key_length": 7,
+      "iv_hex": "3030303030303030",
+      "key_hex": "5a6f6d62696573",
+      "native_matches_separate_python_recurrence": true,
+      "plaintext_sha256": "d9ef9345c55ed662bd9db1ae6b077789b2e11faf4a34a090633f023a87fa2aa6",
+      "roundtrip": true
+    },
+    {
+      "block_size": 16,
+      "cipher": "loki97",
+      "ciphertext_hex": "592a9acc36fc3149dcc3877ad6eb697d5b9a9c78701ab2e0a64ec2b93d0c8365a10005383ada0d71436116e01133db3096b896fa5a130fd7be02dd3f2d54e0ae03a6eca9b25b12383c6bbbf40eee7dfbdf1e2c74895dedf9e81090fd0e782d864db1db90c3664cfa1e84e6837d716cc7cfbd3003d8b74f1a9fb44d27b43adeecf80b13edb2f0483165cdb053977a516d07a3cab80a98f78ec759a00c393d651ad54d329f968f0c7aceef8fd4faccb742fe8e5272a9e05613bd11b4355ea128353a64414d80f8bc29d961c8eac3958417aa2bd2d692185d164a8e9644cbad22819d15a068256caa65a168d26ceeb83154cbc77de2fd3c73b32192b09933003d3f9be1b2c82e584a8a19d9287a49c2822bd07b284a60135883a06a63",
+      "ciphertext_sha256": "f0cb74d904067c9431879cc455ee76f58c026f33cb9c0572f6ddb8338c18bcf0",
+      "declared_key_length": 16,
+      "iv_hex": "30303030303030303030303030303030",
+      "key_hex": "5a6f6d62696573",
+      "native_matches_separate_python_recurrence": true,
+      "plaintext_sha256": "d9ef9345c55ed662bd9db1ae6b077789b2e11faf4a34a090633f023a87fa2aa6",
+      "roundtrip": true
+    }
+  ],
+  "identity": "ASTRA",
+  "key_conventions": {
+    "loki97": {
+      "input_key_hex": "5a6f6d62696573",
+      "input_length": 7,
+      "schedule_memory": "Zombies followed by 25 NUL bytes because pinned set_key reads eight words; declared length argument is 16 and unused by the algorithm",
+      "selected_declared_length": 16,
+      "source_metadata_supported_bytes": [
+        16,
+        24,
+        32
+      ]
+    },
+    "rc2": {
+      "input_key_hex": "5a6f6d62696573",
+      "input_length": 7,
+      "schedule": "raw seven bytes",
+      "source_metadata_max_bytes": 128,
+      "source_metadata_supported_count": 0
+    }
+  },
+  "rc2_pycryptodome_crosscheck": [
+    {
+      "ciphertext_hex": "825a57b15d3bc23f",
+      "key_hex": "6162636465",
+      "key_length": 5,
+      "match": true,
+      "pycryptodome_effective_keylen": 1024
+    },
+    {
+      "ciphertext_hex": "d11aa3a6de64add6",
+      "key_hex": "5a6f6d62696573",
+      "key_length": 7,
+      "match": true,
+      "pycryptodome_effective_keylen": 1024
+    },
+    {
+      "ciphertext_hex": "5418055e092698b3",
+      "key_hex": "000102030405060708090a0b0c0d0e0f",
+      "key_length": 16,
+      "match": true,
+      "pycryptodome_effective_keylen": 1024
+    },
+    {
+      "ciphertext_hex": "8a8f8e5c5a04c73b",
+      "key_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f",
+      "key_length": 128,
+      "match": true,
+      "pycryptodome_effective_keylen": 1024
+    }
+  ],
+  "rev5_full_chain": {
+    "blowfish_input_bytes": 825,
+    "blowfish_output_bytes": 825,
+    "complete_chain_reencryptions": {
+      "blowfish": true,
+      "loki97": true,
+      "rc2": true
+    },
+    "final_bytes": 615,
+    "full_match_after_explicit_apostrophe_normalization": true,
+    "hashes": {
+      "blowfish_input": "d672751b7b59a2970c7a5c4a66dcf0f25da8aea70bd8940d72b25b3a72b50f6b",
+      "blowfish_output": "2f79ad4e253897342a66ae39aa446cec836d26ecd25b18b966a3cbbede1b553a",
+      "final": "0ee2667cc86cbbe2ac535855ef00ee43b0b7b9dcc2aef3fca7239271bdb9635a",
+      "loki97_input": "bb50de29c523ff967a95adabfcfbee97a00480fd177cd6e97a8d74c1c85c860e",
+      "outer": "8b2198d06b40c18c1418f55d0efc7e0b9ba02fc0d9389c3942263018c28b00de",
+      "rc2_output": "7d021f785f148dfaf6b803c8ad159d2da79ab05a2db59348470e1045f99f1d71"
+    },
+    "input_source": "lavender/src/data/ciphers/revelations.json rev5",
+    "loki97_input_bytes": 615,
+    "normalized_lengths": {
+      "recorded": 609,
+      "recovered": 609
+    },
+    "only_record_difference": {
+      "index": 384,
+      "recorded": "U+0027",
+      "recovered": "U+2019"
+    },
+    "outer_bytes": 1656,
+    "rc2_output_bytes": 1656,
+    "rc2_trailing_lf_bytes": 6,
+    "reverse_operation": "strip trailing LF bytes, reverse all hex characters, then bytes.fromhex",
+    "strict_utf8": true
+  },
+  "rev7_file_read": false,
+  "scope": "source-backed RC2 and Loki97 primitive, CFB8, DFS, and solved Rev5 controls only",
+  "seeded_four_unknown": [
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "rc2",
+      "expected_completion_weight": 24,
+      "naive_permutations": 24,
+      "naive_survivors_equal": true,
+      "native_seconds": 2.2667e-05,
+      "node_limit": 100000,
+      "plant_recovered": true,
+      "solution_count": 1,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_hex": "4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 114,
+        "nodes": 124,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 10,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "certificate_complete": true,
+      "certificate_weight": 24,
+      "cipher": "loki97",
+      "expected_completion_weight": 24,
+      "naive_permutations": 24,
+      "naive_survivors_equal": true,
+      "native_seconds": 0.000177459,
+      "node_limit": 100000,
+      "plant_recovered": true,
+      "solution_count": 1,
+      "solutions": [
+        {
+          "mapping": [
+            6,
+            12,
+            15,
+            8,
+            9,
+            13,
+            7,
+            0,
+            14,
+            11,
+            5,
+            10,
+            2,
+            1,
+            4,
+            3
+          ],
+          "plaintext_hex": "4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b4153434949096c696e650d0a656ee28093656de280946c656674e280987269676874e280993b"
+        }
+      ],
+      "stats": {
+        "aborted_at_node_limit": false,
+        "complete": 1,
+        "maximum_depth": 114,
+        "nodes": 122,
+        "rejected_completion_weight": 23,
+        "rejected_plaintext": 10,
+        "rejected_unterminated_endpoint": 0,
+        "terminal_completion_weight": 1
+      },
+      "unknown_symbols": [
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "source": {
+    "commit": "3bd338e2f808e985f5b229a7642d48c26615993f",
+    "compiled_sources_unmodified": true,
+    "files": {
+      "loki97.c": "modules/algorithms/loki97.c",
+      "rc2.c": "modules/algorithms/rc2.c",
+      "rc2.h": "modules/algorithms/rc2.h (empty file)"
+    },
+    "repository": "https://github.com/Distrotech/libmcrypt",
+    "source_hashes": {
+      "source/COPYING.LIB": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532",
+      "source/loki97.c": "4e18d184ec55776edab065cee35ac44a9269b4160d7d35ad4ea277da55ae3308",
+      "source/rc2.c": "37c9398507cea1685255da9550f5a3a55b529b66e1bbc9a35e1996fecae7dc19",
+      "source/rc2.h": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_build/libdefs.h": "556ec4fcebae614cd90d05a2fead50d9355ff39f65b44c8f4044c7f209074c6e",
+      "source_build/libloki97.so": "619f571ade4075dc0dfcb4ad9915574f6778d5e1b6d3fac4ec9cc3bde7bb685c",
+      "source_build/librc2.so": "de672c517f98aca0236b02e4552441990577ec16a5eef918d86a474f3d64f28b",
+      "source_build/loki97.o": "2c417e8b2b6f70e2f175d58dbb8b011be234b2fbc4c8c838960817fec13ddc06",
+      "source_build/mcrypt_modules.h": "2fefe3d60795fb19e7a7be1c4cec18a97c069e2471ae61c951706020dcb6c180",
+      "source_build/rc2.o": "022a0517d79e7dfc9566ca3cf04462a7ffb62aaf9f2d4d0d8edb2ca0a2803b4e"
+    }
+  },
+  "source_embedded_kats": [
+    {
+      "cipher": "rc2",
+      "ciphertext_hex": "becbe4c8e6237a14",
+      "key_formula": "(j*2+10)%256",
+      "key_length": 128,
+      "matches_source_embedded_KAT": true,
+      "plaintext_hex": "0001020304050607"
+    },
+    {
+      "cipher": "loki97",
+      "ciphertext_hex": "8cb28c958024bae27a94c698f96f12a9",
+      "key_formula": "(j*2+10)%256",
+      "key_length": 32,
+      "matches_source_embedded_KAT": true,
+      "plaintext_hex": "000102030405060708090a0b0c0d0e0f"
+    }
+  ],
+  "target_evaluated": false
+}
