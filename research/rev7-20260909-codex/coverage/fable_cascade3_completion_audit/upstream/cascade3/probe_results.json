@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-09-10T09:25:36.928Z",
+  "mode": "probe",
+  "searchSpace": {
+    "layerOptionsPerLayer": 46,
+    "totalChainsSpec": 6229504
+  },
+  "probe": {
+    "elapsedMs": 49062,
+    "chainsRun": 1557376,
+    "throughputPerSec": 31743.019037136684,
+    "topK": [
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:panama:Zombies",
+          "decrypt:3-way:ZOMBIES",
+          "reverse",
+          "decrypt:wake:ZOMBIES",
+          "reverse"
+        ],
+        "longestRun": 20,
+        "validCount": 230,
+        "tailLen": 546
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:panama:Zombies",
+          "decrypt:3-way:ZOMBIES",
+          "reverse",
+          "decrypt:wake:ZOMBIES"
+        ],
+        "longestRun": 20,
+        "validCount": 230,
+        "tailLen": 546
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "reverse",
+          "decrypt:blowfish:ZOMBIES",
+          "decrypt:cast-128:Zombies",
+          "reverse",
+          "decrypt:rijndael-192:Zombies"
+        ],
+        "longestRun": 20,
+        "validCount": 210,
+        "tailLen": 522
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "reverse",
+          "decrypt:blowfish:ZOMBIES",
+          "decrypt:cast-128:Zombies",
+          "reverse",
+          "decrypt:rijndael-192:Zombies",
+          "reverse"
+        ],
+        "longestRun": 20,
+        "validCount": 206,
+        "tailLen": 522
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:cast-128:Zombies",
+          "decrypt:arcfour:Zombies",
+          "reverse",
+          "decrypt:rijndael-128:Zombies"
+        ],
+        "longestRun": 19,
+        "validCount": 224,
+        "tailLen": 530
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:cast-128:Zombies",
+          "decrypt:arcfour:Zombies",
+          "reverse",
+          "decrypt:rijndael-128:Zombies",
+          "reverse"
+        ],
+        "longestRun": 19,
+        "validCount": 222,
+        "tailLen": 530
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "reverse",
+          "decrypt:arcfour:ZOMBIES",
+          "reverse",
+          "decrypt:blowfish-compat:Zombies",
+          "decrypt:twofish:Zombies"
+        ],
+        "longestRun": 18,
+        "validCount": 231,
+        "tailLen": 530
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:rijndael-128:ZOMBIES",
+          "reverse",
+          "decrypt:cast-256:ZOMBIES",
+          "reverse",
+          "decrypt:tripledes:Zombies",
+          "reverse"
+        ],
+        "longestRun": 18,
+        "validCount": 229,
+        "tailLen": 538
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:rijndael-128:ZOMBIES",
+          "reverse",
+          "decrypt:cast-256:ZOMBIES",
+          "reverse",
+          "decrypt:des:Zombies",
+          "reverse"
+        ],
+        "longestRun": 18,
+        "validCount": 229,
+        "tailLen": 538
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:rijndael-128:ZOMBIES",
+          "reverse",
+          "decrypt:cast-256:ZOMBIES",
+          "reverse",
+          "decrypt:tripledes:Zombies"
+        ],
+        "longestRun": 18,
+        "validCount": 228,
+        "tailLen": 538
+      }
+    ]
+  }
+}

@@ -1,0 +1,457 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2273,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d4ea8e4c0392a9a6ac767a5def15adcb9f80a26e",
+      "path": "lavender/src/content/docs/ciphers/bo3/rev/rev12.mdx",
+      "sha256": "c8c1ea91d1b311c82f2fab26f0477b902746323dbeda5fdf7800d391ec115039"
+    },
+    {
+      "bytes": 45454,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e1064d230b405277352150c6a95bc5d635de110b",
+      "path": "lavender/src/data/ciphers/revelations.json",
+      "sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e"
+    },
+    {
+      "bytes": 3210,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e9bf871684ec028d0a4f1139d1436f06317f6749",
+      "path": "research/rev7-20260909-codex/comms/fable-base64-cascade-audit-20260910.json",
+      "sha256": "6db287cfedf68adb8e4f80cef6c66144ea193b31f3fcb76e2d6bf756ae93213b"
+    },
+    {
+      "bytes": 2231,
+      "encoding": "utf-8",
+      "git_blob_sha1": "de8dc5e27075cb5817ebc7e3a5fd3abea8b44c1c",
+      "path": "research/rev7-20260909-codex/comms/fable_audits_publication_README.md",
+      "sha256": "fc05fc474d127b529d3a0d3db1ab455902c4eb225bd0a785ae030f94f8b12d10"
+    },
+    {
+      "bytes": 2086,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d6389e37066aa6cb34679b814f923dba8bb26c1d",
+      "path": "research/rev7-20260909-codex/comms/non-mcrypt-prior-alert-20260910.json",
+      "sha256": "bfba3173e4c59f5207897043022bcc5d3ac96d580d6dd0b05f55d3b02bac417f"
+    },
+    {
+      "bytes": 6995,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2e6b7aced3018ef32e2fa9600abd671cb2c5b137",
+      "path": "research/rev7-20260909-codex/comms/publish_fable_audits.py",
+      "sha256": "37a1d7aecb3a31db27bd23cde29854bef17b37fab9ce09c62d94ed84c7424f18"
+    },
+    {
+      "bytes": 7710,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e56860e4236a814d089ded1d49749981df3169e8",
+      "path": "research/rev7-20260909-codex/coverage/REPORT.md",
+      "sha256": "2a5d20ae6eee4d2ddf2a8ba9ef7bd208e43f0f372fac29e5305f3bdf6918c57e"
+    },
+    {
+      "bytes": 5599,
+      "encoding": "utf-8",
+      "git_blob_sha1": "70bedab777911de7a001c3b954f03025a3ea65d3",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/REPORT.md",
+      "sha256": "6d4e268ad824bacae39cb4c25c21e2f99d043e69dcb47e5aab18367ea4db1d94"
+    },
+    {
+      "bytes": 16816,
+      "encoding": "utf-8",
+      "git_blob_sha1": "09f7070ced5720d144a521f8b77aa5676596b9ab",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/audit.json",
+      "sha256": "4574226dce45176f1422d3352343ca3d3d7a9533fbfdc40df0c31368ea42c144"
+    },
+    {
+      "bytes": 5434,
+      "encoding": "utf-8",
+      "git_blob_sha1": "b9b46fb9eb1ccf7b9a3be46ba8d598a6fa62ba0b",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/audit.py",
+      "sha256": "4b74325d4ff792a5e5bd0cc4af9ec23be2854a465eddfe6f9c060e30f9e40a84"
+    },
+    {
+      "bytes": 10570,
+      "encoding": "utf-8",
+      "git_blob_sha1": "8987267fbee2a48df9fdff761c393cd3afd7454f",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/old-ciphers/js/mcrypt.js",
+      "sha256": "8998b6dd50ebc24aede3df84228826951f2143fde393e15f95d1455e074d5061"
+    },
+    {
+      "bytes": 211879,
+      "encoding": "base64",
+      "git_blob_sha1": "1c2d4f9a3c72e7bdded87f062d7604767cd95cc4",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/old-ciphers/js/mcrypt.wasm",
+      "sha256": "60a8215b8f6f7774511004ec51528b60e781ca8c260d0b1cf1baad0dfc932be7"
+    },
+    {
+      "bytes": 3191,
+      "encoding": "utf-8",
+      "git_blob_sha1": "caab20125de8a0c4d725ec22b69117dfa95ea5e9",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/plant_control.js",
+      "sha256": "f931edafb9d18c468306174f236a28349e24825e0fa654d74d28fe9e7ec357d8"
+    },
+    {
+      "bytes": 4738,
+      "encoding": "utf-8",
+      "git_blob_sha1": "7b6ffb80a6daf2a968395e16c7c5ad5a478b6851",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/authorkeys/keys.txt",
+      "sha256": "0dcc832aa586e461dbb649463d7c1b9c7e36cca32a2591058868fc9c6346a7d7"
+    },
+    {
+      "bytes": 4105,
+      "encoding": "utf-8",
+      "git_blob_sha1": "0ae59352e7e1541bcc7de51938d576389a2d5d11",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/assemble.js",
+      "sha256": "be55a7e761aad26c4238f0db78ae0ca53af31394e34504198182eee371f6789f"
+    },
+    {
+      "bytes": 3186,
+      "encoding": "utf-8",
+      "git_blob_sha1": "b8f00c1c98ff8eed1c5a686688a6e46df36a28be",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/make_targets.js",
+      "sha256": "790f1859291ea2e302b8411a34d6df474824643fca02f76eb0ed3cdc2cbee122"
+    },
+    {
+      "bytes": 79392,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e411575943078226c3abf331790c27ab6cb1216c",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/out_t0.json",
+      "sha256": "f0d4c29a5a7c33b9414951eb8402c714f0278310d9e1a9414af18244e099bc88"
+    },
+    {
+      "bytes": 83183,
+      "encoding": "utf-8",
+      "git_blob_sha1": "f95a921fdbef13f76eb3a5d7e0c7b409d7ed3509",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/out_t1.json",
+      "sha256": "7f843d10f5470adb346beeb4c24a5e251ec6a63dcaeb9686c86cd6c4eae3e446"
+    },
+    {
+      "bytes": 79599,
+      "encoding": "utf-8",
+      "git_blob_sha1": "dd76aa0af7408bf176e67b1b0b6ca8436c734246",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/out_t2.json",
+      "sha256": "a906db5b713ac75e04c9f97be28e419543a986229e08b72842178b5e35299696"
+    },
+    {
+      "bytes": 1092,
+      "encoding": "utf-8",
+      "git_blob_sha1": "1b1de5f1a3eb1c0906b5af94f43b7416a46f4d93",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/plant_b64.txt",
+      "sha256": "64ec46a8acb8aebe389120d25d1a9d6c29c55397415cf8a30a4f129fbb782ec2"
+    },
+    {
+      "bytes": 145,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a5bab49ba94a61740f05250d253ad05f86042554",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/plant_note.json",
+      "sha256": "0ede23e25b23c5a85f7b5d1c80357ccfad5a65232529536cf98f1cf41b3c90c3"
+    },
+    {
+      "bytes": 819,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2aec697521208e3d4e23dd95bdac123f597eb57c",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/plant_plaintext.txt",
+      "sha256": "9e7f7ef46958e39c46827e6d508d0fb5121a88afcef723bedb6a6460bc3514f1"
+    },
+    {
+      "bytes": 4662,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a75571db8aee450f56acba8c03ceff42b46e00a8",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/readings.js",
+      "sha256": "4f68adbfaa5524e82ed29a6139b9f4300c32d5a05b204e15309cb35c26d409c8"
+    },
+    {
+      "bytes": 45562,
+      "encoding": "utf-8",
+      "git_blob_sha1": "903db853a93423f41b213353232bc30a49ca7114",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/readings.json",
+      "sha256": "6c6dd18202a41625872e2c814fbfe7f1f3616db6c7292d4cc7109453039b024c"
+    },
+    {
+      "bytes": 2360,
+      "encoding": "utf-8",
+      "git_blob_sha1": "465eb14b1fc596a20f7a989cf64df63387760ec3",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/run.js",
+      "sha256": "840ee850ef89b620adb3876eea5973abe91b03520d9d3cbbfed03b3a6beaec92"
+    },
+    {
+      "bytes": 8169,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ddb286d29164f0ec7388090895ac07f79f49e1f1",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/targets.json",
+      "sha256": "5c954260590abb8de6c4da2f4aad95e207b308f394000052bb2c6e994f75e048"
+    },
+    {
+      "bytes": 4066,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e56ca4bf16c6536424031850c76b2665e2bbc56d",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/b64read/worker.js",
+      "sha256": "37f5a7319b264406802b473557c741245f6009fd7f17f8405cd3f13cd21600d4"
+    },
+    {
+      "bytes": 6565,
+      "encoding": "utf-8",
+      "git_blob_sha1": "fdb196ba2f8a1838245b8114326e764e181f4452",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/cascade/cascade_lib.js",
+      "sha256": "0318a5b86eb9b93f6cfa848ac9c58a59e6ea05acb469b2d49569a840034c3aff"
+    },
+    {
+      "bytes": 8270,
+      "encoding": "utf-8",
+      "git_blob_sha1": "3283f671f649645112ec02ce1ddbfca671ad84c0",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/dictkey/keys_artifacts.txt",
+      "sha256": "e3c3b70a1219ebc045aca1dd78bdaaa7329ff5d96ec70844cc760468cc16fe7e"
+    },
+    {
+      "bytes": 6372,
+      "encoding": "utf-8",
+      "git_blob_sha1": "02b1fc46ddcdbe07a4bd70bb6987470a15a27a5b",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/dictkey/keys_lore.txt",
+      "sha256": "c8e2d9831a8904c73fc05caaba5ef892a8449f2835f1d3d9c222c01196264a52"
+    },
+    {
+      "bytes": 9413,
+      "encoding": "utf-8",
+      "git_blob_sha1": "f913f6a62120c89e43acd8a3ee6d9c5a02a0a8eb",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/dictkey2/lib.js",
+      "sha256": "ffba90a95de78bdeef64c8d2b5602c61d3271e7780914d8322cc5bb9b912ec1d"
+    },
+    {
+      "bytes": 3325,
+      "encoding": "utf-8",
+      "git_blob_sha1": "3591128956368e74b80095d1e292c7ca88a47ca0",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/encoded/endpoints.js",
+      "sha256": "c2e40c8bf8c951cd8fcd38f2839fbd8b7d982abe4232519e497da8c12443ce1d"
+    },
+    {
+      "bytes": 1093,
+      "encoding": "utf-8",
+      "git_blob_sha1": "fd700337472bfbe067b8ca0bbe859195cc33ff7e",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/rev7_hex.txt",
+      "sha256": "1b1d340ff7de53776c737d0d34ba7438d591679fe0f27efc56856f28c8648827"
+    },
+    {
+      "bytes": 19245,
+      "encoding": "utf-8",
+      "git_blob_sha1": "9f60be02b76b90ccad761a5903dd02038a17ae79",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/sibvocab/keys.txt",
+      "sha256": "23a833b460a553ed24c7c7e9206b6b2b4832ea7038c9e6c9fd182f4b3a60de17"
+    },
+    {
+      "bytes": 3612,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2378dc46d919839d4d695fac37eeb739a50388fa",
+      "path": "research/rev7-20260909-codex/coverage/fable_b64read_source_audit/upstream/utf8gate/utf8gate.js",
+      "sha256": "23eaf0741eecf23fedbe1a9c9a241c715f5d5a9d936689d2c70d440cb6121b8d"
+    },
+    {
+      "bytes": 5566,
+      "encoding": "utf-8",
+      "git_blob_sha1": "aa16a45d8617238bbdd5eeea4c47138bb8711673",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/REPORT.md",
+      "sha256": "ea0976e411501eeac2f11d2a38b9726234b4567a9e4e55fbab5280899d51eb0e"
+    },
+    {
+      "bytes": 14252,
+      "encoding": "utf-8",
+      "git_blob_sha1": "fabbe17c80e4f820b630a0f536c04ac4f5c75300",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/audit.json",
+      "sha256": "74078bfd96813721382677fa9c092fbe1a29a6b4d9c2a46b0ae1777a1c135fef"
+    },
+    {
+      "bytes": 8261,
+      "encoding": "utf-8",
+      "git_blob_sha1": "9fd84dd82f7e153767baade84393633a0c33fbc9",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/audit.py",
+      "sha256": "a4eda49aaedd20b76d060e3a52565c48fd98acc8448a709bc898d7cb3e8b8fd7"
+    },
+    {
+      "bytes": 2049,
+      "encoding": "utf-8",
+      "git_blob_sha1": "199cfeb0e91e32226f08a237ba8da18cfd63793d",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/capture/b64read_inventory.json",
+      "sha256": "3920c4e7c030fe292838b88df5bd8e2e65596ade01c6a639a67f71bdf014443b"
+    },
+    {
+      "bytes": 1093,
+      "encoding": "utf-8",
+      "git_blob_sha1": "fd700337472bfbe067b8ca0bbe859195cc33ff7e",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/capture/rev7_hex.txt",
+      "sha256": "1b1d340ff7de53776c737d0d34ba7438d591679fe0f27efc56856f28c8648827"
+    },
+    {
+      "bytes": 3894,
+      "encoding": "utf-8",
+      "git_blob_sha1": "81d84f2698277e0ce381796affa4aa8b40cd151a",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/controls.js",
+      "sha256": "6a5c4aa8c125d40e95c1e1fcd7385b12a8277863924f9ad98496dca011cef4e4"
+    },
+    {
+      "bytes": 7273,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ed9bf2dac45a217d23806be2531260f8d68c1143",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/controls.json",
+      "sha256": "4a9428759630c0262787fa14650542f48ff9043a78ecaab2fe083e95677f79c7"
+    },
+    {
+      "bytes": 10570,
+      "encoding": "utf-8",
+      "git_blob_sha1": "8987267fbee2a48df9fdff761c393cd3afd7454f",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/old-ciphers/js/mcrypt.js",
+      "sha256": "8998b6dd50ebc24aede3df84228826951f2143fde393e15f95d1455e074d5061"
+    },
+    {
+      "bytes": 211879,
+      "encoding": "base64",
+      "git_blob_sha1": "1c2d4f9a3c72e7bdded87f062d7604767cd95cc4",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/old-ciphers/js/mcrypt.wasm",
+      "sha256": "60a8215b8f6f7774511004ec51528b60e781ca8c260d0b1cf1baad0dfc932be7"
+    },
+    {
+      "bytes": 6565,
+      "encoding": "utf-8",
+      "git_blob_sha1": "fdb196ba2f8a1838245b8114326e764e181f4452",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/upstream/cascade/cascade_lib.js",
+      "sha256": "0318a5b86eb9b93f6cfa848ac9c58a59e6ea05acb469b2d49569a840034c3aff"
+    },
+    {
+      "bytes": 6175,
+      "encoding": "utf-8",
+      "git_blob_sha1": "4d23f2fc7ff10a1dbcc53488b3d760645e675ea9",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/upstream/cascade/scan.js",
+      "sha256": "a4922fa692dce40ca69df76073f7399deb35396faec0bc650cbbc1be10d5872d"
+    },
+    {
+      "bytes": 2304,
+      "encoding": "utf-8",
+      "git_blob_sha1": "64e68ddb99407262b9cb0205ca11df6426c223d3",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/upstream/cascade3/make_plant3.js",
+      "sha256": "f4728dc92deab2024e03b93ec867c137bb798f7188bc6b34e0501c736f914516"
+    },
+    {
+      "bytes": 664,
+      "encoding": "utf-8",
+      "git_blob_sha1": "bfe4185db18b0d4716d0be389ab815f78322e35a",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/upstream/cascade3/plant3_hex.txt",
+      "sha256": "ed8bc54ce3b752eaf93d09c35d577ba0565539a61b90354e86d501f352499147"
+    },
+    {
+      "bytes": 332,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2033ea271a6cac12bbc4f3557ba834a80a3463ce",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/upstream/cascade3/plant3_plaintext.txt",
+      "sha256": "b3497dec7d217579eb3c2b60207a22ff61345f179046dfbe191babf69e709574"
+    },
+    {
+      "bytes": 3445,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ef241e51de4b3d09a65c4984aa4e05f451911820",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/upstream/cascade3/probe_results.json",
+      "sha256": "d87160b087bb0a59ea17f247457f6b7726cd57ddbce651ae4e771aa033cc257a"
+    },
+    {
+      "bytes": 15639,
+      "encoding": "utf-8",
+      "git_blob_sha1": "5801b6fb7b162ffe017c314e05f17e7a6ca45014",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/upstream/cascade3/results.json",
+      "sha256": "4cf0f165d7659135b7b5230a15dedce880b8994a071d4adeab5ce269edfcef70"
+    },
+    {
+      "bytes": 7076,
+      "encoding": "utf-8",
+      "git_blob_sha1": "8b9b776c7e79a88e6d10011d4488450f0666b3ee",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/upstream/cascade3/run3.js",
+      "sha256": "e4a9d224da58ccbb8d12c32f512eecb8d1c1e8acc5c2bef9f2d0d87741d2ae66"
+    },
+    {
+      "bytes": 3367,
+      "encoding": "utf-8",
+      "git_blob_sha1": "53e2842e3c8738dc9d668bed8ceadddeb7e96fb2",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/upstream/cascade3/scan3.js",
+      "sha256": "f502c413da81a6ca8d6acd7083c657787c70f67f725d551952296b915003a6ec"
+    },
+    {
+      "bytes": 9413,
+      "encoding": "utf-8",
+      "git_blob_sha1": "f913f6a62120c89e43acd8a3ee6d9c5a02a0a8eb",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/upstream/dictkey2/lib.js",
+      "sha256": "ffba90a95de78bdeef64c8d2b5602c61d3271e7780914d8322cc5bb9b912ec1d"
+    },
+    {
+      "bytes": 3612,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2378dc46d919839d4d695fac37eeb739a50388fa",
+      "path": "research/rev7-20260909-codex/coverage/fable_cascade3_completion_audit/upstream/utf8gate/utf8gate.js",
+      "sha256": "23eaf0741eecf23fedbe1a9c9a241c715f5d5a9d936689d2c70d440cb6121b8d"
+    },
+    {
+      "bytes": 3207,
+      "encoding": "utf-8",
+      "git_blob_sha1": "b76eacdd51893b959de5e2daf27b123f1e2da5e3",
+      "path": "research/rev7-20260909-codex/coverage/non_mcrypt_history_audit/README.md",
+      "sha256": "55aaae51f04af5ce52c47e6b170712a68ade86a4e45a9df7d586b89e820f1a7f"
+    },
+    {
+      "bytes": 6814,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c7978e1b9295e26799ef22afa97ef3adeac2b159",
+      "path": "research/rev7-20260909-codex/coverage/non_mcrypt_history_audit/audit.json",
+      "sha256": "fe9e5752d33ba03d953f9f563abf4b8c7cffb61256e1c99ed3a97d22260c9c08"
+    },
+    {
+      "bytes": 9713,
+      "encoding": "utf-8",
+      "git_blob_sha1": "24f2bbc2489056d6b1aea85a5281167ba3b0c606",
+      "path": "research/rev7-20260909-codex/coverage/non_mcrypt_history_audit/audit.py",
+      "sha256": "12871f4963a916b626a8a149107c77ff9f74b74143787eddb10ddd582d22ad1b"
+    },
+    {
+      "bytes": 1234,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e222a6856e07fc2b5cf99207e33a7d76be74e0ef",
+      "path": "research/rev7-20260909-codex/coverage/non_mcrypt_history_audit/capture/local_tg4.mdx",
+      "sha256": "860b4d4b9e9d552c0cf58a48343a42a0f17a50b1666626baf596bb9a2797a056"
+    },
+    {
+      "bytes": 2943,
+      "encoding": "utf-8",
+      "git_blob_sha1": "58a4630471f763c2fbd3cea4b88048982161f10f",
+      "path": "research/rev7-20260909-codex/coverage/non_mcrypt_history_audit/capture/local_the_giant.json",
+      "sha256": "2a9e29a12db1784777397e59d8b88bb90b00b39ab7e82a67e7ba8c617ef26552"
+    },
+    {
+      "bytes": 909,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a298e2f7c78f83251ce4d1255c9272aae87e5370",
+      "path": "research/rev7-20260909-codex/coverage/non_mcrypt_history_audit/session_state_excerpt.txt",
+      "sha256": "f2344db7549e5f523316896f87dca6dfb1a7211ba9bc364de091eb89b7972592"
+    },
+    {
+      "bytes": 263937,
+      "encoding": "utf-8",
+      "git_blob_sha1": "5112ea117ba6dd19808253a29524a728fc2c675c",
+      "path": "research/rev7-20260909-codex/latest-comments.json",
+      "sha256": "493c657cb1fd8c33ddf028734464953b1847afcee84ba93dc528dbf926d09597"
+    },
+    {
+      "bytes": 474024,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c4325e58804e03425b5b8a93bfb428c082539fd2",
+      "path": "research/rev7-20260909-codex/notebook-snapshot.json",
+      "sha256": "ad67d420644b203a8f952d84f93d4755578c079aa9b98952cab8a73ccc3461ab"
+    },
+    {
+      "bytes": 8728,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ceab564148919a1aeefdf057e02b00702e519d76",
+      "path": "research/rev7-20260909-codex/sources/primary_routes.md",
+      "sha256": "ee9f2b9cf32a0724c9bab5c421e40c498a58ae0aa78924d9a3c7651a1ad865c5"
+    }
+  ],
+  "identity": "ASTRA",
+  "publication_excludes": [
+    "drafts",
+    "__pycache__"
+  ]
+}

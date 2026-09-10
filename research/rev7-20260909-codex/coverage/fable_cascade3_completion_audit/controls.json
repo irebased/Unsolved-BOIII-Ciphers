@@ -1,0 +1,320 @@
+{
+  "identity": "ASTRA",
+  "target_evaluated": false,
+  "full_sweep_run": false,
+  "node": "v26.4.0",
+  "registry": {
+    "ciphers": [
+      "3-way",
+      "blowfish",
+      "blowfish-compat",
+      "cast-128",
+      "cast-256",
+      "des",
+      "tripledes",
+      "gost",
+      "loki97",
+      "rc2",
+      "rijndael-128",
+      "rijndael-192",
+      "rijndael-256",
+      "safer-64",
+      "safer-128",
+      "saferplus",
+      "serpent",
+      "twofish",
+      "xtea",
+      "enigma",
+      "panama",
+      "arcfour",
+      "wake"
+    ],
+    "keys": [
+      "Zombies",
+      "ZOMBIES"
+    ],
+    "layer_options": [
+      "decrypt:3-way:Zombies",
+      "decrypt:3-way:ZOMBIES",
+      "decrypt:blowfish:Zombies",
+      "decrypt:blowfish:ZOMBIES",
+      "decrypt:blowfish-compat:Zombies",
+      "decrypt:blowfish-compat:ZOMBIES",
+      "decrypt:cast-128:Zombies",
+      "decrypt:cast-128:ZOMBIES",
+      "decrypt:cast-256:Zombies",
+      "decrypt:cast-256:ZOMBIES",
+      "decrypt:des:Zombies",
+      "decrypt:des:ZOMBIES",
+      "decrypt:tripledes:Zombies",
+      "decrypt:tripledes:ZOMBIES",
+      "decrypt:gost:Zombies",
+      "decrypt:gost:ZOMBIES",
+      "decrypt:loki97:Zombies",
+      "decrypt:loki97:ZOMBIES",
+      "decrypt:rc2:Zombies",
+      "decrypt:rc2:ZOMBIES",
+      "decrypt:rijndael-128:Zombies",
+      "decrypt:rijndael-128:ZOMBIES",
+      "decrypt:rijndael-192:Zombies",
+      "decrypt:rijndael-192:ZOMBIES",
+      "decrypt:rijndael-256:Zombies",
+      "decrypt:rijndael-256:ZOMBIES",
+      "decrypt:safer-64:Zombies",
+      "decrypt:safer-64:ZOMBIES",
+      "decrypt:safer-128:Zombies",
+      "decrypt:safer-128:ZOMBIES",
+      "decrypt:saferplus:Zombies",
+      "decrypt:saferplus:ZOMBIES",
+      "decrypt:serpent:Zombies",
+      "decrypt:serpent:ZOMBIES",
+      "decrypt:twofish:Zombies",
+      "decrypt:twofish:ZOMBIES",
+      "decrypt:xtea:Zombies",
+      "decrypt:xtea:ZOMBIES",
+      "decrypt:enigma:Zombies",
+      "decrypt:enigma:ZOMBIES",
+      "decrypt:panama:Zombies",
+      "decrypt:panama:ZOMBIES",
+      "decrypt:arcfour:Zombies",
+      "decrypt:arcfour:ZOMBIES",
+      "decrypt:wake:Zombies",
+      "decrypt:wake:ZOMBIES"
+    ],
+    "layer_option_count": 46,
+    "cipher_info": {
+      "3-way": {
+        "blockSize": 12,
+        "stream": false,
+        "keySizes": [
+          12
+        ]
+      },
+      "blowfish": {
+        "blockSize": 8,
+        "stream": false,
+        "keySizes": [
+          56
+        ]
+      },
+      "blowfish-compat": {
+        "blockSize": 8,
+        "stream": false,
+        "keySizes": [
+          56
+        ]
+      },
+      "cast-128": {
+        "blockSize": 8,
+        "stream": false,
+        "keySizes": [
+          16
+        ]
+      },
+      "cast-256": {
+        "blockSize": 16,
+        "stream": false,
+        "keySizes": [
+          16,
+          24,
+          32
+        ]
+      },
+      "des": {
+        "blockSize": 8,
+        "stream": false,
+        "keySizes": [
+          8
+        ]
+      },
+      "tripledes": {
+        "blockSize": 8,
+        "stream": false,
+        "keySizes": [
+          24
+        ]
+      },
+      "gost": {
+        "blockSize": 8,
+        "stream": false,
+        "keySizes": [
+          32
+        ]
+      },
+      "loki97": {
+        "blockSize": 16,
+        "stream": false,
+        "keySizes": [
+          16,
+          24,
+          32
+        ]
+      },
+      "rc2": {
+        "blockSize": 8,
+        "stream": false,
+        "keySizes": [
+          128
+        ]
+      },
+      "rijndael-128": {
+        "blockSize": 16,
+        "stream": false,
+        "keySizes": [
+          16,
+          24,
+          32
+        ]
+      },
+      "rijndael-192": {
+        "blockSize": 24,
+        "stream": false,
+        "keySizes": [
+          16,
+          24,
+          32
+        ]
+      },
+      "rijndael-256": {
+        "blockSize": 32,
+        "stream": false,
+        "keySizes": [
+          16,
+          24,
+          32
+        ]
+      },
+      "safer-64": {
+        "blockSize": 8,
+        "stream": false,
+        "keySizes": [
+          8
+        ]
+      },
+      "safer-128": {
+        "blockSize": 8,
+        "stream": false,
+        "keySizes": [
+          16
+        ]
+      },
+      "saferplus": {
+        "blockSize": 16,
+        "stream": false,
+        "keySizes": [
+          16,
+          24,
+          32
+        ]
+      },
+      "serpent": {
+        "blockSize": 16,
+        "stream": false,
+        "keySizes": [
+          16,
+          24,
+          32
+        ]
+      },
+      "twofish": {
+        "blockSize": 16,
+        "stream": false,
+        "keySizes": [
+          16,
+          24,
+          32
+        ]
+      },
+      "xtea": {
+        "blockSize": 8,
+        "stream": false,
+        "keySizes": [
+          16
+        ]
+      },
+      "enigma": {
+        "blockSize": 0,
+        "stream": true,
+        "keySizes": [
+          13
+        ]
+      },
+      "panama": {
+        "blockSize": 0,
+        "stream": true,
+        "keySizes": [
+          32
+        ]
+      },
+      "arcfour": {
+        "blockSize": 0,
+        "stream": true,
+        "keySizes": [
+          256
+        ]
+      },
+      "wake": {
+        "blockSize": 0,
+        "stream": true,
+        "keySizes": [
+          32
+        ]
+      }
+    }
+  },
+  "plant": {
+    "hex_file_bytes": 664,
+    "hex_symbols": 664,
+    "ciphertext_bytes": 332,
+    "plaintext_bytes": 332,
+    "hex_sha256": "ed8bc54ce3b752eaf93d09c35d577ba0565539a61b90354e86d501f352499147",
+    "plaintext_sha256": "b3497dec7d217579eb3c2b60207a22ff61345f179046dfbe191babf69e709574",
+    "ciphertext_sha256": "85ef5c3572b1581c6900e0840dc2e559569712870e77d266d7694b97f3f02c81",
+    "true_path": [
+      "decrypt:serpent:Zombies",
+      "reverse",
+      "decrypt:blowfish:Zombies",
+      "decrypt:twofish:Zombies"
+    ],
+    "decrypt_intermediate_sha256": {
+      "after_serpent": "eccdf292c53eedb4b5ccf76ed83b2341e6e1fc60da05460d40771e7589ed8052",
+      "after_reverse": "67ed75abf121fa8304fc87252fc22dce4a531270f2806955102e6fc033bd857a",
+      "after_blowfish": "6f68fb90c9f2a66249b28a85efd7c360b3f1d2cd06b1e8efc62887b4a6f901a5",
+      "recovered": "b3497dec7d217579eb3c2b60207a22ff61345f179046dfbe191babf69e709574"
+    },
+    "encrypt_intermediate_sha256": {
+      "after_twofish": "6f68fb90c9f2a66249b28a85efd7c360b3f1d2cd06b1e8efc62887b4a6f901a5",
+      "after_blowfish": "67ed75abf121fa8304fc87252fc22dce4a531270f2806955102e6fc033bd857a",
+      "after_reverse": "eccdf292c53eedb4b5ccf76ed83b2341e6e1fc60da05460d40771e7589ed8052",
+      "rebuilt": "85ef5c3572b1581c6900e0840dc2e559569712870e77d266d7694b97f3f02c81"
+    },
+    "all_stage_lengths": [
+      332,
+      332,
+      332,
+      332,
+      332,
+      332,
+      332,
+      332,
+      332
+    ],
+    "exact_decrypt_recovery": true,
+    "exact_encrypt_rebuild": true,
+    "score_after_skip_last_block": {
+      "longestRun": 316,
+      "validCount": 316,
+      "tailLen": 316
+    }
+  },
+  "conventions": {
+    "block_mode": "CFB8 integer 0",
+    "block_iv": "ASCII 0 repeated to block size",
+    "keys": [
+      "literal ASCII Zombies",
+      "literal ASCII ZOMBIES"
+    ],
+    "loki97": "explicit 32-byte zero-backed key with literal prefix",
+    "reverse": "valid UTF-8 codepoint reverse, otherwise raw byte reverse"
+  }
+}

@@ -1,0 +1,5 @@
+Earlieradjacency32,ragged708+124,DESallIVmapping4,OFBrobustness96/interval96,rawIVprefixproof allcompleted/published; fullpinsinprevioushandoff/PUBLICATION. No repeat. Unknownuntracked '=' untouched. Whitelistexplicitsource/json/md/license/swift only, nobins/so/o/cache/drafts/comms/session.
+
+## EXTERNAL RESEARCH REFRESH
+Primary Randomiserpost https://www.reddit.com/r/CODZombies/comments/1sims97/another_revelations_cipher_solved_and_notes_on/ reportsRev1Beaufort52alphabetZOMBIES->RC2ECBZombies->reverse->Rijndael256ECBZombies. SaysRev7remaining andfavorsCryptooluppercase5gramsAMSCO/Scytale; reportsallScytale/AMSCO<=9negativewithoutscanner, donotadoptasverified. NewTheGiantpostuserirebasealreadyownwork, noRev7solution; solveddueI/l/O/0transcriptandXXTEATheGiantnullpad, notnewtoouruser. No confirmedpublicRev7solvefoundinthequeries. Sourcewordlimits200eachifdiscussingfinal; donotoverquotebroadposts.
+

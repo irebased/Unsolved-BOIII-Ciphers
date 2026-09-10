@@ -1,0 +1,544 @@
+{
+  "generatedAt": "2026-09-10T09:26:35.422Z",
+  "mode": "full",
+  "searchSpace": {
+    "layerOptionsPerLayer": 46,
+    "totalChainsSpec": 6229504
+  },
+  "positiveControl": {
+    "elapsedMs": 66678,
+    "chainsScored": 1557376,
+    "target": {
+      "chain": [
+        "decrypt:serpent:Zombies",
+        "reverse",
+        "decrypt:blowfish:Zombies",
+        "decrypt:twofish:Zombies"
+      ],
+      "found": true,
+      "score": {
+        "longestRun": 316,
+        "validCount": 316,
+        "tailLen": 316,
+        "orientation": "displayed"
+      },
+      "rank": 1,
+      "tieCount": 2,
+      "totalRanked": 1557376
+    },
+    "top5": [
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:serpent:Zombies",
+          "reverse",
+          "decrypt:blowfish:Zombies",
+          "decrypt:twofish:Zombies",
+          "reverse"
+        ],
+        "longestRun": 316,
+        "validCount": 316,
+        "tailLen": 316
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:serpent:Zombies",
+          "reverse",
+          "decrypt:blowfish:Zombies",
+          "decrypt:twofish:Zombies"
+        ],
+        "longestRun": 316,
+        "validCount": 316,
+        "tailLen": 316
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "reverse",
+          "decrypt:rijndael-128:ZOMBIES",
+          "decrypt:safer-64:ZOMBIES",
+          "decrypt:rijndael-128:ZOMBIES"
+        ],
+        "longestRun": 20,
+        "validCount": 135,
+        "tailLen": 316
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "reverse",
+          "decrypt:rijndael-128:ZOMBIES",
+          "decrypt:safer-64:ZOMBIES",
+          "decrypt:rijndael-128:ZOMBIES",
+          "reverse"
+        ],
+        "longestRun": 20,
+        "validCount": 130,
+        "tailLen": 316
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "reverse",
+          "decrypt:rijndael-128:ZOMBIES",
+          "reverse",
+          "decrypt:rc2:Zombies",
+          "reverse",
+          "decrypt:enigma:ZOMBIES",
+          "reverse"
+        ],
+        "longestRun": 19,
+        "validCount": 149,
+        "tailLen": 332
+      }
+    ]
+  },
+  "negativeControl": {
+    "elapsedMs": 201596,
+    "chainsScored": 6229504,
+    "perOrientation": {
+      "displayed": {
+        "elapsedMs": 50810,
+        "count": 1557376
+      },
+      "fullReversed": {
+        "elapsedMs": 51421,
+        "count": 1557376
+      },
+      "bytePairReversed": {
+        "elapsedMs": 49427,
+        "count": 1557376
+      },
+      "nibbleSwap": {
+        "elapsedMs": 49938,
+        "count": 1557376
+      }
+    },
+    "top10": [
+      {
+        "orientation": "bytePairReversed",
+        "path": [
+          "reverse",
+          "decrypt:rijndael-192:ZOMBIES",
+          "reverse",
+          "decrypt:rijndael-192:Zombies",
+          "reverse",
+          "decrypt:rijndael-192:ZOMBIES",
+          "reverse"
+        ],
+        "longestRun": 23,
+        "validCount": 203,
+        "tailLen": 522
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:rijndael-192:ZOMBIES",
+          "reverse",
+          "decrypt:rijndael-192:Zombies",
+          "reverse",
+          "decrypt:rijndael-192:ZOMBIES",
+          "reverse"
+        ],
+        "longestRun": 23,
+        "validCount": 203,
+        "tailLen": 522
+      },
+      {
+        "orientation": "bytePairReversed",
+        "path": [
+          "reverse",
+          "decrypt:rijndael-192:ZOMBIES",
+          "reverse",
+          "decrypt:rijndael-192:Zombies",
+          "reverse",
+          "decrypt:rijndael-192:ZOMBIES"
+        ],
+        "longestRun": 23,
+        "validCount": 202,
+        "tailLen": 522
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:rijndael-192:ZOMBIES",
+          "reverse",
+          "decrypt:rijndael-192:Zombies",
+          "reverse",
+          "decrypt:rijndael-192:ZOMBIES"
+        ],
+        "longestRun": 23,
+        "validCount": 202,
+        "tailLen": 522
+      },
+      {
+        "orientation": "bytePairReversed",
+        "path": [
+          "reverse",
+          "decrypt:blowfish:Zombies",
+          "decrypt:blowfish-compat:ZOMBIES",
+          "reverse",
+          "decrypt:blowfish:Zombies"
+        ],
+        "longestRun": 20,
+        "validCount": 232,
+        "tailLen": 538
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:blowfish:Zombies",
+          "decrypt:blowfish-compat:ZOMBIES",
+          "reverse",
+          "decrypt:blowfish:Zombies"
+        ],
+        "longestRun": 20,
+        "validCount": 232,
+        "tailLen": 538
+      },
+      {
+        "orientation": "bytePairReversed",
+        "path": [
+          "decrypt:saferplus:ZOMBIES",
+          "decrypt:safer-128:Zombies",
+          "decrypt:rc2:Zombies"
+        ],
+        "longestRun": 20,
+        "validCount": 204,
+        "tailLen": 538
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "reverse",
+          "decrypt:saferplus:ZOMBIES",
+          "decrypt:safer-128:Zombies",
+          "decrypt:rc2:Zombies"
+        ],
+        "longestRun": 20,
+        "validCount": 204,
+        "tailLen": 538
+      },
+      {
+        "orientation": "bytePairReversed",
+        "path": [
+          "decrypt:saferplus:ZOMBIES",
+          "decrypt:safer-128:Zombies",
+          "decrypt:rc2:Zombies",
+          "reverse"
+        ],
+        "longestRun": 20,
+        "validCount": 202,
+        "tailLen": 538
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "reverse",
+          "decrypt:saferplus:ZOMBIES",
+          "decrypt:safer-128:Zombies",
+          "decrypt:rc2:Zombies",
+          "reverse"
+        ],
+        "longestRun": 20,
+        "validCount": 202,
+        "tailLen": 538
+      }
+    ],
+    "histogram": {
+      "n": 6229504,
+      "byLongestRun": {
+        "3": 2606,
+        "4": 341324,
+        "5": 1726710,
+        "6": 2015692,
+        "7": 1216158,
+        "8": 551110,
+        "9": 228228,
+        "10": 90770,
+        "11": 35272,
+        "12": 13352,
+        "13": 5126,
+        "14": 1938,
+        "15": 732,
+        "16": 302,
+        "17": 104,
+        "18": 36,
+        "19": 34,
+        "20": 6,
+        "23": 4
+      },
+      "byValidCountBucket20": {
+        "140": 148,
+        "160": 61076,
+        "180": 1646708,
+        "200": 3689378,
+        "220": 816710,
+        "240": 15472,
+        "260": 12
+      }
+    }
+  },
+  "rev7": {
+    "elapsedMs": 204191,
+    "chainsScored": 6229504,
+    "perOrientation": {
+      "displayed": {
+        "elapsedMs": 51893,
+        "count": 1557376
+      },
+      "fullReversed": {
+        "elapsedMs": 51113,
+        "count": 1557376
+      },
+      "bytePairReversed": {
+        "elapsedMs": 50540,
+        "count": 1557376
+      },
+      "nibbleSwap": {
+        "elapsedMs": 50645,
+        "count": 1557376
+      }
+    },
+    "top10": [
+      {
+        "orientation": "nibbleSwap",
+        "path": [
+          "reverse",
+          "decrypt:xtea:Zombies",
+          "decrypt:blowfish-compat:Zombies",
+          "decrypt:blowfish:Zombies"
+        ],
+        "longestRun": 21,
+        "validCount": 237,
+        "tailLen": 538
+      },
+      {
+        "orientation": "fullReversed",
+        "path": [
+          "decrypt:xtea:Zombies",
+          "decrypt:blowfish-compat:Zombies",
+          "decrypt:blowfish:Zombies"
+        ],
+        "longestRun": 21,
+        "validCount": 237,
+        "tailLen": 538
+      },
+      {
+        "orientation": "bytePairReversed",
+        "path": [
+          "reverse",
+          "decrypt:panama:Zombies",
+          "decrypt:3-way:ZOMBIES",
+          "reverse",
+          "decrypt:wake:ZOMBIES",
+          "reverse"
+        ],
+        "longestRun": 20,
+        "validCount": 230,
+        "tailLen": 546
+      },
+      {
+        "orientation": "bytePairReversed",
+        "path": [
+          "reverse",
+          "decrypt:panama:Zombies",
+          "decrypt:3-way:ZOMBIES",
+          "reverse",
+          "decrypt:wake:ZOMBIES"
+        ],
+        "longestRun": 20,
+        "validCount": 230,
+        "tailLen": 546
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:panama:Zombies",
+          "decrypt:3-way:ZOMBIES",
+          "reverse",
+          "decrypt:wake:ZOMBIES",
+          "reverse"
+        ],
+        "longestRun": 20,
+        "validCount": 230,
+        "tailLen": 546
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "decrypt:panama:Zombies",
+          "decrypt:3-way:ZOMBIES",
+          "reverse",
+          "decrypt:wake:ZOMBIES"
+        ],
+        "longestRun": 20,
+        "validCount": 230,
+        "tailLen": 546
+      },
+      {
+        "orientation": "bytePairReversed",
+        "path": [
+          "decrypt:blowfish:ZOMBIES",
+          "decrypt:cast-128:Zombies",
+          "reverse",
+          "decrypt:rijndael-192:Zombies"
+        ],
+        "longestRun": 20,
+        "validCount": 210,
+        "tailLen": 522
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "reverse",
+          "decrypt:blowfish:ZOMBIES",
+          "decrypt:cast-128:Zombies",
+          "reverse",
+          "decrypt:rijndael-192:Zombies"
+        ],
+        "longestRun": 20,
+        "validCount": 210,
+        "tailLen": 522
+      },
+      {
+        "orientation": "bytePairReversed",
+        "path": [
+          "decrypt:blowfish:ZOMBIES",
+          "decrypt:cast-128:Zombies",
+          "reverse",
+          "decrypt:rijndael-192:Zombies",
+          "reverse"
+        ],
+        "longestRun": 20,
+        "validCount": 206,
+        "tailLen": 522
+      },
+      {
+        "orientation": "displayed",
+        "path": [
+          "reverse",
+          "decrypt:blowfish:ZOMBIES",
+          "decrypt:cast-128:Zombies",
+          "reverse",
+          "decrypt:rijndael-192:Zombies",
+          "reverse"
+        ],
+        "longestRun": 20,
+        "validCount": 206,
+        "tailLen": 522
+      }
+    ],
+    "histogram": {
+      "n": 6229504,
+      "byLongestRun": {
+        "3": 2492,
+        "4": 342014,
+        "5": 1728112,
+        "6": 2012094,
+        "7": 1208308,
+        "8": 558448,
+        "9": 229820,
+        "10": 90484,
+        "11": 35588,
+        "12": 13542,
+        "13": 5278,
+        "14": 2098,
+        "15": 772,
+        "16": 266,
+        "17": 122,
+        "18": 32,
+        "19": 24,
+        "20": 8,
+        "21": 2
+      },
+      "byValidCountBucket20": {
+        "140": 138,
+        "160": 62126,
+        "180": 1640740,
+        "200": 3700460,
+        "220": 810782,
+        "240": 15224,
+        "260": 34
+      }
+    }
+  },
+  "comparison": {
+    "rev7Best": {
+      "orientation": "nibbleSwap",
+      "path": [
+        "reverse",
+        "decrypt:xtea:Zombies",
+        "decrypt:blowfish-compat:Zombies",
+        "decrypt:blowfish:Zombies"
+      ],
+      "longestRun": 21,
+      "validCount": 237,
+      "tailLen": 538
+    },
+    "negativeBest": {
+      "orientation": "bytePairReversed",
+      "path": [
+        "reverse",
+        "decrypt:rijndael-192:ZOMBIES",
+        "reverse",
+        "decrypt:rijndael-192:Zombies",
+        "reverse",
+        "decrypt:rijndael-192:ZOMBIES",
+        "reverse"
+      ],
+      "longestRun": 23,
+      "validCount": 203,
+      "tailLen": 522
+    },
+    "insideNullBand": true
+  },
+  "reverseSemantics": {
+    "definition": "reverseBuf (from ../cascade/cascade_lib.js, reused verbatim): CODEPOINT reversal when the buffer decodes as valid UTF-8 under a fatal TextDecoder; otherwise RAW BYTE reversal. It is applied identically at every optional reverse boundary in this sweep.",
+    "notGloballyBijective": true,
+    "witness": {
+      "claim": "reverseBuf is not injective on arbitrary byte strings: distinct inputs can map to the same output because validity of the UTF-8 decode (byte-reverse branch vs codepoint-reverse branch) is not itself reverse-invariant.",
+      "inputA_hex": "a0c2",
+      "inputA_note": "A0 is a stray UTF-8 continuation byte as a lead byte -> decode fails -> raw BYTE reverse -> C2A0",
+      "inputB_hex": "c2a0",
+      "inputB_note": "valid UTF-8 for U+00A0 (NBSP), a single codepoint -> CODEPOINT reverse of one codepoint is the identity -> re-encodes to C2A0",
+      "bothMapTo_hex": "c2a0",
+      "verifiedBy": "node -e require(../cascade/cascade_lib.js).reverseBuf on both inputs, both equal c2a0"
+    },
+    "consequenceForThisRun": "The enumeration itself is exact and unaffected -- every one of the 6,229,504 chains is a concrete, independently computed operation sequence scored on its own merits, none skipped or deduplicated because of this. What is NOT exact is the analytic null model: the union-bound f(L) formula assumes a fixed-uniform byte distribution is preserved (in law) across every gate-scored position, including positions downstream of a reverse boundary. Because reverseBuf is non-injective, it is a many-to-one map on the space of intermediate buffers, so it does not obviously preserve a uniform distribution over that space the way an injective/bijective permutation would. We have NOT proven uniformity is preserved through the byte-reverse/codepoint-reverse branch selection, so the analytic P(max>=L) bound below is reported as an approximation for chains that include one or more reverse boundaries, not an exact bound. The empirical negative (546 random bytes, identical sweep, identical reverse operator) is the reliable check for this run, since it experiences the exact same non-injectivity as rev7 and needs no distributional assumption."
+  },
+  "analyticCriticalValue": {
+    "formula": "a1=98/256, a2=96/256^2, a3=7/256^3, f(L)=a1*f(L-1)+a2*f(L-2)+a3*f(L-3), f(L<=0)=1; P(max>=L) <= T*f(L) (union bound over T scored positions), computed with exact Python Fractions.",
+    "T_definition": "T = totalChainsRun x avg scored positions per chain. avg scored positions = ciphertextLen(546) - mean blockSize over the 23 ciphers used as layer3 (blockSize is the only thing skipped per scoreTail; mean blockSize = 244/23 = 10.6087, so avg tail = 535.39 bytes/chain).",
+    "T_exact": "6229504 x (546 - 244/23) = 3335222272 (exact rational, evaluated)",
+    "L_crit_5pct": 27,
+    "L_crit_5pct_bound": 0.023808230427036933,
+    "L_crit_1pct": 28,
+    "L_crit_1pct_bound": 0.009204364062658536,
+    "approximationCaveat": "See reverseSemantics.consequenceForThisRun -- this T*f(L) bound assumes the fixed-uniform null passes unchanged through reverseBuf, which is not proven (reverseBuf is non-injective). Treated here as an approximate guide, not an exact bound, for the ~15/16 of chains that include at least one reverse boundary. The exhaustive enumeration and the empirical negative-control comparison are the parts of this result that carry no such caveat."
+  },
+  "summary": {
+    "chainsRun_rev7": 6229504,
+    "chainsRun_rev7_fractionOfSpec": 1.0,
+    "rev7Exhaustive": true,
+    "chainsRun_negative": 6229504,
+    "negativeExhaustive": true,
+    "chainsRun_positiveControl": 1557376,
+    "positiveControl_scope": "single orientation (displayed), matching ../cascade/run.js convention for planted controls",
+    "rev7BestLongestRun": 21,
+    "negativeBestLongestRun": 23,
+    "L_crit_5pct": 27,
+    "L_crit_1pct": 28,
+    "anyChainReachedCritical": false,
+    "insideNullBand": true,
+    "throughput": {
+      "probeElapsedMs": 49062,
+      "probeChains": 1557376,
+      "probeThroughputPerSec": 31743.02,
+      "rev7ElapsedMs": 204191,
+      "negativeElapsedMs": 201596,
+      "positiveElapsedMs": 66678
+    }
+  }
+}

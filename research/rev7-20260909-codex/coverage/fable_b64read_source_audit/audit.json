@@ -1,0 +1,478 @@
+{
+  "base64_semantics": {
+    "base64_alphabet_size": 64,
+    "constructive_legal_hex_examples": [
+      {
+        "decoded_length": 819,
+        "decoded_sha256": "4f969244f420a506355a2c1e81bdd9841f1263818b9189ac31c5c5e14ea41acc",
+        "glyph_sha256": "fd5fab3062a996932a769bb453a701d316b2ca51f9ef327ff73b78985ccb3eb0",
+        "roundtrip_exact": true
+      },
+      {
+        "decoded_length": 819,
+        "decoded_sha256": "31c24b198e921245ec6de7be2288a71181a40da73c23214bdd7e46c216c188c5",
+        "glyph_sha256": "450436cd3d3c965d404e33880773593a7dd5f9e49709146afd3b60b69f87634a",
+        "roundtrip_exact": true
+      }
+    ],
+    "decoded_bytes": 819,
+    "iid_uniform_base64_probability_log10": -657.449510530135,
+    "length": 1092,
+    "logical_status": "probability under an iid uniform-symbol model, not impossibility for every cipher or deterministic construction",
+    "upper_hex_subset_size": 16
+  },
+  "full_target_sweep_replayed": false,
+  "identity": "ASTRA",
+  "limits": [
+    "Only the stored positive plant is cryptographically replayed; no target or broad cipher sweep is rerun.",
+    "The positive plant uses the full Base64 alphabet and therefore validates the general Base64/cipher path, not the restrictive all-hex-glyph condition.",
+    "Endpoint maxima and a random negative are heuristic comparisons; they do not establish that every cipher or key fails.",
+    "The absent t3 output prevents source-backed verification of the 396,081,280 headline trials and their endpoint maxima."
+  ],
+  "nulls": {
+    "comparison_design": "one stored random restricted-alphabet target supplies maxima for all five REAL readings; raw-reading null uses 2000 independent restricted-alphabet strings and only displayed-like decode",
+    "negative_generation_reproducible": false,
+    "readings_rng": "crypto.randomBytes; no seed saved",
+    "readings_trials": 2000,
+    "stored_negative_replayable": true,
+    "stored_negative_sha256": "c3ba91a865be7d24e2bcc91d6a68b9d63d5aa7dd412da8749b6baa891454d28a"
+  },
+  "plant_replay": {
+    "canonical_glyph_fact": {
+      "alphabet": "0123456789ABCDEF",
+      "decoded_length": 819,
+      "decoded_sha256": "75a070a73d578f7c214cdd8209d0e8f0246d07529a81395651d272e8aac65c4e",
+      "is_legal_base64": true,
+      "length": 1092,
+      "roundtrip_exact": true
+    },
+    "control": "stored_positive_only",
+    "full_sweep_replayed": false,
+    "identity": "ASTRA",
+    "node_version": "v26.4.0",
+    "plant": {
+      "base64_length": 1092,
+      "base64_sha256": "64ec46a8acb8aebe389120d25d1a9d6c29c55397415cf8a30a4f129fbb782ec2",
+      "chars_in_upper_hex": 280,
+      "cipher": "twofish",
+      "ciphertext_length": 819,
+      "ciphertext_sha256": "612fa46d018c12aa253137c32df36139899f6cf626197175e61a5787e8270fbe",
+      "decrypt_matches": true,
+      "iv_hex": "30303030303030303030303030303030",
+      "key_text": "Zombies",
+      "mode": "CFB8",
+      "plaintext_length": 819,
+      "plaintext_sha256": "9e7f7ef46958e39c46827e6d508d0fb5121a88afcef723bedb6a6460bc3514f1",
+      "reencrypt_matches": true,
+      "worker_path": {
+        "best_utf8_longest_run": {
+          "params": {
+            "cipher": "twofish",
+            "key": "Zombies",
+            "mode": "cfb8",
+            "reading": "plant_twofish_cfb8_Zombies"
+          },
+          "value": 803
+        },
+        "endpoint_best": {
+          "frac.base32": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.8032378580323786
+          },
+          "frac.base64std": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.8032378580323786
+          },
+          "frac.base64url": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.8032378580323786
+          },
+          "frac.binary": {
+            "params": {
+              "cipher": "safer-128",
+              "key": "Zombies",
+              "mode": "ofb",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.01726263871763255
+          },
+          "frac.binarysep": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.18804483188044832
+          },
+          "frac.decimal": {
+            "params": {
+              "cipher": "safer-64",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.05795314426633785
+          },
+          "frac.decimalsep": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.18804483188044832
+          },
+          "frac.hexlower": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "ofb",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.0859277708592777
+          },
+          "frac.hexmixed": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.28393524283935245
+          },
+          "frac.hexupper": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.28393524283935245
+          },
+          "frac.octal": {
+            "params": {
+              "cipher": "loki97",
+              "key": "Zombies",
+              "mode": "ctr",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.048567870485678705
+          },
+          "frac.octalsep": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.18804483188044832
+          },
+          "frac.printable": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 1
+          },
+          "frac.upperspace": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.9912826899128269
+          },
+          "printableFrac": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 1
+          },
+          "run.base32": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 11
+          },
+          "run.base64std": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 11
+          },
+          "run.base64url": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 11
+          },
+          "run.binary": {
+            "params": {
+              "cipher": "cast-128",
+              "key": "Zombies",
+              "mode": "ncfb",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 2
+          },
+          "run.binarysep": {
+            "params": {
+              "cipher": "safer-128",
+              "key": "Zombies",
+              "mode": "ncfb",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 3
+          },
+          "run.decimal": {
+            "params": {
+              "cipher": "blowfish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 3
+          },
+          "run.decimalsep": {
+            "params": {
+              "cipher": "blowfish-compat",
+              "key": "Zombies",
+              "mode": "ofb",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 5
+          },
+          "run.hexlower": {
+            "params": {
+              "cipher": "safer-128",
+              "key": "Zombies",
+              "mode": "ctr",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 4
+          },
+          "run.hexmixed": {
+            "params": {
+              "cipher": "safer-128",
+              "key": "Zombies",
+              "mode": "ctr",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 5
+          },
+          "run.hexupper": {
+            "params": {
+              "cipher": "saferplus",
+              "key": "Zombies",
+              "mode": "ctr",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 4
+          },
+          "run.octal": {
+            "params": {
+              "cipher": "loki97",
+              "key": "Zombies",
+              "mode": "ctr",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 3
+          },
+          "run.octalsep": {
+            "params": {
+              "cipher": "cast-128",
+              "key": "Zombies",
+              "mode": "ncfb",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 4
+          },
+          "run.printable": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 803
+          },
+          "run.upperspace": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 191
+          },
+          "small_0_31": {
+            "params": {
+              "cipher": "blowfish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.1504315659679408
+          },
+          "small_1_26": {
+            "params": {
+              "cipher": "3-way",
+              "key": "Zombies",
+              "mode": "ctr",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 0.12639405204460966
+          },
+          "utf8_longestRun": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 803
+          },
+          "utf8_validFrac": {
+            "params": {
+              "cipher": "twofish",
+              "key": "Zombies",
+              "mode": "cfb8",
+              "reading": "plant_twofish_cfb8_Zombies"
+            },
+            "value": 1
+          }
+        },
+        "errors": 0,
+        "top_utf8_first": {
+          "params": {
+            "cipher": "twofish",
+            "key": "Zombies",
+            "mode": "cfb8",
+            "reading": "plant_twofish_cfb8_Zombies"
+          },
+          "printableFrac": 1,
+          "v": 803
+        },
+        "trials": 80
+      }
+    },
+    "target_evaluated": false
+  },
+  "runtime": {
+    "node": "v26.4.0",
+    "old_ciphers_git_commit": "7c43c6ae65f49bd7504494d9ca3c55ce2e2496b6",
+    "python": "3.9.6"
+  },
+  "scope": {
+    "endpoint_code": "upstream/encoded/endpoints.js",
+    "readings": [
+      "displayed",
+      "fullReversed",
+      "bytePairReversed",
+      "nibbleSwap",
+      "lowercased"
+    ],
+    "stored_positive_hex_fraction": 0.2564102564102564,
+    "targets": 7,
+    "worker_skip": "one block size for block ciphers; zero for stream ciphers"
+  },
+  "source_hashes": {
+    "audit.py": "4b74325d4ff792a5e5bd0cc4af9ec23be2854a465eddfe6f9c060e30f9e40a84",
+    "old-ciphers/js/mcrypt.js": "8998b6dd50ebc24aede3df84228826951f2143fde393e15f95d1455e074d5061",
+    "old-ciphers/js/mcrypt.wasm": "60a8215b8f6f7774511004ec51528b60e781ca8c260d0b1cf1baad0dfc932be7",
+    "plant_control.js": "f931edafb9d18c468306174f236a28349e24825e0fa654d74d28fe9e7ec357d8",
+    "upstream/authorkeys/keys.txt": "0dcc832aa586e461dbb649463d7c1b9c7e36cca32a2591058868fc9c6346a7d7",
+    "upstream/b64read/assemble.js": "be55a7e761aad26c4238f0db78ae0ca53af31394e34504198182eee371f6789f",
+    "upstream/b64read/make_targets.js": "790f1859291ea2e302b8411a34d6df474824643fca02f76eb0ed3cdc2cbee122",
+    "upstream/b64read/out_t0.json": "f0d4c29a5a7c33b9414951eb8402c714f0278310d9e1a9414af18244e099bc88",
+    "upstream/b64read/out_t1.json": "7f843d10f5470adb346beeb4c24a5e251ec6a63dcaeb9686c86cd6c4eae3e446",
+    "upstream/b64read/out_t2.json": "a906db5b713ac75e04c9f97be28e419543a986229e08b72842178b5e35299696",
+    "upstream/b64read/plant_b64.txt": "64ec46a8acb8aebe389120d25d1a9d6c29c55397415cf8a30a4f129fbb782ec2",
+    "upstream/b64read/plant_note.json": "0ede23e25b23c5a85f7b5d1c80357ccfad5a65232529536cf98f1cf41b3c90c3",
+    "upstream/b64read/plant_plaintext.txt": "9e7f7ef46958e39c46827e6d508d0fb5121a88afcef723bedb6a6460bc3514f1",
+    "upstream/b64read/readings.js": "4f68adbfaa5524e82ed29a6139b9f4300c32d5a05b204e15309cb35c26d409c8",
+    "upstream/b64read/readings.json": "6c6dd18202a41625872e2c814fbfe7f1f3616db6c7292d4cc7109453039b024c",
+    "upstream/b64read/run.js": "840ee850ef89b620adb3876eea5973abe91b03520d9d3cbbfed03b3a6beaec92",
+    "upstream/b64read/targets.json": "5c954260590abb8de6c4da2f4aad95e207b308f394000052bb2c6e994f75e048",
+    "upstream/b64read/worker.js": "37f5a7319b264406802b473557c741245f6009fd7f17f8405cd3f13cd21600d4",
+    "upstream/cascade/cascade_lib.js": "0318a5b86eb9b93f6cfa848ac9c58a59e6ea05acb469b2d49569a840034c3aff",
+    "upstream/dictkey/keys_artifacts.txt": "e3c3b70a1219ebc045aca1dd78bdaaa7329ff5d96ec70844cc760468cc16fe7e",
+    "upstream/dictkey/keys_lore.txt": "c8e2d9831a8904c73fc05caaba5ef892a8449f2835f1d3d9c222c01196264a52",
+    "upstream/dictkey2/lib.js": "ffba90a95de78bdeef64c8d2b5602c61d3271e7780914d8322cc5bb9b912ec1d",
+    "upstream/encoded/endpoints.js": "c2e40c8bf8c951cd8fcd38f2839fbd8b7d982abe4232519e497da8c12443ce1d",
+    "upstream/rev7_hex.txt": "1b1d340ff7de53776c737d0d34ba7438d591679fe0f27efc56856f28c8648827",
+    "upstream/sibvocab/keys.txt": "23a833b460a553ed24c7c7e9206b6b2b4832ea7038c9e6c9fd182f4b3a60de17",
+    "upstream/utf8gate/utf8gate.js": "23eaf0741eecf23fedbe1a9c9a241c715f5d5a9d936689d2c70d440cb6121b8d"
+  },
+  "stored_sweep": {
+    "formula_per_key_per_target": {
+      "block_ciphers": 19,
+      "block_modes": 4,
+      "stream_ciphers": 4,
+      "trials": 80
+    },
+    "headline_arithmetic_inferred_t3_keys": 704667,
+    "headline_status": "arithmetically consistent with 704667 additional keys, but that tier output is absent and its endpoint results are not replayable from this capture",
+    "headline_trial_count": 396081280,
+    "out_t3_present": false,
+    "stored_outputs": [
+      {
+        "errors": 0,
+        "nkeys": 3,
+        "sha256": "f0d4c29a5a7c33b9414951eb8402c714f0278310d9e1a9414af18244e099bc88",
+        "targets": 7,
+        "tier": "t0",
+        "trial_sum": 1680
+      },
+      {
+        "errors": 0,
+        "nkeys": 280,
+        "sha256": "7f843d10f5470adb346beeb4c24a5e251ec6a63dcaeb9686c86cd6c4eae3e446",
+        "targets": 7,
+        "tier": "t1",
+        "trial_sum": 156800
+      },
+      {
+        "errors": 0,
+        "nkeys": 2338,
+        "sha256": "a906db5b713ac75e04c9f97be28e419543a986229e08b72842178b5e35299696",
+        "targets": 7,
+        "tier": "t2",
+        "trial_sum": 1309280
+      }
+    ],
+    "stored_trial_sum": 1467760
+  },
+  "target_evaluated": false
+}

@@ -1,0 +1,468 @@
+{
+  "b64read_inventory": {
+    "files": [
+      {
+        "bytes": 4105,
+        "name": "assemble.js",
+        "sha256": "be55a7e761aad26c4238f0db78ae0ca53af31394e34504198182eee371f6789f"
+      },
+      {
+        "bytes": 3186,
+        "name": "make_targets.js",
+        "sha256": "790f1859291ea2e302b8411a34d6df474824643fca02f76eb0ed3cdc2cbee122"
+      },
+      {
+        "bytes": 79392,
+        "name": "out_t0.json",
+        "sha256": "f0d4c29a5a7c33b9414951eb8402c714f0278310d9e1a9414af18244e099bc88"
+      },
+      {
+        "bytes": 83183,
+        "name": "out_t1.json",
+        "sha256": "7f843d10f5470adb346beeb4c24a5e251ec6a63dcaeb9686c86cd6c4eae3e446"
+      },
+      {
+        "bytes": 79599,
+        "name": "out_t2.json",
+        "sha256": "a906db5b713ac75e04c9f97be28e419543a986229e08b72842178b5e35299696"
+      },
+      {
+        "bytes": 1092,
+        "name": "plant_b64.txt",
+        "sha256": "64ec46a8acb8aebe389120d25d1a9d6c29c55397415cf8a30a4f129fbb782ec2"
+      },
+      {
+        "bytes": 145,
+        "name": "plant_note.json",
+        "sha256": "0ede23e25b23c5a85f7b5d1c80357ccfad5a65232529536cf98f1cf41b3c90c3"
+      },
+      {
+        "bytes": 819,
+        "name": "plant_plaintext.txt",
+        "sha256": "9e7f7ef46958e39c46827e6d508d0fb5121a88afcef723bedb6a6460bc3514f1"
+      },
+      {
+        "bytes": 4662,
+        "name": "readings.js",
+        "sha256": "4f68adbfaa5524e82ed29a6139b9f4300c32d5a05b204e15309cb35c26d409c8"
+      },
+      {
+        "bytes": 45562,
+        "name": "readings.json",
+        "sha256": "6c6dd18202a41625872e2c814fbfe7f1f3616db6c7292d4cc7109453039b024c"
+      },
+      {
+        "bytes": 2360,
+        "name": "run.js",
+        "sha256": "840ee850ef89b620adb3876eea5973abe91b03520d9d3cbbfed03b3a6beaec92"
+      },
+      {
+        "bytes": 8169,
+        "name": "targets.json",
+        "sha256": "5c954260590abb8de6c4da2f4aad95e207b308f394000052bb2c6e994f75e048"
+      },
+      {
+        "bytes": 4066,
+        "name": "worker.js",
+        "sha256": "37f5a7319b264406802b473557c741245f6009fd7f17f8405cd3f13cd21600d4"
+      }
+    ],
+    "historical_capture_path": "/private/tmp/rev7-fable-20260909/b64read",
+    "recommended_later_audit_entrypoints": [
+      "b64read/readings.js",
+      "b64read/worker.js",
+      "b64read/run.js",
+      "b64read/make_targets.js"
+    ]
+  },
+  "full_sweep_replayed": false,
+  "identity": "ASTRA",
+  "input_and_replay_status": {
+    "full_sweep_independently_replayed": false,
+    "negative_seed_expected_path": "cascade/negative_seed_hex.txt",
+    "negative_seed_present_at_capture": false,
+    "negative_sweep_independently_replayable_from_capture": false,
+    "rev7_normalized_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+    "rev7_raw_bytes": 1093,
+    "rev7_raw_sha256": "1b1d340ff7de53776c737d0d34ba7438d591679fe0f27efc56856f28c8648827",
+    "runtime_present_and_planted_recipe_replayed": true
+  },
+  "limits": [
+    "The single planted recipe was replayed through the actual captured WASM runtime; the 6,229,504-leaf target and negative sweeps were not rerun.",
+    "The negative seed was absent at capture time, so the reported negative-control histogram cannot be independently reproduced from this package.",
+    "Result ranks, maxima, counts, and histogram sums are internal/source consistency checks, not independent cryptographic recomputation of the full sweep.",
+    "The Base64-reading lane is inventoried by name, size, and hash only; its glyph/read semantics are not audited here."
+  ],
+  "node_control": {
+    "conventions": {
+      "block_iv": "ASCII 0 repeated to block size",
+      "block_mode": "CFB8 integer 0",
+      "keys": [
+        "literal ASCII Zombies",
+        "literal ASCII ZOMBIES"
+      ],
+      "loki97": "explicit 32-byte zero-backed key with literal prefix",
+      "reverse": "valid UTF-8 codepoint reverse, otherwise raw byte reverse"
+    },
+    "full_sweep_run": false,
+    "identity": "ASTRA",
+    "node": "v26.4.0",
+    "plant": {
+      "all_stage_lengths": [
+        332,
+        332,
+        332,
+        332,
+        332,
+        332,
+        332,
+        332,
+        332
+      ],
+      "ciphertext_bytes": 332,
+      "ciphertext_sha256": "85ef5c3572b1581c6900e0840dc2e559569712870e77d266d7694b97f3f02c81",
+      "decrypt_intermediate_sha256": {
+        "after_blowfish": "6f68fb90c9f2a66249b28a85efd7c360b3f1d2cd06b1e8efc62887b4a6f901a5",
+        "after_reverse": "67ed75abf121fa8304fc87252fc22dce4a531270f2806955102e6fc033bd857a",
+        "after_serpent": "eccdf292c53eedb4b5ccf76ed83b2341e6e1fc60da05460d40771e7589ed8052",
+        "recovered": "b3497dec7d217579eb3c2b60207a22ff61345f179046dfbe191babf69e709574"
+      },
+      "encrypt_intermediate_sha256": {
+        "after_blowfish": "67ed75abf121fa8304fc87252fc22dce4a531270f2806955102e6fc033bd857a",
+        "after_reverse": "eccdf292c53eedb4b5ccf76ed83b2341e6e1fc60da05460d40771e7589ed8052",
+        "after_twofish": "6f68fb90c9f2a66249b28a85efd7c360b3f1d2cd06b1e8efc62887b4a6f901a5",
+        "rebuilt": "85ef5c3572b1581c6900e0840dc2e559569712870e77d266d7694b97f3f02c81"
+      },
+      "exact_decrypt_recovery": true,
+      "exact_encrypt_rebuild": true,
+      "hex_file_bytes": 664,
+      "hex_sha256": "ed8bc54ce3b752eaf93d09c35d577ba0565539a61b90354e86d501f352499147",
+      "hex_symbols": 664,
+      "plaintext_bytes": 332,
+      "plaintext_sha256": "b3497dec7d217579eb3c2b60207a22ff61345f179046dfbe191babf69e709574",
+      "score_after_skip_last_block": {
+        "longestRun": 316,
+        "tailLen": 316,
+        "validCount": 316
+      },
+      "true_path": [
+        "decrypt:serpent:Zombies",
+        "reverse",
+        "decrypt:blowfish:Zombies",
+        "decrypt:twofish:Zombies"
+      ]
+    },
+    "registry": {
+      "cipher_info": {
+        "3-way": {
+          "blockSize": 12,
+          "keySizes": [
+            12
+          ],
+          "stream": false
+        },
+        "arcfour": {
+          "blockSize": 0,
+          "keySizes": [
+            256
+          ],
+          "stream": true
+        },
+        "blowfish": {
+          "blockSize": 8,
+          "keySizes": [
+            56
+          ],
+          "stream": false
+        },
+        "blowfish-compat": {
+          "blockSize": 8,
+          "keySizes": [
+            56
+          ],
+          "stream": false
+        },
+        "cast-128": {
+          "blockSize": 8,
+          "keySizes": [
+            16
+          ],
+          "stream": false
+        },
+        "cast-256": {
+          "blockSize": 16,
+          "keySizes": [
+            16,
+            24,
+            32
+          ],
+          "stream": false
+        },
+        "des": {
+          "blockSize": 8,
+          "keySizes": [
+            8
+          ],
+          "stream": false
+        },
+        "enigma": {
+          "blockSize": 0,
+          "keySizes": [
+            13
+          ],
+          "stream": true
+        },
+        "gost": {
+          "blockSize": 8,
+          "keySizes": [
+            32
+          ],
+          "stream": false
+        },
+        "loki97": {
+          "blockSize": 16,
+          "keySizes": [
+            16,
+            24,
+            32
+          ],
+          "stream": false
+        },
+        "panama": {
+          "blockSize": 0,
+          "keySizes": [
+            32
+          ],
+          "stream": true
+        },
+        "rc2": {
+          "blockSize": 8,
+          "keySizes": [
+            128
+          ],
+          "stream": false
+        },
+        "rijndael-128": {
+          "blockSize": 16,
+          "keySizes": [
+            16,
+            24,
+            32
+          ],
+          "stream": false
+        },
+        "rijndael-192": {
+          "blockSize": 24,
+          "keySizes": [
+            16,
+            24,
+            32
+          ],
+          "stream": false
+        },
+        "rijndael-256": {
+          "blockSize": 32,
+          "keySizes": [
+            16,
+            24,
+            32
+          ],
+          "stream": false
+        },
+        "safer-128": {
+          "blockSize": 8,
+          "keySizes": [
+            16
+          ],
+          "stream": false
+        },
+        "safer-64": {
+          "blockSize": 8,
+          "keySizes": [
+            8
+          ],
+          "stream": false
+        },
+        "saferplus": {
+          "blockSize": 16,
+          "keySizes": [
+            16,
+            24,
+            32
+          ],
+          "stream": false
+        },
+        "serpent": {
+          "blockSize": 16,
+          "keySizes": [
+            16,
+            24,
+            32
+          ],
+          "stream": false
+        },
+        "tripledes": {
+          "blockSize": 8,
+          "keySizes": [
+            24
+          ],
+          "stream": false
+        },
+        "twofish": {
+          "blockSize": 16,
+          "keySizes": [
+            16,
+            24,
+            32
+          ],
+          "stream": false
+        },
+        "wake": {
+          "blockSize": 0,
+          "keySizes": [
+            32
+          ],
+          "stream": true
+        },
+        "xtea": {
+          "blockSize": 8,
+          "keySizes": [
+            16
+          ],
+          "stream": false
+        }
+      },
+      "ciphers": [
+        "3-way",
+        "blowfish",
+        "blowfish-compat",
+        "cast-128",
+        "cast-256",
+        "des",
+        "tripledes",
+        "gost",
+        "loki97",
+        "rc2",
+        "rijndael-128",
+        "rijndael-192",
+        "rijndael-256",
+        "safer-64",
+        "safer-128",
+        "saferplus",
+        "serpent",
+        "twofish",
+        "xtea",
+        "enigma",
+        "panama",
+        "arcfour",
+        "wake"
+      ],
+      "keys": [
+        "Zombies",
+        "ZOMBIES"
+      ],
+      "layer_option_count": 46,
+      "layer_options": [
+        "decrypt:3-way:Zombies",
+        "decrypt:3-way:ZOMBIES",
+        "decrypt:blowfish:Zombies",
+        "decrypt:blowfish:ZOMBIES",
+        "decrypt:blowfish-compat:Zombies",
+        "decrypt:blowfish-compat:ZOMBIES",
+        "decrypt:cast-128:Zombies",
+        "decrypt:cast-128:ZOMBIES",
+        "decrypt:cast-256:Zombies",
+        "decrypt:cast-256:ZOMBIES",
+        "decrypt:des:Zombies",
+        "decrypt:des:ZOMBIES",
+        "decrypt:tripledes:Zombies",
+        "decrypt:tripledes:ZOMBIES",
+        "decrypt:gost:Zombies",
+        "decrypt:gost:ZOMBIES",
+        "decrypt:loki97:Zombies",
+        "decrypt:loki97:ZOMBIES",
+        "decrypt:rc2:Zombies",
+        "decrypt:rc2:ZOMBIES",
+        "decrypt:rijndael-128:Zombies",
+        "decrypt:rijndael-128:ZOMBIES",
+        "decrypt:rijndael-192:Zombies",
+        "decrypt:rijndael-192:ZOMBIES",
+        "decrypt:rijndael-256:Zombies",
+        "decrypt:rijndael-256:ZOMBIES",
+        "decrypt:safer-64:Zombies",
+        "decrypt:safer-64:ZOMBIES",
+        "decrypt:safer-128:Zombies",
+        "decrypt:safer-128:ZOMBIES",
+        "decrypt:saferplus:Zombies",
+        "decrypt:saferplus:ZOMBIES",
+        "decrypt:serpent:Zombies",
+        "decrypt:serpent:ZOMBIES",
+        "decrypt:twofish:Zombies",
+        "decrypt:twofish:ZOMBIES",
+        "decrypt:xtea:Zombies",
+        "decrypt:xtea:ZOMBIES",
+        "decrypt:enigma:Zombies",
+        "decrypt:enigma:ZOMBIES",
+        "decrypt:panama:Zombies",
+        "decrypt:panama:ZOMBIES",
+        "decrypt:arcfour:Zombies",
+        "decrypt:arcfour:ZOMBIES",
+        "decrypt:wake:Zombies",
+        "decrypt:wake:ZOMBIES"
+      ]
+    },
+    "target_evaluated": false
+  },
+  "reported_result_consistency": {
+    "four_orientation_counts_exact": true,
+    "histograms_sum_exact": true,
+    "negative_max": 23,
+    "positive_max": 316,
+    "positive_rank": 1,
+    "positive_tie_count": 2,
+    "probe_sha256": "d87160b087bb0a59ea17f247457f6b7726cd57ddbce651ae4e771aa033cc257a",
+    "result_sha256": "4cf0f165d7659135b7b5230a15dedce880b8994a071d4adeab5ce269edfcef70",
+    "rev7_max": 21
+  },
+  "source_hashes": {
+    "audit.py": "a4eda49aaedd20b76d060e3a52565c48fd98acc8448a709bc898d7cb3e8b8fd7",
+    "capture/b64read_inventory.json": "3920c4e7c030fe292838b88df5bd8e2e65596ade01c6a639a67f71bdf014443b",
+    "capture/rev7_hex.txt": "1b1d340ff7de53776c737d0d34ba7438d591679fe0f27efc56856f28c8648827",
+    "controls.js": "6a5c4aa8c125d40e95c1e1fcd7385b12a8277863924f9ad98496dca011cef4e4",
+    "old-ciphers/js/mcrypt.js": "8998b6dd50ebc24aede3df84228826951f2143fde393e15f95d1455e074d5061",
+    "old-ciphers/js/mcrypt.wasm": "60a8215b8f6f7774511004ec51528b60e781ca8c260d0b1cf1baad0dfc932be7",
+    "upstream/cascade/cascade_lib.js": "0318a5b86eb9b93f6cfa848ac9c58a59e6ea05acb469b2d49569a840034c3aff",
+    "upstream/cascade/scan.js": "a4922fa692dce40ca69df76073f7399deb35396faec0bc650cbbc1be10d5872d",
+    "upstream/cascade3/make_plant3.js": "f4728dc92deab2024e03b93ec867c137bb798f7188bc6b34e0501c736f914516",
+    "upstream/cascade3/plant3_hex.txt": "ed8bc54ce3b752eaf93d09c35d577ba0565539a61b90354e86d501f352499147",
+    "upstream/cascade3/plant3_plaintext.txt": "b3497dec7d217579eb3c2b60207a22ff61345f179046dfbe191babf69e709574",
+    "upstream/cascade3/probe_results.json": "d87160b087bb0a59ea17f247457f6b7726cd57ddbce651ae4e771aa033cc257a",
+    "upstream/cascade3/results.json": "4cf0f165d7659135b7b5230a15dedce880b8994a071d4adeab5ce269edfcef70",
+    "upstream/cascade3/run3.js": "e4a9d224da58ccbb8d12c32f512eecb8d1c1e8acc5c2bef9f2d0d87741d2ae66",
+    "upstream/cascade3/scan3.js": "f502c413da81a6ca8d6acd7083c657787c70f67f725d551952296b915003a6ec",
+    "upstream/dictkey2/lib.js": "ffba90a95de78bdeef64c8d2b5602c61d3271e7780914d8322cc5bb9b912ec1d",
+    "upstream/utf8gate/utf8gate.js": "23eaf0741eecf23fedbe1a9c9a241c715f5d5a9d936689d2c70d440cb6121b8d"
+  },
+  "source_scope": {
+    "block_iv": "ASCII 0 repeated to block size",
+    "block_mode": "CFB8 mode integer 0",
+    "cipher_count": 23,
+    "full_leaves": 6229504,
+    "keys": [
+      "Zombies",
+      "ZOMBIES"
+    ],
+    "last_layer_score_skip": "last cipher block size, or zero for stream ciphers",
+    "layer_options": 46,
+    "leaves_per_orientation": 1557376,
+    "options_order": "cipher registry order, then Zombies/ZOMBIES",
+    "orientations": [
+      "displayed",
+      "fullReversed",
+      "bytePairReversed",
+      "nibbleSwap"
+    ],
+    "reverse_flags_per_chain": 4
+  },
+  "target_evaluated": false
+}

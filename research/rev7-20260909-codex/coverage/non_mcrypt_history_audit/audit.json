@@ -1,0 +1,124 @@
+{
+  "author_corpus": {
+    "rev12_local_primary_record": {
+      "iv_hex": "30303030303030303030303030303030",
+      "key": "Zombies",
+      "mdx": "lavender/src/content/docs/ciphers/bo3/rev/rev12.mdx",
+      "method": "XTEA-CFB"
+    },
+    "the_giant_4": {
+      "current_solve_method": "XXTEA with NUL-padded TheGiant, recorded in linked solver report/session source note",
+      "local_repository_status": "stale: tg4.mdx and the_giant.json still say unsolved and contain no solution",
+      "provenance_class": "current external solver report retained by project; not established by the stale local MDX",
+      "solver_report_url": "https://www.reddit.com/r/CODZombies/comments/1w9e5ib/solved_thegiant_cipher_solved_after_3958_days/"
+    }
+  },
+  "conclusion": "A new XXTEA sweep may cover additional framings/keys, but it must be compared against the recorded repair and Veness-serialization grids. The blanket claim that XXTEA was never tried conflicts with the pinned history. No prior named target coverage was found here for TEA, RC5, RC6, IDEA, Camellia, SEED, or ARIA.",
+  "findings": [
+    {
+      "evidence": "issue comment 5600941685",
+      "evidence_level": "retained summary only; original target source/ledger unavailable in this audited package and not re-executed",
+      "family": "XXTEA fixed wrapper/repair hypotheses",
+      "limit": "does not exclude XXTEA generally or other framing/key conventions",
+      "prior_coverage": true,
+      "recorded_count": "286,523,392 combined repair parameters; compressed recognition revisits same decryptions",
+      "scope": "four-consecutive-hex insertion grids; NUL-padded Zombies and TheGiant; fixed endianness/round/framing assumptions",
+      "status": "no validated framing/readability result"
+    },
+    {
+      "evidence": "issue comment 5600942737 and coverage/REPORT.md",
+      "evidence_level": "retained summary only; original target source/ledger unavailable in this audited package and not re-executed",
+      "family": "Chris Veness XXTEA serialization bug",
+      "limit": "one wrapper serialization, not general XXTEA",
+      "prior_coverage": true,
+      "recorded_count": "148,291 representations; 22 identity ASCII-hex cases separately decrypted",
+      "scope": "inverse of historical UTF-8-expanded ciphertext serialization",
+      "status": "zero nonidentity survivors; identity cases no plaintext"
+    },
+    {
+      "evidence": "issue comment 5600942737",
+      "evidence_level": "retained summary only; original target source/ledger unavailable in this audited package and not re-executed",
+      "family": "CryptoJS Rabbit password-wrapper weakness",
+      "limit": "specific wrapper/framing; not Rabbit generally",
+      "prior_coverage": true,
+      "scope": "complete 2^32 effective keys, two direct orientations, first eight bytes as IV, exact string API",
+      "status": "no valid 64-byte UTF-8 prefix"
+    },
+    {
+      "evidence": "issue comment 5600941685/5600942737",
+      "evidence_level": "retained inventory summary; individual original run artifacts not re-executed here",
+      "family": "other source-specific non-libmcrypt wrappers/envelopes",
+      "limit": "not blanket exclusions of underlying algorithms",
+      "prior_coverage": true,
+      "scope": "RC4Drop, RabbitLegacy, CipherSaber, CryptoJS/Veness wrappers; specified OpenPGP/RNCryptor/Defuse/Halite/JavaScrypt envelopes",
+      "status": "finite settings/corpora recorded without a validated layer"
+    },
+    {
+      "evidence": "FABLE001 issue plan and local Rev12 solved record",
+      "family": "XTEA",
+      "limit": "XTEA is distinct from XXTEA",
+      "prior_coverage": true,
+      "scope": "included in the recorded libmcrypt sweep; independently author-documented in Rev12 as XTEA-CFB with Zombies and ASCII-zero 16-byte IV",
+      "status": "not a non-libmcrypt gap"
+    },
+    {
+      "evidence": "mechanical standalone-term inventory over every body line in pinned issue snapshot, followed by manual classification of its two SEED matches as PRNG metadata; manual review of pinned coverage summary found no named target experiment",
+      "family": "TEA, RC5, RC6, IDEA, Camellia, SEED, ARIA",
+      "limit": "not proof of global absence; current FABLE work after the snapshot is outside this history claim",
+      "prior_coverage": false,
+      "scope": null,
+      "status": "no target experiment found in reviewed corpus; raw-text absence is exact for TEA/RC5/RC6/IDEA/Camellia/ARIA, while SEED has only generic PRNG metadata matches"
+    }
+  ],
+  "identity": "ASTRA",
+  "named_term_inventory": {
+    "corpus": "all body lines in pinned latest-comments.json",
+    "interpretation": "SEED matches are PRNG/CLI seed metadata, not cipher-family target experiments; all other named terms have zero raw-text matches",
+    "matches": {
+      "ARIA": [],
+      "Camellia": [],
+      "IDEA": [],
+      "RC5": [],
+      "RC6": [],
+      "SEED": [
+        {
+          "body_line": 21,
+          "comment_id": 5608639180,
+          "text": "python3 research/rev7-20260909-codex/audit/periodic_audit.py --repetitions 200 --seed 20260910"
+        },
+        {
+          "body_line": 305,
+          "comment_id": 5608864204,
+          "text": "else if (a[i] === '--random-seed') out.randomSeed = parseInt(a[++i], 10);"
+        },
+        {
+          "body_line": 333,
+          "comment_id": 5608864204,
+          "text": "const seed = opts.randomSeed || 1;"
+        },
+        {
+          "body_line": 335,
+          "comment_id": 5608864204,
+          "text": "let s = seed >>> 0 || 1;"
+        }
+      ],
+      "TEA": []
+    },
+    "matching_rule": "case-insensitive standalone ASCII word"
+  },
+  "new_crypto_run": false,
+  "review_boundary": "pinned local issue snapshot and named repository/source records; absence means no match in this reviewed corpus, not no private/community work",
+  "source_hashes": {
+    "audit.py": "12871f4963a916b626a8a149107c77ff9f74b74143787eddb10ddd582d22ad1b",
+    "coverage_report": "2a5d20ae6eee4d2ddf2a8ba9ef7bd208e43f0f372fac29e5305f3bdf6918c57e",
+    "latest_comments": "493c657cb1fd8c33ddf028734464953b1847afcee84ba93dc528dbf926d09597",
+    "notebook_snapshot": "ad67d420644b203a8f952d84f93d4755578c079aa9b98952cab8a73ccc3461ab",
+    "primary_routes": "ee9f2b9cf32a0724c9bab5c421e40c498a58ae0aa78924d9a3c7651a1ad865c5",
+    "rev12_mdx": "c8c1ea91d1b311c82f2fab26f0477b902746323dbeda5fdf7800d391ec115039",
+    "revelations_data": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+    "session_state_excerpt": "f2344db7549e5f523316896f87dca6dfb1a7211ba9bc364de091eb89b7972592",
+    "tg4_mdx": "860b4d4b9e9d552c0cf58a48343a42a0f17a50b1666626baf596bb9a2797a056",
+    "the_giant_data": "2a9e29a12db1784777397e59d8b88bb90b00b39ab7e82a67e7ba8c617ef26552"
+  },
+  "target_evaluated": false
+}

@@ -1,0 +1,72 @@
+{
+  "capture_path": "/private/tmp/rev7-fable-20260909/b64read",
+  "files": [
+    {
+      "bytes": 4105,
+      "name": "assemble.js",
+      "sha256": "be55a7e761aad26c4238f0db78ae0ca53af31394e34504198182eee371f6789f"
+    },
+    {
+      "bytes": 3186,
+      "name": "make_targets.js",
+      "sha256": "790f1859291ea2e302b8411a34d6df474824643fca02f76eb0ed3cdc2cbee122"
+    },
+    {
+      "bytes": 79392,
+      "name": "out_t0.json",
+      "sha256": "f0d4c29a5a7c33b9414951eb8402c714f0278310d9e1a9414af18244e099bc88"
+    },
+    {
+      "bytes": 83183,
+      "name": "out_t1.json",
+      "sha256": "7f843d10f5470adb346beeb4c24a5e251ec6a63dcaeb9686c86cd6c4eae3e446"
+    },
+    {
+      "bytes": 79599,
+      "name": "out_t2.json",
+      "sha256": "a906db5b713ac75e04c9f97be28e419543a986229e08b72842178b5e35299696"
+    },
+    {
+      "bytes": 1092,
+      "name": "plant_b64.txt",
+      "sha256": "64ec46a8acb8aebe389120d25d1a9d6c29c55397415cf8a30a4f129fbb782ec2"
+    },
+    {
+      "bytes": 145,
+      "name": "plant_note.json",
+      "sha256": "0ede23e25b23c5a85f7b5d1c80357ccfad5a65232529536cf98f1cf41b3c90c3"
+    },
+    {
+      "bytes": 819,
+      "name": "plant_plaintext.txt",
+      "sha256": "9e7f7ef46958e39c46827e6d508d0fb5121a88afcef723bedb6a6460bc3514f1"
+    },
+    {
+      "bytes": 4662,
+      "name": "readings.js",
+      "sha256": "4f68adbfaa5524e82ed29a6139b9f4300c32d5a05b204e15309cb35c26d409c8"
+    },
+    {
+      "bytes": 45562,
+      "name": "readings.json",
+      "sha256": "6c6dd18202a41625872e2c814fbfe7f1f3616db6c7292d4cc7109453039b024c"
+    },
+    {
+      "bytes": 2360,
+      "name": "run.js",
+      "sha256": "840ee850ef89b620adb3876eea5973abe91b03520d9d3cbbfed03b3a6beaec92"
+    },
+    {
+      "bytes": 8169,
+      "name": "targets.json",
+      "sha256": "5c954260590abb8de6c4da2f4aad95e207b308f394000052bb2c6e994f75e048"
+    },
+    {
+      "bytes": 4066,
+      "name": "worker.js",
+      "sha256": "37f5a7319b264406802b473557c741245f6009fd7f17f8405cd3f13cd21600d4"
+    }
+  ],
+  "historical_capture": true,
+  "identity": "ASTRA"
+}
