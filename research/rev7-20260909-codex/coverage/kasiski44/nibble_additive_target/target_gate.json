@@ -1,0 +1,52 @@
+{
+  "artifact_hashes": {
+    "research/rev7-20260909-codex/coverage/kasiski44/geometry.py": "cad6c29e75cc1d43ba9f43d172767c081bed8b0394ce5ae7c8adee3e22427e61",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_controls/controls.json": "3c83848a7c1c342f2033de1aa246969c1a76aab6693db14fff6d719cadf2ac22",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_controls/controls.py": "33691c30f527fd0bbf1073b36871c9eca8bd9097e8dfd45da7ccf6bd7f94df16",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_controls/independent_arithmetic.json": "5e1d387192bce8ddd49fe07e6e74e116f672098c73eab637a2ebcfd800de82ec",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_controls/independent_arithmetic.py": "c9cc1c14e4cab815a1c4428366b0cecfa64181024c59a10a6ed498121b855b0a",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_controls/model.py": "d0a4c73f3fa61f198f59b0a662f4f3b3039c2fc092aed19dce9e70cbbad4a010",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_target/driver_controls.json": "57519855296da5163c2e46d53326d302e5072778e63fd60d68f71bb1ce6b7834",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_target/driver_controls.py": "c41c76eb9e2b33fab782dcd0c1ae602deee6f0b4f481957ed23517adb0ff6485",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_target/run_target.py": "f0981f907ab6a9beb8fddd6ed7447b5eeed16f3e281d12710d81e4baca47f884",
+    "research/rev7-20260909-codex/coverage/periodic_bytebag_controls/model.py": "bce745611e7a9b91d6471b348587c4f9af84ad39ffddae1c148a2ab5a670a444"
+  },
+  "canonical_hex_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "cells": [
+    [
+      19,
+      "subtract"
+    ],
+    [
+      19,
+      "beaufort"
+    ],
+    [
+      57,
+      "subtract"
+    ],
+    [
+      57,
+      "beaufort"
+    ]
+  ],
+  "dataset_sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+  "decoded_hex_sha256": "1cb32555f497309352adec7f5757bc3e9f5fb02fe077995ae0b83ff3a052d1be",
+  "identity": "ASTRA",
+  "mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "prior_target_run": false,
+  "required_artifacts": [
+    "research/rev7-20260909-codex/coverage/kasiski44/geometry.py",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_controls/controls.json",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_controls/controls.py",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_controls/independent_arithmetic.json",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_controls/independent_arithmetic.py",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_controls/model.py",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_target/driver_controls.json",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_target/driver_controls.py",
+    "research/rev7-20260909-codex/coverage/kasiski44/nibble_additive_target/run_target.py",
+    "research/rev7-20260909-codex/coverage/periodic_bytebag_controls/model.py"
+  ],
+  "scope": "equal-cut-4 ZOMBIES decode-forward; independent hexadecimal-digit arithmetic; bag165",
+  "target_authorized": true
+}

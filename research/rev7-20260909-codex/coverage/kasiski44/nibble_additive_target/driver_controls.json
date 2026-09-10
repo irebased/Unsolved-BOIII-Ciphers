@@ -1,0 +1,86 @@
+{
+  "assertions": {
+    "all_driver_paths": true,
+    "all_passed": true,
+    "all_six_parent_cells": true,
+    "all_truth_retained": true
+  },
+  "cells": [
+    {
+      "cell_id": "m19_subtract",
+      "fast_equals_slow": true,
+      "hex_key_period": 19,
+      "independent_geometry_restored": true,
+      "operation": "subtract",
+      "paired_byte_period": 19,
+      "restored_cipher_sha256": "6bb4549848df1f312983180894cd763375cdd4ed607515a5227719b90e348c7a",
+      "target_compute_equals_parent_masks": true,
+      "truth_retained": true
+    },
+    {
+      "cell_id": "m19_beaufort",
+      "fast_equals_slow": true,
+      "hex_key_period": 19,
+      "independent_geometry_restored": true,
+      "operation": "beaufort",
+      "paired_byte_period": 19,
+      "restored_cipher_sha256": "54388af9d02bc6f1abd1588ebd637e485511dc64603f85dc7f98a9f94f547bb8",
+      "target_compute_equals_parent_masks": true,
+      "truth_retained": true
+    },
+    {
+      "cell_id": "m38_subtract",
+      "fast_equals_slow": true,
+      "hex_key_period": 38,
+      "independent_geometry_restored": true,
+      "operation": "subtract",
+      "paired_byte_period": 19,
+      "restored_cipher_sha256": "318300dc4fd839ef6558dfabe1d044ecac42b4d01ea7ec866d7b904fd85f3b83",
+      "target_compute_equals_parent_masks": true,
+      "truth_retained": true
+    },
+    {
+      "cell_id": "m38_beaufort",
+      "fast_equals_slow": true,
+      "hex_key_period": 38,
+      "independent_geometry_restored": true,
+      "operation": "beaufort",
+      "paired_byte_period": 19,
+      "restored_cipher_sha256": "ec850f5ac0a2278ab0a9885388816c10b7271a6c04146cfef82e5c31130328d6",
+      "target_compute_equals_parent_masks": true,
+      "truth_retained": true
+    },
+    {
+      "cell_id": "m57_subtract",
+      "fast_equals_slow": true,
+      "hex_key_period": 57,
+      "independent_geometry_restored": true,
+      "operation": "subtract",
+      "paired_byte_period": 57,
+      "restored_cipher_sha256": "e6cd1a49ce744a0b31532cf1e961d387142814d52d4fdf0ea29c1d2de9937d39",
+      "target_compute_equals_parent_masks": true,
+      "truth_retained": true
+    },
+    {
+      "cell_id": "m57_beaufort",
+      "fast_equals_slow": true,
+      "hex_key_period": 57,
+      "independent_geometry_restored": true,
+      "operation": "beaufort",
+      "paired_byte_period": 57,
+      "restored_cipher_sha256": "da273d84418bd15e6737d31a0f9be0899de3237c76fb39dd9bf751319bed7b5f",
+      "target_compute_equals_parent_masks": true,
+      "truth_retained": true
+    }
+  ],
+  "identity": "ASTRA",
+  "rev7_read": false,
+  "source_hashes": {
+    "driver_controls.py": "c41c76eb9e2b33fab782dcd0c1ae602deee6f0b4f481957ed23517adb0ff6485",
+    "geometry.py": "cad6c29e75cc1d43ba9f43d172767c081bed8b0394ce5ae7c8adee3e22427e61",
+    "parent_controls.json": "3c83848a7c1c342f2033de1aa246969c1a76aab6693db14fff6d719cadf2ac22",
+    "parent_model.py": "d0a4c73f3fa61f198f59b0a662f4f3b3039c2fc092aed19dce9e70cbbad4a010",
+    "run_target.py": "f0981f907ab6a9beb8fddd6ed7447b5eeed16f3e281d12710d81e4baca47f884"
+  },
+  "target_evaluated": false
+}

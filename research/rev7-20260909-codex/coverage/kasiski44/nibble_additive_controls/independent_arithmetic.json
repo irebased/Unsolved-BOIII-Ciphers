@@ -1,0 +1,20 @@
+{
+  "identity": "ASTRA",
+  "method": "derive keys from all permitted plaintext bytes, independently of model decryption",
+  "status": "PASS",
+  "tables": [
+    {
+      "cipher_values": 256,
+      "expected_keys_per_value": 165,
+      "mask_table_sha256": "ffc72500b668e524b1cf3012bc91cabf0d597bf27f56b542388eaaf15dc0f738",
+      "operation": "subtract"
+    },
+    {
+      "cipher_values": 256,
+      "expected_keys_per_value": 165,
+      "mask_table_sha256": "2e82085637c67c268a0b69b15290032bf8ab29be5d5ce04d4cb6fb19ccd16239",
+      "operation": "beaufort"
+    }
+  ],
+  "target_read": false
+}
