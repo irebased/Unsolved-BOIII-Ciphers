@@ -410,3 +410,19 @@ An additional [endpoint audit](iv_independent/cascade/endpoint_audit/REPORT.md) 
 python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/endpoint_audit/endpoint_audit.py --verify research/rev7-20260909-codex/iv_independent/cascade/endpoint_audit/endpoint_audit.json
 python3 -S -B research/rev7-20260909-codex/iv_independent/cascade/endpoint_audit/endpoint_audit.py --output /tmp/cascade-endpoint-audit-new.json
 ```
+
+
+## Byte-unit AMSCO geometry and composition controls
+
+The [byte-AMSCO package](../byte_amsco/astra/README.md) defines continuous alternating one/two-byte cells, row-major placement, arbitrary column read order, and exact inversion with shortened final cells. It is a binary analogue before hex serialization; historical PHP AMSCO operates on characters. These are distinct pipeline hypotheses.
+
+Independent production forward/inverse implementations and separate tuple-token oracles agree on 37,012 exhaustive small fixtures. Length-546 controls cover widths 2 through 9 and both starts. Seven accepted CFB8 backends pass all four orientations and two arbitrary-IV plants, with exact pre-transposition ciphertext recovery and the expected IV-independent suffix. Root independently regenerated the entire [control ledger](../byte_amsco/astra/controls.json), SHA-256 `767d651729055d1d6fa202e8983635d3afafd46d06729924569db7260ed21175`. All deterministic fields matched; differences were limited to temporary source-build paths/hashes and benchmark timing fields.
+
+The prospective geometry grid is 3,272,896 transforms. A bounded 50,000-order baseline estimates approximately 262 seconds for Python geometry alone; it excludes cipher and endpoint work. A future target should precompute metadata and gather only required windows before early rejection. This package contains no target driver, gate or evaluation.
+
+```sh
+python3 -S -B research/byte_amsco/astra/controls.py
+python3 -B research/byte_amsco/astra/controls.py --regenerate /tmp/byte-amsco-controls.json
+```
+
+The default command performs standard-library source/dependency/structure checks. Regeneration performs the actual synthetic cryptography using the separately controlled seven-backend runtime.
