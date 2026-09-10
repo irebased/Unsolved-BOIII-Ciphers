@@ -560,3 +560,19 @@ python3 -B research/rev7-20260909-codex/rijndael256_controls/controls.py --regen
 ```
 
 The default command checks pinned inputs and recorded structures; explicit regeneration performs the synthetic cryptography. This package reads no Rev7 data and contains no target driver, gate or target result.
+
+
+## Rijndael-256 aligned-window controls
+
+The [aligned-window engine](rijndael256_windows/README.md) tests two complete decrypted blocks within a 546-byte stream. ECB uses 64-byte input windows at every offset 0–482. CBC uses 96-byte windows at offsets 0–450 and returns D(C1) xor C0 followed by D(C2) xor C1, independent of every external IV. The endpoint permits both cut-boundary states of the five-sequence UTF-8 automaton; it never trims or unpads. This is a condition on two complete aligned blocks, not any arbitrary 64-byte substring.
+
+Root reviewed the implementation and regenerated the complete [571,760-byte synthetic ledger](rijndael256_windows/controls.json) byte for byte, SHA-256 `56cfdfc7245b3f28b819858b40e537d787ed4bac664be6677edba30c4cdc480b`. Its 768 plants cover all 32 alignment residues, both modes, three explicit padded key lengths and four orientations. Each retains exactly the known planted offset, and all 768 retained windows receive independent JS block replay. Four representative negatives also receive full JS plaintext equality and a separate cut-aware regex check. Fixed-CBC-ciphertext controls verify unchanged returned bytes under two external IVs.
+
+Five endpoint fixtures cover partial UTF-8 states and an invalid sequence. Three framing examples establish only the arithmetic 546 = leading bytes + 17*32 + trailing bytes for (0,2), (1,1), and (2,0). They do not claim an encrypted framing experiment. The optional complete-row output path is exercised over 483 rows, preserving exact plaintext blocks, classifications and witnesses with digest `9239d8581cedfc26589483251e36d579f9b49c053b538a3d884ef4a2fd7cec3a`.
+
+```sh
+python3 -S -B research/rev7-20260909-codex/rijndael256_windows/controls.py
+python3 -B research/rev7-20260909-codex/rijndael256_windows/controls.py --regenerate /tmp/rijndael256-windows.json
+```
+
+This source/control snapshot has no target driver, gate or Rev7 evaluation. A future grid would contain 11,208 windows across three keys, four orientations and both modes. The ECB/CBC equations follow [NIST SP 800-38A sections 6.1–6.2](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a.pdf); the window coverage statement is our deduction.
