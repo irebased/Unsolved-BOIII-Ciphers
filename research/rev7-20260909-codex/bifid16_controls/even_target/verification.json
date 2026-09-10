@@ -1,0 +1,63 @@
+{
+  "broad_unicode_byte_union_size": 213,
+  "canonical_text_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "cells_verified": 2184,
+  "dataset_sha256": "68022b89d05deb080b5097d83517fea3427bcbf3364c1ac79cdf1a5af7e3550e",
+  "driver_sha256": "b86fdd8402319753eb0292e75b9f0712a1ed2044038761e5d7a23af30cd4ff85",
+  "exact_201_byte_union_size": 165,
+  "histogram_bins_verified": 559104,
+  "identity": "ASTRA",
+  "mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "method": "independent global plaintext-byte index reconstruction; no square solver",
+  "new_target_search": false,
+  "pair_values_verified": 1192464,
+  "result_sha256": "acc7df78f141e79b9d3c4e23dba3124ddb7665d5cb5f7450eabd5d9a88ce1dc8",
+  "status": "PASS",
+  "summary": {
+    "by_orientation": {
+      "byte_reverse": {
+        "bound_165_excluded": 546,
+        "bound_165_unresolved": 0,
+        "bound_213_excluded": 545,
+        "bound_213_unresolved": 1,
+        "max_distinct": 239,
+        "min_distinct": 213,
+        "periods": 546,
+        "whole_period_1092_distinct": 225
+      },
+      "forward": {
+        "bound_165_excluded": 546,
+        "bound_165_unresolved": 0,
+        "bound_213_excluded": 544,
+        "bound_213_unresolved": 2,
+        "max_distinct": 238,
+        "min_distinct": 212,
+        "periods": 546,
+        "whole_period_1092_distinct": 225
+      },
+      "full_hex_reverse": {
+        "bound_165_excluded": 546,
+        "bound_165_unresolved": 0,
+        "bound_213_excluded": 544,
+        "bound_213_unresolved": 2,
+        "max_distinct": 238,
+        "min_distinct": 209,
+        "periods": 546,
+        "whole_period_1092_distinct": 225
+      },
+      "nibble_swap": {
+        "bound_165_excluded": 546,
+        "bound_165_unresolved": 0,
+        "bound_213_excluded": 544,
+        "bound_213_unresolved": 2,
+        "max_distinct": 239,
+        "min_distinct": 212,
+        "periods": 546,
+        "whole_period_1092_distinct": 225
+      }
+    },
+    "cells": 2184
+  },
+  "target_evaluated": true,
+  "verification_only": true
+}
