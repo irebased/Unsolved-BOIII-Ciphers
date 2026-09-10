@@ -1,0 +1,90 @@
+{
+  "artifact_hashes": {
+    "audited_ragged8_core.py": "b9b10cc98fb1b74d2724837d9cfd6dc6163e452ddea2afb9df986eb5e68ff4fc",
+    "compat_c_source": "3584374a6bae4df8899e82d36255bbac0472904aed2095e3c08c57a5dd5b4cad",
+    "compat_library": "62ba2b2d1d104aa16c8a855b8bd29af3f6ed987c0008b3a8ba20c22f12e0a319",
+    "compat_source_check_reproduction.json": "123724d5575fa7c2be2868d8218f774f775a395eae693e2049caa703eee47295",
+    "controls.json": "03e4b4b84d115dc7a4e67d5752c062d2d5660a4277eaa9e34238e9714e32cbef",
+    "controls.py": "f4b549174e293d64f1e5806001f2cd1b8f8af0468ea5a085c39997c4391bcac2",
+    "core.py": "fc05740b210f6f4d8eddfc14bdb96db5666c1ba2eb4ae086e2f6667450bc4e15",
+    "run_target.py": "b3147392c6a5384b9c872f33b4127fc4f71e2f14be23858643332176a3e2aed3"
+  },
+  "control_gate": {
+    "all_assertions_passed": true,
+    "controls_sha256": "03e4b4b84d115dc7a4e67d5752c062d2d5660a4277eaa9e34238e9714e32cbef",
+    "only_declared_closures": true,
+    "tiny_full_order_and_graph_enumeration": true,
+    "two_iv_suffix_checks": true,
+    "valid_true_paths_no_false_closure": true
+  },
+  "expected_ciphertext_sha256": "5c50001013a2dd862e13c38d314a0ba6d7303794287a05cc999018cf82cf4b1c",
+  "expected_mdx_sha256": "085e686e5eaff202d2869d8de3d083418697fac5151985fcc25aeb656ee19d91",
+  "identity": "ASTRA",
+  "limits": "No Hamiltonian search. Any graph not closed by the three rules is unresolved. Rectangular variant B and registered fixed primitives/endpoints only.",
+  "mdx_bytes_hashed_only": true,
+  "rev7_ciphertext_parsed": false,
+  "scope": {
+    "cell_count": 32,
+    "cells": [
+      {
+        "block_size": 16,
+        "cipher": "aes128",
+        "key_hex": "5a6f6d62696573000000000000000000",
+        "widths": [
+          39,
+          42
+        ]
+      },
+      {
+        "block_size": 8,
+        "cipher": "des",
+        "key_hex": "5a6f6d6269657300",
+        "widths": [
+          78,
+          91
+        ]
+      },
+      {
+        "block_size": 8,
+        "cipher": "blowfish",
+        "key_hex": "5a6f6d62696573",
+        "widths": [
+          78,
+          91
+        ]
+      },
+      {
+        "block_size": 8,
+        "cipher": "blowfish_compat",
+        "key_hex": "5a6f6d62696573",
+        "widths": [
+          78,
+          91
+        ]
+      }
+    ],
+    "closure_rules": [
+      "at least two zero-indegree vertices",
+      "at least two zero-outdegree vertices",
+      "weakly disconnected graph"
+    ],
+    "endpoint_utf8_sequences": [
+      "e28093",
+      "e28094",
+      "e28098",
+      "e28099",
+      "e280a6"
+    ],
+    "iv_scope": "every external block-size IV",
+    "mode": "CFB8",
+    "orientations": [
+      "forward",
+      "full_hex_reverse",
+      "byte_reverse",
+      "nibble_swap"
+    ],
+    "rectangular": true,
+    "variant": "B"
+  },
+  "target_evaluated": false
+}

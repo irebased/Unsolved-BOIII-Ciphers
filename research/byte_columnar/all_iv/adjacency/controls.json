@@ -1,0 +1,959 @@
+{
+  "adapter_controls": [
+    {
+      "block_check_kind": "adapter consistency",
+      "block_size": 16,
+      "cipher": "aes128",
+      "manual_cfb8_matches_mode_or_distinct_compat_recurrence": true
+    },
+    {
+      "block_check_kind": "adapter consistency",
+      "block_size": 8,
+      "cipher": "des",
+      "manual_cfb8_matches_mode_or_distinct_compat_recurrence": true
+    },
+    {
+      "block_check_kind": "adapter consistency",
+      "block_size": 8,
+      "cipher": "blowfish",
+      "manual_cfb8_matches_mode_or_distinct_compat_recurrence": true
+    },
+    {
+      "block_check_kind": "distinct pinned C versus PyCryptodome conjugation",
+      "block_size": 8,
+      "cipher": "blowfish_compat",
+      "manual_cfb8_matches_mode_or_distinct_compat_recurrence": true
+    }
+  ],
+  "assertions": {
+    "all_passed": true,
+    "all_true_order_edges_retained": true,
+    "no_valid_plant_false_closure": true,
+    "only_declared_closures_used": true,
+    "tiny_graph_and_full_order_enumerations_agree": true,
+    "two_iv_suffix_same": true,
+    "utf8_boundary_retained": true
+  },
+  "fable_fixture": {
+    "h": "0104070a0205080b00030609",
+    "m": [
+      1,
+      4,
+      7,
+      10,
+      2,
+      5,
+      8,
+      11,
+      0,
+      3,
+      6,
+      9
+    ]
+  },
+  "identity": "ASTRA",
+  "method": {
+    "closures": [
+      "at least two zero-indegree vertices",
+      "at least two zero-outdegree vertices",
+      "weakly disconnected graph for w>1"
+    ],
+    "edge": "A->B iff decrypt(concat(A,B))[b:] retains from FSA states {0,1,2}; no terminal-zero check",
+    "support": "q <= b < 2q",
+    "unresolved": "all other graphs; no Hamiltonian search in target method"
+  },
+  "rev7_file_read": false,
+  "runtime": {
+    "pycryptodome": "3.23.0",
+    "python": "3.9.6"
+  },
+  "scope": "Synthetic-only rectangular variant-B necessary ordered-chunk graph; AES widths39/42 and DES/BF/BFcompat widths78/91 prospective; fixed Zombies keys; CFB8; every external IV.",
+  "source_hashes": {
+    "audited_ragged8_core.py": "b9b10cc98fb1b74d2724837d9cfd6dc6163e452ddea2afb9df986eb5e68ff4fc",
+    "controls.py": "f4b549174e293d64f1e5806001f2cd1b8f8af0468ea5a085c39997c4391bcac2",
+    "core.py": "fc05740b210f6f4d8eddfc14bdb96db5666c1ba2eb4ae086e2f6667450bc4e15",
+    "fable_byteTranspositions.js": "c9c09bd405bbe43b853a5efb0e25f58ae67136a5f83653e7c45c3a2f3879b7f0"
+  },
+  "target_evaluated": false,
+  "tiny_exhaustive_closures": [
+    {
+      "cipher": "aes128",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices"
+      ],
+      "deterministic_attempts": 2,
+      "full_orders_times_ivs_checked": 12,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 9,
+      "weak_components": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "width": 3,
+      "zero_indegree": [
+        1,
+        2
+      ],
+      "zero_outdegree": [
+        0
+      ]
+    },
+    {
+      "cipher": "aes128",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 48,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 9,
+      "weak_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "width": 4,
+      "zero_indegree": [
+        1,
+        2,
+        3
+      ],
+      "zero_outdegree": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "cipher": "aes128",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 240,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 9,
+      "weak_components": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "width": 5,
+      "zero_indegree": [
+        2,
+        4
+      ],
+      "zero_outdegree": [
+        1,
+        4
+      ]
+    },
+    {
+      "cipher": "aes128",
+      "closure_reasons": [
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 1440,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 9,
+      "weak_components": [
+        [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        [
+          3
+        ]
+      ],
+      "width": 6,
+      "zero_indegree": [
+        3
+      ],
+      "zero_outdegree": [
+        1,
+        3
+      ]
+    },
+    {
+      "cipher": "aes128",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 10080,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 9,
+      "weak_components": [
+        [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        [
+          2
+        ],
+        [
+          6
+        ]
+      ],
+      "width": 7,
+      "zero_indegree": [
+        2,
+        3,
+        6
+      ],
+      "zero_outdegree": [
+        2,
+        5,
+        6
+      ]
+    },
+    {
+      "cipher": "des",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 12,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "width": 3,
+      "zero_indegree": [
+        0,
+        1
+      ],
+      "zero_outdegree": [
+        1,
+        2
+      ]
+    },
+    {
+      "cipher": "des",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 48,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "width": 4,
+      "zero_indegree": [
+        0,
+        1,
+        3
+      ],
+      "zero_outdegree": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "cipher": "des",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 240,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0,
+          1,
+          3,
+          4
+        ],
+        [
+          2
+        ]
+      ],
+      "width": 5,
+      "zero_indegree": [
+        2,
+        3
+      ],
+      "zero_outdegree": [
+        1,
+        2
+      ]
+    },
+    {
+      "cipher": "des",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 1440,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        [
+          2
+        ]
+      ],
+      "width": 6,
+      "zero_indegree": [
+        1,
+        2
+      ],
+      "zero_outdegree": [
+        2,
+        4
+      ]
+    },
+    {
+      "cipher": "des",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 10080,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ]
+      ],
+      "width": 7,
+      "zero_indegree": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "zero_outdegree": [
+        0,
+        1,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "cipher": "blowfish",
+      "closure_reasons": [
+        "at_least_two_zero_outdegree_vertices"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 12,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "width": 3,
+      "zero_indegree": [
+        1
+      ],
+      "zero_outdegree": [
+        0,
+        2
+      ]
+    },
+    {
+      "cipher": "blowfish",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 48,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "width": 4,
+      "zero_indegree": [
+        0,
+        1
+      ],
+      "zero_outdegree": [
+        0
+      ]
+    },
+    {
+      "cipher": "blowfish",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 240,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "width": 5,
+      "zero_indegree": [
+        1,
+        2,
+        4
+      ],
+      "zero_outdegree": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "cipher": "blowfish",
+      "closure_reasons": [
+        "at_least_two_zero_outdegree_vertices"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 1440,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "width": 6,
+      "zero_indegree": [
+        2
+      ],
+      "zero_outdegree": [
+        1,
+        4
+      ]
+    },
+    {
+      "cipher": "blowfish",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 10080,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "width": 7,
+      "zero_indegree": [
+        2,
+        3,
+        4
+      ],
+      "zero_outdegree": [
+        1,
+        5,
+        6
+      ]
+    },
+    {
+      "cipher": "blowfish_compat",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 12,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "width": 3,
+      "zero_indegree": [
+        1,
+        2
+      ],
+      "zero_outdegree": [
+        0,
+        1
+      ]
+    },
+    {
+      "cipher": "blowfish_compat",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 3,
+      "full_orders_times_ivs_checked": 48,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "width": 4,
+      "zero_indegree": [
+        1,
+        3
+      ],
+      "zero_outdegree": [
+        1,
+        3
+      ]
+    },
+    {
+      "cipher": "blowfish_compat",
+      "closure_reasons": [
+        "at_least_two_zero_outdegree_vertices"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 240,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "width": 5,
+      "zero_indegree": [
+        4
+      ],
+      "zero_outdegree": [
+        0,
+        2
+      ]
+    },
+    {
+      "cipher": "blowfish_compat",
+      "closure_reasons": [
+        "at_least_two_zero_indegree_vertices",
+        "at_least_two_zero_outdegree_vertices",
+        "weakly_disconnected"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 1440,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "width": 6,
+      "zero_indegree": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "zero_outdegree": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "cipher": "blowfish_compat",
+      "closure_reasons": [
+        "at_least_two_zero_outdegree_vertices"
+      ],
+      "deterministic_attempts": 1,
+      "full_orders_times_ivs_checked": 10080,
+      "full_valid_plaintexts": 0,
+      "graph_hamiltonian_paths": 0,
+      "q": 5,
+      "weak_components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "width": 7,
+      "zero_indegree": [],
+      "zero_outdegree": [
+        2,
+        5
+      ]
+    }
+  ],
+  "two_iv_pair_suffix": [
+    {
+      "cipher": "aes128",
+      "q": 13,
+      "suffix_sha256": "8c4001aad741b7c5f29aaf687b02e5299a4c75282ad56c8d4bc110b21ad3878c",
+      "two_iv_suffix_equal": true
+    },
+    {
+      "cipher": "aes128",
+      "q": 14,
+      "suffix_sha256": "c133d8c0740cdb2f6eef2917b08d1195ed6347dc44e2cd7ab1dcd1a0048107d6",
+      "two_iv_suffix_equal": true
+    },
+    {
+      "cipher": "des",
+      "q": 6,
+      "suffix_sha256": "15d55201ae18b336e8f2facb5f835944f2fbe2e98df2c772fca57335a2378e82",
+      "two_iv_suffix_equal": true
+    },
+    {
+      "cipher": "des",
+      "q": 7,
+      "suffix_sha256": "920c29852726a3793bf5970b8d1e44965baddd3b393b68b8efa24fcb27b4d819",
+      "two_iv_suffix_equal": true
+    },
+    {
+      "cipher": "blowfish",
+      "q": 6,
+      "suffix_sha256": "cce2bcb45b43b8d2d5ee5d22e0e2b4ddfa563d2fb1cd8abf71f0aa8e5c483a53",
+      "two_iv_suffix_equal": true
+    },
+    {
+      "cipher": "blowfish",
+      "q": 7,
+      "suffix_sha256": "7b8502a1532ae967a6b886189551846811b6411a39d78296a7f0ceebb9160c5e",
+      "two_iv_suffix_equal": true
+    },
+    {
+      "cipher": "blowfish_compat",
+      "q": 6,
+      "suffix_sha256": "e495c92d7ff7af1f017a1d0b5a7f64edf8f79e4550ebba6db3615f6bf415783a",
+      "two_iv_suffix_equal": true
+    },
+    {
+      "cipher": "blowfish_compat",
+      "q": 7,
+      "suffix_sha256": "a68b7dddc3e1b8bbb46a3fc474e37993e2493bb6b13910d80f5e23baebcb3a5e",
+      "two_iv_suffix_equal": true
+    }
+  ],
+  "unsupported_2q_le_b": [
+    {
+      "block_size": 16,
+      "cipher": "aes128",
+      "n": 24,
+      "q": 8,
+      "supported": false
+    },
+    {
+      "block_size": 8,
+      "cipher": "des",
+      "n": 12,
+      "q": 4,
+      "supported": false
+    },
+    {
+      "block_size": 8,
+      "cipher": "blowfish",
+      "n": 12,
+      "q": 4,
+      "supported": false
+    },
+    {
+      "block_size": 8,
+      "cipher": "blowfish_compat",
+      "n": 12,
+      "q": 4,
+      "supported": false
+    }
+  ],
+  "valid_plants": [
+    {
+      "all_true_order_edges_retained": true,
+      "cipher": "aes128",
+      "iv_hex": "1908fcf8a3f9265e5e673084ad786a3c",
+      "no_false_closure": true,
+      "order_sha256": "9d9a999e4cebd2e2f4903bf879bbf50412aeabdca9ddab3865d7b965b622921f",
+      "q": 14,
+      "retained_edge_count": 38,
+      "true_path_edges": 38,
+      "utf8_boundary_edge": [
+        30,
+        25
+      ],
+      "utf8_suffix_starts_80": true,
+      "width": 39
+    },
+    {
+      "all_true_order_edges_retained": true,
+      "cipher": "aes128",
+      "iv_hex": "1bb79d0218e2072b47f08fe50b4ac44b",
+      "no_false_closure": true,
+      "order_sha256": "1435e6a830493bfdb7d03fbb268c8182011266b8693d863ee22f17704013e326",
+      "q": 13,
+      "retained_edge_count": 42,
+      "true_path_edges": 41,
+      "utf8_boundary_edge": [
+        24,
+        19
+      ],
+      "utf8_suffix_starts_80": true,
+      "width": 42
+    },
+    {
+      "all_true_order_edges_retained": true,
+      "cipher": "des",
+      "iv_hex": "aaffb5fcba68e6a5",
+      "no_false_closure": true,
+      "order_sha256": "c20bfe6e67d241df4641520a99823f5e9ada1d5a7802134c82a3e42fb4bf68fd",
+      "q": 7,
+      "retained_edge_count": 97,
+      "true_path_edges": 77,
+      "utf8_boundary_edge": [
+        12,
+        36
+      ],
+      "utf8_suffix_starts_80": true,
+      "width": 78
+    },
+    {
+      "all_true_order_edges_retained": true,
+      "cipher": "des",
+      "iv_hex": "96bdf0f543210a4e",
+      "no_false_closure": true,
+      "order_sha256": "442475317939fc4300335674f7bd7e0cc981ded322effb91b5ed19eb8ce501e6",
+      "q": 6,
+      "retained_edge_count": 301,
+      "true_path_edges": 90,
+      "utf8_boundary_edge": [
+        44,
+        58
+      ],
+      "utf8_suffix_starts_80": true,
+      "width": 91
+    },
+    {
+      "all_true_order_edges_retained": true,
+      "cipher": "blowfish",
+      "iv_hex": "81ea4c8877ac2471",
+      "no_false_closure": true,
+      "order_sha256": "a98ac352279120c8c8e8a503dc3f8618e6ace7d193704bcdb58fadb095a926b0",
+      "q": 7,
+      "retained_edge_count": 102,
+      "true_path_edges": 77,
+      "utf8_boundary_edge": [
+        47,
+        75
+      ],
+      "utf8_suffix_starts_80": true,
+      "width": 78
+    },
+    {
+      "all_true_order_edges_retained": true,
+      "cipher": "blowfish",
+      "iv_hex": "3ba2aabfef435e25",
+      "no_false_closure": true,
+      "order_sha256": "d8639c09318e090ae4b498f12118cf89ca90e32991d5aa622bea83afa9f3336b",
+      "q": 6,
+      "retained_edge_count": 282,
+      "true_path_edges": 90,
+      "utf8_boundary_edge": [
+        2,
+        37
+      ],
+      "utf8_suffix_starts_80": true,
+      "width": 91
+    },
+    {
+      "all_true_order_edges_retained": true,
+      "cipher": "blowfish_compat",
+      "iv_hex": "eef72b15644a3481",
+      "no_false_closure": true,
+      "order_sha256": "986f2644a060e732c628f6cf39585f52203d2f61a2151e3480241e5314b15275",
+      "q": 7,
+      "retained_edge_count": 95,
+      "true_path_edges": 77,
+      "utf8_boundary_edge": [
+        41,
+        10
+      ],
+      "utf8_suffix_starts_80": true,
+      "width": 78
+    },
+    {
+      "all_true_order_edges_retained": true,
+      "cipher": "blowfish_compat",
+      "iv_hex": "4183276a9806d919",
+      "no_false_closure": true,
+      "order_sha256": "05ddb7f9ce716f6f9399d82f9e3426c4f7ee1093e68646cf439de0dbb24ba222",
+      "q": 6,
+      "retained_edge_count": 297,
+      "true_path_edges": 90,
+      "utf8_boundary_edge": [
+        1,
+        15
+      ],
+      "utf8_suffix_starts_80": true,
+      "width": 91
+    }
+  ]
+}

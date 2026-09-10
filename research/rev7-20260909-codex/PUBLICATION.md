@@ -200,3 +200,18 @@ The [interval result](stream_robustness/interval/RESULTS.md) finds the shortest 
 A two-pointer solver is checked by a separate per-class prefix/suffix-mask certificate: every interval at length `L-1` is infeasible, every interval at `L` is enumerated, and a representative fixed map is validated at every outside position. Monotonicity rules out all shorter lengths. The full ledger preserves every minimizing interval and all check counts; the scripts and synthetic exhaustive controls are included. These positive lower bounds remain necessary under bijective mapping restrictions, while the exact stricter optima were not computed.
 
 For the 92 nonzero contexts, the lower bound also excludes corruption confined to any 128 consecutive displayed hex symbols, which can touch at most 65 decoded-byte positions. The four zero streams are excluded under an injective map by the separate 179-position correction-count bound. This conclusion stays within the registered keys, IVs, OFB modes, byte-pair mappings and unchanged alignment; it does not extend to CFB, other streams or multiple separated damage regions.
+
+
+## Ordered-chunk adjacency certificates
+
+The [adjacency result](../byte_columnar/all_iv/adjacency/RESULTS.md) closes all 32 registered rectangular variant-B cases: AES-128 widths 39 and 42, and DES, standard Blowfish and historical Blowfish-compat widths 78 and 91, each across four canonical orientations. The fixed Zombies keys, CFB8 mode, every external block-size IV and five-sequence endpoint are retained. In this geometry, an individual chunk is too short to expose an IV-independent suffix, but two adjacent chunks expose one. Any valid column order must therefore form a Hamiltonian path through the graph of locally admissible ordered pairs.
+
+All 32 graphs have at least two zero-indegree vertices, so none admits such a path. The completed run examined 183,168 ordered pairs; the sufficient certificates retain 4,640 incoming bad-edge witnesses. Each case excludes all `w!` orders without a Hamiltonian search. No plaintext was recovered. Other widths, ragged layouts, variant A, keys, ciphers, modes and endpoints remain outside this result.
+
+The [193,082-byte certificate package](../byte_columnar/all_iv/adjacency/certificate_package.json) preserves all graph and result metadata and losslessly reconstructs the full 3,682,489-byte ledger, SHA-256 `d208d2a06218faf16e5caa16bbf13585e39ac7e82b395528e76c20140ec2a6e7`. Source, synthetic controls, frozen gate, packing code and portable verifier are included. Default verification replays only the sufficient witnesses; optional full-pair verification separately matches every graph digest and retained edge. Both verification modes passed and require PyCryptodome without compiled compatibility binaries.
+
+```sh
+python3 -B research/byte_columnar/all_iv/adjacency/pack_results.py --verify
+python3 -B research/byte_columnar/all_iv/adjacency/verify_results.py
+python3 -B research/byte_columnar/all_iv/adjacency/verify_results.py --full-pairs
+```
