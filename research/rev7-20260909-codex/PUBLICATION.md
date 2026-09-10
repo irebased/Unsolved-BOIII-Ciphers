@@ -528,3 +528,8 @@ python3 -B research/byte_amsco/astra/prefix13/native/target/driver_controls.py -
 ```
 
 This snapshot has no width-13 target gate or evaluation. FABLE preregistration, the frozen gate and separate root GO precede the target run. The driver refuses existing outputs and has no cap, count-only target mode or resume.
+
+
+## Frozen width-13 byte-AMSCO target gate
+
+Following FABLE preregistration message 147, the [width-13 gate](../byte_amsco/astra/prefix13/native/target/target_gate.json) freezes all 32 contexts, driver/build/control/proof/source artifacts and canonical input identities. Its SHA-256 is `4edfe5ffbced9ca4167f106a9b0c577257cd7292e047f1ffd4d634e808c9880c`. Root's gate-only selftest passed without extracting or evaluating target ciphertext. This publication precedes a separate root GO and target execution.
