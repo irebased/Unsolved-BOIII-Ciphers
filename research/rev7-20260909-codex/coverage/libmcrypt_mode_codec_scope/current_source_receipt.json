@@ -1,0 +1,28 @@
+{
+  "identity": "ASTRA",
+  "source_only": true,
+  "files": [
+    {
+      "commit": "25958812bb28d610bbdb971a479bc99067b9c907",
+      "path": "crates/ra-prim/src/mode.rs",
+      "saved_file": "source/ra-25958812__crates__ra-prim__src__mode.rs",
+      "bytes": 25714,
+      "sha256": "e693fd73f682285cc29ceab4a496f77420882e744649efd2a13e1bf713acc353"
+    },
+    {
+      "commit": "25958812bb28d610bbdb971a479bc99067b9c907",
+      "path": "crates/ra-cli/src/sweep.rs",
+      "saved_file": "source/ra-25958812__crates__ra-cli__src__sweep.rs",
+      "bytes": 292922,
+      "sha256": "c4a5b2ff00dd403ecf7560f6af6605ed3bc2568c5682b05a07054e76f228e0cb"
+    },
+    {
+      "commit": "25958812bb28d610bbdb971a479bc99067b9c907",
+      "path": "crates/ra-core/src/repr.rs",
+      "saved_file": "source/ra-25958812__crates__ra-core__src__repr.rs",
+      "bytes": 9195,
+      "sha256": "cd2223d43482615951e0e8b4808aa48982da3a3fb8967ef7a67a51c43014bb22"
+    }
+  ],
+  "repr_bytes_match_pinned_e127b8d": true
+}

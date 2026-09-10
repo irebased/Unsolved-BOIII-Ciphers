@@ -1,0 +1,226 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1793,
+      "encoding": "utf-8",
+      "git_blob_sha1": "eb204916b5c7b12f8e2bb49bd4ed271edf04c759",
+      "path": "research/rev7-20260909-codex/comms/codec-runtime-plan-20260910.json",
+      "sha256": "a5b7b5350aee563241b2026c6973730d60137924200f81fb8ed58b6f0609c06c"
+    },
+    {
+      "bytes": 3804,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c314ad28e94c7fc2028dd2a85b72de2e5e105b35",
+      "path": "research/rev7-20260909-codex/comms/codec-runtime-results-20260910.json",
+      "sha256": "2ed3b8bf82af2b1faca4fb2a4c4f69133576f776fb17c918a50c4f0ce5d3f86f"
+    },
+    {
+      "bytes": 7065,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d74e6d662d3ca9b04f35badd51c9ae04edd27084",
+      "path": "research/rev7-20260909-codex/comms/publish_codec_scope.py",
+      "sha256": "601c65b13038130568ee32650eb2e080e92dd830654e55c72aae661d7ada7aea"
+    },
+    {
+      "bytes": 7100,
+      "encoding": "utf-8",
+      "git_blob_sha1": "db69f677ba0aa216218b71999b0f7152df7d03c3",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/README.md",
+      "sha256": "b2ad94241a5e93dbe8ccd18b8f16cf7d2094e68824904994c2dac3e433772b17"
+    },
+    {
+      "bytes": 7323,
+      "encoding": "utf-8",
+      "git_blob_sha1": "b03b75b3ad0950b94ec10c5707fcdf4b982a4179",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/audit.json",
+      "sha256": "087e482d4c497092cdaf4339c9442c6b23e9fba737c68a60dff598f3c5a20692"
+    },
+    {
+      "bytes": 8716,
+      "encoding": "utf-8",
+      "git_blob_sha1": "cbd437186c27fa2fb43041a41ab0842b64383605",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/audit.py",
+      "sha256": "5cbbd2cc2ab52758f0f518532b1b732a49503b43bd82c5c996116977b1edb7e5"
+    },
+    {
+      "bytes": 994,
+      "encoding": "utf-8",
+      "git_blob_sha1": "cf8d4f7d7914abd016225f64b47775ea19466f2a",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/current_source_receipt.json",
+      "sha256": "6f3db50916518d1acd9a2e10cba08585decbb6d7bbce0056845b639c812d4465"
+    },
+    {
+      "bytes": 20076,
+      "encoding": "utf-8",
+      "git_blob_sha1": "4dada270d008b87bfc699ed8bf85b6a990b82390",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/runtime_witnesses.json",
+      "sha256": "75b3b23a542eeb8ec4852ab1633889056e0e04f48d68b60afc8809cde59c151e"
+    },
+    {
+      "bytes": 5246,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d2714b4c7cac58f4113f72069b5aa47f97767772",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/runtime_witnesses.py",
+      "sha256": "78b426ec5289e17cdb2d32a5558cd6fb095826c8f4f5e88e5aa1e08cb630b8dd"
+    },
+    {
+      "bytes": 26536,
+      "encoding": "utf-8",
+      "git_blob_sha1": "cf9b6b997263b8a4e007aa1edd4b16437f4583ca",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/COPYING.LIB",
+      "sha256": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532"
+    },
+    {
+      "bytes": 6021,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a815778931728ec2db2277fad2c110dcb4a10575",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/configure.in",
+      "sha256": "4945332b33d0bb0012443e56b498cba71e5b6271a4c59150e956f61f2bb8c7de"
+    },
+    {
+      "bytes": 1938,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c5b8dde39435435af6f0a9edf8f5bfb63a5bedee",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/lib__libdefs.h",
+      "sha256": "d3de33ad9a60f716dbebe5826ed714cf9ab00b7fe66209f53e826e584151a901"
+    },
+    {
+      "bytes": 9011,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2aab606660caa7ac34214d5eb07af0ef9ebd3f82",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/lib__mcrypt_extra.c",
+      "sha256": "e452ef3505da277b91ae316c68fdf4e64fbbebfa594141933d79cf04dcd4f578"
+    },
+    {
+      "bytes": 2495,
+      "encoding": "utf-8",
+      "git_blob_sha1": "647bc193df2a5f87a0d32fb131bf2c7434a02875",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/lib__mcrypt_internal.h",
+      "sha256": "6d9f69a455d9194c9a0ef6c188a3e6609e5b9daa378249233ccd8205647249cf"
+    },
+    {
+      "bytes": 21192,
+      "encoding": "utf-8",
+      "git_blob_sha1": "a995b800c9f48b8b93270069ec803c5fbcbfb5ac",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/lib__mcrypt_modules.c",
+      "sha256": "8e1962b8b52c4ad94c3e2f629c488f8aa6c4fc6c62c4b89a578e62437b5122f8"
+    },
+    {
+      "bytes": 1059,
+      "encoding": "utf-8",
+      "git_blob_sha1": "3ae102793f4e323fc725dd21868abc97119d07f9",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/modules__modes__Makefile.am",
+      "sha256": "37698dd3a5609c6663e9735bd00a17ed521ff444a03b4f79f14ef6f8b045e2fc"
+    },
+    {
+      "bytes": 4501,
+      "encoding": "utf-8",
+      "git_blob_sha1": "031e767a16e4ed6ac6121ab22632e367becb346e",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/modules__modes__cbc.c",
+      "sha256": "c39741d240c6d38121df6fb5f8cf5fefefeb4fe1a64ce71f47d2e013e959e90d"
+    },
+    {
+      "bytes": 4336,
+      "encoding": "utf-8",
+      "git_blob_sha1": "e2b17ca60f3e29c9da12e4f344c449ec226eb215",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/modules__modes__cfb.c",
+      "sha256": "85ed165227f4db7decf3ccdc576b96a8c5cbe51af1882a30cbefeeaff37c2f39"
+    },
+    {
+      "bytes": 6125,
+      "encoding": "utf-8",
+      "git_blob_sha1": "8fbac48b2a2c7d27f8b2cddd3295d4b423aa8cc5",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/modules__modes__ctr.c",
+      "sha256": "3d4f2d464f3e03e804fde84f5eab4fc3a74504622159eff31fb31d7ce4ace034"
+    },
+    {
+      "bytes": 3003,
+      "encoding": "utf-8",
+      "git_blob_sha1": "4f6022a927500ae991c4da5d3084fe249365ee2b",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/modules__modes__ecb.c",
+      "sha256": "71140021f9e8853e58c8c1941bb080866e14c39a0fcbf98b694904fdec903f05"
+    },
+    {
+      "bytes": 8294,
+      "encoding": "utf-8",
+      "git_blob_sha1": "04b7ac6845308dc8e028f416c0ea485c6ebc616e",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/modules__modes__ncfb.c",
+      "sha256": "0150a78e220c740ddbba55cbd26afe728fcc38cce56fad429618416968f3bcee"
+    },
+    {
+      "bytes": 5980,
+      "encoding": "utf-8",
+      "git_blob_sha1": "ce7ccc513f8d19ced75424af601b6836a21a2fa7",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/modules__modes__nofb.c",
+      "sha256": "d0df49d847478c83fa9a1cbf21686623e390a80fbbd558d2640aa4e4d8c246e9"
+    },
+    {
+      "bytes": 4364,
+      "encoding": "utf-8",
+      "git_blob_sha1": "68438fb15c00f9942782018147b6a7e641bd4a9c",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/modules__modes__ofb.c",
+      "sha256": "aec1699eecb37e4791e704d074e88fbe210f62dd75e6c1face8a5fc302ee926d"
+    },
+    {
+      "bytes": 2776,
+      "encoding": "utf-8",
+      "git_blob_sha1": "10bba6ce11e8305bdae52a4cd36303ee5774f306",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/modules__modes__stream.c",
+      "sha256": "f2984cb0f1641ca3bb8f45c0411a234e41c39af5dcc5cc176b2d637efed22f4c"
+    },
+    {
+      "bytes": 292922,
+      "encoding": "utf-8",
+      "git_blob_sha1": "b40b506f21c3db8b23d7d6f249dc154b7b66ef2e",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/ra-25958812__crates__ra-cli__src__sweep.rs",
+      "sha256": "c4a5b2ff00dd403ecf7560f6af6605ed3bc2568c5682b05a07054e76f228e0cb"
+    },
+    {
+      "bytes": 9195,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d0e1c4dac29f705ecbdad88663114af83977238c",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/ra-25958812__crates__ra-core__src__repr.rs",
+      "sha256": "cd2223d43482615951e0e8b4808aa48982da3a3fb8967ef7a67a51c43014bb22"
+    },
+    {
+      "bytes": 25714,
+      "encoding": "utf-8",
+      "git_blob_sha1": "2fc428fb854712406c8affa5b30ccff5807693c7",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/ra-25958812__crates__ra-prim__src__mode.rs",
+      "sha256": "e693fd73f682285cc29ceab4a496f77420882e744649efd2a13e1bf713acc353"
+    },
+    {
+      "bytes": 18676,
+      "encoding": "utf-8",
+      "git_blob_sha1": "6c262537cea57c7649f24105dc76474deb2c8828",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/ra-e127b8d__Cargo.lock",
+      "sha256": "03f3b58196c11fcd795d1ebffc97b29e441785989e4e44ebfb568be945198dd6"
+    },
+    {
+      "bytes": 29922,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c543306e34031b28249b9890e7fb8180a4c5659f",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/ra-e127b8d__crates__ra-core__src__nodes.rs",
+      "sha256": "ea93e1b0e235f691d7814eec0eef2b2a2b0c7f7c0fc1a76ffbebbc218796c43c"
+    },
+    {
+      "bytes": 9195,
+      "encoding": "utf-8",
+      "git_blob_sha1": "d0e1c4dac29f705ecbdad88663114af83977238c",
+      "path": "research/rev7-20260909-codex/coverage/libmcrypt_mode_codec_scope/source/ra-e127b8d__crates__ra-core__src__repr.rs",
+      "sha256": "cd2223d43482615951e0e8b4808aa48982da3a3fb8967ef7a67a51c43014bb22"
+    },
+    {
+      "bytes": 4736,
+      "encoding": "utf-8",
+      "git_blob_sha1": "c54597bf7c1a3466d858e87630a05b2e0ab37eed",
+      "path": "research/rev7-20260909-codex/coverage/ra_padded_tail_occupancy_bound/scope_review.md",
+      "sha256": "16a143147d237471f76b418d548b1a81b65c96f0a25b8de2db031c29b1e3e29e"
+    }
+  ],
+  "identity": "ASTRA",
+  "publication_excludes": [
+    "drafts",
+    "__pycache__"
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "conclusions": [
+    "PHP block rounding is selected by the mode callback: ECB and CBC return one; CFB, CTR, nCFB, OFB, nOFB, and STREAM return zero.",
+    "Length 546 alone does not reject Base64 under pinned RA: a clean unpadded 546-symbol input is re-padded and decodes to 409 bytes.",
+    "Pinned RA Base64 and hex decoders do not require the entire input to belong to their alphabets because they discard other bytes.",
+    "Pinned RA decimal decoding is strict about UTF-8, whitespace tokenization, base-10 syntax, and u8 range, but imposes no fixed token width.",
+    "Padding ciphertext to 552 or 560 changes downstream bytes and alignment, but length alone neither proves nor disproves codec acceptance."
+  ],
+  "identity": "ASTRA",
+  "libmcrypt": {
+    "declared_mode_modules": [
+      "ofb",
+      "ctr",
+      "cfb",
+      "ncfb",
+      "nofb",
+      "ecb",
+      "cbc",
+      "stream"
+    ],
+    "mirror_commit": "3bd338e2f808e985f5b229a7642d48c26615993f",
+    "mode_module_count": 8,
+    "modes": {
+      "cbc": {
+        "is_block_mode": 1,
+        "line": 159,
+        "source": "modules__modes__cbc.c",
+        "source_sha256": "c39741d240c6d38121df6fb5f8cf5fefefeb4fe1a64ce71f47d2e013e959e90d"
+      },
+      "cfb": {
+        "is_block_mode": 0,
+        "line": 155,
+        "source": "modules__modes__cfb.c",
+        "source_sha256": "85ed165227f4db7decf3ccdc576b96a8c5cbe51af1882a30cbefeeaff37c2f39"
+      },
+      "ctr": {
+        "is_block_mode": 0,
+        "line": 233,
+        "source": "modules__modes__ctr.c",
+        "source_sha256": "3d4f2d464f3e03e804fde84f5eab4fc3a74504622159eff31fb31d7ce4ace034"
+      },
+      "ecb": {
+        "is_block_mode": 1,
+        "line": 82,
+        "source": "modules__modes__ecb.c",
+        "source_sha256": "71140021f9e8853e58c8c1941bb080866e14c39a0fcbf98b694904fdec903f05"
+      },
+      "ncfb": {
+        "is_block_mode": 0,
+        "line": 314,
+        "source": "modules__modes__ncfb.c",
+        "source_sha256": "0150a78e220c740ddbba55cbd26afe728fcc38cce56fad429618416968f3bcee"
+      },
+      "nofb": {
+        "is_block_mode": 0,
+        "line": 212,
+        "source": "modules__modes__nofb.c",
+        "source_sha256": "d0df49d847478c83fa9a1cbf21686623e390a80fbbd558d2640aa4e4d8c246e9"
+      },
+      "ofb": {
+        "is_block_mode": 0,
+        "line": 157,
+        "source": "modules__modes__ofb.c",
+        "source_sha256": "aec1699eecb37e4791e704d074e88fbe210f62dd75e6c1face8a5fc302ee926d"
+      },
+      "stream": {
+        "is_block_mode": 0,
+        "line": 68,
+        "source": "modules__modes__stream.c",
+        "source_sha256": "f2984cb0f1641ca3bb8f45c0411a234e41c39af5dcc5cc176b2d637efed22f4c"
+      }
+    },
+    "query_trace": {
+      "definition_line": 551,
+      "dlsym_line": 556,
+      "return_line": 566
+    },
+    "version": "2.5.8"
+  },
+  "ra": {
+    "anchors": {
+      "base64_filter": 118,
+      "base64_repad": 121,
+      "decimal_tokens": 131,
+      "decimal_utf8": 129,
+      "hex_filter": 106
+    },
+    "base64_crate": {
+      "checksum": "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6",
+      "version": "0.22.1"
+    },
+    "codec_semantics": {
+      "base64": "Retain only ASCII alphanumeric,+,/ and =; silently discard all other bytes; append = until length is divisible by four; then STANDARD decode, which may still reject invalid padding/structure.",
+      "decimal": "Require the whole buffer to be UTF-8; split on ASCII whitespace; require at least one token; parse every token as a base-10 u8. No fixed token width.",
+      "hex": "Retain only ASCII hex digits; silently discard all other bytes; if retained nibble count is odd, drop its last nibble; decode the remainder."
+    },
+    "commit": "e127b8d6c17f567b930fe67624d3ea199528b775",
+    "source_bytes_also_match_ancestor_commit": "e6c282187cc8a555580349d819210b544e5417b1",
+    "witnesses": {
+      "clean_unpadded_base64_546": {
+        "accepted": true,
+        "decoded_length": 409,
+        "filtered_length": 548
+      },
+      "decimal_valid_hex": "41ff00",
+      "filtered_base64": {
+        "decoded_hex": "414243",
+        "input_hex": "212151554a443f3f",
+        "retained": "QUJD"
+      },
+      "filtered_odd_hex": {
+        "decoded_hex": "41",
+        "input_hex": "47473431207a7a34",
+        "retained_after_odd_drop": "41"
+      },
+      "valid_utf8_nonascii_filtering": {
+        "base64_decoded_hex": "414243",
+        "base64_input_utf8_hex": "51c3a9554a44",
+        "base64_retained": "QUJD",
+        "decimal_nbsp_rejected": true,
+        "hex_decoded_hex": "41",
+        "hex_input_utf8_hex": "34c3a931",
+        "hex_retained": "41"
+      }
+    }
+  },
+  "source_files": {
+    "COPYING.LIB": {
+      "bytes": 26536,
+      "sha256": "ca0061fc1381a3ab242310e4b3f56389f28e3d460eb2fd822ed7a21c6f030532"
+    },
+    "configure.in": {
+      "bytes": 6021,
+      "sha256": "4945332b33d0bb0012443e56b498cba71e5b6271a4c59150e956f61f2bb8c7de"
+    },
+    "lib__libdefs.h": {
+      "bytes": 1938,
+      "sha256": "d3de33ad9a60f716dbebe5826ed714cf9ab00b7fe66209f53e826e584151a901"
+    },
+    "lib__mcrypt_extra.c": {
+      "bytes": 9011,
+      "sha256": "e452ef3505da277b91ae316c68fdf4e64fbbebfa594141933d79cf04dcd4f578"
+    },
+    "lib__mcrypt_internal.h": {
+      "bytes": 2495,
+      "sha256": "6d9f69a455d9194c9a0ef6c188a3e6609e5b9daa378249233ccd8205647249cf"
+    },
+    "lib__mcrypt_modules.c": {
+      "bytes": 21192,
+      "sha256": "8e1962b8b52c4ad94c3e2f629c488f8aa6c4fc6c62c4b89a578e62437b5122f8"
+    },
+    "modules__modes__Makefile.am": {
+      "bytes": 1059,
+      "sha256": "37698dd3a5609c6663e9735bd00a17ed521ff444a03b4f79f14ef6f8b045e2fc"
+    },
+    "modules__modes__cbc.c": {
+      "bytes": 4501,
+      "sha256": "c39741d240c6d38121df6fb5f8cf5fefefeb4fe1a64ce71f47d2e013e959e90d"
+    },
+    "modules__modes__cfb.c": {
+      "bytes": 4336,
+      "sha256": "85ed165227f4db7decf3ccdc576b96a8c5cbe51af1882a30cbefeeaff37c2f39"
+    },
+    "modules__modes__ctr.c": {
+      "bytes": 6125,
+      "sha256": "3d4f2d464f3e03e804fde84f5eab4fc3a74504622159eff31fb31d7ce4ace034"
+    },
+    "modules__modes__ecb.c": {
+      "bytes": 3003,
+      "sha256": "71140021f9e8853e58c8c1941bb080866e14c39a0fcbf98b694904fdec903f05"
+    },
+    "modules__modes__ncfb.c": {
+      "bytes": 8294,
+      "sha256": "0150a78e220c740ddbba55cbd26afe728fcc38cce56fad429618416968f3bcee"
+    },
+    "modules__modes__nofb.c": {
+      "bytes": 5980,
+      "sha256": "d0df49d847478c83fa9a1cbf21686623e390a80fbbd558d2640aa4e4d8c246e9"
+    },
+    "modules__modes__ofb.c": {
+      "bytes": 4364,
+      "sha256": "aec1699eecb37e4791e704d074e88fbe210f62dd75e6c1face8a5fc302ee926d"
+    },
+    "modules__modes__stream.c": {
+      "bytes": 2776,
+      "sha256": "f2984cb0f1641ca3bb8f45c0411a234e41c39af5dcc5cc176b2d637efed22f4c"
+    },
+    "ra-e127b8d__Cargo.lock": {
+      "bytes": 18676,
+      "sha256": "03f3b58196c11fcd795d1ebffc97b29e441785989e4e44ebfb568be945198dd6"
+    },
+    "ra-e127b8d__crates__ra-core__src__nodes.rs": {
+      "bytes": 29922,
+      "sha256": "ea93e1b0e235f691d7814eec0eef2b2a2b0c7f7c0fc1a76ffbebbc218796c43c"
+    },
+    "ra-e127b8d__crates__ra-core__src__repr.rs": {
+      "bytes": 9195,
+      "sha256": "cd2223d43482615951e0e8b4808aa48982da3a3fb8967ef7a67a51c43014bb22"
+    }
+  },
+  "source_only": true,
+  "target_evaluated": false
+}
